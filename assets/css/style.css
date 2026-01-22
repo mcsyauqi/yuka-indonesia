@@ -73,6 +73,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body {
@@ -2546,6 +2547,7 @@ p {
 .gallery-swiper-wrapper {
     position: relative;
     padding: 2rem 0;
+    overflow-x: clip;
 }
 
 .gallery-swiper {
@@ -3270,7 +3272,7 @@ p {
    TEAM SECTION
    ============================================ */
 .team-section {
-    overflow: visible;
+    overflow-x: clip;
 }
 
 .team-grid {
