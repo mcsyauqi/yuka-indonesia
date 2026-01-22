@@ -15,6 +15,11 @@ desktop.ini
 *.temp
 nul
 
+# Video files (too large for GitHub)
+*.mp4
+*.mov
+*.avi
+
 # Internal documents (if accidentally added)
 *.docx
 *.doc
