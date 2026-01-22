@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparansi: Ke Mana Donasi Anda Disalurkan? | YUKA</title>
+    <meta name="description" content="Laporan transparansi penggunaan donasi di YUKA. Lihat bagaimana kontribusi Anda membantu pendidikan anak-anak berkebutuhan khusus.">
+    <link rel="icon" type="image/x-icon" href="../Icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        .article-header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); padding: 8rem 0 4rem; color: var(--white); }
+        .article-header h1 { color: var(--white) !important; }
+        .article-header .breadcrumb a { color: rgba(255,255,255,0.8); }
+        .article-meta { display: flex; gap: 2rem; margin-top: 1.5rem; flex-wrap: wrap; }
+        .article-meta span { display: flex; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.9); font-size: 0.9rem; }
+        .article-content { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .article-featured-image { margin: -2rem auto 2rem; max-width: 900px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+        .article-featured-image img { width: 100%; height: auto; }
+        .article-body { font-size: 1.1rem; line-height: 1.9; color: var(--gray-700); }
+        .article-body h2 { color: var(--primary); margin: 2.5rem 0 1rem; font-size: 1.75rem; }
+        .article-body h3 { color: var(--gray-800); margin: 2rem 0 1rem; font-size: 1.35rem; }
+        .article-body p { margin-bottom: 1.5rem; }
+        .article-body ul { margin: 1.5rem 0; padding-left: 2rem; }
+        .article-body li { margin-bottom: 0.75rem; list-style: disc; }
+        .article-body blockquote { background: var(--primary-50); border-left: 4px solid var(--primary); padding: 1.5rem 2rem; margin: 2rem 0; border-radius: 0 12px 12px 0; font-style: italic; }
+        .stat-card { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 2rem; border-radius: 16px; text-align: center; margin: 1rem 0; }
+        .stat-card .number { font-size: 2.5rem; font-weight: 700; display: block; }
+        .stat-card .label { font-size: 0.9rem; opacity: 0.9; }
+        .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; }
+        .allocation-bar { background: var(--gray-100); border-radius: 10px; overflow: hidden; margin: 1rem 0; }
+        .allocation-fill { height: 30px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 600; font-size: 0.875rem; }
+        .article-tags { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--gray-200); }
+        .article-tags a { background: var(--gray-100); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; color: var(--gray-600); }
+        .article-share { display: flex; align-items: center; gap: 1rem; margin-top: 2rem; }
+        .share-buttons { display: flex; gap: 0.5rem; }
+        .share-btn { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--white); }
+        .share-btn.whatsapp { background: #25D366; }
+        .share-btn.facebook { background: #1877F2; }
+        @media (max-width: 768px) { .stats-grid { grid-template-columns: 1fr; } .article-meta { gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand">
+                <img src="../Logo/Logo.png" alt="YUKA" class="brand-logo">
+            </a>
+            <div class="navbar-menu" id="navbarMenu">
+                <a href="../index.html">Beranda</a>
+                <a href="../tentang.html">Tentang</a>
+                <a href="../program.html">Program</a>
+                <a href="../galeri.html">Galeri</a>
+                <a href="../blog.html" class="active">Artikel</a>
+                <a href="../kontak.html">Kontak</a>
+                <a href="../donasi.html" class="btn btn-primary btn-sm">Donasi</a>
+            </div>
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="../index.html">Beranda</a>
+                <span class="separator">/</span>
+                <a href="../blog.html">Artikel</a>
+                <span class="separator">/</span>
+                <span class="current">Transparansi Donasi</span>
+            </div>
+            <span class="card-category" style="background: var(--secondary); color: var(--gray-900); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.875rem; display: inline-block; margin: 1rem 0;">Laporan</span>
+            <h1 style="font-size: 2.5rem; max-width: 800px;">Transparansi: Ke Mana Donasi Anda Disalurkan?</h1>
+            <div class="article-meta">
+                <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>1 Januari 2026</span>
+                <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>3 menit baca</span>
+                <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Tim YUKA</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="article-featured-image">
+            <img src="../Dokumentasi/21 Jan 2026/20260121_115445.jpg" alt="Kegiatan pembelajaran di YUKA yang didukung oleh donasi masyarakat">
+        </div>
+    </div>
+
+    <article class="article-content">
+        <div class="article-body">
+            <p><strong>Di YUKA, kami percaya bahwa kepercayaan donatur adalah amanah yang harus dijaga.</strong> Setiap rupiah yang Anda donasikan adalah tanggung jawab yang kami emban dengan penuh keseriusan. Melalui artikel ini, kami ingin memberikan laporan transparan tentang bagaimana donasi Anda digunakan untuk mendukung pendidikan anak-anak berkebutuhan khusus.</p>
+
+            <p>Transparansi bukan sekadar kewajiban, melainkan bentuk penghormatan kami terhadap para donatur yang telah mempercayakan sebagian hartanya untuk kebaikan. Kami berkomitmen untuk terus menjaga kepercayaan ini dengan pengelolaan yang akuntabel dan bertanggung jawab.</p>
+
+            <h2>Ringkasan Penerimaan dan Penggunaan Dana 2025</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="number">20+</span>
+                    <span class="label">Anak Didampingi</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">100%</span>
+                    <span class="label">Dana Tersalurkan</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">3+</span>
+                    <span class="label">Tahun Beroperasi</span>
+                </div>
+            </div>
+
+            <h2>Alokasi Penggunaan Dana</h2>
+
+            <p>Dana yang kami terima dialokasikan untuk berbagai kebutuhan operasional dan program. Berikut adalah rincian alokasi dana:</p>
+
+            <h3>1. Program Pendidikan (60%)</h3>
+            <div class="allocation-bar">
+                <div class="allocation-fill" style="width: 60%; background: var(--primary);">60%</div>
+            </div>
+            <p>Porsi terbesar dialokasikan untuk kegiatan pendidikan inti, meliputi:</p>
+            <ul>
+                <li>Gaji guru dan tenaga pendidik</li>
+                <li>Materi pembelajaran dan alat peraga</li>
+                <li>Kegiatan belajar mengajar harian</li>
+                <li>Program terapi tambahan</li>
+                <li>Evaluasi dan asesmen berkala</li>
+            </ul>
+
+            <h3>2. Operasional (20%)</h3>
+            <div class="allocation-bar">
+                <div class="allocation-fill" style="width: 20%; background: var(--secondary-dark);">20%</div>
+            </div>
+            <p>Untuk menjaga kelancaran operasional sehari-hari:</p>
+            <ul>
+                <li>Listrik, air, dan utilitas</li>
+                <li>Pemeliharaan fasilitas</li>
+                <li>Perlengkapan kantor</li>
+                <li>Transportasi kegiatan</li>
+            </ul>
+
+            <h3>3. Sarana Prasarana (15%)</h3>
+            <div class="allocation-bar">
+                <div class="allocation-fill" style="width: 15%; background: #2196F3;">15%</div>
+            </div>
+            <p>Investasi untuk peningkatan fasilitas:</p>
+            <ul>
+                <li>Renovasi dan perbaikan ruang belajar</li>
+                <li>Pengadaan peralatan baru</li>
+                <li>Peningkatan aksesibilitas</li>
+            </ul>
+
+            <h3>4. Pengembangan SDM (5%)</h3>
+            <div class="allocation-bar">
+                <div class="allocation-fill" style="width: 5%; background: #9C27B0;">5%</div>
+            </div>
+            <p>Investasi untuk kualitas tenaga pendidik:</p>
+            <ul>
+                <li>Pelatihan dan sertifikasi guru</li>
+                <li>Workshop dan seminar</li>
+                <li>Studi banding</li>
+            </ul>
+
+            <h2>Dampak Nyata dari Donasi Anda</h2>
+
+            <p>Setiap donasi yang Anda berikan memberikan dampak nyata bagi anak-anak didik kami:</p>
+
+            <ul>
+                <li><strong>20+ anak</strong> mendapatkan akses pendidikan inklusi berkualitas</li>
+                <li><strong>Rasio 1:5</strong> guru-murid memungkinkan pendampingan intensif</li>
+                <li><strong>Kurikulum adaptif</strong> yang disesuaikan dengan kebutuhan masing-masing anak</li>
+                <li><strong>Lingkungan belajar</strong> yang aman dan mendukung tumbuh kembang</li>
+                <li><strong>Pendidikan karakter</strong> berbasis nilai-nilai Islam</li>
+            </ul>
+
+            <blockquote>
+                "Setiap donasi, sekecil apapun, adalah investasi untuk masa depan anak-anak yang membutuhkan. Kami memastikan setiap rupiah digunakan dengan penuh tanggung jawab." - Pengurus YUKA
+            </blockquote>
+
+            <h2>Komitmen Transparansi Kami</h2>
+
+            <p>YUKA berkomitmen untuk menjaga transparansi melalui:</p>
+
+            <ol>
+                <li><strong>Laporan berkala:</strong> Kami mempublikasikan laporan penggunaan dana secara berkala melalui website dan media sosial.</li>
+                <li><strong>Audit internal:</strong> Pengelolaan keuangan diawasi secara internal untuk memastikan akuntabilitas.</li>
+                <li><strong>Keterbukaan informasi:</strong> Donatur dapat meminta informasi detail tentang penggunaan dana kapan saja.</li>
+                <li><strong>Dokumentasi kegiatan:</strong> Setiap kegiatan didokumentasikan sebagai bentuk pertanggungjawaban.</li>
+            </ol>
+
+            <h2>Cara Berdonasi</h2>
+
+            <p>Bagi Anda yang ingin berkontribusi, donasi dapat disalurkan melalui:</p>
+
+            <ul>
+                <li><strong>Transfer Bank:</strong> Silakan kunjungi halaman <a href="../donasi.html" style="color: var(--primary); text-decoration: underline;">Donasi</a> untuk informasi rekening</li>
+                <li><strong>Donasi Langsung:</strong> Dapat datang langsung ke lokasi YUKA</li>
+                <li><strong>Konsultasi:</strong> Hubungi kami via WhatsApp untuk informasi lebih lanjut</li>
+            </ul>
+
+            <h2>Terima Kasih</h2>
+
+            <p>Kami mengucapkan terima kasih yang sebesar-besarnya kepada seluruh donatur yang telah mempercayakan amanahnya kepada YUKA. Tanpa dukungan Anda, kami tidak akan mampu memberikan layanan pendidikan terbaik bagi anak-anak berkebutuhan khusus.</p>
+
+            <p>Semoga setiap kebaikan yang Anda berikan menjadi amal jariyah yang terus mengalir pahalanya. Bersama-sama, kita bisa membuat perbedaan nyata dalam kehidupan anak-anak yang membutuhkan.</p>
+
+            <blockquote>
+                "Barangsiapa melepaskan satu kesusahan seorang mukmin, pasti Allah akan melepaskan darinya satu kesusahan pada hari kiamat." (HR. Muslim)
+            </blockquote>
+
+            <p>Jika Anda memiliki pertanyaan tentang laporan ini atau ingin informasi lebih detail, jangan ragu untuk menghubungi kami. Kami siap memberikan penjelasan dan dokumentasi yang dibutuhkan.</p>
+        </div>
+
+        <div class="article-tags">
+            <a href="#">#Transparansi</a>
+            <a href="#">#LaporanDonasi</a>
+            <a href="#">#Akuntabilitas</a>
+            <a href="#">#YUKA</a>
+        </div>
+
+        <div class="article-share">
+            <span style="font-weight: 600;">Bagikan:</span>
+            <div class="share-buttons">
+                <a href="https://wa.me/?text=Transparansi%20Donasi%20YUKA%20-%20https://yukaindonesia.com/artikel/transparansi-donasi.html" target="_blank" class="share-btn whatsapp"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://yukaindonesia.com/artikel/transparansi-donasi.html" target="_blank" class="share-btn facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            </div>
+        </div>
+    </article>
+
+    <section class="section bg-primary" style="padding: 4rem 0;">
+        <div class="container text-center">
+            <h2 style="color: var(--white); margin-bottom: 1rem;">Siap Berdonasi?</h2>
+            <p style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 2rem;">Setiap kontribusi Anda, sekecil apapun, sangat berarti bagi masa depan anak-anak berkebutuhan khusus.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="../donasi.html" class="btn btn-secondary">Donasi Sekarang</a>
+                <a href="https://wa.me/6281229912332" target="_blank" class="btn btn-outline-light">Hubungi via WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="../Logo/Logo.png" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Tautan</h4>
+                    <ul>
+                        <li><a href="../index.html">Beranda</a></li>
+                        <li><a href="../tentang.html">Tentang Kami</a></li>
+                        <li><a href="../program.html">Program</a></li>
+                        <li><a href="../donasi.html">Donasi</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li>Jl. Kronggahan Raya II, RT 04 RW 07</li>
+                        <li>Kronggahan II, Trihanggo, Gamping, Sleman</li>
+                        <li>(Utara RSA UGM)</li>
+                        <li><a href="tel:+6281229912332">+62 812-2991-2332</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Yayasan Ukhuwah Kaffah Amanatullah. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# Robots.txt for YUKA - Yayasan Ukhuwah Kaffah Amanatullah
+# https://yukaindonesia.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://yukaindonesia.com/sitemap.xml
+
+# Disallow admin and private directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Allow all crawlers to index the main content
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Crawl-delay for politeness
+User-agent: *
+Crawl-delay: 10

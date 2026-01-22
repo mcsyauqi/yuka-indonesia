@@ -1,0 +1,27 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+nul
+
+# Internal documents (if accidentally added)
+*.docx
+*.doc
+*.pdf
+Chat history.txt
+Konsultasi*.md
+Riset*.md
+Kunjungan*.pdf
+Temuan*.md
+Panduan*.txt
