@@ -157,7 +157,7 @@ function showToast(message, duration = 3000) {
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
-        background-color: #1B5E20;
+        background-color: #2B3A67;
         color: white;
         padding: 12px 24px;
         border-radius: 8px;
@@ -505,7 +505,7 @@ function animateCounter(element) {
             right: 30px;
             width: 50px;
             height: 50px;
-            background-color: #1B5E20;
+            background-color: #2B3A67;
             color: white;
             border: none;
             border-radius: 50%;
@@ -521,7 +521,7 @@ function animateCounter(element) {
             z-index: 999;
         }
         .back-to-top:hover {
-            background-color: #2E7D32;
+            background-color: #3D4F8A;
             transform: translateY(-2px);
         }
         .back-to-top.visible {
