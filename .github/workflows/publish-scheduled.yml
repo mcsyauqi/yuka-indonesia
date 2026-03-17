@@ -16,12 +16,14 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check and publish scheduled articles
+        id: publish
         run: |
           TODAY=$(date -u +%Y-%m-%d)
           echo "Today: $TODAY"
 
           if [ ! -f publish-schedule.json ]; then
             echo "No schedule file found."
+            echo "published=false" >> $GITHUB_OUTPUT
             exit 0
           fi
 
@@ -40,11 +42,16 @@ jobs:
 
           if [ "$ARTICLES" = "NONE" ]; then
             echo "No articles scheduled for today or earlier."
+            echo "published=false" >> $GITHUB_OUTPUT
             exit 0
           fi
 
           echo "Articles to publish:"
           echo "$ARTICLES"
+          echo "published=true" >> $GITHUB_OUTPUT
+
+          # Collect published article info for email
+          EMAIL_BODY=""
 
           # Process each article
           while IFS='|' read -r slug file title desc image category readtime pubdate; do
@@ -52,6 +59,9 @@ jobs:
 
             # Format date for display (e.g., "18 Mar 2026")
             DISPLAY_DATE=$(date -d "$pubdate" +"%d %b %Y" 2>/dev/null || date -j -f "%Y-%m-%d" "$pubdate" +"%d %b %Y" 2>/dev/null || echo "$pubdate")
+
+            # Append to email body
+            EMAIL_BODY="${EMAIL_BODY}<tr><td style='padding:12px;border-bottom:1px solid #eee'><strong>${title}</strong><br><small style='color:#666'>Kategori: ${category} | ${readtime} | ${DISPLAY_DATE}</small><br><a href='https://yukaindonesia.com/${file}' style='color:#2e7d32'>https://yukaindonesia.com/${file}</a><br><span style='color:#555;font-size:13px'>${desc}</span></td></tr>"
 
             # Create blog card HTML
             CARD="                <!-- Article: $title -->
@@ -120,6 +130,13 @@ jobs:
 
           done <<< "$ARTICLES"
 
+          # Save email body for next step
+          echo "$EMAIL_BODY" > /tmp/email_body.html
+
+          # Count published
+          PUBLISHED_COUNT=$(echo "$ARTICLES" | wc -l)
+          echo "published_count=$PUBLISHED_COUNT" >> $GITHUB_OUTPUT
+
           # Remove published articles from schedule
           python3 -c "
           import json
@@ -129,10 +146,14 @@ jobs:
           with open('publish-schedule.json', 'w') as f:
               json.dump(remaining, f, indent=2, ensure_ascii=False)
           published = len(schedule) - len(remaining)
-          print(f'Published {published} articles, {len(remaining)} remaining in schedule.')
+          remaining_count = len(remaining)
+          print(f'Published {published} articles, {remaining_count} remaining in schedule.')
+          with open('/tmp/remaining_count.txt', 'w') as f:
+              f.write(str(remaining_count))
           "
 
       - name: Commit and push changes
+        if: steps.publish.outputs.published == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -140,3 +161,43 @@ jobs:
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "Auto-publish scheduled articles for $(date -u +%Y-%m-%d)"
           git push
+
+      - name: Send email notification
+        if: steps.publish.outputs.published == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: "[YUKA] Artikel Baru Tayang - ${{ steps.publish.outputs.published_count }} artikel dipublikasikan"
+          to: ahmadthariqsyauqi@gmail.com
+          from: YUKA Auto-Publisher <noreply@yukaindonesia.com>
+          content_type: text/html
+          body: |
+            <!DOCTYPE html>
+            <html>
+            <head><meta charset="UTF-8"></head>
+            <body style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px">
+              <div style="background:#2e7d32;color:white;padding:20px;border-radius:8px 8px 0 0;text-align:center">
+                <h2 style="margin:0">Artikel YUKA Baru Tayang!</h2>
+                <p style="margin:5px 0 0;opacity:0.9">${{ steps.publish.outputs.published_count }} artikel berhasil dipublikasikan</p>
+              </div>
+              <div style="border:1px solid #ddd;border-top:none;padding:20px;border-radius:0 0 8px 8px">
+                <p>Halo Kak Syauqi,</p>
+                <p>Berikut artikel yang baru saja dipublikasikan di <a href="https://yukaindonesia.com/blog.html" style="color:#2e7d32">yukaindonesia.com</a>:</p>
+                <table style="width:100%;border-collapse:collapse;margin:15px 0">
+                  <tbody>
+                    $(cat /tmp/email_body.html)
+                  </tbody>
+                </table>
+                <p style="color:#666;font-size:13px">
+                  Sisa artikel terjadwal: <strong>$(cat /tmp/remaining_count.txt 2>/dev/null || echo "?")</strong> artikel
+                </p>
+                <hr style="border:none;border-top:1px solid #eee;margin:20px 0">
+                <p style="color:#999;font-size:12px;text-align:center">
+                  Email otomatis dari GitHub Actions | <a href="https://yukaindonesia.com" style="color:#2e7d32">YUKA Indonesia</a>
+                </p>
+              </div>
+            </body>
+            </html>
