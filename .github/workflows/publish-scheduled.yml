@@ -1,0 +1,142 @@
+name: Publish Scheduled Articles
+
+on:
+  schedule:
+    # Run daily at 02:00 UTC (09:00 WIB)
+    - cron: '0 2 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check and publish scheduled articles
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          echo "Today: $TODAY"
+
+          if [ ! -f publish-schedule.json ]; then
+            echo "No schedule file found."
+            exit 0
+          fi
+
+          # Check if there are articles to publish today
+          ARTICLES=$(python3 -c "
+          import json, sys
+          with open('publish-schedule.json') as f:
+              schedule = json.load(f)
+          today_articles = [a for a in schedule if a['date'] <= '$TODAY']
+          if not today_articles:
+              print('NONE')
+              sys.exit(0)
+          for a in today_articles:
+              print(f\"{a['slug']}|{a['file']}|{a['title']}|{a['description']}|{a['image']}|{a['category']}|{a['readTime']}|{a['date']}\")
+          ")
+
+          if [ "$ARTICLES" = "NONE" ]; then
+            echo "No articles scheduled for today or earlier."
+            exit 0
+          fi
+
+          echo "Articles to publish:"
+          echo "$ARTICLES"
+
+          # Process each article
+          while IFS='|' read -r slug file title desc image category readtime pubdate; do
+            echo "Publishing: $title ($slug)"
+
+            # Format date for display (e.g., "18 Mar 2026")
+            DISPLAY_DATE=$(date -d "$pubdate" +"%d %b %Y" 2>/dev/null || date -j -f "%Y-%m-%d" "$pubdate" +"%d %b %Y" 2>/dev/null || echo "$pubdate")
+
+            # Create blog card HTML
+            CARD="                <!-- Article: $title -->
+                          <article class=\"card blog-card animate-on-scroll\">
+                              <div class=\"card-image\">
+                                  <img src=\"$image\" alt=\"$title\" loading=\"lazy\">
+                              </div>
+                              <div class=\"card-body\">
+                                  <span class=\"card-category\">$category</span>
+                                  <h3 class=\"card-title\">
+                                      <a href=\"$file\">$title</a>
+                                  </h3>
+                                  <p class=\"card-text\">$desc</p>
+                                  <div class=\"card-meta\">
+                                      <span>
+                                          <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                              <rect x=\"3\" y=\"4\" width=\"18\" height=\"18\" rx=\"2\" ry=\"2\"/>
+                                              <line x1=\"16\" y1=\"2\" x2=\"16\" y2=\"6\"/>
+                                              <line x1=\"8\" y1=\"2\" x2=\"8\" y2=\"6\"/>
+                                              <line x1=\"3\" y1=\"10\" x2=\"21\" y2=\"10\"/>
+                                          </svg>
+                                          $DISPLAY_DATE
+                                      </span>
+                                      <span>
+                                          <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">
+                                              <path d=\"M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z\"/>
+                                          </svg>
+                                          $readtime
+                                      </span>
+                                  </div>
+                              </div>
+                          </article>"
+
+            # Insert card after blog-grid opening div in blog.html
+            python3 -c "
+          import re
+          with open('blog.html', 'r') as f:
+              content = f.read()
+          marker = '<div class=\"blog-grid\">'
+          if marker in content:
+              card = '''$CARD'''
+              content = content.replace(marker, marker + '\n' + card, 1)
+              # Update article count
+              content = re.sub(r'Menampilkan \d+ artikel', lambda m: f\"Menampilkan {int(re.search(r'\d+', m.group()).group()) + 1} artikel\", content)
+              with open('blog.html', 'w') as f:
+                  f.write(content)
+              print(f'Added to blog.html: $slug')
+          "
+
+            # Add to sitemap.xml
+            python3 -c "
+          with open('sitemap.xml', 'r') as f:
+              content = f.read()
+          entry = '''    <url>
+              <loc>https://yukaindonesia.com/$file</loc>
+              <lastmod>$pubdate</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>0.8</priority>
+          </url>'''
+          if 'https://yukaindonesia.com/$file' not in content:
+              content = content.replace('</urlset>', entry + '\n</urlset>')
+              with open('sitemap.xml', 'w') as f:
+                  f.write(content)
+              print(f'Added to sitemap.xml: $slug')
+          "
+
+          done <<< "$ARTICLES"
+
+          # Remove published articles from schedule
+          python3 -c "
+          import json
+          with open('publish-schedule.json') as f:
+              schedule = json.load(f)
+          remaining = [a for a in schedule if a['date'] > '$TODAY']
+          with open('publish-schedule.json', 'w') as f:
+              json.dump(remaining, f, indent=2, ensure_ascii=False)
+          published = len(schedule) - len(remaining)
+          print(f'Published {published} articles, {len(remaining)} remaining in schedule.')
+          "
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add blog.html sitemap.xml publish-schedule.json
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Auto-publish scheduled articles for $(date -u +%Y-%m-%d)"
+          git push
