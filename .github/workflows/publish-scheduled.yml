@@ -51,7 +51,7 @@ jobs:
           echo "published=true" >> $GITHUB_OUTPUT
 
           # Collect published article info for email
-          EMAIL_BODY=""
+          EMAIL_ROWS=""
 
           # Process each article
           while IFS='|' read -r slug file title desc image category readtime pubdate; do
@@ -60,8 +60,8 @@ jobs:
             # Format date for display (e.g., "18 Mar 2026")
             DISPLAY_DATE=$(date -d "$pubdate" +"%d %b %Y" 2>/dev/null || date -j -f "%Y-%m-%d" "$pubdate" +"%d %b %Y" 2>/dev/null || echo "$pubdate")
 
-            # Append to email body
-            EMAIL_BODY="${EMAIL_BODY}<tr><td style='padding:12px;border-bottom:1px solid #eee'><strong>${title}</strong><br><small style='color:#666'>Kategori: ${category} | ${readtime} | ${DISPLAY_DATE}</small><br><a href='https://yukaindonesia.com/${file}' style='color:#2e7d32'>https://yukaindonesia.com/${file}</a><br><span style='color:#555;font-size:13px'>${desc}</span></td></tr>"
+            # Append to email rows
+            EMAIL_ROWS="${EMAIL_ROWS}<tr><td style='padding:12px;border-bottom:1px solid #eee'><strong>${title}</strong><br><small style='color:#666'>Kategori: ${category} | ${readtime} | ${DISPLAY_DATE}</small><br><a href='https://yukaindonesia.com/${file}' style='color:#2e7d32'>Baca artikel</a><br><span style='color:#555;font-size:13px'>${desc}</span></td></tr>"
 
             # Create blog card HTML
             CARD="                <!-- Article: $title -->
@@ -130,15 +130,12 @@ jobs:
 
           done <<< "$ARTICLES"
 
-          # Save email body for next step
-          echo "$EMAIL_BODY" > /tmp/email_body.html
-
           # Count published
           PUBLISHED_COUNT=$(echo "$ARTICLES" | wc -l)
           echo "published_count=$PUBLISHED_COUNT" >> $GITHUB_OUTPUT
 
-          # Remove published articles from schedule
-          python3 -c "
+          # Remove published articles from schedule and get remaining count
+          REMAINING_COUNT=$(python3 -c "
           import json
           with open('publish-schedule.json') as f:
               schedule = json.load(f)
@@ -146,11 +143,43 @@ jobs:
           with open('publish-schedule.json', 'w') as f:
               json.dump(remaining, f, indent=2, ensure_ascii=False)
           published = len(schedule) - len(remaining)
-          remaining_count = len(remaining)
-          print(f'Published {published} articles, {remaining_count} remaining in schedule.')
-          with open('/tmp/remaining_count.txt', 'w') as f:
-              f.write(str(remaining_count))
-          "
+          print(len(remaining))
+          ")
+          echo "Published $PUBLISHED_COUNT articles, $REMAINING_COUNT remaining."
+
+          # Build full email HTML and save to output
+          {
+            echo "email_html<<ENDOFHTML"
+            cat <<EMAILEOF
+          <!DOCTYPE html>
+          <html>
+          <head><meta charset="UTF-8"></head>
+          <body style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px">
+            <div style="background:#2e7d32;color:white;padding:20px;border-radius:8px 8px 0 0;text-align:center">
+              <h2 style="margin:0">Artikel YUKA Baru Tayang!</h2>
+              <p style="margin:5px 0 0;opacity:0.9">${PUBLISHED_COUNT} artikel berhasil dipublikasikan</p>
+            </div>
+            <div style="border:1px solid #ddd;border-top:none;padding:20px;border-radius:0 0 8px 8px">
+              <p>Halo Kak Syauqi,</p>
+              <p>Berikut artikel yang baru saja dipublikasikan di <a href="https://yukaindonesia.com/blog.html" style="color:#2e7d32">yukaindonesia.com</a>:</p>
+              <table style="width:100%;border-collapse:collapse;margin:15px 0">
+                <tbody>
+                  ${EMAIL_ROWS}
+                </tbody>
+              </table>
+              <p style="color:#666;font-size:13px">
+                Sisa artikel terjadwal: <strong>${REMAINING_COUNT}</strong> artikel
+              </p>
+              <hr style="border:none;border-top:1px solid #eee;margin:20px 0">
+              <p style="color:#999;font-size:12px;text-align:center">
+                Email otomatis dari GitHub Actions | <a href="https://yukaindonesia.com" style="color:#2e7d32">YUKA Indonesia</a>
+              </p>
+            </div>
+          </body>
+          </html>
+          EMAILEOF
+            echo "ENDOFHTML"
+          } >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
         if: steps.publish.outputs.published == 'true'
@@ -173,30 +202,4 @@ jobs:
           subject: "[YUKA] Artikel Baru Tayang - ${{ steps.publish.outputs.published_count }} artikel dipublikasikan"
           to: ahmadthariqsyauqi@gmail.com
           from: YUKA Auto-Publisher <noreply@yukaindonesia.com>
-          html_body: |
-            <!DOCTYPE html>
-            <html>
-            <head><meta charset="UTF-8"></head>
-            <body style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;padding:20px">
-              <div style="background:#2e7d32;color:white;padding:20px;border-radius:8px 8px 0 0;text-align:center">
-                <h2 style="margin:0">Artikel YUKA Baru Tayang!</h2>
-                <p style="margin:5px 0 0;opacity:0.9">${{ steps.publish.outputs.published_count }} artikel berhasil dipublikasikan</p>
-              </div>
-              <div style="border:1px solid #ddd;border-top:none;padding:20px;border-radius:0 0 8px 8px">
-                <p>Halo Kak Syauqi,</p>
-                <p>Berikut artikel yang baru saja dipublikasikan di <a href="https://yukaindonesia.com/blog.html" style="color:#2e7d32">yukaindonesia.com</a>:</p>
-                <table style="width:100%;border-collapse:collapse;margin:15px 0">
-                  <tbody>
-                    $(cat /tmp/email_body.html)
-                  </tbody>
-                </table>
-                <p style="color:#666;font-size:13px">
-                  Sisa artikel terjadwal: <strong>$(cat /tmp/remaining_count.txt 2>/dev/null || echo "?")</strong> artikel
-                </p>
-                <hr style="border:none;border-top:1px solid #eee;margin:20px 0">
-                <p style="color:#999;font-size:12px;text-align:center">
-                  Email otomatis dari GitHub Actions | <a href="https://yukaindonesia.com" style="color:#2e7d32">YUKA Indonesia</a>
-                </p>
-              </div>
-            </body>
-            </html>
+          html_body: ${{ steps.publish.outputs.email_html }}
