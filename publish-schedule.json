@@ -10,7 +10,7 @@
     "readTime": "14 menit baca"
   },
   {
-    "date": "2026-03-18",
+    "date": "2026-03-21",
     "slug": "autisme-adalah",
     "file": "artikel/autisme-adalah.html",
     "title": "Autisme Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Penanganan Anak Autis",
@@ -20,7 +20,7 @@
     "readTime": "15 menit baca"
   },
   {
-    "date": "2026-03-18",
+    "date": "2026-03-24",
     "slug": "disleksia-adalah",
     "file": "artikel/disleksia-adalah.html",
     "title": "Disleksia Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Cara Membantu Anak Disleksia",
@@ -30,7 +30,7 @@
     "readTime": "13 menit baca"
   },
   {
-    "date": "2026-03-19",
+    "date": "2026-03-27",
     "slug": "difabel-adalah",
     "file": "artikel/difabel-adalah.html",
     "title": "Difabel Adalah: Pengertian, Jenis, Hak, dan Dukungan untuk Penyandang Disabilitas",
@@ -40,7 +40,7 @@
     "readTime": "13 menit baca"
   },
   {
-    "date": "2026-03-19",
+    "date": "2026-03-30",
     "slug": "tunagrahita-adalah",
     "file": "artikel/tunagrahita-adalah.html",
     "title": "Tunagrahita Adalah: Pengertian, Klasifikasi, Ciri-Ciri, dan Pendidikan yang Tepat",
@@ -50,12 +50,192 @@
     "readTime": "14 menit baca"
   },
   {
-    "date": "2026-03-19",
+    "date": "2026-04-02",
     "slug": "down-syndrome-adalah",
     "file": "artikel/down-syndrome-adalah.html",
     "title": "Down Syndrome Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Cara Mendukung Anak Down Syndrome",
     "description": "Down syndrome adalah kondisi genetik akibat kelebihan kromosom 21. Kenali ciri-ciri, penyebab, dan cara mendukung tumbuh kembang anak down syndrome.",
     "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-052.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-04-05",
+    "slug": "bahasa-isyarat",
+    "file": "artikel/bahasa-isyarat.html",
+    "title": "Bahasa Isyarat: Pengertian, Jenis, dan Cara Belajar Bahasa Isyarat Indonesia",
+    "description": "Bahasa isyarat adalah sistem komunikasi visual menggunakan gerakan tangan. Pelajari jenis bahasa isyarat Indonesia (BISINDO & SIBI) dan cara belajarnya.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-bersama-outdoor-046.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-04-08",
+    "slug": "tuna-daksa-adalah",
+    "file": "artikel/tuna-daksa-adalah.html",
+    "title": "Tuna Daksa Adalah: Pengertian, Jenis, Penyebab, dan Hak Penyandang Tuna Daksa",
+    "description": "Tuna daksa adalah kondisi disabilitas fisik yang memengaruhi fungsi tubuh. Kenali jenis, penyebab, hak hukum, dan cara mendukung penyandang tuna daksa.",
+    "image": "Dokumentasi/cpao-kunjungan-kelompok-rumah-tradisional-jawa-056.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-04-11",
+    "slug": "terapi-okupasi",
+    "file": "artikel/terapi-okupasi.html",
+    "title": "Terapi Okupasi: Pengertian, Manfaat, dan Proses Terapi untuk Anak Berkebutuhan Khusus",
+    "description": "Terapi okupasi adalah terapi yang membantu anak berkebutuhan khusus mengembangkan kemandirian. Pelajari manfaat, proses, dan biaya terapi okupasi untuk ABK.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-kue-001.webp",
+    "category": "Terapi",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-04-14",
+    "slug": "tuna-wicara-adalah",
+    "file": "artikel/tuna-wicara-adalah.html",
+    "title": "Tuna Wicara Adalah: Pengertian, Penyebab, Ciri-Ciri, dan Cara Berkomunikasi",
+    "description": "Tuna wicara adalah kondisi gangguan bicara dan komunikasi. Kenali penyebab, ciri-ciri, dan cara berkomunikasi dengan penyandang tuna wicara secara efektif.",
+    "image": "Dokumentasi/cpao-anak-anak-kegiatan-pembelajaran-tradisional-057.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-04-17",
+    "slug": "slb-adalah",
+    "file": "artikel/slb-adalah.html",
+    "title": "SLB Adalah: Pengertian, Jenis, Kurikulum, dan Daftar SLB di Yogyakarta",
+    "description": "SLB adalah Sekolah Luar Biasa untuk anak berkebutuhan khusus. Pelajari jenis SLB (A-G), kurikulum, dan daftar SLB terdekat di Yogyakarta lengkap dengan alamat.",
+    "image": "Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-tradisional-006.webp",
+    "category": "Pendidikan",
+    "readTime": "15 menit baca"
+  },
+  {
+    "date": "2026-04-20",
+    "slug": "terapi-wicara",
+    "file": "artikel/terapi-wicara.html",
+    "title": "Terapi Wicara: Pengertian, Manfaat, Biaya, dan Proses Terapi untuk Anak",
+    "description": "Terapi wicara adalah terapi untuk mengatasi gangguan bicara dan bahasa pada anak. Pelajari manfaat, proses, biaya, dan kapan anak membutuhkan terapi wicara.",
+    "image": "Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp",
+    "category": "Terapi",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-04-23",
+    "slug": "shadow-teacher-adalah",
+    "file": "artikel/shadow-teacher-adalah.html",
+    "title": "Shadow Teacher Adalah: Peran, Tugas, dan Cara Menjadi Pendamping ABK",
+    "description": "Shadow teacher adalah guru pendamping khusus untuk anak berkebutuhan khusus di sekolah. Pelajari peran, tugas, kualifikasi, dan cara menjadi shadow teacher.",
+    "image": "Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-005.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-04-26",
+    "slug": "kecerdasan-majemuk",
+    "file": "artikel/kecerdasan-majemuk.html",
+    "title": "Kecerdasan Majemuk: 9 Jenis Kecerdasan Menurut Howard Gardner dan Penerapannya",
+    "description": "Kecerdasan majemuk adalah teori Howard Gardner tentang 9 jenis kecerdasan manusia. Kenali jenis-jenis kecerdasan anak dan cara mengembangkannya secara optimal.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-043.webp",
+    "category": "Pendidikan",
+    "readTime": "15 menit baca"
+  },
+  {
+    "date": "2026-04-29",
+    "slug": "penyandang-disabilitas",
+    "file": "artikel/penyandang-disabilitas.html",
+    "title": "Penyandang Disabilitas: Hak, Kartu Disabilitas, dan Dukungan di Indonesia",
+    "description": "Penyandang disabilitas di Indonesia dilindungi UU No. 8 Tahun 2016. Pelajari hak-hak, cara membuat kartu disabilitas, dan program dukungan yang tersedia.",
+    "image": "Dokumentasi/cpao-keluarga-muslim-bermain-bersama-053.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-05-02",
+    "slug": "inklusi-sosial",
+    "file": "artikel/inklusi-sosial.html",
+    "title": "Inklusi Sosial Adalah: Pengertian, Prinsip, dan Penerapan di Indonesia",
+    "description": "Inklusi sosial adalah prinsip yang memastikan setiap individu berpartisipasi penuh dalam masyarakat. Pelajari pengertian, prinsip, dan penerapan inklusi di Indonesia.",
+    "image": "Dokumentasi/cpao-peserta-kelas-memasak-foto-bersama-076.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-05-05",
+    "slug": "gpk-adalah",
+    "file": "artikel/gpk-adalah.html",
+    "title": "GPK Adalah: Peran Guru Pembimbing Khusus dalam Pendidikan Inklusi",
+    "description": "GPK adalah Guru Pembimbing Khusus yang bertugas mendampingi ABK di sekolah inklusi. Pelajari peran, tugas, kualifikasi, dan perbedaan GPK dengan shadow teacher.",
+    "image": "Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-tradisional-006.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-05-08",
+    "slug": "slow-learner",
+    "file": "artikel/slow-learner.html",
+    "title": "Slow Learner: Pengertian, Ciri-Ciri, Penyebab, dan Cara Mengajar Anak Lambat Belajar",
+    "description": "Slow learner adalah anak dengan kemampuan belajar di bawah rata-rata (IQ 70-90). Kenali ciri-ciri, penyebab, dan cara mengajar anak lambat belajar secara efektif.",
+    "image": "Dokumentasi/21-jan-2026-anak-anak-belajar-di-rumah-002.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-05-11",
+    "slug": "terapi-aba",
+    "file": "artikel/terapi-aba.html",
+    "title": "Terapi ABA: Pengertian, Metode, Manfaat, dan Penerapan untuk Anak Autis",
+    "description": "Terapi ABA (Applied Behavior Analysis) adalah metode terapi berbasis bukti untuk anak autis. Pelajari prinsip, teknik, manfaat, dan perbandingan dengan floor time.",
+    "image": "Dokumentasi/cpao-anak-bermain-kartu-rumah-tropis-012.webp",
+    "category": "Terapi",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-05-14",
+    "slug": "donasi-online",
+    "file": "artikel/donasi-online.html",
+    "title": "Donasi Online untuk Pendidikan: Cara Berdonasi, CSR, dan Zakat untuk Anak Berkebutuhan Khusus",
+    "description": "Donasi online untuk pendidikan anak berkebutuhan khusus. Pelajari cara berdonasi, program CSR pendidikan, dan menyalurkan zakat untuk pendidikan ABK di YUKA.",
+    "image": "Dokumentasi/cpao-peserta-kelas-memasak-foto-bersama-075.webp",
+    "category": "Donasi",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-05-17",
+    "slug": "pendidikan-khusus",
+    "file": "artikel/pendidikan-khusus.html",
+    "title": "Pendidikan Khusus: Pengertian, Jenis, dan Program Pembelajaran Individual (PPI)",
+    "description": "Pendidikan khusus adalah layanan pendidikan untuk anak berkebutuhan khusus. Pelajari jenis, kurikulum, dan cara menyusun Program Pembelajaran Individual (PPI).",
+    "image": "Dokumentasi/21-jan-2026-siswa-belajar-di-rumah-tradisional-001.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-05-20",
+    "slug": "perbedaan-autis-dan-adhd",
+    "file": "artikel/perbedaan-autis-dan-adhd.html",
+    "title": "Perbedaan Autis dan ADHD: Gejala, Diagnosis, dan Penanganan yang Tepat",
+    "description": "Apa perbedaan autis dan ADHD? Pelajari gejala, cara diagnosis, dan penanganan yang tepat. Termasuk penjelasan autis berat dan komorbiditas autis-ADHD.",
+    "image": "Dokumentasi/cpao-anak-laki-laki-duduk-sofa-014.webp",
+    "category": "Pendidikan",
+    "readTime": "15 menit baca"
+  },
+  {
+    "date": "2026-05-23",
+    "slug": "panti-asuhan-yogyakarta",
+    "file": "artikel/panti-asuhan-yogyakarta.html",
+    "title": "Panti Asuhan dan Yayasan Disabilitas di Yogyakarta: Daftar Lengkap dan Cara Membantu",
+    "description": "Daftar panti asuhan dan yayasan disabilitas di Yogyakarta lengkap dengan alamat dan cara membantu. Termasuk YUKA, yayasan untuk anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-kunjungan-kelompok-rumah-tradisional-jawa-056.webp",
+    "category": "Lokal",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-05-26",
+    "slug": "asesmen-abk",
+    "file": "artikel/asesmen-abk.html",
+    "title": "Asesmen ABK: Pengertian, Jenis, dan Proses Asesmen Anak Berkebutuhan Khusus",
+    "description": "Asesmen ABK adalah proses penilaian untuk memahami kebutuhan anak berkebutuhan khusus. Pelajari jenis, tahapan, instrumen, dan pentingnya asesmen ABK.",
+    "image": "Dokumentasi/21-jan-2026-dua-perempuan-berhijab-belajar-bersama-004.webp",
     "category": "Pendidikan",
     "readTime": "14 menit baca"
   }
