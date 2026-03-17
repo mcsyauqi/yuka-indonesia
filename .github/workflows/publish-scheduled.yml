@@ -173,8 +173,7 @@ jobs:
           subject: "[YUKA] Artikel Baru Tayang - ${{ steps.publish.outputs.published_count }} artikel dipublikasikan"
           to: ahmadthariqsyauqi@gmail.com
           from: YUKA Auto-Publisher <noreply@yukaindonesia.com>
-          content_type: text/html
-          body: |
+          html_body: |
             <!DOCTYPE html>
             <html>
             <head><meta charset="UTF-8"></head>
