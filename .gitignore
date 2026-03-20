@@ -30,3 +30,7 @@ Riset*.md
 Kunjungan*.pdf
 Temuan*.md
 Panduan*.txt
+
+# Secrets
+.env
+token_gdrive.json

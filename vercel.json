@@ -1,3 +1,23 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "statusCode": 301 },
+    { "source": "/tentang.html", "destination": "/tentang", "statusCode": 301 },
+    { "source": "/program.html", "destination": "/program", "statusCode": 301 },
+    { "source": "/galeri.html", "destination": "/galeri", "statusCode": 301 },
+    { "source": "/blog.html", "destination": "/blog", "statusCode": 301 },
+    { "source": "/kontak.html", "destination": "/kontak", "statusCode": 301 },
+    { "source": "/donasi.html", "destination": "/donasi", "statusCode": 301 }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()" }
+      ]
+    }
+  ]
 }
