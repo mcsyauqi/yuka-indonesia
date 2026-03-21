@@ -338,5 +338,95 @@
     "image": "Dokumentasi/16-feb-2026-siswa-ibk-taruna-imani-suasana-sekolah.webp",
     "category": "Pendidikan",
     "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-07-04",
+    "slug": "bisindo-adalah",
+    "file": "artikel/bisindo-adalah.html",
+    "title": "BISINDO Adalah: Pengertian, Sejarah, Perbedaan dengan SIBI, dan Cara Belajar",
+    "description": "BISINDO adalah bahasa isyarat alami yang digunakan komunitas Tuli Indonesia. Pelajari perbedaan BISINDO dan SIBI, sejarah, dan cara belajar.",
+    "image": "Dokumentasi/21-jan-2026-anak-anak-belajar-bersama-guru-013.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-07-07",
+    "slug": "disabilitas-intelektual-adalah",
+    "file": "artikel/disabilitas-intelektual-adalah.html",
+    "title": "Disabilitas Intelektual Adalah: Pengertian, Penyebab, Klasifikasi, dan Penanganan",
+    "description": "Disabilitas intelektual adalah keterbatasan fungsi intelektual dan perilaku adaptif. Kenali penyebab, klasifikasi, ciri-ciri, dan penanganannya.",
+    "image": "Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-005.webp",
+    "category": "Pendidikan",
+    "readTime": "15 menit baca"
+  },
+  {
+    "date": "2026-07-10",
+    "slug": "slb-terdekat",
+    "file": "artikel/slb-terdekat.html",
+    "title": "SLB Terdekat: Cara Mencari Sekolah Luar Biasa dan Daftar SLB di Yogyakarta",
+    "description": "Panduan mencari SLB terdekat dari lokasi Anda. Daftar lengkap SLB di Yogyakarta, Sleman, Bantul, dan tips memilih sekolah terbaik untuk ABK.",
+    "image": "Dokumentasi/21-jan-2026-spanduk-student-day-sekolah-inklusi-011.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-07-13",
+    "slug": "terapis-speech-delay",
+    "file": "artikel/terapis-speech-delay.html",
+    "title": "Terapis Speech Delay: Panduan Memilih Terapis Wicara untuk Anak",
+    "description": "Panduan lengkap memilih terapis speech delay untuk anak. Kenali kapan anak perlu terapis, biaya, proses terapi, dan tips orang tua.",
+    "image": "Dokumentasi/21-jan-2026-anak-anak-belajar-bersama-guru-013.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca"
+  },
+  {
+    "date": "2026-07-16",
+    "slug": "latihan-motorik-halus",
+    "file": "artikel/latihan-motorik-halus.html",
+    "title": "Latihan Motorik Halus: 25+ Aktivitas untuk Anak dan ABK",
+    "description": "Kumpulan latihan motorik halus untuk anak usia 0-12 tahun dan ABK. 25+ aktivitas praktis dari dasar hingga lanjutan.",
+    "image": "Dokumentasi/cocopandan-lemon-ibu-anak-belajar-membuat-kerajinan-004.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-07-19",
+    "slug": "program-pembelajaran-individual",
+    "file": "artikel/program-pembelajaran-individual.html",
+    "title": "Program Pembelajaran Individual (PPI): Pengertian, Komponen, dan Contoh",
+    "description": "Program Pembelajaran Individual (PPI) adalah rencana pendidikan khusus untuk ABK. Pelajari cara membuat, komponen, dan contoh PPI.",
+    "image": "Dokumentasi/21-jan-2026-siswa-belajar-di-rumah-tradisional-001.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-07-22",
+    "slug": "intervensi-dini",
+    "file": "artikel/intervensi-dini.html",
+    "title": "Intervensi Dini untuk ABK: Panduan Lengkap Golden Age 0-6 Tahun",
+    "description": "Intervensi dini adalah penanganan sejak usia 0-6 tahun untuk anak berkebutuhan khusus. Kenali pentingnya, jenis, dan program intervensi dini.",
+    "image": "Dokumentasi/21-jan-2026-anak-anak-belajar-bersama-guru-013.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-07-25",
+    "slug": "csr-pendidikan",
+    "file": "artikel/csr-pendidikan.html",
+    "title": "CSR Pendidikan: Program Tanggung Jawab Sosial untuk ABK",
+    "description": "CSR pendidikan adalah program tanggung jawab sosial perusahaan di bidang pendidikan. Pelajari manfaat, contoh, dan cara bermitra dengan yayasan.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-bersama-outdoor-046.webp",
+    "category": "Donasi",
+    "readTime": "12 menit baca"
+  },
+  {
+    "date": "2026-07-28",
+    "slug": "floor-time-terapi",
+    "file": "artikel/floor-time-terapi.html",
+    "title": "Floor Time Terapi: Metode DIR Floortime untuk Anak Autis",
+    "description": "Floor time terapi (DIR/Floortime) adalah metode terapi bermain untuk anak autis. Pelajari prinsip, tahapan, cara melakukan, dan perbedaan dengan ABA.",
+    "image": "Dokumentasi/cpao-anak-bermain-di-rumah-058.webp",
+    "category": "Terapi",
+    "readTime": "14 menit baca"
   }
 ]
