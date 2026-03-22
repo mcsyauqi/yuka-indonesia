@@ -45,8 +45,32 @@ D:/Claude/Projects/Yuka/
 ## Current State (22 Mar 2026)
 - **63 articles** exist as HTML files
 - **21 articles** published (visible in blog.html)
-- **43 articles** in publish-schedule.json (next: 24 Mar, last: 28 Jul 2026)
+- **445 articles** in publish-schedule.json (24 Mar 2026 - 31 Dec 2026)
+- **696 keywords** researched across 5 batches
+- **Schedule**: 3 articles/day Mon-Sat, auto-publish via GitHub Actions
 - **Social Media**: SKIP (no Instagram scheduling needed)
+
+## Keyword Batches
+| Batch | Keywords | Source |
+|-------|----------|--------|
+| Batch 1-3 | 133 | Manual research |
+| Batch 4 | 275 | DataForSEO SERP + PAA |
+| Batch 5 | 421 | 10 topic clusters |
+| **Total** | **696** | |
+
+## Schedule Distribution
+| Month | Articles |
+|-------|----------|
+| Mar 2026 | 3 |
+| Apr 2026 | 10 |
+| May 2026 | 10 |
+| Jun 2026 | 10 |
+| Jul 2026 | 19 |
+| Aug 2026 | 78 |
+| Sep 2026 | 78 |
+| Oct 2026 | 81 |
+| Nov 2026 | 75 |
+| Dec 2026 | 81 |
 
 ## Google Drive
 - Folder ID: `14NRs18DkGWogwtMaJlcjx3P9rQaIbcII`
