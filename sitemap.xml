@@ -1,381 +1,423 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://yukaindonesia.com/</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/donasi</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/donasi</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/program</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/program</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/tentang</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/tentang</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/blog</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/blog</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/galeri</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/galeri</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/kontak</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/kontak</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/abk-adalah-anak-berkebutuhan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/abk-adalah-anak-berkebutuhan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/abk-menghadapi-era-ai</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/abk-menghadapi-era-ai</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/adhd-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/adhd-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/asesmen-abk</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/asesmen-abk</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/autisme-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/autisme-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/bahasa-isyarat</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/bahasa-isyarat</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/cerebral-palsy-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/bisindo-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/difabel-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/cerebral-palsy-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/disabilitas-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/csr-pendidikan</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/disleksia-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/difabel-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/donasi-online</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/disabilitas-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/down-syndrome-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/disabilitas-intelektual-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/gpk-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/disleksia-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/hiperaktif-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/donasi-online</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/homeschooling-anak-berkebutuhan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/down-syndrome-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/inklusi-sosial</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/floor-time-terapi</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/kecerdasan-majemuk</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/gpk-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/kesulitan-belajar</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/hiperaktif-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/keutamaan-merawat-anak-yatim</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/homeschooling-anak-berkebutuhan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/kisah-ilham-hafiz</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/inklusi-sosial</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/kisah-mas-ilham-mandiri-telur-asin</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/intervensi-dini</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/memilih-yayasan-anak-berkebutuhan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/kecerdasan-majemuk</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/montessori-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/kesulitan-belajar</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/motorik-halus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/keutamaan-merawat-anak-yatim</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/motorik-kasar-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/kisah-ilham-hafiz</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/panti-asuhan-yogyakarta</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/kisah-mas-ilham-mandiri-telur-asin</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/pendidikan-inklusi</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/latihan-motorik-halus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/pendidikan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/memilih-yayasan-anak-berkebutuhan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/penyandang-disabilitas</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/montessori-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/peran-orang-tua-pendidikan-inklusi</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/motorik-halus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/perbedaan-autis-dan-adhd</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/motorik-kasar-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/program-pemberdayaan-anak-berkebutuhan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/panti-asuhan-yogyakarta</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/program-ramadhan-yuka-2026</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/pendidikan-inklusi</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/retardasi-mental-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/pendidikan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/sensori-integrasi</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/penyandang-disabilitas</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/shadow-teacher-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/peran-orang-tua-pendidikan-inklusi</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/slb-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/perbedaan-autis-dan-adhd</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/slow-learner</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/program-pembelajaran-individual</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/speech-delay-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/program-pemberdayaan-anak-berkebutuhan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/terapi-aba</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/program-ramadhan-yuka-2026</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/terapi-bermain</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/retardasi-mental-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/terapi-memasak-anak-berkebutuhan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/sensori-integrasi</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/terapi-okupasi</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/shadow-teacher-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/terapi-wicara</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/slb-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/tips-mendampingi-anak-autis</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/slb-terdekat</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/transparansi-donasi</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/slow-learner</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/tuna-daksa-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/speech-delay-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/tuna-rungu-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/terapi-aba</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/tuna-wicara-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/terapi-bermain</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/tunaganda-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/terapi-memasak-anak-berkebutuhan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/tunagrahita-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/terapi-okupasi</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/tunalaras-adalah</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/terapi-wicara</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/wisata-edukasi-anak-berkebutuhan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/terapis-speech-delay</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://yukaindonesia.com/artikel/yayasan-sosial-anak-berkebutuhan-khusus</loc>
-        <lastmod>2026-03-18</lastmod>
+        <loc>https://www.yukaindonesia.com/artikel/tips-mendampingi-anak-autis</loc>
+        <lastmod>2026-03-25</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-    <loc>https://yukaindonesia.com/artikel/retardasi-mental-adalah.html</loc>
-    <lastmod>2026-03-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
+        <loc>https://www.yukaindonesia.com/artikel/transparansi-donasi</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
     <url>
-    <loc>https://yukaindonesia.com/artikel/kesulitan-belajar.html</loc>
-    <lastmod>2026-03-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-</url>
+        <loc>https://www.yukaindonesia.com/artikel/tuna-daksa-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yukaindonesia.com/artikel/tuna-rungu-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yukaindonesia.com/artikel/tuna-wicara-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yukaindonesia.com/artikel/tunaganda-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yukaindonesia.com/artikel/tunagrahita-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yukaindonesia.com/artikel/tunalaras-adalah</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yukaindonesia.com/artikel/wisata-edukasi-anak-berkebutuhan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.yukaindonesia.com/artikel/yayasan-sosial-anak-berkebutuhan-khusus</loc>
+        <lastmod>2026-03-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
 </urlset>

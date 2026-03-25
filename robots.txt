@@ -1,5 +1,5 @@
 # Robots.txt for YUKA - Yayasan Ukhuwah Kaffah Amanatullah
-# https://yukaindonesia.com
+# https://www.yukaindonesia.com
 
 User-agent: *
 Allow: /
@@ -16,5 +16,5 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Sitemap
-Sitemap: https://yukaindonesia.com/sitemap.xml
+# Sitemap & RSS Feed
+Sitemap: https://www.yukaindonesia.com/sitemap.xml
