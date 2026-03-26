@@ -86,7 +86,47 @@
     <!-- Blog Section -->
     <section class="section bg-white">
         <div class="container">
-            <div class="blog-grid">
+
+            <!-- Search & Filter -->
+            <div style="margin-bottom: 2rem;">
+                <!-- Search Bar -->
+                <div style="position:relative; max-width:560px; margin: 0 auto 1.25rem;">
+                    <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#9ca3af;" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                    </svg>
+                    <input type="text" id="blogSearch" placeholder="Cari artikel..." autocomplete="off"
+                        style="width:100%;padding:0.65rem 1rem 0.65rem 2.75rem;border:1.5px solid var(--gray-200);border-radius:50px;font-size:0.95rem;font-family:inherit;outline:none;transition:border-color .2s;box-sizing:border-box;"
+                        onfocus="this.style.borderColor='var(--primary)'" onblur="this.style.borderColor='var(--gray-200)'">
+                    <button id="blogSearchClear" onclick="clearSearch()" aria-label="Hapus pencarian"
+                        style="display:none;position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:1.1rem;line-height:1;">✕</button>
+                </div>
+
+                <!-- Category Filter Chips -->
+                <div style="display:flex;flex-wrap:nowrap;gap:0.5rem;overflow-x:auto;padding-bottom:4px;justify-content:center;scrollbar-width:none;" id="categoryChips">
+                    <button class="chip chip-active" onclick="filterCategory('semua')" data-cat="semua">Semua</button>
+                    <button class="chip" onclick="filterCategory('Pendidikan')" data-cat="Pendidikan">Pendidikan</button>
+                    <button class="chip" onclick="filterCategory('Terapi')" data-cat="Terapi">Terapi</button>
+                    <button class="chip" onclick="filterCategory('Parenting')" data-cat="Parenting">Parenting</button>
+                    <button class="chip" onclick="filterCategory('Inspirasi')" data-cat="Inspirasi">Inspirasi</button>
+                    <button class="chip" onclick="filterCategory('Dakwah')" data-cat="Dakwah">Dakwah</button>
+                    <button class="chip" onclick="filterCategory('Program')" data-cat="Program">Program</button>
+                    <button class="chip" onclick="filterCategory('Panduan')" data-cat="Panduan">Panduan</button>
+                    <button class="chip" onclick="filterCategory('Laporan')" data-cat="Laporan">Laporan</button>
+                </div>
+            </div>
+
+            <style>
+                .chip { padding:0.4rem 1rem; border:1.5px solid var(--gray-200); border-radius:50px; background:#fff; font-size:0.82rem; font-family:inherit; cursor:pointer; white-space:nowrap; transition:all .2s; color:var(--gray-600); }
+                .chip:hover { border-color:var(--primary); color:var(--primary); }
+                .chip-active { border-color:var(--primary); background:var(--primary); color:#fff !important; }
+                .blog-card.hidden { display:none; }
+                #blogNoResult { display:none; text-align:center; padding:3rem 0; color:var(--gray-500); }
+            </style>
+
+            <!-- Result count -->
+            <p id="blogCount" style="color:var(--gray-500);margin-bottom:1.5rem;font-size:0.9rem;text-align:center;"></p>
+
+            <div class="blog-grid" id="blogGrid">
                 <!-- Article: Kesulitan Belajar: Pengertian, Jenis, Penyebab, dan Cara Mengatasi pada Anak -->
                 <article class="card blog-card animate-on-scroll">
                     <div class="card-image">
@@ -763,12 +803,107 @@
                 </article>
             </div>
 
-            <!-- Pagination -->
-            <div class="text-center mt-2xl animate-on-scroll">
-                <p style="color: var(--gray-500);">Menampilkan 22 artikel terbaru</p>
+            <!-- No result -->
+            <div id="blogNoResult">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="color:#d1d5db;margin-bottom:1rem;"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <p style="font-size:1rem;font-weight:600;color:var(--gray-600);">Artikel tidak ditemukan</p>
+                <p style="font-size:0.85rem;">Coba kata kunci lain atau pilih kategori berbeda.</p>
+                <button onclick="clearSearch()" style="margin-top:0.75rem;padding:0.5rem 1.25rem;border:1.5px solid var(--primary);border-radius:50px;background:#fff;color:var(--primary);font-family:inherit;font-size:0.85rem;cursor:pointer;">Reset Filter</button>
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-2xl">
+                <button id="loadMoreBtn" onclick="loadMore()" class="btn btn-outline" style="display:none;">
+                    Tampilkan Lebih Banyak
+                </button>
             </div>
         </div>
     </section>
+
+    <script>
+    (function() {
+        const BATCH = 12;
+        let activeCategory = 'semua';
+        let searchQuery = '';
+        let visibleCount = BATCH;
+
+        const allCards = Array.from(document.querySelectorAll('#blogGrid .blog-card'));
+
+        function getCardCategory(card) {
+            const el = card.querySelector('.card-category');
+            return el ? el.textContent.trim() : '';
+        }
+        function getCardText(card) {
+            const title = card.querySelector('.card-title') ? card.querySelector('.card-title').textContent.toLowerCase() : '';
+            const text = card.querySelector('.card-text') ? card.querySelector('.card-text').textContent.toLowerCase() : '';
+            const cat = getCardCategory(card).toLowerCase();
+            return title + ' ' + text + ' ' + cat;
+        }
+
+        function getFiltered() {
+            return allCards.filter(card => {
+                const matchCat = activeCategory === 'semua' || getCardCategory(card) === activeCategory;
+                const matchSearch = searchQuery === '' || getCardText(card).includes(searchQuery);
+                return matchCat && matchSearch;
+            });
+        }
+
+        function render() {
+            const filtered = getFiltered();
+            allCards.forEach(c => c.classList.add('hidden'));
+            filtered.slice(0, visibleCount).forEach(c => c.classList.remove('hidden'));
+
+            // Count
+            const countEl = document.getElementById('blogCount');
+            if (searchQuery || activeCategory !== 'semua') {
+                countEl.textContent = filtered.length + ' artikel ditemukan';
+            } else {
+                countEl.textContent = 'Menampilkan ' + Math.min(visibleCount, filtered.length) + ' dari ' + filtered.length + ' artikel';
+            }
+
+            // No result
+            document.getElementById('blogNoResult').style.display = filtered.length === 0 ? 'block' : 'none';
+
+            // Load more
+            const btn = document.getElementById('loadMoreBtn');
+            btn.style.display = filtered.length > visibleCount ? 'inline-block' : 'none';
+        }
+
+        window.filterCategory = function(cat) {
+            activeCategory = cat;
+            visibleCount = BATCH;
+            document.querySelectorAll('.chip').forEach(c => {
+                c.classList.toggle('chip-active', c.dataset.cat === cat);
+            });
+            render();
+        };
+
+        window.loadMore = function() {
+            visibleCount += BATCH;
+            render();
+        };
+
+        window.clearSearch = function() {
+            document.getElementById('blogSearch').value = '';
+            searchQuery = '';
+            activeCategory = 'semua';
+            visibleCount = BATCH;
+            document.querySelectorAll('.chip').forEach(c => c.classList.toggle('chip-active', c.dataset.cat === 'semua'));
+            document.getElementById('blogSearchClear').style.display = 'none';
+            render();
+        };
+
+        document.getElementById('blogSearch').addEventListener('input', function() {
+            searchQuery = this.value.toLowerCase().trim();
+            visibleCount = BATCH;
+            document.getElementById('blogSearchClear').style.display = searchQuery ? 'block' : 'none';
+            render();
+        });
+
+        // Initial render
+        render();
+    })();
+    </script>
 
     <!-- Newsletter Section -->
     <section class="section bg-gray">
