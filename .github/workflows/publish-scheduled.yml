@@ -100,7 +100,7 @@ jobs:
           import re
           with open('blog.html', 'r') as f:
               content = f.read()
-          marker = '<div class=\"blog-grid\">'
+          marker = '<div class=\"blog-grid\" id=\"blogGrid\">'
           if marker in content:
               card = '''$CARD'''
               content = content.replace(marker, marker + '\n' + card, 1)
