@@ -61,7 +61,7 @@ jobs:
             DISPLAY_DATE=$(date -d "$pubdate" +"%d %b %Y" 2>/dev/null || date -j -f "%Y-%m-%d" "$pubdate" +"%d %b %Y" 2>/dev/null || echo "$pubdate")
 
             # Append to email rows
-            EMAIL_ROWS="${EMAIL_ROWS}<tr><td style='padding:16px;border-bottom:1px solid #eee'><strong style='font-size:16px'>${title}</strong><br><small style='color:#666'>Kategori: ${category} | ${readtime} | ${DISPLAY_DATE}</small><br><span style='color:#555;font-size:13px'>${desc}</span><br><a href='https://yukaindonesia.com/${file}' style='display:inline-block;margin-top:8px;padding:8px 16px;background:#2e7d32;color:#ffffff;text-decoration:none;border-radius:4px;font-size:13px;font-weight:bold'>Baca Artikel &rarr;</a></td></tr>"
+            EMAIL_ROWS="${EMAIL_ROWS}<tr><td style='padding:16px;border-bottom:1px solid #eee'><strong style='font-size:16px'>${title}</strong><br><small style='color:#666'>Kategori: ${category} | ${readtime} | ${DISPLAY_DATE}</small><br><span style='color:#555;font-size:13px'>${desc}</span><br><a href='https://www.yukaindonesia.com/artikel/${slug}' style='display:inline-block;margin-top:8px;padding:8px 16px;background:#2e7d32;color:#ffffff;text-decoration:none;border-radius:4px;font-size:13px;font-weight:bold'>Baca Artikel &rarr;</a></td></tr>"
 
             # Create blog card HTML
             CARD="                <!-- Article: $title -->
@@ -111,17 +111,19 @@ jobs:
               print(f'Added to blog.html: $slug')
           "
 
-            # Add to sitemap.xml
+            # Add to sitemap.xml (clean URL: www + no .html)
+            CLEAN_URL="https://www.yukaindonesia.com/artikel/$slug"
             python3 -c "
           with open('sitemap.xml', 'r') as f:
               content = f.read()
+          clean_url = 'https://www.yukaindonesia.com/artikel/$slug'
           entry = '''    <url>
-              <loc>https://yukaindonesia.com/$file</loc>
+              <loc>''' + clean_url + '''</loc>
               <lastmod>$pubdate</lastmod>
               <changefreq>monthly</changefreq>
               <priority>0.8</priority>
           </url>'''
-          if 'https://yukaindonesia.com/$file' not in content:
+          if clean_url not in content:
               content = content.replace('</urlset>', entry + '\n</urlset>')
               with open('sitemap.xml', 'w') as f:
                   f.write(content)
