@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Poppins', sans-serif; max-width: 900px; margin: 0 auto; padding: 30px; font-size: 12px; color: #333; padding-bottom: 80px; }
+  h1 { font-size: 22px; border-bottom: 3px solid #2B3A67; color: #2B3A67; padding-bottom: 10px; margin: 20px 0 12px; }
+  h2 { font-size: 16px; color: #2B3A67; border-left: 4px solid #FFD700; padding-left: 10px; margin: 20px 0 10px; }
+  h3 { font-size: 13px; color: #2B3A67; margin: 14px 0 6px; }
+  p { font-size: 12px; line-height: 1.7; color: #444; margin-bottom: 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+  table th { background: #2B3A67; color: #fff; padding: 8px 10px; text-align: left; font-size: 11px; }
+  table td { font-size: 11px; }
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 6px 16px; background: #f4f6fb; padding: 14px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #2B3A67; }
+  .meta-grid div { font-size: 11px; color: #555; }
+  .meta-grid strong { color: #2B3A67; }
+  .stat-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .stat-card { background: #2B3A67; color: #fff; border-radius: 8px; padding: 14px; text-align: center; }
+  .stat-card .num { font-size: 28px; font-weight: 700; color: #FFD700; }
+  .stat-card .label { font-size: 10px; opacity: 0.85; margin-top: 4px; }
+  .stat-cards-2 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 16px 0; }
+  .stat-card-2 { background: #f4f6fb; border: 1px solid #dde3f0; border-radius: 8px; padding: 12px; text-align: center; }
+  .stat-card-2 .num2 { font-size: 22px; font-weight: 700; color: #2B3A67; }
+  .stat-card-2 .label2 { font-size: 10px; color: #666; margin-top: 3px; }
+  .insight-box { background: #fff8e1; border-left: 4px solid #FFD700; padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 10px 0; font-size: 11px; color: #555; }
+  .action-box { background: #e8f5e9; border-left: 4px solid #2e7d32; padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 10px 0; font-size: 11px; }
+  .warn-box { background: #fce4ec; border-left: 4px solid #c62828; padding: 10px 14px; border-radius: 0 6px 6px 0; margin: 10px 0; font-size: 11px; }
+  .progress-bar-wrap { background: #e0e0e0; border-radius: 20px; height: 10px; overflow: hidden; margin: 4px 0; }
+  .progress-bar { height: 10px; border-radius: 20px; background: linear-gradient(90deg, #2B3A67, #FFD700); }
+  .kpi-table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+  .kpi-table th { background: #2B3A67; color: #fff; padding: 7px 10px; font-size: 11px; text-align: left; }
+  .kpi-table td { padding: 7px 10px; border-bottom: 1px solid #eee; font-size: 11px; }
+  .report-footer { position: static !important; margin-top: 40px !important; }
+  .page-break { page-break-before: always; }
+  ul li { margin-bottom: 5px; font-size: 11px; color: #444; }
+  ol li { margin-bottom: 5px; font-size: 11px; color: #444; }
+</style>
+</head><body>
+
+<!-- Report Header: YUKA -->
+<div style="
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:16px 28px;
+  background:#2B3A67;
+  color:#FFFFFF;
+  font-family:'Poppins',sans-serif;
+  border-bottom:3px solid #FFD700;
+  margin:-30px -30px 24px -30px;
+">
+  <div style="display:flex;align-items:center;">
+    <img src="data:image/png;base64,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" alt="YUKA" style="height:60px;width:auto;margin-right:14px;">
+    
+  </div>
+  <div style="text-align:right;font-size:11px;opacity:0.7;">
+    <div>yukaindonesia.com</div>
+  </div>
+</div>
+
+<h1>Review Performa 1 Bulan Pertama SEO — YUKA Indonesia</h1>
+
+<div class="meta-grid">
+  <div><strong>Status:</strong> Selesai</div>
+  <div><strong>Tanggal Review:</strong> 30 Maret 2026</div>
+  <div><strong>PIC:</strong> Ahmad Thariq Syauqi</div>
+  <div><strong>Periode Data:</strong> 28 Feb — 30 Mar 2026</div>
+  <div><strong>Platform:</strong> Google Search Console</div>
+  <div><strong>Board:</strong> SEO — yukaindonesia.com</div>
+  <div><strong>Target Jangka Pendek:</strong> 500 organic visitors/bulan dalam 3 bulan</div>
+  <div><strong>Live URL:</strong> https://www.yukaindonesia.com</div>
+  <div><strong>Tools:</strong> GSC API, GitHub Actions, Playwright</div>
+</div>
+
+<!-- KPI Highlights -->
+<div class="stat-cards">
+  <div class="stat-card">
+    <div class="num">1</div>
+    <div class="label">Total Clicks<br>28 Feb – 30 Mar</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">104</div>
+    <div class="label">Total Impressions<br>28 Feb – 30 Mar</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">0.96%</div>
+    <div class="label">Avg CTR<br>Semua halaman</div>
+  </div>
+  <div class="stat-card">
+    <div class="num">22.0</div>
+    <div class="label">Avg Position<br>Semua halaman</div>
+  </div>
+</div>
+
+<div class="stat-cards-2">
+  <div class="stat-card-2">
+    <div class="num2">63</div>
+    <div class="label2">File Artikel HTML<br>Tersedia di repo</div>
+  </div>
+  <div class="stat-card-2">
+    <div class="num2">23</div>
+    <div class="label2">Artikel Live<br>Di blog grid</div>
+  </div>
+  <div class="stat-card-2">
+    <div class="num2">6</div>
+    <div class="label2">Halaman Terindeks<br>Google (GSC)</div>
+  </div>
+  <div class="stat-card-2">
+    <div class="num2">443</div>
+    <div class="label2">Artikel Terjadwal<br>Apr – Des 2026</div>
+  </div>
+</div>
+
+<h2>Ringkasan Eksekusi</h2>
+<p>
+  Bulan Maret 2026 adalah bulan pertama implementasi SEO untuk YUKA Indonesia (yukaindonesia.com) — yayasan anak berkebutuhan khusus berbasis Yogyakarta. Dalam bulan ini, seluruh infrastruktur teknikal SEO dibangun dari nol: sitemap, RSS feed, robots.txt, canonical tags, IndexNow, GA4, serta pipeline auto-publish artikel via GitHub Actions (cron harian 09:00 WIB).
+</p>
+<p>
+  Batch pertama sebanyak 63 artikel SEO berhasil ditulis dan di-deploy ke repo GitHub. Dari 63 artikel tersebut, 23 artikel sudah ditampilkan di halaman blog, sementara sisanya terjadwal auto-publish setiap 3 hari sekali hingga Desember 2026. Total jadwal artikel mencapai 443 artikel tambahan.
+</p>
+<p>
+  Data GSC masih sangat awal — Google baru mulai crawl dan mengindeks site dalam minggu-minggu terakhir. Dari 6 halaman yang sudah punya data GSC, 2 keyword sudah masuk top 10, dan halaman <em>keutamaan-merawat-anak-yatim</em> ranking di posisi 6.1. Ini indikasi positif bahwa konten berkualitas tinggi sudah mulai dikenali Google meski site baru.
+</p>
+<p>
+  Secara keseluruhan, kondisi bulan pertama sangat normal untuk site baru. Indexing masih berlangsung dan ranking akan terus naik seiring bertambahnya artikel live dan link internal. Review berikutnya dijadwalkan akhir April 2026.
+</p>
+
+<h2>Status Indexing & Coverage</h2>
+
+<div class="insight-box">
+  <strong>Insight:</strong> Dari 63 artikel HTML yang tersedia, baru 6 halaman yang mendapat data di GSC. Ini bukan masalah — site baru butuh 4–8 minggu untuk Googlebot crawl penuh. Sitemap sudah disubmit. IndexNow sudah aktif untuk notif cepat ke Bing/Yandex.
+</div>
+
+<h3>Progress Indexing</h3>
+<p>Estimasi halaman terindeks vs total halaman:</p>
+<p style="font-size:11px;color:#666">6 terindeks dari 70+ halaman (homepage + 63 artikel + pages)</p>
+<div class="progress-bar-wrap"><div class="progress-bar" style="width:8%"></div></div>
+<p style="font-size:10px;color:#999;margin-top:3px">8% — Normal untuk site usia < 1 bulan</p>
+
+<h3>Halaman yang Sudah Punya Data GSC</h3>
+<table>
+  <thead>
+    <tr>
+      <th style="width:30px">#</th>
+      <th>Halaman</th>
+      <th style="text-align:center;width:60px">Clicks</th>
+      <th style="text-align:center;width:80px">Impressions</th>
+      <th style="text-align:center;width:70px">Avg Pos</th>
+      <th style="text-align:center;width:60px">CTR</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background:#e8f5e9;">
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px;color:#333">Homepage</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>1</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">3</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">4.7</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">33.3%</td>
+  </tr><tr style="">
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px;color:#333">artikel/adhd-adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">42</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">65.9</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+  </tr><tr style="">
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">3</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px;color:#333">artikel/down-syndrome-adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">12</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">45.7</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+  </tr><tr style="background:#e8f5e9;">
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">4</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px;color:#333">artikel/keutamaan-merawat-anak-yatim</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">15</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">6.1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+  </tr><tr style="background:#e8f5e9;">
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">5</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px;color:#333">kontak</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">22</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">4.2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+  </tr><tr style="background:#e8f5e9;">
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">6</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px;color:#333">program</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">10</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">5.4</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+  </tr>
+  </tbody>
+</table>
+
+<p style="font-size:10px;color:#888;margin-top:5px">Hijau = Top 10 | Kuning = Top 30 | Putih = >30</p>
+
+<h2>Performa Keywords</h2>
+
+<div class="stat-cards-2" style="grid-template-columns:repeat(4,1fr)">
+  <div class="stat-card-2"><div class="num2">2</div><div class="label2">Keywords<br>Top 10</div></div>
+  <div class="stat-card-2"><div class="num2">0</div><div class="label2">Keywords<br>Top 11–20</div></div>
+  <div class="stat-card-2"><div class="num2">4</div><div class="label2">Keywords<br>Top 21–50</div></div>
+  <div class="stat-card-2"><div class="num2">26</div><div class="label2">Keywords<br>Di bawah 50</div></div>
+</div>
+
+<h3>Top 30 Keywords by Impressions (dengan posisi & peluang)</h3>
+<table>
+  <thead>
+    <tr>
+      <th style="width:30px">#</th>
+      <th>Keyword</th>
+      <th style="text-align:center;width:55px">Clicks</th>
+      <th style="text-align:center;width:80px">Impressions</th>
+      <th style="text-align:center;width:65px">Avg Pos</th>
+      <th style="text-align:center;width:55px">CTR</th>
+      <th style="text-align:center;width:80px">Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">44.5</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fff8e1;color:#f57f17;padding:1px 6px;border-radius:10px;font-size:9px;font-weight:bold">TOP 50</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">5</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">58.6</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>58.6</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">3</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd artinya</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">45.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fff8e1;color:#f57f17;padding:1px 6px;border-radius:10px;font-size:9px;font-weight:bold">TOP 50</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">4</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd ciri ciri</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">89.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>89.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">5</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd disorder adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">75.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>75.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">6</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd in kids</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">5</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">87.8</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>87.8</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">7</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd itu apa</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">41.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fff8e1;color:#f57f17;padding:1px 6px;border-radius:10px;font-size:9px;font-weight:bold">TOP 50</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">8</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">adhd penyakit apa</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">67.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>67.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">9</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">anak adhd adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">73.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>73.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">10</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">anak down syndrome</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">74.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>74.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">11</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">apa down syndrome</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">54.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>54.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">12</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">apa itu attention deficit disorder</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">74.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>74.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">13</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">attention deficit disorder adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">67.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>67.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">14</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">ciri anak adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">88.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>88.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">15</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">ciri ciri adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">94.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>94.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">16</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">definisi adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">46.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fff8e1;color:#f57f17;padding:1px 6px;border-radius:10px;font-size:9px;font-weight:bold">TOP 50</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">17</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">down sindrom</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">82.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>82.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">18</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">down syndrome</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">73.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>73.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">19</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">down syndrome adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">66.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>66.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">20</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">down syndrome adalah penyakit</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">62.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>62.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">21</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">down syndrome karena apa</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">89.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>89.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">22</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">gangguan adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">71.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>71.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">23</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">gangguan mental adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">64.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>64.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">24</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">gejala adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">79.5</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>79.5</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">25</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">obat adhd adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">63.5</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>63.5</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">26</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">penyakit adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">63.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>63.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">27</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">penyakit adhd adalah</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">68.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>68.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">28</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">penyakit mental adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">2</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">66.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>66.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">29</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">penyebab adhd</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">75.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>75.0</span></td>
+  </tr><tr>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">30</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;font-size:10px">penyebab adhd pada anak</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><b>0</b></td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">1</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px;color:#c62828">64.0</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px">0.0%</td>
+    <td style="padding:6px 10px;border-bottom:1px solid #eee;text-align:center;font-size:10px"><span style="background:#fce4ec;color:#c62828;padding:1px 6px;border-radius:10px;font-size:9px">>64.0</span></td>
+  </tr>
+  </tbody>
+</table>
+
+<div class="insight-box">
+  <strong>Keyword Terbaik saat ini:</strong><br>
+  • <strong>yuka indonesia</strong> / branded terms — posisi ~5, sudah ada klik (1 click dari homepage)<br>
+  • <strong>keutamaan merawat anak yatim</strong> — posisi 6.1, 15 impresi. Hampir di page 1!<br>
+  • <strong>adhd adalah</strong> — 5 impresi, posisi 58.6 — masih jauh tapi keyword volume tinggi<br>
+  • <strong>adhd</strong> — 2 impresi, posisi 44.5 — butuh push lebih lanjut
+</div>
+
+<h2>Analisis & Rekomendasi Aksi</h2>
+
+<h3>1. Artikel ranking 21–50 → Tambah Konten & Internal Links</h3>
+<div class="action-box">
+  <ul>
+    <li><strong>adhd-adalah</strong> (pos ~44–66): Artikel sudah diindex tapi ranking dalam. Tambah FAQ section, perluas konten ke 2500+ kata, tambah internal links dari artikel terkait (autisme-adalah, hiperaktif-adalah)</li>
+    <li><strong>down-syndrome-adalah</strong> (pos ~45): Strategi sama — perluas konten, tambah data statistik Indonesia terbaru</li>
+  </ul>
+</div>
+
+<h3>2. Artikel belum terindeks → Percepat Crawling</h3>
+<div class="warn-box">
+  <ul>
+    <li>57+ artikel HTML belum dapat data GSC — kemungkinan belum di-crawl</li>
+    <li>Aksi: Submit sitemap secara manual via GSC console setiap batch artikel baru</li>
+    <li>Pastikan internal linking antar artikel aktif (setiap artikel harus ada 2-3 link ke artikel lain)</li>
+    <li>Gunakan IndexNow API yang sudah aktif untuk notifikasi cepat ke search engines</li>
+  </ul>
+</div>
+
+<h3>3. Artikel keutamaan-merawat-anak-yatim → Optimasi CTR</h3>
+<div class="action-box">
+  <ul>
+    <li>Posisi 6.1 = sudah di halaman 1 Google! CTR masih 0% karena impresi baru 15x</li>
+    <li>Optimalkan meta title untuk click-bait: tambah angka, tahun (2026), atau power word</li>
+    <li>Tambah structured data FAQ untuk rich snippet</li>
+  </ul>
+</div>
+
+<h2 class="page-break">Daftar Artikel Live (23 Artikel)</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="width:30px">#</th>
+      <th>Judul Artikel</th>
+      <th>Slug</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">1</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Tunaganda Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Pendidikan Anak Tunaganda</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">tunaganda-adalah</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Kesulitan Belajar: Pengertian, Jenis, Penyebab, dan Cara Mengatasi pada Anak</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">kesulitan-belajar</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">3</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Retardasi Mental Adalah: Pengertian, Penyebab, Klasifikasi, dan Penanganan</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">retardasi-mental-adalah</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">4</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Tunalaras Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Penanganan Anak Tunalaras</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">tunalaras-adalah</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">5</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Difabel Adalah: Pengertian, Jenis, Hak, dan Dukungan untuk Penyandang Disabilitas</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">difabel-adalah</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">6</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Disleksia Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Cara Membantu Anak Disleksia</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">disleksia-adalah</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">7</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Autisme Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Penanganan Anak Autis</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">autisme-adalah</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">8</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">ADHD Adalah: Pengertian, Gejala, Penyebab, dan Cara Menangani Anak ADHD</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">adhd-adalah</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">9</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">ABK Adalah: Pengertian, Jenis, Ciri-Ciri, dan Cara Mendukung Anak Berkebutuhan Khusus</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">abk-adalah-anak-berkebutuhan-khusus</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">10</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Wisata Edukasi untuk Anak Berkebutuhan Khusus: Manfaat, Tips, dan Pengalaman di Yogyakarta</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">wisata-edukasi-anak-berkebutuhan-khusus</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">11</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Terapi Memasak untuk Anak Berkebutuhan Khusus: Manfaat Luar Biasa dan Cara Menerapkannya</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">terapi-memasak-anak-berkebutuhan-khusus</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">12</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Peran Orang Tua dalam Mendukung Pendidikan Inklusi Anak Berkebutuhan Khusus</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">peran-orang-tua-pendidikan-inklusi</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">13</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Kisah Nyata Mas Ilham: IBK Autis yang Mandiri Lewat Produksi Telur Asin</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">kisah-mas-ilham-mandiri-telur-asin</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">14</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Menyambut Ramadhan Penuh Berkah: 5 Program Besar YUKA 2026</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">program-ramadhan-yuka-2026</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">15</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Peran Penting Yayasan Sosial untuk Anak Berkebutuhan Khusus di Indonesia</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">yayasan-sosial-anak-berkebutuhan-khusus</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">16</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Panduan Lengkap Memilih Yayasan Sosial Terbaik untuk Anak Berkebutuhan Khusus</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">memilih-yayasan-anak-berkebutuhan-khusus</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">17</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Program Pemberdayaan Anak Berkebutuhan Khusus: Dari Pendidikan hingga Kemandirian</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">program-pemberdayaan-anak-berkebutuhan-khusus</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">18</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Mengenal Pendidikan Inklusi: Hak Setiap Anak untuk Belajar</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">pendidikan-inklusi</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">19</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">5 Tips Mendampingi Anak Autis dengan Penuh Kasih Sayang</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">tips-mendampingi-anak-autis</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">20</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Keutamaan Merawat dan Menyantuni Anak Yatim dalam Islam</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">keutamaan-merawat-anak-yatim</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">21</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Mempersiapkan Anak Berkebutuhan Khusus Menghadapi Era AI</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">abk-menghadapi-era-ai</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">22</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Kisah Ilham: Dari Anak Autis Menjadi Hafiz 30 Juz</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">kisah-ilham-hafiz</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">23</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Transparansi: Ke Mana Donasi Anda Disalurkan?</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:9px;color:#666">transparansi-donasi</td>
+  </tr>
+  </tbody>
+</table>
+
+<h2>Jadwal Auto-Publish 20 Artikel Berikutnya</h2>
+<p style="font-size:11px;color:#666">Total artikel terjadwal: <strong>443 artikel</strong> (hingga Desember 2026, interval 3 hari)</p>
+<table>
+  <thead>
+    <tr>
+      <th style="width:30px">#</th>
+      <th style="width:120px">Tanggal Publish</th>
+      <th>Judul</th>
+      <th style="width:100px">Kategori</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">1</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-03-30</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Tunagrahita Adalah: Pengertian, Klasifikasi, Ciri-Ciri, dan Pendidikan yang Tepat</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-02</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Down Syndrome Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Cara Mendukung Anak Down Syndrome</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">3</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-05</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Bahasa Isyarat: Pengertian, Jenis, dan Cara Belajar Bahasa Isyarat Indonesia</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">4</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-08</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Tuna Daksa Adalah: Pengertian, Jenis, Penyebab, dan Hak Penyandang Tuna Daksa</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">5</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-11</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Terapi Okupasi: Pengertian, Manfaat, dan Proses Terapi untuk Anak Berkebutuhan Khusus</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Terapi</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">6</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-14</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Tuna Wicara Adalah: Pengertian, Penyebab, Ciri-Ciri, dan Cara Berkomunikasi</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">7</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-17</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">SLB Adalah: Pengertian, Jenis, Kurikulum, dan Daftar SLB di Yogyakarta</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">8</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-20</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Terapi Wicara: Pengertian, Manfaat, Biaya, dan Proses Terapi untuk Anak</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Terapi</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">9</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-23</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Shadow Teacher Adalah: Peran, Tugas, dan Cara Menjadi Pendamping ABK</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">10</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-26</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Kecerdasan Majemuk: 9 Jenis Kecerdasan Menurut Howard Gardner dan Penerapannya</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">11</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-04-29</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Penyandang Disabilitas: Hak, Kartu Disabilitas, dan Dukungan di Indonesia</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">12</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-02</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Inklusi Sosial Adalah: Pengertian, Prinsip, dan Penerapan di Indonesia</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">13</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-05</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">GPK Adalah: Peran Guru Pembimbing Khusus dalam Pendidikan Inklusi</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">14</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-08</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Slow Learner: Pengertian, Ciri-Ciri, Penyebab, dan Cara Mengajar Anak Lambat Belajar</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">15</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-11</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Terapi ABA: Pengertian, Metode, Manfaat, dan Penerapan untuk Anak Autis</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Terapi</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">16</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-14</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Donasi Online untuk Pendidikan: Cara Berdonasi, CSR, dan Zakat untuk Anak Berkebutuhan Khusus</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Donasi</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">17</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-17</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan Khusus: Pengertian, Jenis, dan Program Pembelajaran Individual (PPI)</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">18</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-20</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Perbedaan Autis dan ADHD: Gejala, Diagnosis, dan Penanganan yang Tepat</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr><tr style="">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">19</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-23</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Panti Asuhan dan Yayasan Disabilitas di Yogyakarta: Daftar Lengkap dan Cara Membantu</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Lokal</td>
+  </tr><tr style="background:#f9f9f9">
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">20</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">2026-05-26</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Asesmen ABK: Pengertian, Jenis, dan Proses Asesmen Anak Berkebutuhan Khusus</td>
+    <td style="padding:5px 10px;border-bottom:1px solid #eee;font-size:10px">Pendidikan</td>
+  </tr>
+  </tbody>
+</table>
+
+<h2>KPI & Target</h2>
+<table class="kpi-table">
+  <thead>
+    <tr>
+      <th>KPI</th>
+      <th>Formula</th>
+      <th>Saat Ini (Mar 2026)</th>
+      <th>Target Bulan ke-3 (Jun 2026)</th>
+      <th>Target Bulan ke-6 (Sep 2026)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Organic Clicks</td><td>Sum(clicks) dari GSC</td><td style="color:#c62828"><b>1</b></td><td style="color:#f57f17">500/bulan</td><td style="color:#2e7d32">2.000/bulan</td></tr>
+    <tr style="background:#f9f9f9"><td>Organic Impressions</td><td>Sum(impressions) dari GSC</td><td><b>104</b></td><td>10.000/bulan</td><td>50.000/bulan</td></tr>
+    <tr><td>Avg CTR</td><td>clicks / impressions × 100</td><td>0.96%</td><td>3–5%</td><td>5–8%</td></tr>
+    <tr style="background:#f9f9f9"><td>Avg Position</td><td>Avg posisi semua keyword</td><td>22.0</td><td>≤ 20</td><td>≤ 15</td></tr>
+    <tr><td>Halaman Terindeks</td><td>Coverage report GSC</td><td><b>6</b></td><td>50+</td><td>100+</td></tr>
+    <tr style="background:#f9f9f9"><td>Keywords Top 10</td><td>Count keyword pos ≤ 10</td><td><b>2</b></td><td>20+</td><td>100+</td></tr>
+    <tr><td>Artikel Live</td><td>Count artikel di blog grid</td><td><b>23</b></td><td>63 (all published)</td><td>150+</td></tr>
+    <tr style="background:#f9f9f9"><td>Donasi Conversion</td><td>GA4: donasi_click / organic sessions</td><td>N/A (traffic terlalu kecil)</td><td>> 0.5%</td><td>> 1%</td></tr>
+  </tbody>
+</table>
+
+<h2>Next Steps</h2>
+<ol style="padding-left:20px">
+  <li style="margin-bottom:10px"><strong>[April 2026]</strong> Monitor indexing progress — cek di GSC Coverage report apakah artikel-artikel Maret sudah terindeks</li>
+  <li style="margin-bottom:10px"><strong>[1-7 Apr 2026]</strong> Tambah internal links ke artikel adhd-adalah dan down-syndrome-adalah dari artikel yang sudah live</li>
+  <li style="margin-bottom:10px"><strong>[Apr 2026]</strong> Optimasi meta title/description untuk keutamaan-merawat-anak-yatim (posisi 6.1 → target top 3)</li>
+  <li style="margin-bottom:10px"><strong>[Ongoing, setiap 3 hari]</strong> Auto-publish artikel berjalan otomatis via GitHub Actions — pantau email notifikasi setiap pagi</li>
+  <li style="margin-bottom:10px"><strong>[30 April 2026]</strong> Review Performa Bulan ke-2 — target: 50+ halaman terindeks, 20+ keyword top 50</li>
+  <li style="margin-bottom:10px"><strong>[Juni 2026]</strong> Review Performa Bulan ke-3 — target milestone 500 organic visitors/bulan</li>
+  <li style="margin-bottom:10px"><strong>[Jika indexing lambat]</strong> Submit sitemap manual di GSC → Sitemaps → Submit sitemap baru</li>
+  <li style="margin-bottom:10px"><strong>[Jika ada artikel bounce rate tinggi]</strong> Improve content quality — tambah FAQ, gambar, video embed</li>
+</ol>
+
+<h2>Files & Dokumentasi</h2>
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Deskripsi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="font-size:10px">D:/Projects/Yuka/data/gsc_by_page.json</td><td style="font-size:10px">Data GSC by halaman (clicks, impressions, ctr, position)</td></tr>
+    <tr style="background:#f9f9f9"><td style="font-size:10px">D:/Projects/Yuka/data/gsc_by_query.json</td><td style="font-size:10px">Data GSC by keyword sorted by clicks</td></tr>
+    <tr><td style="font-size:10px">D:/Projects/Yuka/data/gsc_by_impressions.json</td><td style="font-size:10px">Data GSC by keyword sorted by impressions</td></tr>
+    <tr style="background:#f9f9f9"><td style="font-size:10px">D:/Projects/Yuka/data/gsc_by_query_page.json</td><td style="font-size:10px">Data GSC kombinasi keyword + halaman</td></tr>
+    <tr><td style="font-size:10px">D:/Projects/Yuka/publish-schedule.json</td><td style="font-size:10px">Jadwal 443 artikel terjadwal auto-publish</td></tr>
+    <tr style="background:#f9f9f9"><td style="font-size:10px">D:/Projects/Yuka/.github/workflows/publish-scheduled.yml</td><td style="font-size:10px">GitHub Actions workflow auto-publish (fixed marker)</td></tr>
+    <tr><td style="font-size:10px">D:/Projects/Yuka/data/YUKA_SEO_Review_Bulan1_Report.pdf</td><td style="font-size:10px">PDF laporan ini</td></tr>
+  </tbody>
+</table>
+
+<!-- Report Footer: YUKA — fixed to every page -->
+<div class="report-footer" style="
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px 28px;
+  background:#2B3A67;
+  color:#FFFFFF;
+  font-family:'Poppins',sans-serif;
+  border-top:3px solid #FFD700;
+  font-size:11px;
+  z-index:999;
+">
+  <div>
+    <span style="font-weight:700;">YUKA</span>
+    <span style="opacity:0.7;margin-left:6px;">| Yayasan Ukhuwah Kaffah Amanatullah</span>
+  </div>
+  <div style="text-align:right;opacity:0.7;">
+    <div>yukaindonesia.com</div>
+  </div>
+</div>
+
+</body></html>

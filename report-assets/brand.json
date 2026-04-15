@@ -1,0 +1,18 @@
+{
+  "name": "YUKA",
+  "tagline": "Yayasan Ukhuwah Kaffah Amanatullah",
+  "colors": {
+    "primary": "#2B3A67",
+    "secondary": "#FFD700",
+    "dark": "#2B3A67",
+    "text": "#FFFFFF"
+  },
+  "font": {
+    "family": "Poppins",
+    "import": "https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+  },
+  "website": "yukaindonesia.com",
+  "logo": "D:/Projects/Yuka/Logo/Logo.png",
+  "logoSize": 60,
+  "hideNameInHeader": true
+}

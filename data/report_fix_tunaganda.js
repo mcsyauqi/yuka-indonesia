@@ -1,0 +1,157 @@
+const fs = require('fs');
+const path = require('path');
+
+const html = `<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: A4; margin: 20mm 15mm; }
+  body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 30px; font-size: 11px; color: #333; line-height: 1.5; }
+  h1 { font-size: 22px; border-bottom: 3px solid #F2AA52; padding-bottom: 8px; margin-top: 0; }
+  h2 { font-size: 16px; color: #F2AA52; border-left: 4px solid #F2AA52; padding-left: 8px; margin-top: 24px; }
+  h3 { font-size: 13px; color: #555; margin-top: 16px; }
+  .header-banner { background: linear-gradient(135deg, #1a1a2e, #16213e); color: white; padding: 24px; border-radius: 12px; margin-bottom: 20px; }
+  .header-banner h1 { color: #F2AA52; border-bottom-color: rgba(255,255,255,0.3); }
+  .header-banner p { color: rgba(255,255,255,0.8); margin: 4px 0; font-size: 12px; }
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 16px; background: #f8f8f8; padding: 14px; border-radius: 8px; margin-bottom: 16px; font-size: 11px; }
+  .meta-grid .label { color: #999; font-size: 10px; text-transform: uppercase; }
+  .meta-grid .value { font-weight: bold; color: #333; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 11px; }
+  table th { background: #111; color: #F2AA52; padding: 8px 10px; text-align: left; font-size: 10px; text-transform: uppercase; }
+  table td { padding: 8px 10px; border-bottom: 1px solid #eee; }
+  table tr:nth-child(even) td { background: #fafafa; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 9px; font-weight: bold; }
+  .badge-green { background: #e8f5e9; color: #2e7d32; }
+  .badge-red { background: #ffebee; color: #c62828; }
+  .badge-blue { background: #e3f2fd; color: #1565c0; }
+  .code-block { background: #1e1e1e; color: #d4d4d4; padding: 12px; border-radius: 6px; font-family: monospace; font-size: 10px; margin: 8px 0; overflow: hidden; }
+  .code-block .comment { color: #6a9955; }
+  .code-block .string { color: #ce9178; }
+  .alert { padding: 12px 14px; border-radius: 6px; margin: 10px 0; font-size: 11px; }
+  .alert-red { background: #ffebee; border-left: 4px solid #c62828; }
+  .alert-green { background: #e8f5e9; border-left: 4px solid #2e7d32; }
+  .footer { margin-top: 30px; padding-top: 12px; border-top: 1px solid #ddd; text-align: center; color: #999; font-size: 9px; }
+  ul { padding-left: 18px; }
+  ul li { margin-bottom: 4px; }
+</style>
+</head>
+<body>
+
+<div class="header-banner">
+  <h1>Laporan: Fix Artikel Tunaganda Tidak Muncul di Blog</h1>
+  <p><strong>Project:</strong> YUKA Indonesia (yukaindonesia.com)</p>
+  <p><strong>Task:</strong> Bug Fix GitHub Actions Workflow — Blog Grid Marker Mismatch</p>
+  <p><strong>Tanggal:</strong> 27 Maret 2026 | <strong>Commit:</strong> ad36961</p>
+</div>
+
+<div class="meta-grid">
+  <div><span class="label">Status</span><br><span class="value"><span class="badge badge-green">SELESAI & LIVE</span></span></div>
+  <div><span class="label">PIC</span><br><span class="value">Ahmad Thariq Syauqi</span></div>
+  <div><span class="label">Severity</span><br><span class="value"><span class="badge badge-red">BUG — Artikel Tidak Tayang</span></span></div>
+  <div><span class="label">Deploy</span><br><span class="value">Vercel (auto via GitHub push)</span></div>
+  <div><span class="label">Commit Fix</span><br><span class="value">ad36961</span></div>
+  <div><span class="label">Artikel Affected</span><br><span class="value">tunaganda-adalah (27 Mar 2026)</span></div>
+</div>
+
+<h2>Ringkasan</h2>
+<p>Artikel "Tunaganda Adalah" yang dijadwalkan tayang 27 Maret 2026 tidak muncul di halaman blog meskipun GitHub Actions workflow melaporkan "success". Root cause: saat fitur search & filter ditambahkan ke blog.html, ID attribute ditambahkan ke elemen blog-grid, mengubah marker dari <code>&lt;div class="blog-grid"&gt;</code> menjadi <code>&lt;div class="blog-grid" id="blogGrid"&gt;</code>. Workflow masih mencari marker lama, sehingga Python string replace() gagal diam-diam tanpa error.</p>
+
+<h2>Timeline Kejadian</h2>
+<table>
+  <thead><tr><th>Waktu</th><th>Event</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>27 Mar 10:41 UTC</td><td>Commit 568da37 — fitur search & filter blog ditambahkan, marker berubah</td><td><span class="badge badge-blue">Context</span></td></tr>
+    <tr><td>27 Mar 02:41 UTC</td><td>GitHub Actions cron berjalan, artikel tunaganda diproses</td><td><span class="badge badge-red">Bug Terjadi</span></td></tr>
+    <tr><td>27 Mar 02:41 UTC</td><td>Python replace() gagal diam-diam — blog.html tidak berubah</td><td><span class="badge badge-red">Silent Fail</span></td></tr>
+    <tr><td>27 Mar 02:41 UTC</td><td>Commit 3535120 — publish-schedule.json + sitemap.xml diupdate (tanpa blog.html)</td><td><span class="badge badge-red">Bug Commit</span></td></tr>
+    <tr><td>27 Mar pagi</td><td>User melaporkan artikel tidak muncul di website</td><td><span class="badge badge-red">Ditemukan</span></td></tr>
+    <tr><td>27 Mar</td><td>Root cause diidentifikasi via git diff + workflow analysis</td><td><span class="badge badge-blue">Investigasi</span></td></tr>
+    <tr><td>27 Mar</td><td>Commit ad36961 — blog.html dipatch + workflow diperbaiki</td><td><span class="badge badge-green">Fixed</span></td></tr>
+  </tbody>
+</table>
+
+<h2>Root Cause Analysis</h2>
+
+<div class="alert alert-red">
+  <strong>Root Cause:</strong> Blog grid marker mismatch antara workflow YAML dan blog.html setelah penambahan fitur search/filter.
+</div>
+
+<h3>Marker Sebelum (di Workflow)</h3>
+<div class="code-block">marker = '&lt;div class="blog-grid"&gt;'</div>
+
+<h3>Marker Sesudah (di blog.html setelah commit 568da37)</h3>
+<div class="code-block">marker = '&lt;div class="blog-grid" id="blogGrid"&gt;'</div>
+
+<h3>Mengapa Tidak Ada Error?</h3>
+<p>Python <code>str.replace(marker, ...)</code> tidak melempar exception jika string tidak ditemukan — ia hanya tidak melakukan apa-apa dan mengembalikan string asli. Akibatnya:</p>
+<ul>
+  <li>blog.html ditulis ulang tapi isinya identik (tidak berubah)</li>
+  <li>Git tidak mendeteksi perubahan pada blog.html</li>
+  <li>Workflow tetap melanjutkan ke step berikutnya (update schedule, commit, push)</li>
+  <li>Step "Commit and push changes" sukses karena publish-schedule.json dan sitemap.xml memang berubah</li>
+  <li>Email notifikasi dikirim seolah artikel berhasil dipublikasikan</li>
+</ul>
+
+<h2>Before vs After</h2>
+<table>
+  <thead><tr><th>Aspek</th><th>Sebelum Fix</th><th>Sesudah Fix</th></tr></thead>
+  <tbody>
+    <tr><td>Artikel tunaganda di blog.html</td><td>Tidak ada</td><td>Ada (posisi pertama di grid)</td></tr>
+    <tr><td>Workflow marker</td><td><code>blog-grid</code> (tanpa ID)</td><td><code>blog-grid id="blogGrid"</code> (benar)</td></tr>
+    <tr><td>Auto-publish artikel berikutnya</td><td>Akan gagal juga</td><td>Akan berjalan normal</td></tr>
+    <tr><td>publish-schedule.json</td><td>tunaganda sudah di-remove</td><td>Tidak perlu tambah kembali</td></tr>
+  </tbody>
+</table>
+
+<h2>File yang Diubah (Commit ad36961)</h2>
+<table>
+  <thead><tr><th>File</th><th>Perubahan</th></tr></thead>
+  <tbody>
+    <tr><td>blog.html</td><td>+31 baris — card artikel tunaganda-adalah ditambahkan manual di posisi pertama blog grid</td></tr>
+    <tr><td>.github/workflows/publish-scheduled.yml</td><td>-1/+1 baris — marker diupdate dari blog-grid ke blog-grid id="blogGrid"</td></tr>
+  </tbody>
+</table>
+
+<h2>Artikel yang Diperbaiki</h2>
+<table>
+  <thead><tr><th>Field</th><th>Value</th></tr></thead>
+  <tbody>
+    <tr><td>Slug</td><td>tunaganda-adalah</td></tr>
+    <tr><td>Judul</td><td>Tunaganda Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Pendidikan Anak Tunaganda</td></tr>
+    <tr><td>Kategori</td><td>Pendidikan</td></tr>
+    <tr><td>Tanggal Tayang</td><td>27 Maret 2026</td></tr>
+    <tr><td>Read Time</td><td>14 menit baca</td></tr>
+    <tr><td>URL Artikel</td><td>yukaindonesia.com/artikel/tunaganda-adalah</td></tr>
+    <tr><td>Status</td><td>Live</td></tr>
+  </tbody>
+</table>
+
+<h2>Jadwal Artikel Berikutnya</h2>
+<table>
+  <thead><tr><th>Tanggal</th><th>Slug</th><th>Status Workflow</th></tr></thead>
+  <tbody>
+    <tr><td>30 Mar 2026</td><td>tunagrahita-adalah</td><td><span class="badge badge-green">Aman — workflow sudah dipatch</span></td></tr>
+    <tr><td>02 Apr 2026</td><td>tuna-wicara-adalah</td><td><span class="badge badge-green">Aman</span></td></tr>
+    <tr><td>05 Apr 2026</td><td>tunanetra-adalah</td><td><span class="badge badge-green">Aman</span></td></tr>
+  </tbody>
+</table>
+
+<h2>Rekomendasi Improvement Workflow</h2>
+<ul>
+  <li><strong>Tambah validasi</strong> — setelah replace(), cek apakah file benar-benar berubah. Jika tidak, log warning/error eksplisit</li>
+  <li><strong>Deteksi marker</strong> — jika marker tidak ditemukan, cari fallback marker atau hentikan workflow dengan exit code non-zero</li>
+  <li><strong>Test sebelum commit</strong> — grep blog.html untuk slug sebelum meng-commit, pastikan artikel memang masuk</li>
+</ul>
+
+<div class="footer">
+  <p>Generated by Claude Code | YUKA Indonesia SEO Project | 27 Maret 2026</p>
+  <p>Commit Fix: ad36961 | Root Cause: Blog Grid Marker Mismatch after Search/Filter Feature</p>
+</div>
+
+</body>
+</html>`;
+
+const outputPath = path.join(__dirname, 'report_fix_tunaganda.html');
+fs.writeFileSync(outputPath, html);
+console.log('HTML written:', outputPath);

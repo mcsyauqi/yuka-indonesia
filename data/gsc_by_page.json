@@ -1,0 +1,59 @@
+{
+  "rows": [
+    {
+      "keys": [
+        "https://www.yukaindonesia.com/"
+      ],
+      "clicks": 1,
+      "impressions": 3,
+      "ctr": 0.33333333333333331,
+      "position": 4.6666666666666661
+    },
+    {
+      "keys": [
+        "https://www.yukaindonesia.com/artikel/adhd-adalah"
+      ],
+      "clicks": 0,
+      "impressions": 42,
+      "ctr": 0,
+      "position": 65.857142857142861
+    },
+    {
+      "keys": [
+        "https://www.yukaindonesia.com/artikel/down-syndrome-adalah"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0,
+      "position": 45.666666666666664
+    },
+    {
+      "keys": [
+        "https://www.yukaindonesia.com/artikel/keutamaan-merawat-anak-yatim"
+      ],
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0,
+      "position": 6.0666666666666664
+    },
+    {
+      "keys": [
+        "https://www.yukaindonesia.com/kontak.html"
+      ],
+      "clicks": 0,
+      "impressions": 22,
+      "ctr": 0,
+      "position": 4.1818181818181817
+    },
+    {
+      "keys": [
+        "https://www.yukaindonesia.com/program.html"
+      ],
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0,
+      "position": 5.4
+    }
+  ],
+  "responseAggregationType": "byPage"
+}
