@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-tradisional-006.webp" alt="Siswa-siswa belajar di ruang kelas Sekolah Inklusi Taruna Imani YUKA, didampingi guru pembimbing khusus di Sleman, Yogyakarta">
+            <img src="../Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-tradisional-006.webp" alt="Siswa-siswa belajar di ruang kelas Sekolah Inklusi Taruna Imani YUKA, didampingi guru pembimbing khusus di Sleman, Yogyakarta" width="800" height="600">
         </div>
     </div>
 
@@ -286,7 +287,7 @@
             </div>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-069.webp" alt="Anak-anak berkebutuhan khusus belajar memasak tradisional dengan pendampingan di program YUKA Yogyakarta">
+                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-069.webp" alt="Anak-anak berkebutuhan khusus belajar memasak tradisional dengan pendampingan di program YUKA Yogyakarta" width="800" height="600">
                 <figcaption>Kegiatan belajar memasak sebagai bagian dari program pendampingan ABK di YUKA, yang melibatkan kolaborasi antara GPK dan instruktur kegiatan.</figcaption>
             </figure>
 
@@ -331,7 +332,7 @@
             <p>GPK juga menyusun laporan perkembangan ABK yang disampaikan kepada kepala sekolah, guru kelas, dan orang tua. Laporan ini memuat informasi tentang capaian belajar, perkembangan perilaku, keterampilan sosial, dan rekomendasi untuk periode berikutnya. Pelaporan yang teratur dan transparan membantu semua pihak memahami kondisi anak dan bekerja sama secara lebih efektif.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-instruktur-memasak-kelas-kuliner-063.webp" alt="Instruktur memberikan pendampingan individual kepada anak dalam kegiatan kelas kuliner di YUKA">
+                <img src="../Dokumentasi/cpao-instruktur-memasak-kelas-kuliner-063.webp" alt="Instruktur memberikan pendampingan individual kepada anak dalam kegiatan kelas kuliner di YUKA" width="800" height="600">
                 <figcaption>Pendampingan individual dalam kegiatan kelas kuliner di YUKA, menggambarkan peran penting guru pembimbing khusus dalam mendukung proses belajar ABK.</figcaption>
             </figure>
 
@@ -436,7 +437,7 @@
             <p>Perlu dicatat bahwa GPK dan shadow teacher bukan posisi yang saling menggantikan, melainkan saling melengkapi. Di sekolah inklusi yang ideal, GPK mengoordinasikan layanan pendidikan secara menyeluruh, sementara shadow teacher memberikan pendampingan intensif bagi anak-anak yang membutuhkan dukungan ekstra. Kolaborasi antara keduanya akan memberikan hasil terbaik bagi perkembangan ABK.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, menggambarkan pentingnya kolaborasi antara sekolah dan keluarga dalam pendidikan inklusi">
+                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, menggambarkan pentingnya kolaborasi antara sekolah dan keluarga dalam pendidikan inklusi" width="800" height="600">
                 <figcaption>Kolaborasi antara GPK dan keluarga sangat penting untuk memastikan kesinambungan program pembelajaran anak berkebutuhan khusus antara sekolah dan rumah.</figcaption>
             </figure>
 
@@ -587,7 +588,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -614,8 +615,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

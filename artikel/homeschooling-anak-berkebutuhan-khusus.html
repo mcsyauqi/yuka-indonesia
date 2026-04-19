@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/21-jan-2026-siswa-belajar-di-rumah-tradisional-001.webp" alt="Anak belajar di rumah dengan suasana nyaman dan hangat, ilustrasi homeschooling untuk anak berkebutuhan khusus">
+            <img src="../Dokumentasi/21-jan-2026-siswa-belajar-di-rumah-tradisional-001.webp" alt="Anak belajar di rumah dengan suasana nyaman dan hangat, ilustrasi homeschooling untuk anak berkebutuhan khusus" width="800" height="600">
         </div>
     </div>
 
@@ -271,7 +272,7 @@
             <p>Banyak anak berkebutuhan khusus yang mengalami kecemasan, stres berlebihan, atau bahkan perundungan di lingkungan sekolah formal. Anak dengan gangguan spektrum <a href="autisme-adalah">autisme</a>, misalnya, sering kali kewalahan dengan stimulus berlebihan di kelas yang ramai. Homeschooling memberikan lingkungan belajar yang lebih tenang, terkontrol, dan bebas dari tekanan sosial yang tidak sehat.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, menunjukkan suasana homeschooling yang hangat dan mendukung">
+                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, menunjukkan suasana homeschooling yang hangat dan mendukung" width="800" height="600">
                 <figcaption>Suasana belajar bersama di rumah yang hangat dan mendukung menjadi salah satu keunggulan homeschooling untuk anak berkebutuhan khusus.</figcaption>
             </figure>
 
@@ -334,7 +335,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-bermain-kartu-rumah-tropis-012.webp" alt="Anak-anak bermain kartu edukatif bersama, menggambarkan aktivitas belajar sambil bermain dalam homeschooling komunitas">
+                <img src="../Dokumentasi/cpao-anak-bermain-kartu-rumah-tropis-012.webp" alt="Anak-anak bermain kartu edukatif bersama, menggambarkan aktivitas belajar sambil bermain dalam homeschooling komunitas" width="800" height="600">
                 <figcaption>Aktivitas belajar sambil bermain bisa menjadi bagian dari program homeschooling komunitas yang menyenangkan bagi anak berkebutuhan khusus.</figcaption>
             </figure>
 
@@ -436,7 +437,7 @@
             <p>Anak berkebutuhan khusus umumnya membutuhkan rutinitas yang terstruktur dan dapat diprediksi. Buatlah jadwal harian yang konsisten namun tetap fleksibel. Sertakan waktu belajar, waktu bermain, waktu istirahat, dan waktu terapi dalam jadwal tersebut. Gunakan alat bantu visual seperti jadwal bergambar untuk membantu anak memahami dan mengikuti rutinitas.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-dewasa-047.webp" alt="Anak belajar memasak bersama pendamping dewasa, menunjukkan kegiatan life skill dalam homeschooling">
+                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-dewasa-047.webp" alt="Anak belajar memasak bersama pendamping dewasa, menunjukkan kegiatan life skill dalam homeschooling" width="800" height="600">
                 <figcaption>Kegiatan life skill seperti memasak bisa menjadi bagian dari kurikulum homeschooling yang menyenangkan sekaligus melatih kemandirian anak berkebutuhan khusus.</figcaption>
             </figure>
 
@@ -571,7 +572,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -598,8 +599,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -300,7 +301,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
 
             <div class="navbar-menu" id="navbarMenu">
@@ -363,7 +364,7 @@
     <!-- Featured Image -->
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/21-jan-2026-keluarga-foto-bersama-rumah-tradisional-014.webp" alt="Keluarga bahagia dengan anak berkebutuhan khusus di yayasan sosial YUKA yang memberikan pelayanan berkualitas">
+            <img src="../Dokumentasi/21-jan-2026-keluarga-foto-bersama-rumah-tradisional-014.webp" alt="Keluarga bahagia dengan anak berkebutuhan khusus di yayasan sosial YUKA yang memberikan pelayanan berkualitas" width="800" height="600">
         </div>
     </div>
 
@@ -409,7 +410,7 @@
             <p>Setiap anak berkebutuhan khusus adalah unik. Anak dengan autisme memiliki kebutuhan yang berbeda dengan anak dengan ADHD, tunanetra, atau disabilitas intelektual. Yayasan yang baik harus mampu menyediakan program yang sesuai dengan kebutuhan spesifik anak Anda, bukan pendekatan one-size-fits-all.</p>
 
             <figure>
-                <img src="../Dokumentasi/21-jan-2026-dua-perempuan-berhijab-belajar-bersama-004.webp" alt="Guru dan siswa ABK dalam sesi pembelajaran individual yang disesuaikan dengan kebutuhan anak di yayasan sosial berkualitas">
+                <img src="../Dokumentasi/21-jan-2026-dua-perempuan-berhijab-belajar-bersama-004.webp" alt="Guru dan siswa ABK dalam sesi pembelajaran individual yang disesuaikan dengan kebutuhan anak di yayasan sosial berkualitas" width="800" height="600">
                 <figcaption>Pendampingan individual yang disesuaikan dengan kebutuhan anak</figcaption>
             </figure>
 
@@ -525,7 +526,7 @@
             </ul>
 
             <figure>
-                <img src="../Dokumentasi/cpao-ibu-anak-belajar-memasak-bersama-027.webp" alt="Ibu dan anak belajar memasak bersama dalam program pelatihan keterampilan hidup di yayasan sosial anak berkebutuhan khusus">
+                <img src="../Dokumentasi/cpao-ibu-anak-belajar-memasak-bersama-027.webp" alt="Ibu dan anak belajar memasak bersama dalam program pelatihan keterampilan hidup di yayasan sosial anak berkebutuhan khusus" width="800" height="600">
                 <figcaption>Program pelatihan keterampilan hidup yang melibatkan orang tua</figcaption>
             </figure>
 
@@ -644,7 +645,7 @@
             </ol>
 
             <figure>
-                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-045.webp" alt="Anak-anak berkebutuhan khusus belajar memasak tradisional sebagai bagian dari program keterampilan hidup di yayasan sosial berkualitas">
+                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-045.webp" alt="Anak-anak berkebutuhan khusus belajar memasak tradisional sebagai bagian dari program keterampilan hidup di yayasan sosial berkualitas" width="800" height="600">
                 <figcaption>Program pelatihan keterampilan yang terstruktur dan menyenangkan</figcaption>
             </figure>
 
@@ -782,7 +783,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -811,8 +812,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-kunjungan-kelompok-rumah-tradisional-jawa-056.webp" alt="Kunjungan kelompok ke rumah tradisional Jawa bersama YUKA di Yogyakarta">
+            <img src="../Dokumentasi/cpao-kunjungan-kelompok-rumah-tradisional-jawa-056.webp" alt="Kunjungan kelompok ke rumah tradisional Jawa bersama YUKA di Yogyakarta" width="800" height="600">
         </div>
     </div>
 
@@ -287,7 +288,7 @@
             <p>Pendekatan ini dianggap lebih humanis dibandingkan model panti asuhan konvensional karena anak-anak tumbuh dalam suasana keluarga yang hangat dan penuh kasih sayang. SOS juga menyediakan program pendidikan, kesehatan, dan pengembangan komunitas. Mereka membuka kesempatan bagi masyarakat untuk menjadi sponsor anak atau donor tetap guna mendukung keberlangsungan program.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-keluarga-foto-bersama-rumah-tradisional-015.webp" alt="Keluarga foto bersama di rumah tradisional Jawa, menggambarkan kehangatan pengasuhan berbasis keluarga">
+                <img src="../Dokumentasi/21-jan-2026-keluarga-foto-bersama-rumah-tradisional-015.webp" alt="Keluarga foto bersama di rumah tradisional Jawa, menggambarkan kehangatan pengasuhan berbasis keluarga" width="800" height="600">
                 <figcaption>Kehangatan suasana keluarga menjadi kunci utama dalam pengasuhan anak di berbagai lembaga sosial Yogyakarta.</figcaption>
             </figure>
 
@@ -340,7 +341,7 @@
             <p>Program CIQAL meliputi pelatihan keterampilan kerja, pendampingan hukum, advokasi kebijakan publik terkait aksesibilitas, serta program inklusi ekonomi bagi penyandang disabilitas. Lembaga ini juga aktif mendorong pemerintah daerah untuk mengimplementasikan kebijakan yang ramah disabilitas, mulai dari infrastruktur yang aksesibel hingga kesempatan kerja yang setara. Kerja CIQAL sangat penting dalam mewujudkan <a href="inklusi-sosial">inklusi sosial</a> yang sesungguhnya.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-peserta-kelas-memasak-foto-bersama-080.webp" alt="Peserta kelas memasak foto bersama di kegiatan YUKA Yogyakarta">
+                <img src="../Dokumentasi/cpao-peserta-kelas-memasak-foto-bersama-080.webp" alt="Peserta kelas memasak foto bersama di kegiatan YUKA Yogyakarta" width="800" height="600">
                 <figcaption>Kegiatan kelas memasak bersama menjadi salah satu program pemberdayaan yang dilakukan oleh yayasan di Yogyakarta.</figcaption>
             </figure>
 
@@ -410,7 +411,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-keluarga-muslim-bermain-bersama-053.webp" alt="Keluarga muslim bermain bersama di kegiatan yayasan di Yogyakarta">
+                <img src="../Dokumentasi/cpao-keluarga-muslim-bermain-bersama-053.webp" alt="Keluarga muslim bermain bersama di kegiatan yayasan di Yogyakarta" width="800" height="600">
                 <figcaption>Kebersamaan dan interaksi sosial menjadi bagian penting dari kegiatan di panti asuhan dan yayasan di Yogyakarta.</figcaption>
             </figure>
 
@@ -569,7 +570,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -596,8 +597,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

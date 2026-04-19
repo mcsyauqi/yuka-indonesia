@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -181,7 +182,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -219,7 +220,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, mendukung perkembangan bicara dan bahasa anak">
+            <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, mendukung perkembangan bicara dan bahasa anak" width="800" height="600">
         </div>
     </div>
 
@@ -287,7 +288,7 @@
             <p>Kemampuan bicara dan bahasa memiliki hubungan yang sangat erat dengan kemampuan membaca dan menulis. Anak yang mengalami gangguan bicara berisiko mengalami kesulitan belajar membaca, termasuk <a href="disleksia-adalah">disleksia</a>. Terapi wicara membantu memperkuat fondasi fonologis yang dibutuhkan anak untuk belajar membaca dan menulis dengan lancar.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-ibu-anak-membuat-kue-bersama-007.webp" alt="Ibu dan anak melakukan aktivitas bersama yang mendukung perkembangan bicara dan bahasa anak">
+                <img src="../Dokumentasi/cpao-ibu-anak-membuat-kue-bersama-007.webp" alt="Ibu dan anak melakukan aktivitas bersama yang mendukung perkembangan bicara dan bahasa anak" width="800" height="600">
                 <figcaption>Aktivitas bersama antara orang tua dan anak menjadi salah satu cara efektif untuk melatih kemampuan bicara dan bahasa anak secara alami.</figcaption>
             </figure>
 
@@ -388,7 +389,7 @@
             <p>Berdasarkan hasil asesmen, terapis wicara akan menyusun rencana terapi individual yang mencakup tujuan jangka pendek dan jangka panjang. Rencana ini bersifat dinamis dan akan disesuaikan secara berkala seiring dengan perkembangan anak. Orang tua juga dilibatkan dalam penyusunan rencana ini agar target yang ditetapkan realistis dan selaras dengan kehidupan sehari-hari anak.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-ibu-039.webp" alt="Anak belajar aktivitas bersama ibu sebagai bagian dari stimulasi perkembangan bicara dan bahasa">
+                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-ibu-039.webp" alt="Anak belajar aktivitas bersama ibu sebagai bagian dari stimulasi perkembangan bicara dan bahasa" width="800" height="600">
                 <figcaption>Aktivitas sehari-hari seperti memasak bersama menjadi media yang efektif untuk melatih kemampuan komunikasi anak secara alami dan menyenangkan.</figcaption>
             </figure>
 
@@ -487,7 +488,7 @@
             <p>Terapis wicara yang baik harus mampu membuat anak merasa nyaman dan antusias selama sesi terapi. Perhatikan bagaimana terapis berinteraksi dengan anak Anda pada sesi pertama. Apakah terapis sabar, hangat, dan kreatif dalam membuat sesi terapi menyenangkan? Anak akan lebih cepat berkembang jika merasa aman dan enjoy selama proses terapi.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-anak-anak-belajar-di-rumah-002.webp" alt="Anak-anak belajar di lingkungan rumah yang mendukung perkembangan bicara dan bahasa">
+                <img src="../Dokumentasi/21-jan-2026-anak-anak-belajar-di-rumah-002.webp" alt="Anak-anak belajar di lingkungan rumah yang mendukung perkembangan bicara dan bahasa" width="800" height="600">
                 <figcaption>Lingkungan belajar yang nyaman dan mendukung sangat penting untuk keberhasilan terapi wicara anak.</figcaption>
             </figure>
 
@@ -606,7 +607,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -633,8 +634,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

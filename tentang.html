@@ -39,9 +39,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
+    <link rel="preload" href="Dokumentasi/21 Jan 2026/IMG_8417_latar_belakang.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
@@ -705,8 +707,8 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="assets/js/main.min.js"></script>
+    <script src="assets/js/main.min.js" defer></script>
 
-    <script src="assets/js/analytics.js"></script>
+    <script src="assets/js/analytics.js" defer></script>
 </body>
 </html>

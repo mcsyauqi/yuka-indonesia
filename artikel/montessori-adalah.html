@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -181,7 +182,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -219,7 +220,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-045.webp" alt="Anak-anak belajar memasak tradisional dengan pendekatan Montessori di YUKA, Sleman, Yogyakarta">
+            <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-045.webp" alt="Anak-anak belajar memasak tradisional dengan pendekatan Montessori di YUKA, Sleman, Yogyakarta" width="800" height="600">
         </div>
     </div>
 
@@ -308,7 +309,7 @@
             <p>Prinsip auto-education ini menumbuhkan rasa percaya diri, kemandirian, dan motivasi intrinsik pada anak. Anak belajar bukan karena ingin mendapat nilai bagus atau pujian, melainkan karena proses belajar itu sendiri memberikan kepuasan dan kegembiraan.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-bermain-kartu-rumah-tropis-012.webp" alt="Anak bermain kartu edukasi dengan pendekatan Montessori di lingkungan tropis">
+                <img src="../Dokumentasi/cpao-anak-bermain-kartu-rumah-tropis-012.webp" alt="Anak bermain kartu edukasi dengan pendekatan Montessori di lingkungan tropis" width="800" height="600">
                 <figcaption>Bermain kartu edukasi melatih konsentrasi, pencocokan, dan kemampuan kognitif anak secara mandiri</figcaption>
             </figure>
 
@@ -424,7 +425,7 @@
             <p>Material matematika Montessori membantu anak memahami konsep abstrak melalui manipulasi benda konkret. Contohnya termasuk Number Rods (batang angka), Spindle Box (kotak gelendong), Golden Beads (manik-manik emas) untuk memahami sistem desimal, serta Stamp Game untuk operasi aritmetika dasar.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-belajar-bersama-outdoor-046.webp" alt="Anak-anak belajar bersama di luar ruangan dengan pendekatan Montessori di YUKA">
+                <img src="../Dokumentasi/cpao-anak-anak-belajar-bersama-outdoor-046.webp" alt="Anak-anak belajar bersama di luar ruangan dengan pendekatan Montessori di YUKA" width="800" height="600">
                 <figcaption>Pembelajaran di luar ruangan (outdoor learning) mendukung eksplorasi sensoris dan kemandirian anak</figcaption>
             </figure>
 
@@ -497,7 +498,7 @@
             <p>Dalam filosofi Montessori, lebih sedikit lebih baik. Terlalu banyak mainan justru membuat anak kewalahan dan sulit berkonsentrasi. Pilih beberapa mainan berkualitas yang mendorong kreativitas dan eksplorasi, seperti balok kayu, puzzle, alat gambar, dan bahan-bahan alam. Rotasi mainan setiap beberapa minggu agar anak tetap tertarik tanpa merasa kewalahan.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-ibu-039.webp" alt="Anak belajar memasak bersama ibu sebagai penerapan Montessori di rumah">
+                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-ibu-039.webp" alt="Anak belajar memasak bersama ibu sebagai penerapan Montessori di rumah" width="800" height="600">
                 <figcaption>Memasak bersama orang tua adalah salah satu bentuk penerapan Montessori di rumah yang paling efektif dan menyenangkan</figcaption>
             </figure>
 
@@ -615,7 +616,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -642,8 +643,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

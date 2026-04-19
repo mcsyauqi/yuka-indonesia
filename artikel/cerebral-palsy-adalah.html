@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-keluarga-muslim-bermain-bersama-053.webp" alt="Keluarga muslim bermain bersama mendampingi anak dengan cerebral palsy di lingkungan yang inklusif">
+            <img src="../Dokumentasi/cpao-keluarga-muslim-bermain-bersama-053.webp" alt="Keluarga muslim bermain bersama mendampingi anak dengan cerebral palsy di lingkungan yang inklusif" width="800" height="600">
         </div>
     </div>
 
@@ -290,7 +291,7 @@
             <p>Beberapa anak menunjukkan kombinasi dari dua atau lebih tipe cerebral palsy. Bentuk campuran yang paling umum adalah kombinasi antara spastik dan diskinetik. Hal ini terjadi karena kerusakan otak dapat mengenai lebih dari satu area yang mengontrol fungsi motorik. Penanganan untuk tipe campuran memerlukan pendekatan yang komprehensif dan disesuaikan dengan gejala spesifik yang dialami anak.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-ibu-anak-belajar-memasak-tradisional-066.webp" alt="Ibu mendampingi anak belajar memasak sebagai bentuk terapi dan stimulasi motorik untuk anak dengan kebutuhan khusus">
+                <img src="../Dokumentasi/cpao-ibu-anak-belajar-memasak-tradisional-066.webp" alt="Ibu mendampingi anak belajar memasak sebagai bentuk terapi dan stimulasi motorik untuk anak dengan kebutuhan khusus" width="800" height="600">
                 <figcaption>Pendampingan orang tua dalam kegiatan sehari-hari membantu anak dengan cerebral palsy mengembangkan keterampilan motoriknya</figcaption>
             </figure>
 
@@ -375,7 +376,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah sebagai bentuk dukungan untuk anak berkebutuhan khusus termasuk anak dengan cerebral palsy">
+                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah sebagai bentuk dukungan untuk anak berkebutuhan khusus termasuk anak dengan cerebral palsy" width="800" height="600">
                 <figcaption>Dukungan keluarga sangat penting dalam membantu anak dengan cerebral palsy belajar dan berkembang</figcaption>
             </figure>
 
@@ -489,7 +490,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-kecil-berdiri-teras-rumah-008.webp" alt="Anak kecil berdiri di teras rumah sebagai ilustrasi perkembangan motorik dan kemandirian anak dengan kebutuhan khusus">
+                <img src="../Dokumentasi/cpao-anak-kecil-berdiri-teras-rumah-008.webp" alt="Anak kecil berdiri di teras rumah sebagai ilustrasi perkembangan motorik dan kemandirian anak dengan kebutuhan khusus" width="800" height="600">
                 <figcaption>Setiap langkah kecil dalam perkembangan motorik anak dengan cerebral palsy merupakan pencapaian yang luar biasa</figcaption>
             </figure>
 
@@ -593,7 +594,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -620,8 +621,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

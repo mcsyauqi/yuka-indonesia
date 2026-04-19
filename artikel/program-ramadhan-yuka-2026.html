@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -120,7 +121,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -158,7 +159,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/16-feb-2026-siswa-abk-memotong-sayur-preparing.webp" alt="Siswa ABK Sekolah Inklusi Taruna Imani sedang mempersiapkan bahan untuk kegiatan memasak bersama">
+            <img src="../Dokumentasi/16-feb-2026-siswa-abk-memotong-sayur-preparing.webp" alt="Siswa ABK Sekolah Inklusi Taruna Imani sedang mempersiapkan bahan untuk kegiatan memasak bersama" width="800" height="600">
         </div>
     </div>
 
@@ -218,7 +219,7 @@
             <p>Seperti kisah <a href="kisah-ilham-hafiz">Ilham yang berhasil menghafal Al-Quran</a>, YUKA percaya bahwa setiap anak berkebutuhan khusus memiliki potensi untuk mengenal dan mencintai Al-Quran. Dibutuhkan guru-guru yang tepat untuk membuka potensi tersebut.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/16-feb-2026-siswa-abk-menyiapkan-makanan-dibawa-pulang-01.webp" alt="Suasana kebersamaan siswa ABK dan guru saat kegiatan bersama di Sekolah Inklusi Taruna Imani" loading="lazy">
+                <img src="../Dokumentasi/16-feb-2026-siswa-abk-menyiapkan-makanan-dibawa-pulang-01.webp" alt="Suasana kebersamaan siswa ABK dan guru saat kegiatan bersama di Sekolah Inklusi Taruna Imani" loading="lazy" width="800" height="600">
                 <figcaption>Kebersamaan yang hangat antara siswa dan pendamping di Sekolah Inklusi Taruna Imani - inilah suasana yang ingin terus dihadirkan YUKA</figcaption>
             </figure>
 
@@ -257,7 +258,7 @@
             <p>Setiap Sabtu, siswa-siswa Taruna Imani sudah terbiasa dengan kegiatan memasak bersama. Mereka belajar memotong sayur, menyiapkan bumbu, memasak, dan menyajikan makanan. Kegiatan yang tampak sederhana ini sesungguhnya adalah latihan nyata untuk program bisnis sosial yang lebih besar.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/16-feb-2026-siswa-abk-selfie-kegiatan-memasak.webp" alt="Siswa ABK berfoto bersama saat kegiatan memasak di Sekolah Inklusi Taruna Imani" loading="lazy">
+                <img src="../Dokumentasi/16-feb-2026-siswa-abk-selfie-kegiatan-memasak.webp" alt="Siswa ABK berfoto bersama saat kegiatan memasak di Sekolah Inklusi Taruna Imani" loading="lazy" width="800" height="600">
                 <figcaption>Keceriaan siswa saat kegiatan memasak bersama - keterampilan yang akan menjadi bekal kemandirian mereka</figcaption>
             </figure>
 
@@ -332,7 +333,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -359,8 +360,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

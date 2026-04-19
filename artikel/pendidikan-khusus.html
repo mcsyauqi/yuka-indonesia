@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -183,7 +184,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -221,7 +222,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/21-jan-2026-siswa-belajar-di-rumah-tradisional-001.webp" alt="Siswa-siswa belajar di lingkungan rumah tradisional, pendidikan khusus YUKA Yogyakarta">
+            <img src="../Dokumentasi/21-jan-2026-siswa-belajar-di-rumah-tradisional-001.webp" alt="Siswa-siswa belajar di lingkungan rumah tradisional, pendidikan khusus YUKA Yogyakarta" width="800" height="600">
         </div>
     </div>
 
@@ -303,7 +304,7 @@
             <p>Layanan pendidikan khusus hadir dalam berbagai bentuk dan format, disesuaikan dengan jenis dan tingkat kebutuhan khusus yang dimiliki oleh peserta didik. Pemahaman tentang berbagai jenis layanan ini penting bagi orang tua dan pendidik agar dapat memilih opsi yang paling sesuai untuk setiap anak.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-kelas-memasak-bersama-071.webp" alt="Anak-anak berkebutuhan khusus mengikuti kelas memasak bersama di YUKA sebagai bagian dari program pendidikan khusus">
+                <img src="../Dokumentasi/cpao-anak-anak-kelas-memasak-bersama-071.webp" alt="Anak-anak berkebutuhan khusus mengikuti kelas memasak bersama di YUKA sebagai bagian dari program pendidikan khusus" width="800" height="600">
                 <figcaption>Kegiatan kelas memasak sebagai salah satu metode pembelajaran keterampilan hidup dalam pendidikan khusus di YUKA</figcaption>
             </figure>
 
@@ -340,7 +341,7 @@
             <p><strong>Kurikulum pendidikan khusus</strong> merupakan pedoman pembelajaran yang dirancang dengan memperhatikan kebutuhan, kemampuan, dan potensi peserta didik berkebutuhan khusus. Kurikulum ini bersifat fleksibel dan adaptif, artinya dapat dimodifikasi sesuai dengan kondisi dan kebutuhan individual setiap anak.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-005.webp" alt="Siswa berkebutuhan khusus belajar di ruang kelas dengan pendampingan guru di YUKA">
+                <img src="../Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-005.webp" alt="Siswa berkebutuhan khusus belajar di ruang kelas dengan pendampingan guru di YUKA" width="800" height="600">
                 <figcaption>Suasana pembelajaran di ruang kelas Sekolah Inklusi Taruna Imani YUKA dengan pendekatan individual</figcaption>
             </figure>
 
@@ -487,7 +488,7 @@
             <p>Untuk pemahaman lebih mendalam tentang pendidikan inklusi, Anda bisa membaca artikel lengkap kami tentang <a href="pendidikan-inklusi">pendidikan inklusi</a> dan <a href="peran-orang-tua-pendidikan-inklusi">peran orang tua dalam pendidikan inklusi</a>.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-dewasa-047.webp" alt="Anak berkebutuhan khusus belajar memasak didampingi oleh pendamping dewasa di YUKA">
+                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-dewasa-047.webp" alt="Anak berkebutuhan khusus belajar memasak didampingi oleh pendamping dewasa di YUKA" width="800" height="600">
                 <figcaption>Pendampingan individual dalam kegiatan belajar keterampilan hidup, salah satu bentuk implementasi PPI di YUKA</figcaption>
             </figure>
 
@@ -613,7 +614,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -640,8 +641,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

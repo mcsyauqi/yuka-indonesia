@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-kue-001.webp" alt="Anak-anak berkebutuhan khusus belajar memasak kue sebagai bagian dari terapi sensori integrasi di YUKA Yogyakarta">
+            <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-kue-001.webp" alt="Anak-anak berkebutuhan khusus belajar memasak kue sebagai bagian dari terapi sensori integrasi di YUKA Yogyakarta" width="800" height="600">
         </div>
     </div>
 
@@ -275,7 +276,7 @@
             <p>Sistem proprioseptif menerima informasi dari otot, sendi, dan ligamen tentang posisi dan gerakan tubuh. Sistem ini memungkinkan kita mengetahui di mana bagian tubuh kita berada tanpa harus melihatnya. Misalnya, Anda bisa menyentuh ujung hidung dengan mata tertutup berkat sistem proprioseptif. Anak dengan gangguan proprioseptif sering kali terlihat canggung, menabrak benda, menggunakan kekuatan yang berlebihan saat memegang pensil, atau justru terlalu lemah dalam menggenggam.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-belajar-membuat-kue-bersama-038.webp" alt="Anak-anak belajar membuat kue bersama, melatih sistem taktil dan proprioseptif melalui kegiatan memasak">
+                <img src="../Dokumentasi/cpao-anak-belajar-membuat-kue-bersama-038.webp" alt="Anak-anak belajar membuat kue bersama, melatih sistem taktil dan proprioseptif melalui kegiatan memasak" width="800" height="600">
                 <figcaption>Aktivitas memasak bersama melatih berbagai sistem sensorik anak secara bersamaan, termasuk sistem taktil, proprioseptif, dan olfaktori.</figcaption>
             </figure>
 
@@ -329,7 +330,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-kegiatan-memasak-bersama-048.webp" alt="Anak-anak kegiatan memasak bersama sebagai terapi multi-sensorik di YUKA">
+                <img src="../Dokumentasi/cpao-anak-anak-kegiatan-memasak-bersama-048.webp" alt="Anak-anak kegiatan memasak bersama sebagai terapi multi-sensorik di YUKA" width="800" height="600">
                 <figcaption>Kegiatan memasak bersama memberikan stimulasi multi-sensorik yang kaya: menyentuh bahan (taktil), mencium aroma (olfaktori), mengecap rasa (gustatori), dan mengkoordinasi gerakan tangan (proprioseptif).</figcaption>
             </figure>
 
@@ -416,7 +417,7 @@
             <p>Terapi musik menggunakan ritme, melodi, dan instrumen musik untuk memberikan stimulasi auditori yang terstruktur. Anak bisa diajak mendengarkan berbagai jenis musik, bermain alat musik perkusi, bernyanyi, atau bergerak mengikuti irama. Aktivitas ini tidak hanya melatih pemrosesan auditori, tetapi juga membantu regulasi emosi, meningkatkan fokus, dan mengembangkan keterampilan sosial saat dilakukan dalam kelompok.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-bermain-di-rumah-058.webp" alt="Anak bermain di rumah dengan berbagai aktivitas sensorik yang mendukung tumbuh kembang">
+                <img src="../Dokumentasi/cpao-anak-bermain-di-rumah-058.webp" alt="Anak bermain di rumah dengan berbagai aktivitas sensorik yang mendukung tumbuh kembang" width="800" height="600">
                 <figcaption>Bermain di rumah dengan berbagai aktivitas sensorik membantu anak mengembangkan kemampuan pemrosesan sensorik secara alami dan menyenangkan.</figcaption>
             </figure>
 
@@ -554,7 +555,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -581,8 +582,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

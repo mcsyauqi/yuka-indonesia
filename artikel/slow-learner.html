@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -180,7 +181,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -218,7 +219,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/21-jan-2026-anak-anak-belajar-di-rumah-002.webp" alt="Anak-anak belajar di rumah dengan pendampingan, menggambarkan suasana belajar yang mendukung bagi anak slow learner">
+            <img src="../Dokumentasi/21-jan-2026-anak-anak-belajar-di-rumah-002.webp" alt="Anak-anak belajar di rumah dengan pendampingan, menggambarkan suasana belajar yang mendukung bagi anak slow learner" width="800" height="600">
         </div>
     </div>
 
@@ -291,7 +292,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-dewasa-047.webp" alt="Anak belajar memasak bersama pendamping dewasa, kegiatan yang membantu anak slow learner belajar melalui pengalaman langsung">
+                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-dewasa-047.webp" alt="Anak belajar memasak bersama pendamping dewasa, kegiatan yang membantu anak slow learner belajar melalui pengalaman langsung" width="800" height="600">
                 <figcaption>Kegiatan belajar melalui pengalaman langsung seperti memasak sangat efektif untuk anak slow learner yang lebih mudah memahami konsep secara konkret.</figcaption>
             </figure>
 
@@ -348,7 +349,7 @@
             <p>Beberapa kondisi kesehatan juga dapat berkontribusi terhadap lambatnya kemampuan belajar anak. Gangguan pendengaran atau penglihatan yang tidak terdeteksi sejak dini, kekurangan gizi kronis (terutama pada masa balita), anemia defisiensi besi, serta infeksi berulang yang mengganggu kehadiran dan konsentrasi di sekolah merupakan faktor-faktor kesehatan yang perlu diperhatikan.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, menunjukkan pentingnya dukungan keluarga bagi anak slow learner">
+                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah, menunjukkan pentingnya dukungan keluarga bagi anak slow learner" width="800" height="600">
                 <figcaption>Dukungan keluarga merupakan faktor kunci dalam membantu anak slow learner mengembangkan potensinya secara optimal.</figcaption>
             </figure>
 
@@ -466,7 +467,7 @@
             <p>Dalam setting kelas reguler, anak slow learner dapat sangat terbantu dengan kehadiran <a href="shadow-teacher-adalah">shadow teacher</a> atau guru pendamping khusus. Shadow teacher berperan membantu anak memahami instruksi guru kelas, memberikan penjelasan tambahan yang lebih sederhana, serta memastikan anak tetap fokus dan mengikuti pelajaran. Kehadiran guru pendamping tidak dimaksudkan untuk membuat anak bergantung, tetapi secara bertahap membangun kemandirian belajar anak.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-043.webp" alt="Anak-anak belajar memasak bersama dalam kegiatan pembelajaran praktis yang mendukung perkembangan anak slow learner">
+                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-043.webp" alt="Anak-anak belajar memasak bersama dalam kegiatan pembelajaran praktis yang mendukung perkembangan anak slow learner" width="800" height="600">
                 <figcaption>Pembelajaran melalui kegiatan memasak membantu anak slow learner belajar konsep matematika, membaca resep, dan melatih keterampilan motorik secara menyenangkan.</figcaption>
             </figure>
 
@@ -609,7 +610,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -636,8 +637,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

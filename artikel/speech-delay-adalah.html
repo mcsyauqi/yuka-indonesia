@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-ibu-anak-membuat-kue-bersama-007.webp" alt="Ibu dan anak membuat kue bersama sebagai aktivitas stimulasi bicara dan komunikasi anak">
+            <img src="../Dokumentasi/cpao-ibu-anak-membuat-kue-bersama-007.webp" alt="Ibu dan anak membuat kue bersama sebagai aktivitas stimulasi bicara dan komunikasi anak" width="800" height="600">
         </div>
     </div>
 
@@ -298,7 +299,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-ibu-039.webp" alt="Anak belajar memasak bersama ibu sebagai bentuk stimulasi komunikasi dan interaksi verbal">
+                <img src="../Dokumentasi/cpao-anak-belajar-memasak-bersama-ibu-039.webp" alt="Anak belajar memasak bersama ibu sebagai bentuk stimulasi komunikasi dan interaksi verbal" width="800" height="600">
                 <figcaption>Aktivitas memasak bersama merupakan salah satu cara efektif untuk menstimulasi komunikasi anak dengan speech delay melalui interaksi yang alami dan menyenangkan.</figcaption>
             </figure>
 
@@ -358,7 +359,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-kecil-berdiri-teras-rumah-008.webp" alt="Anak kecil berdiri di teras rumah, menggambarkan tahap perkembangan anak usia dini">
+                <img src="../Dokumentasi/cpao-anak-kecil-berdiri-teras-rumah-008.webp" alt="Anak kecil berdiri di teras rumah, menggambarkan tahap perkembangan anak usia dini" width="800" height="600">
                 <figcaption>Setiap anak memiliki kecepatan perkembangan yang berbeda, namun ada milestone penting yang perlu diperhatikan orang tua untuk mendeteksi speech delay sejak dini.</figcaption>
             </figure>
 
@@ -484,7 +485,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah sebagai bentuk stimulasi perkembangan anak">
+                <img src="../Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp" alt="Keluarga belajar bersama di rumah sebagai bentuk stimulasi perkembangan anak" width="800" height="600">
                 <figcaption>Stimulasi bahasa di rumah melalui aktivitas belajar bersama keluarga sangat efektif untuk mendukung perkembangan bicara anak dengan speech delay.</figcaption>
             </figure>
 
@@ -604,7 +605,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -631,8 +632,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

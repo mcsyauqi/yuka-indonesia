@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-043.webp" alt="Anak-anak sedang melakukan kegiatan terapi bermain melalui aktivitas memasak bersama di YUKA, Sleman, Yogyakarta">
+            <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-043.webp" alt="Anak-anak sedang melakukan kegiatan terapi bermain melalui aktivitas memasak bersama di YUKA, Sleman, Yogyakarta" width="800" height="600">
         </div>
     </div>
 
@@ -306,7 +307,7 @@
             <p>Filial therapy merupakan pendekatan unik yang melatih orang tua untuk menjadi "agen terapeutik" bagi anak mereka sendiri. Terapis mengajarkan prinsip-prinsip terapi bermain non-direktif kepada orang tua, lalu orang tua mempraktikkannya dalam sesi bermain khusus bersama anak di rumah. Pendekatan ini memperkuat ikatan emosional antara orang tua dan anak, sekaligus membekali orang tua dengan keterampilan komunikasi yang lebih baik.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-chef-makan-kue-bahagia-017.webp" alt="Anak-anak bahagia menikmati hasil kegiatan bermain dan memasak bersama di YUKA">
+                <img src="../Dokumentasi/cpao-anak-chef-makan-kue-bahagia-017.webp" alt="Anak-anak bahagia menikmati hasil kegiatan bermain dan memasak bersama di YUKA" width="800" height="600">
                 <figcaption>Ekspresi kebahagiaan anak saat menikmati hasil kegiatan bermain terapeutik di YUKA</figcaption>
             </figure>
 
@@ -384,7 +385,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-membuat-adonan-kue-baking-030.webp" alt="Anak-anak di YUKA melakukan aktivitas terapi bermain melalui kegiatan baking bersama">
+                <img src="../Dokumentasi/cpao-anak-membuat-adonan-kue-baking-030.webp" alt="Anak-anak di YUKA melakukan aktivitas terapi bermain melalui kegiatan baking bersama" width="800" height="600">
                 <figcaption>Kegiatan membuat adonan kue melatih fokus, kesabaran, dan koordinasi motorik anak dalam suasana bermain yang menyenangkan</figcaption>
             </figure>
 
@@ -488,7 +489,7 @@
             <p>Aktivitas memasak sederhana seperti membuat kue, mencampur salad, atau menghias roti adalah bentuk terapi bermain yang sangat kaya. Memasak melibatkan banyak keterampilan sekaligus: mengikuti instruksi, mengukur, menuang, mengaduk, menunggu, dan bekerja sama. Hasilnya bisa dimakan bersama, yang memberikan kepuasan dan rasa bangga bagi anak.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-bermain-topi-koki-068.webp" alt="Anak-anak bermain dengan topi koki dalam kegiatan terapi bermain di YUKA">
+                <img src="../Dokumentasi/cpao-anak-anak-bermain-topi-koki-068.webp" alt="Anak-anak bermain dengan topi koki dalam kegiatan terapi bermain di YUKA" width="800" height="600">
                 <figcaption>Bermain dengan topi koki menjadi salah satu aktivitas terapi bermain yang menyenangkan bagi anak-anak di YUKA</figcaption>
             </figure>
 
@@ -600,7 +601,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -627,8 +628,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-kunjungan-kelompok-rumah-tradisional-jawa-056.webp" alt="Anak-anak didampingi guru mengunjungi rumah tradisional Jawa dalam program wisata edukasi YUKA, Yogyakarta">
+            <img src="../Dokumentasi/cpao-kunjungan-kelompok-rumah-tradisional-jawa-056.webp" alt="Anak-anak didampingi guru mengunjungi rumah tradisional Jawa dalam program wisata edukasi YUKA, Yogyakarta" width="800" height="600">
         </div>
     </div>
 
@@ -284,7 +285,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-050.webp" alt="Anak-anak belajar memasak tradisional dalam program terapi keterampilan hidup di YUKA Yogyakarta">
+                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-050.webp" alt="Anak-anak belajar memasak tradisional dalam program terapi keterampilan hidup di YUKA Yogyakarta" width="800" height="600">
                 <figcaption>Anak-anak belajar memasak tradisional sebagai bagian dari program keterampilan hidup di YUKA. Kegiatan seperti ini membantu melatih motorik halus dan kemandirian bagi semua anak, termasuk anak dengan disabilitas fisik.</figcaption>
             </figure>
 
@@ -381,7 +382,7 @@
             <h2 id="hak">Hak dan Perlindungan Hukum Penyandang Tuna Daksa</h2>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-spanduk-student-day-sekolah-inklusi-011.webp" alt="Spanduk Student Day di Sekolah Inklusi Taruna Imani YUKA, menunjukkan semangat pendidikan inklusif untuk semua anak">
+                <img src="../Dokumentasi/21-jan-2026-spanduk-student-day-sekolah-inklusi-011.webp" alt="Spanduk Student Day di Sekolah Inklusi Taruna Imani YUKA, menunjukkan semangat pendidikan inklusif untuk semua anak" width="800" height="600">
                 <figcaption>Kegiatan Student Day di Sekolah Inklusi Taruna Imani YUKA, Sleman. Sekolah inklusi menjadi wujud nyata pemenuhan hak pendidikan bagi semua anak, termasuk penyandang tuna daksa.</figcaption>
             </figure>
 
@@ -456,7 +457,7 @@
             <h2 id="dukungan-yuka">Dukungan YUKA untuk Anak dengan Disabilitas Fisik</h2>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-siswa-belajar-di-gazebo-062.webp" alt="Siswa-siswa belajar bersama di gazebo Sekolah Inklusi Taruna Imani YUKA dalam suasana belajar yang inklusif dan menyenangkan">
+                <img src="../Dokumentasi/cpao-siswa-belajar-di-gazebo-062.webp" alt="Siswa-siswa belajar bersama di gazebo Sekolah Inklusi Taruna Imani YUKA dalam suasana belajar yang inklusif dan menyenangkan" width="800" height="600">
                 <figcaption>Suasana belajar di gazebo Sekolah Inklusi Taruna Imani YUKA. Belajar di luar ruangan memberikan pengalaman yang menyegarkan bagi semua siswa dan mendukung pengembangan keterampilan sosial anak berkebutuhan khusus.</figcaption>
             </figure>
 
@@ -565,7 +566,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -592,8 +593,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>

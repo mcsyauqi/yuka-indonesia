@@ -39,7 +39,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles -->
     <link rel="stylesheet" href="../assets/css/style.min.css">
@@ -176,7 +177,7 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="/" class="navbar-brand">
-                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo">
+                <img src="../Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
             </a>
             <div class="navbar-menu" id="navbarMenu">
                 <a href="/">Beranda</a>
@@ -214,7 +215,7 @@
 
     <div class="container">
         <div class="article-featured-image">
-            <img src="../Dokumentasi/cpao-anak-bermain-di-rumah-058.webp" alt="Anak-anak bermain aktif di rumah, ilustrasi perilaku hiperaktif pada anak">
+            <img src="../Dokumentasi/cpao-anak-bermain-di-rumah-058.webp" alt="Anak-anak bermain aktif di rumah, ilustrasi perilaku hiperaktif pada anak" width="800" height="600">
         </div>
     </div>
 
@@ -276,7 +277,7 @@
             <p>Selain ADHD, perilaku hiperaktif juga bisa muncul pada kondisi lain seperti gangguan kecemasan, gangguan spektrum autisme, gangguan tidur, atau bahkan sebagai respons terhadap lingkungan yang kurang kondusif. Untuk memahami lebih jauh tentang hubungan antara autisme dan ADHD, silakan baca artikel kami tentang <a href="perbedaan-autis-dan-adhd">perbedaan autis dan ADHD</a>.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-laki-laki-duduk-sofa-014.webp" alt="Anak laki-laki duduk di sofa, ilustrasi perbedaan antara anak aktif dan anak hiperaktif">
+                <img src="../Dokumentasi/cpao-anak-laki-laki-duduk-sofa-014.webp" alt="Anak laki-laki duduk di sofa, ilustrasi perbedaan antara anak aktif dan anak hiperaktif" width="800" height="600">
                 <figcaption>Tidak semua anak yang terlihat aktif berarti hiperaktif. Penting untuk memahami perbedaan antara anak energik dan anak dengan gangguan hiperaktif.</figcaption>
             </figure>
 
@@ -362,7 +363,7 @@
             </ul>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-005.webp" alt="Siswa belajar di ruang kelas, menunjukkan pentingnya lingkungan belajar yang kondusif bagi anak hiperaktif">
+                <img src="../Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-005.webp" alt="Siswa belajar di ruang kelas, menunjukkan pentingnya lingkungan belajar yang kondusif bagi anak hiperaktif" width="800" height="600">
                 <figcaption>Lingkungan belajar yang terstruktur dan kondusif sangat penting untuk membantu anak hiperaktif fokus dalam proses belajar.</figcaption>
             </figure>
 
@@ -438,7 +439,7 @@
             <p>Selain strategi perilaku, beberapa anak hiperaktif juga mendapat manfaat dari pendekatan terapeutik seperti <a href="terapi-okupasi">terapi okupasi</a> dan <a href="sensori-integrasi">terapi sensori integrasi</a>. Terapi-terapi ini membantu anak mengembangkan kemampuan pengaturan diri dan respons sensorik yang lebih baik.</p>
 
             <figure class="article-inline-image">
-                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-kue-081.webp" alt="Anak-anak belajar memasak kue bersama, kegiatan terstruktur yang membantu anak hiperaktif fokus">
+                <img src="../Dokumentasi/cpao-anak-anak-belajar-memasak-kue-081.webp" alt="Anak-anak belajar memasak kue bersama, kegiatan terstruktur yang membantu anak hiperaktif fokus" width="800" height="600">
                 <figcaption>Kegiatan memasak bersama di YUKA membantu anak hiperaktif belajar fokus, mengikuti instruksi bertahap, dan menyalurkan energi secara positif.</figcaption>
             </figure>
 
@@ -554,7 +555,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-about">
-                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;">
+                    <img src="../Logo/Logo.webp" alt="YUKA Logo" style="height: 60px; margin-bottom: 1rem;" width="180" height="60">
                     <p>Yayasan Ukhuwah Kaffah Amanatullah (YUKA) adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus.</p>
                 </div>
                 <div class="footer-links">
@@ -581,8 +582,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/js/main.min.js"></script>
+    <script src="../assets/js/main.min.js" defer></script>
 
-    <script src="../assets/js/analytics.js"></script>
+    <script src="../assets/js/analytics.js" defer></script>
 </body>
 </html>
