@@ -37,3 +37,35 @@ When you need context not already in this project:
 3. Only then drill into specific wiki pages
 
 Do NOT read the wiki for general coding questions or tasks unrelated to business context.
+
+---
+
+## Article Template: URL Standards
+
+### Social Share Buttons
+Social share buttons di setiap artikel HARUS menggunakan **clean URL tanpa .html**:
+
+```html
+<!-- BENAR ✅ -->
+<a href="https://wa.me/?text=...https://yukaindonesia.com/artikel/{slug}" ...>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://yukaindonesia.com/artikel/{slug}" ...>
+<a href="https://twitter.com/intent/tweet?...url=https://yukaindonesia.com/artikel/{slug}" ...>
+
+<!-- SALAH ❌ — Jangan pakai .html -->
+<a href="https://wa.me/?text=...https://yukaindonesia.com/artikel/{slug}.html" ...>
+```
+
+**Kenapa:** URL `.html` di social share → user share → Google crawl URL `.html` → redirect → GSC "Page with Redirect" issue.
+
+### Navigation & Internal Links
+- Nav links: `href="../tentang"` (bukan `href="../tentang.html"`)
+- Internal artikel links: `href="slug"` (bukan `href="slug.html"`)
+
+### Fix Scripts
+- `scripts/fix_html_links.js` — fix nav & internal relative links
+- `scripts/fix_social_share_html_links.js` — fix .html di social share buttons (WA/FB/Twitter)
+
+Jalankan kedua script setelah batch generate artikel untuk memastikan 0 .html links.
+
+### JSON-LD @id Field
+Note: JSON-LD schema `@id` di beberapa artikel masih menggunakan `.html` URL — ini separate issue dari social share dan tidak langsung menyebabkan GSC redirect errors. Akan di-fix di batch tersendiri.
