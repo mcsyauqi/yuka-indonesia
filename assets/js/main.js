@@ -50,12 +50,13 @@ function initNavbar() {
         });
     }
 
-    // Set active link based on current page
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    // Set active link based on current page (clean URLs, no .html)
+    const path = window.location.pathname.replace(/\/$/, '');
+    const currentPage = path.split('/').pop() || '';
     const navLinks = document.querySelectorAll('.navbar-menu a');
     navLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === currentPage || (currentPage === '' && href === 'index.html')) {
+        const href = (link.getAttribute('href') || '').replace(/\/$/, '').split('/').pop();
+        if (href === currentPage || (currentPage === '' && (href === '' || href === '/'))) {
             link.classList.add('active');
         } else {
             link.classList.remove('active');
