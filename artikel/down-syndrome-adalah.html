@@ -18,7 +18,7 @@
 
     <!-- SEO Meta Tags -->
     <title>Down Syndrome: Ciri-Ciri, Penyebab & Cara Mendukung | YUKA</title>
-    <meta name="description" content="Down syndrome adalah kondisi genetik akibat kelebihan kromosom 21. Kenali ciri-ciri, penyebab, dan cara mendukung tumbuh kembang anak down syndrome.">
+    <meta name="description" content="Down syndrome adalah kondisi genetik akibat kelebihan kromosom 21. Kenali ciri-ciri fisik, gejala down syndrome pada orang down syndrome, dan cara mendukung tumbuh kembang optimal.">
     <meta name="keywords" content="down syndrome adalah, down syndrome, anak down syndrome, ciri ciri down syndrome, trisomi 21, sindrom down, kromosom 21, pendidikan inklusi, YUKA">
     <meta name="author" content="Yayasan Ukhuwah Kaffah Amanatullah">
     <meta name="robots" content="index, follow">
@@ -29,7 +29,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://yukaindonesia.com/artikel/down-syndrome-adalah">
     <meta property="og:title" content="Down Syndrome Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Cara Mendukung Anak Down Syndrome">
-    <meta property="og:description" content="Down syndrome adalah kondisi genetik akibat kelebihan kromosom 21. Kenali ciri-ciri, penyebab, dan cara mendukung tumbuh kembang anak down syndrome.">
+    <meta property="og:description" content="Down syndrome adalah kondisi genetik akibat kelebihan kromosom 21. Kenali ciri-ciri fisik, gejala down syndrome pada orang down syndrome, dan cara mendukung tumbuh kembang optimal.">
     <meta property="og:image" content="https://yukaindonesia.com/Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-052.webp">
 
     <!-- Favicon -->
@@ -520,5 +520,32 @@
     <script src="../assets/js/main.min.js" defer></script>
 
     <script src="../assets/js/analytics.js" defer></script>
+<script id="yukaTrackingEventsV1">
+(function(){
+  function sendEvent(name, params){
+    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
+  }
+  document.addEventListener('click', function(event){
+    var link = event.target.closest && event.target.closest('a[href]');
+    var button = event.target.closest && event.target.closest('button');
+    if (link && link.href.indexOf('wa.me') !== -1) {
+      sendEvent('whatsapp_click', {link_url: link.href, page_path: location.pathname});
+      if (location.pathname.indexOf('/donasi') === 0 && link.textContent.toLowerCase().indexOf('konfirmasi') !== -1) {
+        sendEvent('donate_click', {method: 'whatsapp_confirmation', page_path: location.pathname});
+      }
+    }
+    if (button && button.textContent.toLowerCase().indexOf('salin nomor rekening') !== -1) {
+      sendEvent('donate_click', {method: 'copy_bank_account', page_path: location.pathname});
+    }
+  });
+  document.addEventListener('submit', function(event){
+    var form = event.target;
+    if (form && /csr/i.test(form.id + ' ' + form.className + ' ' + (form.getAttribute('name') || ''))) {
+      sendEvent('csr_form_submit', {page_path: location.pathname});
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
