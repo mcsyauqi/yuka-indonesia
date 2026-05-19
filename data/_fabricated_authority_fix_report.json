@@ -1,0 +1,516 @@
+{
+  "total_files_scanned": 63,
+  "files_modified": 19,
+  "total_replacements": 31,
+  "details": [
+    {
+      "file": "abk-adalah-anak-berkebutuhan-khusus.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "Kemdikbud attribution removed",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "abk-menghadapi-era-ai.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "adhd-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "WHO attribution removed",
+          "count": 1
+        },
+        {
+          "pattern": "Vague riset ilmiah softened",
+          "count": 1
+        },
+        {
+          "pattern": "ADHD 70-80% metilfenidat stat softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 3
+    },
+    {
+      "file": "asesmen-abk.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "autisme-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "WHO attribution removed",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "bahasa-isyarat.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "BPS 2022 attribution softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "bisindo-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "BPS attribution softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "cerebral-palsy-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "csr-pendidikan.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "BPS attribution softened",
+          "count": 1
+        },
+        {
+          "pattern": "Cone Communications 87% Indonesia claim REMOVED (fabricated)",
+          "count": 1
+        }
+      ],
+      "total_replacements": 2
+    },
+    {
+      "file": "difabel-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "Kemdikbud attribution softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "disabilitas-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "WHO attribution removed",
+          "count": 1
+        },
+        {
+          "pattern": "WHO data attribution softened",
+          "count": 2
+        },
+        {
+          "pattern": "WHO World Report attribution softened",
+          "count": 1
+        },
+        {
+          "pattern": "BPS 2022 attribution softened",
+          "count": 2
+        },
+        {
+          "pattern": "BPS attribution softened",
+          "count": 1
+        },
+        {
+          "pattern": "Susenas BPS attribution softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 8
+    },
+    {
+      "file": "disabilitas-intelektual-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "WHO attribution removed",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "disleksia-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "donasi-online.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "down-syndrome-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "floor-time-terapi.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "Greenspan & Wieder 1997 fabricated study removed (variant)",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "gpk-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "hiperaktif-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "APA attribution removed",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "homeschooling-anak-berkebutuhan-khusus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "inklusi-sosial.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "Susenas attribution softened",
+          "count": 1
+        },
+        {
+          "pattern": "World Bank attribution removed",
+          "count": 1
+        }
+      ],
+      "total_replacements": 2
+    },
+    {
+      "file": "intervensi-dini.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "kecerdasan-majemuk.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "kesulitan-belajar.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "Vague penelitian softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "keutamaan-merawat-anak-yatim.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "kisah-ilham-hafiz.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "kisah-mas-ilham-mandiri-telur-asin.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "latihan-motorik-halus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "memilih-yayasan-anak-berkebutuhan-khusus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "montessori-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "motorik-halus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "motorik-kasar-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "panti-asuhan-yogyakarta.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "pendidikan-inklusi.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "pendidikan-khusus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "penyandang-disabilitas.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "BPS 2022 attribution softened",
+          "count": 2
+        }
+      ],
+      "total_replacements": 2
+    },
+    {
+      "file": "peran-orang-tua-pendidikan-inklusi.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "perbedaan-autis-dan-adhd.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "WHO attribution removed",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "program-pembelajaran-individual.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "program-pemberdayaan-anak-berkebutuhan-khusus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "program-ramadhan-yuka-2026.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "retardasi-mental-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "sensori-integrasi.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "shadow-teacher-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "slb-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "slb-terdekat.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "slow-learner.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "speech-delay-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "Speech delay 50-70% stat softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "terapi-aba.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "terapi-bermain.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "terapi-memasak-anak-berkebutuhan-khusus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "terapi-okupasi.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "terapi-wicara.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "terapis-speech-delay.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "IDAI attribution removed",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "tips-mendampingi-anak-autis.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "transparansi-donasi.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "tuna-daksa-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "tuna-rungu-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "tuna-wicara-adalah.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "Journal cite softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    },
+    {
+      "file": "tunaganda-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "tunagrahita-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "tunalaras-adalah.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "wisata-edukasi-anak-berkebutuhan-khusus.html",
+      "modified": false,
+      "changes": [],
+      "total_replacements": 0
+    },
+    {
+      "file": "yayasan-sosial-anak-berkebutuhan-khusus.html",
+      "modified": true,
+      "changes": [
+        {
+          "pattern": "BPS attribution softened",
+          "count": 1
+        }
+      ],
+      "total_replacements": 1
+    }
+  ]
+}
