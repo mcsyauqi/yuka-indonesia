@@ -1,0 +1,725 @@
+[
+  {
+    "file": "abk-adalah-anak-berkebutuhan-khusus.html",
+    "action": "uplifted",
+    "before": 44750,
+    "after": 47410,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "abk-menghadapi-era-ai.html",
+    "action": "uplifted",
+    "before": 27752,
+    "after": 38388,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "adhd-adalah.html",
+    "action": "uplifted",
+    "before": 53463,
+    "after": 55897,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "asesmen-abk.html",
+    "action": "uplifted",
+    "before": 59763,
+    "after": 62317,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "autisme-adalah.html",
+    "action": "uplifted",
+    "before": 54133,
+    "after": 57237,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 3
+    }
+  },
+  {
+    "file": "bahasa-isyarat.html",
+    "action": "uplifted",
+    "before": 60414,
+    "after": 63308,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 6
+    }
+  },
+  {
+    "file": "bisindo-adalah.html",
+    "action": "uplifted",
+    "before": 58257,
+    "after": 60593,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "cerebral-palsy-adalah.html",
+    "action": "uplifted",
+    "before": 56539,
+    "after": 59143,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "csr-pendidikan.html",
+    "action": "uplifted",
+    "before": 48647,
+    "after": 51279,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "difabel-adalah.html",
+    "action": "uplifted",
+    "before": 48910,
+    "after": 52412,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 12
+    }
+  },
+  {
+    "file": "disabilitas-adalah.html",
+    "action": "uplifted",
+    "before": 59589,
+    "after": 64131,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 21
+    }
+  },
+  {
+    "file": "disabilitas-intelektual-adalah.html",
+    "action": "uplifted",
+    "before": 58909,
+    "after": 61393,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "disleksia-adalah.html",
+    "action": "uplifted",
+    "before": 50593,
+    "after": 53077,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "donasi-online.html",
+    "action": "uplifted",
+    "before": 56304,
+    "after": 59008,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "down-syndrome-adalah.html",
+    "action": "uplifted",
+    "before": 50598,
+    "after": 53322,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 2
+    }
+  },
+  {
+    "file": "floor-time-terapi.html",
+    "action": "uplifted",
+    "before": 52728,
+    "after": 55447,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "gpk-adalah.html",
+    "action": "uplifted",
+    "before": 59928,
+    "after": 62604,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "hiperaktif-adalah.html",
+    "action": "uplifted",
+    "before": 54919,
+    "after": 57353,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "homeschooling-anak-berkebutuhan-khusus.html",
+    "action": "uplifted",
+    "before": 54669,
+    "after": 57195,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "inklusi-sosial.html",
+    "action": "uplifted",
+    "before": 55843,
+    "after": 58687,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 3
+    }
+  },
+  {
+    "file": "intervensi-dini.html",
+    "action": "uplifted",
+    "before": 52626,
+    "after": 56123,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 5
+    }
+  },
+  {
+    "file": "kecerdasan-majemuk.html",
+    "action": "uplifted",
+    "before": 57165,
+    "after": 59691,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "kesulitan-belajar.html",
+    "action": "uplifted",
+    "before": 67322,
+    "after": 69806,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "keutamaan-merawat-anak-yatim.html",
+    "action": "uplifted",
+    "before": 29459,
+    "after": 39398,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "kisah-ilham-hafiz.html",
+    "action": "uplifted",
+    "before": 24742,
+    "after": 34681,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "kisah-mas-ilham-mandiri-telur-asin.html",
+    "action": "uplifted",
+    "before": 28085,
+    "after": 38024,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "latihan-motorik-halus.html",
+    "action": "uplifted",
+    "before": 54329,
+    "after": 57048,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "memilih-yayasan-anak-berkebutuhan-khusus.html",
+    "action": "uplifted",
+    "before": 44169,
+    "after": 54805,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "montessori-adalah.html",
+    "action": "uplifted",
+    "before": 58104,
+    "after": 60630,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "motorik-halus.html",
+    "action": "uplifted",
+    "before": 57922,
+    "after": 60641,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "motorik-kasar-adalah.html",
+    "action": "uplifted",
+    "before": 61931,
+    "after": 64650,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "panti-asuhan-yogyakarta.html",
+    "action": "uplifted",
+    "before": 57032,
+    "after": 59586,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "pendidikan-inklusi.html",
+    "action": "uplifted",
+    "before": 29533,
+    "after": 40367,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "pendidikan-khusus.html",
+    "action": "uplifted",
+    "before": 60197,
+    "after": 62979,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 2
+    }
+  },
+  {
+    "file": "penyandang-disabilitas.html",
+    "action": "uplifted",
+    "before": 54785,
+    "after": 58811,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 16
+    }
+  },
+  {
+    "file": "peran-orang-tua-pendidikan-inklusi.html",
+    "action": "uplifted",
+    "before": 40369,
+    "after": 51159,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "perbedaan-autis-dan-adhd.html",
+    "action": "uplifted",
+    "before": 65789,
+    "after": 68527,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "program-pembelajaran-individual.html",
+    "action": "uplifted",
+    "before": 57919,
+    "after": 60701,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 2
+    }
+  },
+  {
+    "file": "program-pemberdayaan-anak-berkebutuhan-khusus.html",
+    "action": "uplifted",
+    "before": 45093,
+    "after": 55729,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "program-ramadhan-yuka-2026.html",
+    "action": "uplifted",
+    "before": 30335,
+    "after": 40274,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "retardasi-mental-adalah.html",
+    "action": "uplifted",
+    "before": 69194,
+    "after": 72038,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 3
+    }
+  },
+  {
+    "file": "sensori-integrasi.html",
+    "action": "uplifted",
+    "before": 56242,
+    "after": 58961,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "shadow-teacher-adalah.html",
+    "action": "uplifted",
+    "before": 59373,
+    "after": 61899,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "slb-adalah.html",
+    "action": "uplifted",
+    "before": 56168,
+    "after": 59294,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 4
+    }
+  },
+  {
+    "file": "slb-terdekat.html",
+    "action": "uplifted",
+    "before": 58236,
+    "after": 61362,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 4
+    }
+  },
+  {
+    "file": "slow-learner.html",
+    "action": "uplifted",
+    "before": 59352,
+    "after": 61836,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "speech-delay-adalah.html",
+    "action": "uplifted",
+    "before": 59520,
+    "after": 62004,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "terapi-aba.html",
+    "action": "uplifted",
+    "before": 61002,
+    "after": 64118,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 3
+    }
+  },
+  {
+    "file": "terapi-bermain.html",
+    "action": "uplifted",
+    "before": 61248,
+    "after": 63967,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "terapi-memasak-anak-berkebutuhan-khusus.html",
+    "action": "uplifted",
+    "before": 42201,
+    "after": 52571,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "terapi-okupasi.html",
+    "action": "uplifted",
+    "before": 57699,
+    "after": 60732,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 2
+    }
+  },
+  {
+    "file": "terapi-wicara.html",
+    "action": "uplifted",
+    "before": 57888,
+    "after": 60764,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "terapis-speech-delay.html",
+    "action": "uplifted",
+    "before": 56277,
+    "after": 59190,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 1
+    }
+  },
+  {
+    "file": "tips-mendampingi-anak-autis.html",
+    "action": "uplifted",
+    "before": 31492,
+    "after": 42299,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "transparansi-donasi.html",
+    "action": "uplifted",
+    "before": 21105,
+    "after": 31044,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "tuna-daksa-adalah.html",
+    "action": "uplifted",
+    "before": 60423,
+    "after": 63719,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 7
+    }
+  },
+  {
+    "file": "tuna-rungu-adalah.html",
+    "action": "uplifted",
+    "before": 60713,
+    "after": 63507,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 2
+    }
+  },
+  {
+    "file": "tuna-wicara-adalah.html",
+    "action": "uplifted",
+    "before": 58123,
+    "after": 60917,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 2
+    }
+  },
+  {
+    "file": "tunaganda-adalah.html",
+    "action": "uplifted",
+    "before": 65320,
+    "after": 67874,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "tunagrahita-adalah.html",
+    "action": "uplifted",
+    "before": 50636,
+    "after": 53430,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false,
+      "refLinks": 2
+    }
+  },
+  {
+    "file": "tunalaras-adalah.html",
+    "action": "uplifted",
+    "before": 66834,
+    "after": 69388,
+    "injected": {
+      "sources": true,
+      "faq": false,
+      "schema": false
+    }
+  },
+  {
+    "file": "wisata-edukasi-anak-berkebutuhan-khusus.html",
+    "action": "uplifted",
+    "before": 38865,
+    "after": 49501,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  },
+  {
+    "file": "yayasan-sosial-anak-berkebutuhan-khusus.html",
+    "action": "uplifted",
+    "before": 43007,
+    "after": 53643,
+    "injected": {
+      "sources": true,
+      "faq": true,
+      "schema": true
+    }
+  }
+]
