@@ -34,22 +34,16 @@
     <loc>https://www.yukaindonesia.com/galeri</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/kontak</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.yukaindonesia.com/csr-pendidikan-inklusi</loc>
-    <lastmod>2026-05-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.yukaindonesia.com/donasi-pendidikan-abk</loc>
+    <loc>https://www.yukaindonesia.com/yayasan-abk-yogyakarta</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -61,13 +55,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.yukaindonesia.com/yayasan-abk-yogyakarta</loc>
+    <loc>https://www.yukaindonesia.com/donasi-pendidikan-abk</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/zakat-pendidikan-abk</loc>
+    <lastmod>2026-05-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/csr-pendidikan-inklusi</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

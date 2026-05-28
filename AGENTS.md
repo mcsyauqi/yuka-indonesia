@@ -28,9 +28,9 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 ### Core Site Files
 - Main pages (8): `index.html`, `tentang.html`, `program.html`, `donasi.html`, `blog.html`, `galeri.html`, `kontak.html`, `404.html`
 - Commercial landing pages (5): `yayasan-abk-yogyakarta.html`, `sekolah-inklusi-sleman.html`, `donasi-pendidikan-abk.html`, `zakat-pendidikan-abk.html`, `csr-pendidikan-inklusi.html`
-- Articles: 63 HTML files under `artikel/`
-- Sitemaps: `sitemap.xml`, `sitemap-pages.xml` (12 URLs), `sitemap-articles.xml` (63 URLs), `sitemap-images.xml` (303 URLs), `sitemap-index.xml` (3 refs)
-- RSS: `feed.xml` (63 items)
+- Articles: 65 HTML files under `artikel/`
+- Sitemaps: `sitemap.xml`, `sitemap-pages.xml` (12 URLs), `sitemap-articles.xml` (65 URLs), `sitemap-images.xml` (303 URLs), `sitemap-index.xml` (3 refs)
+- RSS: `feed.xml` (65 items)
 - Assets: `Dokumentasi/` (~298 WebP photos), `Logo/` (7 files), `Team/` (4 files: Bu Yupie, Pak Diyat), `Flyer Zakat/`, `Sertifikat dan Legalitas/` (NPWP, SK Domisili, SK Kemenkumham)
 - Report theme assets: `report-assets/brand.json`, `report-assets/header.html`, `report-assets/footer.html`, `report-assets/logo.webp`
 
@@ -40,11 +40,17 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 - Reads `publish-schedule.json`
 - For entries with `date <= today`:
   1. Inserts cards into `blog.html` (after `<div class="blog-grid" id="blogGrid">`)
-  2. Appends clean URLs to `sitemap.xml`
+  2. Regenerates `sitemap.xml`, `sitemap-pages.xml`, and `sitemap-articles.xml` via `scripts/regen-sitemaps.js`
   3. Removes published entries from `publish-schedule.json`
   4. Commits and pushes
   5. Sends email notification to ahmadthariqsyauqi@gmail.com via SMTP
 - **Important**: before relying on scheduled publish, check that referenced article files actually exist. As of 2026-05-13, 402 future entries had missing article files.
+
+### Sitemap Decision
+- Decision 2026-05-28: keep the multi-sitemap structure (`sitemap.xml`, `sitemap-pages.xml`, `sitemap-articles.xml`, `sitemap-images.xml`, `sitemap-index.xml`) and make article/page sitemap sync automatic instead of deleting split sitemaps.
+- Source of truth for article URLs: `artikel/*.html`.
+- Regeneration command: `node scripts/regen-sitemaps.js`.
+- Scheduled publish workflow calls the generator after publishing due articles so `sitemap-articles.xml` no longer lags behind `sitemap.xml`.
 
 ### Current Data Snapshot (2026-05-13)
 - `publish-schedule.json`: 428 remaining entries (dates from 2026-05-14 through end of year)
@@ -97,8 +103,8 @@ Each article in `artikel/` follows this template:
 ```
 
 ### Important Current Caveats
-- 63/63 article files currently have clean canonical URLs, no article `.html` hrefs, no `.html` social-share URLs, GA4 present, and `analytics.js` present.
-- `blog.html` still has 13 top article card links ending in `.html` (`gpk-adalah` through `tunagrahita-adalah`). This is not social share, but it can still create cleanUrl redirects from the blog list.
+- 65/65 article files currently have clean canonical URLs, no article `.html` hrefs, no `.html` social-share URLs, GA4 present, and `analytics.js` present.
+- `blog.html` top article card links have been normalized to clean URLs; local audit currently reports 0 `.html` article-card links.
 - Many report/script/screenshot artifacts are untracked existing work. Do not delete or reset them unless explicitly asked.
 - `data/node_modules/` is dependency code for report/doc generation; do not treat it as project source.
 - JSON-LD `@id` in some articles still uses `.html` URL — separate issue from social share, not causing GSC redirect errors.

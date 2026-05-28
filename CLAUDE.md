@@ -22,7 +22,7 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 ### Core Site Files
 - Main pages: `index.html`, `tentang.html`, `program.html`, `donasi.html`, `blog.html`, `galeri.html`, `kontak.html`, `404.html`
 - Commercial landing pages: `yayasan-abk-yogyakarta.html`, `sekolah-inklusi-sleman.html`, `donasi-pendidikan-abk.html`, `zakat-pendidikan-abk.html`, `csr-pendidikan-inklusi.html`
-- Articles: 63 HTML files under `artikel/`
+- Articles: 65 HTML files under `artikel/`
 - Sitemaps: `sitemap.xml`, `sitemap-pages.xml`, `sitemap-articles.xml`, `sitemap-images.xml`, `sitemap-index.xml`
 - RSS: `feed.xml`
 - Assets: `Dokumentasi/`, `Logo/`, `Team/`, `Flyer Zakat/`, `Sertifikat dan Legalitas/`, `assets/images/banks/`
@@ -32,15 +32,21 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 - Scheduled publish workflow: `.github/workflows/publish-scheduled.yml`
 - Runs daily at 02:00 UTC / 09:00 WIB
 - Reads `publish-schedule.json`
-- For entries with `date <= today`, inserts cards into `blog.html`, appends clean URLs to `sitemap.xml`, removes published entries from `publish-schedule.json`, commits, pushes, and sends email notification
+- For entries with `date <= today`, inserts clean article cards into `blog.html`, regenerates `sitemap.xml`, `sitemap-pages.xml`, and `sitemap-articles.xml` via `scripts/regen-sitemaps.js`, removes published entries from `publish-schedule.json`, commits, pushes, and sends email notification
 - Important: before relying on scheduled publish, check that referenced article files actually exist.
+
+### Sitemap Decision
+- Decision 2026-05-28: keep the multi-sitemap structure (`sitemap.xml`, `sitemap-pages.xml`, `sitemap-articles.xml`, `sitemap-images.xml`, `sitemap-index.xml`) and make article/page sitemap sync automatic instead of deleting split sitemaps.
+- Source of truth for article URLs: `artikel/*.html`.
+- Regeneration command: `node scripts/regen-sitemaps.js`.
+- Scheduled publish workflow calls the generator after publishing due articles so `sitemap-articles.xml` no longer lags behind `sitemap.xml`.
 
 ### Current Data Snapshot (2026-05-13)
 - `publish-schedule.json`: 428 remaining entries
 - Existing files referenced by schedule: 26
 - Missing future article files referenced by schedule: 402
-- Sitemaps: `sitemap.xml` 71 URLs, `sitemap-pages.xml` 12 URLs, `sitemap-articles.xml` 63 URLs, `sitemap-images.xml` 303 URLs, `sitemap-index.xml` 3 refs
-- `feed.xml`: 63 items, lastBuildDate `Tue, 25 Mar 2026 07:00:00 +0700`
+- Sitemaps: `sitemap.xml` 77 URLs, `sitemap-pages.xml` 12 URLs, `sitemap-articles.xml` 65 URLs, `sitemap-images.xml` 303 URLs, `sitemap-index.xml` 3 refs
+- `feed.xml`: 65 items
 - Keyword data:
   - `YUKA_Keyword_Database.xlsx`
   - `keyword_research_new.json` 280 rows
@@ -51,7 +57,7 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 - GSC/report data lives under `data/` and `reports/`
 
 ### Important Current Caveats
-- 63/63 article files currently have clean canonical URLs, no article `.html` hrefs, no `.html` social-share URLs, GA4 present, and `analytics.js` present.
+- 65/65 article files currently have clean canonical URLs, no article `.html` hrefs, no `.html` social-share URLs, GA4 present, and `analytics.js` present.
 - `blog.html` top article card links have been normalized to clean URLs; local audit currently reports 0 `.html` article-card links.
 - `donasi.html` includes impact-based nominal cards before the bank-transfer block to improve donation conversion clarity.
 - `tentang.html` uses `Logo/Logo.webp` in the logo meaning section; local image audit currently reports 0 referenced images over 1MB.

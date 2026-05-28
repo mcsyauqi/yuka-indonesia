@@ -63,7 +63,9 @@ jobs:
             # Append to email rows
             EMAIL_ROWS="${EMAIL_ROWS}<tr><td style='padding:16px;border-bottom:1px solid #eee'><strong style='font-size:16px'>${title}</strong><br><small style='color:#666'>Kategori: ${category} | ${readtime} | ${DISPLAY_DATE}</small><br><span style='color:#555;font-size:13px'>${desc}</span><br><a href='https://www.yukaindonesia.com/artikel/${slug}' style='display:inline-block;margin-top:8px;padding:8px 16px;background:#2e7d32;color:#ffffff;text-decoration:none;border-radius:4px;font-size:13px;font-weight:bold'>Baca Artikel &rarr;</a></td></tr>"
 
-            # Create blog card HTML
+            # Create blog card HTML. Use the clean URL path in blog links even
+            # when the schedule entry keeps the physical .html file path.
+            CLEAN_FILE="artikel/$slug"
             CARD="                <!-- Article: $title -->
                           <article class=\"card blog-card animate-on-scroll\">
                               <div class=\"card-image\">
@@ -72,7 +74,7 @@ jobs:
                               <div class=\"card-body\">
                                   <span class=\"card-category\">$category</span>
                                   <h3 class=\"card-title\">
-                                      <a href=\"$file\">$title</a>
+                                      <a href=\"$CLEAN_FILE\">$title</a>
                                   </h3>
                                   <p class=\"card-text\">$desc</p>
                                   <div class=\"card-meta\">
@@ -132,6 +134,9 @@ jobs:
 
           done <<< "$ARTICLES"
 
+          # Keep split sitemaps and the main sitemap in sync after scheduled publish.
+          node scripts/regen-sitemaps.js
+
           # Count published
           PUBLISHED_COUNT=$(echo "$ARTICLES" | wc -l)
           echo "published_count=$PUBLISHED_COUNT" >> $GITHUB_OUTPUT
@@ -188,7 +193,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add blog.html sitemap.xml publish-schedule.json
+          git add blog.html sitemap.xml sitemap-pages.xml sitemap-articles.xml publish-schedule.json
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "Auto-publish scheduled articles for $(date -u +%Y-%m-%d)"
           git push
