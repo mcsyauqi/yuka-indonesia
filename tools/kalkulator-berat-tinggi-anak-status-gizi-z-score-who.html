@@ -1,412 +1,276 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO)</title>
-  <meta name="description" content="Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO) gratis online. Cocok untuk yang nyari "kalkulator imt". Mudah dipakai, hasil instan." />
-  <link rel="canonical" href="https://www.yukaindonesia.com/tools/kalkulator-berat-tinggi-anak-status-gizi-z-score-who/" />
-  
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalkulator Status Gizi Anak (Z-Score WHO) - Berat & Tinggi 0-5 Tahun | YUKA</title>
+  <meta name="description" content="Kalkulator status gizi anak online berdasarkan Standar Pertumbuhan Anak WHO. Hitung z-score berat-menurut-umur, tinggi-menurut-umur, dan berat-menurut-tinggi (BB/TB) untuk anak 0-60 bulan. Skrining, bukan diagnosis. Buatan Yayasan YUKA."/>
+  <link rel="canonical" href="https://www.yukaindonesia.com/tools/kalkulator-berat-tinggi-anak-status-gizi-z-score-who/"/>
 
-  <link rel="icon" type="image/x-icon" href="Icon.ico">
-<link rel="shortcut icon" type="image/x-icon" href="Icon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<link rel="stylesheet" href="assets/css/style.min.css">
-  
+  <link rel="icon" type="image/x-icon" href="/Icon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/Icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/style.min.css">
+  <style>
+    .tool-main{padding:calc(80px + var(--spacing-2xl)) 0 var(--spacing-3xl);background:var(--gray-50);min-height:70vh}
+    .tool-wrap{max-width:780px;margin:0 auto;padding:0 var(--spacing-lg)}
+    .tool-head{text-align:center;margin-bottom:var(--spacing-xl)}
+    .tool-head h1{font-size:clamp(1.7rem,4vw,2.4rem);color:var(--primary);font-weight:700;line-height:1.2;margin-bottom:var(--spacing-md)}
+    .tool-head p{font-size:1.02rem;color:var(--gray-700);line-height:1.7;max-width:640px;margin:0 auto}
+    .disclaimer-top{max-width:780px;margin:0 auto var(--spacing-xl);background:#FFF3E0;border:1.5px solid var(--accent-orange);border-radius:var(--radius-md);padding:var(--spacing-lg);color:#8a4b00;line-height:1.6;font-size:.93rem}
+    .disclaimer-top strong{color:var(--accent-orange)}
+    .tool-card{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);padding:var(--spacing-2xl);margin-bottom:var(--spacing-2xl)}
+    .tool-card h2{font-size:1.35rem;color:var(--primary);font-weight:600;margin-bottom:var(--spacing-md)}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:var(--spacing-lg)}
+    .field{margin-bottom:var(--spacing-lg)}
+    .field label{display:block;font-weight:500;color:var(--gray-800);margin-bottom:var(--spacing-xs);font-size:.95rem}
+    .field input,.field select{width:100%;padding:.7rem 1rem;border:1.5px solid var(--gray-300);border-radius:var(--radius-md);font-family:var(--font-primary);font-size:1rem;color:var(--gray-900);background:var(--white)}
+    .field input:focus,.field select:focus{outline:none;border-color:var(--primary-light);box-shadow:0 0 0 3px var(--primary-50)}
+    .field .hint{font-size:.82rem;color:var(--gray-600);margin-top:.35rem}
+    .tool-btn{width:100%;background:var(--primary);color:var(--white);padding:.9rem 1.5rem;border:none;border-radius:var(--radius-md);font-family:var(--font-primary);font-size:1.05rem;font-weight:600;cursor:pointer;transition:background var(--transition-fast);box-shadow:var(--shadow-md);margin-top:var(--spacing-sm)}
+    .tool-btn:hover{background:var(--primary-dark)}
+    .result-box{margin-top:var(--spacing-xl);display:none}
+    .result-box.show{display:block}
+    .res-card{border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:var(--spacing-lg);margin-bottom:var(--spacing-md)}
+    .res-card .rh{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:.5rem;margin-bottom:.4rem}
+    .res-card .rh .nm{font-weight:600;color:var(--primary)}
+    .res-card .rh .zv{font-size:.9rem;color:var(--gray-600)}
+    .stat-badge{display:inline-block;padding:.3rem .85rem;border-radius:var(--radius-full);font-size:.92rem;font-weight:600;color:#fff}
+    .b-buruk{background:var(--accent-red)}.b-kurang{background:#FB8C00}.b-normal{background:#43A047}.b-risiko{background:#FBC02D;color:#5a4500}.b-lebih{background:#FB8C00}.b-obes{background:var(--accent-red)}.b-pendek{background:#FB8C00}.b-sangat{background:var(--accent-red)}.b-tinggi{background:#00BCD4}
+    .res-note{font-size:.88rem;color:var(--gray-600);margin-top:.35rem;line-height:1.5}
+    .note{background:var(--secondary-light);border-left:4px solid var(--secondary-dark);padding:var(--spacing-md) var(--spacing-lg);border-radius:var(--radius-sm);font-size:.92rem;color:var(--gray-800);line-height:1.6;margin-top:var(--spacing-md)}
+    .err{color:var(--accent-red);font-weight:500;margin-top:var(--spacing-md);font-size:.95rem}
+    .faq-item{border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:var(--spacing-lg);margin-bottom:var(--spacing-md);background:var(--white)}
+    .faq-item h3{font-size:1.05rem;color:var(--primary);margin-bottom:var(--spacing-xs);font-weight:600}
+    .faq-item p{color:var(--gray-700);line-height:1.65;margin:0;font-size:.95rem}
+    .related-links{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--spacing-md)}
+    .related-links a{color:var(--primary-light);text-decoration:none;font-weight:500}
+    .related-links a:hover{text-decoration:underline}
+    @media(max-width:600px){.tool-card{padding:var(--spacing-lg)}.grid2{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
-<!-- Navigation -->
 <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="/" class="navbar-brand">
-                <img src="Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
-            </a>
-
-            <div class="navbar-menu" id="navbarMenu">
-                <a href="/" class="active">Beranda</a>
-                <a href="/tentang">Tentang</a>
-                <a href="/program">Program</a>
-                <a href="/galeri">Galeri</a>
-                <a href="/blog">Artikel</a>
-                <a href="/kontak">Kontak</a>
-                <a href="/donasi" class="btn btn-primary btn-sm">Donasi</a>
-            </div>
-
-            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <div class="container">
+        <a href="/" class="navbar-brand"><img src="/Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60"></a>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="/">Beranda</a><a href="/tentang">Tentang</a><a href="/program">Program</a><a href="/galeri">Galeri</a><a href="/blog">Artikel</a><a href="/kontak">Kontak</a><a href="/donasi" class="btn btn-primary btn-sm">Donasi</a>
         </div>
-    </nav>
-<main>
-  <article style="max-width: 800px; margin: 0 auto; padding: 24px; font-family: inherit;">
-  <h1 style="font-size: 32px; margin-bottom: 16px; color: #2B3A67;">Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO)</h1>
-  <p style="font-size: 18px; line-height: 1.6; color: #444; margin-bottom: 24px;">Estimasi status gizi berdasarkan berat + tinggi + umur (referensi WHO).</p>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+</nav>
 
-  <section id="calcForm" style="background: #f8f9ff; padding: 24px; border-radius: 12px; margin-bottom: 32px;">
-    <h2 style="font-size: 22px; margin-bottom: 16px;">Tool Kalkulator</h2>
-    
-    <div style="margin-bottom: 16px;">
-      <label for="gender" style="display: block; margin-bottom: 4px; font-weight: 600;">Jenis Kelamin</label>
-      <select id="gender" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;">
-        <option value="laki">Laki-laki</option>
-        <option value="perempuan">Perempuan</option>
-      </select>
+<main class="tool-main">
+  <div class="tool-wrap">
+    <div class="tool-head">
+      <h1>Kalkulator Status Gizi Anak (Z-Score WHO)</h1>
+      <p>Hitung status gizi anak berdasarkan Standar Pertumbuhan Anak WHO untuk usia 0 sampai 60 bulan (0-5 tahun). Kalkulator ini menghitung tiga indikator: berat menurut umur (BB/U), tinggi menurut umur (TB/U), dan berat menurut tinggi (BB/TB), lalu menentukan status gizi sesuai ambang z-score WHO.</p>
     </div>
-    <div style="margin-bottom: 16px;">
-      <label for="umurBulan" style="display: block; margin-bottom: 4px; font-weight: 600;">Umur (bulan, 0-60)</label>
-      <input type="number" id="umurBulan" placeholder="Misal: 24" min="0" max="60" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
-    </div>
-    <div style="margin-bottom: 16px;">
-      <label for="berat" style="display: block; margin-bottom: 4px; font-weight: 600;">Berat (kg)</label>
-      <input type="number" id="berat" placeholder="Misal: 12" step="0.1" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
-    </div>
-    <div style="margin-bottom: 16px;">
-      <label for="tinggi" style="display: block; margin-bottom: 4px; font-weight: 600;">Tinggi (cm)</label>
-      <input type="number" id="tinggi" placeholder="Misal: 85" step="0.1" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
-    </div>
-    <div style="display: flex; gap: 8px; margin-top: 16px;">
-      <button id="calcBtn" type="button" style="background: #2B3A67; color: #fff; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer;">Hitung</button>
-      <button id="resetBtn" type="button" style="background: #fff; color: #2B3A67; padding: 12px 24px; border: 1px solid #2B3A67; border-radius: 6px; font-size: 16px; cursor: pointer;">Reset</button>
-    </div>
-    <div id="calcResult" style="display: none; margin-top: 16px; padding: 16px; background: #fff; border-radius: 8px; font-size: 16px; line-height: 1.6;"></div>
-  </section>
 
-  <section style="max-width: 800px; margin: 32px auto;">
-  <h2 style="font-size: 24px; margin-bottom: 16px;">Pertanyaan Umum</h2>
-  
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Apa itu Kalkulator Berat &amp; Tinggi Anak (Status Gizi / Z-Score WHO)?</h3>
-      <p style="margin: 0; color: #555;">Kalkulator Berat &amp; Tinggi Anak (Status Gizi / Z-Score WHO) adalah tool gratis online yang bantu kamu hitung dengan cepat tanpa perlu install aplikasi.</p>
+    <div class="disclaimer-top">
+      <strong>Penting (informasi kesehatan):</strong> Hasil ini adalah indikasi skrining berbasis Standar WHO, BUKAN diagnosis medis. Banyak faktor lain memengaruhi status gizi. Untuk penilaian dan penanganan yang tepat, konsultasikan ke posyandu, puskesmas, atau dokter anak. Pengukuran berat dan tinggi yang akurat sangat memengaruhi hasil.
     </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Bagaimana cara pakai Kalkulator Berat &amp; Tinggi Anak (Status Gizi / Z-Score WHO)?</h3>
-      <p style="margin: 0; color: #555;">Isi field input di atas, klik tombol &quot;Hitung&quot;, hasilnya muncul instan. Reset kalau mau hitung ulang.</p>
-    </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Apakah Kalkulator Berat &amp; Tinggi Anak (Status Gizi / Z-Score WHO) gratis?</h3>
-      <p style="margin: 0; color: #555;">Ya, 100% gratis. Tidak perlu daftar atau login.</p>
-    </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Apakah hasil Kalkulator Berat &amp; Tinggi Anak (Status Gizi / Z-Score WHO) akurat?</h3>
-      <p style="margin: 0; color: #555;">Akurat sesuai formula standar. Hasil ini panduan; konsultasi ahli kalau butuh keputusan penting.</p>
-    </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Bisa dipakai di HP?</h3>
-      <p style="margin: 0; color: #555;">Bisa. Tool ini responsive dan jalan di HP, tablet, dan desktop.</p>
-    </div>
-</section>
-  <section style="max-width: 800px; margin: 32px auto;">
-  <h2 style="font-size: 22px; margin-bottom: 12px;">Artikel Terkait</h2>
-  <ul style="list-style: none; padding-left: 0;">
-    
-    <li style="margin-bottom: 8px;">
-      <a href="https://www.yukaindonesia.com/" style="color: #2563eb; text-decoration: none;">Beranda</a>
-    </li>
-    <li style="margin-bottom: 8px;">
-      <a href="https://www.yukaindonesia.com/blog" style="color: #2563eb; text-decoration: none;">Blog</a>
-    </li>
-    <li style="margin-bottom: 8px;">
-      <a href="https://www.yukaindonesia.com/tentang" style="color: #2563eb; text-decoration: none;">Tentang</a>
-    </li>
-  </ul>
-</section>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO)","description":"Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO) gratis online. Cocok untuk yang nyari \"kalkulator imt\". Mudah dipakai, hasil instan.","url":"https://www.yukaindonesia.com/tools/kalkulator-berat-tinggi-anak-status-gizi-z-score-who/","datePublished":"2026-06-03","author":{"@type":"Organization","name":"Creativism"},"publisher":{"@type":"Organization","name":"Creativism"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.yukaindonesia.com/tools/kalkulator-berat-tinggi-anak-status-gizi-z-score-who/"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apa itu Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO)?","acceptedAnswer":{"@type":"Answer","text":"Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO) adalah tool gratis online yang bantu kamu hitung dengan cepat tanpa perlu install aplikasi."}},{"@type":"Question","name":"Bagaimana cara pakai Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO)?","acceptedAnswer":{"@type":"Answer","text":"Isi field input di atas, klik tombol \"Hitung\", hasilnya muncul instan. Reset kalau mau hitung ulang."}},{"@type":"Question","name":"Apakah Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO) gratis?","acceptedAnswer":{"@type":"Answer","text":"Ya, 100% gratis. Tidak perlu daftar atau login."}},{"@type":"Question","name":"Apakah hasil Kalkulator Berat & Tinggi Anak (Status Gizi / Z-Score WHO) akurat?","acceptedAnswer":{"@type":"Answer","text":"Akurat sesuai formula standar. Hasil ini panduan; konsultasi ahli kalau butuh keputusan penting."}},{"@type":"Question","name":"Bisa dipakai di HP?","acceptedAnswer":{"@type":"Answer","text":"Bisa. Tool ini responsive dan jalan di HP, tablet, dan desktop."}}]}</script>
+    <div class="tool-card">
+      <h2>Data Anak</h2>
+      <div class="grid2">
+        <div class="field">
+          <label for="sex">Jenis kelamin</label>
+          <select id="sex"><option value="">-- Pilih --</option><option value="1">Laki-laki</option><option value="2">Perempuan</option></select>
+        </div>
+        <div class="field">
+          <label for="usia">Usia (bulan)</label>
+          <input type="number" id="usia" min="0" max="60" step="1" inputmode="numeric" placeholder="0 - 60">
+          <span class="hint">Rentang yang didukung: 0 sampai 60 bulan.</span>
+        </div>
+        <div class="field">
+          <label for="berat">Berat badan (kg)</label>
+          <input type="number" id="berat" min="0" step="any" inputmode="decimal" placeholder="contoh: 9.5">
+        </div>
+        <div class="field">
+          <label for="tinggi">Tinggi / panjang badan (cm)</label>
+          <input type="number" id="tinggi" min="0" step="any" inputmode="decimal" placeholder="contoh: 75">
+          <span class="hint">Anak &lt; 24 bulan diukur telentang (panjang), &ge; 24 bulan diukur berdiri (tinggi).</span>
+        </div>
+      </div>
+      <button class="tool-btn" id="hitungBtn" type="button">Hitung Status Gizi</button>
+      <div class="err" id="errMsg" style="display:none"></div>
 
-  <script>
-    (function() {
-      
-    // Simplified WHO median reference. Production should use full LMS tables.
-    var MEDIAN_WEIGHT = { laki: [3.3, 5.6, 7.5, 9.0, 11.0, 13.0, 16.0, 19.0, 22.0], perempuan: [3.2, 5.2, 7.0, 8.5, 10.5, 12.5, 15.5, 18.5, 21.5] };
-    var MEDIAN_HEIGHT = { laki: [50, 58, 67, 74, 82, 87, 96, 105, 110], perempuan: [49, 57, 66, 73, 80, 86, 95, 104, 109] };
-    var AGE_POINTS = [0, 3, 6, 12, 18, 24, 36, 48, 60];
-    function lerp(table, age) {
-      for (var i = 0; i < AGE_POINTS.length - 1; i++) {
-        if (age <= AGE_POINTS[i+1]) {
-          var t = (age - AGE_POINTS[i]) / (AGE_POINTS[i+1] - AGE_POINTS[i]);
-          return table[i] + (table[i+1] - table[i]) * t;
-        }
-      }
-      return table[table.length - 1];
-    }
-    function calc() {
-      var gender = document.getElementById('gender').value;
-      var umur = parseFloat(document.getElementById('umurBulan').value) || 0;
-      var b = parseFloat(document.getElementById('berat').value) || 0;
-      var t = parseFloat(document.getElementById('tinggi').value) || 0;
-      var medianW = lerp(MEDIAN_WEIGHT[gender], umur);
-      var medianH = lerp(MEDIAN_HEIGHT[gender], umur);
-      var ratioW = medianW > 0 ? (b / medianW) : 1;
-      var ratioH = medianH > 0 ? (t / medianH) : 1;
-      var status, color;
-      if (ratioW < 0.7) { status = 'Gizi Buruk'; color = '#dc2626'; }
-      else if (ratioW < 0.85) { status = 'Gizi Kurang'; color = '#f59e0b'; }
-      else if (ratioW <= 1.15) { status = 'Gizi Baik'; color = '#16a34a'; }
-      else { status = 'Gizi Lebih'; color = '#7c3aed'; }
-      return { medianW: medianW, medianH: medianH, status: status, color: color, ratioW: ratioW, ratioH: ratioH };
-    }
-      var btn = document.getElementById('calcBtn');
-      var resetBtn = document.getElementById('resetBtn');
-      var result = document.getElementById('calcResult');
-      btn && btn.addEventListener('click', function() {
-        result.style.display = 'block';
-        
-    var r = calc();
-    result.innerHTML = '<strong>Median Berat (WHO):</strong> ' + r.medianW.toFixed(1) + ' kg<br><strong>Median Tinggi (WHO):</strong> ' + r.medianH.toFixed(1) + ' cm<br><strong style="color:' + r.color + '">Status:</strong> ' + r.status + '<br><small style="color:#666">Pendekatan ratio sederhana. Konsultasi dokter anak untuk diagnosis akurat.</small>';
-      });
-      resetBtn && resetBtn.addEventListener('click', function() {
-        var inputs = document.querySelectorAll('#calcForm input, #calcForm select, #calcForm textarea');
-        inputs.forEach(function(el) {
-          if (el.type === 'radio' || el.type === 'checkbox') { el.checked = el.defaultChecked; }
-          else if (el.tagName === 'SELECT') { el.selectedIndex = 0; }
-          else { el.value = ''; }
-        });
-        if (typeof countdownTimer !== 'undefined') { clearInterval(countdownTimer); }
-        result.innerHTML = '';
-        result.style.display = 'none';
-      });
-    })();
-  </script>
-</article>
+      <div class="result-box" id="resultBox">
+        <div class="res-card">
+          <div class="rh"><span class="nm">Berat menurut Umur (BB/U)</span><span class="zv" id="z-wfa"></span></div>
+          <div id="s-wfa"></div>
+          <div class="res-note" id="n-wfa"></div>
+        </div>
+        <div class="res-card">
+          <div class="rh"><span class="nm">Tinggi menurut Umur (TB/U)</span><span class="zv" id="z-hfa"></span></div>
+          <div id="s-hfa"></div>
+          <div class="res-note" id="n-hfa"></div>
+        </div>
+        <div class="res-card">
+          <div class="rh"><span class="nm">Berat menurut Tinggi (BB/TB)</span><span class="zv" id="z-wfh"></span></div>
+          <div id="s-wfh"></div>
+          <div class="res-note" id="n-wfh"></div>
+        </div>
+        <div class="note">
+          Status gizi BB/TB (berat menurut tinggi) adalah indikator WHO untuk anak di bawah 5 tahun yang menggantikan IMT menurut umur pada kelompok usia ini. Z-score dihitung dengan metode LMS WHO. Bila ada indikator yang menunjukkan gizi kurang, buruk, lebih, atau perawakan pendek, segera bawa anak ke fasilitas kesehatan untuk pemeriksaan lebih lanjut.
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-card">
+      <h2>Pertanyaan Umum (FAQ)</h2>
+      <div class="faq-item"><h3>Apa itu z-score dan bagaimana cara menghitungnya?</h3><p>Z-score menunjukkan seberapa jauh ukuran anak dari nilai median anak seusianya, dalam satuan simpangan baku. Kalkulator ini memakai metode LMS WHO dengan rumus z = ((nilai/M)^L - 1) / (L x S), di mana L, M, dan S adalah koefisien dari tabel Standar Pertumbuhan Anak WHO. Untuk z di luar rentang -3 sampai +3 diterapkan koreksi sesuai metode resmi WHO.</p></div>
+      <div class="faq-item"><h3>Indikator apa saja yang dihitung?</h3><p>Tiga indikator: berat menurut umur (mendeteksi berat kurang), tinggi menurut umur (mendeteksi stunting atau perawakan pendek), dan berat menurut tinggi (mendeteksi gizi kurang/wasting atau gizi lebih). Ambang batas mengikuti standar WHO, misalnya z di bawah -2 berarti kurang dan di bawah -3 berarti buruk.</p></div>
+      <div class="faq-item"><h3>Untuk usia berapa kalkulator ini berlaku?</h3><p>Kalkulator dibatasi pada anak usia 0 sampai 60 bulan (0-5 tahun), sesuai cakupan Standar Pertumbuhan Anak WHO 2006 yang menjadi acuan tabel L/M/S yang tertanam di tool ini.</p></div>
+      <div class="faq-item"><h3>Apakah hasil ini sebuah diagnosis?</h3><p>Tidak. Ini hanya skrining indikatif. Diagnosis status gizi dan penanganannya harus dilakukan oleh tenaga kesehatan melalui pemeriksaan langsung, karena banyak faktor lain yang turut dinilai.</p></div>
+      <div class="faq-item"><h3>Apakah tool ini gratis dan aman?</h3><p>Ya. Perhitungan berjalan sepenuhnya di perangkat Anda menggunakan tabel WHO yang tertanam, gratis, tanpa daftar, dan data tidak dikirim ke server.</p></div>
+    </div>
+
+    <div class="tool-card">
+      <h2>Tautan Terkait</h2>
+      <ul class="related-links">
+        <li><a href="/tools/skrining-deteksi-dini-tumbuh-kembang-anak-milestone-red-flag-abk">Skrining Tumbuh Kembang Anak</a></li>
+        <li><a href="/blog">Artikel YUKA</a></li>
+        <li><a href="/program#pendidikan">Program Pendidikan Inklusi</a></li>
+      </ul>
+    </div>
+  </div>
 </main>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Kalkulator Status Gizi Anak (Z-Score WHO)","url":"https://www.yukaindonesia.com/tools/kalkulator-berat-tinggi-anak-status-gizi-z-score-who/","description":"Kalkulator status gizi anak 0-60 bulan berdasarkan Standar Pertumbuhan Anak WHO: z-score berat-menurut-umur, tinggi-menurut-umur, dan berat-menurut-tinggi. Skrining, bukan diagnosis.","applicationCategory":"HealthApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"IDR"},"publisher":{"@type":"Organization","name":"Yayasan Ukhuwah Kaffah Amanatullah","url":"https://www.yukaindonesia.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apa itu z-score dan bagaimana cara menghitungnya?","acceptedAnswer":{"@type":"Answer","text":"Z-score menunjukkan seberapa jauh ukuran anak dari median anak seusianya dalam satuan simpangan baku. Dihitung dengan metode LMS WHO: z = ((nilai/M)^L - 1) / (L x S), dengan koreksi resmi WHO untuk z di luar -3 sampai +3."}},{"@type":"Question","name":"Indikator apa saja yang dihitung?","acceptedAnswer":{"@type":"Answer","text":"Berat menurut umur, tinggi menurut umur, dan berat menurut tinggi. Ambang WHO: z di bawah -2 berarti kurang, di bawah -3 berarti buruk."}},{"@type":"Question","name":"Untuk usia berapa kalkulator ini berlaku?","acceptedAnswer":{"@type":"Answer","text":"Anak usia 0 sampai 60 bulan (0-5 tahun), sesuai Standar Pertumbuhan Anak WHO 2006."}},{"@type":"Question","name":"Apakah hasil ini sebuah diagnosis?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Ini skrining indikatif. Diagnosis dan penanganan harus dilakukan tenaga kesehatan melalui pemeriksaan langsung."}},{"@type":"Question","name":"Apakah tool ini gratis dan aman?","acceptedAnswer":{"@type":"Answer","text":"Ya. Perhitungan berjalan di perangkat Anda dengan tabel WHO tertanam, gratis, tanpa daftar, data tidak dikirim ke server."}}]}</script>
+
 <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="brand-name">YUKA</div>
-                    <p>Yayasan Ukhuwah Kaffah Amanatullah adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus di Sleman, Yogyakarta.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/6281229912332" aria-label="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Navigasi</h4>
-                    <ul class="footer-links">
-                        <li><a href="/">Beranda</a></li>
-                        <li><a href="/tentang">Tentang Kami</a></li>
-                        <li><a href="/program">Program</a></li>
-                        <li><a href="/galeri">Galeri</a></li>
-                        <li><a href="/blog">Artikel</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Program</h4>
-                    <ul class="footer-links">
-                        <li><a href="/program#pendidikan">Pendidikan Inklusi</a></li>
-                        <li><a href="/program#sosial">Sosial & Kemanusiaan</a></li>
-                        <li><a href="/program#dakwah">Dakwah & Kajian</a></li>
-                        <li><a href="/donasi">Donasi</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Kontak</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <a href="https://maps.app.goo.gl/uMmin8ZVJvQtsryC7" target="_blank" style="display: flex; align-items: flex-start; gap: var(--spacing-sm); color: inherit;">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; margin-top: 3px;">
-                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
-                                <span>Jl. Kronggahan Raya II, RT 04 RW 07, Kronggahan II, Trihanggo, Gamping, Sleman (Utara RSA UGM)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/6281229912332" target="_blank" style="display: flex; align-items: center; gap: var(--spacing-sm); color: inherit;">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
-                                <span>+62 812-2991-2332</span>
-                            </a>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            <span>adminukhuwahkaffah@gmail.com</span>
-                        </li>
-                    </ul>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="brand-name">YUKA</div>
+                <p>Yayasan Ukhuwah Kaffah Amanatullah adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus di Sleman, Yogyakarta.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                    <a href="https://wa.me/6281229912332" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Yayasan Ukhuwah Kaffah Amanatullah. Hak Cipta Dilindungi.</p>
-                <p>Dibuat dengan <span style="color: #e74c3c;">&hearts;</span> oleh <a href="https://creativism.id" target="_blank">Creativism</a></p>
-            </div>
+            <div><h4>Navigasi</h4><ul class="footer-links"><li><a href="/">Beranda</a></li><li><a href="/tentang">Tentang Kami</a></li><li><a href="/program">Program</a></li><li><a href="/galeri">Galeri</a></li><li><a href="/blog">Artikel</a></li></ul></div>
+            <div><h4>Program</h4><ul class="footer-links"><li><a href="/program#pendidikan">Pendidikan Inklusi</a></li><li><a href="/program#sosial">Sosial &amp; Kemanusiaan</a></li><li><a href="/program#dakwah">Dakwah &amp; Kajian</a></li><li><a href="/donasi">Donasi</a></li></ul></div>
+            <div><h4>Kontak</h4><ul class="footer-contact">
+                <li><a href="https://maps.app.goo.gl/uMmin8ZVJvQtsryC7" target="_blank" style="display:flex;align-items:flex-start;gap:var(--spacing-sm);color:inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>Jl. Kronggahan Raya II, RT 04 RW 07, Kronggahan II, Trihanggo, Gamping, Sleman (Utara RSA UGM)</span></a></li>
+                <li><a href="https://wa.me/6281229912332" target="_blank" style="display:flex;align-items:center;gap:var(--spacing-sm);color:inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><span>+62 812-2991-2332</span></a></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><span>adminukhuwahkaffah@gmail.com</span></li>
+            </ul></div>
         </div>
-    </footer>
-<!-- JavaScript Libraries -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yayasan Ukhuwah Kaffah Amanatullah. Hak Cipta Dilindungi.</p>
+            <p>Dibuat dengan <span style="color:#e74c3c;">&hearts;</span> oleh <a href="https://creativism.id" target="_blank">Creativism</a></p>
+        </div>
+    </div>
+</footer>
 
-    <!-- Main JavaScript -->
-    <script src="assets/js/main.min.js" defer></script>
+<script id="whoLms" type="application/json">{"wfa":{"1":{"0":[0.3487,3.3464,0.14602],"1":[0.2297,4.4709,0.13395],"2":[0.197,5.5675,0.12385],"3":[0.1738,6.3762,0.11727],"4":[0.1553,7.0023,0.11316],"5":[0.1395,7.5105,0.1108],"6":[0.1257,7.934,0.10958],"7":[0.1134,8.297,0.10902],"8":[0.1021,8.6151,0.10882],"9":[0.0917,8.9014,0.10881],"10":[0.082,9.1649,0.10891],"11":[0.073,9.4122,0.10906],"12":[0.0644,9.6479,0.10925],"13":[0.0563,9.8749,0.10949],"14":[0.0487,10.0953,0.10976],"15":[0.0413,10.3108,0.11007],"16":[0.0343,10.5228,0.11041],"17":[0.0275,10.7319,0.11079],"18":[0.0211,10.9385,0.11119],"19":[0.0148,11.143,0.11164],"20":[0.0087,11.3462,0.11211],"21":[0.0029,11.5486,0.11261],"22":[-0.0028,11.7504,0.11314],"23":[-0.0083,11.9514,0.11369],"24":[-0.0137,12.1515,0.11426],"25":[-0.0189,12.3502,0.11485],"26":[-0.024,12.5466,0.11544],"27":[-0.0289,12.7401,0.11604],"28":[-0.0337,12.9303,0.11664],"29":[-0.0385,13.1169,0.11723],"30":[-0.0431,13.3,0.11781],"31":[-0.0476,13.4798,0.11839],"32":[-0.052,13.6567,0.11896],"33":[-0.0564,13.8309,0.11953],"34":[-0.0606,14.0031,0.12008],"35":[-0.0648,14.1736,0.12062],"36":[-0.0689,14.3429,0.12116],"37":[-0.0729,14.5113,0.12168],"38":[-0.0769,14.6791,0.1222],"39":[-0.0808,14.8466,0.12271],"40":[-0.0846,15.014,0.12322],"41":[-0.0883,15.1813,0.12373],"42":[-0.092,15.3486,0.12425],"43":[-0.0957,15.5158,0.12478],"44":[-0.0993,15.6828,0.12531],"45":[-0.1028,15.8497,0.12586],"46":[-0.1063,16.0163,0.12643],"47":[-0.1097,16.1827,0.127],"48":[-0.1131,16.3489,0.12759],"49":[-0.1165,16.515,0.12819],"50":[-0.1198,16.6811,0.1288],"51":[-0.123,16.8471,0.12943],"52":[-0.1262,17.0132,0.13005],"53":[-0.1294,17.1792,0.13069],"54":[-0.1325,17.3452,0.13133],"55":[-0.1356,17.5111,0.13197],"56":[-0.1387,17.6768,0.13261],"57":[-0.1417,17.8422,0.13325],"58":[-0.1447,18.0073,0.13389],"59":[-0.1477,18.1722,0.13453],"60":[-0.1506,18.3366,0.13517]},"2":{"0":[0.3809,3.2322,0.14171],"1":[0.1714,4.1873,0.13724],"2":[0.0962,5.1282,0.13],"3":[0.0402,5.8458,0.12619],"4":[-0.005,6.4237,0.12402],"5":[-0.043,6.8985,0.12274],"6":[-0.0756,7.297,0.12204],"7":[-0.1039,7.6422,0.12178],"8":[-0.1288,7.9487,0.12181],"9":[-0.1507,8.2254,0.12199],"10":[-0.17,8.48,0.12223],"11":[-0.1872,8.7192,0.12247],"12":[-0.2024,8.9481,0.12268],"13":[-0.2158,9.1699,0.12283],"14":[-0.2278,9.387,0.12294],"15":[-0.2384,9.6008,0.12299],"16":[-0.2478,9.8124,0.12303],"17":[-0.2562,10.0226,0.12306],"18":[-0.2637,10.2315,0.12309],"19":[-0.2703,10.4393,0.12315],"20":[-0.2762,10.6464,0.12323],"21":[-0.2815,10.8534,0.12335],"22":[-0.2862,11.0608,0.1235],"23":[-0.2903,11.2688,0.12369],"24":[-0.2941,11.4775,0.1239],"25":[-0.2975,11.6864,0.12414],"26":[-0.3005,11.8947,0.12441],"27":[-0.3032,12.1015,0.12472],"28":[-0.3057,12.3059,0.12506],"29":[-0.308,12.5073,0.12545],"30":[-0.3101,12.7055,0.12587],"31":[-0.312,12.9006,0.12633],"32":[-0.3138,13.093,0.12683],"33":[-0.3155,13.2837,0.12737],"34":[-0.3171,13.4731,0.12794],"35":[-0.3186,13.6618,0.12855],"36":[-0.3201,13.8503,0.12919],"37":[-0.3216,14.0385,0.12988],"38":[-0.323,14.2265,0.13059],"39":[-0.3243,14.414,0.13135],"40":[-0.3257,14.601,0.13213],"41":[-0.327,14.7873,0.13293],"42":[-0.3283,14.9727,0.13376],"43":[-0.3296,15.1573,0.1346],"44":[-0.3309,15.341,0.13545],"45":[-0.3322,15.524,0.1363],"46":[-0.3335,15.7064,0.13716],"47":[-0.3348,15.8882,0.138],"48":[-0.3361,16.0697,0.13884],"49":[-0.3374,16.2511,0.13968],"50":[-0.3387,16.4322,0.14051],"51":[-0.34,16.6133,0.14132],"52":[-0.3414,16.7942,0.14213],"53":[-0.3427,16.9748,0.14293],"54":[-0.344,17.1551,0.14371],"55":[-0.3453,17.3347,0.14448],"56":[-0.3466,17.5136,0.14525],"57":[-0.3479,17.6916,0.146],"58":[-0.3492,17.8686,0.14675],"59":[-0.3505,18.0445,0.14748],"60":[-0.3518,18.2193,0.14821]}},"hfa":{"1":{"0":[1,49.8842,0.03795],"1":[1,54.7244,0.03557],"2":[1,58.4249,0.03424],"3":[1,61.4292,0.03328],"4":[1,63.886,0.03257],"5":[1,65.9026,0.03204],"6":[1,67.6236,0.03165],"7":[1,69.1645,0.03139],"8":[1,70.5994,0.03124],"9":[1,71.9687,0.03117],"10":[1,73.2812,0.03118],"11":[1,74.5388,0.03125],"12":[1,75.7488,0.03137],"13":[1,76.9186,0.03154],"14":[1,78.0497,0.03174],"15":[1,79.1458,0.03197],"16":[1,80.2113,0.03222],"17":[1,81.2487,0.0325],"18":[1,82.2587,0.03279],"19":[1,83.2418,0.0331],"20":[1,84.1996,0.03342],"21":[1,85.1348,0.03376],"22":[1,86.0477,0.0341],"23":[1,86.941,0.03445],"24":[1,87.1161,0.03507],"25":[1,87.972,0.03542],"26":[1,88.8065,0.03576],"27":[1,89.6197,0.0361],"28":[1,90.412,0.03642],"29":[1,91.1828,0.03674],"30":[1,91.9327,0.03704],"31":[1,92.6631,0.03733],"32":[1,93.3753,0.03761],"33":[1,94.0711,0.03787],"34":[1,94.7532,0.03812],"35":[1,95.4236,0.03836],"36":[1,96.0835,0.03858],"37":[1,96.7337,0.03879],"38":[1,97.3749,0.039],"39":[1,98.0073,0.03919],"40":[1,98.631,0.03937],"41":[1,99.2459,0.03954],"42":[1,99.8515,0.03971],"43":[1,100.4485,0.03986],"44":[1,101.0374,0.04002],"45":[1,101.6186,0.04016],"46":[1,102.1933,0.04031],"47":[1,102.7625,0.04045],"48":[1,103.3273,0.04059],"49":[1,103.8886,0.04073],"50":[1,104.4473,0.04086],"51":[1,105.0041,0.041],"52":[1,105.5596,0.04113],"53":[1,106.1138,0.04126],"54":[1,106.6668,0.04139],"55":[1,107.2188,0.04152],"56":[1,107.7697,0.04165],"57":[1,108.3198,0.04177],"58":[1,108.8689,0.0419],"59":[1,109.417,0.04202],"60":[1,109.9638,0.04214]},"2":{"0":[1,49.1477,0.0379],"1":[1,53.6872,0.0364],"2":[1,57.0673,0.03568],"3":[1,59.8029,0.0352],"4":[1,62.0899,0.03486],"5":[1,64.0301,0.03463],"6":[1,65.7311,0.03448],"7":[1,67.2873,0.03441],"8":[1,68.7498,0.0344],"9":[1,70.1435,0.03444],"10":[1,71.4818,0.03452],"11":[1,72.771,0.03464],"12":[1,74.015,0.03479],"13":[1,75.2176,0.03496],"14":[1,76.3817,0.03514],"15":[1,77.5099,0.03534],"16":[1,78.6055,0.03555],"17":[1,79.671,0.03576],"18":[1,80.7079,0.03598],"19":[1,81.7182,0.0362],"20":[1,82.7036,0.03643],"21":[1,83.6654,0.03666],"22":[1,84.604,0.03688],"23":[1,85.5202,0.03711],"24":[1,85.7153,0.03764],"25":[1,86.5904,0.03786],"26":[1,87.4462,0.03808],"27":[1,88.283,0.0383],"28":[1,89.1004,0.03851],"29":[1,89.8991,0.03872],"30":[1,90.6797,0.03893],"31":[1,91.443,0.03913],"32":[1,92.1906,0.03933],"33":[1,92.9239,0.03952],"34":[1,93.6444,0.03971],"35":[1,94.3533,0.03989],"36":[1,95.0515,0.04006],"37":[1,95.7399,0.04024],"38":[1,96.4187,0.04041],"39":[1,97.0885,0.04057],"40":[1,97.7493,0.04073],"41":[1,98.4015,0.04089],"42":[1,99.0448,0.04105],"43":[1,99.6795,0.0412],"44":[1,100.3058,0.04135],"45":[1,100.9238,0.0415],"46":[1,101.5337,0.04164],"47":[1,102.136,0.04179],"48":[1,102.7312,0.04193],"49":[1,103.3197,0.04206],"50":[1,103.9021,0.0422],"51":[1,104.4786,0.04233],"52":[1,105.0494,0.04246],"53":[1,105.6148,0.04259],"54":[1,106.1748,0.04272],"55":[1,106.7295,0.04285],"56":[1,107.2788,0.04298],"57":[1,107.8227,0.0431],"58":[1,108.3613,0.04322],"59":[1,108.8948,0.04334],"60":[1,109.4233,0.04347]}},"wfh":{"1":{"45":[-0.3521,2.441,0.09182],"46":[-0.3521,2.6077,0.09124],"47":[-0.3521,2.7755,0.09065],"48":[-0.3521,2.948,0.09007],"49":[-0.3521,3.1308,0.08948],"50":[-0.3521,3.3278,0.0889],"51":[-0.3521,3.5376,0.08831],"52":[-0.3521,3.762,0.08771],"53":[-0.3521,4.006,0.08711],"54":[-0.3521,4.2693,0.08651],"55":[-0.3521,4.5467,0.08592],"56":[-0.3521,4.8338,0.08535],"57":[-0.3521,5.1259,0.08481],"58":[-0.3521,5.418,0.0843],"59":[-0.3521,5.7074,0.08383],"60":[-0.3521,5.9907,0.08342],"61":[-0.3521,6.2632,0.08308],"62":[-0.3521,6.5251,0.08279],"63":[-0.3521,6.7786,0.08255],"64":[-0.3521,7.0255,0.08236],"65":[-0.3521,7.2666,0.08223],"66":[-0.3521,7.5034,0.08215],"67":[-0.3521,7.737,0.08212],"68":[-0.3521,7.9674,0.08214],"69":[-0.3521,8.1955,0.08219],"70":[-0.3521,8.4227,0.08229],"71":[-0.3521,8.648,0.08241],"72":[-0.3521,8.8697,0.08254],"73":[-0.3521,9.0865,0.08269],"74":[-0.3521,9.2974,0.08283],"75":[-0.3521,9.5032,0.08295],"76":[-0.3521,9.7033,0.08307],"77":[-0.3521,9.8963,0.08314],"78":[-0.3521,10.0827,0.08318],"79":[-0.3521,10.2649,0.08316],"80":[-0.3521,10.4475,0.08308],"81":[-0.3521,10.6352,0.08293],"82":[-0.3521,10.8321,0.08273],"83":[-0.3521,11.0415,0.08246],"84":[-0.3521,11.2651,0.08215],"85":[-0.3521,11.6707,0.08156],"86":[-0.3521,11.9173,0.08121],"87":[-0.3521,12.1645,0.0809],"88":[-0.3521,12.4089,0.08064],"89":[-0.3521,12.6495,0.08045],"90":[-0.3521,12.8864,0.08032],"91":[-0.3521,13.1209,0.08025],"92":[-0.3521,13.3541,0.08025],"93":[-0.3521,13.587,0.08031],"94":[-0.3521,13.8217,0.08043],"95":[-0.3521,14.06,0.0806],"96":[-0.3521,14.3037,0.08083],"97":[-0.3521,14.5547,0.08112],"98":[-0.3521,14.814,0.08146],"99":[-0.3521,15.0818,0.08185],"100":[-0.3521,15.3576,0.08229],"101":[-0.3521,15.6412,0.08277],"102":[-0.3521,15.932,0.08328],"103":[-0.3521,16.2298,0.08381],"104":[-0.3521,16.5342,0.08436],"105":[-0.3521,16.8454,0.08493],"106":[-0.3521,17.1637,0.08551],"107":[-0.3521,17.4894,0.08611],"108":[-0.3521,17.8226,0.08673],"109":[-0.3521,18.1645,0.08736],"110":[-0.3521,18.5158,0.088],"111":[-0.3521,18.8759,0.08864],"112":[-0.3521,19.2439,0.08928],"113":[-0.3521,19.6185,0.08991],"114":[-0.3521,19.999,0.09054],"115":[-0.3521,20.3846,0.09116],"116":[-0.3521,20.7741,0.09177],"117":[-0.3521,21.1666,0.09239],"118":[-0.3521,21.5611,0.093],"119":[-0.3521,21.9568,0.09362],"120":[-0.3521,22.353,0.09424],"45.5":[-0.3521,2.5244,0.09153],"46.5":[-0.3521,2.6913,0.09094],"47.5":[-0.3521,2.8609,0.09036],"48.5":[-0.3521,3.0377,0.08977],"49.5":[-0.3521,3.2276,0.08919],"50.5":[-0.3521,3.4311,0.08861],"51.5":[-0.3521,3.6477,0.08801],"52.5":[-0.3521,3.8814,0.08741],"53.5":[-0.3521,4.1354,0.08681],"54.5":[-0.3521,4.4066,0.08621],"55.5":[-0.3521,4.6892,0.08563],"56.5":[-0.3521,4.9796,0.08507],"57.5":[-0.3521,5.2721,0.08455],"58.5":[-0.3521,5.5632,0.08406],"59.5":[-0.3521,5.8501,0.08362],"60.5":[-0.3521,6.1284,0.08324],"61.5":[-0.3521,6.3954,0.08292],"62.5":[-0.3521,6.6527,0.08266],"63.5":[-0.3521,6.9028,0.08245],"64.5":[-0.3521,7.1467,0.08229],"65.5":[-0.3521,7.3854,0.08218],"66.5":[-0.3521,7.6206,0.08213],"67.5":[-0.3521,7.8526,0.08212],"68.5":[-0.3521,8.0816,0.08216],"69.5":[-0.3521,8.3092,0.08224],"70.5":[-0.3521,8.5358,0.08235],"71.5":[-0.3521,8.7594,0.08248],"72.5":[-0.3521,8.9788,0.08262],"73.5":[-0.3521,9.1927,0.08276],"74.5":[-0.3521,9.401,0.08289],"75.5":[-0.3521,9.6041,0.08301],"76.5":[-0.3521,9.8007,0.08311],"77.5":[-0.3521,9.9902,0.08317],"78.5":[-0.3521,10.1741,0.08318],"79.5":[-0.3521,10.3558,0.08313],"80.5":[-0.3521,10.5405,0.08301],"81.5":[-0.3521,10.7322,0.08284],"82.5":[-0.3521,10.935,0.0826],"83.5":[-0.3521,11.1516,0.08231],"84.5":[-0.3521,11.3817,0.08198],"85.5":[-0.3521,11.7937,0.08138],"86.5":[-0.3521,12.0411,0.08105],"87.5":[-0.3521,12.2871,0.08076],"88.5":[-0.3521,12.5298,0.08054],"89.5":[-0.3521,12.7683,0.08038],"90.5":[-0.3521,13.0038,0.08028],"91.5":[-0.3521,13.2376,0.08024],"92.5":[-0.3521,13.4705,0.08027],"93.5":[-0.3521,13.7041,0.08036],"94.5":[-0.3521,13.9403,0.08051],"95.5":[-0.3521,14.1811,0.08071],"96.5":[-0.3521,14.4282,0.08097],"97.5":[-0.3521,14.6832,0.08129],"98.5":[-0.3521,14.9468,0.08165],"99.5":[-0.3521,15.2187,0.08206],"100.5":[-0.3521,15.4985,0.08252],"101.5":[-0.3521,15.7857,0.08302],"102.5":[-0.3521,16.0801,0.08354],"103.5":[-0.3521,16.3812,0.08408],"104.5":[-0.3521,16.6889,0.08464],"105.5":[-0.3521,17.0036,0.08521],"106.5":[-0.3521,17.3256,0.0858],"107.5":[-0.3521,17.655,0.08641],"108.5":[-0.3521,17.9924,0.08704],"109.5":[-0.3521,18.339,0.08768],"110.5":[-0.3521,18.6948,0.08832],"111.5":[-0.3521,19.059,0.08896],"112.5":[-0.3521,19.4304,0.0896],"113.5":[-0.3521,19.8081,0.09022],"114.5":[-0.3521,20.1912,0.09085],"115.5":[-0.3521,20.5789,0.09147],"116.5":[-0.3521,20.97,0.09208],"117.5":[-0.3521,21.3636,0.0927],"118.5":[-0.3521,21.7588,0.09331],"119.5":[-0.3521,22.1549,0.09393]},"2":{"45":[-0.3833,2.4607,0.09029],"46":[-0.3833,2.6306,0.09037],"47":[-0.3833,2.8007,0.09044],"48":[-0.3833,2.9741,0.09052],"49":[-0.3833,3.156,0.0906],"50":[-0.3833,3.3518,0.09068],"51":[-0.3833,3.5636,0.09076],"52":[-0.3833,3.7911,0.09085],"53":[-0.3833,4.0332,0.09093],"54":[-0.3833,4.2875,0.09102],"55":[-0.3833,4.5498,0.0911],"56":[-0.3833,4.8162,0.09118],"57":[-0.3833,5.0837,0.09125],"58":[-0.3833,5.3507,0.0913],"59":[-0.3833,5.6151,0.09134],"60":[-0.3833,5.8742,0.09136],"61":[-0.3833,6.127,0.09137],"62":[-0.3833,6.3738,0.09135],"63":[-0.3833,6.6144,0.09131],"64":[-0.3833,6.8501,0.09126],"65":[-0.3833,7.0812,0.09119],"66":[-0.3833,7.3076,0.0911],"67":[-0.3833,7.5288,0.09101],"68":[-0.3833,7.7448,0.0909],"69":[-0.3833,7.9559,0.09079],"70":[-0.3833,8.163,0.09068],"71":[-0.3833,8.3666,0.09056],"72":[-0.3833,8.5679,0.09043],"73":[-0.3833,8.7661,0.09031],"74":[-0.3833,8.9601,0.09018],"75":[-0.3833,9.149,0.09005],"76":[-0.3833,9.3337,0.08992],"77":[-0.3833,9.5166,0.08979],"78":[-0.3833,9.7015,0.08965],"79":[-0.3833,9.8915,0.08952],"80":[-0.3833,10.0891,0.0894],"81":[-0.3833,10.2965,0.08928],"82":[-0.3833,10.514,0.08918],"83":[-0.3833,10.741,0.0891],"84":[-0.3833,10.9767,0.08903],"85":[-0.3833,11.3934,0.08896],"86":[-0.3833,11.6444,0.08895],"87":[-0.3833,11.8965,0.08896],"88":[-0.3833,12.1478,0.08899],"89":[-0.3833,12.3976,0.08904],"90":[-0.3833,12.6461,0.08911],"91":[-0.3833,12.8939,0.0892],"92":[-0.3833,13.1415,0.08931],"93":[-0.3833,13.3896,0.08944],"94":[-0.3833,13.6393,0.08959],"95":[-0.3833,13.8914,0.08975],"96":[-0.3833,14.1466,0.08994],"97":[-0.3833,14.4059,0.09015],"98":[-0.3833,14.671,0.09037],"99":[-0.3833,14.9434,0.09062],"100":[-0.3833,15.2246,0.09088],"101":[-0.3833,15.5154,0.09116],"102":[-0.3833,15.8164,0.09146],"103":[-0.3833,16.1276,0.09177],"104":[-0.3833,16.4488,0.09209],"105":[-0.3833,16.78,0.09243],"106":[-0.3833,17.122,0.09278],"107":[-0.3833,17.4755,0.09315],"108":[-0.3833,17.8407,0.09352],"109":[-0.3833,18.2174,0.0939],"110":[-0.3833,18.6043,0.09428],"111":[-0.3833,19.0009,0.09467],"112":[-0.3833,19.406,0.09507],"113":[-0.3833,19.819,0.09546],"114":[-0.3833,20.2385,0.09586],"115":[-0.3833,20.6629,0.09626],"116":[-0.3833,21.0909,0.09666],"117":[-0.3833,21.5213,0.09707],"118":[-0.3833,21.9529,0.09747],"119":[-0.3833,22.3851,0.09788],"120":[-0.3833,22.8173,0.09828],"45.5":[-0.3833,2.5457,0.09033],"46.5":[-0.3833,2.7155,0.0904],"47.5":[-0.3833,2.8867,0.09048],"48.5":[-0.3833,3.0636,0.09056],"49.5":[-0.3833,3.252,0.09064],"50.5":[-0.3833,3.4557,0.09072],"51.5":[-0.3833,3.6754,0.0908],"52.5":[-0.3833,3.9105,0.09089],"53.5":[-0.3833,4.1591,0.09098],"54.5":[-0.3833,4.4179,0.09106],"55.5":[-0.3833,4.6827,0.09114],"56.5":[-0.3833,4.95,0.09121],"57.5":[-0.3833,5.2173,0.09128],"58.5":[-0.3833,5.4834,0.09132],"59.5":[-0.3833,5.7454,0.09135],"60.5":[-0.3833,6.0014,0.09137],"61.5":[-0.3833,6.2511,0.09136],"62.5":[-0.3833,6.4948,0.09133],"63.5":[-0.3833,6.7328,0.09129],"64.5":[-0.3833,6.9662,0.09123],"65.5":[-0.3833,7.195,0.09115],"66.5":[-0.3833,7.4189,0.09106],"67.5":[-0.3833,7.6375,0.09096],"68.5":[-0.3833,7.8509,0.09085],"69.5":[-0.3833,8.0599,0.09074],"70.5":[-0.3833,8.2651,0.09062],"71.5":[-0.3833,8.4676,0.0905],"72.5":[-0.3833,8.6674,0.09037],"73.5":[-0.3833,8.8638,0.09025],"74.5":[-0.3833,9.0552,0.09012],"75.5":[-0.3833,9.2418,0.08999],"76.5":[-0.3833,9.4252,0.08985],"77.5":[-0.3833,9.6086,0.08972],"78.5":[-0.3833,9.7957,0.08959],"79.5":[-0.3833,9.9892,0.08946],"80.5":[-0.3833,10.1916,0.08934],"81.5":[-0.3833,10.4041,0.08923],"82.5":[-0.3833,10.6263,0.08914],"83.5":[-0.3833,10.8578,0.08906],"84.5":[-0.3833,11.0974,0.089],"85.5":[-0.3833,11.5186,0.08895],"86.5":[-0.3833,11.7705,0.08895],"87.5":[-0.3833,12.0223,0.08897],"88.5":[-0.3833,12.2729,0.08901],"89.5":[-0.3833,12.522,0.08907],"90.5":[-0.3833,12.77,0.08915],"91.5":[-0.3833,13.0177,0.08925],"92.5":[-0.3833,13.2654,0.08937],"93.5":[-0.3833,13.5142,0.08951],"94.5":[-0.3833,13.765,0.08967],"95.5":[-0.3833,14.0186,0.08984],"96.5":[-0.3833,14.2757,0.09004],"97.5":[-0.3833,14.5376,0.09026],"98.5":[-0.3833,14.8062,0.09049],"99.5":[-0.3833,15.0828,0.09075],"100.5":[-0.3833,15.3687,0.09102],"101.5":[-0.3833,15.6646,0.09131],"102.5":[-0.3833,15.9707,0.09161],"103.5":[-0.3833,16.287,0.09193],"104.5":[-0.3833,16.6131,0.09226],"105.5":[-0.3833,16.9496,0.09261],"106.5":[-0.3833,17.2973,0.09296],"107.5":[-0.3833,17.6567,0.09333],"108.5":[-0.3833,18.0277,0.09371],"109.5":[-0.3833,18.4096,0.09409],"110.5":[-0.3833,18.8015,0.09448],"111.5":[-0.3833,19.2024,0.09487],"112.5":[-0.3833,19.6116,0.09527],"113.5":[-0.3833,20.028,0.09566],"114.5":[-0.3833,20.4502,0.09606],"115.5":[-0.3833,20.8766,0.09646],"116.5":[-0.3833,21.3059,0.09686],"117.5":[-0.3833,21.737,0.09727],"118.5":[-0.3833,22.169,0.09767],"119.5":[-0.3833,22.6012,0.09808]}}}</script>
+<script>
+(function(){
+  var t=document.getElementById('navbarToggle'),m=document.getElementById('navbarMenu');
+  if(t&&m){t.addEventListener('click',function(){t.classList.toggle('active');m.classList.toggle('active');});}
 
-    <!-- Initialize Animations -->
-    <script>
-        // Initialize AOS (Animate On Scroll)
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 50,
-            disable: window.innerWidth < 768 ? 'mobile' : false
-        });
+  var LMS=JSON.parse(document.getElementById('whoLms').textContent);
 
-        // Initialize Swiper Gallery
-        const gallerySwiper = new Swiper('.gallery-swiper', {
-            slidesPerView: 1.2,
-            spaceBetween: 20,
-            centeredSlides: true,
-            loop: true,
-            speed: 800,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-btn-next',
-                prevEl: '.swiper-btn-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                },
-                1280: {
-                    slidesPerView: 3.5,
-                    spaceBetween: 40,
-                }
-            }
-        });
+  // SDn value from LMS (n SD): M*(1 + L*S*n)^(1/L), or M*exp(S*n) if L=0
+  function valAtSD(L,M,S,n){return Math.abs(L)>1e-9 ? M*Math.pow(1+L*S*n,1/L) : M*Math.exp(S*n);}
+  // WHO z-score with capping beyond +-3 SD (official restricted application)
+  function zscore(val,L,M,S){
+    var z = Math.abs(L)>1e-9 ? (Math.pow(val/M,L)-1)/(L*S) : Math.log(val/M)/S;
+    if(z>3){
+      var sd3=valAtSD(L,M,S,3), sd2=valAtSD(L,M,S,2);
+      z = 3 + (val - sd3)/(sd3 - sd2);
+    } else if(z<-3){
+      var sd3n=valAtSD(L,M,S,-3), sd2n=valAtSD(L,M,S,-2);
+      z = -3 + (val - sd3n)/(sd2n - sd3n);
+    }
+    return z;
+  }
+  // Lookup nearest reference point for a 0.5-step key (wfh) or exact integer (months)
+  function lookupWfh(sex,height){
+    var tbl=LMS.wfh[sex]; if(!tbl)return null;
+    var key=(Math.round(height*2)/2);
+    var k=(''+key);
+    if(tbl[k])return tbl[k];
+    return null;
+  }
 
-        // GSAP Animations for Hero
-        gsap.registerPlugin(ScrollTrigger);
+  function classifyWFA(z){
+    if(z<-3)return ['Berat badan sangat kurang (severely underweight)','b-buruk'];
+    if(z<-2)return ['Berat badan kurang (underweight)','b-kurang'];
+    if(z<=1)return ['Berat badan normal','b-normal'];
+    return ['Risiko berat badan lebih','b-risiko'];
+  }
+  function classifyHFA(z){
+    if(z<-3)return ['Sangat pendek (severely stunted)','b-sangat'];
+    if(z<-2)return ['Pendek / stunting','b-pendek'];
+    if(z<=3)return ['Tinggi normal','b-normal'];
+    return ['Tinggi (di atas rentang umum)','b-tinggi'];
+  }
+  function classifyWFH(z){
+    if(z<-3)return ['Gizi buruk (severe wasting)','b-buruk'];
+    if(z<-2)return ['Gizi kurang (wasting)','b-kurang'];
+    if(z<=1)return ['Gizi baik (normal)','b-normal'];
+    if(z<=2)return ['Berisiko gizi lebih','b-risiko'];
+    if(z<=3)return ['Gizi lebih (overweight)','b-lebih'];
+    return ['Obesitas','b-obes'];
+  }
 
-        // Hero Title Animation
-        gsap.from('.hero-title .title-line', {
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: 'power4.out',
-            delay: 0.3
-        });
+  function show(prefix,z,cls){
+    document.getElementById('z-'+prefix).textContent='Z-score: '+z.toFixed(2)+' SD';
+    document.getElementById('s-'+prefix).innerHTML='<span class="stat-badge '+cls[1]+'">'+cls[0]+'</span>';
+  }
 
-        // Counter Animation
-        const animateCounters = () => {
-            const counters = document.querySelectorAll('.stat-number[data-count]');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-count'));
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
+  document.getElementById('hitungBtn').addEventListener('click',function(){
+    var err=document.getElementById('errMsg'), box=document.getElementById('resultBox');
+    err.style.display='none'; box.classList.remove('show');
+    var sex=document.getElementById('sex').value;
+    var usia=parseInt(document.getElementById('usia').value,10);
+    var berat=parseFloat(document.getElementById('berat').value);
+    var tinggi=parseFloat(document.getElementById('tinggi').value);
 
-                const updateCounter = () => {
-                    current += step;
-                    if (current < target) {
-                        counter.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                updateCounter();
-            });
-        };
+    function fail(msg){err.textContent=msg;err.style.display='block';}
+    if(sex!=='1'&&sex!=='2'){return fail('Mohon pilih jenis kelamin.');}
+    if(isNaN(usia)||usia<0||usia>60){return fail('Usia harus antara 0 dan 60 bulan.');}
+    if(isNaN(berat)||berat<=0){return fail('Mohon masukkan berat badan yang valid.');}
+    if(isNaN(tinggi)||tinggi<=0){return fail('Mohon masukkan tinggi badan yang valid.');}
 
-        // Trigger counter animation when stats are visible
-        const statsSection = document.querySelector('.hero-stats-modern');
-        if (statsSection) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-            observer.observe(statsSection);
-        }
+    // BB/U
+    var wfa=LMS.wfa[sex][usia];
+    var zw=zscore(berat,wfa[0],wfa[1],wfa[2]);
+    show('wfa',zw,classifyWFA(zw));
+    document.getElementById('n-wfa').textContent='Median berat anak seusia: '+wfa[1].toFixed(1)+' kg.';
 
-        // Parallax effect for hero background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroBg = document.querySelector('.hero-bg');
-            if (heroBg && scrolled < window.innerHeight) {
-                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
+    // TB/U
+    var hfa=LMS.hfa[sex][usia];
+    var zh=zscore(tinggi,hfa[0],hfa[1],hfa[2]);
+    show('hfa',zh,classifyHFA(zh));
+    document.getElementById('n-hfa').textContent='Median tinggi anak seusia: '+hfa[1].toFixed(1)+' cm.';
 
-        // Create floating particles
-        const createParticles = () => {
-            const container = document.getElementById('heroParticles');
-            if (!container) return;
+    // BB/TB
+    var wfh=lookupWfh(sex,tinggi);
+    if(wfh && tinggi>=45 && tinggi<=120){
+      var zwh=zscore(berat,wfh[0],wfh[1],wfh[2]);
+      show('wfh',zwh,classifyWFH(zwh));
+      document.getElementById('n-wfh').textContent='Median berat untuk tinggi ini: '+wfh[1].toFixed(1)+' kg.';
+    } else {
+      document.getElementById('z-wfh').textContent='';
+      document.getElementById('s-wfh').innerHTML='<span class="res-note">Tidak dapat dihitung. BB/TB hanya berlaku untuk tinggi 45 sampai 120 cm.</span>';
+      document.getElementById('n-wfh').textContent='';
+    }
 
-            for (let i = 0; i < 20; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.cssText = `
-                    position: absolute;
-                    width: ${Math.random() * 10 + 5}px;
-                    height: ${Math.random() * 10 + 5}px;
-                    background: rgba(255, 255, 255, ${Math.random() * 0.3 + 0.1});
-                    border-radius: 50%;
-                    left: ${Math.random() * 100}%;
-                    top: ${Math.random() * 100}%;
-                    animation: floatParticle ${Math.random() * 10 + 10}s linear infinite;
-                    animation-delay: ${Math.random() * 5}s;
-                `;
-                container.appendChild(particle);
-            }
-        };
-        createParticles();
-
-        // Smooth scroll indicator click
-        document.querySelector('.scroll-indicator')?.addEventListener('click', () => {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
-    <script src="assets/js/analytics.js" defer></script>
+    box.classList.add('show');
+    box.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+})();
+</script>
 </body>
 </html>

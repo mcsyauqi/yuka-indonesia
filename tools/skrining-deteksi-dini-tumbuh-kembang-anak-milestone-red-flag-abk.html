@@ -1,379 +1,252 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK)</title>
-  <meta name="description" content="Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK) gratis online. Cocok untuk yang nyari "skrining deteksi dini". Mudah dipakai, hasil instan." />
-  <link rel="canonical" href="https://www.yukaindonesia.com/tools/skrining-deteksi-dini-tumbuh-kembang-anak-milestone-red-flag-abk/" />
-  
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skrining Deteksi Dini Tumbuh Kembang Anak - Milestone & Red Flag ABK | YUKA</title>
+  <meta name="description" content="Skrining deteksi dini tumbuh kembang anak online gratis. Cek milestone perkembangan sesuai usia dan kenali red flag anak berkebutuhan khusus (ABK). Bukan diagnosis. Buatan Yayasan YUKA."/>
+  <link rel="canonical" href="https://www.yukaindonesia.com/tools/skrining-deteksi-dini-tumbuh-kembang-anak-milestone-red-flag-abk/"/>
 
-  <link rel="icon" type="image/x-icon" href="Icon.ico">
-<link rel="shortcut icon" type="image/x-icon" href="Icon.ico">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap">
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-<link rel="stylesheet" href="assets/css/style.min.css">
-  
+  <link rel="icon" type="image/x-icon" href="/Icon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/Icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
+  <link rel="stylesheet" href="/assets/css/style.min.css">
+  <style>
+    .tool-main{padding:calc(80px + var(--spacing-2xl)) 0 var(--spacing-3xl);background:var(--gray-50);min-height:70vh}
+    .tool-wrap{max-width:780px;margin:0 auto;padding:0 var(--spacing-lg)}
+    .tool-head{text-align:center;margin-bottom:var(--spacing-xl)}
+    .tool-head h1{font-size:clamp(1.8rem,4vw,2.5rem);color:var(--primary);font-weight:700;line-height:1.2;margin-bottom:var(--spacing-md)}
+    .tool-head p{font-size:1.05rem;color:var(--gray-700);line-height:1.7;max-width:640px;margin:0 auto}
+    .tool-card{background:var(--white);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);padding:var(--spacing-2xl);margin-bottom:var(--spacing-2xl)}
+    .tool-card h2{font-size:1.35rem;color:var(--primary);font-weight:600;margin-bottom:var(--spacing-md)}
+    .field{margin-bottom:var(--spacing-lg)}
+    .field label{display:block;font-weight:500;color:var(--gray-800);margin-bottom:var(--spacing-xs);font-size:.95rem}
+    .field select{width:100%;padding:.75rem 1rem;border:1.5px solid var(--gray-300);border-radius:var(--radius-md);font-family:var(--font-primary);font-size:1rem;color:var(--gray-900);background:var(--white)}
+    .field select:focus{outline:none;border-color:var(--primary-light);box-shadow:0 0 0 3px var(--primary-50)}
+    .domain{margin-bottom:var(--spacing-xl)}
+    .domain h3{font-size:1.05rem;color:var(--primary-dark);font-weight:600;margin-bottom:var(--spacing-sm);padding-bottom:var(--spacing-xs);border-bottom:2px solid var(--primary-50)}
+    .mrow{display:flex;justify-content:space-between;align-items:center;gap:var(--spacing-md);padding:.65rem 0;border-bottom:1px solid var(--gray-100)}
+    .mrow .mq{font-size:.95rem;color:var(--gray-800);line-height:1.45;flex:1}
+    .yn{display:flex;gap:var(--spacing-xs);flex-shrink:0}
+    .yn label{display:flex;align-items:center;gap:4px;padding:.4rem .7rem;border:1.5px solid var(--gray-200);border-radius:var(--radius-sm);cursor:pointer;font-size:.85rem;color:var(--gray-700)}
+    .yn input{accent-color:var(--primary);margin:0}
+    .tool-btn{width:100%;background:var(--primary);color:var(--white);padding:.9rem 1.5rem;border:none;border-radius:var(--radius-md);font-family:var(--font-primary);font-size:1.05rem;font-weight:600;cursor:pointer;transition:background var(--transition-fast);box-shadow:var(--shadow-md);margin-top:var(--spacing-md)}
+    .tool-btn:hover{background:var(--primary-dark)}
+    .result-box{margin-top:var(--spacing-xl);padding:var(--spacing-xl);border-radius:var(--radius-md);border:1px solid var(--gray-200);display:none}
+    .result-box.show{display:block}
+    .res-badge{display:inline-block;padding:.4rem 1rem;border-radius:var(--radius-full);font-size:1rem;font-weight:600;color:#fff;margin-bottom:var(--spacing-md)}
+    .res-sesuai{background:#43A047}.res-pantau{background:#FB8C00}.res-konsul{background:var(--accent-red)}
+    .res-advice{color:var(--gray-700);line-height:1.7;font-size:.97rem}
+    .res-list{margin:var(--spacing-md) 0 0;padding-left:1.2rem;color:var(--gray-700);line-height:1.6;font-size:.92rem}
+    .note{background:var(--secondary-light);border-left:4px solid var(--secondary-dark);padding:var(--spacing-md) var(--spacing-lg);border-radius:var(--radius-sm);font-size:.92rem;color:var(--gray-800);line-height:1.6;margin-top:var(--spacing-lg)}
+    .faq-item{border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:var(--spacing-lg);margin-bottom:var(--spacing-md);background:var(--white)}
+    .faq-item h3{font-size:1.05rem;color:var(--primary);margin-bottom:var(--spacing-xs);font-weight:600}
+    .faq-item p{color:var(--gray-700);line-height:1.65;margin:0;font-size:.95rem}
+    .related-links{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:var(--spacing-md)}
+    .related-links a{color:var(--primary-light);text-decoration:none;font-weight:500}
+    .related-links a:hover{text-decoration:underline}
+    @media(max-width:600px){.tool-card{padding:var(--spacing-lg)}.mrow{flex-direction:column;align-items:flex-start}}
+  </style>
 </head>
 <body>
-<!-- Navigation -->
 <nav class="navbar" id="navbar">
-        <div class="container">
-            <a href="/" class="navbar-brand">
-                <img src="Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60">
-            </a>
-
-            <div class="navbar-menu" id="navbarMenu">
-                <a href="/" class="active">Beranda</a>
-                <a href="/tentang">Tentang</a>
-                <a href="/program">Program</a>
-                <a href="/galeri">Galeri</a>
-                <a href="/blog">Artikel</a>
-                <a href="/kontak">Kontak</a>
-                <a href="/donasi" class="btn btn-primary btn-sm">Donasi</a>
-            </div>
-
-            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <div class="container">
+        <a href="/" class="navbar-brand"><img src="/Logo/Logo.webp" alt="YUKA - Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60"></a>
+        <div class="navbar-menu" id="navbarMenu">
+            <a href="/">Beranda</a><a href="/tentang">Tentang</a><a href="/program">Program</a><a href="/galeri">Galeri</a><a href="/blog">Artikel</a><a href="/kontak">Kontak</a><a href="/donasi" class="btn btn-primary btn-sm">Donasi</a>
         </div>
-    </nav>
-<main>
-  <article style="max-width: 800px; margin: 0 auto; padding: 24px; font-family: inherit;">
-  <h1 style="font-size: 32px; margin-bottom: 16px; color: #2B3A67;">Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK)</h1>
-  <p style="font-size: 18px; line-height: 1.6; color: #444; margin-bottom: 24px;">
-    Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK) gratis online. Cocok untuk yang nyari "skrining deteksi dini". Mudah dipakai, hasil instan.
-  </p>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+</nav>
 
-  <section style="background: #f8f9ff; padding: 24px; border-radius: 12px; margin-bottom: 32px;">
-    <h2 style="font-size: 22px; margin-bottom: 16px;">Tool Kalkulator</h2>
-    
-    <div style="margin-bottom: 16px;">
-      <label for="input1" style="display: block; margin-bottom: 4px; font-weight: 600;">Input 1</label>
-      <input type="number" id="input1" placeholder="Misal: 100" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
+<main class="tool-main">
+  <div class="tool-wrap">
+    <div class="tool-head">
+      <h1>Skrining Deteksi Dini Tumbuh Kembang Anak</h1>
+      <p>Cek pencapaian milestone perkembangan anak sesuai usianya dan kenali tanda peringatan (red flag) yang perlu perhatian. Pilih kelompok usia anak, lalu jawab tiap pertanyaan dengan jujur sesuai yang biasa anak lakukan.</p>
     </div>
-    <div style="margin-bottom: 16px;">
-      <label for="input2" style="display: block; margin-bottom: 4px; font-weight: 600;">Input 2</label>
-      <input type="number" id="input2" placeholder="Misal: 50" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px;" />
-    </div>
-    <div style="display: flex; gap: 8px; margin-top: 16px;">
-      <button id="calcBtn" type="button" style="background: #2B3A67; color: #fff; padding: 12px 24px; border: none; border-radius: 6px; font-size: 16px; font-weight: 600; cursor: pointer;">Hitung</button>
-      <button id="resetBtn" type="button" style="background: #fff; color: #2B3A67; padding: 12px 24px; border: 1px solid #2B3A67; border-radius: 6px; font-size: 16px; cursor: pointer;">Reset</button>
-    </div>
-    <div id="calcResult" style="display: none; margin-top: 16px; padding: 16px; background: #fff; border-radius: 8px; font-size: 18px;"></div>
-  </section>
 
-  <section style="margin: 32px 0;">
-    <h2 style="font-size: 22px; margin-bottom: 12px;">Cara Pakai</h2>
-    <ol style="padding-left: 20px; line-height: 1.8;">
-      <li>Isi input 1 dan input 2 di atas.</li>
-      <li>Klik tombol "Hitung".</li>
-      <li>Hasil muncul instan di bawah tombol.</li>
-      <li>Klik "Reset" kalau mau hitung ulang.</li>
-    </ol>
-  </section>
+    <div class="tool-card">
+      <div class="field">
+        <label for="ageBand">Pilih kelompok usia anak</label>
+        <select id="ageBand">
+          <option value="">-- Pilih usia --</option>
+          <option value="0">0 sampai 6 bulan</option>
+          <option value="1">7 sampai 12 bulan</option>
+          <option value="2">13 sampai 18 bulan</option>
+          <option value="3">19 sampai 24 bulan</option>
+          <option value="4">2 sampai 3 tahun</option>
+          <option value="5">3 sampai 5 tahun</option>
+        </select>
+      </div>
+      <div id="questionsArea"></div>
+      <button class="tool-btn" id="hitungBtn" type="button" style="display:none">Lihat Hasil Skrining</button>
+      <div class="result-box" id="resultBox">
+        <div id="resBadge"></div>
+        <div class="res-advice" id="resAdvice"></div>
+        <ul class="res-list" id="resList"></ul>
+        <div class="note">
+          Hasil ini adalah indikasi skrining untuk membantu orang tua, BUKAN diagnosis. Setiap anak berkembang dengan kecepatan berbeda. Jika ada milestone yang belum tercapai atau Anda merasa khawatir, konsultasikan ke posyandu, puskesmas, dokter anak, atau psikolog anak untuk pemeriksaan lebih lanjut. Deteksi dini membuka peluang intervensi yang lebih baik.
+        </div>
+      </div>
+    </div>
 
-  <section style="max-width: 800px; margin: 32px auto;">
-  <h2 style="font-size: 24px; margin-bottom: 16px;">Pertanyaan Umum</h2>
-  
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Apa itu Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone &amp; Red-Flag ABK)?</h3>
-      <p style="margin: 0; color: #555;">Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone &amp; Red-Flag ABK) adalah tool gratis online yang bantu kamu hitung dengan cepat tanpa perlu install aplikasi.</p>
+    <div class="tool-card">
+      <h2>Pertanyaan Umum (FAQ)</h2>
+      <div class="faq-item"><h3>Apa itu milestone perkembangan anak?</h3><p>Milestone adalah kemampuan yang umumnya dicapai anak pada rentang usia tertentu, mencakup motorik kasar, motorik halus, bahasa dan bicara, serta sosial dan emosi. Milestone menjadi acuan untuk memantau apakah perkembangan anak berjalan sesuai usianya.</p></div>
+      <div class="faq-item"><h3>Apa yang dimaksud red flag perkembangan?</h3><p>Red flag adalah tanda peringatan ketika kemampuan yang seharusnya sudah dimiliki anak di usianya belum muncul. Red flag bukan berarti pasti ada gangguan, tetapi menjadi alasan untuk memeriksakan anak lebih lanjut.</p></div>
+      <div class="faq-item"><h3>Apakah hasil skrining ini diagnosis ABK?</h3><p>Tidak. Skrining ini hanya membantu mengenali kemungkinan keterlambatan. Diagnosis anak berkebutuhan khusus hanya dapat ditegakkan oleh tenaga profesional seperti dokter anak, psikolog, atau terapis melalui pemeriksaan langsung.</p></div>
+      <div class="faq-item"><h3>Mengapa deteksi dini penting?</h3><p>Semakin dini keterlambatan dikenali, semakin cepat anak bisa mendapat stimulasi dan intervensi yang tepat. Intervensi pada usia dini memberi hasil yang lebih optimal untuk tumbuh kembang anak.</p></div>
+      <div class="faq-item"><h3>Apakah tool ini gratis dan aman?</h3><p>Ya. Skrining berjalan sepenuhnya di perangkat Anda, gratis, tanpa daftar, dan jawaban tidak dikirim ke server mana pun.</p></div>
     </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Bagaimana cara pakai Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone &amp; Red-Flag ABK)?</h3>
-      <p style="margin: 0; color: #555;">Isi field input di atas, klik tombol &quot;Hitung&quot;, hasilnya muncul instan. Reset kalau mau hitung ulang.</p>
-    </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Apakah Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone &amp; Red-Flag ABK) gratis?</h3>
-      <p style="margin: 0; color: #555;">Ya, 100% gratis. Tidak perlu daftar atau login.</p>
-    </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Apakah hasil Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone &amp; Red-Flag ABK) akurat?</h3>
-      <p style="margin: 0; color: #555;">Akurat sesuai formula standar. Hasil ini panduan; konsultasi ahli kalau butuh keputusan penting.</p>
-    </div>
-    <div style="margin-bottom: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 8px;">
-      <h3 style="margin: 0 0 8px 0; font-size: 18px;">Bisa dipakai di HP?</h3>
-      <p style="margin: 0; color: #555;">Bisa. Tool ini responsive dan jalan di HP, tablet, dan desktop.</p>
-    </div>
-</section>
-  <section style="max-width: 800px; margin: 32px auto;">
-  <h2 style="font-size: 22px; margin-bottom: 12px;">Artikel Terkait</h2>
-  <ul style="list-style: none; padding-left: 0;">
-    
-    <li style="margin-bottom: 8px;">
-      <a href="https://www.yukaindonesia.com/" style="color: #2563eb; text-decoration: none;">Beranda</a>
-    </li>
-    <li style="margin-bottom: 8px;">
-      <a href="https://www.yukaindonesia.com/blog" style="color: #2563eb; text-decoration: none;">Blog</a>
-    </li>
-    <li style="margin-bottom: 8px;">
-      <a href="https://www.yukaindonesia.com/tentang" style="color: #2563eb; text-decoration: none;">Tentang</a>
-    </li>
-  </ul>
-</section>
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK)","description":"Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK) gratis online. Cocok untuk yang nyari \"skrining deteksi dini\". Mudah dipakai, hasil instan.","url":"https://www.yukaindonesia.com/tools/skrining-deteksi-dini-tumbuh-kembang-anak-milestone-red-flag-abk/","datePublished":"2026-06-03","author":{"@type":"Organization","name":"Creativism"},"publisher":{"@type":"Organization","name":"Creativism"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.yukaindonesia.com/tools/skrining-deteksi-dini-tumbuh-kembang-anak-milestone-red-flag-abk/"}}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apa itu Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK)?","acceptedAnswer":{"@type":"Answer","text":"Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK) adalah tool gratis online yang bantu kamu hitung dengan cepat tanpa perlu install aplikasi."}},{"@type":"Question","name":"Bagaimana cara pakai Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK)?","acceptedAnswer":{"@type":"Answer","text":"Isi field input di atas, klik tombol \"Hitung\", hasilnya muncul instan. Reset kalau mau hitung ulang."}},{"@type":"Question","name":"Apakah Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK) gratis?","acceptedAnswer":{"@type":"Answer","text":"Ya, 100% gratis. Tidak perlu daftar atau login."}},{"@type":"Question","name":"Apakah hasil Skrining Deteksi Dini Tumbuh Kembang Anak (Milestone & Red-Flag ABK) akurat?","acceptedAnswer":{"@type":"Answer","text":"Akurat sesuai formula standar. Hasil ini panduan; konsultasi ahli kalau butuh keputusan penting."}},{"@type":"Question","name":"Bisa dipakai di HP?","acceptedAnswer":{"@type":"Answer","text":"Bisa. Tool ini responsive dan jalan di HP, tablet, dan desktop."}}]}</script>
-
-  <script>
-    (function() {
-      function calc(i1, i2) { return i1 + i2; }
-      var btn = document.getElementById('calcBtn');
-      var resetBtn = document.getElementById('resetBtn');
-      var result = document.getElementById('calcResult');
-      btn && btn.addEventListener('click', function() {
-        var i1 = parseFloat(document.getElementById('input1').value) || 0;
-        var i2 = parseFloat(document.getElementById('input2').value) || 0;
-        var out = calc(i1, i2);
-        result.innerHTML = '<strong>Hasil:</strong> ' + out;
-        result.style.display = 'block';
-      });
-      resetBtn && resetBtn.addEventListener('click', function() {
-        document.getElementById('input1').value = '';
-        document.getElementById('input2').value = '';
-        result.style.display = 'none';
-      });
-    })();
-  </script>
-</article>
+    <div class="tool-card">
+      <h2>Tautan Terkait</h2>
+      <ul class="related-links">
+        <li><a href="/program#pendidikan">Program Pendidikan Inklusi</a></li>
+        <li><a href="/blog">Artikel YUKA</a></li>
+        <li><a href="/kontak">Hubungi YUKA</a></li>
+      </ul>
+    </div>
+  </div>
 </main>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Skrining Deteksi Dini Tumbuh Kembang Anak","url":"https://www.yukaindonesia.com/tools/skrining-deteksi-dini-tumbuh-kembang-anak-milestone-red-flag-abk/","description":"Skrining milestone perkembangan anak sesuai usia dan pengenalan red flag anak berkebutuhan khusus. Bukan diagnosis.","applicationCategory":"HealthApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"IDR"},"publisher":{"@type":"Organization","name":"Yayasan Ukhuwah Kaffah Amanatullah","url":"https://www.yukaindonesia.com/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apa itu milestone perkembangan anak?","acceptedAnswer":{"@type":"Answer","text":"Milestone adalah kemampuan yang umumnya dicapai anak pada usia tertentu, mencakup motorik kasar, motorik halus, bahasa, dan sosial-emosi, sebagai acuan memantau perkembangan."}},{"@type":"Question","name":"Apa yang dimaksud red flag perkembangan?","acceptedAnswer":{"@type":"Answer","text":"Red flag adalah tanda peringatan ketika kemampuan yang seharusnya sudah dimiliki anak belum muncul, sehingga menjadi alasan untuk pemeriksaan lebih lanjut."}},{"@type":"Question","name":"Apakah hasil skrining ini diagnosis ABK?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Skrining hanya membantu mengenali kemungkinan keterlambatan. Diagnosis hanya dapat ditegakkan oleh tenaga profesional."}},{"@type":"Question","name":"Mengapa deteksi dini penting?","acceptedAnswer":{"@type":"Answer","text":"Semakin dini keterlambatan dikenali, semakin cepat anak bisa mendapat stimulasi dan intervensi yang tepat untuk hasil yang lebih optimal."}},{"@type":"Question","name":"Apakah tool ini gratis dan aman?","acceptedAnswer":{"@type":"Answer","text":"Ya. Skrining berjalan di perangkat Anda, gratis, tanpa daftar, dan jawaban tidak dikirim ke server."}}]}</script>
+
 <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <div class="brand-name">YUKA</div>
-                    <p>Yayasan Ukhuwah Kaffah Amanatullah adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus di Sleman, Yogyakarta.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="Facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                            </svg>
-                        </a>
-                        <a href="https://wa.me/6281229912332" aria-label="WhatsApp">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4>Navigasi</h4>
-                    <ul class="footer-links">
-                        <li><a href="/">Beranda</a></li>
-                        <li><a href="/tentang">Tentang Kami</a></li>
-                        <li><a href="/program">Program</a></li>
-                        <li><a href="/galeri">Galeri</a></li>
-                        <li><a href="/blog">Artikel</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Program</h4>
-                    <ul class="footer-links">
-                        <li><a href="/program#pendidikan">Pendidikan Inklusi</a></li>
-                        <li><a href="/program#sosial">Sosial & Kemanusiaan</a></li>
-                        <li><a href="/program#dakwah">Dakwah & Kajian</a></li>
-                        <li><a href="/donasi">Donasi</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Kontak</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <a href="https://maps.app.goo.gl/uMmin8ZVJvQtsryC7" target="_blank" style="display: flex; align-items: flex-start; gap: var(--spacing-sm); color: inherit;">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; margin-top: 3px;">
-                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                                </svg>
-                                <span>Jl. Kronggahan Raya II, RT 04 RW 07, Kronggahan II, Trihanggo, Gamping, Sleman (Utara RSA UGM)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/6281229912332" target="_blank" style="display: flex; align-items: center; gap: var(--spacing-sm); color: inherit;">
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-                                </svg>
-                                <span>+62 812-2991-2332</span>
-                            </a>
-                        </li>
-                        <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                            <span>adminukhuwahkaffah@gmail.com</span>
-                        </li>
-                    </ul>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="brand-name">YUKA</div>
+                <p>Yayasan Ukhuwah Kaffah Amanatullah adalah lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus di Sleman, Yogyakarta.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                    <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                    <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                    <a href="https://wa.me/6281229912332" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Yayasan Ukhuwah Kaffah Amanatullah. Hak Cipta Dilindungi.</p>
-                <p>Dibuat dengan <span style="color: #e74c3c;">&hearts;</span> oleh <a href="https://creativism.id" target="_blank">Creativism</a></p>
-            </div>
+            <div><h4>Navigasi</h4><ul class="footer-links"><li><a href="/">Beranda</a></li><li><a href="/tentang">Tentang Kami</a></li><li><a href="/program">Program</a></li><li><a href="/galeri">Galeri</a></li><li><a href="/blog">Artikel</a></li></ul></div>
+            <div><h4>Program</h4><ul class="footer-links"><li><a href="/program#pendidikan">Pendidikan Inklusi</a></li><li><a href="/program#sosial">Sosial &amp; Kemanusiaan</a></li><li><a href="/program#dakwah">Dakwah &amp; Kajian</a></li><li><a href="/donasi">Donasi</a></li></ul></div>
+            <div><h4>Kontak</h4><ul class="footer-contact">
+                <li><a href="https://maps.app.goo.gl/uMmin8ZVJvQtsryC7" target="_blank" style="display:flex;align-items:flex-start;gap:var(--spacing-sm);color:inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:3px;"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg><span>Jl. Kronggahan Raya II, RT 04 RW 07, Kronggahan II, Trihanggo, Gamping, Sleman (Utara RSA UGM)</span></a></li>
+                <li><a href="https://wa.me/6281229912332" target="_blank" style="display:flex;align-items:center;gap:var(--spacing-sm);color:inherit;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg><span>+62 812-2991-2332</span></a></li>
+                <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg><span>adminukhuwahkaffah@gmail.com</span></li>
+            </ul></div>
         </div>
-    </footer>
-<!-- JavaScript Libraries -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Yayasan Ukhuwah Kaffah Amanatullah. Hak Cipta Dilindungi.</p>
+            <p>Dibuat dengan <span style="color:#e74c3c;">&hearts;</span> oleh <a href="https://creativism.id" target="_blank">Creativism</a></p>
+        </div>
+    </div>
+</footer>
 
-    <!-- Main JavaScript -->
-    <script src="assets/js/main.min.js" defer></script>
+<script>
+(function(){
+  var t=document.getElementById('navbarToggle'),m=document.getElementById('navbarMenu');
+  if(t&&m){t.addEventListener('click',function(){t.classList.toggle('active');m.classList.toggle('active');});}
 
-    <!-- Initialize Animations -->
-    <script>
-        // Initialize AOS (Animate On Scroll)
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 50,
-            disable: window.innerWidth < 768 ? 'mobile' : false
-        });
+  // Milestone banks per age band. Domains: Motorik Kasar, Motorik Halus, Bahasa & Bicara, Sosial & Emosi.
+  // Each item is a capability expected to be present (answer "Ya" = met).
+  var BANDS=[
+    { label:'0 sampai 6 bulan', domains:{
+      'Motorik Kasar':['Mengangkat kepala saat ditengkurapkan','Mulai dapat berguling atau menahan kepala tegak'],
+      'Motorik Halus':['Menggenggam benda yang disentuhkan ke tangannya','Membawa tangan ke mulut'],
+      'Bahasa & Bicara':['Mengeluarkan suara ooh/aah (cooing)','Menoleh ke arah sumber suara'],
+      'Sosial & Emosi':['Tersenyum saat diajak bermain (senyum sosial)','Menatap wajah dan melakukan kontak mata']
+    }},
+    { label:'7 sampai 12 bulan', domains:{
+      'Motorik Kasar':['Duduk tanpa bantuan','Merangkak atau berusaha berdiri berpegangan'],
+      'Motorik Halus':['Memindahkan benda dari satu tangan ke tangan lain','Menjepit benda kecil dengan ibu jari dan telunjuk'],
+      'Bahasa & Bicara':['Mengoceh dengan suku kata seperti ba-ba atau ma-ma','Menoleh saat namanya dipanggil'],
+      'Sosial & Emosi':['Bermain cilukba atau tepuk tangan','Menunjukkan kecemasan pada orang asing']
+    }},
+    { label:'13 sampai 18 bulan', domains:{
+      'Motorik Kasar':['Berjalan sendiri tanpa dipegang','Berdiri dari posisi duduk tanpa bantuan'],
+      'Motorik Halus':['Menumpuk 2 sampai 3 balok','Mencoret-coret dengan pensil atau krayon'],
+      'Bahasa & Bicara':['Mengucapkan beberapa kata bermakna selain mama/papa','Menunjuk benda yang diinginkan'],
+      'Sosial & Emosi':['Menunjuk untuk menunjukkan sesuatu kepada orang lain','Meniru tindakan sederhana orang dewasa']
+    }},
+    { label:'19 sampai 24 bulan', domains:{
+      'Motorik Kasar':['Berlari dan menaiki tangga dengan berpegangan','Menendang bola'],
+      'Motorik Halus':['Menumpuk 4 balok atau lebih','Membuka halaman buku'],
+      'Bahasa & Bicara':['Menggabungkan 2 kata, misalnya mau minum','Menunjuk bagian tubuh saat ditanya'],
+      'Sosial & Emosi':['Meniru perilaku orang lain','Bermain pura-pura sederhana, misalnya menyuapi boneka']
+    }},
+    { label:'2 sampai 3 tahun', domains:{
+      'Motorik Kasar':['Naik turun tangga bergantian kaki','Melompat dengan dua kaki'],
+      'Motorik Halus':['Meniru membuat garis atau lingkaran','Membuka tutup botol atau memutar pegangan pintu'],
+      'Bahasa & Bicara':['Berbicara dengan kalimat 2 sampai 3 kata','Dapat dimengerti oleh keluarga saat bicara'],
+      'Sosial & Emosi':['Menunjukkan minat bermain dengan anak lain','Mengekspresikan berbagai emosi']
+    }},
+    { label:'3 sampai 5 tahun', domains:{
+      'Motorik Kasar':['Melompat dengan satu kaki','Menangkap bola yang dilempar'],
+      'Motorik Halus':['Menggambar bentuk sederhana seperti orang atau rumah','Memegang pensil dengan benar dan menggunting'],
+      'Bahasa & Bicara':['Bercerita atau menjawab pertanyaan dengan kalimat lengkap','Bicaranya dapat dimengerti orang di luar keluarga'],
+      'Sosial & Emosi':['Bermain bergiliran dan berbagi dengan teman','Mengikuti aturan main sederhana']
+    }}
+  ];
 
-        // Initialize Swiper Gallery
-        const gallerySwiper = new Swiper('.gallery-swiper', {
-            slidesPerView: 1.2,
-            spaceBetween: 20,
-            centeredSlides: true,
-            loop: true,
-            speed: 800,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-btn-next',
-                prevEl: '.swiper-btn-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                },
-                1280: {
-                    slidesPerView: 3.5,
-                    spaceBetween: 40,
-                }
-            }
-        });
+  var sel=document.getElementById('ageBand'),
+      area=document.getElementById('questionsArea'),
+      btn=document.getElementById('hitungBtn'),
+      box=document.getElementById('resultBox');
 
-        // GSAP Animations for Hero
-        gsap.registerPlugin(ScrollTrigger);
+  function renderBand(){
+    var v=sel.value;box.classList.remove('show');
+    if(v===''){area.innerHTML='';btn.style.display='none';return;}
+    var band=BANDS[parseInt(v,10)],html='',n=0;
+    Object.keys(band.domains).forEach(function(dom){
+      html+='<div class="domain"><h3>'+dom+'</h3>';
+      band.domains[dom].forEach(function(q){
+        html+='<div class="mrow"><span class="mq">'+q+'</span><span class="yn">'+
+          '<label><input type="radio" name="m'+n+'" value="1">Ya</label>'+
+          '<label><input type="radio" name="m'+n+'" value="0">Belum</label></span></div>';
+        n++;
+      });
+      html+='</div>';
+    });
+    area.innerHTML=html;
+    area.dataset.count=n;
+    btn.style.display='block';
+  }
+  sel.addEventListener('change',renderBand);
 
-        // Hero Title Animation
-        gsap.from('.hero-title .title-line', {
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: 'power4.out',
-            delay: 0.3
-        });
-
-        // Counter Animation
-        const animateCounters = () => {
-            const counters = document.querySelectorAll('.stat-number[data-count]');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-count'));
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-
-                const updateCounter = () => {
-                    current += step;
-                    if (current < target) {
-                        counter.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                updateCounter();
-            });
-        };
-
-        // Trigger counter animation when stats are visible
-        const statsSection = document.querySelector('.hero-stats-modern');
-        if (statsSection) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-            observer.observe(statsSection);
-        }
-
-        // Parallax effect for hero background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroBg = document.querySelector('.hero-bg');
-            if (heroBg && scrolled < window.innerHeight) {
-                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
-
-        // Create floating particles
-        const createParticles = () => {
-            const container = document.getElementById('heroParticles');
-            if (!container) return;
-
-            for (let i = 0; i < 20; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.cssText = `
-                    position: absolute;
-                    width: ${Math.random() * 10 + 5}px;
-                    height: ${Math.random() * 10 + 5}px;
-                    background: rgba(255, 255, 255, ${Math.random() * 0.3 + 0.1});
-                    border-radius: 50%;
-                    left: ${Math.random() * 100}%;
-                    top: ${Math.random() * 100}%;
-                    animation: floatParticle ${Math.random() * 10 + 10}s linear infinite;
-                    animation-delay: ${Math.random() * 5}s;
-                `;
-                container.appendChild(particle);
-            }
-        };
-        createParticles();
-
-        // Smooth scroll indicator click
-        document.querySelector('.scroll-indicator')?.addEventListener('click', () => {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
-    <script src="assets/js/analytics.js" defer></script>
+  btn.addEventListener('click',function(){
+    var n=parseInt(area.dataset.count,10),notMet=[],answered=0;
+    // collect unmet milestones with their domain label
+    var doms=[],band=BANDS[parseInt(sel.value,10)],i=0;
+    Object.keys(band.domains).forEach(function(dom){
+      band.domains[dom].forEach(function(q){doms.push({dom:dom,q:q});});
+    });
+    for(i=0;i<n;i++){
+      var c=document.querySelector('input[name="m'+i+'"]:checked');
+      if(c){answered++; if(c.value==='0')notMet.push(doms[i]);}
+    }
+    if(answered<n){alert('Mohon jawab semua pertanyaan terlebih dahulu.');return;}
+    var count=notMet.length, badge=document.getElementById('resBadge'),
+        adv=document.getElementById('resAdvice'), list=document.getElementById('resList');
+    list.innerHTML='';
+    if(count===0){
+      badge.innerHTML='<span class="res-badge res-sesuai">Sesuai Usia</span>';
+      adv.textContent='Semua milestone pada kelompok usia ini tampak sudah tercapai. Lanjutkan memberi stimulasi yang sesuai usia dan pantau perkembangan anak secara berkala di posyandu.';
+    } else if(count<=2){
+      badge.innerHTML='<span class="res-badge res-pantau">Perlu Dipantau</span>';
+      adv.textContent='Ada '+count+' kemampuan yang belum tercapai. Setiap anak berkembang dengan kecepatan berbeda. Berikan stimulasi terarah pada area tersebut, lalu pantau kembali dalam 1 sampai 2 bulan. Bila belum ada kemajuan, konsultasikan ke posyandu atau dokter anak.';
+      notMet.forEach(function(m){var li=document.createElement('li');li.textContent='['+m.dom+'] '+m.q;list.appendChild(li);});
+    } else {
+      badge.innerHTML='<span class="res-badge res-konsul">Segera Konsultasi</span>';
+      adv.textContent='Ada '+count+' kemampuan yang belum tercapai pada usia ini. Ini menjadi alasan untuk segera berkonsultasi dengan dokter anak, psikolog anak, atau layanan tumbuh kembang agar anak mendapat pemeriksaan dan, bila perlu, intervensi dini.';
+      notMet.forEach(function(m){var li=document.createElement('li');li.textContent='['+m.dom+'] '+m.q;list.appendChild(li);});
+    }
+    box.classList.add('show');
+    box.scrollIntoView({behavior:'smooth',block:'nearest'});
+  });
+})();
+</script>
 </body>
 </html>
