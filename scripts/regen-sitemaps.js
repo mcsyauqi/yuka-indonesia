@@ -45,17 +45,33 @@ function cleanSlug(fileName) {
   return path.basename(fileName, '.html');
 }
 
+// Cycle #24 fix (2026-06-10): lastmod was inherited verbatim from the previous
+// sitemap, so 63 entries stayed stuck at 2026-05-01 forever (even freshly
+// published articles). Derive lastmod from the article's own JSON-LD
+// dateModified/datePublished instead; cap future-dated (pre-deployed) articles
+// at TODAY so the sitemap stays valid.
+function articleLastmod(file) {
+  const html = read(path.join('artikel', file));
+  const dm = html.match(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})/)?.[1];
+  const dp = html.match(/"datePublished"\s*:\s*"(\d{4}-\d{2}-\d{2})/)?.[1];
+  const d = dm || dp;
+  if (!d) return null;
+  return d > TODAY ? TODAY : d;
+}
+
 function articlePages(meta) {
   return fs.readdirSync('artikel')
     .filter((file) => file.endsWith('.html'))
-    .map((file) => `${SITE}/artikel/${cleanSlug(file)}`)
     .sort()
-    .map((loc) => ({
-      loc,
-      lastmod: meta.get(loc)?.lastmod || TODAY,
-      changefreq: meta.get(loc)?.changefreq || 'monthly',
-      priority: meta.get(loc)?.priority || '0.7',
-    }));
+    .map((file) => {
+      const loc = `${SITE}/artikel/${cleanSlug(file)}`;
+      return {
+        loc,
+        lastmod: articleLastmod(file) || meta.get(loc)?.lastmod || TODAY,
+        changefreq: meta.get(loc)?.changefreq || 'monthly',
+        priority: meta.get(loc)?.priority || '0.7',
+      };
+    });
 }
 
 function withMeta(entries, meta) {
