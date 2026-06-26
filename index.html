@@ -64,51 +64,106 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "NGO",
-        "name": "Yayasan Ukhuwah Kaffah Amanatullah",
-        "alternateName": [
-            "YUKA",
-            "YUKA Indonesia",
-            "Yayasan YUKA Indonesia"
-        ],
-        "url": "https://www.yukaindonesia.com",
-        "logo": "https://www.yukaindonesia.com/Logo/Logo.webp",
-        "description": "Lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus di Sleman, Yogyakarta.",
-        "email": "info@yukaindonesia.com",
-        "telephone": "+62-812-2991-2332",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Jalan Kronggahan Raya II",
-            "addressLocality": "Sleman",
-            "addressRegion": "Daerah Istimewa Yogyakarta",
-            "postalCode": "55581",
-            "addressCountry": "ID"
-        },
-        "areaServed": "Indonesia",
-        "foundingDate": "2020",
-        "knowsAbout": [
-            "pendidikan inklusi",
-            "anak berkebutuhan khusus",
-            "sekolah inklusi",
-            "donasi pendidikan"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+62-812-2991-2332",
-            "contactType": "customer support",
-            "areaServed": "ID",
-            "availableLanguage": [
-                "id",
-                "en"
-            ]
-        },
-        "sameAs": [
-            "https://www.instagram.com/yuka_yogyakarta",
-            "https://www.facebook.com/yukayogyakarta",
-            "https://wa.me/6281229912332"
+        "@graph": [
+            {
+                "@type": "NGO",
+                "@id": "https://www.yukaindonesia.com/#organization",
+                "name": "Yayasan Ukhuwah Kaffah Amanatullah",
+                "alternateName": [
+                    "YUKA",
+                    "YUKA Indonesia",
+                    "Yayasan YUKA Indonesia"
+                ],
+                "url": "https://www.yukaindonesia.com/",
+                "logo": "https://www.yukaindonesia.com/Logo/Logo.webp",
+                "image": "https://www.yukaindonesia.com/Logo/Logo.webp",
+                "description": "Lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus di Sleman, Yogyakarta.",
+                "email": "info@yukaindonesia.com",
+                "telephone": "+62-812-2991-2332",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Jalan Kronggahan Raya II, RT 04 RW 07, Kronggahan II, Trihanggo, Gamping",
+                    "addressLocality": "Sleman",
+                    "addressRegion": "Daerah Istimewa Yogyakarta",
+                    "postalCode": "55591",
+                    "addressCountry": "ID"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Indonesia"
+                },
+                "foundingDate": "2020",
+                "knowsAbout": [
+                    "pendidikan inklusi",
+                    "anak berkebutuhan khusus",
+                    "sekolah inklusi",
+                    "donasi pendidikan",
+                    "terapi anak berkebutuhan khusus"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+62-812-2991-2332",
+                    "contactType": "customer support",
+                    "areaServed": "ID",
+                    "availableLanguage": [
+                        "id",
+                        "en"
+                    ]
+                },
+                "sameAs": [
+                    "https://www.instagram.com/yuka_yogyakarta",
+                    "https://www.facebook.com/yukayogyakarta",
+                    "https://wa.me/6281229912332"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://www.yukaindonesia.com/#website",
+                "url": "https://www.yukaindonesia.com/",
+                "name": "YUKA Indonesia",
+                "alternateName": "Yayasan Ukhuwah Kaffah Amanatullah",
+                "publisher": {
+                    "@id": "https://www.yukaindonesia.com/#organization"
+                },
+                "inLanguage": "id-ID",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://www.yukaindonesia.com/blog?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://www.yukaindonesia.com/#webpage",
+                "url": "https://www.yukaindonesia.com/",
+                "name": "YUKA - Yayasan Ukhuwah Kaffah Amanatullah",
+                "description": "Yayasan sosial, pendidikan, dan dakwah untuk pendidikan inklusi anak berkebutuhan khusus di Yogyakarta.",
+                "isPartOf": {
+                    "@id": "https://www.yukaindonesia.com/#website"
+                },
+                "about": {
+                    "@id": "https://www.yukaindonesia.com/#organization"
+                },
+                "inLanguage": "id-ID",
+                "breadcrumb": {
+                    "@id": "https://www.yukaindonesia.com/#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.yukaindonesia.com/#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://www.yukaindonesia.com/"
+                    }
+                ]
+            }
         ]
     }
-    </script>
+        </script>
 </head>
 <body>
     <!-- Navigation -->

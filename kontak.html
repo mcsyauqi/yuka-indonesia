@@ -44,6 +44,117 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "NGO",
+                "@id": "https://www.yukaindonesia.com/#organization",
+                "name": "Yayasan Ukhuwah Kaffah Amanatullah",
+                "alternateName": [
+                    "YUKA",
+                    "YUKA Indonesia",
+                    "Yayasan YUKA Indonesia"
+                ],
+                "url": "https://www.yukaindonesia.com/",
+                "logo": "https://www.yukaindonesia.com/Logo/Logo.webp",
+                "image": "https://www.yukaindonesia.com/Logo/Logo.webp",
+                "description": "Lembaga sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus di Sleman, Yogyakarta.",
+                "email": "info@yukaindonesia.com",
+                "telephone": "+62-812-2991-2332",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Jalan Kronggahan Raya II, RT 04 RW 07, Kronggahan II, Trihanggo, Gamping",
+                    "addressLocality": "Sleman",
+                    "addressRegion": "Daerah Istimewa Yogyakarta",
+                    "postalCode": "55591",
+                    "addressCountry": "ID"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Indonesia"
+                },
+                "foundingDate": "2020",
+                "knowsAbout": [
+                    "pendidikan inklusi",
+                    "anak berkebutuhan khusus",
+                    "sekolah inklusi",
+                    "donasi pendidikan",
+                    "terapi anak berkebutuhan khusus"
+                ],
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+62-812-2991-2332",
+                    "contactType": "customer support",
+                    "areaServed": "ID",
+                    "availableLanguage": [
+                        "id",
+                        "en"
+                    ]
+                },
+                "sameAs": [
+                    "https://www.instagram.com/yuka_yogyakarta",
+                    "https://www.facebook.com/yukayogyakarta",
+                    "https://wa.me/6281229912332"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://www.yukaindonesia.com/#website",
+                "url": "https://www.yukaindonesia.com/",
+                "name": "YUKA Indonesia",
+                "alternateName": "Yayasan Ukhuwah Kaffah Amanatullah",
+                "publisher": {
+                    "@id": "https://www.yukaindonesia.com/#organization"
+                },
+                "inLanguage": "id-ID",
+                "potentialAction": {
+                    "@type": "SearchAction",
+                    "target": "https://www.yukaindonesia.com/blog?q={search_term_string}",
+                    "query-input": "required name=search_term_string"
+                }
+            },
+            {
+                "@type": "ContactPage",
+                "@id": "https://www.yukaindonesia.com/kontak#webpage",
+                "url": "https://www.yukaindonesia.com/kontak",
+                "name": "Kontak YUKA",
+                "description": "Informasi kontak Yayasan Ukhuwah Kaffah Amanatullah untuk donasi, relawan, dan kerja sama.",
+                "isPartOf": {
+                    "@id": "https://www.yukaindonesia.com/#website"
+                },
+                "about": {
+                    "@id": "https://www.yukaindonesia.com/#organization"
+                },
+                "inLanguage": "id-ID",
+                "breadcrumb": {
+                    "@id": "https://www.yukaindonesia.com/kontak#breadcrumb"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "@id": "https://www.yukaindonesia.com/kontak#breadcrumb",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Beranda",
+                        "item": "https://www.yukaindonesia.com/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Kontak",
+                        "item": "https://www.yukaindonesia.com/kontak"
+                    }
+                ]
+            }
+        ]
+    }
+        </script>
 </head>
 <body>
     <!-- Navigation -->
