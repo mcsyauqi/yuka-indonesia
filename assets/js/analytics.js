@@ -133,6 +133,11 @@
                     event_label: text,
                     source_page: window.location.pathname
                 });
+                gtag('event', 'donate_click', {
+                    event_category: 'Donation',
+                    event_label: text,
+                    source_page: window.location.pathname
+                });
             } else {
                 gtag('event', 'cta_click', {
                     event_category: 'CTA',
@@ -199,6 +204,14 @@
                 subject: subject,
                 page_path: window.location.pathname
             });
+            if (String(subject).toLowerCase().includes('csr')) {
+                gtag('event', 'csr_form_submit', {
+                    event_category: 'Lead',
+                    form_name: 'Hubungi Kami',
+                    subject: subject,
+                    page_path: window.location.pathname
+                });
+            }
             gtag('event', 'generate_lead', {
                 event_category: 'Lead',
                 lead_source: 'Contact Form',
