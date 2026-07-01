@@ -57,6 +57,13 @@ jobs:
           while IFS='|' read -r slug file title desc image category readtime pubdate; do
             echo "Publishing: $title ($slug)"
 
+            # Fail early if the scheduled article contains invalid JSON-LD schema.
+            if [ ! -f "$file" ]; then
+              echo "Scheduled article file not found: $file"
+              exit 1
+            fi
+            node scripts/validate-jsonld.js "$file"
+
             # Format date for display (e.g., "18 Mar 2026")
             DISPLAY_DATE=$(date -d "$pubdate" +"%d %b %Y" 2>/dev/null || date -j -f "%Y-%m-%d" "$pubdate" +"%d %b %Y" 2>/dev/null || echo "$pubdate")
 
