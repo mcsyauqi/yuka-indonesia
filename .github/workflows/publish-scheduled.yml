@@ -111,13 +111,18 @@ jobs:
               content = f.read()
           marker = '<div class=\"blog-grid\" id=\"blogGrid\">'
           if marker in content:
-              card = '''$CARD'''
-              content = content.replace(marker, marker + '\n' + card, 1)
-              # Update article count
-              content = re.sub(r'Menampilkan \d+ artikel', lambda m: f\"Menampilkan {int(re.search(r'\d+', m.group()).group()) + 1} artikel\", content)
-              with open('blog.html', 'w') as f:
-                  f.write(content)
-              print(f'Added to blog.html: $slug')
+              clean_href = 'href="artikel/$slug"'
+              html_href = 'href="artikel/$slug.html"'
+              if clean_href in content or html_href in content:
+                  print(f'Skipped duplicate blog card: $slug')
+              else:
+                  card = '''$CARD'''
+                  content = content.replace(marker, marker + '\n' + card, 1)
+                  # Update article count only when a new card is inserted.
+                  content = re.sub(r'Menampilkan \d+ artikel', lambda m: f\"Menampilkan {int(re.search(r'\d+', m.group()).group()) + 1} artikel\", content)
+                  with open('blog.html', 'w') as f:
+                      f.write(content)
+                  print(f'Added to blog.html: $slug')
           "
 
             # Add to sitemap.xml (clean URL: www + no .html)
