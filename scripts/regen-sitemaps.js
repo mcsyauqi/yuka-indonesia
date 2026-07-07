@@ -94,6 +94,10 @@ function renderUrlset(entries, indent = '  ') {
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${body}\n</urlset>\n`;
 }
 
+function renderSitemapIndex() {
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>${SITE}/sitemap-pages.xml</loc>\n    <lastmod>${TODAY}</lastmod>\n  </sitemap>\n  <sitemap>\n    <loc>${SITE}/sitemap-articles.xml</loc>\n    <lastmod>${TODAY}</lastmod>\n  </sitemap>\n</sitemapindex>\n`;
+}
+
 function writeIfChanged(file, content) {
   if (read(file) === content) return false;
   fs.writeFileSync(file, content);
@@ -119,6 +123,7 @@ const changed = {
   pages: writeIfChanged('sitemap-pages.xml', renderUrlset(pages)),
   articles: writeIfChanged('sitemap-articles.xml', renderUrlset(articles)),
   main: writeIfChanged('sitemap.xml', renderUrlset(combined, '    ')),
+  index: writeIfChanged('sitemap-index.xml', renderSitemapIndex()),
 };
 
 console.log(JSON.stringify({
