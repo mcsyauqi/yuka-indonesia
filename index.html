@@ -9,8 +9,10 @@
          preload scanner cannot see, so without this it waits for the CSSOM. -->
     <link rel="preload" href="assets/images/hero-bg.webp" as="image" type="image/webp" fetchpriority="high">
 
-    <!-- GA4 queue. The library itself is loaded at the end of <body> so its
-         165 KB does not compete with the hero image for bandwidth. -->
+    <!-- GA4. Only this stub is inline; the 156 KB library is fetched once the page
+         has loaded, or on the first interaction, whichever comes first. Calls made
+         before then queue on dataLayer and flush when it arrives, so page_view and
+         the events in analytics.js are all still recorded. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -19,6 +21,23 @@
         'send_page_view': true,
         'cookie_flags': 'SameSite=None;Secure'
       });
+
+      (function () {
+        var requested = false;
+        function loadGtag() {
+          if (requested) return;
+          requested = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LDXC5GQF61';
+          document.head.appendChild(s);
+        }
+        if (document.readyState === 'complete') loadGtag();
+        else addEventListener('load', loadGtag, { once: true });
+        ['pointerdown', 'keydown', 'touchstart'].forEach(function (evt) {
+          addEventListener(evt, loadGtag, { once: true, passive: true });
+        });
+      })();
     </script>
 
     <!-- SEO Meta Tags -->
@@ -966,8 +985,5 @@
     <script src="assets/js/main.min.js" defer></script>
     <script src="assets/js/home.js" defer></script>
     <script src="assets/js/analytics.js" defer></script>
-
-    <!-- GA4 library, loaded last so it does not contend with the hero image -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDXC5GQF61"></script>
 </body>
 </html>
