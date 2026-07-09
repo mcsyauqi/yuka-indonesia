@@ -1,22 +1,47 @@
-// Homepage animations. Loaded with `defer`, so it runs after aos.js and
-// swiper-bundle.min.js (also deferred) have executed.
+// Homepage behaviour. Loaded with `defer`.
 //
-// The hero title reveal used to be a gsap.from() call. GSAP + ScrollTrigger cost
-// 42 KB across two requests to a third CDN origin, and ScrollTrigger was never
-// actually used, so the reveal now lives in CSS (.hero-title .title-line).
+// Everything that is not needed to paint the hero is kept off the critical path:
+// AOS only exists on desktop, Swiper is fetched when the gallery nears the
+// viewport, and the decorative particles wait for an idle moment. The hero title
+// reveal is a CSS keyframe (it used to be a gsap.from() call, which cost 42 KB
+// across GSAP + an unused ScrollTrigger).
 
-AOS.init({
+const loadScript = (src, onload) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.onload = onload;
+    document.body.appendChild(script);
+};
+
+const whenIdle = (fn) =>
+    'requestIdleCallback' in window ? requestIdleCallback(fn, { timeout: 2000 }) : setTimeout(fn, 200);
+
+// --- Scroll reveals (desktop only) --------------------------------------------
+// aos.css carries media="(min-width: 768px)", so below that width its selectors
+// never match and AOS has nothing to do. Loading it there costs 14.7 KB and a
+// pass over 44 nodes for no visible effect. The media query listener covers the
+// case of a desktop window being widened past the breakpoint after load, which
+// would otherwise apply aos.css (opacity: 0) with no AOS around to reveal it.
+const desktop = window.matchMedia('(min-width: 768px)');
+
+const startAOS = () => loadScript('assets/vendor/aos.js', () => AOS.init({
     duration: 800,
     easing: 'ease-out-cubic',
     once: true,
     offset: 50,
-    disable: window.innerWidth < 768 ? 'mobile' : false
-});
+}));
 
-// The gallery sits far below the fold, but parsing and initialising
-// swiper-bundle.min.js cost ~640ms of main thread before LCP. Fetch and run it
-// only once the gallery is within 600px of the viewport, which is early enough
-// that it is always initialised before it can be seen.
+if (desktop.matches) {
+    startAOS();
+} else {
+    desktop.addEventListener('change', (e) => e.matches && startAOS(), { once: true });
+}
+
+// --- Gallery carousel ---------------------------------------------------------
+// swiper-bundle.min.js is ~640ms of parse, compile and init for a gallery that
+// sits far below the fold. 600px of rootMargin is enough that it is always ready
+// before it can be seen. Its stylesheet stays in <head>: the slides would reflow
+// without it.
 const initGallery = () => new Swiper('.gallery-swiper', {
     slidesPerView: 1.2,
     spaceBetween: 20,
@@ -47,16 +72,12 @@ if (gallery) {
     const galleryObserver = new IntersectionObserver((entries, observer) => {
         if (!entries.some(e => e.isIntersecting)) return;
         observer.disconnect();
-
-        const script = document.createElement('script');
-        script.src = 'assets/vendor/swiper-bundle.min.js';
-        script.onload = initGallery;
-        document.body.appendChild(script);
+        loadScript('assets/vendor/swiper-bundle.min.js', initGallery);
     }, { rootMargin: '600px' });
     galleryObserver.observe(gallery);
 }
 
-// Count the hero stats up once they scroll into view.
+// --- Hero stat counters -------------------------------------------------------
 const animateCounters = () => {
     document.querySelectorAll('.stat-number[data-count]').forEach(counter => {
         const target = parseInt(counter.getAttribute('data-count'));
@@ -89,7 +110,7 @@ if (statsSection) {
     observer.observe(statsSection);
 }
 
-// Parallax the hero background on scroll.
+// --- Hero parallax ------------------------------------------------------------
 const heroBg = document.querySelector('.hero-bg');
 if (heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     let ticking = false;
@@ -106,10 +127,14 @@ if (heroBg && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     }, { passive: true });
 }
 
+// --- Decorative particles -----------------------------------------------------
+// 20 nodes, each with its own infinite animation. Purely cosmetic, so they wait
+// until the main thread is free rather than competing with the hero paint.
 const createParticles = () => {
     const container = document.getElementById('heroParticles');
-    if (!container) return;
+    if (!container || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
+    const fragment = document.createDocumentFragment();
     for (let i = 0; i < 20; i++) {
         const particle = document.createElement('div');
         particle.className = 'particle';
@@ -124,10 +149,11 @@ const createParticles = () => {
             animation: floatParticle ${Math.random() * 10 + 10}s linear infinite;
             animation-delay: ${Math.random() * 5}s;
         `;
-        container.appendChild(particle);
+        fragment.appendChild(particle);
     }
+    container.appendChild(fragment);
 };
-createParticles();
+whenIdle(createParticles);
 
 document.querySelector('.scroll-indicator')?.addEventListener('click', () => {
     window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });

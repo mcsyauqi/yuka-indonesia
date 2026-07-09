@@ -957,10 +957,10 @@
         </div>
     </footer>
 
-    <!-- JavaScript Libraries (self-hosted: avoids 3 extra CDN origins).
-         swiper-bundle.min.js is not listed here: home.js fetches it only when the
-         gallery nears the viewport, keeping ~640ms of parse+init off the path to LCP. -->
-    <script src="assets/vendor/aos.js" defer></script>
+    <!-- aos.js and swiper-bundle.min.js are deliberately absent: home.js loads AOS
+         only on desktop (where aos.css applies) and Swiper only when the gallery
+         nears the viewport. Together that is ~55 KB and ~700ms of main thread kept
+         off the path to LCP on phones. -->
 
     <!-- Main JavaScript -->
     <script src="assets/js/main.min.js" defer></script>
