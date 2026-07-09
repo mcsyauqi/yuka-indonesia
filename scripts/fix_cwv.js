@@ -86,13 +86,13 @@ function addHeroPreload(filePath) {
 
   // Homepage: hero background image
   if (basename === 'index.html' && !content.includes('rel="preload"') ||
-      (basename === 'index.html' && !content.includes('papan-nama-taruna-imani'))) {
+      (basename === 'index.html' && !content.includes('assets/images/hero-bg.webp'))) {
     // Check if preload already exists for this image
-    if (!content.includes("preload\" href=\"Dokumentasi/21 Jan 2026/papan-nama-taruna-imani.webp\"")) {
+    if (!content.includes("preload\" href=\"assets/images/hero-bg.webp\"")) {
       const insertPoint = content.indexOf('<link rel="stylesheet" href="assets/css/style');
       if (insertPoint > -1) {
         content = content.slice(0, insertPoint) +
-          '<link rel="preload" href="Dokumentasi/21 Jan 2026/papan-nama-taruna-imani.webp" as="image" type="image/webp">\n    ' +
+          '<link rel="preload" href="assets/images/hero-bg.webp" as="image" type="image/webp" fetchpriority="high">\n    ' +
           content.slice(insertPoint);
         changed = true;
         fix(filePath, 'Added preload for hero background image');
