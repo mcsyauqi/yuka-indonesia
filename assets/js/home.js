@@ -13,7 +13,11 @@ AOS.init({
     disable: window.innerWidth < 768 ? 'mobile' : false
 });
 
-const gallerySwiper = new Swiper('.gallery-swiper', {
+// The gallery sits far below the fold, but parsing and initialising
+// swiper-bundle.min.js cost ~640ms of main thread before LCP. Fetch and run it
+// only once the gallery is within 600px of the viewport, which is early enough
+// that it is always initialised before it can be seen.
+const initGallery = () => new Swiper('.gallery-swiper', {
     slidesPerView: 1.2,
     spaceBetween: 20,
     centeredSlides: true,
@@ -37,6 +41,20 @@ const gallerySwiper = new Swiper('.gallery-swiper', {
         1280: { slidesPerView: 3.5, spaceBetween: 40 }
     }
 });
+
+const gallery = document.querySelector('.gallery-swiper');
+if (gallery) {
+    const galleryObserver = new IntersectionObserver((entries, observer) => {
+        if (!entries.some(e => e.isIntersecting)) return;
+        observer.disconnect();
+
+        const script = document.createElement('script');
+        script.src = 'assets/vendor/swiper-bundle.min.js';
+        script.onload = initGallery;
+        document.body.appendChild(script);
+    }, { rootMargin: '600px' });
+    galleryObserver.observe(gallery);
+}
 
 // Count the hero stats up once they scroll into view.
 const animateCounters = () => {

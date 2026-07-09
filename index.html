@@ -271,13 +271,13 @@
                 <div class="hero-images" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                     <div class="hero-image-grid">
                         <div class="hero-img hero-img-main">
-                            <img src="Dokumentasi/21 Jan 2026/IMG_8420.webp" alt="Anak-anak berkebutuhan khusus belajar Al-Quran dan akademik di Sekolah Inklusi Taruna Imani YUKA Yogyakarta" width="800" height="600">
+                            <img src="Dokumentasi/21 Jan 2026/IMG_8420.webp" alt="Anak-anak berkebutuhan khusus belajar Al-Quran dan akademik di Sekolah Inklusi Taruna Imani YUKA Yogyakarta" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <div class="hero-img hero-img-small hero-img-1">
-                            <img src="Dokumentasi/21 Jan 2026/IMG_8414.webp" alt="Siswi berhijab berlatih keterampilan membuat kerajinan manik-manik di sekolah inklusi ABK" width="800" height="600">
+                            <img src="Dokumentasi/21 Jan 2026/IMG_8414.webp" alt="Siswi berhijab berlatih keterampilan membuat kerajinan manik-manik di sekolah inklusi ABK" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <div class="hero-img hero-img-small hero-img-2">
-                            <img src="Dokumentasi/21 Jan 2026/IMG_8417.webp" alt="Guru dan siswa ABK belajar bersama di ruang kelas Sekolah Inklusi Taruna Imani dengan koleksi piala prestasi" width="800" height="600">
+                            <img src="Dokumentasi/21 Jan 2026/IMG_8417.webp" alt="Guru dan siswa ABK belajar bersama di ruang kelas Sekolah Inklusi Taruna Imani dengan koleksi piala prestasi" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                     </div>
 
@@ -615,7 +615,7 @@
 
                     <div class="donation-methods-modern">
                         <div class="donation-method-card" data-aos="fade-up" data-aos-delay="200">
-                            <div class="bank-logo" style="background: white; border: 1px solid rgba(255,255,255,0.3); padding: 4px;"><img src="assets/images/banks/bsi.png" alt="Logo BSI" style="max-width: 32px; max-height: 24px; object-fit: contain;" width="32" height="24"></div>
+                            <div class="bank-logo" style="background: white; border: 1px solid rgba(255,255,255,0.3); padding: 4px;"><img src="assets/images/banks/bsi.png" alt="Logo BSI" style="max-width: 32px; max-height: 24px; object-fit: contain;" width="32" height="24" loading="lazy" decoding="async"></div>
                             <div class="bank-info">
                                 <div class="bank-name">Bank Syariah Indonesia</div>
                                 <div class="account-number">7347462785</div>
@@ -957,9 +957,10 @@
         </div>
     </footer>
 
-    <!-- JavaScript Libraries (self-hosted: avoids 3 extra CDN origins) -->
+    <!-- JavaScript Libraries (self-hosted: avoids 3 extra CDN origins).
+         swiper-bundle.min.js is not listed here: home.js fetches it only when the
+         gallery nears the viewport, keeping ~640ms of parse+init off the path to LCP. -->
     <script src="assets/vendor/aos.js" defer></script>
-    <script src="assets/vendor/swiper-bundle.min.js" defer></script>
 
     <!-- Main JavaScript -->
     <script src="assets/js/main.min.js" defer></script>
