@@ -2,8 +2,15 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDXC5GQF61"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Preload LCP image first: .hero-bg sets it via inline style, which the
+         preload scanner cannot see, so without this it waits for the CSSOM. -->
+    <link rel="preload" href="Dokumentasi/21 Jan 2026/papan-nama-taruna-imani.webp" as="image" type="image/webp" fetchpriority="high">
+
+    <!-- GA4 queue. The library itself is loaded at the end of <body> so its
+         165 KB does not compete with the hero image for bandwidth. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -13,8 +20,6 @@
         'cookie_flags': 'SameSite=None;Secure'
       });
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- SEO Meta Tags -->
     <title>YUKA - Yayasan Ukhuwah Kaffah Amanatullah</title>
@@ -41,8 +46,10 @@
     <meta name="twitter:image" content="https://www.yukaindonesia.com/assets/images/og-image.jpg">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="Icon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="Icon.ico">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16.png">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,14 +57,10 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
-    <!-- Modern Animation Libraries -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-    <!-- Preload LCP image -->
-    <link rel="preload" href="Dokumentasi/21 Jan 2026/papan-nama-taruna-imani.webp" as="image" type="image/webp">
-
-    <!-- Styles -->
+    <!-- Styles. AOS and Swiper are self-hosted: as CDN links they cost two extra
+         DNS+TLS handshakes on the render-blocking path (~820 ms each on mobile). -->
+    <link rel="stylesheet" href="assets/vendor/aos.css">
+    <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 
     <!-- Schema.org Structured Data -->
@@ -237,7 +240,7 @@
                         <span class="label-dot"></span>
                         Sosial &bull; Pendidikan &bull; Dakwah
                     </div>
-                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="hero-title">
                         <span class="title-line">Membangun</span>
                         <span class="title-line title-gradient">Generasi Inklusif</span>
                         <span class="title-line">dengan Kasih Sayang</span>
@@ -948,152 +951,16 @@
         </div>
     </footer>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <!-- JavaScript Libraries (self-hosted: avoids 3 extra CDN origins) -->
+    <script src="assets/vendor/aos.js" defer></script>
+    <script src="assets/vendor/swiper-bundle.min.js" defer></script>
 
     <!-- Main JavaScript -->
     <script src="assets/js/main.min.js" defer></script>
-
-    <!-- Initialize Animations -->
-    <script>
-        // Initialize AOS (Animate On Scroll)
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 50,
-            disable: window.innerWidth < 768 ? 'mobile' : false
-        });
-
-        // Initialize Swiper Gallery
-        const gallerySwiper = new Swiper('.gallery-swiper', {
-            slidesPerView: 1.2,
-            spaceBetween: 20,
-            centeredSlides: true,
-            loop: true,
-            speed: 800,
-            autoplay: {
-                delay: 4000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-btn-next',
-                prevEl: '.swiper-btn-prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 24,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                },
-                1280: {
-                    slidesPerView: 3.5,
-                    spaceBetween: 40,
-                }
-            }
-        });
-
-        // GSAP Animations for Hero
-        gsap.registerPlugin(ScrollTrigger);
-
-        // Hero Title Animation
-        gsap.from('.hero-title .title-line', {
-            y: 100,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: 'power4.out',
-            delay: 0.3
-        });
-
-        // Counter Animation
-        const animateCounters = () => {
-            const counters = document.querySelectorAll('.stat-number[data-count]');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-count'));
-                const duration = 2000;
-                const step = target / (duration / 16);
-                let current = 0;
-
-                const updateCounter = () => {
-                    current += step;
-                    if (current < target) {
-                        counter.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                updateCounter();
-            });
-        };
-
-        // Trigger counter animation when stats are visible
-        const statsSection = document.querySelector('.hero-stats-modern');
-        if (statsSection) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 });
-            observer.observe(statsSection);
-        }
-
-        // Parallax effect for hero background
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const heroBg = document.querySelector('.hero-bg');
-            if (heroBg && scrolled < window.innerHeight) {
-                heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
-            }
-        });
-
-        // Create floating particles
-        const createParticles = () => {
-            const container = document.getElementById('heroParticles');
-            if (!container) return;
-
-            for (let i = 0; i < 20; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.cssText = `
-                    position: absolute;
-                    width: ${Math.random() * 10 + 5}px;
-                    height: ${Math.random() * 10 + 5}px;
-                    background: rgba(255, 255, 255, ${Math.random() * 0.3 + 0.1});
-                    border-radius: 50%;
-                    left: ${Math.random() * 100}%;
-                    top: ${Math.random() * 100}%;
-                    animation: floatParticle ${Math.random() * 10 + 10}s linear infinite;
-                    animation-delay: ${Math.random() * 5}s;
-                `;
-                container.appendChild(particle);
-            }
-        };
-        createParticles();
-
-        // Smooth scroll indicator click
-        document.querySelector('.scroll-indicator')?.addEventListener('click', () => {
-            window.scrollTo({
-                top: window.innerHeight,
-                behavior: 'smooth'
-            });
-        });
-    </script>
-
+    <script src="assets/js/home.js" defer></script>
     <script src="assets/js/analytics.js" defer></script>
+
+    <!-- GA4 library, loaded last so it does not contend with the hero image -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LDXC5GQF61"></script>
 </body>
 </html>
