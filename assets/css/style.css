@@ -1824,8 +1824,16 @@ p {
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     z-index: 0;
+}
+
+/* background-attachment: fixed forces a repaint of the whole hero on every scroll
+   frame, which is expensive on phones, and home.js already parallaxes this element
+   with a transform. Desktop keeps it; the two only ever agreed there. */
+@media (min-width: 992px) {
+    .hero-bg {
+        background-attachment: fixed;
+    }
 }
 
 .hero-bg::after {
