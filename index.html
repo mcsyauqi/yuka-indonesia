@@ -58,8 +58,14 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
 
     <!-- Styles. AOS and Swiper are self-hosted: as CDN links they cost two extra
-         DNS+TLS handshakes on the render-blocking path (~820 ms each on mobile). -->
-    <link rel="stylesheet" href="assets/vendor/aos.css">
+         DNS+TLS handshakes on the render-blocking path (~820 ms each on mobile).
+
+         aos.css carries media="(min-width: 768px)" so it is not render-blocking on
+         phones. AOS is initialised with disable:'mobile' there, and a disabled AOS
+         strips every data-aos attribute, so none of these selectors would match
+         anyway. Desktop still gets it as a blocking stylesheet, which is what keeps
+         the reveal from flashing. -->
+    <link rel="stylesheet" href="assets/vendor/aos.css" media="(min-width: 768px)">
     <link rel="stylesheet" href="assets/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 
