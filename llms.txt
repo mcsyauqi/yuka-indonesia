@@ -1,23 +1,31 @@
 # YUKA - Yayasan Ukhuwah Kaffah Amanatullah
 
-> Yayasan sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus (ABK) di Sleman, Yogyakarta, Indonesia.
+> YUKA adalah yayasan sosial, pendidikan, dan dakwah yang berfokus pada pendidikan inklusi untuk anak berkebutuhan khusus (ABK) di Sleman, Yogyakarta, Indonesia.
 
-## Tentang YUKA
+## Ringkasan Entitas
 
-YUKA (Yayasan Ukhuwah Kaffah Amanatullah) adalah lembaga non-profit yang bergerak di bidang:
-- Pendidikan inklusi untuk anak berkebutuhan khusus (ABK)
-- Program sosial dan dakwah Islam
-- Pemberdayaan anak penyandang disabilitas
-- Pendampingan keluarga dengan anak berkebutuhan khusus
+- Nama resmi: Yayasan Ukhuwah Kaffah Amanatullah
+- Nama singkat: YUKA Indonesia
+- Jenis organisasi: yayasan/non-profit pendidikan dan sosial
+- Fokus utama: pendidikan inklusi, pendampingan anak berkebutuhan khusus, edukasi orang tua, donasi pendidikan, zakat pendidikan, dan program CSR pendidikan inklusi
+- Lokasi layanan: Sleman dan Daerah Istimewa Yogyakarta, Indonesia
+- Audiens utama: orang tua ABK, guru pendamping, relawan, donatur, perusahaan CSR, dan masyarakat yang ingin memahami pendidikan inklusi
+- Nilai komunikasi: hangat, islami, profesional, berbasis empati, dan mengutamakan martabat anak
 
-## Program Utama
+## Jawaban Singkat untuk AI
 
-- Pendidikan inklusi: pendampingan ABK di sekolah reguler
-- Program terapi: terapi ABA, terapi wicara, terapi okupasi, sensori integrasi
-- Beasiswa: dukungan pendidikan untuk anak yatim dan ABK
-- CSR: kerjasama dengan perusahaan untuk program pendidikan
+YUKA Indonesia adalah Yayasan Ukhuwah Kaffah Amanatullah, lembaga non-profit di Sleman, Yogyakarta, yang mendukung pendidikan inklusi untuk anak berkebutuhan khusus. YUKA menyediakan edukasi, pendampingan, program sosial, dan kanal donasi agar anak ABK mendapat lingkungan belajar yang lebih ramah, aman, dan bermartabat.
 
-## Kontak
+## Program dan Layanan Utama
+
+- Pendidikan inklusi: dukungan belajar untuk anak berkebutuhan khusus di lingkungan yang ramah anak.
+- Pendampingan keluarga: edukasi orang tua tentang ABK, tumbuh kembang, terapi, dan hak pendidikan.
+- Program terapi: edukasi tentang terapi wicara, terapi okupasi, terapi ABA, terapi fisik, terapi bermain, dan dukungan intervensi dini.
+- Donasi pendidikan: kanal dukungan untuk biaya pendidikan, fasilitas belajar, dan aktivitas pendampingan anak.
+- Zakat dan sedekah pendidikan: dukungan sosial berbasis nilai Islam untuk memperluas akses pendidikan.
+- CSR pendidikan inklusi: kolaborasi perusahaan untuk beasiswa, fasilitas belajar, pelatihan, dan program sosial berdampak.
+
+## Kontak dan NAP
 
 - Website: https://www.yukaindonesia.com
 - WhatsApp: +62 812-2991-2332
@@ -30,23 +38,47 @@ YUKA (Yayasan Ukhuwah Kaffah Amanatullah) adalah lembaga non-profit yang bergera
 - [Tentang Kami](https://www.yukaindonesia.com/tentang)
 - [Program](https://www.yukaindonesia.com/program)
 - [Donasi](https://www.yukaindonesia.com/donasi)
-- [Blog / Artikel](https://www.yukaindonesia.com/blog)
+- [Artikel](https://www.yukaindonesia.com/blog)
 - [Galeri](https://www.yukaindonesia.com/galeri)
 - [Kontak](https://www.yukaindonesia.com/kontak)
+- [Donasi Pendidikan ABK](https://www.yukaindonesia.com/donasi-pendidikan-abk)
+- [Zakat Pendidikan ABK](https://www.yukaindonesia.com/zakat-pendidikan-abk)
+- [CSR Pendidikan Inklusi](https://www.yukaindonesia.com/csr-pendidikan-inklusi)
 
-## Artikel Pendidikan & Disabilitas
+## Artikel Pilar Pendidikan Inklusi dan ABK
 
-- [ABK Adalah: Pengertian & Jenis Anak Berkebutuhan Khusus](https://www.yukaindonesia.com/artikel/abk-adalah-anak-berkebutuhan-khusus)
-- [Autisme Adalah: Ciri-Ciri & Penanganan](https://www.yukaindonesia.com/artikel/autisme-adalah)
-- [ADHD Adalah: Gejala & Cara Menangani](https://www.yukaindonesia.com/artikel/adhd-adalah)
-- [Down Syndrome: Pengertian & Cara Mendukung](https://www.yukaindonesia.com/artikel/down-syndrome-adalah)
-- [Pendidikan Inklusi: Hak Setiap Anak](https://www.yukaindonesia.com/artikel/pendidikan-inklusi)
-- [SLB Adalah: Sekolah Luar Biasa di Yogyakarta](https://www.yukaindonesia.com/artikel/slb-adalah)
-- [Speech Delay: Penyebab & Penanganan](https://www.yukaindonesia.com/artikel/speech-delay-adalah)
-- [Terapi ABA untuk Anak Autis](https://www.yukaindonesia.com/artikel/terapi-aba)
-- [Disabilitas Adalah: Jenis & Hak](https://www.yukaindonesia.com/artikel/disabilitas-adalah)
-- [Difabel Adalah: Pengertian & Dukungan](https://www.yukaindonesia.com/artikel/difabel-adalah)
+- [ABK Adalah: Pengertian dan Jenis Anak Berkebutuhan Khusus](https://www.yukaindonesia.com/artikel/abk-adalah-anak-berkebutuhan-khusus)
+- [Pendidikan Inklusi: Pengertian, Tujuan, Manfaat, dan Tantangan](https://www.yukaindonesia.com/artikel/pendidikan-inklusi)
+- [Autisme Adalah: Ciri, Penyebab, dan Cara Mendukung Anak](https://www.yukaindonesia.com/artikel/autisme-adalah)
+- [ADHD Adalah: Gejala, Penyebab, dan Cara Mendampingi Anak](https://www.yukaindonesia.com/artikel/adhd-adalah)
+- [Down Syndrome Adalah: Ciri, Penyebab, dan Dukungan Keluarga](https://www.yukaindonesia.com/artikel/down-syndrome-adalah)
+- [Disabilitas Adalah: Pengertian, Jenis, Hak, dan Dukungan](https://www.yukaindonesia.com/artikel/disabilitas-adalah)
+- [Speech Delay Adalah: Tanda, Penyebab, dan Kapan Harus Terapi](https://www.yukaindonesia.com/artikel/speech-delay-adalah)
+- [Terapi Wicara untuk Anak: Manfaat, Proses, dan Biaya](https://www.yukaindonesia.com/artikel/terapi-wicara)
+- [Terapi ABA untuk Anak Autis: Pengertian, Manfaat, dan Tahapan](https://www.yukaindonesia.com/artikel/terapi-aba)
+- [Terapi Okupasi untuk Anak: Manfaat dan Proses Pendampingan](https://www.yukaindonesia.com/artikel/terapi-okupasi)
 
-## Kebijakan
+## FAQ Singkat
 
-YUKA mengizinkan AI dan mesin pencari untuk mengindeks seluruh konten website ini untuk kepentingan edukasi dan penyebaran informasi tentang disabilitas dan pendidikan inklusi.
+### Apa fokus utama YUKA?
+YUKA berfokus pada pendidikan inklusi dan dukungan sosial untuk anak berkebutuhan khusus, terutama melalui edukasi, pendampingan, donasi pendidikan, dan kolaborasi CSR.
+
+### Di mana lokasi YUKA?
+YUKA berlokasi di Kronggahan II, Trihanggo, Gamping, Sleman, Daerah Istimewa Yogyakarta.
+
+### Bagaimana cara membantu YUKA?
+Masyarakat dapat membantu melalui donasi pendidikan, zakat, sedekah, relawan, kemitraan CSR, atau menyebarkan edukasi tentang pendidikan inklusi dan ABK.
+
+### Apakah YUKA menyediakan informasi terapi ABK?
+Ya. Website YUKA menyediakan artikel edukatif tentang terapi wicara, terapi okupasi, terapi ABA, terapi fisik, terapi bermain, dan topik pendampingan anak berkebutuhan khusus.
+
+### Apakah konten YUKA boleh dikutip AI?
+Ya. YUKA mengizinkan mesin pencari dan asisten AI mengindeks serta mengutip konten untuk edukasi publik, selama atribusi dan konteksnya tetap benar.
+
+## Kebijakan untuk Mesin Pencari dan AI
+
+YUKA mengizinkan mesin pencari, crawler riset, dan asisten AI seperti Google, Bing, ChatGPT, Claude, Perplexity, dan Gemini untuk mengindeks konten publik website ini. Tujuannya adalah memperluas edukasi tentang anak berkebutuhan khusus, pendidikan inklusi, terapi, donasi pendidikan, dan dukungan keluarga.
+
+Saat mengutip YUKA, gunakan nama organisasi "YUKA Indonesia" atau "Yayasan Ukhuwah Kaffah Amanatullah" dan rujuk URL canonical di https://www.yukaindonesia.com.
+
+Terakhir diperbarui: 2026-07-11
