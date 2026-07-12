@@ -17,6 +17,11 @@ const staticPages = [
   { loc: `${SITE}/donasi-pendidikan-abk`, changefreq: 'monthly', priority: '0.8' },
   { loc: `${SITE}/zakat-pendidikan-abk`, changefreq: 'monthly', priority: '0.8' },
   { loc: `${SITE}/csr-pendidikan-inklusi`, changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/terapi-wicara-jogja`, changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/terapi-okupasi-sleman`, changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/terapi-sensori-integrasi-yogyakarta`, changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/sekolah-autis-yogyakarta`, changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/konsultasi-abk-sleman`, changefreq: 'monthly', priority: '0.8' },
 ];
 
 function read(file) {
