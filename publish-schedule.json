@@ -1,6 +1,596 @@
 [
   {
-    "date": "2026-07-29",
+    "slug": "disabilitas-sensorik",
+    "file": "artikel/disabilitas-sensorik.html",
+    "title": "Disabilitas Sensorik: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang disabilitas sensorik. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/jadwal-visual-anak-autis-hero.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-07-13"
+  },
+  {
+    "slug": "disabilitas-fisik",
+    "file": "artikel/disabilitas-fisik.html",
+    "title": "Memahami Disabilitas Fisik untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang disabilitas fisik. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/jadwal-visual-anak-autis-kartu.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-14"
+  },
+  {
+    "slug": "anakku-hiperaktif",
+    "file": "artikel/anakku-hiperaktif.html",
+    "title": "Anakku Hiperaktif: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang anakku hiperaktif. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/jadwal-visual-anak-autis-rumah.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-15"
+  },
+  {
+    "slug": "diskalkulia-adalah",
+    "file": "artikel/diskalkulia-adalah.html",
+    "title": "Apa Itu Diskalkulia Adalah? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang diskalkulia adalah. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/jadwal-visual-anak-autis-sekolah.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-16"
+  },
+  {
+    "slug": "biaya-homeschooling",
+    "file": "artikel/biaya-homeschooling.html",
+    "title": "Biaya Homeschooling dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang biaya homeschooling. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/terapi-musik-anak-berkebutuhan-khusus-checklist.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-17"
+  },
+  {
+    "slug": "contoh-motorik-kasar",
+    "file": "artikel/contoh-motorik-kasar.html",
+    "title": "Contoh Motorik Kasar: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang contoh motorik kasar. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/terapi-musik-anak-berkebutuhan-khusus-hero.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-07-18"
+  },
+  {
+    "slug": "metode-montessori",
+    "file": "artikel/metode-montessori.html",
+    "title": "Memahami Metode Montessori untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang metode montessori. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/terapi-musik-anak-berkebutuhan-khusus-langkah.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-19"
+  },
+  {
+    "slug": "motorik-kasar-dan-halus",
+    "file": "artikel/motorik-kasar-dan-halus.html",
+    "title": "Motorik Kasar dan Halus: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang motorik kasar dan halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-berpose-candi-prambanan-028.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-07-20"
+  },
+  {
+    "slug": "motorik-kasar-contohnya",
+    "file": "artikel/motorik-kasar-contohnya.html",
+    "title": "Apa Itu Motorik Kasar Contohnya? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang motorik kasar contohnya. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-berpose-candi-prambanan-070.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-07-21"
+  },
+  {
+    "slug": "kode-icd-10-cerebral-palsy",
+    "file": "artikel/kode-icd-10-cerebral-palsy.html",
+    "title": "Kode Icd 10 Cerebral Palsy dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang kode icd 10 cerebral palsy. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-berpose-candi-prambanan-075.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-22"
+  },
+  {
+    "slug": "metode-montessori-adalah",
+    "file": "artikel/metode-montessori-adalah.html",
+    "title": "Metode Montessori Adalah: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang metode montessori adalah. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-berpose-di-candi-borobudur-035.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-23"
+  },
+  {
+    "slug": "belajar-membaca-ala-montessori",
+    "file": "artikel/belajar-membaca-ala-montessori.html",
+    "title": "Memahami Belajar Membaca ala Montessori untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang belajar membaca ala montessori. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-berfoto-040.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-24"
+  },
+  {
+    "slug": "mainan-montessori",
+    "file": "artikel/mainan-montessori.html",
+    "title": "Mainan Montessori: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang mainan montessori. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-berfoto-091.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-07-25"
+  },
+  {
+    "slug": "contoh-motorik-kasar-dan-halus",
+    "file": "artikel/contoh-motorik-kasar-dan-halus.html",
+    "title": "Apa Itu Contoh Motorik Kasar dan Halus? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang contoh motorik kasar dan halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-berpose-026.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-07-26"
+  },
+  {
+    "slug": "perbedaan-motorik-kasar-dan-halus",
+    "file": "artikel/perbedaan-motorik-kasar-dan-halus.html",
+    "title": "Perbedaan Motorik Kasar dan Halus dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang perbedaan motorik kasar dan halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-berpose-104.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-07-27"
+  },
+  {
+    "slug": "ciri-ciri-abk",
+    "file": "artikel/ciri-ciri-abk.html",
+    "title": "Ciri Ciri Abk: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang ciri ciri abk. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-019.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-28"
+  },
+  {
+    "slug": "hiperaktif-artinya",
+    "file": "artikel/hiperaktif-artinya.html",
+    "title": "Memahami Hiperaktif Artinya untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang hiperaktif artinya. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-023.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-29"
+  },
+  {
+    "slug": "hari-autis-sedunia",
+    "file": "artikel/hari-autis-sedunia.html",
+    "title": "Hari Autis Sedunia: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang hari autis sedunia. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-034.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-30"
+  },
+  {
+    "slug": "pengertian-abk",
+    "file": "artikel/pengertian-abk.html",
+    "title": "Apa Itu Pengertian Abk? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang pengertian abk. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-066.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-07-31"
+  },
+  {
+    "slug": "piramida-sensori-integrasi",
+    "file": "artikel/piramida-sensori-integrasi.html",
+    "title": "Piramida Sensori Integrasi dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang piramida sensori integrasi. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-074.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-01"
+  },
+  {
+    "slug": "permainan-motorik-kasar",
+    "file": "artikel/permainan-motorik-kasar.html",
+    "title": "Permainan Motorik Kasar: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang permainan motorik kasar. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-082.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-02"
+  },
+  {
+    "slug": "bahasa-tuna-rungu",
+    "file": "artikel/bahasa-tuna-rungu.html",
+    "title": "Memahami Bahasa Tuna Rungu untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang bahasa tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-bersama-009.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-03"
+  },
+  {
+    "slug": "tuna-rungu-wicara-adalah",
+    "file": "artikel/tuna-rungu-wicara-adalah.html",
+    "title": "Tuna Rungu Wicara Adalah: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang tuna rungu wicara adalah. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-selfie-062.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-04"
+  },
+  {
+    "slug": "bahasa-isyarat-tuna-rungu",
+    "file": "artikel/bahasa-isyarat-tuna-rungu.html",
+    "title": "Apa Itu Bahasa Isyarat Tuna Rungu? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang bahasa isyarat tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-pose-017.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-05"
+  },
+  {
+    "slug": "disabilitas-tuna-rungu",
+    "file": "artikel/disabilitas-tuna-rungu.html",
+    "title": "Disabilitas Tuna Rungu dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang disabilitas tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-tradisional-024.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-06"
+  },
+  {
+    "slug": "stimulasi-motorik-halus",
+    "file": "artikel/stimulasi-motorik-halus.html",
+    "title": "Stimulasi Motorik Halus: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang stimulasi motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-yogyakarta-086.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-07"
+  },
+  {
+    "slug": "kegiatan-motorik-halus",
+    "file": "artikel/kegiatan-motorik-halus.html",
+    "title": "Memahami Kegiatan Motorik Halus untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang kegiatan motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-foto-bersama-candi-borobudur-065.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-08"
+  },
+  {
+    "slug": "apakah-speech-delay-bisa-sembuh",
+    "file": "artikel/apakah-speech-delay-bisa-sembuh.html",
+    "title": "Apakah Speech Delay Bisa Sembuh?",
+    "description": "Artikel lengkap tentang apakah speech delay bisa sembuh. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-foto-candi-borobudur-047.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-09"
+  },
+  {
+    "slug": "apakah-tuna-rungu-bisa-sembuh",
+    "file": "artikel/apakah-tuna-rungu-bisa-sembuh.html",
+    "title": "Apakah Tuna Rungu Bisa Sembuh?",
+    "description": "Artikel lengkap tentang apakah tuna rungu bisa sembuh. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-candi-borobudur-015.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-10"
+  },
+  {
+    "slug": "tuna-netra-rungu",
+    "file": "artikel/tuna-netra-rungu.html",
+    "title": "Tuna Netra Rungu dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang tuna netra rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-candi-borobudur-081.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-11"
+  },
+  {
+    "slug": "penyebab-tuna-rungu",
+    "file": "artikel/penyebab-tuna-rungu.html",
+    "title": "Penyebab Tuna Rungu: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang penyebab tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-tradisional-candi-borobudur-022.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-12"
+  },
+  {
+    "slug": "permainan-motorik-halus",
+    "file": "artikel/permainan-motorik-halus.html",
+    "title": "Memahami Permainan Motorik Halus untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang permainan motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-tradisional-candi-borobudur-033.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-13"
+  },
+  {
+    "slug": "homeschooling-taman-sekar-bandung",
+    "file": "artikel/homeschooling-taman-sekar-bandung.html",
+    "title": "Homeschooling Taman Sekar Bandung: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang homeschooling taman sekar bandung. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-tradisional-candi-borobudur-061.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-14"
+  },
+  {
+    "slug": "konsep-pendidikan-inklusi",
+    "file": "artikel/konsep-pendidikan-inklusi.html",
+    "title": "Apa Itu Konsep Pendidikan Inklusi? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang konsep pendidikan inklusi. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-tradisional-candi-borobudur-088.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-15"
+  },
+  {
+    "slug": "yayasan-disabilitas",
+    "file": "artikel/yayasan-disabilitas.html",
+    "title": "Yayasan Disabilitas dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang yayasan disabilitas. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-tradisional-candi-plaosan-025.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-16"
+  },
+  {
+    "slug": "tuna-rungu-bisa-bicara",
+    "file": "artikel/tuna-rungu-bisa-bicara.html",
+    "title": "Tuna Rungu Bisa Bicara: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang tuna rungu bisa bicara. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-kostum-tradisional-candi-plaosan-085.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-17"
+  },
+  {
+    "slug": "apakah-homeschooling-dapat-ijazah",
+    "file": "artikel/apakah-homeschooling-dapat-ijazah.html",
+    "title": "Apakah Homeschooling Dapat Ijazah?",
+    "description": "Artikel lengkap tentang apakah homeschooling dapat ijazah. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-menari-candi-borobudur-020.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-18"
+  },
+  {
+    "slug": "vitamin-speech-delay",
+    "file": "artikel/vitamin-speech-delay.html",
+    "title": "Vitamin Speech Delay: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang vitamin speech delay. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-menari-candi-borobudur-084.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-19"
+  },
+  {
+    "slug": "tuna-rungu-wicara",
+    "file": "artikel/tuna-rungu-wicara.html",
+    "title": "Apa Itu Tuna Rungu Wicara? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang tuna rungu wicara. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-menari-candi-borobudur-096.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-20"
+  },
+  {
+    "slug": "ruang-sensori-integrasi",
+    "file": "artikel/ruang-sensori-integrasi.html",
+    "title": "Ruang Sensori Integrasi dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang ruang sensori integrasi. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-pose-candi-borobudur-032.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-21"
+  },
+  {
+    "slug": "tuna-wicara-dan-tuna-rungu",
+    "file": "artikel/tuna-wicara-dan-tuna-rungu.html",
+    "title": "Tuna Wicara dan Tuna Rungu: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang tuna wicara dan tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-pose-candi-borobudur-069.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-22"
+  },
+  {
+    "slug": "speech-delay-adalah-penyakit",
+    "file": "artikel/speech-delay-adalah-penyakit.html",
+    "title": "Memahami Speech Delay Adalah Penyakit untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang speech delay adalah penyakit. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-pose-candi-borobudur-090.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-23"
+  },
+  {
+    "slug": "pengertian-tuna-rungu",
+    "file": "artikel/pengertian-tuna-rungu.html",
+    "title": "Pengertian Tuna Rungu: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang pengertian tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/candi-plaosan-wisatawan-pose-candi-borobudur-095.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-24"
+  },
+  {
+    "slug": "perkembangan-motorik-halus",
+    "file": "artikel/perkembangan-motorik-halus.html",
+    "title": "Apa Itu Perkembangan Motorik Halus? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang perkembangan motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-anak-bermain-eksperimen-sains-bersama-006.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-25"
+  },
+  {
+    "slug": "apakah-tuna-rungu-bisa-bicara",
+    "file": "artikel/apakah-tuna-rungu-bisa-bicara.html",
+    "title": "Apakah Tuna Rungu Bisa Bicara?",
+    "description": "Artikel lengkap tentang apakah tuna rungu bisa bicara. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-anak-bermain-eksperimen-sains-rumah-008.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-26"
+  },
+  {
+    "slug": "motorik-halus-apa-saja",
+    "file": "artikel/motorik-halus-apa-saja.html",
+    "title": "Motorik Halus apa saja: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang motorik halus apa saja. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-anak-mencuci-pakaian-teras-002.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-27"
+  },
+  {
+    "slug": "worksheet-motorik-halus",
+    "file": "artikel/worksheet-motorik-halus.html",
+    "title": "Memahami Worksheet Motorik Halus untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang worksheet motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-gambar-009.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-28"
+  },
+  {
+    "slug": "contoh-kegiatan-motorik-halus",
+    "file": "artikel/contoh-kegiatan-motorik-halus.html",
+    "title": "Contoh Kegiatan Motorik Halus: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang contoh kegiatan motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-ibu-anak-belajar-membuat-kerajinan-004.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-29"
+  },
+  {
+    "slug": "4-level-sensori-integrasi",
+    "file": "artikel/4-level-sensori-integrasi.html",
+    "title": "Apa Itu 4 Level Sensori Integrasi? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang 4 level sensori integrasi. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-ibu-anak-membuat-minuman-tradisional-007.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-08-30"
+  },
+  {
+    "slug": "tuli-tuna-rungu",
+    "file": "artikel/tuli-tuna-rungu.html",
+    "title": "Tuli Tuna Rungu dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang tuli tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-keluarga-membuat-kerajinan-bersama-005.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-08-31"
+  },
+  {
+    "slug": "biaya-terapi-wicara",
+    "file": "artikel/biaya-terapi-wicara.html",
+    "title": "Biaya Terapi Wicara: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang biaya terapi wicara. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-pelatihan-membatik-wanita-berhijab-001.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-09-01"
+  },
+  {
+    "slug": "contoh-ptk-paud-tentang-motorik-halus",
+    "file": "artikel/contoh-ptk-paud-tentang-motorik-halus.html",
+    "title": "Memahami Contoh Ptk Paud Tentang Motorik Halus untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang contoh ptk paud tentang motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cocopandan-lemon-pria-mengisi-galon-air-minum-003.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-09-02"
+  },
+  {
+    "slug": "vitamin-untuk-speech-delay",
+    "file": "artikel/vitamin-untuk-speech-delay.html",
+    "title": "Vitamin untuk Speech Delay: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang vitamin untuk speech delay. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-bersama-outdoor-046.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-09-03"
+  },
+  {
+    "slug": "apakah-speech-delay-termasuk-abk",
+    "file": "artikel/apakah-speech-delay-termasuk-abk.html",
+    "title": "Apakah Speech Delay Termasuk Abk?",
+    "description": "Artikel lengkap tentang apakah speech delay termasuk abk. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-043.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-09-04"
+  },
+  {
+    "slug": "slb-tuna-rungu",
+    "file": "artikel/slb-tuna-rungu.html",
+    "title": "Slb Tuna Rungu dan Penerapannya Sehari-hari",
+    "description": "Artikel lengkap tentang slb tuna rungu. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-bersama-052.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-09-05"
+  },
+  {
+    "slug": "pengertian-motorik-halus",
+    "file": "artikel/pengertian-motorik-halus.html",
+    "title": "Pengertian Motorik Halus: Pengertian dan Penjelasan Lengkap",
+    "description": "Artikel lengkap tentang pengertian motorik halus. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-kue-001.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-09-06"
+  },
+  {
+    "slug": "mainan-untuk-terapi-sensori-integrasi",
+    "file": "artikel/mainan-untuk-terapi-sensori-integrasi.html",
+    "title": "Memahami Mainan untuk Terapi Sensori Integrasi untuk Orang Tua dan Guru",
+    "description": "Artikel lengkap tentang mainan untuk terapi sensori integrasi. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-kue-081.webp",
+    "category": "Terapi",
+    "readTime": "12 menit baca",
+    "date": "2026-09-07"
+  },
+  {
+    "slug": "sindrom-angelman-adalah",
+    "file": "artikel/sindrom-angelman-adalah.html",
+    "title": "Sindrom Angelman Adalah: Panduan Praktis bagi Pendamping ABK",
+    "description": "Artikel lengkap tentang sindrom angelman adalah. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-outdoor-037.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-09-08"
+  },
+  {
+    "slug": "special-olympics-indonesia",
+    "file": "artikel/special-olympics-indonesia.html",
+    "title": "Apa Itu Special Olympics Indonesia? Penjelasan untuk Orang Tua",
+    "description": "Artikel lengkap tentang special olympics indonesia. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-045.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca",
+    "date": "2026-09-09"
+  },
+  {
+    "date": "2026-09-10",
     "slug": "person-centered-planning-disabilitas",
     "file": "artikel/person-centered-planning-disabilitas.html",
     "title": "Person Centered Planning Disabilitas",
@@ -10,7 +600,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-29",
+    "date": "2026-09-11",
     "slug": "stem-cell-therapy-untuk-autisme-perkembangan",
     "file": "artikel/stem-cell-therapy-untuk-autisme-perkembangan.html",
     "title": "Stem Cell Therapy Untuk Autisme Perkembangan",
@@ -20,7 +610,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-29",
+    "date": "2026-09-12",
     "slug": "sekolah-slb-untuk-anak-apa",
     "file": "artikel/sekolah-slb-untuk-anak-apa.html",
     "title": "Sekolah Slb Untuk Anak Apa",
@@ -30,7 +620,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-30",
+    "date": "2026-09-13",
     "slug": "gangguan-perkembangan-pervasif",
     "file": "artikel/gangguan-perkembangan-pervasif.html",
     "title": "Gangguan Perkembangan Pervasif",
@@ -40,7 +630,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-30",
+    "date": "2026-09-14",
     "slug": "golongan-disabilitas-apa-saja",
     "file": "artikel/golongan-disabilitas-apa-saja.html",
     "title": "Golongan Disabilitas Apa Saja",
@@ -50,7 +640,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-30",
+    "date": "2026-09-15",
     "slug": "perbedaan-homeschooling-dan-sekolah-formal-untuk-abk",
     "file": "artikel/perbedaan-homeschooling-dan-sekolah-formal-untuk-abk.html",
     "title": "Perbedaan Homeschooling Dan Sekolah Formal Untuk Abk",
@@ -60,7 +650,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-31",
+    "date": "2026-09-16",
     "slug": "playground-ramah-abk-jogja",
     "file": "artikel/playground-ramah-abk-jogja.html",
     "title": "Playground Ramah Abk Jogja",
@@ -70,7 +660,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-31",
+    "date": "2026-09-17",
     "slug": "macam-macam-terapi-pada-anak",
     "file": "artikel/macam-macam-terapi-pada-anak.html",
     "title": "Macam Macam Terapi Pada Anak",
@@ -80,7 +670,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-07-31",
+    "date": "2026-09-18",
     "slug": "hanen-approach-terapi-bahasa-anak",
     "file": "artikel/hanen-approach-terapi-bahasa-anak.html",
     "title": "Hanen Approach Terapi Bahasa Anak",
@@ -90,7 +680,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-01",
+    "date": "2026-09-19",
     "slug": "terapi-fisik-untuk-anak-terlambat-jalan",
     "file": "artikel/terapi-fisik-untuk-anak-terlambat-jalan.html",
     "title": "Terapi Fisik Untuk Anak Terlambat Jalan",
@@ -100,7 +690,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-01",
+    "date": "2026-09-20",
     "slug": "ai-chatbot-untuk-anak-berkebutuhan-khusus",
     "file": "artikel/ai-chatbot-untuk-anak-berkebutuhan-khusus.html",
     "title": "Ai Chatbot Untuk Anak Berkebutuhan Khusus",
@@ -110,7 +700,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-01",
+    "date": "2026-09-21",
     "slug": "strategi-mengajar-anak-adhd-di-sekolah",
     "file": "artikel/strategi-mengajar-anak-adhd-di-sekolah.html",
     "title": "Strategi Mengajar Anak Adhd Di Sekolah",
@@ -120,7 +710,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-09-22",
     "slug": "dukungan-keluarga-anak-abk",
     "file": "artikel/dukungan-keluarga-anak-abk.html",
     "title": "Dukungan Keluarga Anak Abk",
@@ -130,7 +720,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-09-23",
     "slug": "classroom-management-kelas-inklusi",
     "file": "artikel/classroom-management-kelas-inklusi.html",
     "title": "Classroom Management Kelas Inklusi",
@@ -140,7 +730,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-03",
+    "date": "2026-09-24",
     "slug": "abk-seperti-apa",
     "file": "artikel/abk-seperti-apa.html",
     "title": "Abk Seperti Apa",
@@ -150,7 +740,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-04",
+    "date": "2026-09-25",
     "slug": "perencanaan-keuangan-keluarga-anak-abk",
     "file": "artikel/perencanaan-keuangan-keluarga-anak-abk.html",
     "title": "Perencanaan Keuangan Keluarga Anak Abk",
@@ -160,7 +750,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-04",
+    "date": "2026-09-26",
     "slug": "cara-melatih-anak-speech-delay-bicara",
     "file": "artikel/cara-melatih-anak-speech-delay-bicara.html",
     "title": "Cara Melatih Anak Speech Delay Bicara",
@@ -170,7 +760,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-04",
+    "date": "2026-09-27",
     "slug": "cara-menenangkan-anak-sensory-overload",
     "file": "artikel/cara-menenangkan-anak-sensory-overload.html",
     "title": "Cara Menenangkan Anak Sensory Overload",
@@ -180,7 +770,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-05",
+    "date": "2026-09-28",
     "slug": "apa-pantangan-anak-autis",
     "file": "artikel/apa-pantangan-anak-autis.html",
     "title": "Apa Pantangan Anak Autis",
@@ -190,7 +780,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-05",
+    "date": "2026-09-29",
     "slug": "program-indonesia-pintar-untuk-anak-disabilitas",
     "file": "artikel/program-indonesia-pintar-untuk-anak-disabilitas.html",
     "title": "Program Indonesia Pintar Untuk Anak Disabilitas",
@@ -200,7 +790,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-05",
+    "date": "2026-09-30",
     "slug": "jenis-jenis-disabilitas-menurut-uu-no-8-tahun-2016",
     "file": "artikel/jenis-jenis-disabilitas-menurut-uu-no-8-tahun-2016.html",
     "title": "Jenis Jenis Disabilitas Menurut Uu No 8 Tahun 2016",
@@ -210,7 +800,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-06",
+    "date": "2026-10-01",
     "slug": "magang-anak-berkebutuhan-khusus",
     "file": "artikel/magang-anak-berkebutuhan-khusus.html",
     "title": "Magang Anak Berkebutuhan Khusus",
@@ -220,7 +810,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-06",
+    "date": "2026-10-02",
     "slug": "tunagrahita-ringan-sedang-berat-perbedaan",
     "file": "artikel/tunagrahita-ringan-sedang-berat-perbedaan.html",
     "title": "Tunagrahita Ringan Sedang Berat Perbedaan",
@@ -230,7 +820,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-06",
+    "date": "2026-10-03",
     "slug": "respite-care-untuk-keluarga-anak-abk",
     "file": "artikel/respite-care-untuk-keluarga-anak-abk.html",
     "title": "Respite Care Untuk Keluarga Anak Abk",
@@ -240,7 +830,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-07",
+    "date": "2026-10-04",
     "slug": "bagaimana-cara-terbaik-untuk-mengajarkan-kemandirian-kepada-anak-berkebutuhan-kh",
     "file": "artikel/bagaimana-cara-terbaik-untuk-mengajarkan-kemandirian-kepada-anak-berkebutuhan-kh.html",
     "title": "Bagaimana Cara Terbaik Untuk Mengajarkan Kemandirian Kepada Anak Berkebutuhan Khusus",
@@ -250,7 +840,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-07",
+    "date": "2026-10-05",
     "slug": "bagaimana-cara-membuat-kartu-disabilitas",
     "file": "artikel/bagaimana-cara-membuat-kartu-disabilitas.html",
     "title": "Bagaimana Cara Membuat Kartu Disabilitas",
@@ -260,7 +850,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-07",
+    "date": "2026-10-06",
     "slug": "apa-saja-terapi-anak-berkebutuhan-khusus",
     "file": "artikel/apa-saja-terapi-anak-berkebutuhan-khusus.html",
     "title": "Apa Saja Terapi Anak Berkebutuhan Khusus",
@@ -270,7 +860,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-08",
+    "date": "2026-10-07",
     "slug": "self-care-untuk-orang-tua-anak-disabilitas",
     "file": "artikel/self-care-untuk-orang-tua-anak-disabilitas.html",
     "title": "Self Care Untuk Orang Tua Anak Disabilitas",
@@ -280,7 +870,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-08",
+    "date": "2026-10-08",
     "slug": "cara-membuat-jadwal-visual-untuk-anak-autis",
     "file": "artikel/cara-membuat-jadwal-visual-untuk-anak-autis.html",
     "title": "Cara Membuat Jadwal Visual Untuk Anak Autis",
@@ -290,7 +880,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-08",
+    "date": "2026-10-09",
     "slug": "weighted-vest-anak-autis-manfaat-dan-pilihan",
     "file": "artikel/weighted-vest-anak-autis-manfaat-dan-pilihan.html",
     "title": "Weighted Vest Anak Autis Manfaat Dan Pilihan",
@@ -300,7 +890,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-10",
+    "date": "2026-10-10",
     "slug": "reward-system-efektif-untuk-anak-autis",
     "file": "artikel/reward-system-efektif-untuk-anak-autis.html",
     "title": "Reward System Efektif Untuk Anak Autis",
@@ -310,7 +900,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-10",
+    "date": "2026-10-11",
     "slug": "apa-saja-3-pilar-pendidikan",
     "file": "artikel/apa-saja-3-pilar-pendidikan.html",
     "title": "Apa Saja 3 Pilar Pendidikan",
@@ -320,7 +910,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-10",
+    "date": "2026-10-12",
     "slug": "augmentative-communication-untuk-anak-di-rumah",
     "file": "artikel/augmentative-communication-untuk-anak-di-rumah.html",
     "title": "Augmentative Communication Untuk Anak Di Rumah",
@@ -330,7 +920,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-11",
+    "date": "2026-10-13",
     "slug": "makanan-yang-harus-dihindari-anak-adhd",
     "file": "artikel/makanan-yang-harus-dihindari-anak-adhd.html",
     "title": "Makanan Yang Harus Dihindari Anak Adhd",
@@ -340,7 +930,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-11",
+    "date": "2026-10-14",
     "slug": "co-teaching-dalam-kelas-inklusi",
     "file": "artikel/co-teaching-dalam-kelas-inklusi.html",
     "title": "Co-teaching Dalam Kelas Inklusi",
@@ -350,7 +940,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-11",
+    "date": "2026-10-15",
     "slug": "terapi-bermain-child-centered-play-therapy",
     "file": "artikel/terapi-bermain-child-centered-play-therapy.html",
     "title": "Terapi Bermain Child Centered Play Therapy",
@@ -360,7 +950,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-12",
+    "date": "2026-10-16",
     "slug": "liburan-dengan-anak-berkebutuhan-khusus",
     "file": "artikel/liburan-dengan-anak-berkebutuhan-khusus.html",
     "title": "Liburan Dengan Anak Berkebutuhan Khusus",
@@ -370,7 +960,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-12",
+    "date": "2026-10-17",
     "slug": "peer-tutoring-di-kelas-inklusi",
     "file": "artikel/peer-tutoring-di-kelas-inklusi.html",
     "title": "Peer Tutoring Di Kelas Inklusi",
@@ -380,7 +970,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-12",
+    "date": "2026-10-18",
     "slug": "systematic-review-intervensi-dini-autisme",
     "file": "artikel/systematic-review-intervensi-dini-autisme.html",
     "title": "Systematic Review Intervensi Dini Autisme",
@@ -390,7 +980,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-10-19",
     "slug": "money-management-untuk-penyandang-disabilitas",
     "file": "artikel/money-management-untuk-penyandang-disabilitas.html",
     "title": "Money Management Untuk Penyandang Disabilitas",
@@ -400,7 +990,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-10-20",
     "slug": "machine-learning-deteksi-dini-gangguan-perkembangan",
     "file": "artikel/machine-learning-deteksi-dini-gangguan-perkembangan.html",
     "title": "Machine Learning Deteksi Dini Gangguan Perkembangan",
@@ -410,7 +1000,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-13",
+    "date": "2026-10-21",
     "slug": "intermittent-explosive-disorder-anak",
     "file": "artikel/intermittent-explosive-disorder-anak.html",
     "title": "Intermittent Explosive Disorder Anak",
@@ -420,7 +1010,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-14",
+    "date": "2026-10-22",
     "slug": "screen-time-untuk-anak-autis-batasan",
     "file": "artikel/screen-time-untuk-anak-autis-batasan.html",
     "title": "Screen Time Untuk Anak Autis Batasan",
@@ -430,7 +1020,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-14",
+    "date": "2026-10-23",
     "slug": "terapi-wicara-oral-motor-exercises",
     "file": "artikel/terapi-wicara-oral-motor-exercises.html",
     "title": "Terapi Wicara Oral Motor Exercises",
@@ -440,7 +1030,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-14",
+    "date": "2026-10-24",
     "slug": "neurodivergent-vs-neurotypical-perbedaan",
     "file": "artikel/neurodivergent-vs-neurotypical-perbedaan.html",
     "title": "Neurodivergent Vs Neurotypical Perbedaan",
@@ -450,7 +1040,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-15",
+    "date": "2026-10-25",
     "slug": "tuna-laras-adalah",
     "file": "artikel/tuna-laras-adalah.html",
     "title": "Tuna Laras Adalah",
@@ -460,7 +1050,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-15",
+    "date": "2026-10-26",
     "slug": "suplemen-untuk-anak-adhd",
     "file": "artikel/suplemen-untuk-anak-adhd.html",
     "title": "Suplemen Untuk Anak Adhd",
@@ -470,7 +1060,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-15",
+    "date": "2026-10-27",
     "slug": "apa-itu-inklusi-dan-contohnya",
     "file": "artikel/apa-itu-inklusi-dan-contohnya.html",
     "title": "Apa Itu Inklusi Dan Contohnya",
@@ -480,7 +1070,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-17",
+    "date": "2026-10-28",
     "slug": "daftar-mainan-edukatif-untuk-anak-autis",
     "file": "artikel/daftar-mainan-edukatif-untuk-anak-autis.html",
     "title": "Daftar Mainan Edukatif Untuk Anak Autis",
@@ -490,7 +1080,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-17",
+    "date": "2026-10-29",
     "slug": "terapi-neurofeedback-untuk-anak-adhd",
     "file": "artikel/terapi-neurofeedback-untuk-anak-adhd.html",
     "title": "Terapi Neurofeedback Untuk Anak Adhd",
@@ -500,7 +1090,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-17",
+    "date": "2026-10-30",
     "slug": "perbedaan-bisindo-dan-sibi",
     "file": "artikel/perbedaan-bisindo-dan-sibi.html",
     "title": "Perbedaan Bisindo Dan Sibi",
@@ -510,7 +1100,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-18",
+    "date": "2026-10-31",
     "slug": "cara-mengatasi-picky-eater-anak-autis",
     "file": "artikel/cara-mengatasi-picky-eater-anak-autis.html",
     "title": "Cara Mengatasi Picky Eater Anak Autis",
@@ -520,7 +1110,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-18",
+    "date": "2026-11-01",
     "slug": "terapi-seni-untuk-anak-berkebutuhan-khusus",
     "file": "artikel/terapi-seni-untuk-anak-berkebutuhan-khusus.html",
     "title": "Terapi Seni Untuk Anak Berkebutuhan Khusus",
@@ -530,7 +1120,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-18",
+    "date": "2026-11-02",
     "slug": "hubungan-suami-istri-dengan-anak-abk-tips",
     "file": "artikel/hubungan-suami-istri-dengan-anak-abk-tips.html",
     "title": "Hubungan Suami Istri Dengan Anak Abk Tips",
@@ -540,7 +1130,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-19",
+    "date": "2026-11-03",
     "slug": "ai-artificial-intelligence-untuk-screening-autisme",
     "file": "artikel/ai-artificial-intelligence-untuk-screening-autisme.html",
     "title": "Ai Artificial Intelligence Untuk Screening Autisme",
@@ -550,7 +1140,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-19",
+    "date": "2026-11-04",
     "slug": "slb-itu-singkatan-dari-apa",
     "file": "artikel/slb-itu-singkatan-dari-apa.html",
     "title": "Slb Itu Singkatan Dari Apa",
@@ -560,7 +1150,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-19",
+    "date": "2026-11-05",
     "slug": "anak-abk-dan-bullying-cara-mencegah",
     "file": "artikel/anak-abk-dan-bullying-cara-mencegah.html",
     "title": "Anak Abk Dan Bullying Cara Mencegah",
@@ -570,7 +1160,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-11-06",
     "slug": "sensory-diet-program-untuk-anak",
     "file": "artikel/sensory-diet-program-untuk-anak.html",
     "title": "Sensory Diet Program Untuk Anak",
@@ -580,7 +1170,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-11-07",
     "slug": "frekuensi-terapi-wicara-yang-ideal",
     "file": "artikel/frekuensi-terapi-wicara-yang-ideal.html",
     "title": "Frekuensi Terapi Wicara Yang Ideal",
@@ -590,7 +1180,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-20",
+    "date": "2026-11-08",
     "slug": "tes-psikolog-anak-bayar-berapa",
     "file": "artikel/tes-psikolog-anak-bayar-berapa.html",
     "title": "Tes Psikolog Anak Bayar Berapa",
@@ -600,7 +1190,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-21",
+    "date": "2026-11-09",
     "slug": "digital-therapeutics-untuk-adhd-anak",
     "file": "artikel/digital-therapeutics-untuk-adhd-anak.html",
     "title": "Digital Therapeutics Untuk Adhd Anak",
@@ -610,7 +1200,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-21",
+    "date": "2026-11-10",
     "slug": "berapa-biaya-terapi-bicara-anak",
     "file": "artikel/berapa-biaya-terapi-bicara-anak.html",
     "title": "Berapa Biaya Terapi Bicara Anak",
@@ -620,7 +1210,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-21",
+    "date": "2026-11-11",
     "slug": "apa-yang-dimaksud-dengan-sekolah-luar-biasa",
     "file": "artikel/apa-yang-dimaksud-dengan-sekolah-luar-biasa.html",
     "title": "Apa Yang Dimaksud Dengan Sekolah Luar Biasa",
@@ -630,7 +1220,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-22",
+    "date": "2026-11-12",
     "slug": "hearing-aid-vs-cochlear-implant-anak",
     "file": "artikel/hearing-aid-vs-cochlear-implant-anak.html",
     "title": "Hearing Aid Vs Cochlear Implant Anak",
@@ -640,7 +1230,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-22",
+    "date": "2026-11-13",
     "slug": "seni-dan-kreativitas-untuk-anak-disabilitas",
     "file": "artikel/seni-dan-kreativitas-untuk-anak-disabilitas.html",
     "title": "Seni Dan Kreativitas Untuk Anak Disabilitas",
@@ -650,7 +1240,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-22",
+    "date": "2026-11-14",
     "slug": "media-pembelajaran-braille-untuk-tunanetra",
     "file": "artikel/media-pembelajaran-braille-untuk-tunanetra.html",
     "title": "Media Pembelajaran Braille Untuk Tunanetra",
@@ -660,7 +1250,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-24",
+    "date": "2026-11-15",
     "slug": "terapi-anak-abk-apa-saja",
     "file": "artikel/terapi-anak-abk-apa-saja.html",
     "title": "Terapi Anak Abk Apa Saja",
@@ -670,7 +1260,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-24",
+    "date": "2026-11-16",
     "slug": "diagnosis-banding-adhd",
     "file": "artikel/diagnosis-banding-adhd.html",
     "title": "Diagnosis Banding Adhd",
@@ -680,7 +1270,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-24",
+    "date": "2026-11-17",
     "slug": "mengajar-anak-abk-menyebrang-jalan",
     "file": "artikel/mengajar-anak-abk-menyebrang-jalan.html",
     "title": "Mengajar Anak Abk Menyebrang Jalan",
@@ -690,7 +1280,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-25",
+    "date": "2026-11-18",
     "slug": "daftar-sekolah-inklusi-di-yogyakarta",
     "file": "artikel/daftar-sekolah-inklusi-di-yogyakarta.html",
     "title": "Daftar Sekolah Inklusi Di Yogyakarta",
@@ -700,7 +1290,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-25",
+    "date": "2026-11-19",
     "slug": "program-pemerintah-untuk-abk",
     "file": "artikel/program-pemerintah-untuk-abk.html",
     "title": "Program Pemerintah Untuk Abk",
@@ -710,7 +1300,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-25",
+    "date": "2026-11-20",
     "slug": "jurusan-pendidikan-luar-biasa-ptn-di-indonesia",
     "file": "artikel/jurusan-pendidikan-luar-biasa-ptn-di-indonesia.html",
     "title": "Jurusan Pendidikan Luar Biasa Ptn Di Indonesia",
@@ -720,7 +1310,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-26",
+    "date": "2026-11-21",
     "slug": "metode-prompt-dalam-terapi-wicara",
     "file": "artikel/metode-prompt-dalam-terapi-wicara.html",
     "title": "Metode Prompt Dalam Terapi Wicara",
@@ -730,7 +1320,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-26",
+    "date": "2026-11-22",
     "slug": "pivotal-response-training-prt-autisme",
     "file": "artikel/pivotal-response-training-prt-autisme.html",
     "title": "Pivotal Response Training Prt Autisme",
@@ -740,7 +1330,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-26",
+    "date": "2026-11-23",
     "slug": "supported-employment-disabilitas-di-indonesia",
     "file": "artikel/supported-employment-disabilitas-di-indonesia.html",
     "title": "Supported Employment Disabilitas Di Indonesia",
@@ -750,7 +1340,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-27",
+    "date": "2026-11-24",
     "slug": "apa-perbedaan-sekolah-inklusi-dan-slb",
     "file": "artikel/apa-perbedaan-sekolah-inklusi-dan-slb.html",
     "title": "Apa Perbedaan Sekolah Inklusi Dan Slb",
@@ -760,7 +1350,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-27",
+    "date": "2026-11-25",
     "slug": "anak-abk-harus-sekolah-dimana",
     "file": "artikel/anak-abk-harus-sekolah-dimana.html",
     "title": "Anak Abk Harus Sekolah Dimana",
@@ -770,7 +1360,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-27",
+    "date": "2026-11-26",
     "slug": "apa-yang-dimaksud-dengan-sekolah-inklusi",
     "file": "artikel/apa-yang-dimaksud-dengan-sekolah-inklusi.html",
     "title": "Apa Yang Dimaksud Dengan Sekolah Inklusi",
@@ -780,7 +1370,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-28",
+    "date": "2026-11-27",
     "slug": "strategi-mengatasi-elopement-anak-autis",
     "file": "artikel/strategi-mengatasi-elopement-anak-autis.html",
     "title": "Strategi Mengatasi Elopement Anak Autis",
@@ -790,7 +1380,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-28",
+    "date": "2026-11-28",
     "slug": "transisi-anak-abk-dari-tk-ke-sd",
     "file": "artikel/transisi-anak-abk-dari-tk-ke-sd.html",
     "title": "Transisi Anak Abk Dari Tk Ke Sd",
@@ -800,7 +1390,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-28",
+    "date": "2026-11-29",
     "slug": "mutisme-selektif-penyebab-dan-penanganan",
     "file": "artikel/mutisme-selektif-penyebab-dan-penanganan.html",
     "title": "Mutisme Selektif Penyebab Dan Penanganan",
@@ -810,7 +1400,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-29",
+    "date": "2026-11-30",
     "slug": "cara-mengajukan-bantuan-pemerintah-untuk-anak-disabilitas",
     "file": "artikel/cara-mengajukan-bantuan-pemerintah-untuk-anak-disabilitas.html",
     "title": "Cara Mengajukan Bantuan Pemerintah Untuk Anak Disabilitas",
@@ -820,7 +1410,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-29",
+    "date": "2026-12-01",
     "slug": "play-date-untuk-anak-berkebutuhan-khusus",
     "file": "artikel/play-date-untuk-anak-berkebutuhan-khusus.html",
     "title": "Play Date Untuk Anak Berkebutuhan Khusus",
@@ -830,7 +1420,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-29",
+    "date": "2026-12-02",
     "slug": "kurikulum-fungsional-untuk-anak-tunagrahita",
     "file": "artikel/kurikulum-fungsional-untuk-anak-tunagrahita.html",
     "title": "Kurikulum Fungsional Untuk Anak Tunagrahita",
@@ -840,7 +1430,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-31",
+    "date": "2026-12-03",
     "slug": "cara-mengatur-waktu-tidur-anak-autis",
     "file": "artikel/cara-mengatur-waktu-tidur-anak-autis.html",
     "title": "Cara Mengatur Waktu Tidur Anak Autis",
@@ -850,7 +1440,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-31",
+    "date": "2026-12-04",
     "slug": "klinik-tumbuh-kembang-anak-yogyakarta",
     "file": "artikel/klinik-tumbuh-kembang-anak-yogyakarta.html",
     "title": "Klinik Tumbuh Kembang Anak Yogyakarta",
@@ -860,7 +1450,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-08-31",
+    "date": "2026-12-05",
     "slug": "prebiotik-dan-probiotik-untuk-gut-brain-axis-anak-autis",
     "file": "artikel/prebiotik-dan-probiotik-untuk-gut-brain-axis-anak-autis.html",
     "title": "Prebiotik Dan Probiotik Untuk Gut Brain Axis Anak Autis",
@@ -870,7 +1460,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-01",
+    "date": "2026-12-06",
     "slug": "selective-mutism-anak",
     "file": "artikel/selective-mutism-anak.html",
     "title": "Selective Mutism Anak",
@@ -880,7 +1470,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-01",
+    "date": "2026-12-07",
     "slug": "apa-saja-hak-anak-berkebutuhan-khusus",
     "file": "artikel/apa-saja-hak-anak-berkebutuhan-khusus.html",
     "title": "Apa Saja Hak Anak Berkebutuhan Khusus",
@@ -890,7 +1480,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-01",
+    "date": "2026-12-08",
     "slug": "strategi-mengajar-anak-autis-di-kelas",
     "file": "artikel/strategi-mengajar-anak-autis-di-kelas.html",
     "title": "Strategi Mengajar Anak Autis Di Kelas",
@@ -900,7 +1490,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-02",
+    "date": "2026-12-09",
     "slug": "asesmen-akademik-anak-berkebutuhan-khusus",
     "file": "artikel/asesmen-akademik-anak-berkebutuhan-khusus.html",
     "title": "Asesmen Akademik Anak Berkebutuhan Khusus",
@@ -910,7 +1500,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-02",
+    "date": "2026-12-10",
     "slug": "apakah-gdd-sama-dengan-autis",
     "file": "artikel/apakah-gdd-sama-dengan-autis.html",
     "title": "Apakah Gdd Sama Dengan Autis",
@@ -920,7 +1510,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-02",
+    "date": "2026-12-11",
     "slug": "gangguan-tidur-anak-adhd-solusi",
     "file": "artikel/gangguan-tidur-anak-adhd-solusi.html",
     "title": "Gangguan Tidur Anak Adhd Solusi",
@@ -930,7 +1520,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-03",
+    "date": "2026-12-12",
     "slug": "ujian-nasional-anak-abk",
     "file": "artikel/ujian-nasional-anak-abk.html",
     "title": "Ujian Nasional Anak Abk",
@@ -940,7 +1530,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-03",
+    "date": "2026-12-13",
     "slug": "adaptasi-soal-ujian-untuk-anak-abk",
     "file": "artikel/adaptasi-soal-ujian-untuk-anak-abk.html",
     "title": "Adaptasi Soal Ujian Untuk Anak Abk",
@@ -950,7 +1540,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-03",
+    "date": "2026-12-14",
     "slug": "penuaan-pada-penyandang-down-syndrome",
     "file": "artikel/penuaan-pada-penyandang-down-syndrome.html",
     "title": "Penuaan Pada Penyandang Down Syndrome",
@@ -960,7 +1550,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-04",
+    "date": "2026-12-15",
     "slug": "gut-microbiome-dan-autisme-penelitian",
     "file": "artikel/gut-microbiome-dan-autisme-penelitian.html",
     "title": "Gut Microbiome Dan Autisme Penelitian",
@@ -970,7 +1560,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-04",
+    "date": "2026-12-16",
     "slug": "milestone-motorik-kasar-anak-0-12-bulan",
     "file": "artikel/milestone-motorik-kasar-anak-0-12-bulan.html",
     "title": "Milestone Motorik Kasar Anak 0-12 Bulan",
@@ -980,7 +1570,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-04",
+    "date": "2026-12-17",
     "slug": "apa-yang-dimaksud-dengan-fasilitas-pendidikan",
     "file": "artikel/apa-yang-dimaksud-dengan-fasilitas-pendidikan.html",
     "title": "Apa Yang Dimaksud Dengan Fasilitas Pendidikan",
@@ -990,7 +1580,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-05",
+    "date": "2026-12-18",
     "slug": "kewirausahaan-anak-muda-disabilitas",
     "file": "artikel/kewirausahaan-anak-muda-disabilitas.html",
     "title": "Kewirausahaan Anak Muda Disabilitas",
@@ -1000,7 +1590,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-05",
+    "date": "2026-12-19",
     "slug": "aplikasi-komunikasi-aac-terbaik-untuk-anak",
     "file": "artikel/aplikasi-komunikasi-aac-terbaik-untuk-anak.html",
     "title": "Aplikasi Komunikasi Aac Terbaik Untuk Anak",
@@ -1010,7 +1600,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-05",
+    "date": "2026-12-20",
     "slug": "aging-with-autism-tantangan-dan-solusi",
     "file": "artikel/aging-with-autism-tantangan-dan-solusi.html",
     "title": "Aging With Autism Tantangan Dan Solusi",
@@ -1020,7 +1610,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-07",
+    "date": "2026-12-21",
     "slug": "cara-berkomunikasi-dengan-anak-tuna-rungu",
     "file": "artikel/cara-berkomunikasi-dengan-anak-tuna-rungu.html",
     "title": "Cara Berkomunikasi Dengan Anak Tuna Rungu",
@@ -1030,7 +1620,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-07",
+    "date": "2026-12-22",
     "slug": "ijazah-slb-setara-apa",
     "file": "artikel/ijazah-slb-setara-apa.html",
     "title": "Ijazah Slb Setara Apa",
@@ -1040,7 +1630,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-07",
+    "date": "2026-12-23",
     "slug": "pekerjaan-yang-cocok-untuk-orang-autis",
     "file": "artikel/pekerjaan-yang-cocok-untuk-orang-autis.html",
     "title": "Pekerjaan Yang Cocok Untuk Orang Autis",
@@ -1050,7 +1640,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-08",
+    "date": "2026-12-24",
     "slug": "apa-itu-keterampilan-sosial-anak",
     "file": "artikel/apa-itu-keterampilan-sosial-anak.html",
     "title": "Apa Itu Keterampilan Sosial Anak",
@@ -1060,7 +1650,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-08",
+    "date": "2026-12-25",
     "slug": "asuransi-kesehatan-untuk-anak-disabilitas",
     "file": "artikel/asuransi-kesehatan-untuk-anak-disabilitas.html",
     "title": "Asuransi Kesehatan Untuk Anak Disabilitas",
@@ -1070,7 +1660,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-08",
+    "date": "2026-12-26",
     "slug": "chewable-jewelry-untuk-anak-oral-sensory",
     "file": "artikel/chewable-jewelry-untuk-anak-oral-sensory.html",
     "title": "Chewable Jewelry Untuk Anak Oral Sensory",
@@ -1080,7 +1670,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-09",
+    "date": "2026-12-27",
     "slug": "gangguan-belajar-spesifik",
     "file": "artikel/gangguan-belajar-spesifik.html",
     "title": "Gangguan Belajar Spesifik",
@@ -1090,7 +1680,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-09",
+    "date": "2026-12-28",
     "slug": "aplikasi-ai-untuk-terapi-wicara-anak",
     "file": "artikel/aplikasi-ai-untuk-terapi-wicara-anak.html",
     "title": "Aplikasi Ai Untuk Terapi Wicara Anak",
@@ -1100,7 +1690,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-09",
+    "date": "2026-12-29",
     "slug": "hipotiroid-pada-anak-down-syndrome",
     "file": "artikel/hipotiroid-pada-anak-down-syndrome.html",
     "title": "Hipotiroid Pada Anak Down Syndrome",
@@ -1110,7 +1700,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-10",
+    "date": "2026-12-30",
     "slug": "mengajar-anak-abk-naik-transportasi-umum",
     "file": "artikel/mengajar-anak-abk-naik-transportasi-umum.html",
     "title": "Mengajar Anak Abk Naik Transportasi Umum",
@@ -1120,7 +1710,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-10",
+    "date": "2026-12-31",
     "slug": "biaya-terapi-anak-autis-per-bulan",
     "file": "artikel/biaya-terapi-anak-autis-per-bulan.html",
     "title": "Biaya Terapi Anak Autis Per Bulan",
@@ -1130,7 +1720,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-10",
+    "date": "2027-01-01",
     "slug": "tahapan-perkembangan-bermain-anak-abk",
     "file": "artikel/tahapan-perkembangan-bermain-anak-abk.html",
     "title": "Tahapan Perkembangan Bermain Anak Abk",
@@ -1140,7 +1730,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-11",
+    "date": "2027-01-02",
     "slug": "ciri-adhd-tipe-inattentive-pada-anak",
     "file": "artikel/ciri-adhd-tipe-inattentive-pada-anak.html",
     "title": "Ciri Adhd Tipe Inattentive Pada Anak",
@@ -1150,7 +1740,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-11",
+    "date": "2027-01-03",
     "slug": "berapa-iq-anak-yang-normal",
     "file": "artikel/berapa-iq-anak-yang-normal.html",
     "title": "Berapa Iq Anak Yang Normal",
@@ -1160,7 +1750,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-11",
+    "date": "2027-01-04",
     "slug": "neurologic-music-therapy-untuk-abk",
     "file": "artikel/neurologic-music-therapy-untuk-abk.html",
     "title": "Neurologic Music Therapy Untuk Abk",
@@ -1170,7 +1760,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-12",
+    "date": "2027-01-05",
     "slug": "cara-mengajar-anak-disleksia-membaca",
     "file": "artikel/cara-mengajar-anak-disleksia-membaca.html",
     "title": "Cara Mengajar Anak Disleksia Membaca",
@@ -1180,7 +1770,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-12",
+    "date": "2027-01-06",
     "slug": "pekerjaan-untuk-penyandang-disabilitas",
     "file": "artikel/pekerjaan-untuk-penyandang-disabilitas.html",
     "title": "Pekerjaan Untuk Penyandang Disabilitas",
@@ -1190,7 +1780,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-12",
+    "date": "2027-01-07",
     "slug": "tuna-netra-adalah",
     "file": "artikel/tuna-netra-adalah.html",
     "title": "Tuna Netra Adalah",
@@ -1200,7 +1790,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-14",
+    "date": "2027-01-08",
     "slug": "tempat-terapi-anak-jogja",
     "file": "artikel/tempat-terapi-anak-jogja.html",
     "title": "Tempat Terapi Anak Jogja",
@@ -1210,7 +1800,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-14",
+    "date": "2027-01-09",
     "slug": "non-stimulant-medication-adhd-terbaru",
     "file": "artikel/non-stimulant-medication-adhd-terbaru.html",
     "title": "Non Stimulant Medication Adhd Terbaru",
@@ -1220,7 +1810,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-14",
+    "date": "2027-01-10",
     "slug": "gangguan-makan-anak-abk",
     "file": "artikel/gangguan-makan-anak-abk.html",
     "title": "Gangguan Makan Anak Abk",
@@ -1230,7 +1820,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-15",
+    "date": "2027-01-11",
     "slug": "skoliosis-pada-anak-cerebral-palsy",
     "file": "artikel/skoliosis-pada-anak-cerebral-palsy.html",
     "title": "Skoliosis Pada Anak Cerebral Palsy",
@@ -1240,7 +1830,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-15",
+    "date": "2027-01-12",
     "slug": "terapi-perilaku-kognitif-anak",
     "file": "artikel/terapi-perilaku-kognitif-anak.html",
     "title": "Terapi Perilaku Kognitif Anak",
@@ -1250,7 +1840,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-15",
+    "date": "2027-01-13",
     "slug": "joint-attention-anak-autis-kenapa-penting",
     "file": "artikel/joint-attention-anak-autis-kenapa-penting.html",
     "title": "Joint Attention Anak Autis Kenapa Penting",
@@ -1260,7 +1850,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-16",
+    "date": "2027-01-14",
     "slug": "terapi-pijat-anak-cerebral-palsy",
     "file": "artikel/terapi-pijat-anak-cerebral-palsy.html",
     "title": "Terapi Pijat Anak Cerebral Palsy",
@@ -1270,7 +1860,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-16",
+    "date": "2027-01-15",
     "slug": "cerebral-palsy-athetoid-adalah",
     "file": "artikel/cerebral-palsy-athetoid-adalah.html",
     "title": "Cerebral Palsy Athetoid Adalah",
@@ -1280,7 +1870,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-16",
+    "date": "2027-01-16",
     "slug": "milestone-motorik-halus-anak-1-3-tahun",
     "file": "artikel/milestone-motorik-halus-anak-1-3-tahun.html",
     "title": "Milestone Motorik Halus Anak 1-3 Tahun",
@@ -1290,7 +1880,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-17",
+    "date": "2027-01-17",
     "slug": "terapi-okupasi-untuk-anak-cerebral-palsy",
     "file": "artikel/terapi-okupasi-untuk-anak-cerebral-palsy.html",
     "title": "Terapi Okupasi Untuk Anak Cerebral Palsy",
@@ -1300,7 +1890,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-17",
+    "date": "2027-01-18",
     "slug": "gangguan-emosional-pada-anak-sekolah",
     "file": "artikel/gangguan-emosional-pada-anak-sekolah.html",
     "title": "Gangguan Emosional Pada Anak Sekolah",
@@ -1310,7 +1900,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-17",
+    "date": "2027-01-19",
     "slug": "berapa-biaya-terapi-anak-berkebutuhan-khusus",
     "file": "artikel/berapa-biaya-terapi-anak-berkebutuhan-khusus.html",
     "title": "Berapa Biaya Terapi Anak Berkebutuhan Khusus",
@@ -1320,7 +1910,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-18",
+    "date": "2027-01-20",
     "slug": "empati-pada-anak-berkebutuhan-khusus",
     "file": "artikel/empati-pada-anak-berkebutuhan-khusus.html",
     "title": "Empati Pada Anak Berkebutuhan Khusus",
@@ -1330,7 +1920,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-18",
+    "date": "2027-01-21",
     "slug": "latihan-fisioterapi-anak-di-rumah",
     "file": "artikel/latihan-fisioterapi-anak-di-rumah.html",
     "title": "Latihan Fisioterapi Anak Di Rumah",
@@ -1340,7 +1930,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-18",
+    "date": "2027-01-22",
     "slug": "alat-bantu-belajar-anak-disleksia",
     "file": "artikel/alat-bantu-belajar-anak-disleksia.html",
     "title": "Alat Bantu Belajar Anak Disleksia",
@@ -1350,7 +1940,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-19",
+    "date": "2027-01-23",
     "slug": "terapi-integrasi-sensorik-di-rumah",
     "file": "artikel/terapi-integrasi-sensorik-di-rumah.html",
     "title": "Terapi Integrasi Sensorik Di Rumah",
@@ -1360,7 +1950,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-19",
+    "date": "2027-01-24",
     "slug": "apa-itu-autisme-level-1-2-3",
     "file": "artikel/apa-itu-autisme-level-1-2-3.html",
     "title": "Apa Itu Autisme Level 1 2 3",
@@ -1370,7 +1960,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-19",
+    "date": "2027-01-25",
     "slug": "cara-melatih-social-skills-anak-autis-di-rumah",
     "file": "artikel/cara-melatih-social-skills-anak-autis-di-rumah.html",
     "title": "Cara Melatih Social Skills Anak Autis Di Rumah",
@@ -1380,7 +1970,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-21",
+    "date": "2027-01-26",
     "slug": "apa-penyebab-autis-pada-anak",
     "file": "artikel/apa-penyebab-autis-pada-anak.html",
     "title": "Apa Penyebab Autis Pada Anak",
@@ -1390,7 +1980,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-21",
+    "date": "2027-01-27",
     "slug": "sensory-toys-terbaik-untuk-anak-autis",
     "file": "artikel/sensory-toys-terbaik-untuk-anak-autis.html",
     "title": "Sensory Toys Terbaik Untuk Anak Autis",
@@ -1400,7 +1990,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-21",
+    "date": "2027-01-28",
     "slug": "perbedaan-adhd-dan-autis-pada-anak",
     "file": "artikel/perbedaan-adhd-dan-autis-pada-anak.html",
     "title": "Perbedaan Adhd Dan Autis Pada Anak",
@@ -1410,7 +2000,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-22",
+    "date": "2027-01-29",
     "slug": "menerima-diagnosis-anak-abk",
     "file": "artikel/menerima-diagnosis-anak-abk.html",
     "title": "Menerima Diagnosis Anak Abk",
@@ -1420,7 +2010,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-22",
+    "date": "2027-01-30",
     "slug": "kesehatan-mental-remaja-berkebutuhan-khusus",
     "file": "artikel/kesehatan-mental-remaja-berkebutuhan-khusus.html",
     "title": "Kesehatan Mental Remaja Berkebutuhan Khusus",
@@ -1430,7 +2020,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-22",
+    "date": "2027-01-31",
     "slug": "terapi-musik-untuk-anak-abk",
     "file": "artikel/terapi-musik-untuk-anak-abk.html",
     "title": "Terapi Musik Untuk Anak Abk",
@@ -1440,7 +2030,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-23",
+    "date": "2027-02-01",
     "slug": "perawatan-gigi-anak-berkebutuhan-khusus-tips",
     "file": "artikel/perawatan-gigi-anak-berkebutuhan-khusus-tips.html",
     "title": "Perawatan Gigi Anak Berkebutuhan Khusus Tips",
@@ -1450,7 +2040,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-23",
+    "date": "2027-02-02",
     "slug": "social-skills-training-anak-autis",
     "file": "artikel/social-skills-training-anak-autis.html",
     "title": "Social Skills Training Anak Autis",
@@ -1460,7 +2050,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-23",
+    "date": "2027-02-03",
     "slug": "ptsd-pada-anak-gejala-dan-penanganan",
     "file": "artikel/ptsd-pada-anak-gejala-dan-penanganan.html",
     "title": "Ptsd Pada Anak Gejala Dan Penanganan",
@@ -1470,7 +2060,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-24",
+    "date": "2027-02-04",
     "slug": "masalah-penglihatan-pada-anak-down-syndrome",
     "file": "artikel/masalah-penglihatan-pada-anak-down-syndrome.html",
     "title": "Masalah Penglihatan Pada Anak Down Syndrome",
@@ -1480,7 +2070,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-24",
+    "date": "2027-02-05",
     "slug": "mengelola-stres-orang-tua-anak-abk",
     "file": "artikel/mengelola-stres-orang-tua-anak-abk.html",
     "title": "Mengelola Stres Orang Tua Anak Abk",
@@ -1490,7 +2080,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-24",
+    "date": "2027-02-06",
     "slug": "babbling-dan-cooing-tahap-perkembangan-bahasa",
     "file": "artikel/babbling-dan-cooing-tahap-perkembangan-bahasa.html",
     "title": "Babbling Dan Cooing Tahap Perkembangan Bahasa",
@@ -1500,7 +2090,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-25",
+    "date": "2027-02-07",
     "slug": "homeschooling-untuk-anak-autis-kurikulum",
     "file": "artikel/homeschooling-untuk-anak-autis-kurikulum.html",
     "title": "Homeschooling Untuk Anak Autis Kurikulum",
@@ -1510,7 +2100,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-25",
+    "date": "2027-02-08",
     "slug": "cara-mengatasi-tantrum-anak-autis",
     "file": "artikel/cara-mengatasi-tantrum-anak-autis.html",
     "title": "Cara Mengatasi Tantrum Anak Autis",
@@ -1520,7 +2110,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-25",
+    "date": "2027-02-09",
     "slug": "gangguan-pendengaran-konduktif-vs-sensorineural",
     "file": "artikel/gangguan-pendengaran-konduktif-vs-sensorineural.html",
     "title": "Gangguan Pendengaran Konduktif Vs Sensorineural",
@@ -1530,7 +2120,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-26",
+    "date": "2027-02-10",
     "slug": "disabilitas-ada-5-apa-saja",
     "file": "artikel/disabilitas-ada-5-apa-saja.html",
     "title": "Disabilitas Ada 5, Apa Saja",
@@ -1540,7 +2130,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-26",
+    "date": "2027-02-11",
     "slug": "7-essential-life-skills-apa-saja",
     "file": "artikel/7-essential-life-skills-apa-saja.html",
     "title": "7 Essential Life Skills Apa Saja",
@@ -1550,7 +2140,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-26",
+    "date": "2027-02-12",
     "slug": "slb-negeri-1-yogyakarta-profil",
     "file": "artikel/slb-negeri-1-yogyakarta-profil.html",
     "title": "Slb Negeri 1 Yogyakarta Profil",
@@ -1560,7 +2150,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-28",
+    "date": "2027-02-13",
     "slug": "sekolah-inklusi-di-bandung-daftar",
     "file": "artikel/sekolah-inklusi-di-bandung-daftar.html",
     "title": "Sekolah Inklusi Di Bandung Daftar",
@@ -1570,7 +2160,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-28",
+    "date": "2027-02-14",
     "slug": "anggaran-pendidikan-khusus",
     "file": "artikel/anggaran-pendidikan-khusus.html",
     "title": "Anggaran Pendidikan Khusus",
@@ -1580,7 +2170,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-28",
+    "date": "2027-02-15",
     "slug": "applied-behavior-analysis-indonesia",
     "file": "artikel/applied-behavior-analysis-indonesia.html",
     "title": "Applied Behavior Analysis Indonesia",
@@ -1590,7 +2180,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-29",
+    "date": "2027-02-16",
     "slug": "kapan-anak-abk-bisa-toileting-mandiri",
     "file": "artikel/kapan-anak-abk-bisa-toileting-mandiri.html",
     "title": "Kapan Anak Abk Bisa Toileting Mandiri",
@@ -1600,7 +2190,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-29",
+    "date": "2027-02-17",
     "slug": "siswa-inklusi-apa-saja",
     "file": "artikel/siswa-inklusi-apa-saja.html",
     "title": "Siswa Inklusi Apa Saja",
@@ -1610,7 +2200,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-29",
+    "date": "2027-02-18",
     "slug": "siapa-yang-berhak-mendapat-kartu-disabilitas",
     "file": "artikel/siapa-yang-berhak-mendapat-kartu-disabilitas.html",
     "title": "Siapa Yang Berhak Mendapat Kartu Disabilitas",
@@ -1620,7 +2210,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-30",
+    "date": "2027-02-19",
     "slug": "tidur-anak-autis",
     "file": "artikel/tidur-anak-autis.html",
     "title": "Tidur Anak Autis",
@@ -1630,7 +2220,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-30",
+    "date": "2027-02-20",
     "slug": "instrumen-musik-untuk-terapi-anak",
     "file": "artikel/instrumen-musik-untuk-terapi-anak.html",
     "title": "Instrumen Musik Untuk Terapi Anak",
@@ -1640,7 +2230,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-09-30",
+    "date": "2027-02-21",
     "slug": "klasifikasi-cerebral-palsy-spastik-diplegi",
     "file": "artikel/klasifikasi-cerebral-palsy-spastik-diplegi.html",
     "title": "Klasifikasi Cerebral Palsy Spastik Diplegi",
@@ -1650,7 +2240,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-01",
+    "date": "2027-02-22",
     "slug": "sensory-over-responsivity-pada-anak",
     "file": "artikel/sensory-over-responsivity-pada-anak.html",
     "title": "Sensory Over Responsivity Pada Anak",
@@ -1660,7 +2250,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-01",
+    "date": "2027-02-23",
     "slug": "persiapan-anak-abk-masuk-universitas",
     "file": "artikel/persiapan-anak-abk-masuk-universitas.html",
     "title": "Persiapan Anak Abk Masuk Universitas",
@@ -1670,7 +2260,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-01",
+    "date": "2027-02-24",
     "slug": "gangguan-pemrosesan-sensorik",
     "file": "artikel/gangguan-pemrosesan-sensorik.html",
     "title": "Gangguan Pemrosesan Sensorik",
@@ -1680,7 +2270,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-02",
+    "date": "2027-02-25",
     "slug": "terapi-musik-untuk-anak-adhd",
     "file": "artikel/terapi-musik-untuk-anak-adhd.html",
     "title": "Terapi Musik Untuk Anak Adhd",
@@ -1690,7 +2280,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-02",
+    "date": "2027-02-26",
     "slug": "orang-tua-baru-terima-diagnosis-anak-abk",
     "file": "artikel/orang-tua-baru-terima-diagnosis-anak-abk.html",
     "title": "Orang Tua Baru Terima Diagnosis Anak Abk",
@@ -1700,7 +2290,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-02",
+    "date": "2027-02-27",
     "slug": "asperger-syndrome-adalah",
     "file": "artikel/asperger-syndrome-adalah.html",
     "title": "Asperger Syndrome Adalah",
@@ -1710,7 +2300,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-03",
+    "date": "2027-02-28",
     "slug": "aplikasi-belajar-membaca-untuk-anak-disleksia",
     "file": "artikel/aplikasi-belajar-membaca-untuk-anak-disleksia.html",
     "title": "Aplikasi Belajar Membaca Untuk Anak Disleksia",
@@ -1720,7 +2310,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-03",
+    "date": "2027-03-01",
     "slug": "cara-membawa-anak-autis-ke-dokter-gigi",
     "file": "artikel/cara-membawa-anak-autis-ke-dokter-gigi.html",
     "title": "Cara Membawa Anak Autis Ke Dokter Gigi",
@@ -1730,7 +2320,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-03",
+    "date": "2027-03-02",
     "slug": "what-is-a-milestone-for-a-kid",
     "file": "artikel/what-is-a-milestone-for-a-kid.html",
     "title": "What Is A Milestone For A Kid",
@@ -1740,7 +2330,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-05",
+    "date": "2027-03-03",
     "slug": "uu-no-19-tahun-2011-tentang-apa",
     "file": "artikel/uu-no-19-tahun-2011-tentang-apa.html",
     "title": "Uu No. 19 Tahun 2011 Tentang Apa",
@@ -1750,7 +2340,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-05",
+    "date": "2027-03-04",
     "slug": "lembaga-sertifikasi-terapis-anak-di-indonesia",
     "file": "artikel/lembaga-sertifikasi-terapis-anak-di-indonesia.html",
     "title": "Lembaga Sertifikasi Terapis Anak Di Indonesia",
@@ -1760,7 +2350,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-05",
+    "date": "2027-03-05",
     "slug": "sensory-seeking-behavior-anak",
     "file": "artikel/sensory-seeking-behavior-anak.html",
     "title": "Sensory Seeking Behavior Anak",
@@ -1770,7 +2360,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-06",
+    "date": "2027-03-06",
     "slug": "rutinitas-pagi-anak-autis-cara-membuat",
     "file": "artikel/rutinitas-pagi-anak-autis-cara-membuat.html",
     "title": "Rutinitas Pagi Anak Autis Cara Membuat",
@@ -1780,7 +2370,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-06",
+    "date": "2027-03-07",
     "slug": "apa-saja-program-pemerintah-untuk-penyandang-disabilitas",
     "file": "artikel/apa-saja-program-pemerintah-untuk-penyandang-disabilitas.html",
     "title": "Apa Saja Program Pemerintah Untuk Penyandang Disabilitas",
@@ -1790,7 +2380,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-06",
+    "date": "2027-03-08",
     "slug": "terapi-anak-untuk-apa",
     "file": "artikel/terapi-anak-untuk-apa.html",
     "title": "Terapi Anak Untuk Apa",
@@ -1800,7 +2390,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-07",
+    "date": "2027-03-09",
     "slug": "terapis-anak-berkebutuhan-khusus-di-solo",
     "file": "artikel/terapis-anak-berkebutuhan-khusus-di-solo.html",
     "title": "Terapis Anak Berkebutuhan Khusus Di Solo",
@@ -1810,7 +2400,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-07",
+    "date": "2027-03-10",
     "slug": "lebaran-anak-abk",
     "file": "artikel/lebaran-anak-abk.html",
     "title": "Lebaran Anak Abk",
@@ -1820,7 +2410,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-07",
+    "date": "2027-03-11",
     "slug": "langkah-langkah-deteksi-dini-tumbuh-kembang-anak",
     "file": "artikel/langkah-langkah-deteksi-dini-tumbuh-kembang-anak.html",
     "title": "Langkah-langkah Deteksi Dini Tumbuh Kembang Anak",
@@ -1830,7 +2420,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-08",
+    "date": "2027-03-12",
     "slug": "gangguan-kecemasan-anak",
     "file": "artikel/gangguan-kecemasan-anak.html",
     "title": "Gangguan Kecemasan Anak",
@@ -1840,7 +2430,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-08",
+    "date": "2027-03-13",
     "slug": "perda-disabilitas-diy-yogyakarta",
     "file": "artikel/perda-disabilitas-diy-yogyakarta.html",
     "title": "Perda Disabilitas Diy Yogyakarta",
@@ -1850,7 +2440,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-08",
+    "date": "2027-03-14",
     "slug": "adhd-dan-gangguan-kecemasan-pada-anak",
     "file": "artikel/adhd-dan-gangguan-kecemasan-pada-anak.html",
     "title": "Adhd Dan Gangguan Kecemasan Pada Anak",
@@ -1860,7 +2450,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-09",
+    "date": "2027-03-15",
     "slug": "perbedaan-tunagrahita-dan-autis",
     "file": "artikel/perbedaan-tunagrahita-dan-autis.html",
     "title": "Perbedaan Tunagrahita Dan Autis",
@@ -1870,7 +2460,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-09",
+    "date": "2027-03-16",
     "slug": "penyebab-autisme-penelitian-genetik-terbaru",
     "file": "artikel/penyebab-autisme-penelitian-genetik-terbaru.html",
     "title": "Penyebab Autisme Penelitian Genetik Terbaru",
@@ -1880,7 +2470,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-09",
+    "date": "2027-03-17",
     "slug": "metode-lovaas-untuk-anak-autis",
     "file": "artikel/metode-lovaas-untuk-anak-autis.html",
     "title": "Metode Lovaas Untuk Anak Autis",
@@ -1890,7 +2480,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-10",
+    "date": "2027-03-18",
     "slug": "tanda-keterlambatan-motorik-kasar-anak-2-tahun",
     "file": "artikel/tanda-keterlambatan-motorik-kasar-anak-2-tahun.html",
     "title": "Tanda Keterlambatan Motorik Kasar Anak 2 Tahun",
@@ -1900,7 +2490,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-10",
+    "date": "2027-03-19",
     "slug": "terapi-fisik-untuk-anak-hipotonia",
     "file": "artikel/terapi-fisik-untuk-anak-hipotonia.html",
     "title": "Terapi Fisik Untuk Anak Hipotonia",
@@ -1910,7 +2500,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-10",
+    "date": "2027-03-20",
     "slug": "grief-dan-acceptance-orang-tua-anak-abk",
     "file": "artikel/grief-dan-acceptance-orang-tua-anak-abk.html",
     "title": "Grief Dan Acceptance Orang Tua Anak Abk",
@@ -1920,7 +2510,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-12",
+    "date": "2027-03-21",
     "slug": "abk-itu-seperti-apa",
     "file": "artikel/abk-itu-seperti-apa.html",
     "title": "Abk Itu Seperti Apa",
@@ -1930,7 +2520,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-12",
+    "date": "2027-03-22",
     "slug": "laundry-skills-anak-disabilitas-intelektual",
     "file": "artikel/laundry-skills-anak-disabilitas-intelektual.html",
     "title": "Laundry Skills Anak Disabilitas Intelektual",
@@ -1940,7 +2530,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-12",
+    "date": "2027-03-23",
     "slug": "bagaimana-cara-menyalurkan-donasi",
     "file": "artikel/bagaimana-cara-menyalurkan-donasi.html",
     "title": "Bagaimana Cara Menyalurkan Donasi",
@@ -1950,7 +2540,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-13",
+    "date": "2027-03-24",
     "slug": "apa-saja-terapi-perilaku-untuk-autisme",
     "file": "artikel/apa-saja-terapi-perilaku-untuk-autisme.html",
     "title": "Apa Saja Terapi Perilaku Untuk Autisme",
@@ -1960,7 +2550,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-13",
+    "date": "2027-03-25",
     "slug": "melatonin-untuk-anak-autis-aman-atau-tidak",
     "file": "artikel/melatonin-untuk-anak-autis-aman-atau-tidak.html",
     "title": "Melatonin Untuk Anak Autis Aman Atau Tidak",
@@ -1970,7 +2560,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-13",
+    "date": "2027-03-26",
     "slug": "apa-itu-spina-bifida-pada-anak",
     "file": "artikel/apa-itu-spina-bifida-pada-anak.html",
     "title": "Apa Itu Spina Bifida Pada Anak",
@@ -1980,7 +2570,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-14",
+    "date": "2027-03-27",
     "slug": "zat-besi-dan-perkembangan-kognitif-anak",
     "file": "artikel/zat-besi-dan-perkembangan-kognitif-anak.html",
     "title": "Zat Besi Dan Perkembangan Kognitif Anak",
@@ -1990,7 +2580,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-14",
+    "date": "2027-03-28",
     "slug": "manfaat-terapi-musik-untuk-anak-autis",
     "file": "artikel/manfaat-terapi-musik-untuk-anak-autis.html",
     "title": "Manfaat Terapi Musik Untuk Anak Autis",
@@ -2000,7 +2590,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-14",
+    "date": "2027-03-29",
     "slug": "daftar-aplikasi-belajar-untuk-anak-abk",
     "file": "artikel/daftar-aplikasi-belajar-untuk-anak-abk.html",
     "title": "Daftar Aplikasi Belajar Untuk Anak Abk",
@@ -2010,7 +2600,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-15",
+    "date": "2027-03-30",
     "slug": "apa-ciri-ciri-anak-hiperaktif",
     "file": "artikel/apa-ciri-ciri-anak-hiperaktif.html",
     "title": "Apa Ciri-ciri Anak Hiperaktif",
@@ -2020,7 +2610,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-15",
+    "date": "2027-03-31",
     "slug": "echolalia-anak-autis",
     "file": "artikel/echolalia-anak-autis.html",
     "title": "Echolalia Anak Autis",
@@ -2030,7 +2620,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-15",
+    "date": "2027-04-01",
     "slug": "cara-mengatasi-konstipasi-anak-autis",
     "file": "artikel/cara-mengatasi-konstipasi-anak-autis.html",
     "title": "Cara Mengatasi Konstipasi Anak Autis",
@@ -2040,7 +2630,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-16",
+    "date": "2027-04-02",
     "slug": "modifikasi-kurikulum-anak-berkebutuhan-khusus",
     "file": "artikel/modifikasi-kurikulum-anak-berkebutuhan-khusus.html",
     "title": "Modifikasi Kurikulum Anak Berkebutuhan Khusus",
@@ -2050,7 +2640,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-16",
+    "date": "2027-04-03",
     "slug": "sibling-anak-berkebutuhan-khusus",
     "file": "artikel/sibling-anak-berkebutuhan-khusus.html",
     "title": "Sibling Anak Berkebutuhan Khusus",
@@ -2060,7 +2650,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-16",
+    "date": "2027-04-04",
     "slug": "gangguan-pica-pada-anak",
     "file": "artikel/gangguan-pica-pada-anak.html",
     "title": "Gangguan Pica Pada Anak",
@@ -2070,7 +2660,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-17",
+    "date": "2027-04-05",
     "slug": "berapa-iq-anak-abk",
     "file": "artikel/berapa-iq-anak-abk.html",
     "title": "Berapa Iq Anak Abk",
@@ -2080,7 +2670,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-17",
+    "date": "2027-04-06",
     "slug": "kursi-roda-anak-cerebral-palsy",
     "file": "artikel/kursi-roda-anak-cerebral-palsy.html",
     "title": "Kursi Roda Anak Cerebral Palsy",
@@ -2090,7 +2680,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-17",
+    "date": "2027-04-07",
     "slug": "biomarker-autisme-deteksi-dini-riset",
     "file": "artikel/biomarker-autisme-deteksi-dini-riset.html",
     "title": "Biomarker Autisme Deteksi Dini Riset",
@@ -2100,7 +2690,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-19",
+    "date": "2027-04-08",
     "slug": "positive-behavior-support-pbs-anak",
     "file": "artikel/positive-behavior-support-pbs-anak.html",
     "title": "Positive Behavior Support Pbs Anak",
@@ -2110,7 +2700,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-19",
+    "date": "2027-04-09",
     "slug": "peraturan-pemerintah-tentang-disabilitas",
     "file": "artikel/peraturan-pemerintah-tentang-disabilitas.html",
     "title": "Peraturan Pemerintah Tentang Disabilitas",
@@ -2120,7 +2710,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-19",
+    "date": "2027-04-10",
     "slug": "program-rehabilitasi-sosial-anak-disabilitas-kemensos",
     "file": "artikel/program-rehabilitasi-sosial-anak-disabilitas-kemensos.html",
     "title": "Program Rehabilitasi Sosial Anak Disabilitas Kemensos",
@@ -2130,7 +2720,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-20",
+    "date": "2027-04-11",
     "slug": "pecs-komunikasi-autis",
     "file": "artikel/pecs-komunikasi-autis.html",
     "title": "Pecs Komunikasi Autis",
@@ -2140,7 +2730,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-20",
+    "date": "2027-04-12",
     "slug": "hari-disabilitas-internasional",
     "file": "artikel/hari-disabilitas-internasional.html",
     "title": "Hari Disabilitas Internasional",
@@ -2150,7 +2740,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-20",
+    "date": "2027-04-13",
     "slug": "self-dressing-anak-cerebral-palsy-tips",
     "file": "artikel/self-dressing-anak-cerebral-palsy-tips.html",
     "title": "Self Dressing Anak Cerebral Palsy Tips",
@@ -2160,7 +2750,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-21",
+    "date": "2027-04-14",
     "slug": "uu-no-8-tahun-2016-tentang-penyandang-disabilitas",
     "file": "artikel/uu-no-8-tahun-2016-tentang-penyandang-disabilitas.html",
     "title": "Uu No 8 Tahun 2016 Tentang Penyandang Disabilitas",
@@ -2170,7 +2760,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-21",
+    "date": "2027-04-15",
     "slug": "autisme-ringan-seperti-apa",
     "file": "artikel/autisme-ringan-seperti-apa.html",
     "title": "Autisme Ringan Seperti Apa",
@@ -2180,7 +2770,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-21",
+    "date": "2027-04-16",
     "slug": "apakah-anak-hiperaktif-bisa-disembuhkan",
     "file": "artikel/apakah-anak-hiperaktif-bisa-disembuhkan.html",
     "title": "Apakah Anak Hiperaktif Bisa Disembuhkan",
@@ -2190,7 +2780,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-22",
+    "date": "2027-04-17",
     "slug": "osteogenesis-imperfecta-pada-anak",
     "file": "artikel/osteogenesis-imperfecta-pada-anak.html",
     "title": "Osteogenesis Imperfecta Pada Anak",
@@ -2200,7 +2790,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-22",
+    "date": "2027-04-18",
     "slug": "kebijakan-pendidikan-inklusi-di-indonesia",
     "file": "artikel/kebijakan-pendidikan-inklusi-di-indonesia.html",
     "title": "Kebijakan Pendidikan Inklusi Di Indonesia",
@@ -2210,7 +2800,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-22",
+    "date": "2027-04-19",
     "slug": "adhd-dan-masalah-tidur-anak",
     "file": "artikel/adhd-dan-masalah-tidur-anak.html",
     "title": "Adhd Dan Masalah Tidur Anak",
@@ -2220,7 +2810,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-23",
+    "date": "2027-04-20",
     "slug": "art-therapy-untuk-anak-trauma",
     "file": "artikel/art-therapy-untuk-anak-trauma.html",
     "title": "Art Therapy Untuk Anak Trauma",
@@ -2230,7 +2820,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-23",
+    "date": "2027-04-21",
     "slug": "tes-iq-anak-minimal-umur-berapa",
     "file": "artikel/tes-iq-anak-minimal-umur-berapa.html",
     "title": "Tes Iq Anak Minimal Umur Berapa",
@@ -2240,7 +2830,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-23",
+    "date": "2027-04-22",
     "slug": "sensory-under-responsivity-adalah",
     "file": "artikel/sensory-under-responsivity-adalah.html",
     "title": "Sensory Under Responsivity Adalah",
@@ -2250,7 +2840,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-24",
+    "date": "2027-04-23",
     "slug": "diet-ketogenik-untuk-anak-epilepsi-autis",
     "file": "artikel/diet-ketogenik-untuk-anak-epilepsi-autis.html",
     "title": "Diet Ketogenik Untuk Anak Epilepsi Autis",
@@ -2260,7 +2850,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-24",
+    "date": "2027-04-24",
     "slug": "gangguan-perilaku-disruptif-pada-anak",
     "file": "artikel/gangguan-perilaku-disruptif-pada-anak.html",
     "title": "Gangguan Perilaku Disruptif Pada Anak",
@@ -2270,7 +2860,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-24",
+    "date": "2027-04-25",
     "slug": "berapa-gaji-shadow-teacher-di-indonesia",
     "file": "artikel/berapa-gaji-shadow-teacher-di-indonesia.html",
     "title": "Berapa Gaji Shadow Teacher Di Indonesia",
@@ -2280,7 +2870,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-26",
+    "date": "2027-04-26",
     "slug": "terapi-melukis-untuk-anak-autis",
     "file": "artikel/terapi-melukis-untuk-anak-autis.html",
     "title": "Terapi Melukis Untuk Anak Autis",
@@ -2290,7 +2880,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-26",
+    "date": "2027-04-27",
     "slug": "data-statistik-anak-disabilitas-di-indonesia-2026",
     "file": "artikel/data-statistik-anak-disabilitas-di-indonesia-2026.html",
     "title": "Data Statistik Anak Disabilitas Di Indonesia 2026",
@@ -2300,7 +2890,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-26",
+    "date": "2027-04-28",
     "slug": "terapi-gen-untuk-disabilitas-intelektual-riset",
     "file": "artikel/terapi-gen-untuk-disabilitas-intelektual-riset.html",
     "title": "Terapi Gen Untuk Disabilitas Intelektual Riset",
@@ -2310,7 +2900,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-27",
+    "date": "2027-04-29",
     "slug": "community-based-rehabilitation-cbr-indonesia",
     "file": "artikel/community-based-rehabilitation-cbr-indonesia.html",
     "title": "Community Based Rehabilitation Cbr Indonesia",
@@ -2320,7 +2910,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-27",
+    "date": "2027-04-30",
     "slug": "perguruan-tinggi-untuk-disabilitas",
     "file": "artikel/perguruan-tinggi-untuk-disabilitas.html",
     "title": "Perguruan Tinggi Untuk Disabilitas",
@@ -2330,7 +2920,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-27",
+    "date": "2027-05-01",
     "slug": "social-stories-terapi-autisme",
     "file": "artikel/social-stories-terapi-autisme.html",
     "title": "Social Stories Terapi Autisme",
@@ -2340,7 +2930,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-28",
+    "date": "2027-05-02",
     "slug": "apakah-anak-abk-bisa-sukses",
     "file": "artikel/apakah-anak-abk-bisa-sukses.html",
     "title": "Apakah Anak Abk Bisa Sukses",
@@ -2350,7 +2940,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-28",
+    "date": "2027-05-03",
     "slug": "apa-itu-anak-berkebutuhan-khusus",
     "file": "artikel/apa-itu-anak-berkebutuhan-khusus.html",
     "title": "Apa Itu Anak Berkebutuhan Khusus",
@@ -2360,7 +2950,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-28",
+    "date": "2027-05-04",
     "slug": "konseling-keluarga-anak-berkebutuhan-khusus",
     "file": "artikel/konseling-keluarga-anak-berkebutuhan-khusus.html",
     "title": "Konseling Keluarga Anak Berkebutuhan Khusus",
@@ -2370,7 +2960,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-29",
+    "date": "2027-05-05",
     "slug": "apa-saja-4-tahapan-perkembangan-anak",
     "file": "artikel/apa-saja-4-tahapan-perkembangan-anak.html",
     "title": "Apa Saja 4 Tahapan Perkembangan Anak",
@@ -2380,7 +2970,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-29",
+    "date": "2027-05-06",
     "slug": "diet-gfcf-anak-autis",
     "file": "artikel/diet-gfcf-anak-autis.html",
     "title": "Diet Gfcf Anak Autis",
@@ -2390,7 +2980,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-29",
+    "date": "2027-05-07",
     "slug": "self-help-skills-anak-down-syndrome-usia-5-tahun",
     "file": "artikel/self-help-skills-anak-down-syndrome-usia-5-tahun.html",
     "title": "Self Help Skills Anak Down Syndrome Usia 5 Tahun",
@@ -2400,7 +2990,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-30",
+    "date": "2027-05-08",
     "slug": "manfaat-fisioterapi-untuk-anak-down-syndrome",
     "file": "artikel/manfaat-fisioterapi-untuk-anak-down-syndrome.html",
     "title": "Manfaat Fisioterapi Untuk Anak Down Syndrome",
@@ -2410,7 +3000,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-30",
+    "date": "2027-05-09",
     "slug": "grandparenting-anak-berkebutuhan-khusus",
     "file": "artikel/grandparenting-anak-berkebutuhan-khusus.html",
     "title": "Grandparenting Anak Berkebutuhan Khusus",
@@ -2420,7 +3010,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-30",
+    "date": "2027-05-10",
     "slug": "gangguan-fonologis-pada-anak",
     "file": "artikel/gangguan-fonologis-pada-anak.html",
     "title": "Gangguan Fonologis Pada Anak",
@@ -2430,7 +3020,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-31",
+    "date": "2027-05-11",
     "slug": "aac-alat-komunikasi-augmentatif",
     "file": "artikel/aac-alat-komunikasi-augmentatif.html",
     "title": "Aac Alat Komunikasi Augmentatif",
@@ -2440,7 +3030,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-31",
+    "date": "2027-05-12",
     "slug": "kapan-anak-perlu-terapi-wicara",
     "file": "artikel/kapan-anak-perlu-terapi-wicara.html",
     "title": "Kapan Anak Perlu Terapi Wicara",
@@ -2450,7 +3040,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-10-31",
+    "date": "2027-05-13",
     "slug": "terapi-wicara-di-rumah-tanpa-terapis",
     "file": "artikel/terapi-wicara-di-rumah-tanpa-terapis.html",
     "title": "Terapi Wicara Di Rumah Tanpa Terapis",
@@ -2460,7 +3050,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-02",
+    "date": "2027-05-14",
     "slug": "disgrafia-adalah",
     "file": "artikel/disgrafia-adalah.html",
     "title": "Disgrafia Adalah",
@@ -2470,7 +3060,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-02",
+    "date": "2027-05-15",
     "slug": "tanda-global-developmental-delay-pada-bayi",
     "file": "artikel/tanda-global-developmental-delay-pada-bayi.html",
     "title": "Tanda Global Developmental Delay Pada Bayi",
@@ -2480,7 +3070,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-02",
+    "date": "2027-05-16",
     "slug": "perencanaan-wali-masa-depan-anak-disabilitas",
     "file": "artikel/perencanaan-wali-masa-depan-anak-disabilitas.html",
     "title": "Perencanaan Wali Masa Depan Anak Disabilitas",
@@ -2490,7 +3080,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-03",
+    "date": "2027-05-17",
     "slug": "weighted-blanket-untuk-anak-autis-manfaat",
     "file": "artikel/weighted-blanket-untuk-anak-autis-manfaat.html",
     "title": "Weighted Blanket Untuk Anak Autis Manfaat",
@@ -2500,7 +3090,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-03",
+    "date": "2027-05-18",
     "slug": "pandangan-budaya-jawa-tentang-anak-berkebutuhan-khusus",
     "file": "artikel/pandangan-budaya-jawa-tentang-anak-berkebutuhan-khusus.html",
     "title": "Pandangan Budaya Jawa Tentang Anak Berkebutuhan Khusus",
@@ -2510,7 +3100,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-03",
+    "date": "2027-05-19",
     "slug": "camouflaging-autisme-pada-wanita-penelitian",
     "file": "artikel/camouflaging-autisme-pada-wanita-penelitian.html",
     "title": "Camouflaging Autisme Pada Wanita Penelitian",
@@ -2520,7 +3110,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-04",
+    "date": "2027-05-20",
     "slug": "bagaimana-ciri-ciri-anak-adhd",
     "file": "artikel/bagaimana-ciri-ciri-anak-adhd.html",
     "title": "Bagaimana Ciri-ciri Anak Adhd",
@@ -2530,7 +3120,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-04",
+    "date": "2027-05-21",
     "slug": "transition-planning-anak-disabilitas-pasca-sekolah",
     "file": "artikel/transition-planning-anak-disabilitas-pasca-sekolah.html",
     "title": "Transition Planning Anak Disabilitas Pasca Sekolah",
@@ -2540,7 +3130,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-04",
+    "date": "2027-05-22",
     "slug": "pet-therapy-anak-autis",
     "file": "artikel/pet-therapy-anak-autis.html",
     "title": "Pet Therapy Anak Autis",
@@ -2550,7 +3140,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-05",
+    "date": "2027-05-23",
     "slug": "auditory-processing-disorder-anak",
     "file": "artikel/auditory-processing-disorder-anak.html",
     "title": "Auditory Processing Disorder Anak",
@@ -2560,7 +3150,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-05",
+    "date": "2027-05-24",
     "slug": "apa-bedanya-slb-b-dan-c",
     "file": "artikel/apa-bedanya-slb-b-dan-c.html",
     "title": "Apa Bedanya Slb B Dan C",
@@ -2570,7 +3160,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-05",
+    "date": "2027-05-25",
     "slug": "virtual-reality-untuk-terapi-anak-abk",
     "file": "artikel/virtual-reality-untuk-terapi-anak-abk.html",
     "title": "Virtual Reality Untuk Terapi Anak Abk",
@@ -2580,7 +3170,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-06",
+    "date": "2027-05-26",
     "slug": "working-memory-anak-adhd-cara-melatih",
     "file": "artikel/working-memory-anak-adhd-cara-melatih.html",
     "title": "Working Memory Anak Adhd Cara Melatih",
@@ -2590,7 +3180,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-06",
+    "date": "2027-05-27",
     "slug": "teknik-makaton-untuk-komunikasi-anak",
     "file": "artikel/teknik-makaton-untuk-komunikasi-anak.html",
     "title": "Teknik Makaton Untuk Komunikasi Anak",
@@ -2600,7 +3190,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-06",
+    "date": "2027-05-28",
     "slug": "apa-itu-pembelajaran-abk",
     "file": "artikel/apa-itu-pembelajaran-abk.html",
     "title": "Apa Itu Pembelajaran Abk",
@@ -2610,7 +3200,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-07",
+    "date": "2027-05-29",
     "slug": "is-my-14-month-old-delayed",
     "file": "artikel/is-my-14-month-old-delayed.html",
     "title": "Is My 14 Month Old Delayed",
@@ -2620,7 +3210,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-07",
+    "date": "2027-05-30",
     "slug": "apa-contoh-dari-terapi-bermain",
     "file": "artikel/apa-contoh-dari-terapi-bermain.html",
     "title": "Apa Contoh Dari Terapi Bermain",
@@ -2630,7 +3220,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-07",
+    "date": "2027-05-31",
     "slug": "sand-play-therapy-anak",
     "file": "artikel/sand-play-therapy-anak.html",
     "title": "Sand Play Therapy Anak",
@@ -2640,7 +3230,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-09",
+    "date": "2027-06-01",
     "slug": "randomized-controlled-trial-terapi-autisme",
     "file": "artikel/randomized-controlled-trial-terapi-autisme.html",
     "title": "Randomized Controlled Trial Terapi Autisme",
@@ -2650,7 +3240,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-09",
+    "date": "2027-06-02",
     "slug": "mengapa-pendidikan-inklusi-penting",
     "file": "artikel/mengapa-pendidikan-inklusi-penting.html",
     "title": "Mengapa Pendidikan Inklusi Penting",
@@ -2660,7 +3250,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-09",
+    "date": "2027-06-03",
     "slug": "hydrotherapy-anak-cerebral-palsy",
     "file": "artikel/hydrotherapy-anak-cerebral-palsy.html",
     "title": "Hydrotherapy Anak Cerebral Palsy",
@@ -2670,7 +3260,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-10",
+    "date": "2027-06-04",
     "slug": "kartu-indonesia-pintar-abk-cara-daftar",
     "file": "artikel/kartu-indonesia-pintar-abk-cara-daftar.html",
     "title": "Kartu Indonesia Pintar Abk Cara Daftar",
@@ -2680,7 +3270,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-10",
+    "date": "2027-06-05",
     "slug": "pubertas-dini-anak-abk-penanganan",
     "file": "artikel/pubertas-dini-anak-abk-penanganan.html",
     "title": "Pubertas Dini Anak Abk Penanganan",
@@ -2690,7 +3280,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-10",
+    "date": "2027-06-06",
     "slug": "sekolah-khusus-autis-di-indonesia",
     "file": "artikel/sekolah-khusus-autis-di-indonesia.html",
     "title": "Sekolah Khusus Autis Di Indonesia",
@@ -2700,7 +3290,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-11",
+    "date": "2027-06-07",
     "slug": "alat-bantu-jalan-walker-anak-cerebral-palsy",
     "file": "artikel/alat-bantu-jalan-walker-anak-cerebral-palsy.html",
     "title": "Alat Bantu Jalan Walker Anak Cerebral Palsy",
@@ -2710,7 +3300,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-11",
+    "date": "2027-06-08",
     "slug": "neurodiversity-movement-apa-itu",
     "file": "artikel/neurodiversity-movement-apa-itu.html",
     "title": "Neurodiversity Movement Apa Itu",
@@ -2720,7 +3310,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-11",
+    "date": "2027-06-09",
     "slug": "tahapan-perkembangan-bicara-anak-normal-vs-delay",
     "file": "artikel/tahapan-perkembangan-bicara-anak-normal-vs-delay.html",
     "title": "Tahapan Perkembangan Bicara Anak Normal Vs Delay",
@@ -2730,7 +3320,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-12",
+    "date": "2027-06-10",
     "slug": "latihan-motorik-kasar-anak-cerebral-palsy",
     "file": "artikel/latihan-motorik-kasar-anak-cerebral-palsy.html",
     "title": "Latihan Motorik Kasar Anak Cerebral Palsy",
@@ -2740,7 +3330,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-12",
+    "date": "2027-06-11",
     "slug": "perkembangan-sosial-emosional-anak-autis",
     "file": "artikel/perkembangan-sosial-emosional-anak-autis.html",
     "title": "Perkembangan Sosial Emosional Anak Autis",
@@ -2750,7 +3340,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-12",
+    "date": "2027-06-12",
     "slug": "adaptive-behavior-anak-tunagrahita-melatih",
     "file": "artikel/adaptive-behavior-anak-tunagrahita-melatih.html",
     "title": "Adaptive Behavior Anak Tunagrahita Melatih",
@@ -2760,7 +3350,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-13",
+    "date": "2027-06-13",
     "slug": "mitos-dan-fakta-autisme-di-indonesia",
     "file": "artikel/mitos-dan-fakta-autisme-di-indonesia.html",
     "title": "Mitos Dan Fakta Autisme Di Indonesia",
@@ -2770,7 +3360,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-13",
+    "date": "2027-06-14",
     "slug": "sheltered-workshop-untuk-penyandang-disabilitas",
     "file": "artikel/sheltered-workshop-untuk-penyandang-disabilitas.html",
     "title": "Sheltered Workshop Untuk Penyandang Disabilitas",
@@ -2780,7 +3370,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-13",
+    "date": "2027-06-15",
     "slug": "apa-saja-4-tahap-perkembangan-menurut-piaget",
     "file": "artikel/apa-saja-4-tahap-perkembangan-menurut-piaget.html",
     "title": "Apa Saja 4 Tahap Perkembangan Menurut Piaget",
@@ -2790,7 +3380,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-14",
+    "date": "2027-06-16",
     "slug": "day-program-untuk-dewasa-disabilitas",
     "file": "artikel/day-program-untuk-dewasa-disabilitas.html",
     "title": "Day Program Untuk Dewasa Disabilitas",
@@ -2800,7 +3390,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-14",
+    "date": "2027-06-17",
     "slug": "perkembangan-kognitif-anak-tunagrahita",
     "file": "artikel/perkembangan-kognitif-anak-tunagrahita.html",
     "title": "Perkembangan Kognitif Anak Tunagrahita",
@@ -2810,7 +3400,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-14",
+    "date": "2027-06-18",
     "slug": "sensory-swing-terapi-anak",
     "file": "artikel/sensory-swing-terapi-anak.html",
     "title": "Sensory Swing Terapi Anak",
@@ -2820,7 +3410,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-16",
+    "date": "2027-06-19",
     "slug": "manfaat-terapi-seni-rupa-untuk-anak-abk",
     "file": "artikel/manfaat-terapi-seni-rupa-untuk-anak-abk.html",
     "title": "Manfaat Terapi Seni Rupa Untuk Anak Abk",
@@ -2830,7 +3420,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-16",
+    "date": "2027-06-20",
     "slug": "daftar-yayasan-anak-berkebutuhan-khusus-di-indonesia",
     "file": "artikel/daftar-yayasan-anak-berkebutuhan-khusus-di-indonesia.html",
     "title": "Daftar Yayasan Anak Berkebutuhan Khusus Di Indonesia",
@@ -2840,7 +3430,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-16",
+    "date": "2027-06-21",
     "slug": "jaminan-sosial-penyandang-disabilitas-di-indonesia",
     "file": "artikel/jaminan-sosial-penyandang-disabilitas-di-indonesia.html",
     "title": "Jaminan Sosial Penyandang Disabilitas Di Indonesia",
@@ -2850,7 +3440,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-17",
+    "date": "2027-06-22",
     "slug": "rapor-anak-berkebutuhan-khusus",
     "file": "artikel/rapor-anak-berkebutuhan-khusus.html",
     "title": "Rapor Anak Berkebutuhan Khusus",
@@ -2860,7 +3450,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-17",
+    "date": "2027-06-23",
     "slug": "berenang-untuk-anak-autis-manfaat",
     "file": "artikel/berenang-untuk-anak-autis-manfaat.html",
     "title": "Berenang Untuk Anak Autis Manfaat",
@@ -2870,7 +3460,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-17",
+    "date": "2027-06-24",
     "slug": "probiotik-untuk-anak-autis",
     "file": "artikel/probiotik-untuk-anak-autis.html",
     "title": "Probiotik Untuk Anak Autis",
@@ -2880,7 +3470,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-18",
+    "date": "2027-06-25",
     "slug": "low-functioning-autism-adalah",
     "file": "artikel/low-functioning-autism-adalah.html",
     "title": "Low Functioning Autism Adalah",
@@ -2890,7 +3480,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-18",
+    "date": "2027-06-26",
     "slug": "apa-saja-contoh-keterampilan-sosial",
     "file": "artikel/apa-saja-contoh-keterampilan-sosial.html",
     "title": "Apa Saja Contoh Keterampilan Sosial",
@@ -2900,7 +3490,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-18",
+    "date": "2027-06-27",
     "slug": "perbedaan-autisme-level-1-dan-level-2",
     "file": "artikel/perbedaan-autisme-level-1-dan-level-2.html",
     "title": "Perbedaan Autisme Level 1 Dan Level 2",
@@ -2910,7 +3500,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-19",
+    "date": "2027-06-28",
     "slug": "mindfulness-untuk-anak-adhd",
     "file": "artikel/mindfulness-untuk-anak-adhd.html",
     "title": "Mindfulness Untuk Anak Adhd",
@@ -2920,7 +3510,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-19",
+    "date": "2027-06-29",
     "slug": "early-start-denver-model-esdm",
     "file": "artikel/early-start-denver-model-esdm.html",
     "title": "Early Start Denver Model Esdm",
@@ -2930,7 +3520,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-19",
+    "date": "2027-06-30",
     "slug": "drama-therapy-untuk-anak-berkebutuhan-khusus",
     "file": "artikel/drama-therapy-untuk-anak-berkebutuhan-khusus.html",
     "title": "Drama Therapy Untuk Anak Berkebutuhan Khusus",
@@ -2940,7 +3530,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-20",
+    "date": "2027-07-01",
     "slug": "yayasan-anak-autis-di-jogja",
     "file": "artikel/yayasan-anak-autis-di-jogja.html",
     "title": "Yayasan Anak Autis Di Jogja",
@@ -2950,7 +3540,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-20",
+    "date": "2027-07-02",
     "slug": "aktivitas-terapi-okupasi-di-rumah",
     "file": "artikel/aktivitas-terapi-okupasi-di-rumah.html",
     "title": "Aktivitas Terapi Okupasi Di Rumah",
@@ -2960,7 +3550,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-20",
+    "date": "2027-07-03",
     "slug": "growth-chart-anak-down-syndrome",
     "file": "artikel/growth-chart-anak-down-syndrome.html",
     "title": "Growth Chart Anak Down Syndrome",
@@ -2970,7 +3560,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-21",
+    "date": "2027-07-04",
     "slug": "tujuan-terapi-bermain-anak",
     "file": "artikel/tujuan-terapi-bermain-anak.html",
     "title": "Tujuan Terapi Bermain Anak",
@@ -2980,7 +3570,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-21",
+    "date": "2027-07-05",
     "slug": "trust-fund-untuk-anak-disabilitas-di-indonesia",
     "file": "artikel/trust-fund-untuk-anak-disabilitas-di-indonesia.html",
     "title": "Trust Fund Untuk Anak Disabilitas Di Indonesia",
@@ -2990,7 +3580,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-21",
+    "date": "2027-07-06",
     "slug": "caregiver-fatigue-orang-tua-anak-abk",
     "file": "artikel/caregiver-fatigue-orang-tua-anak-abk.html",
     "title": "Caregiver Fatigue Orang Tua Anak Abk",
@@ -3000,7 +3590,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-23",
+    "date": "2027-07-07",
     "slug": "terapi-apa-saja-yang-menggunakan-pola-khusus",
     "file": "artikel/terapi-apa-saja-yang-menggunakan-pola-khusus.html",
     "title": "Terapi Apa Saja Yang Menggunakan Pola Khusus",
@@ -3010,7 +3600,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-23",
+    "date": "2027-07-08",
     "slug": "strategi-mengajar-anak-disleksia-di-kelas",
     "file": "artikel/strategi-mengajar-anak-disleksia-di-kelas.html",
     "title": "Strategi Mengajar Anak Disleksia Di Kelas",
@@ -3020,7 +3610,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-23",
+    "date": "2027-07-09",
     "slug": "what-does-a-milestone-age-mean",
     "file": "artikel/what-does-a-milestone-age-mean.html",
     "title": "What Does A Milestone Age Mean",
@@ -3030,7 +3620,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-24",
+    "date": "2027-07-10",
     "slug": "apakah-zakat-boleh-diberikan-untuk-pendidikan",
     "file": "artikel/apakah-zakat-boleh-diberikan-untuk-pendidikan.html",
     "title": "Apakah Zakat Boleh Diberikan Untuk Pendidikan",
@@ -3040,7 +3630,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-24",
+    "date": "2027-07-11",
     "slug": "berapa-biaya-terapi-psikolog-anak",
     "file": "artikel/berapa-biaya-terapi-psikolog-anak.html",
     "title": "Berapa Biaya Terapi Psikolog Anak",
@@ -3050,7 +3640,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-24",
+    "date": "2027-07-12",
     "slug": "anak-adhd-terlihat-pada-usia-berapa",
     "file": "artikel/anak-adhd-terlihat-pada-usia-berapa.html",
     "title": "Anak Adhd Terlihat Pada Usia Berapa",
@@ -3060,7 +3650,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-25",
+    "date": "2027-07-13",
     "slug": "hak-hak-anak-disabilitas",
     "file": "artikel/hak-hak-anak-disabilitas.html",
     "title": "Hak Hak Anak Disabilitas",
@@ -3070,7 +3660,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-25",
+    "date": "2027-07-14",
     "slug": "gamification-dalam-terapi-anak-abk",
     "file": "artikel/gamification-dalam-terapi-anak-abk.html",
     "title": "Gamification Dalam Terapi Anak Abk",
@@ -3080,7 +3670,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-25",
+    "date": "2027-07-15",
     "slug": "epigenetik-dan-risiko-autisme",
     "file": "artikel/epigenetik-dan-risiko-autisme.html",
     "title": "Epigenetik Dan Risiko Autisme",
@@ -3090,7 +3680,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-26",
+    "date": "2027-07-16",
     "slug": "gps-tracker-untuk-anak-autis-elopement",
     "file": "artikel/gps-tracker-untuk-anak-autis-elopement.html",
     "title": "Gps Tracker Untuk Anak Autis Elopement",
@@ -3100,7 +3690,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-26",
+    "date": "2027-07-17",
     "slug": "tic-disorder-pada-anak-ciri-dan-terapi",
     "file": "artikel/tic-disorder-pada-anak-ciri-dan-terapi.html",
     "title": "Tic Disorder Pada Anak Ciri Dan Terapi",
@@ -3110,7 +3700,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-26",
+    "date": "2027-07-18",
     "slug": "pelatihan-vokasional-anak-disabilitas-intelektual",
     "file": "artikel/pelatihan-vokasional-anak-disabilitas-intelektual.html",
     "title": "Pelatihan Vokasional Anak Disabilitas Intelektual",
@@ -3120,7 +3710,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-27",
+    "date": "2027-07-19",
     "slug": "berapa-uang-pkh-untuk-disabilitas",
     "file": "artikel/berapa-uang-pkh-untuk-disabilitas.html",
     "title": "Berapa Uang Pkh Untuk Disabilitas",
@@ -3130,7 +3720,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-27",
+    "date": "2027-07-20",
     "slug": "sleep-hygiene-untuk-anak-berkebutuhan-khusus",
     "file": "artikel/sleep-hygiene-untuk-anak-berkebutuhan-khusus.html",
     "title": "Sleep Hygiene Untuk Anak Berkebutuhan Khusus",
@@ -3140,7 +3730,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-27",
+    "date": "2027-07-21",
     "slug": "bantuan-pkh-untuk-anak-disabilitas-syarat",
     "file": "artikel/bantuan-pkh-untuk-anak-disabilitas-syarat.html",
     "title": "Bantuan Pkh Untuk Anak Disabilitas Syarat",
@@ -3150,7 +3740,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-28",
+    "date": "2027-07-22",
     "slug": "akomodasi-ujian-nasional-anak-disabilitas",
     "file": "artikel/akomodasi-ujian-nasional-anak-disabilitas.html",
     "title": "Akomodasi Ujian Nasional Anak Disabilitas",
@@ -3160,7 +3750,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-28",
+    "date": "2027-07-23",
     "slug": "splint-dan-ortosis-untuk-anak-cp",
     "file": "artikel/splint-dan-ortosis-untuk-anak-cp.html",
     "title": "Splint Dan Ortosis Untuk Anak Cp",
@@ -3170,7 +3760,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-28",
+    "date": "2027-07-24",
     "slug": "oppositional-defiant-disorder",
     "file": "artikel/oppositional-defiant-disorder.html",
     "title": "Oppositional Defiant Disorder",
@@ -3180,7 +3770,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-30",
+    "date": "2027-07-25",
     "slug": "vaksinasi-untuk-anak-berkebutuhan-khusus-jadwal",
     "file": "artikel/vaksinasi-untuk-anak-berkebutuhan-khusus-jadwal.html",
     "title": "Vaksinasi Untuk Anak Berkebutuhan Khusus Jadwal",
@@ -3190,7 +3780,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-30",
+    "date": "2027-07-26",
     "slug": "teacch-method-untuk-autisme",
     "file": "artikel/teacch-method-untuk-autisme.html",
     "title": "Teacch Method Untuk Autisme",
@@ -3200,7 +3790,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-11-30",
+    "date": "2027-07-27",
     "slug": "wawancara-kerja-tips-untuk-penyandang-disabilitas",
     "file": "artikel/wawancara-kerja-tips-untuk-penyandang-disabilitas.html",
     "title": "Wawancara Kerja Tips Untuk Penyandang Disabilitas",
@@ -3210,7 +3800,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-01",
+    "date": "2027-07-28",
     "slug": "perbedaan-terapi-aba-dan-floor-time",
     "file": "artikel/perbedaan-terapi-aba-dan-floor-time.html",
     "title": "Perbedaan Terapi Aba Dan Floor Time",
@@ -3220,7 +3810,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-01",
+    "date": "2027-07-29",
     "slug": "terapi-baru-untuk-adhd-2026",
     "file": "artikel/terapi-baru-untuk-adhd-2026.html",
     "title": "Terapi Baru Untuk Adhd 2026",
@@ -3230,7 +3820,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-01",
+    "date": "2027-07-30",
     "slug": "cara-melatih-toilet-training-anak-abk",
     "file": "artikel/cara-melatih-toilet-training-anak-abk.html",
     "title": "Cara Melatih Toilet Training Anak Abk",
@@ -3240,7 +3830,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-02",
+    "date": "2027-07-31",
     "slug": "recreational-activities-untuk-remaja-disabilitas",
     "file": "artikel/recreational-activities-untuk-remaja-disabilitas.html",
     "title": "Recreational Activities Untuk Remaja Disabilitas",
@@ -3250,7 +3840,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-02",
+    "date": "2027-08-01",
     "slug": "executive-function-pada-anak-adhd",
     "file": "artikel/executive-function-pada-anak-adhd.html",
     "title": "Executive Function Pada Anak Adhd",
@@ -3260,7 +3850,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-02",
+    "date": "2027-08-02",
     "slug": "7-sensory-system-apa-saja",
     "file": "artikel/7-sensory-system-apa-saja.html",
     "title": "7 Sensory System Apa Saja",
@@ -3270,7 +3860,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-03",
+    "date": "2027-08-03",
     "slug": "jumlah-sekolah-inklusi-di-yogyakarta",
     "file": "artikel/jumlah-sekolah-inklusi-di-yogyakarta.html",
     "title": "Jumlah Sekolah Inklusi Di Yogyakarta",
@@ -3280,7 +3870,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-03",
+    "date": "2027-08-04",
     "slug": "checklist-perkembangan-anak-4-tahun",
     "file": "artikel/checklist-perkembangan-anak-4-tahun.html",
     "title": "Checklist Perkembangan Anak 4 Tahun",
@@ -3290,7 +3880,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-03",
+    "date": "2027-08-05",
     "slug": "terapi-okupasi-untuk-kemandirian-anak-abk",
     "file": "artikel/terapi-okupasi-untuk-kemandirian-anak-abk.html",
     "title": "Terapi Okupasi Untuk Kemandirian Anak Abk",
@@ -3300,7 +3890,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-04",
+    "date": "2027-08-06",
     "slug": "sindrom-fragile-x",
     "file": "artikel/sindrom-fragile-x.html",
     "title": "Sindrom Fragile X",
@@ -3310,7 +3900,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-04",
+    "date": "2027-08-07",
     "slug": "evidence-based-practice-pendidikan-khusus",
     "file": "artikel/evidence-based-practice-pendidikan-khusus.html",
     "title": "Evidence Based Practice Pendidikan Khusus",
@@ -3320,7 +3910,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-04",
+    "date": "2027-08-08",
     "slug": "tes-iq-anak-apa-saja",
     "file": "artikel/tes-iq-anak-apa-saja.html",
     "title": "Tes Iq Anak Apa Saja",
@@ -3330,7 +3920,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-05",
+    "date": "2027-08-09",
     "slug": "bagaimana-cara-mengidentifikasi-keterlambatan-perkembangan",
     "file": "artikel/bagaimana-cara-mengidentifikasi-keterlambatan-perkembangan.html",
     "title": "Bagaimana Cara Mengidentifikasi Keterlambatan Perkembangan",
@@ -3340,7 +3930,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-05",
+    "date": "2027-08-10",
     "slug": "noise-cancelling-headphones-anak-autis",
     "file": "artikel/noise-cancelling-headphones-anak-autis.html",
     "title": "Noise Cancelling Headphones Anak Autis",
@@ -3350,7 +3940,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-05",
+    "date": "2027-08-11",
     "slug": "problem-solving-skills-anak-abk",
     "file": "artikel/problem-solving-skills-anak-abk.html",
     "title": "Problem Solving Skills Anak Abk",
@@ -3360,7 +3950,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-07",
+    "date": "2027-08-12",
     "slug": "independent-living-skills-anak-autis-dewasa",
     "file": "artikel/independent-living-skills-anak-autis-dewasa.html",
     "title": "Independent Living Skills Anak Autis Dewasa",
@@ -3370,7 +3960,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-07",
+    "date": "2027-08-13",
     "slug": "epilepsi-pada-anak-autis-penanganan",
     "file": "artikel/epilepsi-pada-anak-autis-penanganan.html",
     "title": "Epilepsi Pada Anak Autis Penanganan",
@@ -3380,7 +3970,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-07",
+    "date": "2027-08-14",
     "slug": "inpres-nomor-10-tahun-2023-disabilitas",
     "file": "artikel/inpres-nomor-10-tahun-2023-disabilitas.html",
     "title": "Inpres Nomor 10 Tahun 2023 Disabilitas",
@@ -3390,7 +3980,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-08",
+    "date": "2027-08-15",
     "slug": "animal-assisted-therapy-untuk-anak-autis",
     "file": "artikel/animal-assisted-therapy-untuk-anak-autis.html",
     "title": "Animal Assisted Therapy Untuk Anak Autis",
@@ -3400,7 +3990,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-08",
+    "date": "2027-08-16",
     "slug": "diet-bebas-kasein-gluten-untuk-anak-autis-manfaat",
     "file": "artikel/diet-bebas-kasein-gluten-untuk-anak-autis-manfaat.html",
     "title": "Diet Bebas Kasein Gluten Untuk Anak Autis Manfaat",
@@ -3410,7 +4000,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-08",
+    "date": "2027-08-17",
     "slug": "masalah-jantung-bawaan-anak-down-syndrome",
     "file": "artikel/masalah-jantung-bawaan-anak-down-syndrome.html",
     "title": "Masalah Jantung Bawaan Anak Down Syndrome",
@@ -3420,7 +4010,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-09",
+    "date": "2027-08-18",
     "slug": "apakah-anak-dengan-gangguan-sensorik-bisa-sembuh",
     "file": "artikel/apakah-anak-dengan-gangguan-sensorik-bisa-sembuh.html",
     "title": "Apakah Anak Dengan Gangguan Sensorik Bisa Sembuh",
@@ -3430,7 +4020,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-09",
+    "date": "2027-08-19",
     "slug": "permendikbud-pendidikan-inklusi",
     "file": "artikel/permendikbud-pendidikan-inklusi.html",
     "title": "Permendikbud Pendidikan Inklusi",
@@ -3440,7 +4030,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-09",
+    "date": "2027-08-20",
     "slug": "cara-mendaftarkan-anak-ke-slb",
     "file": "artikel/cara-mendaftarkan-anak-ke-slb.html",
     "title": "Cara Mendaftarkan Anak Ke Slb",
@@ -3450,7 +4040,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-10",
+    "date": "2027-08-21",
     "slug": "terapi-kuda-untuk-anak-abk",
     "file": "artikel/terapi-kuda-untuk-anak-abk.html",
     "title": "Terapi Kuda Untuk Anak Abk",
@@ -3460,7 +4050,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-10",
+    "date": "2027-08-22",
     "slug": "berapa-lama-terapi-okupasi-anak",
     "file": "artikel/berapa-lama-terapi-okupasi-anak.html",
     "title": "Berapa Lama Terapi Okupasi Anak",
@@ -3470,7 +4060,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-10",
+    "date": "2027-08-23",
     "slug": "bermain-bersama-anak-autis",
     "file": "artikel/bermain-bersama-anak-autis.html",
     "title": "Bermain Bersama Anak Autis",
@@ -3480,7 +4070,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-11",
+    "date": "2027-08-24",
     "slug": "jika-anak-hiperaktif-apa-yang-harus-dilakukan",
     "file": "artikel/jika-anak-hiperaktif-apa-yang-harus-dilakukan.html",
     "title": "Jika Anak Hiperaktif, Apa Yang Harus Dilakukan",
@@ -3490,7 +4080,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-11",
+    "date": "2027-08-25",
     "slug": "psikolog-anak-di-medan-terbaik",
     "file": "artikel/psikolog-anak-di-medan-terbaik.html",
     "title": "Psikolog Anak Di Medan Terbaik",
@@ -3500,7 +4090,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-11",
+    "date": "2027-08-26",
     "slug": "software-text-to-speech-untuk-abk",
     "file": "artikel/software-text-to-speech-untuk-abk.html",
     "title": "Software Text To Speech Untuk Abk",
@@ -3510,7 +4100,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-12",
+    "date": "2027-08-27",
     "slug": "ramadhan-anak-berkebutuhan-khusus",
     "file": "artikel/ramadhan-anak-berkebutuhan-khusus.html",
     "title": "Ramadhan Anak Berkebutuhan Khusus",
@@ -3520,7 +4110,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-12",
+    "date": "2027-08-28",
     "slug": "apa-ciri-khas-anak-dengan-asd-dalam-interaksi-sosial",
     "file": "artikel/apa-ciri-khas-anak-dengan-asd-dalam-interaksi-sosial.html",
     "title": "Apa Ciri Khas Anak Dengan Asd Dalam Interaksi Sosial",
@@ -3530,7 +4120,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-12",
+    "date": "2027-08-29",
     "slug": "mandi-dan-grooming-anak-cerebral-palsy",
     "file": "artikel/mandi-dan-grooming-anak-cerebral-palsy.html",
     "title": "Mandi Dan Grooming Anak Cerebral Palsy",
@@ -3540,7 +4130,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-14",
+    "date": "2027-08-30",
     "slug": "cara-mengajar-anak-autis-berbicara",
     "file": "artikel/cara-mengajar-anak-autis-berbicara.html",
     "title": "Cara Mengajar Anak Autis Berbicara",
@@ -3550,7 +4140,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-14",
+    "date": "2027-08-31",
     "slug": "perbedaan-tantrum-dan-meltdown-autis",
     "file": "artikel/perbedaan-tantrum-dan-meltdown-autis.html",
     "title": "Perbedaan Tantrum Dan Meltdown Autis",
@@ -3560,7 +4150,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-14",
+    "date": "2027-09-01",
     "slug": "ocd-pada-anak-berkebutuhan-khusus",
     "file": "artikel/ocd-pada-anak-berkebutuhan-khusus.html",
     "title": "Ocd Pada Anak Berkebutuhan Khusus",
@@ -3570,7 +4160,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-15",
+    "date": "2027-09-02",
     "slug": "apa-saja-5-tahapan-terapi-bermain",
     "file": "artikel/apa-saja-5-tahapan-terapi-bermain.html",
     "title": "Apa Saja 5 Tahapan Terapi Bermain",
@@ -3580,7 +4170,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-15",
+    "date": "2027-09-03",
     "slug": "peran-ayah-dalam-pengasuhan-anak-abk",
     "file": "artikel/peran-ayah-dalam-pengasuhan-anak-abk.html",
     "title": "Peran Ayah Dalam Pengasuhan Anak Abk",
@@ -3590,7 +4180,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-15",
+    "date": "2027-09-04",
     "slug": "disgrafia-motorik-dan-linguistik",
     "file": "artikel/disgrafia-motorik-dan-linguistik.html",
     "title": "Disgrafia Motorik Dan Linguistik",
@@ -3600,7 +4190,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-16",
+    "date": "2027-09-05",
     "slug": "apakah-anak-penderita-cerebral-palsy-bisa-sembuh",
     "file": "artikel/apakah-anak-penderita-cerebral-palsy-bisa-sembuh.html",
     "title": "Apakah Anak Penderita Cerebral Palsy Bisa Sembuh",
@@ -3610,7 +4200,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-16",
+    "date": "2027-09-06",
     "slug": "perbedaan-speech-delay-dan-autis",
     "file": "artikel/perbedaan-speech-delay-dan-autis.html",
     "title": "Perbedaan Speech Delay Dan Autis",
@@ -3620,7 +4210,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-16",
+    "date": "2027-09-07",
     "slug": "olahraga-untuk-anak-berkebutuhan-khusus-pilihan",
     "file": "artikel/olahraga-untuk-anak-berkebutuhan-khusus-pilihan.html",
     "title": "Olahraga Untuk Anak Berkebutuhan Khusus Pilihan",
@@ -3630,7 +4220,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-17",
+    "date": "2027-09-08",
     "slug": "omega-3-anak-autis",
     "file": "artikel/omega-3-anak-autis.html",
     "title": "Omega 3 Anak Autis",
@@ -3640,7 +4230,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-17",
+    "date": "2027-09-09",
     "slug": "yoga-untuk-anak-berkebutuhan-khusus",
     "file": "artikel/yoga-untuk-anak-berkebutuhan-khusus.html",
     "title": "Yoga Untuk Anak Berkebutuhan Khusus",
@@ -3650,7 +4240,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-17",
+    "date": "2027-09-10",
     "slug": "kegiatan-bersama-sibling-dan-anak-abk",
     "file": "artikel/kegiatan-bersama-sibling-dan-anak-abk.html",
     "title": "Kegiatan Bersama Sibling Dan Anak Abk",
@@ -3660,7 +4250,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-18",
+    "date": "2027-09-11",
     "slug": "sindrom-williams-pada-anak",
     "file": "artikel/sindrom-williams-pada-anak.html",
     "title": "Sindrom Williams Pada Anak",
@@ -3670,7 +4260,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-18",
+    "date": "2027-09-12",
     "slug": "gifted-child-berkebutuhan-khusus",
     "file": "artikel/gifted-child-berkebutuhan-khusus.html",
     "title": "Gifted Child Berkebutuhan Khusus",
@@ -3680,7 +4270,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-18",
+    "date": "2027-09-13",
     "slug": "adhd-tipe-kombinasi-pada-anak",
     "file": "artikel/adhd-tipe-kombinasi-pada-anak.html",
     "title": "Adhd Tipe Kombinasi Pada Anak",
@@ -3690,7 +4280,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-19",
+    "date": "2027-09-14",
     "slug": "skrining-perkembangan-anak-kpsp",
     "file": "artikel/skrining-perkembangan-anak-kpsp.html",
     "title": "Skrining Perkembangan Anak Kpsp",
@@ -3700,7 +4290,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-19",
+    "date": "2027-09-15",
     "slug": "cara-membuat-program-pembelajaran-individual",
     "file": "artikel/cara-membuat-program-pembelajaran-individual.html",
     "title": "Cara Membuat Program Pembelajaran Individual",
@@ -3710,7 +4300,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-19",
+    "date": "2027-09-16",
     "slug": "buddy-system-untuk-anak-abk-di-sekolah",
     "file": "artikel/buddy-system-untuk-anak-abk-di-sekolah.html",
     "title": "Buddy System Untuk Anak Abk Di Sekolah",
@@ -3720,7 +4310,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-21",
+    "date": "2027-09-17",
     "slug": "evaluasi-ppi-anak-berkebutuhan-khusus",
     "file": "artikel/evaluasi-ppi-anak-berkebutuhan-khusus.html",
     "title": "Evaluasi Ppi Anak Berkebutuhan Khusus",
@@ -3730,7 +4320,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-21",
+    "date": "2027-09-18",
     "slug": "guardianship-untuk-anak-disabilitas-dewasa",
     "file": "artikel/guardianship-untuk-anak-disabilitas-dewasa.html",
     "title": "Guardianship Untuk Anak Disabilitas Dewasa",
@@ -3740,7 +4330,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-21",
+    "date": "2027-09-19",
     "slug": "karir-yang-cocok-untuk-orang-adhd",
     "file": "artikel/karir-yang-cocok-untuk-orang-adhd.html",
     "title": "Karir Yang Cocok Untuk Orang Adhd",
@@ -3750,7 +4340,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-22",
+    "date": "2027-09-20",
     "slug": "terapi-visual-untuk-anak-autis",
     "file": "artikel/terapi-visual-untuk-anak-autis.html",
     "title": "Terapi Visual Untuk Anak Autis",
@@ -3760,7 +4350,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-22",
+    "date": "2027-09-21",
     "slug": "cara-menjadi-guru-pendamping-khusus",
     "file": "artikel/cara-menjadi-guru-pendamping-khusus.html",
     "title": "Cara Menjadi Guru Pendamping Khusus",
@@ -3770,7 +4360,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-22",
+    "date": "2027-09-22",
     "slug": "pusat-layanan-autis-di-bali",
     "file": "artikel/pusat-layanan-autis-di-bali.html",
     "title": "Pusat Layanan Autis Di Bali",
@@ -3780,7 +4370,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-23",
+    "date": "2027-09-23",
     "slug": "anxiety-disorder-pada-anak-abk",
     "file": "artikel/anxiety-disorder-pada-anak-abk.html",
     "title": "Anxiety Disorder Pada Anak Abk",
@@ -3790,7 +4380,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-23",
+    "date": "2027-09-24",
     "slug": "atlet-penyandang-disabilitas-indonesia",
     "file": "artikel/atlet-penyandang-disabilitas-indonesia.html",
     "title": "Atlet Penyandang Disabilitas Indonesia",
@@ -3800,7 +4390,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-23",
+    "date": "2027-09-25",
     "slug": "kapan-anak-harus-dibawa-ke-psikolog-anak",
     "file": "artikel/kapan-anak-harus-dibawa-ke-psikolog-anak.html",
     "title": "Kapan Anak Harus Dibawa Ke Psikolog Anak",
@@ -3810,7 +4400,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-24",
+    "date": "2027-09-26",
     "slug": "terapi-craniosacral-untuk-anak-autis",
     "file": "artikel/terapi-craniosacral-untuk-anak-autis.html",
     "title": "Terapi Craniosacral Untuk Anak Autis",
@@ -3820,7 +4410,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-24",
+    "date": "2027-09-27",
     "slug": "bisakah-anak-anak-dengan-cerebral-palsy-menjalani-kehidupan-normal",
     "file": "artikel/bisakah-anak-anak-dengan-cerebral-palsy-menjalani-kehidupan-normal.html",
     "title": "Bisakah Anak-anak Dengan Cerebral Palsy Menjalani Kehidupan Normal",
@@ -3830,7 +4420,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-24",
+    "date": "2027-09-28",
     "slug": "apa-bedanya-slb-dan-inklusi",
     "file": "artikel/apa-bedanya-slb-dan-inklusi.html",
     "title": "Apa Bedanya Slb Dan Inklusi",
@@ -3840,7 +4430,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-25",
+    "date": "2027-09-29",
     "slug": "apa-saja-contoh-life-skills",
     "file": "artikel/apa-saja-contoh-life-skills.html",
     "title": "Apa Saja Contoh Life Skills",
@@ -3850,7 +4440,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-25",
+    "date": "2027-09-30",
     "slug": "perkembangan-literasi-anak-disabilitas",
     "file": "artikel/perkembangan-literasi-anak-disabilitas.html",
     "title": "Perkembangan Literasi Anak Disabilitas",
@@ -3860,7 +4450,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-25",
+    "date": "2027-10-01",
     "slug": "inspirasi-anak-berkebutuhan-khusus",
     "file": "artikel/inspirasi-anak-berkebutuhan-khusus.html",
     "title": "Inspirasi Anak Berkebutuhan Khusus",
@@ -3870,7 +4460,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-26",
+    "date": "2027-10-02",
     "slug": "homeschooling-untuk-anak-adhd-tips",
     "file": "artikel/homeschooling-untuk-anak-adhd-tips.html",
     "title": "Homeschooling Untuk Anak Adhd Tips",
@@ -3880,7 +4470,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-26",
+    "date": "2027-10-03",
     "slug": "terapi-perilaku-kognitif-cbt-untuk-anak",
     "file": "artikel/terapi-perilaku-kognitif-cbt-untuk-anak.html",
     "title": "Terapi Perilaku Kognitif Cbt Untuk Anak",
@@ -3890,7 +4480,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-26",
+    "date": "2027-10-04",
     "slug": "hari-anak-nasional-abk",
     "file": "artikel/hari-anak-nasional-abk.html",
     "title": "Hari Anak Nasional Abk",
@@ -3900,7 +4490,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-28",
+    "date": "2027-10-05",
     "slug": "terapi-perilaku-seperti-apa",
     "file": "artikel/terapi-perilaku-seperti-apa.html",
     "title": "Terapi Perilaku Seperti Apa",
@@ -3910,7 +4500,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-28",
+    "date": "2027-10-06",
     "slug": "perkembangan-apa-saja-yang-terjadi-di-fase-anak",
     "file": "artikel/perkembangan-apa-saja-yang-terjadi-di-fase-anak.html",
     "title": "Perkembangan Apa Saja Yang Terjadi Di Fase Anak",
@@ -3920,7 +4510,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-28",
+    "date": "2027-10-07",
     "slug": "perceraian-dan-anak-berkebutuhan-khusus",
     "file": "artikel/perceraian-dan-anak-berkebutuhan-khusus.html",
     "title": "Perceraian Dan Anak Berkebutuhan Khusus",
@@ -3930,7 +4520,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-29",
+    "date": "2027-10-08",
     "slug": "mengajar-anak-abk-belanja-di-supermarket",
     "file": "artikel/mengajar-anak-abk-belanja-di-supermarket.html",
     "title": "Mengajar Anak Abk Belanja Di Supermarket",
@@ -3940,7 +4530,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-29",
+    "date": "2027-10-09",
     "slug": "tahun-ajaran-baru-anak-abk",
     "file": "artikel/tahun-ajaran-baru-anak-abk.html",
     "title": "Tahun Ajaran Baru Anak Abk",
@@ -3950,7 +4540,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-29",
+    "date": "2027-10-10",
     "slug": "gangguan-koordinasi-perkembangan",
     "file": "artikel/gangguan-koordinasi-perkembangan.html",
     "title": "Gangguan Koordinasi Perkembangan",
@@ -3960,7 +4550,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-30",
+    "date": "2027-10-11",
     "slug": "uu-no-35-tahun-2014-berisi-tentang-apa",
     "file": "artikel/uu-no-35-tahun-2014-berisi-tentang-apa.html",
     "title": "Uu No. 35 Tahun 2014 Berisi Tentang Apa",
@@ -3970,7 +4560,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-30",
+    "date": "2027-10-12",
     "slug": "eye-tracking-technology-untuk-anak-non-verbal",
     "file": "artikel/eye-tracking-technology-untuk-anak-non-verbal.html",
     "title": "Eye Tracking Technology Untuk Anak Non Verbal",
@@ -3980,7 +4570,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-30",
+    "date": "2027-10-13",
     "slug": "komorbid-adhd-dan-autisme",
     "file": "artikel/komorbid-adhd-dan-autisme.html",
     "title": "Komorbid Adhd Dan Autisme",
@@ -3990,7 +4580,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-31",
+    "date": "2027-10-14",
     "slug": "mengajar-konsep-uang-anak-tunagrahita",
     "file": "artikel/mengajar-konsep-uang-anak-tunagrahita.html",
     "title": "Mengajar Konsep Uang Anak Tunagrahita",
@@ -4000,7 +4590,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-31",
+    "date": "2027-10-15",
     "slug": "penelitian-terbaru-autisme-2026",
     "file": "artikel/penelitian-terbaru-autisme-2026.html",
     "title": "Penelitian Terbaru Autisme 2026",
@@ -4010,7 +4600,7 @@
     "readTime": "12 menit baca"
   },
   {
-    "date": "2026-12-31",
+    "date": "2027-10-16",
     "slug": "peran-guru-pendamping-khusus-gpk",
     "file": "artikel/peran-guru-pendamping-khusus-gpk.html",
     "title": "Peran Guru Pendamping Khusus Gpk",
