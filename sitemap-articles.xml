@@ -19,6 +19,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.yukaindonesia.com/artikel/anakku-hiperaktif</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.yukaindonesia.com/artikel/asesmen-abk</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>monthly</changefreq>
@@ -37,6 +43,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.yukaindonesia.com/artikel/biaya-homeschooling</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.yukaindonesia.com/artikel/bisindo-adalah</loc>
     <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
@@ -45,6 +57,12 @@
   <url>
     <loc>https://www.yukaindonesia.com/artikel/cerebral-palsy-adalah</loc>
     <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/contoh-motorik-kasar</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -67,8 +85,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.yukaindonesia.com/artikel/disabilitas-fisik</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.yukaindonesia.com/artikel/disabilitas-intelektual-adalah</loc>
     <lastmod>2026-03-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/disabilitas-sensorik</loc>
+    <lastmod>2026-07-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/diskalkulia-adalah</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -140,7 +176,7 @@
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/kesulitan-belajar</loc>
-    <lastmod>2026-03-24</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -152,7 +188,7 @@
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/kisah-ilham-hafiz</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -171,6 +207,12 @@
   <url>
     <loc>https://www.yukaindonesia.com/artikel/memilih-yayasan-anak-berkebutuhan-khusus</loc>
     <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/metode-montessori</loc>
+    <lastmod>2026-07-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -350,13 +392,13 @@
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/transparansi-donasi</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/tuna-daksa-adalah</loc>
-    <lastmod>2026-04-08</lastmod>
+    <lastmod>2026-07-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
