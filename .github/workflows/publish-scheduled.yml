@@ -125,6 +125,9 @@ jobs:
                   print(f'Added to blog.html: $slug')
           "
 
+            # Keep the RSS feed current and idempotent for every published article.
+            node scripts/update-feed.js "$slug" "$title" "$desc" "$pubdate"
+
             # Add to sitemap.xml (clean URL: www + no .html)
             CLEAN_URL="https://www.yukaindonesia.com/artikel/$slug"
             python3 -c "
@@ -205,7 +208,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add blog.html sitemap.xml sitemap-pages.xml sitemap-articles.xml publish-schedule.json
+          git add blog.html feed.xml sitemap.xml sitemap-pages.xml sitemap-articles.xml publish-schedule.json scripts/update-feed.js
           git diff --staged --quiet && echo "No changes to commit" && exit 0
           git commit -m "Auto-publish scheduled articles for $(date -u +%Y-%m-%d)"
           git push
