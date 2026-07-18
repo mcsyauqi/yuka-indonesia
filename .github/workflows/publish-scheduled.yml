@@ -3,7 +3,7 @@ name: Publish Scheduled Articles
 on:
   schedule:
     # Run daily at 02:00 UTC (09:00 WIB)
-    - cron: '0 2 * * *'
+    - cron: '40 1 * * *' # 01:40 UTC = 08:40 WIB (staggered antar situs)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
