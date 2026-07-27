@@ -16,6 +16,6 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-# Sitemap & RSS Feed
+# Sitemap
 Sitemap: https://www.yukaindonesia.com/sitemap-index.xml
-Sitemap: https://www.yukaindonesia.com/sitemap.xml
+Sitemap: https://www.yukaindonesia.com/sitemap-images.xml
