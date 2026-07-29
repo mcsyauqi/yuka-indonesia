@@ -13,7 +13,9 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 
 ### Tech Stack
 - Static HTML + CSS + vanilla JS, no app framework
-- Hosting: Vercel with `cleanUrls: true`
+- Production edge observed 29 July 2026: nginx reverse proxy with HSTS enabled. The canonical host does not expose `x-vercel-id` or `x-vercel-cache` response headers.
+- Normal content deployment: push a validated commit to `main`, then poll the canonical URL with a cache-busting query until the expected revision marker appears. Do not use manual Vercel deploy, rollback, or platform-setting changes from the daily autopilot.
+- Legacy/static routing config remains in `vercel.json` with `cleanUrls: true`; treat it as repository routing source, not proof of the active production edge.
 - Main config: `vercel.json`, `robots.txt`, `llms.txt`
 - CSS: `assets/css/style.css` and minified `assets/css/style.min.css`
 - JS: `assets/js/main.js`, `assets/js/main.min.js`, `assets/js/analytics.js`
