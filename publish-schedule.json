@@ -14,16 +14,6 @@
     "publishMethod": "manual-autopilot-recovery"
   },
   {
-    "slug": "hari-autis-sedunia",
-    "file": "artikel/hari-autis-sedunia.html",
-    "title": "Hari Autis Sedunia: Panduan Praktis bagi Pendamping ABK",
-    "description": "Artikel lengkap tentang hari autis sedunia. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-034.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca",
-    "date": "2026-07-30"
-  },
-  {
     "slug": "pengertian-abk",
     "file": "artikel/pengertian-abk.html",
     "title": "Apa Itu Pengertian Abk? Penjelasan untuk Orang Tua",
@@ -463,36 +453,7 @@
     "category": "Pendidikan",
     "readTime": "12 menit baca"
   },
-  {
-    "date": "2026-09-13",
-    "slug": "gangguan-perkembangan-pervasif",
-    "file": "artikel/gangguan-perkembangan-pervasif.html",
-    "title": "Gangguan Perkembangan Pervasif",
-    "description": "Artikel lengkap tentang gangguan perkembangan pervasif. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/16-feb-2026-siswa-abk-selfie-kegiatan-memasak.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-14",
-    "slug": "golongan-disabilitas-apa-saja",
-    "file": "artikel/golongan-disabilitas-apa-saja.html",
-    "title": "Golongan Disabilitas Apa Saja",
-    "description": "Artikel lengkap tentang golongan disabilitas apa saja. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/16-feb-2026-siswa-ibk-taruna-imani-suasana-sekolah.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-15",
-    "slug": "perbedaan-homeschooling-dan-sekolah-formal-untuk-abk",
-    "file": "artikel/perbedaan-homeschooling-dan-sekolah-formal-untuk-abk.html",
-    "title": "Perbedaan Homeschooling Dan Sekolah Formal Untuk Abk",
-    "description": "Artikel lengkap tentang perbedaan homeschooling dan sekolah formal untuk abk. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/21-jan-2026-anak-anak-belajar-bersama-guru-013.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
+
   {
     "date": "2026-09-16",
     "slug": "playground-ramah-abk-jogja",
