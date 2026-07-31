@@ -18,30 +18,42 @@
     "file": "artikel/pengertian-abk.html",
     "title": "Apa Itu Pengertian Abk? Penjelasan untuk Orang Tua",
     "description": "Artikel lengkap tentang pengertian abk. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-066.webp",
+    "image": "Dokumentasi/museum-gunung-merapi-anak-anak-menonton-auditorium-merah-012.webp",
     "category": "Pendidikan",
-    "readTime": "12 menit baca",
-    "date": "2026-07-31"
+    "readTime": "13 menit baca",
+    "date": "2026-07-31",
+    "status": "Published",
+    "publishDate": "2026-07-31",
+    "actualPublishDate": "2026-07-31",
+    "publishMethod": "manual"
   },
   {
     "slug": "piramida-sensori-integrasi",
     "file": "artikel/piramida-sensori-integrasi.html",
     "title": "Piramida Sensori Integrasi dan Penerapannya Sehari-hari",
     "description": "Artikel lengkap tentang piramida sensori integrasi. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-074.webp",
+    "image": "Dokumentasi/cpao-anak-anak-kelas-memasak-foto-bersama-079.webp",
     "category": "Terapi",
-    "readTime": "12 menit baca",
-    "date": "2026-08-01"
+    "readTime": "13 menit baca",
+    "date": "2026-08-01",
+    "status": "Published",
+    "publishDate": "2026-08-01",
+    "actualPublishDate": "2026-08-01",
+    "publishMethod": "manual"
   },
   {
     "slug": "permainan-motorik-kasar",
     "file": "artikel/permainan-motorik-kasar.html",
     "title": "Permainan Motorik Kasar: Pengertian dan Penjelasan Lengkap",
     "description": "Artikel lengkap tentang permainan motorik kasar. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-foto-082.webp",
+    "image": "Dokumentasi/candi-plaosan-anak-anak-wisata-candi-borobudur-053.webp",
     "category": "Terapi",
-    "readTime": "12 menit baca",
-    "date": "2026-08-02"
+    "readTime": "13 menit baca",
+    "date": "2026-08-02",
+    "status": "Published",
+    "publishDate": "2026-08-02",
+    "actualPublishDate": "2026-08-02",
+    "publishMethod": "manual"
   },
   {
     "slug": "bahasa-tuna-rungu",
