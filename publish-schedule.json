@@ -36,10 +36,8 @@
     "category": "Terapi",
     "readTime": "13 menit baca",
     "date": "2026-08-01",
-    "status": "Published",
     "publishDate": "2026-08-01",
-    "actualPublishDate": "2026-08-01",
-    "publishMethod": "manual"
+    "note": "file artikel sudah siap di artikel/, tinggal tambah kartu di blog.html pada tanggalnya"
   },
   {
     "slug": "permainan-motorik-kasar",
@@ -50,10 +48,8 @@
     "category": "Terapi",
     "readTime": "13 menit baca",
     "date": "2026-08-02",
-    "status": "Published",
     "publishDate": "2026-08-02",
-    "actualPublishDate": "2026-08-02",
-    "publishMethod": "manual"
+    "note": "file artikel sudah siap di artikel/, tinggal tambah kartu di blog.html pada tanggalnya"
   },
   {
     "slug": "bahasa-tuna-rungu",
