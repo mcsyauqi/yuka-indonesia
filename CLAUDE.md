@@ -13,9 +13,18 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 
 ### Tech Stack
 - Static HTML + CSS + vanilla JS, no app framework
-- Production edge observed 29 July 2026: nginx reverse proxy with HSTS enabled. The canonical host does not expose `x-vercel-id` or `x-vercel-cache` response headers.
-- Normal content deployment: push a validated commit to `main`, then poll the canonical URL with a cache-busting query until the expected revision marker appears. Do not use manual Vercel deploy, rollback, or platform-setting changes from the daily autopilot.
-- Legacy/static routing config remains in `vercel.json` with `cleanUrls: true`; treat it as repository routing source, not proof of the active production edge.
+- **Production host verified live 31 July 2026: Coolify on the personal Hostinger box `72.61.143.148` (`srv1843042`), NOT Vercel.** Traefik terminates TLS, the app container is `nginx:alpine` serving the repo as static files. No `x-vercel-id` / `x-vercel-cache` headers on any canonical URL.
+  - Coolify dashboard: https://coolify.mcsyauqi.com · application uuid `9jodtdgn6snrqsqaxqw0gav8` · name `yuka-indonesia` · build pack `static` · branch `main`
+  - Domains bound to the app: `yukaindonesia.com`, `www.yukaindonesia.com`, `yuka-test.mcsyauqi.com`
+  - API token in root `.env` as `HOSTINGER3_COOLIFY_API_TOKEN`
+- **Routing and headers live in the Coolify field `custom_nginx_configuration`, not in the repo.** `vercel.json` is dead config kept only as a record of intended routing; editing it changes nothing in production. To read or change the real config, use the Coolify API (`GET`/`PATCH /api/v1/applications/9jodtdgn6snrqsqaxqw0gav8`, value must be **base64 encoded** on PATCH or the API replies 422).
+- Active nginx rules (as of 31 July 2026): clean URLs via `try_files $uri $uri.html $uri/index.html =404`, `301` from `/x.html` to `/x`, real `404` for unknown paths (`error_page 404 /404.html` plus an exact-match `location = /404.html { internal; }` so the internal redirect is not swallowed by the `.html` stripping regex), and security headers `Strict-Transport-Security` (max-age 31536000, includeSubDomains), `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`.
+- **Deploy procedure (final):**
+  1. Content or code change: commit and `git push origin main`. The GitHub push webhook triggers a Coolify build automatically, no manual call needed.
+  2. Config-only change (nginx, env, domains): `PATCH` the app via the Coolify API, then `POST https://coolify.mcsyauqi.com/api/v1/deploy?uuid=9jodtdgn6snrqsqaxqw0gav8&force=true` (this endpoint is POST-only, a GET replies 405).
+  3. Poll `GET /api/v1/deployments/applications/9jodtdgn6snrqsqaxqw0gav8?take=3` until `status` is `finished` (a static build takes roughly 40 to 60 seconds). Never treat "queued" as done.
+  4. Verify live: fetch the canonical URL with a cache-busting query and confirm the expected revision marker, header, or status code actually appears. A `200` alone is not proof.
+  5. Rollback: the previous nginx config is kept as a copy in the session scratchpad, and Coolify keeps the prior image for redeploy.
 - Main config: `vercel.json`, `robots.txt`, `llms.txt`
 - CSS: `assets/css/style.css` and minified `assets/css/style.min.css`
 - JS: `assets/js/main.js`, `assets/js/main.min.js`, `assets/js/analytics.js`
