@@ -1,17 +1,5 @@
 [
   {
-    "slug": "piramida-sensori-integrasi",
-    "file": "artikel/piramida-sensori-integrasi.html",
-    "title": "Piramida Sensori Integrasi dan Penerapannya Sehari-hari",
-    "description": "Artikel lengkap tentang piramida sensori integrasi. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
-    "image": "Dokumentasi/cpao-anak-anak-kelas-memasak-foto-bersama-079.webp",
-    "category": "Terapi",
-    "readTime": "13 menit baca",
-    "date": "2026-08-01",
-    "publishDate": "2026-08-01",
-    "note": "file artikel sudah siap di artikel/, tinggal tambah kartu di blog.html pada tanggalnya"
-  },
-  {
     "slug": "permainan-motorik-kasar",
     "file": "artikel/permainan-motorik-kasar.html",
     "title": "Permainan Motorik Kasar: Pengertian dan Penjelasan Lengkap",
