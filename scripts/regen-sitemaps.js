@@ -1,27 +1,28 @@
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const SITE = 'https://www.yukaindonesia.com';
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const staticPages = [
-  { loc: `${SITE}/`, changefreq: 'weekly', priority: '1.0' },
-  { loc: `${SITE}/donasi`, changefreq: 'monthly', priority: '0.9' },
-  { loc: `${SITE}/program`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/tentang`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/blog`, changefreq: 'weekly', priority: '0.8' },
-  { loc: `${SITE}/galeri`, changefreq: 'monthly', priority: '0.7' },
-  { loc: `${SITE}/kontak`, changefreq: 'monthly', priority: '0.7' },
-  { loc: `${SITE}/yayasan-abk-yogyakarta`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/sekolah-inklusi-sleman`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/donasi-pendidikan-abk`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/zakat-pendidikan-abk`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/csr-pendidikan-inklusi`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/terapi-wicara-jogja`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/terapi-okupasi-sleman`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/terapi-sensori-integrasi-yogyakarta`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/sekolah-autis-yogyakarta`, changefreq: 'monthly', priority: '0.8' },
-  { loc: `${SITE}/konsultasi-abk-sleman`, changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/`, file: 'index.html', changefreq: 'weekly', priority: '1.0' },
+  { loc: `${SITE}/donasi`, file: 'donasi.html', changefreq: 'monthly', priority: '0.9' },
+  { loc: `${SITE}/program`, file: 'program.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/tentang`, file: 'tentang.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/blog`, file: 'blog.html', changefreq: 'weekly', priority: '0.8' },
+  { loc: `${SITE}/galeri`, file: 'galeri.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: `${SITE}/kontak`, file: 'kontak.html', changefreq: 'monthly', priority: '0.7' },
+  { loc: `${SITE}/yayasan-abk-yogyakarta`, file: 'yayasan-abk-yogyakarta.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/sekolah-inklusi-sleman`, file: 'sekolah-inklusi-sleman.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/donasi-pendidikan-abk`, file: 'donasi-pendidikan-abk.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/zakat-pendidikan-abk`, file: 'zakat-pendidikan-abk.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/csr-pendidikan-inklusi`, file: 'csr-pendidikan-inklusi.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/terapi-wicara-jogja`, file: 'terapi-wicara-jogja.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/terapi-okupasi-sleman`, file: 'terapi-okupasi-sleman.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/terapi-sensori-integrasi-yogyakarta`, file: 'terapi-sensori-integrasi-yogyakarta.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/sekolah-autis-yogyakarta`, file: 'sekolah-autis-yogyakarta.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/konsultasi-abk-sleman`, file: 'konsultasi-abk-sleman.html', changefreq: 'monthly', priority: '0.8' },
 ];
 
 function read(file) {
@@ -79,10 +80,38 @@ function articlePages(meta) {
     });
 }
 
+// Cycle #24 fix, part 2 (2026-08-03): articles were fixed in June but the STATIC
+// pages kept inheriting lastmod verbatim from the previous sitemap, so 10 of 17
+// froze (blog/tentang/program at 2026-05-01 while their files changed on
+// 2026-08-03, i.e. 94 days stale). Worse, /yayasan-abk-yogyakarta was crawled on
+// 2026-05-01 and returned 404 back then; with lastmod also pinned to 2026-05-01
+// Google had no signal to retry, so the stale 404 never cleared even though the
+// page has served 200 since the nginx clean-URL config landed. Derive lastmod
+// from the file's own last commit date instead; fall back to filesystem mtime,
+// then to the previous sitemap value.
+function gitLastCommitDate(file) {
+  try {
+    const out = execFileSync('git', ['log', '-1', '--format=%ad', '--date=short', '--', file], {
+      encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'],
+    }).trim();
+    return /^\d{4}-\d{2}-\d{2}$/.test(out) ? out : null;
+  } catch (_) {
+    return null;
+  }
+}
+
+function fileLastmod(file) {
+  if (!file || !fs.existsSync(file)) return null;
+  const d = gitLastCommitDate(file);
+  if (d) return d > TODAY ? TODAY : d;
+  const mtime = fs.statSync(file).mtime.toISOString().slice(0, 10);
+  return mtime > TODAY ? TODAY : mtime;
+}
+
 function withMeta(entries, meta) {
   return entries.map((entry) => ({
     ...entry,
-    lastmod: meta.get(entry.loc)?.lastmod || TODAY,
+    lastmod: fileLastmod(entry.file) || meta.get(entry.loc)?.lastmod || TODAY,
   }));
 }
 
