@@ -9,7 +9,7 @@ const headerHtml = fs.readFileSync(path.join(assetsDir, 'header.html'), 'utf8');
 const footerHtml = fs.readFileSync(path.join(assetsDir, 'footer.html'), 'utf8');
 
 const TODAY = '3 Agustus 2026';
-const COMMIT = 'e5720b6';
+const COMMIT = 'e5720b6 dan 60e9a1c';
 
 // ---- GSC live (ditarik sendiri 3 Agustus 2026) ----
 const gsc = [
@@ -159,11 +159,22 @@ ${headerHtml}
 <tr><td>Deploy Coolify</td><td><code>GET /api/v1/deployments/lmm2dgdzgy0d0haxxstissa8</code></td><td><strong>finished</strong> untuk commit ${COMMIT}</td></tr>
 <tr><td>Klaim baru muncul di halaman live</td><td>Fetch cache-busted ketiga URL, grep 23 penanda wajib-ada</td><td><strong>23 dari 23 lolos</strong></td></tr>
 <tr><td>Klaim lama benar-benar hilang</td><td>Grep 15 penanda wajib-tidak-ada di halaman live</td><td><strong>15 dari 15 lolos</strong> (sisa kemunculan hanya di dalam catatan koreksi, sebagai kutipan klaim lama)</td></tr>
-<tr><td>Kesehatan tautan rujukan</td><td>Fetch semua 24 tautan rujukan eksternal</td><td><strong>24 dari 24 balas HTTP 200</strong></td></tr>
+<tr><td>Kesehatan tautan rujukan</td><td>Fetch semua 24 tautan rujukan eksternal</td><td><strong>24 dari 24 balas HTTP 200</strong> (lihat catatan throttling Kemenkes di bagian 6b)</td></tr>
+<tr><td>Atribusi otoritas</td><td>Audit otomatis: tiap kalimat yang menyebut WHO, CDC, Kemenkes, NDSS, DSM-5, atau AAP wajib punya tautan di kalimat yang sama</td><td><strong>Nol penyebutan tanpa tautan</strong> di ketiga artikel</td></tr>
 <tr><td>Validitas JSON-LD</td><td><code>JSON.parse</code> semua blok ld+json ketiga file</td><td><strong>9 dari 9 blok parse bersih</strong> (Article, FAQPage, BreadcrumbList per artikel)</td></tr>
 <tr><td>Sitemap lastmod</td><td>Fetch sitemap-articles.xml live</td><td>Ketiganya <strong>2026-08-03</strong>, maju dari 2026-07-11</td></tr>
 <tr><td>Resubmit ke Google</td><td><code>PUT</code> sitemap ke Search Console API</td><td>Balas <strong>204</strong>, dan <code>lastDownloaded</code> maju ke 2026-08-03T08:43:29Z, artinya Google benar-benar menarik ulang</td></tr>
 </tbody></table>
+
+<h2>6b. Self-audit setelah perbaikan, dan satu kesalahan yang kami buat sendiri</h2>
+<p>Setelah commit pertama, kami menjalankan audit otomatis yang memeriksa hal berbeda dari pemeriksaan sebelumnya: <strong>setiap kalimat yang menyebut nama otoritas harus membawa tautannya di kalimat yang sama.</strong> Audit itu menemukan tiga hal.</p>
+<ol>
+  <li><strong>Satu atribusi keliru yang kami tulis sendiri.</strong> Di artikel Down syndrome, kalimat tentang intervensi dini mengatribusikan sebuah pernyataan ke CDC. Saat halaman CDC-nya dibuka ulang dan dicari, pernyataan itu <strong>tidak ada di sana</strong>. Ini persis jenis kesalahan yang sedang kami perbaiki. Kalimatnya ditulis ulang sebagai pengalaman lapangan YUKA yang dilabeli jelas sebagai pengalaman, bukan temuan studi, ditutup anjuran berkonsultasi ke dokter anak dan terapis. Diperbaiki di commit <code>60e9a1c</code>.</li>
+  <li><strong>DSM-5 disebut empat kali tanpa tautan</strong> di dua artikel. Sekarang keempatnya menunjuk ke halaman DSM resmi American Psychiatric Association.</li>
+  <li><strong>Dua butir NDSS mengandalkan tautan di butir sebelumnya.</strong> Sekarang masing-masing membawa tautannya sendiri.</li>
+</ol>
+<p>Hasil akhir audit: <strong>nol penyebutan otoritas tanpa tautan</strong> di ketiga artikel, diverifikasi ulang pada halaman live setelah deploy kedua (<code>pe607bsuagjwcah2rjnurhc1</code>, status <strong>finished</strong>).</p>
+<div class="warn"><strong>Catatan untuk siapa pun yang memeriksa ulang tautan Kemenkes.</strong> Selama sesi ini, <code>keslan.kemkes.go.id/view_artikel/*</code> mulai membalas <strong>404 dengan body 1.134 byte untuk semua path artikel</strong>, termasuk tautan yang diambil langsung dari beranda situs itu sendiri, setelah sekitar 15 permintaan dari alamat IP yang sama. Ini <strong>throttling per klien, bukan link rot.</strong> Buktinya: halaman <code>view_artikel/3232</code> dan <code>view_artikel/3151</code> masih berada di <strong>peringkat 1 dan 2 Google</strong> untuk kueri <code>site:keslan.kemkes.go.id apa itu adhd</code> yang diambil pada jam yang sama, keslan.kemkes.go.id juga menempati peringkat 5 dan 6 organik untuk "adhd adalah" dan "down syndrome adalah", dan kedua halaman itu berhasil kami tarik dengan isi lengkap di awal sesi. Kutipan yang diambil darinya (risiko 60% dari orang tua, konkordansi kembar 70-80%) valid. Kalau Anda menemui 404, ganti alamat IP atau tunggu, jangan simpulkan tautannya mati.</div>
 
 <div class="ok"><strong>Yang tidak dilakukan dan alasannya.</strong> Tidak ada artikel yang dihapus, karena ketiga topik memang inti misi yayasan. Tidak ada angka yang diparafrase agar terdengar aman: angka yang tidak bisa diverifikasi dihapus, bukan diperhalus. Tidak ada nama peninjau medis yang dikarang. Tidak ada saran diagnosis atau pengobatan yang ditambahkan.</div>
 
