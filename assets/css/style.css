@@ -1560,7 +1560,7 @@ p {
     color: var(--white);
 }
 
-.footer h4 {
+.footer h3 {
     color: var(--white);
     font-size: 1.125rem;
     margin-bottom: var(--spacing-lg);
@@ -1613,7 +1613,7 @@ p {
 }
 
 .footer-bottom a {
-    color: var(--primary-light);
+    color: var(--secondary);
 }
 
 .footer-bottom a:hover {
@@ -2347,7 +2347,7 @@ p {
 
 .section-subtitle {
     font-size: 1.125rem;
-    color: var(--gray-600);
+    color: var(--gray-700);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -2945,7 +2945,7 @@ p {
     transition: color 0.3s ease;
 }
 
-.feature-card-modern h4 {
+.feature-card-modern h3 {
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
 }
@@ -3040,7 +3040,7 @@ p {
 
 .achievement-label {
     font-size: 0.875rem;
-    color: var(--gray-600);
+    color: var(--gray-700);
 }
 
 .story-note {
@@ -3082,7 +3082,7 @@ p {
     flex-shrink: 0;
 }
 
-.pkbm-feature h4 {
+.pkbm-feature h3 {
     font-size: 1rem;
     margin-bottom: 0.25rem;
 }
