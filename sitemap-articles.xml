@@ -31,6 +31,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.yukaindonesia.com/artikel/apakah-speech-delay-bisa-sembuh</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/apakah-tuna-rungu-bisa-sembuh</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.yukaindonesia.com/artikel/asesmen-abk</loc>
     <lastmod>2026-08-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -44,7 +56,7 @@
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/bahasa-isyarat-tuna-rungu</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -140,7 +152,7 @@
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/disabilitas-tuna-rungu</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -243,6 +255,12 @@
   <url>
     <loc>https://www.yukaindonesia.com/artikel/kecerdasan-majemuk</loc>
     <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/kegiatan-motorik-halus</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -500,7 +518,7 @@
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/stimulasi-motorik-halus</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -579,6 +597,12 @@
   <url>
     <loc>https://www.yukaindonesia.com/artikel/tuna-daksa-adalah</loc>
     <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/tuna-netra-rungu</loc>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
