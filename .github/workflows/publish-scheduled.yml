@@ -29,10 +29,13 @@ jobs:
 
           # Check if there are articles to publish today
           ARTICLES=$(python3 -c "
-          import json, sys
+          import json, os, sys
           with open('publish-schedule.json') as f:
               schedule = json.load(f)
-          today_articles = [a for a in schedule if a['date'] <= '$TODAY']
+          missing = [a for a in schedule if not os.path.isfile(a['file'])]
+          for a in missing:
+              print('Skipping missing article file:', a['file'], '(', a['slug'], ')')
+          today_articles = [a for a in schedule if a['date'] <= '$TODAY' and os.path.isfile(a['file'])]
           if not today_articles:
               print('NONE')
               sys.exit(0)
