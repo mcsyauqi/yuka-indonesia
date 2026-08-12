@@ -1,0 +1,110 @@
+{
+  "project": "Yuka",
+  "updatedAt": "2026-08-12T20:30:00+07:00",
+  "items": [
+    {
+      "slug": "disabilitas",
+      "url": "https://www.yukaindonesia.com/artikel/disabilitas",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    },
+    {
+      "slug": "jenis-disabilitas",
+      "url": "https://www.yukaindonesia.com/artikel/jenis-disabilitas",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    },
+    {
+      "slug": "disabilitas-intelektual",
+      "url": "https://www.yukaindonesia.com/artikel/disabilitas-intelektual",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    },
+    {
+      "slug": "disabilitas-sensorik",
+      "url": "https://www.yukaindonesia.com/artikel/disabilitas-sensorik",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    },
+    {
+      "slug": "disabilitas-fisik",
+      "url": "https://www.yukaindonesia.com/artikel/disabilitas-fisik",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    },
+    {
+      "slug": "kartu-disabilitas",
+      "url": "https://www.yukaindonesia.com/artikel/kartu-disabilitas",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    },
+    {
+      "slug": "yayasan-disabilitas",
+      "url": "https://www.yukaindonesia.com/artikel/yayasan-disabilitas",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    },
+    {
+      "slug": "disabilitas-tuna-rungu",
+      "url": "https://www.yukaindonesia.com/artikel/disabilitas-tuna-rungu",
+      "status": "done",
+      "source": "UU 8/2016 plus WHO",
+      "checks": {
+        "localHttpPendingDeploy": true,
+        "titleH1": true,
+        "articleAboutSchema": true,
+        "sitemap": true,
+        "hubSpoke": true
+      }
+    }
+  ]
+}

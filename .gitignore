@@ -34,3 +34,4 @@ Panduan*.txt
 # Secrets
 .env
 token_gdrive.json
+.prose_yuka_ed25519*
