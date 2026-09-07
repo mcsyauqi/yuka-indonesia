@@ -22,8 +22,9 @@ const articles = [
     description: 'Cara berkomunikasi dengan anak tunarungu perlu menyesuaikan bahasa, visual, alat bantu, dan lingkungan. Pelajari langkah praktis untuk rumah dan sekolah.',
     image: 'Dokumentasi/generated-difabel-inklusi-komunitas-ilustrasi.webp',
     inlineImages: [
-      ['Dokumentasi/candi-plaosan-anak-sekolah-wisata-candi-borobudur-116.webp', 'Ilustrasi kegiatan belajar bersama dalam lingkungan yang mendukung komunikasi inklusif', 'Lingkungan belajar yang tenang membantu anak mengikuti percakapan dan kegiatan bersama.'],
-      ['Dokumentasi/generated-difabel-inklusi-komunitas-ilustrasi.webp', 'Ilustrasi komunitas yang memberi ruang bagi komunikasi dan partisipasi anak', 'Komunikasi yang baik memberi ruang bagi anak untuk memilih, bertanya, dan menyampaikan batasan.'],
+      ['Dokumentasi/generated-tunagrahita-belajar-life-skill-ilustrasi.webp', 'Ilustrasi pembelajaran keterampilan hidup dalam lingkungan yang terstruktur', 'Lingkungan belajar yang tenang membantu anak mengikuti percakapan dan kegiatan bersama.'],
+      ['Dokumentasi/generated-down-syndrome-anak-bermain-ilustrasi.webp', 'Ilustrasi anak beraktivitas bersama pendamping dalam lingkungan inklusif', 'Komunikasi yang baik memberi ruang bagi anak untuk memilih, bertanya, dan menyampaikan batasan.'],
+      ['Dokumentasi/candi-plaosan-anak-sekolah-wisata-candi-borobudur-116.webp', 'Ilustrasi kegiatan belajar bersama dalam suasana yang mendukung akses komunikasi', 'Konteks kegiatan yang jelas membantu anak memahami percakapan dan rutinitas.'],
     ],
     sources: [
       ['https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss', 'WHO tentang gangguan pendengaran dan dukungan komunikasi'],
@@ -100,6 +101,7 @@ const articles = [
     inlineImages: [
       ['Dokumentasi/generated-tunagrahita-belajar-life-skill-ilustrasi.webp', 'Ilustrasi pembelajaran keterampilan hidup di satuan pendidikan khusus', 'Pendidikan khusus dapat memadukan akademik, keterampilan hidup, dan dukungan individual.'],
       ['Dokumentasi/candi-plaosan-anak-sekolah-kunjungan-candi-borobudur-051.webp', 'Ilustrasi siswa mengikuti kegiatan belajar dan pengembangan diri', 'Dokumen kelulusan perlu dibaca bersama jenjang dan program pendidikan yang ditempuh.'],
+      ['Dokumentasi/generated-down-syndrome-anak-bermain-ilustrasi.webp', 'Ilustrasi anak mengembangkan kemandirian dan partisipasi dalam kegiatan belajar', 'Pengalaman belajar dan dokumen kelulusan perlu dibahas bersama anak dan sekolah.'],
     ],
     sources: [
       ['https://www.unesco.org/en/inclusive-education', 'UNESCO tentang pendidikan inklusif dan hak belajar'],
@@ -161,6 +163,7 @@ const articles = [
     inlineImages: [
       ['Dokumentasi/generated-tunagrahita-belajar-life-skill-ilustrasi.webp', 'Ilustrasi latihan keterampilan kerja dan kemandirian secara bertahap', 'Keterampilan kerja berkembang melalui latihan yang jelas, aman, dan konsisten.'],
       ['Dokumentasi/generated-difabel-inklusi-komunitas-ilustrasi.webp', 'Ilustrasi lingkungan kerja yang memberi dukungan dan kesempatan berpartisipasi', 'Lingkungan yang menerima perbedaan dapat membantu seseorang menunjukkan kekuatannya.'],
+      ['Dokumentasi/generated-down-syndrome-anak-bermain-ilustrasi.webp', 'Ilustrasi anak mengembangkan keterampilan sosial dan kemandirian', 'Eksplorasi kerja perlu memberi ruang untuk belajar, beristirahat, dan meminta dukungan.'],
     ],
     sources: [
       ['https://www.ilo.org/topics-and-sectors/disability-and-work', 'ILO tentang pekerjaan layak dan inklusi disabilitas'],
@@ -234,6 +237,7 @@ const articles = [
     inlineImages: [
       ['Dokumentasi/generated-adhd-anak-tidak-fokus-ilustrasi.webp', 'Ilustrasi penggunaan teknologi sebagai alat bantu pengamatan perkembangan anak', 'Teknologi sebaiknya membantu pengamatan, bukan menggantikan percakapan dengan tenaga profesional.'],
       ['Dokumentasi/generated-difabel-inklusi-komunitas-ilustrasi.webp', 'Ilustrasi keluarga dan pendamping berdiskusi tentang dukungan anak', 'Keputusan dukungan perlu mempertimbangkan suara anak, keluarga, dan hasil asesmen yang tepat.'],
+      ['Dokumentasi/generated-down-syndrome-anak-bermain-ilustrasi.webp', 'Ilustrasi anak beraktivitas dalam lingkungan yang mendukung perkembangan', 'Hasil screening harus diterjemahkan menjadi pertanyaan dan dukungan yang aman.'],
     ],
     sources: [
       ['https://www.who.int/news-room/fact-sheets/detail/autism-spectrum-disorders', 'WHO tentang autisme dan pentingnya dukungan'],
@@ -301,6 +305,7 @@ const articles = [
     inlineImages: [
       ['Dokumentasi/candi-plaosan-anak-sekolah-kunjungan-candi-borobudur-051.webp', 'Ilustrasi anak mengikuti kegiatan pendidikan bersama pendamping', 'Akses bantuan biasanya dimulai dari kebutuhan anak dan dokumen yang sesuai.'],
       ['Dokumentasi/generated-tunagrahita-belajar-life-skill-ilustrasi.webp', 'Ilustrasi pelatihan keterampilan hidup untuk mendukung kemandirian anak', 'Program pendidikan dan pelatihan perlu dihubungkan dengan tujuan hidup anak.'],
+      ['Dokumentasi/generated-down-syndrome-anak-bermain-ilustrasi.webp', 'Ilustrasi anak dan keluarga merencanakan dukungan secara bertahap', 'Keluarga dapat menghubungkan bantuan dengan kebutuhan dan tujuan anak.'],
     ],
     sources: [
       ['https://www.unesco.org/en/inclusive-education', 'UNESCO tentang pendidikan inklusif'],
@@ -431,7 +436,7 @@ function render(article) {
 </head>
 <body>
 <nav class="navbar" id="navbar"><div class="container"><a href="/" class="navbar-brand"><img src="../Logo/Logo.webp" alt="YUKA, Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60"></a><div class="navbar-menu" id="navbarMenu"><a href="/">Beranda</a><a href="/tentang">Tentang</a><a href="/program">Program</a><a href="/galeri">Galeri</a><a href="/blog" class="active">Artikel</a><a href="/kontak">Kontak</a><a href="/donasi" class="btn btn-primary btn-sm">Donasi</a></div><button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div></nav>
-<header class="article-header"><div class="container"><div class="breadcrumb"><a href="/">Beranda</a><span class="separator">/</span><a href="/blog">Artikel</a><span class="separator">/</span><span class="current">${esc(article.title)}</span></div><span class="card-category" style="background:var(--secondary);color:var(--gray-900);padding:.5rem 1rem;border-radius:20px;font-size:.875rem;display:inline-block;margin:1rem 0">Pendidikan</span><h1 style="font-size:2.5rem;max-width:800px">${esc(article.title)}</h1><aside data-revision-marker="yuka-autopilot-2026-09-07-${article.slug}" style="margin:22px 0;padding:18px;border:1px solid rgba(255,255,255,.35);border-radius:10px"><strong>Catatan edukasi YUKA</strong><p>Artikel ini membantu orang tua, guru, dan pendamping memahami dukungan secara praktis. Ini bukan diagnosis atau pengganti konsultasi profesional.</p></aside><div class="article-meta"><span>07 September 2026</span><span>15 menit baca</span><span>Tim Edukasi YUKA</span><span>Diperbarui 07 September 2026</span></div></div></header>
+<header class="article-header"><div class="container"><div class="breadcrumb"><a href="/">Beranda</a><span class="separator">/</span><a href="/blog">Artikel</a><span class="separator">/</span><span class="current">${esc(article.title)}</span></div><span class="card-category" style="background:var(--secondary);color:var(--gray-900);padding:.5rem 1rem;border-radius:20px;font-size:.875rem;display:inline-block;margin:1rem 0">Pendidikan</span><h1 style="font-size:2.5rem;max-width:800px">${esc(article.title)}</h1><aside data-revision-marker="yuka-autopilot-2026-09-07-v2-${article.slug}" style="margin:22px 0;padding:18px;border:1px solid rgba(255,255,255,.35);border-radius:10px"><strong>Catatan edukasi YUKA</strong><p>Artikel ini membantu orang tua, guru, dan pendamping memahami dukungan secara praktis. Ini bukan diagnosis atau pengganti konsultasi profesional.</p></aside><div class="article-meta"><span>07 September 2026</span><span>15 menit baca</span><span>Tim Edukasi YUKA</span><span>Diperbarui 07 September 2026</span></div></div></header>
 <div class="container"><div class="article-featured-image" style="margin:-2rem auto 2rem;max-width:900px;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15)"><img src="../${article.image}" alt="Ilustrasi dukungan pendidikan dan partisipasi anak berkebutuhan khusus" width="800" height="600" style="width:100%;height:auto"></div></div>
 <article class="article-content"><div class="article-body" data-article-content="${article.slug}">${body}</div></article>
 <script src="../assets/js/main.js"></script>
