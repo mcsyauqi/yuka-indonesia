@@ -5,6 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
+const { ensureArticleShell, missingShellParts } = require('./lib/article-shell');
 
 const SITE = 'https://www.yukaindonesia.com';
 const DATE = '2026-09-07';
@@ -459,7 +460,12 @@ function updateFeed() {
 }
 
 for (const a of articles) {
-  const html = render(a);
+  // The page shell (canonical footer, GA4, analytics.js) comes from the shared
+  // partial, never from this file. Retyping it here is what produced the
+  // footerless 2026-09-07 batch in the first place.
+  const html = ensureArticleShell(render(a));
+  const missingShell = missingShellParts(html);
+  if (missingShell.length) throw new Error(`${a.slug} shell gate failed, missing: ${missingShell.join(', ')}`);
   const count = words(html);
   if (count < 1500) throw new Error(`${a.slug} body/source word count ${count} < 1500`);
   const internalCount = (html.match(/href="\.\.\/artikel\//g) || []).length;

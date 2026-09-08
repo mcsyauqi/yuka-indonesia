@@ -67,6 +67,16 @@ jobs:
             fi
             node scripts/validate-jsonld.js "$file"
 
+            # Fail early if the article is missing its page shell. Articles here
+            # come from a fresh one-off generator each batch, and the 2026-09-05
+            # and 2026-09-07 batches went live with no <footer> at all because
+            # nothing checked. A footer on every page is a standing directive.
+            if ! grep -qi '<footer' "$file"; then
+              echo "Shell gate failed: $file has no <footer>."
+              echo "Use ensureArticleShell() from scripts/lib/article-shell.js in the generator."
+              exit 1
+            fi
+
             # Format date for display (e.g., "18 Mar 2026")
             DISPLAY_DATE=$(date -d "$pubdate" +"%d %b %Y" 2>/dev/null || date -j -f "%Y-%m-%d" "$pubdate" +"%d %b %Y" 2>/dev/null || echo "$pubdate")
 

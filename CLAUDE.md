@@ -116,6 +116,42 @@ Do NOT read the wiki for general coding questions or tasks unrelated to business
 
 ---
 
+## Article Template: Page Shell (WAJIB)
+
+**Setiap artikel wajib punya `<footer>`.** Ini directive tetap dari Syauqi, bukan preferensi.
+
+Artikel di situs ini dipublikasikan oleh skrip generator sekali-pakai, satu skrip baru
+tiap batch. Tiap penulisan ulang mengetik ulang kerangka halaman dari ingatan, dan
+tiap kali ada bagian yang hilang diam-diam. Batch 2026-09-05 dan 2026-09-07 tayang
+tanpa `<footer>` sama sekali (yang 09-05 malah tanpa GA4 dan tanpa analytics.js),
+karena tidak ada yang mengecek. Itu kekambuhan dari drift yang sama di cycle #26.5.
+
+**Aturan untuk generator baru:**
+
+1. JANGAN mengetik ulang footer, GA4, atau tag analytics di dalam skrip generator.
+   Impor dari partial bersama:
+   ```js
+   const { ensureArticleShell, missingShellParts } = require('./lib/article-shell');
+   const html = ensureArticleShell(render(article));   // idempotent, hanya menambah yang kurang
+   const missing = missingShellParts(html);
+   if (missing.length) throw new Error(`shell gate failed: ${missing.join(', ')}`);
+   ```
+2. Footer kanonik hidup di `scripts/lib/article-shell.js` (disalin verbatim dari
+   `artikel/slb-terdekat.html`, footer yang dipakai identik oleh 116 artikel dan
+   sama dengan footer `index.html` / `blog.html` / `tentang.html`).
+   Kalau footer perlu berubah, ubah di partial itu lalu jalankan ulang batch-nya,
+   jangan edit footer satu artikel.
+3. Cek seluruh folder kapan saja: `node scripts/check-article-shell.js`
+   (exit 1 kalau ada artikel tanpa footer). Tambahkan `--strict` untuk ikut
+   menggagalkan celah GA4/analytics dan varian footer non-kanonik.
+4. `.github/workflows/publish-scheduled.yml` sudah memuat gate per-artikel:
+   artikel tanpa `<footer>` menggagalkan publish sebelum masuk `blog.html`.
+
+**Utang yang belum dibayar (per 2026-09-09):** 23 artikel dari batch catchup
+2026-08-12 tidak punya GA4 maupun `analytics.js`, jadi trafiknya tidak terekam
+sama sekali. Itu muncul sebagai warning di `check-article-shell.js`. Belum
+diperbaiki karena di luar cakupan perbaikan footer, menunggu keputusan Syauqi.
+
 ## Article Template: URL Standards
 
 ### Social Share Buttons
