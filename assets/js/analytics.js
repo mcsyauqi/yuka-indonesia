@@ -122,7 +122,7 @@
     // ===== CTA BUTTON CLICKS =====
     function trackCTAButtons() {
         document.addEventListener('click', function (e) {
-            var btn = e.target.closest('.btn');
+            var btn = e.target.closest('.btn, .btn-modern');
             if (!btn) return;
             var text = btn.textContent.trim().replace(/\s+/g, ' ').slice(0, 100);
             var href = btn.getAttribute('href') || btn.getAttribute('onclick') || '';
