@@ -8,7 +8,7 @@ const { execFileSync } = require('child_process');
 const { ensureArticleShell, missingShellParts } = require('./lib/article-shell');
 
 const SITE = 'https://www.yukaindonesia.com';
-const DATE = '2026-09-07';
+const DATE = '2026-09-09';
 const ROOT = process.cwd();
 const author = {
   name: 'Tim Edukasi YUKA',
@@ -437,7 +437,7 @@ function render(article) {
 </head>
 <body>
 <nav class="navbar" id="navbar"><div class="container"><a href="/" class="navbar-brand"><img src="../Logo/Logo.webp" alt="YUKA, Yayasan Ukhuwah Kaffah Amanatullah" class="brand-logo" width="180" height="60"></a><div class="navbar-menu" id="navbarMenu"><a href="/">Beranda</a><a href="/tentang">Tentang</a><a href="/program">Program</a><a href="/galeri">Galeri</a><a href="/blog" class="active">Artikel</a><a href="/kontak">Kontak</a><a href="/donasi" class="btn btn-primary btn-sm">Donasi</a></div><button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button></div></nav>
-<header class="article-header"><div class="container"><div class="breadcrumb"><a href="/">Beranda</a><span class="separator">/</span><a href="/blog">Artikel</a><span class="separator">/</span><span class="current">${esc(article.title)}</span></div><span class="card-category" style="background:var(--secondary);color:var(--gray-900);padding:.5rem 1rem;border-radius:20px;font-size:.875rem;display:inline-block;margin:1rem 0">Pendidikan</span><h1 style="font-size:2.5rem;max-width:800px">${esc(article.title)}</h1><aside data-revision-marker="yuka-autopilot-2026-09-07-v2-${article.slug}" style="margin:22px 0;padding:18px;border:1px solid rgba(255,255,255,.35);border-radius:10px"><strong>Catatan edukasi YUKA</strong><p>Artikel ini membantu orang tua, guru, dan pendamping memahami dukungan secara praktis. Ini bukan diagnosis atau pengganti konsultasi profesional.</p></aside><div class="article-meta"><span>07 September 2026</span><span>15 menit baca</span><span>Tim Edukasi YUKA</span><span>Diperbarui 07 September 2026</span></div></div></header>
+<header class="article-header"><div class="container"><div class="breadcrumb"><a href="/">Beranda</a><span class="separator">/</span><a href="/blog">Artikel</a><span class="separator">/</span><span class="current">${esc(article.title)}</span></div><span class="card-category" style="background:var(--secondary);color:var(--gray-900);padding:.5rem 1rem;border-radius:20px;font-size:.875rem;display:inline-block;margin:1rem 0">Pendidikan</span><h1 style="font-size:2.5rem;max-width:800px">${esc(article.title)}</h1><aside data-revision-marker="yuka-autopilot-2026-09-09-v4-${article.slug}" style="margin:22px 0;padding:18px;border:1px solid rgba(255,255,255,.35);border-radius:10px"><strong>Catatan edukasi YUKA</strong><p>Artikel ini membantu orang tua, guru, dan pendamping memahami dukungan secara praktis. Ini bukan diagnosis atau pengganti konsultasi profesional.</p></aside><div class="article-meta"><span>09 September 2026</span><span>15 menit baca</span><span>Tim Edukasi YUKA</span><span>Diperbarui 09 September 2026</span></div></div></header>
 <div class="container"><div class="article-featured-image" style="margin:-2rem auto 2rem;max-width:900px;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.15)"><img src="../${article.image}" alt="Ilustrasi dukungan pendidikan dan partisipasi anak berkebutuhan khusus" width="800" height="600" style="width:100%;height:auto"></div></div>
 <article class="article-content"><div class="article-body" data-article-content="${article.slug}">${body}</div></article>
 <script src="../assets/js/main.js"></script>
@@ -449,7 +449,7 @@ function updateBlog() {
   let blog = fs.readFileSync(file, 'utf8');
   const marker = '<div class="blog-grid" id="blogGrid">';
   if (!blog.includes(marker)) throw new Error('blog grid marker not found');
-  const cards = articles.filter(a => !blog.includes(`artikel/${a.slug}`)).map(a => `\n                <!-- Article: ${a.title} -->\n                <article class="card blog-card animate-on-scroll" data-yuka-revision="yuka-autopilot-2026-09-07-${a.slug}"><div class="card-image"><img src="${a.image}" alt="Ilustrasi pendidikan inklusif dan dukungan anak" loading="lazy"></div><div class="card-body"><span class="card-category">Pendidikan</span><h3 class="card-title"><a href="artikel/${a.slug}">${a.title}</a></h3><p class="card-text">${a.description}</p><div class="card-meta"><span>07 Sep 2026</span><span>15 menit baca</span></div></div></article>`).join('');
+  const cards = articles.filter(a => !blog.includes(`artikel/${a.slug}`)).map(a => `\n                <!-- Article: ${a.title} -->\n                <article class="card blog-card animate-on-scroll" data-yuka-revision="yuka-autopilot-2026-09-09-${a.slug}"><div class="card-image"><img src="${a.image}" alt="Ilustrasi pendidikan inklusif dan dukungan anak" loading="lazy"></div><div class="card-body"><span class="card-category">Pendidikan</span><h3 class="card-title"><a href="artikel/${a.slug}">${a.title}</a></h3><p class="card-text">${a.description}</p><div class="card-meta"><span>09 Sep 2026</span><span>15 menit baca</span></div></div></article>`).join('');
   if (cards) fs.writeFileSync(file, blog.replace(marker, marker + cards));
 }
 
@@ -462,7 +462,7 @@ function updateFeed() {
 for (const a of articles) {
   // The page shell (canonical footer, GA4, analytics.js) comes from the shared
   // partial, never from this file. Retyping it here is what produced the
-  // footerless 2026-09-07 batch in the first place.
+  // footerless 2026-09-09 batch in the first place.
   const html = ensureArticleShell(render(a));
   const missingShell = missingShellParts(html);
   if (missingShell.length) throw new Error(`${a.slug} shell gate failed, missing: ${missingShell.join(', ')}`);
