@@ -35,3 +35,10 @@ Panduan*.txt
 .env
 token_gdrive.json
 .prose_yuka_ed25519*
+
+# Data SEO internal: folder seo/ tersaji publik di https://yukaindonesia.com/seo/,
+# jadi daftar keyword target dan baseline posisi jangan di-commit.
+seo/rt-keywords.txt
+seo/rt-keywords-baseline.json
+seo/rt-keywords-baseline.csv
+seo/rank-tracker-manual-steps.md
