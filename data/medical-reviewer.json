@@ -1,0 +1,31 @@
+{
+  "_catatan": "Registry peninjau medis untuk artikel YMYL kesehatan YUKA. JANGAN diisi dengan nama karangan. Isi hanya setelah orang yang bersangkutan setuju namanya dicantumkan. Setelah terisi, jalankan: node scripts/apply-medical-reviewer.mjs",
+  "_status": "PENDING_INPUT",
+  "_pertanyaan_untuk_owner": [
+    "Siapa dokter anak, psikiater anak, atau psikolog perkembangan yang bersedia namanya dicantumkan sebagai peninjau?",
+    "Apakah boleh memakai tenaga medis atau terapis yang sudah bermitra dengan Yayasan / Sekolah Inklusi Taruna Imani?",
+    "Apakah yang bersangkutan bersedia nomor STR atau SIP-nya ditampilkan publik? (boleh dikosongkan, tidak wajib)",
+    "Tanggal berapa tinjauan ketiga artikel diselesaikan?"
+  ],
+  "reviewer": {
+    "nama": "",
+    "gelar": "",
+    "jobTitle": "",
+    "nomorSTR": "",
+    "nomorSIP": "",
+    "institusi": "",
+    "url": "",
+    "slugProfil": "",
+    "fotoWebp": ""
+  },
+  "tinjauan": {
+    "tanggal": "",
+    "tanggalISO": "",
+    "catatanKoreksi": "",
+    "artikel": [
+      "artikel/down-syndrome-adalah.html",
+      "artikel/autisme-adalah.html",
+      "artikel/adhd-adalah.html"
+    ]
+  }
+}
