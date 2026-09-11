@@ -1,12 +1,14 @@
 {
-  "_catatan": "Registry peninjau medis untuk artikel YMYL kesehatan YUKA. JANGAN diisi dengan nama karangan. Isi hanya setelah orang yang bersangkutan setuju namanya dicantumkan. Setelah terisi, jalankan: node scripts/apply-medical-reviewer.mjs",
+  "_catatan": "Registry peninjau medis untuk artikel YMYL kesehatan dan terapi YUKA. JANGAN diisi dengan nama karangan. Isi hanya setelah orang yang bersangkutan setuju namanya dicantumkan. Setelah terisi, jalankan: node scripts/apply-medical-reviewer.mjs",
   "_status": "PENDING_INPUT",
+  "_cakupan": "12 artikel prioritas (7 kondisi kesehatan + 5 terapi). Semuanya sudah punya penanda MEDICAL_REVIEW_STATUS di badan halaman dan node JSON-LD MedicalWebPage, jadi skrip tinggal mengisi identitas.",
   "_pertanyaan_untuk_owner": [
     "Siapa dokter anak, psikiater anak, atau psikolog perkembangan yang bersedia namanya dicantumkan sebagai peninjau?",
     "Apakah boleh memakai tenaga medis atau terapis yang sudah bermitra dengan Yayasan / Sekolah Inklusi Taruna Imani?",
     "Apakah yang bersangkutan bersedia nomor STR atau SIP-nya ditampilkan publik? (boleh dikosongkan, tidak wajib)",
-    "Tanggal berapa tinjauan ketiga artikel diselesaikan?"
+    "Tanggal berapa tinjauan artikel diselesaikan?"
   ],
+  "_catatan_peninjau_per_artikel": "Kalau satu orang tidak pas untuk semua topik (misal terapi wicara ditinjau terapis wicara, cerebral palsy ditinjau dokter anak), isi reviewerPerArtikel dengan kunci path artikel. Artikel yang tidak disebut memakai reviewer default di atas. Ini opsional, boleh dibiarkan kosong.",
   "reviewer": {
     "nama": "",
     "gelar": "",
@@ -18,6 +20,7 @@
     "slugProfil": "",
     "fotoWebp": ""
   },
+  "reviewerPerArtikel": {},
   "tinjauan": {
     "tanggal": "",
     "tanggalISO": "",
@@ -25,7 +28,16 @@
     "artikel": [
       "artikel/down-syndrome-adalah.html",
       "artikel/autisme-adalah.html",
-      "artikel/adhd-adalah.html"
+      "artikel/adhd-adalah.html",
+      "artikel/cerebral-palsy-adalah.html",
+      "artikel/speech-delay-adalah.html",
+      "artikel/disleksia-adalah.html",
+      "artikel/disabilitas-intelektual-adalah.html",
+      "artikel/terapi-okupasi.html",
+      "artikel/terapi-wicara.html",
+      "artikel/terapi-aba.html",
+      "artikel/sensori-integrasi.html",
+      "artikel/intervensi-dini.html"
     ]
   }
 }
