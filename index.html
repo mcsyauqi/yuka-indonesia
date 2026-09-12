@@ -12,8 +12,8 @@
     <link rel="preload" href="assets/images/hero-bg.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="preload" href="Dokumentasi/21 Jan 2026/IMG_8420.webp" as="image" type="image/webp" fetchpriority="high">
 
-    <!-- GA4. Only this stub is inline; the 156 KB library is fetched once the page
-         has loaded, or on the first interaction, whichever comes first. Calls made
+    <!-- GA4. Only this stub is inline; the 156 KB library is fetched on the first
+         interaction, or after a five-second fallback for passive visits. Calls made
          before then queue on dataLayer and flush when it arrives, so page_view and
          the events in analytics.js are all still recorded. -->
     <script>
@@ -35,8 +35,7 @@
           s.src = 'https://www.googletagmanager.com/gtag/js?id=G-LDXC5GQF61';
           document.head.appendChild(s);
         }
-        if (document.readyState === 'complete') loadGtag();
-        else addEventListener('load', loadGtag, { once: true });
+        setTimeout(loadGtag, 5000);
         ['pointerdown', 'keydown', 'touchstart'].forEach(function (evt) {
           addEventListener(evt, loadGtag, { once: true, passive: true });
         });
