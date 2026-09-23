@@ -1,0 +1,55 @@
+{
+  "task": "yuka-homeschooling-cluster",
+  "created": "2026-09-23T13:04:54.940Z",
+  "total": 6,
+  "items": [
+    {
+      "status": "pending",
+      "ts": null,
+      "id": "homeschooling",
+      "keyword": "homeschooling",
+      "slug": "homeschooling-anak-berkebutuhan-khusus",
+      "existing": true
+    },
+    {
+      "status": "pending",
+      "ts": null,
+      "id": "homeschooling-adalah",
+      "keyword": "homeschooling adalah",
+      "slug": "homeschooling-adalah",
+      "existing": false
+    },
+    {
+      "status": "pending",
+      "ts": null,
+      "id": "biaya-homeschooling",
+      "keyword": "biaya homeschooling",
+      "slug": "biaya-homeschooling",
+      "existing": true
+    },
+    {
+      "status": "pending",
+      "ts": null,
+      "id": "apa-itu-homeschooling",
+      "keyword": "apa itu homeschooling",
+      "slug": "apa-itu-homeschooling",
+      "existing": false
+    },
+    {
+      "status": "pending",
+      "ts": null,
+      "id": "apakah-homeschooling-dapat-ijazah",
+      "keyword": "apakah homeschooling dapat ijazah",
+      "slug": "apakah-homeschooling-dapat-ijazah",
+      "existing": false
+    },
+    {
+      "status": "pending",
+      "ts": null,
+      "id": "homeschooling-taman-sekar-bandung",
+      "keyword": "homeschooling taman sekar bandung",
+      "slug": "homeschooling-taman-sekar-bandung",
+      "existing": false
+    }
+  ]
+}
