@@ -1,71 +1,16 @@
 {
   "task": "yuka-motorik-cluster",
-  "created": "2026-09-23T13:04:54.985Z",
+  "created": "2026-09-24T02:05:10Z",
+  "completed": "2026-09-24T02:05:10Z",
   "total": 8,
   "items": [
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "motorik-halus-adalah",
-      "keyword": "motorik halus adalah",
-      "slug": "motorik-halus-adalah",
-      "existing": false
-    },
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "motorik-kasar",
-      "keyword": "motorik kasar",
-      "slug": "motorik-kasar-adalah",
-      "existing": true
-    },
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "contoh-motorik-kasar",
-      "keyword": "contoh motorik kasar",
-      "slug": "contoh-motorik-kasar",
-      "existing": true
-    },
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "perbedaan-motorik-kasar-dan-halus",
-      "keyword": "perbedaan motorik kasar dan halus",
-      "slug": "perbedaan-motorik-kasar-dan-halus",
-      "existing": true
-    },
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "permainan-motorik-kasar",
-      "keyword": "permainan motorik kasar",
-      "slug": "permainan-motorik-kasar",
-      "existing": true
-    },
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "kegiatan-dan-stimulasi-motorik-halus",
-      "keyword": "kegiatan dan stimulasi motorik halus",
-      "slug": "kegiatan-dan-stimulasi-motorik-halus",
-      "existing": false
-    },
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "apa-itu-motorik-halus",
-      "keyword": "apa itu motorik halus",
-      "slug": "apa-itu-motorik-halus",
-      "existing": false
-    },
-    {
-      "status": "pending",
-      "ts": null,
-      "id": "permainan-motorik-halus",
-      "keyword": "permainan motorik halus",
-      "slug": "permainan-motorik-halus",
-      "existing": false
-    }
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"motorik-halus-adalah","keyword":"motorik halus adalah","slug":"motorik-halus-adalah","existing":false},
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"motorik-kasar","keyword":"motorik kasar","slug":"motorik-kasar-adalah","existing":false},
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"contoh-motorik-kasar","keyword":"contoh motorik kasar","slug":"contoh-motorik-kasar","existing":false},
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"perbedaan-motorik-kasar-dan-halus","keyword":"perbedaan motorik kasar dan halus","slug":"perbedaan-motorik-kasar-dan-halus","existing":false},
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"permainan-motorik-kasar","keyword":"permainan motorik kasar","slug":"permainan-motorik-kasar","existing":false},
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"kegiatan-dan-stimulasi-motorik-halus","keyword":"kegiatan dan stimulasi motorik halus","slug":"kegiatan-dan-stimulasi-motorik-halus","existing":false},
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"apa-itu-motorik-halus","keyword":"apa itu motorik halus","slug":"apa-itu-motorik-halus","existing":false},
+    {"status":"done","ts":"2026-09-24T02:05:10Z","id":"permainan-motorik-halus","keyword":"permainan motorik halus","slug":"permainan-motorik-halus","existing":false}
   ]
 }
