@@ -26,8 +26,8 @@ const IMAGE_HERO = 'assets/images/artikel/anak-down-syndrome-menyikat-gigi-wikim
 const IMAGE_HERO_ALT = 'Anak laki-laki dengan sindrom Down berkaus krem memegang sendiri sikat gigi merah berkepala kuning di depan mulutnya sambil melirik ke samping';
 const IMAGE_URL = `${SITE}/${IMAGE_HERO}`;
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
-const DATE_PUBLISHED = '2026-09-25T09:00:00+07:00';
-const DATE_MODIFIED = '2026-09-25T09:00:00+07:00';
+const DATE_PUBLISHED = '2026-09-25T02:30:00+07:00';
+const DATE_MODIFIED = '2026-09-25T02:30:00+07:00';
 const DATE_DISPLAY = '25 September 2026';
 
 const CREDIT = {
