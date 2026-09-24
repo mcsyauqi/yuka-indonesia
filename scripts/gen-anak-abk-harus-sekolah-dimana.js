@@ -401,7 +401,7 @@ const html = `<!DOCTYPE html>
 
             <div class="story-highlight">
                 <h3>Pendampingan di YUKA</h3>
-                <p style="margin-bottom:0;">Di <a href="../sekolah-inklusi-sleman">Sekolah Inklusi Taruna Imani</a>, anak berkebutuhan khusus belajar bersama teman sebayanya dengan pendampingan guru. Bila Ayah dan Bunda masih menimbang pilihan, tim kami terbuka untuk berdiskusi tentang kebutuhan anak. YUKA bukan fasilitas kesehatan dan tidak menegakkan diagnosis; untuk pemeriksaan, kami akan menyarankan tenaga profesional yang sesuai.</p>
+                <p style="margin-bottom:0;">Di <a href="/sekolah-inklusi-sleman">Sekolah Inklusi Taruna Imani</a>, anak berkebutuhan khusus belajar bersama teman sebayanya dengan pendampingan guru. Bila Ayah dan Bunda masih menimbang pilihan, tim kami terbuka untuk berdiskusi tentang kebutuhan anak. YUKA bukan fasilitas kesehatan dan tidak menegakkan diagnosis; untuk pemeriksaan, kami akan menyarankan tenaga profesional yang sesuai.</p>
             </div>
 
             <h2 id="faq">Pertanyaan yang Sering Diajukan</h2>
