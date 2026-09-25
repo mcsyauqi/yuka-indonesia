@@ -43,7 +43,7 @@ const IMAGE_HERO_ALT = 'Ruang kelas sekolah dasar yang kosong dilihat dari amban
 const IMAGE_URL = `${SITE}/${IMAGE_HERO}`;
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
 const DATE_PUBLISHED = '2026-09-25T08:00:00+07:00';
-const DATE_MODIFIED = '2026-09-25T08:00:00+07:00';
+const DATE_MODIFIED = '2026-09-25T09:30:00+07:00';
 const DATE_DISPLAY = '25 September 2026';
 
 const CREDIT = {
@@ -310,7 +310,7 @@ const html = `<!DOCTYPE html>
         <div class="article-body">
             <p><strong>Classroom management kelas inklusi adalah cara guru mengatur ruang, waktu, aturan, rutinitas, kegiatan belajar, dan respons terhadap perilaku supaya semua anak, termasuk anak berkebutuhan khusus (ABK), bisa hadir, terlibat, dan belajar dengan aman di kelas yang sama.</strong> Kuncinya ada pada pencegahan: kelas yang tertata, aturan yang diajarkan dan dilatih, serta kegiatan yang sesuai kemampuan anak membuat perilaku menantang jauh lebih jarang muncul. Saat perilaku menantang tetap terjadi, guru sudah punya langkah yang disiapkan.</p>
 
-            <p>Artikel ini membahas manajemen kelas inklusi secara utuh, dari tata ruang sampai cara meredakan anak yang sedang meledak emosinya. Dua strategi yang sering dipakai di dalamnya, yaitu <a href="co-teaching-dalam-kelas-inklusi">co-teaching</a> dan <a href="peer-tutoring-di-kelas-inklusi">peer tutoring</a>, punya artikel tersendiri.</p>
+            <p>Artikel ini membahas manajemen kelas inklusi secara utuh, dari tata ruang sampai cara meredakan anak yang sedang meledak emosinya. Dua strategi yang sering dipakai di dalamnya, yaitu <a href="/artikel/co-teaching-dalam-kelas-inklusi">co-teaching</a> dan <a href="/artikel/peer-tutoring-di-kelas-inklusi">peer tutoring</a>, punya artikel tersendiri.</p>
 
             <div class="info-box">
                 <h4>Catatan sebelum membaca</h4>
@@ -340,7 +340,7 @@ const html = `<!DOCTYPE html>
                 <li><strong>Faktor mobilitas:</strong> kelas harus aman untuk setiap anak tanpa terkecuali, dan sarana prasarananya aksesibel sehingga anak mudah bergerak.</li>
                 <li><strong>Faktor interaksi teman sekelas:</strong> guru mendorong teman-teman lain untuk mendukung siswa berkebutuhan khusus agar aktif berpartisipasi, serta bekerja sama dengan orang tua untuk menciptakan kelas yang lebih hidup.</li>
             </ul>
-            <p>Bedanya dengan kelas biasa bukan pada aturan yang lebih longgar, melainkan pada keragaman kebutuhan yang harus diantisipasi. Satu kelas bisa berisi anak dengan hambatan pendengaran, anak dengan <a href="adhd-adalah">ADHD</a>, anak <a href="autisme-adalah">autis</a> yang sensitif terhadap suara, dan anak yang belajar lebih lambat. Manajemen kelas yang baik membuat semuanya bisa berjalan bersamaan.</p>
+            <p>Bedanya dengan kelas biasa bukan pada aturan yang lebih longgar, melainkan pada keragaman kebutuhan yang harus diantisipasi. Satu kelas bisa berisi anak dengan hambatan pendengaran, anak dengan <a href="/artikel/adhd-adalah">ADHD</a>, anak <a href="/artikel/autisme-adalah">autis</a> yang sensitif terhadap suara, dan anak yang belajar lebih lambat. Manajemen kelas yang baik membuat semuanya bisa berjalan bersamaan.</p>
 
             <h2 id="dasar">Dasar Aturan dan Panduan Resmi</h2>
             <p>Panduan Pendidikan Inklusif menyebut tiga dimensi penyesuaian yang harus diperhatikan satuan pendidikan: kurikulum, instruksional (cara dan metode mengajar), dan lingkungan belajar. Adaptasi lingkungan belajar berkaitan dengan pengaturan suasana pembelajaran, yaitu di mana, kapan, dan bersama siapa pembelajaran dilakukan, termasuk ketersediaan alat bantu dan sumber belajar yang sesuai kebutuhan peserta didik.</p>
@@ -350,7 +350,7 @@ const html = `<!DOCTYPE html>
                 <li><strong>Lampiran II, peserta didik penyandang disabilitas mental:</strong> akomodasinya antara lain penyediaan ruang untuk melepas ketegangan atau ruang relaksasi, fleksibilitas proses pembelajaran, serta fleksibilitas posisi duduk dan waktu istirahat saat mengikuti pembelajaran, sesuai rekomendasi hasil asesmen kebutuhan peserta didik.</li>
                 <li><strong>Lampiran II, peserta didik penyandang disabilitas rungu:</strong> fleksibilitas posisi duduk sesuai kebutuhan dan kemampuan anak, dengan posisi pendidik menghadap peserta didik saat menyampaikan materi, untuk menjaga keterarahwajahan dan keterarahsuaraan.</li>
             </ul>
-            <p>Artinya, pengaturan tempat duduk, sudut tenang, dan jeda istirahat bukan sekadar kebaikan hati guru, tetapi bagian dari akomodasi yang layak yang bisa diminta orang tua. Cara sekolah memetakan kebutuhan itu dibahas di artikel <a href="asesmen-abk">asesmen ABK</a>.</p>
+            <p>Artinya, pengaturan tempat duduk, sudut tenang, dan jeda istirahat bukan sekadar kebaikan hati guru, tetapi bagian dari akomodasi yang layak yang bisa diminta orang tua. Cara sekolah memetakan kebutuhan itu dibahas di artikel <a href="/artikel/asesmen-abk">asesmen ABK</a>, sedangkan pemetaan kemampuan membaca, menulis, dan berhitung ada di artikel <a href="/artikel/asesmen-akademik-anak-berkebutuhan-khusus">asesmen akademik anak berkebutuhan khusus</a>.</p>
             <p><em>Catatan:</em> sebagian tulisan di internet masih merujuk Permendiknas Nomor 70 Tahun 2009 tentang pendidikan inklusif. ${ext(L.p70, 'JDIH Kemendikdasmen')} mencatat peraturan itu berstatus "Tidak Berlaku", dan ketentuannya tentang peserta didik yang memiliki kelainan dicabut oleh Pasal 43 Permendikbudristek 48/2023. Karena itu artikel ini tidak memakainya sebagai rujukan.</p>
 
             <h2 id="tata-ruang">Tata Ruang dan Tempat Duduk</h2>
@@ -384,7 +384,7 @@ const html = `<!DOCTYPE html>
                 <li>Memakai pengingat visual, misalnya gambar anak yang sedang menunjukkan perilaku yang diharapkan, seperti duduk di meja atau berbaris.</li>
                 <li>Mengurangi pengingat secara bertahap setelah anak menguasai rutinitas, sehingga rutinitas dipicu oleh kejadian biasa seperti bunyi bel.</li>
             </ul>
-            <p>Panduan Pendidikan Inklusif menekankan hal serupa dalam strategi instruksi dan bantuan: memakai bantuan gambar dan menjelaskan aturan berulang-ulang. Untuk anak yang butuh prediktabilitas tinggi, seperti banyak anak autis, <a href="jadwal-visual-anak-autis">jadwal visual</a> yang menunjukkan urutan kegiatan hari itu sangat membantu. Panduan yang sama bahkan mencontohkan lagu berisi rutinitas harian untuk anak TK.</p>
+            <p>Panduan Pendidikan Inklusif menekankan hal serupa dalam strategi instruksi dan bantuan: memakai bantuan gambar dan menjelaskan aturan berulang-ulang. Untuk anak yang butuh prediktabilitas tinggi, seperti banyak anak autis, <a href="/artikel/jadwal-visual-anak-autis">jadwal visual</a> yang menunjukkan urutan kegiatan hari itu sangat membantu. Panduan yang sama bahkan mencontohkan lagu berisi rutinitas harian untuk anak TK.</p>
             <p>Beberapa prinsip membuat aturan kelas inklusi:</p>
             <ol>
                 <li><strong>Sedikit dan jelas.</strong> Tiga sampai lima aturan lebih mudah diingat daripada sepuluh.</li>
@@ -402,9 +402,9 @@ const html = `<!DOCTYPE html>
                 <li><strong>Pilihan cara menjawab.</strong> Menunjuk, menulis, menjawab lisan, atau memakai kartu jawaban.</li>
                 <li><strong>Waktu disesuaikan.</strong> Panduan Pendidikan Inklusif menyarankan aktivitas mempertimbangkan respons anak dan waktu, apakah waktu yang diberikan sudah sesuai kebutuhan anak.</li>
                 <li><strong>Media yang disesuaikan.</strong> Panduan yang sama mencontohkan pensil yang dibuat lebih besar atau dilapisi <em>playdough</em>, serta memakai lebih banyak gambar daripada perintah lisan untuk anak dengan hambatan pendengaran atau disleksia.</li>
-                <li><strong>Materi sesuai rencana individual.</strong> Tujuan belajar anak ABK sebaiknya berasal dari <a href="program-pembelajaran-individual">program pembelajaran individual (PPI)</a>, bukan sekadar menyalin target kelas.</li>
+                <li><strong>Materi sesuai rencana individual.</strong> Tujuan belajar anak ABK sebaiknya berasal dari <a href="/artikel/program-pembelajaran-individual">program pembelajaran individual (PPI)</a>, bukan sekadar menyalin target kelas.</li>
             </ul>
-            <p>Dua guru di satu kelas lewat <a href="co-teaching-dalam-kelas-inklusi">co-teaching</a> dan pembelajaran berpasangan lewat <a href="peer-tutoring-di-kelas-inklusi">peer tutoring</a> adalah cara lain menambah kesempatan setiap anak untuk aktif.</p>
+            <p>Dua guru di satu kelas lewat <a href="/artikel/co-teaching-dalam-kelas-inklusi">co-teaching</a> dan pembelajaran berpasangan lewat <a href="/artikel/peer-tutoring-di-kelas-inklusi">peer tutoring</a> adalah cara lain menambah kesempatan setiap anak untuk aktif.</p>
 
             <h2 id="penguatan">Mengajarkan dan Menguatkan Perilaku Positif</h2>
             <p>Rekomendasi ketiga WWC, juga dengan tingkat bukti kuat, adalah mengajarkan dan menguatkan keterampilan baru untuk meningkatkan perilaku yang sesuai dan menjaga iklim kelas tetap positif. Langkahnya:</p>
@@ -413,8 +413,8 @@ const html = `<!DOCTYPE html>
                 <li><strong>Ajarkan dengan contoh, latihan, dan umpan balik,</strong> sama seperti mengajarkan materi pelajaran.</li>
                 <li><strong>Kelola konsekuensi,</strong> sehingga penguatan diberikan untuk perilaku yang sesuai dan tidak diberikan untuk perilaku yang tidak sesuai.</li>
             </ol>
-            <p>WWC mencontohkan sistem token individual, ketika anak yang mengikuti harapan tertentu mendapat poin yang bisa ditukar dengan kegiatan yang disukai, serta kontingensi kelompok, ketika hadiah bergantung pada perilaku seluruh kelas. Panduan itu menyebut penelitian telah menunjukkan efektivitas program kontingensi kelompok untuk mencegah dan menangani masalah perilaku. Namun hadiah buatan seperti token sebaiknya dikurangi bertahap dan diganti bentuk penguatan lain serta konsekuensi alami, misalnya anak yang cepat membereskan meja boleh memakai sisa waktunya untuk kegiatan favorit. Contoh penerapannya ada di artikel <a href="reward-system-efektif-untuk-anak-autis">reward system untuk anak autis</a>.</p>
-            <p>Pujian yang paling berguna adalah pujian spesifik. "Terima kasih sudah mengangkat tangan dan menunggu dipanggil" memberi tahu anak persis perilaku mana yang dihargai, berbeda dengan "pintar" yang tidak menjelaskan apa-apa. Anak yang butuh latihan lebih terstruktur untuk keterampilan sosial bisa dibantu dengan <a href="social-skills-training-anak-autis">social skills training</a>.</p>
+            <p>WWC mencontohkan sistem token individual, ketika anak yang mengikuti harapan tertentu mendapat poin yang bisa ditukar dengan kegiatan yang disukai, serta kontingensi kelompok, ketika hadiah bergantung pada perilaku seluruh kelas. Panduan itu menyebut penelitian telah menunjukkan efektivitas program kontingensi kelompok untuk mencegah dan menangani masalah perilaku. Namun hadiah buatan seperti token sebaiknya dikurangi bertahap dan diganti bentuk penguatan lain serta konsekuensi alami, misalnya anak yang cepat membereskan meja boleh memakai sisa waktunya untuk kegiatan favorit. Contoh penerapannya ada di artikel <a href="/artikel/reward-system-efektif-untuk-anak-autis">reward system untuk anak autis</a>.</p>
+            <p>Pujian yang paling berguna adalah pujian spesifik. "Terima kasih sudah mengangkat tangan dan menunggu dipanggil" memberi tahu anak persis perilaku mana yang dihargai, berbeda dengan "pintar" yang tidak menjelaskan apa-apa. Anak yang butuh latihan lebih terstruktur untuk keterampilan sosial bisa dibantu dengan <a href="/artikel/social-skills-training-anak-autis">social skills training</a>.</p>
 
             <h2 id="perilaku">Saat Perilaku Menantang Muncul</h2>
             <h3>Pahami dulu polanya</h3>
@@ -436,14 +436,14 @@ const html = `<!DOCTYPE html>
             </table>
             </div>
             <p>Center on PBIS menegaskan saat krisis bukan waktunya membahas konsekuensi, dan strategi di atas tidak menggantikan pelatihan penanganan krisis. Brief itu juga mendorong sekolah mengurangi ketergantungan pada cara reaktif yang menghukum atau mengeluarkan anak dari kelas, dan beralih ke pendekatan yang lebih aman, mendidik, dan inklusif. Bagi anak dengan kebutuhan dukungan perilaku yang intensif, tim sekolah menyusun rencana dukungan perilaku individual berdasarkan asesmen fungsional perilaku.</p>
-            <p>Untuk anak ADHD secara khusus, strategi kelasnya kami uraikan di artikel <a href="strategi-mengajar-anak-adhd-di-sekolah">strategi mengajar anak ADHD di sekolah</a>. Anak yang perilakunya dipicu kebutuhan sensorik, misalnya menutup telinga atau terus bergerak, mungkin terbantu oleh program <a href="sensori-integrasi">sensori integrasi</a> dari terapis.</p>
+            <p>Untuk anak ADHD secara khusus, strategi kelasnya kami uraikan di artikel <a href="/artikel/strategi-mengajar-anak-adhd-di-sekolah">strategi mengajar anak ADHD di sekolah</a>. Anak yang perilakunya dipicu kebutuhan sensorik, misalnya menutup telinga atau terus bergerak, mungkin terbantu oleh program <a href="/artikel/sensori-integrasi">sensori integrasi</a> dari terapis.</p>
 
             <h2 id="tim">Kerja Tim: GPK, Teman Sebaya, dan Orang Tua</h2>
             <p>Tidak ada guru yang bisa mengelola kelas inklusi sendirian. WWC merekomendasikan guru bekerja sama dengan rekan guru, membangun kemitraan dengan ahli perilaku di sekolah maupun di luar sekolah ketika masalahnya cukup serius, dan mendorong orang tua menjadi mitra aktif dalam mengajarkan dan menguatkan perilaku yang sesuai.</p>
             <ul>
-                <li><strong>Guru pendamping.</strong> Panduan Pendidikan Inklusif menyebut penggunaan <em>helper</em>, guru lain, <a href="shadow-teacher-adalah">shadow teacher</a>, atau <a href="gpk-adalah">guru pembimbing khusus (GPK)</a> bila diperlukan. Sepakati siapa melakukan apa, supaya pendamping tidak justru membuat anak terpisah dari teman-temannya.</li>
+                <li><strong>Guru pendamping.</strong> Panduan Pendidikan Inklusif menyebut penggunaan <em>helper</em>, guru lain, <a href="/artikel/shadow-teacher-adalah">shadow teacher</a>, atau <a href="/artikel/gpk-adalah">guru pembimbing khusus (GPK)</a> bila diperlukan. Sepakati siapa melakukan apa, supaya pendamping tidak justru membuat anak terpisah dari teman-temannya.</li>
                 <li><strong>Teman sebaya.</strong> Panduan yang sama menyebut teman sebaya sebagai hal yang paling berkontribusi bagi keberhasilan pendidikan inklusif. Ajarkan seluruh kelas cara membantu tanpa mengambil alih, dan beri anak ABK peran yang bermakna.</li>
-                <li><strong>Orang tua.</strong> Bagikan aturan dan jadwal kelas ke rumah, sepakati satu atau dua kalimat pengingat yang sama di rumah dan di sekolah, dan kabarkan kemajuan kecil, bukan hanya masalah. Peran keluarga dibahas lebih jauh di artikel <a href="peran-orang-tua-pendidikan-inklusi">peran orang tua dalam pendidikan inklusi</a>.</li>
+                <li><strong>Orang tua.</strong> Bagikan aturan dan jadwal kelas ke rumah, sepakati satu atau dua kalimat pengingat yang sama di rumah dan di sekolah, dan kabarkan kemajuan kecil, bukan hanya masalah. Peran keluarga dibahas lebih jauh di artikel <a href="/artikel/peran-orang-tua-pendidikan-inklusi">peran orang tua dalam pendidikan inklusi</a>.</li>
             </ul>
             <p>${ext(L.hlp, 'High-Leverage Practices')} dari Council for Exceptional Children dan CEEDAR Center merangkum tujuan semua ini: guru pendidikan khusus perlu membangun lingkungan belajar yang konsisten, teratur, dan saling menghormati, karena lingkungan seperti itu menjadi landasan bagi praktik mengajar lainnya.</p>
 
@@ -459,7 +459,7 @@ const html = `<!DOCTYPE html>
 
             <div class="story-highlight">
                 <h3>Kelas Inklusi di YUKA</h3>
-                <p style="margin-bottom:0;">Di <a href="/sekolah-inklusi-sleman">Sekolah Inklusi Taruna Imani</a> yang dikelola YUKA di Sleman, anak berkebutuhan khusus belajar bersama teman-temannya. Bila Ayah dan Bunda sedang menimbang sekolah yang cocok, artikel <a href="anak-abk-harus-sekolah-dimana">anak ABK harus sekolah dimana</a> dan <a href="pendidikan-inklusi">pendidikan inklusi</a> bisa menjadi titik awal. Untuk pemeriksaan psikologis atau medis, kami akan menyarankan tenaga profesional yang sesuai.</p>
+                <p style="margin-bottom:0;">Di <a href="/sekolah-inklusi-sleman">Sekolah Inklusi Taruna Imani</a> yang dikelola YUKA di Sleman, anak berkebutuhan khusus belajar bersama teman-temannya. Bila Ayah dan Bunda sedang menimbang sekolah yang cocok, artikel <a href="/artikel/anak-abk-harus-sekolah-dimana">anak ABK harus sekolah dimana</a> dan <a href="/artikel/pendidikan-inklusi">pendidikan inklusi</a> bisa menjadi titik awal. Untuk pemeriksaan psikologis atau medis, kami akan menyarankan tenaga profesional yang sesuai.</p>
             </div>
 
             <h2 id="faq">Pertanyaan yang Sering Diajukan</h2>
@@ -468,15 +468,15 @@ const html = `<!DOCTYPE html>
             <h2>Artikel Terkait</h2>
             <div class="related-articles">
                 <div class="related-card">
-                    <h4><a href="co-teaching-dalam-kelas-inklusi">Co-Teaching dalam Kelas Inklusi</a></h4>
+                    <h4><a href="/artikel/co-teaching-dalam-kelas-inklusi">Co-Teaching dalam Kelas Inklusi</a></h4>
                     <p>Model, pembagian peran, dan evaluasi dua guru dalam satu kelas.</p>
                 </div>
                 <div class="related-card">
-                    <h4><a href="peer-tutoring-di-kelas-inklusi">Peer Tutoring di Kelas Inklusi</a></h4>
+                    <h4><a href="/artikel/peer-tutoring-di-kelas-inklusi">Peer Tutoring di Kelas Inklusi</a></h4>
                     <p>Langkah dan etika pembelajaran berpasangan antarsiswa.</p>
                 </div>
                 <div class="related-card">
-                    <h4><a href="jadwal-visual-anak-autis">Jadwal Visual Anak Autis</a></h4>
+                    <h4><a href="/artikel/jadwal-visual-anak-autis">Jadwal Visual Anak Autis</a></h4>
                     <p>Cara membuat urutan kegiatan bergambar yang membantu anak memprediksi harinya.</p>
                 </div>
             </div>
