@@ -1001,6 +1001,7 @@ p {
 }
 
 .about-image img {
+    aspect-ratio: 4 / 3;
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-lg);
 }
@@ -1814,6 +1815,7 @@ p {
     align-items: center;
     overflow: hidden;
     margin-top: 80px; /* Space for navbar */
+    background-color: var(--primary-dark);
 }
 
 .hero-bg {
@@ -1825,6 +1827,17 @@ p {
     background-size: cover;
     background-position: center;
     z-index: 0;
+}
+
+/* On phones the hero stacks to ~2,000px. Painting the photographic background
+   over the whole stack delays LCP even though only the first viewport needs it.
+   Keep the photo in the opening viewport and let the solid hero background carry
+   the remainder of the stacked content. */
+@media (max-width: 767px) {
+    .hero-bg {
+        height: 100vh;
+        background-position: center top;
+    }
 }
 
 /* background-attachment: fixed forces a repaint of the whole hero on every scroll
