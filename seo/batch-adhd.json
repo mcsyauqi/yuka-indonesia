@@ -1,0 +1,59 @@
+{
+  "batch": "adhd-turunan",
+  "card": "https://trello.com/c/qnuMy8UV",
+  "created": "2026-09-25",
+  "pillar": "https://www.yukaindonesia.com/artikel/adhd-adalah",
+  "baseline_gsc": {
+    "window": "2026-08-26..2026-09-22 (28 hari, dataState final)",
+    "adhd_queries_with_impressions": 21,
+    "queries_below_pos_40": 0,
+    "all_to_page": "/artikel/adhd-adalah",
+    "window90": "2026-06-27..2026-09-22: 70 query adhd, pilar 637 impresi pos 40.2"
+  },
+  "items": [
+    {
+      "slug": "adhd-singkatan-dari-apa",
+      "url": "https://www.yukaindonesia.com/artikel/adhd-singkatan-dari-apa",
+      "status": "done",
+      "type": "artikel baru",
+      "generator": "scripts/gen-adhd-turunan-2026-09-25.js"
+    },
+    {
+      "slug": "ciri-ciri-anak-adhd-berdasarkan-usia",
+      "url": "https://www.yukaindonesia.com/artikel/ciri-ciri-anak-adhd-berdasarkan-usia",
+      "status": "done",
+      "type": "artikel baru",
+      "generator": "scripts/gen-adhd-turunan-2026-09-25.js"
+    },
+    {
+      "slug": "penyebab-adhd-pada-anak",
+      "url": "https://www.yukaindonesia.com/artikel/penyebab-adhd-pada-anak",
+      "status": "done",
+      "type": "artikel baru",
+      "generator": "scripts/gen-adhd-turunan-2026-09-25.js"
+    },
+    {
+      "slug": "diagnosis-adhd-di-indonesia",
+      "url": "https://www.yukaindonesia.com/artikel/diagnosis-adhd-di-indonesia",
+      "status": "done",
+      "type": "artikel baru",
+      "generator": "scripts/gen-adhd-turunan-2026-09-25.js"
+    },
+    {
+      "slug": "terapi-adhd-pada-anak",
+      "url": "https://www.yukaindonesia.com/artikel/terapi-adhd-pada-anak",
+      "status": "done",
+      "type": "artikel baru",
+      "generator": "scripts/gen-adhd-turunan-2026-09-25.js"
+    },
+    {
+      "slug": "perbedaan-adhd-dan-hiperaktif-biasa",
+      "url": "https://www.yukaindonesia.com/artikel/hiperaktif-artinya",
+      "status": "done",
+      "type": "perkuat halaman lama (tidak membuat pesaing)",
+      "reason": "Intent sudah dipegang /artikel/hiperaktif-artinya (H2 Aktif, Hiperaktif, dan ADHD) dan /artikel/hiperaktif-adalah; halaman baru akan jadi URL ketiga untuk intent yang sama. Judul hiperaktif-artinya kini memuat ADHD, H2 diganti bentuk query, tambahan paragraf bersumber dan tautan klaster.",
+      "generator": "scripts/perkuat-hiperaktif-artinya-2026-09-25.js"
+    }
+  ],
+  "pillar_update": "scripts/pilar-adhd-tautan-turunan-2026-09-25.js (hub box + 6 tautan Baca selengkapnya)"
+}

@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "date": "2026-09-25",
+    "slug": "adhd-singkatan-dari-apa",
+    "file": "artikel/adhd-singkatan-dari-apa.html",
+    "title": "ADHD Singkatan dari Apa? Arti, Kepanjangan, dan Istilah GPPH",
+    "description": "ADHD singkatan dari Attention-Deficit/Hyperactivity Disorder, di Indonesia disebut GPPH. Pahami arti tiap kata, tipe, dan beda ADD dengan ADHD.",
+    "image": "assets/images/artikel/ubin-huruf-kayu-berserakan-wikimedia.webp",
+    "category": "Pendidikan",
+    "readTime": "8 menit baca"
+  },
+  {
+    "date": "2026-09-25",
+    "slug": "ciri-ciri-anak-adhd-berdasarkan-usia",
+    "file": "artikel/ciri-ciri-anak-adhd-berdasarkan-usia.html",
+    "title": "Ciri-Ciri Anak ADHD Berdasarkan Usia: Dari Balita sampai Remaja",
+    "description": "Ciri-ciri anak ADHD berubah sesuai usia. Kenali tanda pada balita, anak sekolah, dan remaja, plus kapan perlu diperiksakan ke dokter. Baca di sini.",
+    "image": "assets/images/artikel/siluet-anak-bermain-di-pantai-senja-wikimedia.webp",
+    "category": "Pendidikan",
+    "readTime": "10 menit baca"
+  },
+  {
+    "date": "2026-09-25",
+    "slug": "penyebab-adhd-pada-anak",
+    "file": "artikel/penyebab-adhd-pada-anak.html",
+    "title": "Penyebab ADHD pada Anak: Genetik, Perkembangan Otak, dan Faktor Risiko",
+    "description": "Penyebab ADHD belum diketahui pasti, tetapi genetik berperan besar. Kenali faktor risiko yang terbukti dan mitos yang keliru soal pola asuh. Baca di sini.",
+    "image": "assets/images/artikel/model-otak-manusia-plastik-wikimedia.webp",
+    "category": "Pendidikan",
+    "readTime": "9 menit baca"
+  },
+  {
+    "date": "2026-09-25",
+    "slug": "diagnosis-adhd-di-indonesia",
+    "file": "artikel/diagnosis-adhd-di-indonesia.html",
+    "title": "Diagnosis ADHD di Indonesia: Alur Pemeriksaan dan Siapa yang Memeriksa",
+    "description": "Diagnosis ADHD di Indonesia dimulai dari skrining tumbuh kembang di puskesmas lalu rujukan ke spesialis. Pahami alur, kriteria, dan persiapannya di sini.",
+    "image": "assets/images/artikel/puskesmas-kelurahan-gelora-jakarta-wikimedia.webp",
+    "category": "Pendidikan",
+    "readTime": "10 menit baca"
+  },
+  {
+    "date": "2026-09-25",
+    "slug": "terapi-adhd-pada-anak",
+    "file": "artikel/terapi-adhd-pada-anak.html",
+    "title": "Terapi dan Penanganan ADHD pada Anak: Pilihan Sesuai Usia",
+    "description": "Terapi ADHD pada anak disesuaikan usia: pelatihan orang tua, terapi perilaku, dukungan sekolah, dan obat dari dokter. Pelajari pilihannya di sini.",
+    "image": "assets/images/artikel/tangan-menyusun-balok-bentuk-warna-wikimedia.webp",
+    "category": "Pendidikan",
+    "readTime": "11 menit baca"
+  }
+]
