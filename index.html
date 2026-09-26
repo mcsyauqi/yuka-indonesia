@@ -95,6 +95,7 @@
         @media (max-width: 767px) {
             .hero-modern { background-color: var(--primary-dark); }
             .hero-modern > .hero-bg { height: 100vh !important; background-position: center top; }
+            .hero-modern > .hero-bg > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
         }
     </style>
 
@@ -150,7 +151,9 @@
     <!-- Hero Section - Modern Fullscreen -->
     <section class="hero-modern">
         <!-- Background with Parallax Effect -->
-        <div class="hero-bg" style="background-image: url('assets/images/hero-bg.webp')"></div>
+        <div class="hero-bg" aria-hidden="true">
+            <img src="assets/images/hero-bg.webp" alt="" width="1920" height="1080" fetchpriority="high" decoding="async">
+        </div>
 
         <!-- Animated Particles -->
         <div class="hero-particles" id="heroParticles"></div>

@@ -1829,6 +1829,14 @@ p {
     z-index: 0;
 }
 
+.hero-bg img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* On phones the hero stacks to ~2,000px. Painting the photographic background
    over the whole stack delays LCP even though only the first viewport needs it.
    Keep the photo in the opening viewport and let the solid hero background carry
