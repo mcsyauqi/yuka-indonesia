@@ -4,6 +4,11 @@
    Tema: Biru Navy & Emas (sesuai logo YUKA)
    ============================================ */
 
+/* Metric-matched stand-in for Poppins while the web font loads (display=swap).
+   size-adjust 112.5% on Arial gives the same line boxes as Poppins in the hero,
+   so the swap no longer shifts layout (measured: hero 2008px with either font). */
+@font-face{font-family:"Poppins Fallback";src:local("Arial");size-adjust:112.5%;ascent-override:93%;descent-override:31%;line-gap-override:9%}
+
 /* CSS Variables */
 :root {
     /* Primary Colors - Biru Navy */
@@ -37,7 +42,7 @@
     --gray-900: #212121;
 
     /* Typography */
-    --font-primary: 'Poppins', sans-serif;
+    --font-primary: 'Poppins', 'Poppins Fallback', sans-serif;
     --font-arabic: 'Amiri', serif;
 
     /* Spacing */
