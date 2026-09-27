@@ -33,8 +33,8 @@ const H1 = 'Tempat Terapi Anak Jogja: Jalur Layanan, Daftar Rumah Sakit, dan Car
 const IMAGE_URL = `${SITE}/Logo/Logo.webp`;
 const IMAGE_HERO_ALT = 'Logo YUKA - Yayasan Ukhuwah Kaffah Amanatullah';
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
-const DATE_PUBLISHED = '2026-09-28T09:00:00+07:00';
-const DATE_MODIFIED = '2026-09-28T09:00:00+07:00';
+const DATE_PUBLISHED = '2026-09-28T02:30:00+07:00';
+const DATE_MODIFIED = '2026-09-28T02:30:00+07:00';
 const DATE_DISPLAY = '28 September 2026';
 
 console.log('Meta title length:', TITLE_TAG.length);
