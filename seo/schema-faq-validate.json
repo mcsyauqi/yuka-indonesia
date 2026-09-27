@@ -1,0 +1,277 @@
+{
+  "generated": "2026-09-27T17:40:28.960Z",
+  "method": "node JSON.parse per ld+json block; acceptedAnswer text searched in visible body (scripts removed, tags removed) and in raw HTML",
+  "pages": [
+    {
+      "file": "artikel/apakah-tuna-rungu-bisa-sembuh.html",
+      "ldjsonBlocks": 3,
+      "parseErrors": [],
+      "faq": [
+        {
+          "question": "Apakah tuna rungu bisa sembuh?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah alat bantu dengar dan implan koklea menyembuhkan tuli?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Kapan gangguan pendengaran mendadak harus dianggap darurat?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah obat, herbal, atau suplemen bisa memulihkan pendengaran anak?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Bagaimana status terapi gen untuk ketulian?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah anak tuli tetap bisa berbicara dan bersekolah?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah gangguan pendengaran anak bisa memburuk seiring waktu?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Kalau tidak bisa sembuh, apa yang paling penting dilakukan orang tua?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        }
+      ],
+      "pass": true
+    },
+    {
+      "file": "artikel/apakah-speech-delay-bisa-sembuh.html",
+      "ldjsonBlocks": 3,
+      "parseErrors": [],
+      "faq": [
+        {
+          "question": "Apakah speech delay bisa sembuh total?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Anak saya baru terlambat bicara saja, apakah tetap perlu diperiksa?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apa perbedaan late talker dan gangguan bahasa perkembangan?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Faktor apa yang paling menentukan apakah anak akan menyusul?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah terapi wicara benar-benar mengubah hasil akhirnya?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah menunggu sampai usia tiga tahun itu wajar?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah bilingualisme menyebabkan speech delay?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Adakah obat atau suplemen yang bisa menyembuhkan speech delay?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        }
+      ],
+      "pass": true
+    },
+    {
+      "file": "artikel/tuna-rungu-wicara.html",
+      "ldjsonBlocks": 3,
+      "parseErrors": [],
+      "faq": [
+        {
+          "question": "Apa yang dimaksud dengan tuna rungu wicara?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah anak tuna rungu pasti tidak bisa berbicara?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apa penyebab tuna rungu wicara pada anak?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Kapan anak perlu diperiksa pendengarannya?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah terapi wicara dapat membantu anak tuna rungu?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Bagaimana sekolah mendukung anak tuna rungu wicara?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        }
+      ],
+      "pass": true
+    },
+    {
+      "file": "artikel/tuna-rungu-adalah.html",
+      "ldjsonBlocks": 3,
+      "parseErrors": [],
+      "faq": [
+        {
+          "question": "Apa itu tuna rungu?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah tuna rungu bisa bicara?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah tuna rungu bisa sembuh?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Bagaimana cara berkomunikasi dengan penyandang tuna rungu?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 1
+        },
+        {
+          "question": "Di mana anak tuna rungu bisa mendapatkan pendidikan yang tepat?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 1
+        }
+      ],
+      "pass": true
+    },
+    {
+      "file": "artikel/speech-delay-adalah.html",
+      "ldjsonBlocks": 4,
+      "parseErrors": [],
+      "faq": [
+        {
+          "question": "Apa itu speech delay pada anak?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Apakah speech delay bisa sembuh?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 1
+        },
+        {
+          "question": "Apa saja penyebab speech delay pada anak?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 1
+        },
+        {
+          "question": "Kapan sebaiknya anak dibawa ke terapis speech delay?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Bagaimana cara menstimulasi anak yang mengalami speech delay di rumah?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        }
+      ],
+      "pass": true
+    },
+    {
+      "file": "artikel/terapis-speech-delay.html",
+      "ldjsonBlocks": 3,
+      "parseErrors": [],
+      "faq": [
+        {
+          "question": "Apa itu terapis speech delay?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Kapan anak perlu dibawa ke terapis speech delay?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Berapa biaya terapis speech delay untuk anak?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Berapa lama proses terapi speech delay pada anak?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 2
+        },
+        {
+          "question": "Di mana mendapatkan terapis speech delay terbaik di Yogyakarta?",
+          "questionVisible": true,
+          "answerVisibleInBody": true,
+          "rawHtmlOccurrences": 1
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "allPass": true
+}
