@@ -12,10 +12,10 @@
  * Both carry source_page / source_type / cta_location / cta_text / link_url so a
  * report can show which article or page produced the click.
  *
- * GA4 itself is loaded lazily (first interaction or 5 s fallback). If a visitor
- * clicks a same-tab donation link before gtag.js has arrived, the queued event
- * would be lost on navigation, so navigation is held until GA4 confirms the hit
- * (event_callback) or 1.5 s pass, whichever comes first.
+ * GA4 itself is loaded lazily (first interaction or 5 s fallback) and batches
+ * events, so a same-tab navigation would drop the hit. For same-tab links the
+ * navigation is held until GA4 confirms the hit (event_callback) or 1.5 s pass,
+ * whichever comes first. Links opening in a new tab are never delayed.
  */
 (function () {
     'use strict';
@@ -47,9 +47,6 @@
         s.async = true;
         s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
         document.head.appendChild(s);
-    }
-    function gtagReady() {
-        return !!(window.google_tag_manager && window.google_tag_manager[GA_ID]);
     }
     if (!configured) {
         setTimeout(loadGtag, 5000);
@@ -141,8 +138,9 @@
         var sameTabNav = link && !target.match(/_blank/i) && !e.defaultPrevented &&
             e.button === 0 && !e.metaKey && !e.ctrlKey && !e.shiftKey && !e.altKey;
 
-        if (sameTabNav && !gtagReady()) {
-            // Hold navigation until GA4 is loaded and has sent the hit.
+        if (sameTabNav) {
+            // Hold navigation until GA4 has sent the hit (gtag batches events, and a
+            // same-tab unload drops the batch), or until gtag.js is still loading.
             e.preventDefault();
             loadGtag();
             var href = link.href, gone = false;
