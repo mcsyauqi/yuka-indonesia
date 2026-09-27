@@ -1254,6 +1254,12 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/data-pendidikan-inklusi-yogyakarta</loc>
+    <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
     <url>
       <loc>https://www.yukaindonesia.com/kontak</loc>
       <lastmod>2026-09-27</lastmod>
