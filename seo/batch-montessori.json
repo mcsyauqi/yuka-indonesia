@@ -1,0 +1,15 @@
+{
+  "batch": "klaster-montessori",
+  "card": "https://trello.com/c/IHvYrWoo",
+  "created": "2026-09-28",
+  "pillar": "https://www.yukaindonesia.com/artikel/montessori-adalah",
+  "decision_cannibal": "Keyword 'apa itu montessori' (720) dan 'montessori' (9.900) punya intent definisi yang sama, jadi keduanya dipetakan ke satu pilar (title + H1 'Apa Itu Montessori?'). Membuat URL keenam /apa-itu-montessori akan bersaing langsung dengan pilar dan dengan /metode-montessori-adalah. Hasil: 6 keyword, 5 URL, tidak ada dua halaman dengan frasa utama yang sama di title.",
+  "items": [
+    {"keyword": "montessori", "volume": 9900, "slug": "montessori-adalah", "url": "https://www.yukaindonesia.com/artikel/montessori-adalah", "status": "done", "type": "pilar, diperbarui 2026-09-28 (definisi 40-60 kata bersumber AMI/AMS, rentang usia AMS, klaim YUKA memakai Montessori dihapus)"},
+    {"keyword": "apa itu montessori", "volume": 720, "slug": "montessori-adalah", "url": "https://www.yukaindonesia.com/artikel/montessori-adalah", "status": "done", "type": "dipetakan ke pilar (title dan H1 diubah ke 'Apa Itu Montessori?')"},
+    {"keyword": "metode montessori", "volume": 720, "slug": "metode-montessori", "url": "https://www.yukaindonesia.com/artikel/metode-montessori", "status": "done", "type": "sudah live sebelumnya (commit e24b255 dan sesudahnya)"},
+    {"keyword": "metode montessori adalah", "volume": 480, "slug": "metode-montessori-adalah", "url": "https://www.yukaindonesia.com/artikel/metode-montessori-adalah", "status": "done", "type": "sudah live sebelumnya"},
+    {"keyword": "belajar membaca ala montessori", "volume": 480, "slug": "belajar-membaca-ala-montessori", "url": "https://www.yukaindonesia.com/artikel/belajar-membaca-ala-montessori", "status": "done", "type": "sudah live sebelumnya (pre-write e24b255, 2026-07-20)"},
+    {"keyword": "mainan montessori", "volume": 480, "slug": "mainan-montessori", "url": "https://www.yukaindonesia.com/artikel/mainan-montessori", "status": "done", "type": "sudah live sebelumnya"}
+  ]
+}
