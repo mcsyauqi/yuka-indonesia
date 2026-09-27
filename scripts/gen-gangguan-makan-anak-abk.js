@@ -48,8 +48,8 @@ const IMAGE_HERO = 'assets/images/artikel/piring-pasta-kacang-kentang-tumbuk-wik
 const IMAGE_HERO_ALT = 'Piring saji oval berisi tiga makanan bertekstur berbeda di atas daun kale: pasta penne berbumbu pesto, salad kacang hitam dengan jagung dan tomat, serta bulatan kentang tumbuk, dihias bunga anggrek ungu';
 const IMAGE_URL = `${SITE}/${IMAGE_HERO}`;
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
-const DATE_PUBLISHED = '2026-09-28T10:00:00+07:00';
-const DATE_MODIFIED = '2026-09-28T10:00:00+07:00';
+const DATE_PUBLISHED = '2026-09-28T01:30:00+07:00';
+const DATE_MODIFIED = '2026-09-28T01:30:00+07:00';
 const DATE_DISPLAY = '28 September 2026';
 
 const CREDIT = {
