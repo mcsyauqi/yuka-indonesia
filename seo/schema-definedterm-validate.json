@@ -1,0 +1,149 @@
+{
+  "checked_at": "2026-09-27T11:09:07.124Z",
+  "source": "D:/Projects/Creativism App/temp/catchup/6a6419f8117a38950285b53b/live",
+  "pass": 13,
+  "total": 13,
+  "results": [
+    {
+      "slug": "adhd-adalah",
+      "jsonld_blocks": 5,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "ADHD",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 41,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "autisme-adalah",
+      "jsonld_blocks": 5,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Autisme",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 41,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "down-syndrome-adalah",
+      "jsonld_blocks": 5,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Down Syndrome",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 40,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "abk-adalah-anak-berkebutuhan-khusus",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "ABK (Anak Berkebutuhan Khusus)",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 42,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "disleksia-adalah",
+      "jsonld_blocks": 5,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Disleksia",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 32,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "tunalaras-adalah",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Tunalaras",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 58,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "gpk-adalah",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "GPK (Guru Pembimbing Khusus)",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 52,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "pendidikan-inklusi",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Pendidikan Inklusi",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 49,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "disabilitas-adalah",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Disabilitas",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 36,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "hiperaktif-adalah",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Hiperaktif",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 57,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "montessori-adalah",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Montessori",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 45,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "homeschooling-adalah",
+      "jsonld_blocks": 4,
+      "parse_errors": 0,
+      "definedTerm": true,
+      "name": "Homeschooling",
+      "inDefinedTermSet": "https://www.yukaindonesia.com/glosarium",
+      "description_words": 22,
+      "description_visible_exact": true,
+      "ok": true
+    },
+    {
+      "slug": "glosarium",
+      "jsonld_blocks": 1,
+      "parse_errors": 0,
+      "definedTermSet": true,
+      "terms": 12,
+      "all_visible": true,
+      "ok": true
+    }
+  ]
+}
