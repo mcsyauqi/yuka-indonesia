@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <!-- deploy-marker: YUKA-EDGE-VERIFY-20260731 -->
-<!-- lcp-revision: 20260927-lcp-v5 -->
+<!-- lcp-revision: 20260927-selfhost-fonts -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,10 +73,9 @@
     <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" media="print" onload="this.onload=null;this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
+    <!-- Poppins + Amiri are self-hosted (assets/fonts/fonts.css) on this page. -->
+    <link rel="stylesheet" href="assets/fonts/fonts.css?v=20260927a" media="print" onload="this.onload=null;this.media='all'">
+    <noscript><link rel="stylesheet" href="assets/fonts/fonts.css?v=20260927a"></noscript>
 
     <!-- Critical CSS: inlined rules for everything visible in the first mobile
          viewport (navbar + .hero-modern) so the LCP element (body > section.hero-modern
