@@ -49,16 +49,8 @@
             if (!link) return;
             var href = link.href || '';
 
-            // WhatsApp
-            if (href.includes('wa.me') || href.includes('whatsapp.com')) {
-                gtag('event', 'whatsapp_click', {
-                    event_category: 'Contact',
-                    event_label: link.textContent.trim().slice(0, 100) || 'WhatsApp Button',
-                    wa_number: href.match(/wa\.me\/(\d+)/)?.[1] || '',
-                    page_path: window.location.pathname
-                });
-                return;
-            }
+            // WhatsApp chat and share links: whatsapp_click is sent by yuka-conversions.js
+            if (href.includes('wa.me') || href.includes('whatsapp.com')) return;
 
             // Social media
             var socialMap = {
@@ -127,17 +119,9 @@
             var text = btn.textContent.trim().replace(/\s+/g, ' ').slice(0, 100);
             var href = btn.getAttribute('href') || btn.getAttribute('onclick') || '';
 
+            // Donation CTAs: donation_cta_click is sent by yuka-conversions.js
             if (href.includes('donasi') || text.toLowerCase().includes('donasi') || text.toLowerCase().includes('sedekah')) {
-                gtag('event', 'donation_cta_click', {
-                    event_category: 'Donation',
-                    event_label: text,
-                    source_page: window.location.pathname
-                });
-                gtag('event', 'donate_click', {
-                    event_category: 'Donation',
-                    event_label: text,
-                    source_page: window.location.pathname
-                });
+                return;
             } else {
                 gtag('event', 'cta_click', {
                     event_category: 'CTA',

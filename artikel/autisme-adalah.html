@@ -646,32 +646,7 @@
     <script src="../assets/js/main.min.js" defer></script>
 
     <script src="../assets/js/analytics.js" defer></script>
-<script id="yukaTrackingEventsV1">
-(function(){
-  function sendEvent(name, params){
-    if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
-  }
-  document.addEventListener('click', function(event){
-    var link = event.target.closest && event.target.closest('a[href]');
-    var button = event.target.closest && event.target.closest('button');
-    if (link && link.href.indexOf('wa.me') !== -1) {
-      sendEvent('whatsapp_click', {link_url: link.href, page_path: location.pathname});
-      if (location.pathname.indexOf('/donasi') === 0 && link.textContent.toLowerCase().indexOf('konfirmasi') !== -1) {
-        sendEvent('donate_click', {method: 'whatsapp_confirmation', page_path: location.pathname});
-      }
-    }
-    if (button && button.textContent.toLowerCase().indexOf('salin nomor rekening') !== -1) {
-      sendEvent('donate_click', {method: 'copy_bank_account', page_path: location.pathname});
-    }
-  });
-  document.addEventListener('submit', function(event){
-    var form = event.target;
-    if (form && /csr/i.test(form.id + ' ' + form.className + ' ' + (form.getAttribute('name') || ''))) {
-      sendEvent('csr_form_submit', {page_path: location.pathname});
-    }
-  });
-})();
-</script>
 
+<script src="/assets/js/yuka-conversions.js" defer></script>
 </body>
 </html>
