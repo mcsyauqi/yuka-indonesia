@@ -79,6 +79,22 @@ jobs:
               exit 1
             fi
 
+            # Featured image gate: kartu blog wajib foto dokumentasi, bukan logo,
+            # dan berkasnya harus ada (2026-09-28: 8 artikel tayang berkartu logo).
+            if echo "$image" | grep -qiE '(^|/)logo[^/]*$|(^|/)Logo/'; then
+              echo "Featured image gate failed: $slug memakai logo ($image). Pakai foto dari Dokumentasi/."
+              exit 1
+            fi
+            IMG_PATH=$(python3 -c "import sys, urllib.parse; print(urllib.parse.unquote(sys.argv[1]))" "$image")
+            if [ ! -f "$IMG_PATH" ]; then
+              echo "Featured image gate failed: berkas $IMG_PATH untuk $slug tidak ada."
+              exit 1
+            fi
+            if ! node -e "const m=require('./scripts/lib/article-shell').missingShellParts(require('fs').readFileSync(process.argv[1],'utf8'));if(m.includes('featured-image'))process.exit(1)" "$file"; then
+              echo "Featured image gate failed: og:image $file kosong atau memakai logo."
+              exit 1
+            fi
+
             # Format date for display (e.g., "18 Mar 2026")
             DISPLAY_DATE=$(date -d "$pubdate" +"%d %b %Y" 2>/dev/null || date -j -f "%Y-%m-%d" "$pubdate" +"%d %b %Y" 2>/dev/null || echo "$pubdate")
 

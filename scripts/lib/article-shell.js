@@ -61,6 +61,11 @@ function missingShellParts(html) {
   if (!/<footer/i.test(html)) missing.push('footer');
   if (!/G-LDXC5GQF61/.test(html)) missing.push('ga4');
   if (!/assets\/js\/analytics\.js/.test(html)) missing.push('analytics.js');
+  // Featured image: og:image wajib foto dokumentasi, BUKAN logo. Generator 2026-09-24..28
+  // memakai `const IMAGE = 'Logo/Logo.webp'` sebagai default, dan 8 artikel tayang dengan logo
+  // sebagai kartu blog + pratinjau WhatsApp (dikeluhkan Syauqi 2026-09-28).
+  const og = (html.match(/<meta property="og:image" content="([^"]*)"/) || [])[1] || '';
+  if (!og || /(^|\/)logo[^/]*$|\/Logo\//i.test(og)) missing.push('featured-image');
   return missing;
 }
 

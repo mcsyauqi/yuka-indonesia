@@ -44,6 +44,13 @@ for (const f of files) {
     continue;
   }
 
+  // Logo sebagai featured image (og:image) juga fatal: kartu blog + pratinjau sosial
+  // wajib foto dokumentasi YUKA, bukan logo (keputusan Syauqi 2026-09-28).
+  if (missing.includes('featured-image')) {
+    failures.push(`${f}: og:image kosong atau memakai logo`);
+    continue;
+  }
+
   const analyticsGaps = missing.filter((m) => m !== 'footer');
   if (analyticsGaps.length) {
     const line = `${f}: missing ${analyticsGaps.join(', ')}`;
