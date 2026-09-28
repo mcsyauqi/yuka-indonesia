@@ -1,0 +1,25 @@
+# Berkas kerja internal. Coolify (build pack static) menyalin seluruh repo ke
+# /usr/share/nginx/html, jadi apa pun yang tidak dikecualikan di sini ikut
+# tersaji publik. Tidak ada halaman, sitemap, atau skrip situs yang memakainya.
+# Lapis kedua ada di custom_nginx_configuration app Coolify (return 404).
+.git
+.github
+YUKA_Keyword_Database.xlsx
+*.xlsx
+*.xls
+*.csv
+keyword_research_*.json
+publish-schedule*.json
+vercel.json
+*.md
+.prose_*
+seo
+data
+scripts
+reports
+report-assets
+tools
+tmp
+temp
+graphify-out
+deploy
