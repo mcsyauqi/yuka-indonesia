@@ -1,91 +1,11 @@
 [
   {
-    "date": "2026-09-28",
-    "slug": "alat-bantu-belajar-anak-disleksia",
-    "file": "artikel/alat-bantu-belajar-anak-disleksia.html",
-    "title": "Alat Bantu Belajar Anak Disleksia: Mana yang Terbukti dan Cara Memilihnya",
-    "description": "Alat bantu belajar anak disleksia yang didukung bukti: text-to-speech, buku audio, jarak huruf, dan alat multisensori. Cek mana yang terbukti di sini.",
-    "image": "Dokumentasi/artikel/meja-belajar-buku-dan-alat-tulis-anak.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-28",
-    "slug": "digital-therapeutics-untuk-adhd-anak",
-    "file": "artikel/digital-therapeutics-untuk-adhd-anak.html",
-    "title": "Digital Therapeutics untuk ADHD Anak: Cara Kerja, Bukti Ilmiah, dan Batasannya",
-    "description": "Digital therapeutics untuk ADHD anak: apa itu, cara kerja EndeavorRx yang diizinkan FDA, hasil uji klinis, dan batasannya. Baca panduannya.",
-    "image": "Dokumentasi/21-jan-2026-siswa-belajar-ruang-kelas-005.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-28",
-    "slug": "empati-pada-anak-berkebutuhan-khusus",
-    "file": "artikel/empati-pada-anak-berkebutuhan-khusus.html",
-    "title": "Empati pada Anak Berkebutuhan Khusus: Arti, Bukti Penelitian, dan Cara Menumbuhkannya",
-    "description": "Empati pada anak berkebutuhan khusus bisa dilatih lewat kontak, contoh, dan kebiasaan kecil. Simak cara menumbuhkannya di rumah dan sekolah di sini.",
-    "image": "Dokumentasi/artikel/empati-anak-berkebutuhan-khusus-tangan-bersama.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-28",
-    "slug": "latihan-fisioterapi-anak-di-rumah",
-    "file": "artikel/latihan-fisioterapi-anak-di-rumah.html",
-    "title": "Latihan Fisioterapi Anak di Rumah: Prinsip, Contoh Latihan, dan Batas Amannya",
-    "description": "Latihan fisioterapi anak di rumah paling aman bila dirancang fisioterapis. Pahami prinsip, contoh latihan, dan tanda bahaya sebelum mulai di sini.",
-    "image": "Dokumentasi/artikel/latihan-fisioterapi-anak-di-rumah-pendampingan-berdiri.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-29",
-    "slug": "terapi-perilaku-kognitif-anak",
-    "file": "artikel/terapi-perilaku-kognitif-anak.html",
-    "title": "Terapi Perilaku Kognitif Anak: Cara Kerja, Manfaat, dan Peran Orang Tua",
-    "description": "Terapi perilaku kognitif anak (CBT): cara kerjanya, untuk masalah apa, apa kata penelitian, dan peran orang tua. Baca panduan lengkapnya di sini.",
-    "image": "Dokumentasi/artikel/terapi-perilaku-kognitif-anak-dokumentasi.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
     "date": "2026-09-30",
     "slug": "apa-yang-dimaksud-dengan-sekolah-luar-biasa",
     "file": "artikel/apa-yang-dimaksud-dengan-sekolah-luar-biasa.html",
     "title": "Apa yang Dimaksud dengan Sekolah Luar Biasa? Pengertian Menurut Undang-Undang",
     "description": "Apa yang dimaksud dengan sekolah luar biasa menurut UU Sisdiknas, PP 17/2010, dan UU Disabilitas: arti, jenjang, dan hak anak. Baca penjelasannya.",
     "image": "Dokumentasi/artikel/apa-yang-dimaksud-dengan-sekolah-luar-biasa-dokumentasi.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-29",
-    "slug": "apa-itu-autisme-level-1-2-3",
-    "file": "artikel/apa-itu-autisme-level-1-2-3.html",
-    "title": "Apa Itu Autisme Level 1 2 3? Arti Tingkat Dukungan Menurut DSM-5",
-    "description": "Apa itu autisme level 1 2 3? Penjelasan tingkat dukungan menurut DSM-5, contoh kebutuhan tiap level, dan batasannya. Baca panduan untuk orang tua di sini.",
-    "image": "Dokumentasi/artikel/apa-itu-autisme-level-1-2-3-kegiatan-tangan.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-29",
-    "slug": "cara-melatih-social-skills-anak-autis-di-rumah",
-    "file": "artikel/cara-melatih-social-skills-anak-autis-di-rumah.html",
-    "title": "Cara Melatih Social Skills Anak Autis di Rumah: Panduan Praktis untuk Orang Tua",
-    "description": "Cara melatih social skills anak autis di rumah lewat bermain, rutinitas harian, dan giliran bicara, berdasarkan riset terapi berbasis orang tua. Baca panduannya.",
-    "image": "Dokumentasi/artikel/cara-melatih-social-skills-anak-autis-di-rumah-kegiatan-bersama.webp",
-    "category": "Pendidikan",
-    "readTime": "12 menit baca"
-  },
-  {
-    "date": "2026-09-29",
-    "slug": "terapi-integrasi-sensorik-di-rumah",
-    "file": "artikel/terapi-integrasi-sensorik-di-rumah.html",
-    "title": "Terapi Integrasi Sensorik di Rumah: Yang Bisa dan Tidak Bisa Dilakukan Orang Tua",
-    "description": "Terapi integrasi sensorik di rumah: yang bisa orang tua lakukan, contoh aktivitas aman per sistem sensori, bukti ilmiah, dan batasannya. Baca panduannya.",
-    "image": "Dokumentasi/artikel/terapi-integrasi-sensorik-di-rumah-memeras-lemon.webp",
     "category": "Pendidikan",
     "readTime": "12 menit baca"
   }
