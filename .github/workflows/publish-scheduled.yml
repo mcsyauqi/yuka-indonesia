@@ -79,6 +79,12 @@ jobs:
               exit 1
             fi
 
+            # Medical review gate (Trello nKumkHS6): artikel kondisi medis/terapi
+            # tidak boleh terbit tanpa peninjau. Selama data/medical-reviewer.json
+            # belum READY, minimal wajib ada pernyataan jujur "Status tinjauan medis";
+            # setelah READY, wajib reviewedBy di JSON-LD.
+            node scripts/check-medical-review.js "$file"
+
             # Featured image gate: kartu blog wajib foto dokumentasi, bukan logo,
             # dan berkasnya harus ada (2026-09-28: 8 artikel tayang berkartu logo).
             if echo "$image" | grep -qiE '(^|/)logo[^/]*$|(^|/)Logo/'; then
