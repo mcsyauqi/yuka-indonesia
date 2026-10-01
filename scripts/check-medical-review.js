@@ -38,14 +38,11 @@ const registryReady = registry._status === 'READY';
 const strict = args.includes('--strict') || process.env.MEDICAL_REVIEW_STRICT === '1' || registryReady;
 const registryFiles = new Set(((registry.tinjauan && registry.tinjauan.artikel) || []).map((p) => path.basename(p)));
 
-// Slug yang menandakan topik kondisi medis atau terapi.
-const MEDICAL_SLUG = /(autis|autisme|adhd|hiperaktif|down-syndrome|cerebral-palsy|disleksia|diskalkulia|disgrafia|disabilitas-intelektual|retardasi|tunagrahita|tuna-?rungu|tuna-?daksa|tuna-?wicara|tunalaras|tunaganda|speech-delay|epilepsi|sensori|terapi-|-terapi|fisioterapi|intervensi-dini|gangguan-|sindrom)/i;
+const lib = require('./lib/medical-review');
 
 function isMedical(file, html) {
   if (registryFiles.has(path.basename(file))) return 'registry';
-  if (/"@type"\s*:\s*"Medical(WebPage|Condition|Therapy)"/.test(html)) return 'schema';
-  if (MEDICAL_SLUG.test(path.basename(file, '.html'))) return 'slug';
-  return null;
+  return lib.isMedicalArticle(html, path.basename(file, '.html'));
 }
 
 const targets = files.length

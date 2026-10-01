@@ -35,8 +35,12 @@ const ANALYTICS_TAG = '<script src="../assets/js/analytics.js" defer></script>';
  * footer, GA4 head block, and the analytics.js tag.
  * Safe to call on already-correct HTML - it only adds what is missing.
  */
-function ensureArticleShell(html) {
+function ensureArticleShell(html, slug) {
   let out = html;
+
+  // Artikel kondisi medis/terapi wajib membawa status tinjauan medis yang jujur
+  // (gerbang scripts/check-medical-review.js, Trello nKumkHS6). Tanpa nama peninjau.
+  out = ensureMedicalDisclosure(out, slug);
 
   if (!/<footer/i.test(out)) {
     if (!/<\/body>/i.test(out)) throw new Error('no </body> to anchor the footer');
@@ -68,5 +72,7 @@ function missingShellParts(html) {
   if (!og || /(^|\/)logo[^/]*$|\/Logo\//i.test(og)) missing.push('featured-image');
   return missing;
 }
+
+const { ensureMedicalDisclosure } = require('./medical-review');
 
 module.exports = { ARTICLE_FOOTER, GA4_HEAD, ANALYTICS_TAG, ensureArticleShell, missingShellParts };
