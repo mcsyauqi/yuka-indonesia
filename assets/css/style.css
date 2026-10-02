@@ -878,17 +878,41 @@ p {
     box-shadow: var(--shadow-xl);
 }
 
+/* Kartu artikel: frame 16:10 seragam, gambar utuh (contain) dengan latar blur
+   dari gambar yang sama. Kelas .is-cover dipasang JS untuk gambar yang rasionya
+   sudah dekat 16:10, jadi tetap penuh tanpa terpotong berarti. */
 .card-image {
     position: relative;
     overflow: hidden;
     aspect-ratio: 16/10;
+    background: var(--gray-100);
+    isolation: isolate;
+}
+
+.card-image::before {
+    content: "";
+    position: absolute;
+    inset: -30px;
+    z-index: 0;
+    background-image: var(--card-bg, none);
+    background-size: cover;
+    background-position: center;
+    filter: blur(22px) saturate(1.15) brightness(0.92);
+    transform: scale(1.1);
 }
 
 .card-image img {
+    position: relative;
+    z-index: 1;
+    display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform var(--transition-slow);
+}
+
+.card-image.is-cover img {
+    object-fit: cover;
 }
 
 .card:hover .card-image img {
