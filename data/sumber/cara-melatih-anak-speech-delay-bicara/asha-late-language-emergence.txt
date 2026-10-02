@@ -1,0 +1,547 @@
+SUMBER: https://www.asha.org/practice-portal/clinical-topics/late-language-emergence/
+DIAMBIL: 2026-10-02T03:16:34.515Z
+HTTP: 200
+
+
+ Late Language Emergence 
+ -->
+ -->
+ You do not have JavaScript Enabled on this browser. Please enable it in order to use the full functionality of our website.
+ about 
+ Join ASHA 
+ ASHA Store 
+ My Account 
+ Login
+ LOGOUT 
+ Toggle navigation 
+ American Speech-Language-Hearing Association 
+ Making effective communication, a human right, accessible and achievable for all.
+ Type your search query here 
+ Careers 
+ Certification 
+ Publications 
+ Events 
+ Advocacy 
+ Continuing Education 
+ Practice Management 
+ Research 
+ Audiologists 
+ Speech-Language Pathologists 
+ Academic &amp; Faculty 
+ Audiology &amp; SLP Assistants 
+ Students 
+ Public 
+ ASHA 
+ / 
+ Practice Portal / 
+ Clinical Topics / 
+ Late Language Emergence 
+ View All Portal Topics 
+ Expand All 
+ / 
+ Collapse All 
+ Overview 
+ The scope of this page is late language emergence in children from 2 to 4 years of age. 
+ See the Late Language Emergence Evidence Map for summaries of the available research on this topic. 
+ Late language emergence (LLE) is a delay in language onset with no other diagnosed disabilities or developmental delays in other cognitive or motor domains. LLE is diagnosed when language development trajectories are below age expectations. Toddlers who exhibit LLE may also be referred to as "late talkers" or "late language learners." 
+ Children with LLE may have expressive language delays only, or they may have mixed expressive and receptive delays. Children with expressive delays show delayed vocabulary acquisition and often show delayed development of sentence structure and articulation. Children with mixed expressive and receptive language delays show delays in oral language production and in language comprehension. 
+ Children with LLE may be at risk for developing language and/or literacy difficulties. (See ASHA&rsquo;s Practice Portal pages on Spoken Language Disorders and Written Language Disorders .) Children with LLE who have receptive and expressive delays are at greater risk for poor outcomes than children with LLE whose comprehension skills are in the normal range (Marchman &amp; Fernald, 2013). 
+ LLE may evolve into other disabilities, such as 
+ social communication disorder , 
+ autism spectrum disorder , 
+ intellectual disability , 
+ learning disability, or 
+ attention-deficit/hyperactivity disorder. 
+ In order to make a differential diagnosis, consider hearing loss and monitor the child&rsquo;s global development as well as cognitive, communication, sensory, and motor skill development. 
+ Children With LLE Versus Late Bloomers 
+ Some researchers distinguish a subset of children with LLE as late bloomers . Late bloomers are children with LLE who catch up to their peers. At the onset, it is difficult to distinguish children with LLE from late bloomers because this distinction can be made only after the fact. 
+ Some research suggests that there may be some early differences. For example, late bloomers used more communicative gestures than age-matched children with LLE who remained delayed (Thal &amp; Tobias, 1992; Thal et al., 1991), thereby compensating for limited oral expressive vocabularies (Thal &amp; Tobias, 1992). Late bloomers also were less likely to demonstrate concomitant language comprehension delays when compared with children who remain delayed (Thal et al., 1991). 
+ Incidence and Prevalence 
+ Incidence of late language emergence (LLE) refers to the number of new cases identified in a specified time period. 
+ Prevalence refers to the estimated population of children who are exhibiting LLE at any given time. 
+ Estimates vary according to the definition and criteria used to identify LLE, as well as the age and characteristics of the population. 
+ Prevalence estimates of LLE in 2-year-old children primarily range between 10% and 20% (Rescorla, 1989; Rescorla &amp; Alley, 2001; Roulstone et al., 2002; Zubrick et al., 2007). 
+ In 18- to 23-month-old toddlers, the percentage of children with LLE is estimated to be 13.5%. This rate rises to 16%&ndash;17.5% in 30- to 36-month-old children (Horowitz et al., 2003; Rescorla &amp; Achenbach, 2002). 
+ Prevalence estimates based on both receptive and expressive language tend to be lower than those based on expressive language alone (13.4% vs. 19.1%; Zubrick et al., 2007). 
+ Prevalence estimates are higher for children with a positive family history of LLE (23%) compared with those with no reported history (12%; Zubrick et al., 2007). 
+ Males are 3 times more likely than females to exhibit LLE (Zubrick et al., 2007). 
+ Higher prevalence rates of LLE have been noted in a population of toddler-age twins (38%) with a greater proportion in monozygotic twins (48.1%) compared with dizygotic twins (32.6%; Rice et al., 2014). 
+ Signs and Symptoms 
+ Signs and symptoms among monolingual English-speaking children with late language emergence (LLE) are often based on parent-report measures. An extensively used set of criteria for LLE is an expressive vocabulary of fewer than 50 words and no two-word combinations by 24 months of age (Paul, 1991; Rescorla, 1989). 
+ It is essential to review these criteria at regular intervals (e.g., every 6 months) to assess language growth and to determine if language skills fall outside of developmental trajectories and whether the child demonstrates LLE. 
+ It is also important to consider other language development factors, including rate of vocabulary growth, speech sound development, emerging grammar, language comprehension, social language skills, use of gestures, and symbolic play behaviors (Olswang et al., 1998; Wetherby et al., 2002). 
+ For example, when compared with toddlers of the same age with typical language development, late talkers may demonstrate 
+ phonological differences once they do produce their first words, including less complex/mature syllable structures, lower percentage of consonants correct, and smaller consonant and vowel inventories (Mirak &amp; Rescorla, 1998; Paul &amp; Jennings, 1992; Rescorla &amp; Ratner, 1996); 
+ delayed comprehension and use of symbolic gestures for communication (Thal et al., 2013); 
+ use of shorter and less grammatically complex utterances&mdash;particularly for toddlers with expressive and receptive delays (Thal et al., 2013); and 
+ comprehension of fewer words (Thal et al., 2013, 1991). 
+ Research also suggests that delays and differences in babbling before the age of 2 years can predict later delays in expressive vocabulary, limited phonetic repertoire, and use of simpler syllable shapes (Fasolo et al., 2008; Oller et al., 1999; Stoel-Gammon, 1989). 
+ Longitudinal Course/Outcomes 
+ Approximately 50%&ndash;70% of children with LLE are reported to catch up to peers and demonstrate normal language development by late preschool and school age (Dale et al., 2003; Paul et al., 1996). The prevalence of language impairment at the age of 7 years was 20% for children with a history of LLE compared with 11% for controls (Rice et al., 2008). That is, only one in five children with LLE had language impairment at the age of 7 years. 
+ Although many children with LLE go on to perform within the normal range on expressive and receptive language measures by kindergarten age (Ellis Weismer, 2007; Rescorla, 2000, 2002), their scores on such measures continue to be lower than those of children with a history of typical language development, matched for socioeconomic status (Paul, 1996; Rescorla, 2000, 2002). 
+ For example, school-age children who had been identified as demonstrating LLE also demonstrated 
+ lower scores at the age of 5 years on language measures that tap complex language skills, such as narrating a story; 
+ poorer performance on measures of general language ability, speech, syntax, and morphosyntax at the age of 7 years; 
+ poorer performance on reading and spelling measures at ages 8 and 9 years; 
+ lower scores on aggregate measures of vocabulary, grammar, verbal memory, and reading comprehension at the age of 13 years; and 
+ lower scores on vocabulary/grammar and verbal memory factors at the age of 17 years (Girolametto et al., 2001; Rescorla, 2002, 2005, 2009; Rice et al., 2008). 
+ For some children, LLE may be an early indicator of language impairment. See ASHA&rsquo;s Practice Portal pages on Spoken Language Disorders and Written Language Disorders . Receptive language skills, expressive vocabulary size, and socioeconomic status appear to be the best predictors of language outcomes (see Fisher, 2017, for a review of relevant research). 
+ Causes 
+ The causes of late language emergence (LLE) in otherwise healthy children are not known. However, several variables are thought to play a role. 
+ Risk Factors 
+ Based on research comparing children with late language emergence with typically developing peers on variables linked to language development, a number of risk factors for LLE have been proposed, including child and family factors, elaborated as follows. 
+ Child Factors 
+ Gender&mdash;Boys are at higher risk for LLE than girls (Collison et al., 2016; Horowitz et al., 2003; Klee et al., 1998; Rescorla, 1989; Rescorla &amp; Achenbach, 2002; Rescorla &amp; Alley, 2001). 
+ Motor development&mdash;Children with LLE were found to have delayed motor development (in the absence of disorders or syndromes associated with motor delays) when compared with typically developing children (Klee et al., 1998; Rescorla &amp; Alley, 2001). 
+ Birth status&mdash;Children born at less than 85% of their optimum birth weight or earlier than 37 weeks gestation were found to be at higher risk for LLE (Zubrick et al., 2007). 
+ Early language development&mdash;language abilities at 12 months appear to be one of the better predictors of communication skills at 2 years (Reilly et al., 2007). 
+ Family Factors 
+ Family history&mdash;Children with LLE are more likely to have a parent with a history of LLE (Collison et al., 2016; Ellis Weismer et al., 1994; Paul, 1991; Rescorla &amp; Schwartz, 1990). 
+ Presence of siblings&mdash;Children with LLE are less likely than children without LLE to be an only child; these findings may reflect decreased maternal resources available to the child (Zubrick et al., 2007). 
+ Mother's education and socioeconomic status (SES) of the family&mdash;Lower maternal education and lower SES of the family are associated with higher risk for LLE (Fisher, 2017; Zubrick et al., 2007); maternal education and family SES are thought to be related to the amount of support (resources) available to the child for language learning (Hoff-Ginsberg, 1994; Wells, 1985). 
+ For children younger than 18 months, screen media use (other than video chatting) is discouraged (American Academy of Pediatrics, 2016). Infant exposure to certain types of media was associated with lower language scores, although the relationship between media and language development is not fully understood (Zimmerman et al., 2007). 
+ Early identification and intervention can mitigate the impact of risk factors (Guralnick, 1997, 1998; National Research Council, 2001; Thelin &amp; Fussner, 2005). Therefore, it is important for speech-language pathologists to recognize these risk factors when identifying LLE and considering service delivery options. 
+ Protective Factors 
+ There are a number of protective factors that may buffer children and families from factors that place them at risk for later language and learning problems (Collison et al., 2016), including: 
+ reading and sharing books with infants daily 
+ providing informal play opportunities 
+ being cared for primarily in childcare centers compared with all other forms of care 
+ The National Joint Committee on Learning Disabilities (2007) also identifies a number of protective factors. These include 
+ access to pre-, peri-, and postnatal care and 
+ learning opportunities, such as 
+ exposure to rich and varied vocabulary, syntax, and discourse patterns; 
+ responsive learning environments that are sensitive to cultural and linguistic backgrounds; 
+ access to printed materials; 
+ involvement in structured and unstructured individual/group play interactions and conversations; 
+ engagement in gross and fine motor activities; and 
+ access to communication supports and services as needed. 
+ Roles and Responsibilities 
+ Speech-language pathologists (SLPs) play a critical role in providing services to families and their children who are at risk for developing, or who already demonstrate, delays or disabilities in language-related play and symbolic behaviors, communication, language, and speech. The professional roles and activities in speech-language pathology include clinical/educational services (diagnosis, assessment, planning, and treatment); prevention and advocacy; and education, administration, and research. See ASHA&rsquo;s Scope of Practice in Speech-Language Pathology (American Speech-Language-Hearing Association [ASHA], 2016). 
+ Appropriate roles for SLPs include 
+ recognizing that children with late language emergence (LLE) have heightened risks for later language and literacy problems; 
+ providing prevention information to the families of children and groups known to be at risk for LLE, as well as to individuals working with those at risk; 
+ educating family members about the importance of early communication development and intervention and the family's role in their child's communication development; 
+ counseling families of children with LLE regarding communication-related issues and providing education aimed at preventing further complications relating to LLE; 
+ educating other professionals about the needs of children with LLE and the role of SLPs in identifying and managing LLE; 
+ collaborating with pediatricians to highlight the value of surveillance and ongoing screening for children with LLE; 
+ screening children for the presence of language and communication difficulties and identifying the need for further assessment or referral to rule out other conditions; 
+ taking into consideration the rules of a spoken dialect or accent, typical dual-language acquisition from birth, and sequential second-language acquisition to distinguish difference from disorder; 
+ making decisions about the management of LLE; 
+ remaining informed of research in the area of LLE and helping advance the knowledge base related to the nature and treatment of LLE; and 
+ advocating for children with LLE and their families at the local, state, and national levels. 
+ When further assessment is indicated on the basis of screening results, appropriate roles of the SLP include 
+ conducting a comprehensive, culturally and linguistically appropriate assessment of language and communication, if needed; 
+ diagnosing the presence of a language disorder; 
+ developing treatment plans, providing direct and indirect treatment, documenting progress, and determining appropriate dismissal criteria; 
+ consulting and collaborating with other professionals, family members, caregivers, and others to facilitate program development and to provide supervision, evaluation, or expert testimony, as appropriate (see ASHA&rsquo;s resources on interprofessional education/interprofessional practice [IPE/IPP] , and Focusing Care on Individuals and Their Care Partners ); 
+ serving as an integral member of interdisciplinary teams that work with children with LLE and their families/caregivers (see ASHA&rsquo;s resources on interprofessional education/interprofessional practice [IPE/IPP ], and Focusing Care on Individuals and Their Care Partners ); 
+ serving as a service coordinator to ensure that eligible children and families receive appropriate services mandated under the Individuals with Disabilities Education Improvement Act (2004); and 
+ facilitating the transition process for families moving from one program to another (e.g., home-based to center-based, early intervention to community-based preschool). 
+ See ASHA&rsquo;s Practice Portal pages on Spoken Language Disorders and Early Intervention . See also ASHA&rsquo;s resources on interprofessional education/interprofessional practice [IPE/IPP] , Focusing Care on Individuals and Their Care Partners . 
+ As indicated in the ASHA Code of Ethics (ASHA, 2023), SLPs who serve this population should be specifically educated and appropriately trained to do so. They require knowledge of typical language development, the variability within typical development, and the normal variations in interactive styles associated with successful communication. It is essential that SLPs consider the influence of sociocultural factors on communicative interactions and language development. See ASHA&rsquo;s Practice Portal page on Cultural Responsiveness . 
+ Assessment 
+ See the Assessment section of the Late Language Emergence Evidence Map for pertinent scientific evidence, expert opinion, and client/caregiver perspective. 
+ Because children with late language emergence (LLE) remain at risk for later language and literacy problems, early assessment and periodic monitoring are essential to track language development and identify any problems that might arise. For children who present with signs and symptoms of LLE, the typical diagnostic pathway includes a broad check of speech and language development, along with periodic monitoring via screening and systematic observation. If delays persist over time or if additional developmental problems arise, a complete assessment may be warranted. 
+ Ideally, screening and assessment take place in the child&rsquo;s home or in a childcare setting. Many individuals are not represented by assessment norming samples (e.g., dual language learners), and the resulting scores may not be valid (Banerjee &amp; Guiberson, 2012; Guiberson &amp; Banerjee, 2012). Thus, multiple sources of information are necessary to assess for LLE. The speech-language pathologist (SLP) can also gather information about the child&rsquo;s language skills through parent and caregiver report and interviews, developmental observations, and language sampling. See ASHA&rsquo;s resource on assessment tools, techniques, and data sources . 
+ Screening and assessment results are interpreted within the context of a child&rsquo;s overall development and in collaboration with family members and other professionals as appropriate. Contextualized interpretation is important because communication is only one aspect of children&rsquo;s interactions with the environment. 
+ Screening 
+ Careful screening by an SLP helps to identify young children at risk for language disorders and to determine the need for further speech and language assessment or referral for other professional services. Screening is also an important component of prevention, family education, and support for young children and their families. 
+ Screening measures may involve direct interaction with the child and/or parent report on a standardized instrument. In fact, the validity of the screening process may increase when professional-administered measures are combined with parent-completed measures (Glascoe, 1999). For screening purposes, however, either standardized testing or parent report is adequate, provided that the measure used has adequate psychometric properties. 
+ Screening typically includes 
+ gathering information from parents, caregivers, and/or preschool teachers regarding concerns about the child's language skills; 
+ conducting a hearing screening to rule out hearing loss as a possible contributing factor to language difficulties or, for a child who is reluctant or unable to complete a hearing screening, observing their response to sound and noise in the environment and referring the child for audiologic assessment if there is a concern; 
+ using a formal screening tool, observations, and parent questionnaires and checklists to obtain information about the child's communication behaviors; 
+ using other language assessment methods (e.g., observing the child in play activities with familiar individuals); and 
+ gathering information about speech sound development (e.g., via an informal language sample obtained during play activities). 
+ Screening may result in recommendations for 
+ a complete audiologic assessment; 
+ plans to monitor speech and language development, with rescreening as appropriate; 
+ suggestions for encouraging language development using language stimulation activities; 
+ a comprehensive speech and language assessment that includes evaluation of social communication skills, symbolic play, and use of gestures; and/or 
+ a referral for medical or other professional services. 
+ If periodic monitoring indicates persistent delays, a comprehensive speech and language assessment may be indicated. 
+ Consistent with the World Health Organization&rsquo;s (WHO) International Classification of Functioning, Disability and Health (ICF) framework (ASHA, 2023; WHO, 2001), a comprehensive assessment is conducted to identify and describe 
+ impairments in body structure and function, including underlying strengths and weaknesses in verbal and nonverbal communication; 
+ comorbid deficits or conditions, such as developmental disability, medical conditions, or syndromes; 
+ limitations in activity and participation, including functional communication, interpersonal interactions with family and peers, and learning; 
+ contextual (environmental and personal) factors that serve as barriers to or facilitators of successful communication and life participation; and 
+ the impact of communication impairments on quality of life of the child and family. 
+ See ASHA&rsquo;s International Classification of Functioning, Disability, and Health (ICF) for examples of assessment data consistent with the ICF framework for various clinical disorders. 
+ Pre-Assessment Planning 
+ Professionals from a variety of disciplines have encouraged the use of pre-assessment planning for young children (Boone &amp; Crais, 1999; Crais et al., 2006). Pre-assessment planning involves one or more professionals who meet with the child and family to gather information and plan the upcoming assessment. Common goals for planning include identifying what the family needs and wants from the assessment process, the roles that family members (and caregivers) would prefer to take in the assessment, and the child&rsquo;s areas of strength and need (Boone &amp; Crais, 1999). See ASHA&rsquo;s resources on Focusing Care on Individuals and Their Care Partners and collaboration and teaming . 
+ Speech and Language Assessment 
+ The comprehensive speech and language assessment considers the most common concerns for children with LLE, including 
+ failure to begin using words, 
+ the absence of a &ldquo;vocabulary spurt,&rdquo; and 
+ failure to begin combining words in the second year of life. 
+ For children with LLE who have not yet acquired verbal language, the assessment focuses on preverbal behaviors, including play, gesture, and other forms of nonverbal communication and interaction. 
+ For children who exhibit various forms of communication (e.g., gestures, vocalizations, words), the assessment evaluates their ability to successfully use these forms for functional communication. 
+ Children learn language in the context of interacting with those close to them. Therefore, it is important to gather information about the child&rsquo;s interactions with family members and caregivers as well as to be aware that communication styles are influenced by social and cultural factors (see ASHA&rsquo;s Practice Portal page on Cultural Responsiveness ). 
+ Typical Components of the Speech and Language Assessment 
+ Case History 
+ family&rsquo;s concerns about the child&rsquo;s speech and language 
+ child&rsquo;s birth and developmental history 
+ child&rsquo;s medical history, including history of middle ear infections 
+ family history of LLE or other language difficulties 
+ for children who are dual language learners 
+ language(s) used in the home and community and the circumstances in which each language is used 
+ child&rsquo;s age when first exposed to English or the other language(s) and the amount of exposure to all of the languages in the child&rsquo;s environments 
+ type of language experience in the child&rsquo;s environment (e.g., home literacy activities, conversations, television) 
+ See ASHA&rsquo;s Practice Portal page on Multilingual Service Delivery in Audiology and Speech-Language Pathology . 
+ Hearing Screening 
+ See ASHA&rsquo;s Practice Portal page on Childhood Hearing Screening . 
+ Spoken Language Assessment (Expressive and Receptive) 
+ means of communication (e.g., vocalizations, words, gestures, eye gaze) 
+ functions of communication (e.g., requesting and protesting, greeting, commenting) 
+ expressive vocabulary (emerging words and word approximations in all languages spoken) 
+ rate of vocabulary growth 
+ vocabulary diversity (e.g., nouns, pronouns, relational words) 
+ word combinations and length of utterance 
+ meaning expressed in early word combinations 
+ early grammar, including phrase/sentence structure and word forms 
+ receptive vocabulary 
+ comprehension of simple commands 
+ See ASHA&rsquo;s Practice Portal page on Spoken Language Disorders . 
+ Play Behavior and Social Communication Assessment 
+ symbolic play 
+ social pretend play 
+ comprehension of early social routines 
+ See ASHA&rsquo;s Practice Portal page on Social Communication Disorder . 
+ Speech Sound Assessment and Emergent Literacy Language Assessment 
+ oral mechanism examination 
+ inventory of sounds produced 
+ proportion of consonants 
+ inventory of syllable shapes 
+ presence of multisyllabic utterances 
+ interest in books 
+ phonemic awareness 
+ looking at or pointing to and labeling pictures in books 
+ holding a crayon or pencil and scribbling on paper 
+ anticipating routines in books 
+ retelling stories 
+ print concept knowledge and early book-handling skills 
+ See ASHA&rsquo;s Practice Portal pages on Speech Sound Disorders: Articulation and Phonology and Written Language Disorders . 
+ Assessment is accomplished using a variety of measures and activities, including both standardized and nonstandardized measures, as well as formal and informal assessment tools. SLPs have the obligation to ensure that standardized measures used in assessment show robust psychometric properties that provide strong evidence of their quality (Dollaghan, 2004). Competency-based tools, self-report questionnaires, and norm-referenced report measures (e.g., parent, teacher, and significant other) are frequently used. Analog tasks that mimic real-world situations and naturalistic observations can be used to gather information about an individual&rsquo;s communication skills in simulated social situations or in everyday social settings. 
+ See ASHA&rsquo;s resource on assessment tools, techniques, and data sources for general information about assessment options. Keep in mind that several factors can affect the way children interact with their caregivers, including 
+ contextual factors (e.g., home or clinic setting), 
+ familiarity with the observer and the materials or toys being used, and 
+ the type of interaction (e.g., free-play, book reading, or completing a particular task). 
+ For bilingual children, assessment in all languages is necessary to differentiate between a linguistic difference and a true communication disorder (see ASHA&rsquo;s Practice Portal page on Multilingual Service Delivery in Audiology and Speech-Language Pathology ). The use of standardized tests alone is not sufficient and may not be appropriate. Test scores are invalid for individuals who are not represented in the normative group for the test&rsquo;s standardization sample, even if the test is administered as instructed. In these cases, the tests cannot be used to determine the presence or absence of a communication disorder. Non-normed (criterion) measures, along with observation, language sampling, ethnographic interviewing, and dynamic assessment procedures, are fundamental to differentiating a difference from a disorder (see ASHA&rsquo;s resource titled Dynamic Assessment and ASHA&rsquo;s Practice Portal page on Cultural Responsiveness ). 
+ Assessment may result in 
+ determination of a language delay, 
+ diagnosis of a spoken language disorder, 
+ identification of delayed early literacy skills, 
+ identification of delayed phonological development, 
+ identification of social communication problems, 
+ identification of possible hearing problems, 
+ recommendation for ongoing monitoring of language development and caregiver training in language facilitation, 
+ recommendation for direct intervention and support, 
+ referral to early intervention services for eligibility determination (see ASHA&rsquo;s Practice Portal page on Early Intervention ), and 
+ referral to other professionals as needed (e.g., for assessment of sensory, motor, and cognitive skills). 
+ Differential Diagnosis 
+ When interpreting data from the comprehensive assessment, it is important to be aware of variability in early vocabulary growth and early word combinations in young children. As single indicators of later language outcomes, individual differences in the acquisition of these skills before the age of 4 years are not highly predictive of later language outcomes. In addition, children with receptive language delay have poorer prognoses than children with predominantly expressive delay (American Psychiatric Association, 2013). 
+ With these factors in mind, the SLP will need to differentiate normal variations in language development from language delay or language disorder and from comorbid conditions associated with language delay or disorder (see ASHA&rsquo;s Practice Portal pages on Autism Spectrum Disorder , Social Communication Disorder , and Intellectual Disability ). 
+ Sharing Assessment Results 
+ Approaches for sharing assessment information depend on the purpose of the assessment (e.g., determining eligibility for services or monitoring language skills), the assessment approach and the tools used, and the preferences of the family. 
+ The following are common principles that promote a collaborative exchange of information: 
+ Include all those who can contribute to and gain from the integration and sharing of the assessment information (Boone &amp; Crais, 1999); this includes family members and others who are likely to be members of the child&rsquo;s team, as well as those who can provide support to the child and family. 
+ Include opportunities for all members to discuss their thoughts and feelings. 
+ Describe the child&rsquo;s strengths or areas for growth and identify routines where the child can be supported in these areas. 
+ Set the tone for future interactions with service providers. 
+ See also ASHA&rsquo;s Practice Portal page on Counseling in Audiology and Speech-Language Pathology . 
+ Considerations for Assessing Younger Children 
+ Although the scope of this page is children from 2 to 4 years of age, younger children may be referred to an SLP with concerns about language development. Depending on the presenting symptoms, the SLP may conduct a comprehensive speech and language assessment to determine the need for early intervention. The SLP might also refer the child to other professionals, if the symptoms suggest disorders or conditions other than&mdash;or in addition to&mdash;language delay. See ASHA&rsquo;s Practice Portal Page on Early Intervention and information about the Child Find mandate. 
+ Cultural and Linguistic Considerations 
+ Key cultural and linguistic considerations include 
+ reviewing cultural and linguistic variables and factors that may influence communication (e.g., child-rearing practices, perceptions of disability, rules of social interaction, context of communication), in order to determine whether the communication patterns of an individual may be related to their cultural background (see ASHA&rsquo;s Practice Portal page on Cultural Responsiveness ); 
+ determining whether the communication pattern is related to the individual&rsquo;s linguistic background (see ASHA&rsquo;s Practice Portal page on Multilingual Service Delivery in Audiology and Speech-Language Pathology ); 
+ understanding that differences may be related to limited exposure to and development of new cultural communication patterns; 
+ recognizing that assimilation and level of acculturation may influence individual communication patterns and behaviors; 
+ identifying a disorder as a breakdown in communication that is sufficient to negatively influence the effective use of symbols and message processing in all languages used by the speaker; 
+ recognizing that a dialectal variation of a communication system is rule based and should not be considered a disorder of speech or language; 
+ understanding that vocabulary and concept development are distributed across languages and may be connected to different speakers and contexts; and 
+ identifying the family&rsquo;s developmental priorities and building onto the family&rsquo;s existent routines and interactions to support the child in acquiring language skills (Guiberson &amp; Ferris, 2018, 2019). 
+ The ability to learn and use language does not appear to be negatively affected by learning more than one language (Pearson, 2013). When combined vocabularies are measured, researchers have found that bilingual children acquire vocabulary at the same rate as their monolingual peers (Hoff et al., 2012; Junker &amp; Stockman, 2002; Pearson, 1998). Pearson (1998) found that using strategies such as conceptual scoring (i.e., scoring the meaning of a word, regardless of the language in which it is produced) when assessing linguistic skills across languages is an effective way to demonstrate that the skills of typically developing bilingual children are on a par with those of monolingual children. These findings support the belief that LLE is not a result of introducing a second language or simultaneously acquiring two languages. Monolingualism is not necessary and should not be advised as a response to LLE. A strong model in any language helps build a linguistic foundation that will aid in the acquisition of other languages. 
+ If a child demonstrates difficulties in the acquisition of his or her native language and a second language, an evaluation may be warranted. Understanding the normal processes and phenomena of second-language acquisition and simultaneous bilingualism is important to ensure accurate assessment of bilingual clients. 
+ Treatment 
+ See the Treatment section of the Late Language Emergence Evidence Map for pertinent scientific evidence, expert opinion, and client/caregiver perspective. 
+ Language intervention for toddlers and preschoolers with late language emergence can vary along a continuum from indirect to direct services. Speech-language pathologists (SLPs) are involved in direct treatment and are often involved in monitoring and indirect intervention. SLPs can help remediate problems and potentially prevent future difficulties and the need for subsequent school-based services. 
+ The goal of language intervention is to stimulate overall language development and to teach language skills in an integrated fashion and in context. This approach promotes effective everyday communication and enhances the family&rsquo;s ability to support the child&rsquo;s development. 
+ The level of service (i.e., indirect or direct) is individualized for each child and family. When making these decisions, it is critical to identify the nature and severity of the language delay, its overall effect on communication, the presence of risk factors, and the child&rsquo;s global developmental skills. 
+ When no other developmental delays or disabilities have been identified or are suspected, the typical course for late language emergence is regular monitoring or monitoring combined with indirect language stimulation. 
+ When language delays persist over time or are present with other identified or suspected delays or disabilities (e.g., intellectual disability , autism spectrum disorder , hearing impairment ), direct speech and language services are indicated; the SLP engages in interprofessional practice and coordinates services with other professionals working with the child. See ASHA&rsquo;s resources on collaboration and teaming and interprofessional education/interprofessional practice (IPE/IPP ). 
+ Each child has a unique language profile that may be influenced by their cultural background, the language(s) spoken in the home, and the family constellation. It is important to consider these factors when developing an intervention plan. For more information on culturally and linguistically appropriate service delivery, see ASHA&rsquo;s Practice Portal page on Multilingual Service Delivery in Audiology and Speech-Language Pathology . 
+ Working With Families 
+ A key component to successful intervention with toddlers is working closely with families. The Individuals with Disabilities Education Act (IDEA; 2004) requires that families have the opportunity to share any concerns and priorities that might guide or influence treatment. 
+ There are a number of key activities that can guide the gathering of this type of information (Bailey, 2004; Winton, 1996). 
+ These activities include the following: 
+ identifying the family&rsquo;s concerns and what they hope to accomplish with intervention; 
+ determining how the family perceives the child&rsquo;s strengths and needs relative to family values and within the family structure and routines; 
+ identifying the priorities of the family and how service providers may help with these priorities; 
+ identifying the family&rsquo;s existing resources relative to priorities; 
+ identifying the family&rsquo;s preferred roles in the service delivery decision-making process; and 
+ establishing a supportive, informed, and collaborative relationship with the family. 
+ A family-centered approach aligns with the federal mandate to provide services in natural environments. Collaborating with parents and caregivers about routines and everyday activities helps to 
+ identify learning opportunities that occur in the home, community, or school; 
+ determine the communication goals for the child; 
+ learn about the child&rsquo;s preferences and interests; and 
+ identify and implement techniques for intervention. 
+ See ASHA&rsquo;s resource on Focusing Care on Individuals and Their Care Partners . 
+ Indirect Intervention 
+ Indirect intervention consists of activities to stimulate language development. Typically, the SLP provides ideas and sample activities for parents and caregivers to engage in with the child. The SLP encourages enrichment activities (e.g., book sharing and play groups) and multimodal communication (e.g., speech, gestures, signs, and pictures). 
+ The SLP may continue to monitor the child on a regular basis during this time and consult with parents and caregivers as needed. For some children, the SLP may provide families with more focused language stimulation activities (e.g., language models designed specifically for that child). 
+ Interaction styles that stimulate language competence and enhance communication in young children include 
+ providing responses directly related to a child&rsquo;s communication attempt, 
+ providing spoken language models for the child, 
+ providing models of nonverbal communication behaviors (e.g., gestures and eye gaze), 
+ imitating or expanding the child&rsquo;s actions or words, 
+ reinforcing the child&rsquo;s communication attempts, and 
+ giving the child adequate time to initiate communication and respond to adults (Girolametto et al., 1999; Kaiser et al., 2001; Wilcox, 1992; Yoder &amp; Warren, 2001). 
+ Direct Intervention 
+ Direct intervention consists of activities designed and implemented by an SLP. Direct intervention may be indicated for children identified as having, or being at risk for, communication impairment. The family and SLP select goals that are developmentally appropriate and that offer the potential for improving communication and promoting academic and social success. 
+ Effective intervention promotes the child&rsquo;s participation in natural settings and is 
+ comprehensive, coordinated, and team based; 
+ developmentally supportive; 
+ family centered; and 
+ culturally and linguistically responsive. 
+ Treatment Approaches 
+ Treatment approaches for children with language delay or disorder can vary along a continuum of naturalness (Fey, 1986). They include 
+ clinician-directed &mdash;drill-based activities in a therapy room, 
+ child-centered &mdash;play-based activities that include everyday activities in natural settings, and 
+ hybrid &mdash;activities and settings that combine both approaches. 
+ One example of a hybrid approach is dialogic reading , an interactive technique in which adults prompt children with questions and engage them in discussions while reading together (Zevenbergen &amp; Whitehurst, 2003). 
+ Other strategies may include involving extended family, siblings, or other children and engaging in structured didactic learning tasks led by the care provider (Guiberson &amp; Ferris, 2018, 2019). 
+ Augmentative and alternative communication methods may be considered as a temporary means of communication for children with late language emergence. Research shows that the use of augmentative and alternative communication may in fact aid in the development of natural speech and language (L&uuml;ke, 2014; Romski et al., 2010; Wright et al., 2013). See ASHA&rsquo;s Practice Portal page on Augmentative and Alternative Communication . 
+ The SLP considers the cultural background of the child and their family when selecting the best treatment approach. For example, in the cultures of some individuals, &ldquo;It may be even less natural to engage in child-led play-based interactions, as this is sometimes inconsistent with social roles and expectations&rdquo; (Wing et al., 2007, p. 23). See ASHA&rsquo;s Practice Portal page on Cultural Responsiveness . 
+ It is not necessary or beneficial to recommend monolingualism for multilingual children who show language delays. Bilingualism has not been shown to inhibit language development or therapeutic outcomes in the presence of language disorders (Bird et al., 2005; Hambly &amp; Fombonne, 2012; Valicenti-McDermott et al., 2013). All languages that an individual uses are important culturally and socially. Discouraging the use of one of those languages may be a disservice to the child&rsquo;s functional communication and language development in different contexts (Cruz-Ferreira, 2011). 
+ For more information about language intervention and a description of specific treatment approaches, see the Treatment section of ASHA&rsquo;s Practice Portal page on Spoken Language Disorders . 
+ Eligibility for Services 
+ To gain access to early intervention services, a child first must qualify for intervention according to state agency guidelines. Some late talkers will qualify for special education services on the basis of an evaluation conducted by their school district (see Child Find ). Speech and language services may be indicated for children identified as having, or being at risk for, communication impairment. 
+ If the child is determined to be eligible for services, an Individual Family Service Plan (IFSP) is developed in accordance with Part C of IDEA, which covers children from birth to 3 years of age. The IFSP is a written plan for providing early intervention services that 
+ are based on the evaluation and assessment; 
+ include a statement of the child&rsquo;s present levels of physical development (including vision, hearing, and health status), cognitive development, communication development, social or emotional development, and adaptive development; 
+ are implemented as soon as possible after parental consent has been obtained for the early intervention services; and 
+ are reviewed periodically (every 6 months) and annually. 
+ See ASHA&rsquo;s Practice Portal page on Early Intervention for details. See also ASHA&rsquo;s resource titled Current IDEA Part C Final Regulations (2011). 
+ Transition to Part B of IDEA 
+ When a child reaches the age of 3 years, they transition from preschool to school-based services, in accordance with Part B of IDEA. At this point, an individualized education program is developed. See ASHA&rsquo;s Practice Portal page on Early Intervention for details. See also ASHA&rsquo;s resources titled IDEA Part C Issue Brief: Transitions (Including Part C to Part B/Exiting Part C) and IDEA Part B Issue Brief: Individualized Education Programs and Eligibility for Services . 
+ One of the goals of IDEA (2004) is to ensure a seamless transition process for families moving from one program to another as well as timely access to appropriate services. It is stipulated that there be a transition plan that includes participation by representatives from each program, as well as family members. 
+ The SLP can have different roles during this transition period. When the SLP functions as the IFSP service coordinator, they directly oversee transition activities. As such, they need to be knowledgeable about a wide range of resources in the community. When the SLP functions as a member of the IFSP team, they assist the family and other team members by helping make the transition process as smooth and positive as possible. 
+ Interdisciplinary Approach 
+ SLPs and other professionals, in collaboration with families and caregivers, are typically involved in the selection and delivery of services and supports for young children. It is essential that all professionals involved in the process collaborate effectively with other team members and be knowledgeable about typical and atypical patterns of development in the domains of 
+ cognition; 
+ communication; 
+ emergent literacy; and 
+ motor, sensory, and social&ndash;emotional functioning. 
+ Depending on the needs of the child, the interdisciplinary team can include 
+ an audiologist, 
+ an early childhood general or special educator, 
+ an interpreter, 
+ a neurodevelopmental pediatrician, 
+ an occupational therapist, 
+ a physical therapist, 
+ a school psychologist, and 
+ an SLP. 
+ Other professionals who may be involved include bilingual specialists, English Language Acquisition teachers, childcare providers, educational diagnosticians, educational therapists, reading specialists, social workers, child and developmental psychologists, pediatric neurologists, and child psychiatrists. 
+ See ASHA&rsquo;s resources on collaboration and teaming and interprofessional education/interprofessional practice (IPE/IPP ). 
+ Service Delivery Options 
+ See the Service Delivery section of the Late Language Emergence Evidence Map for pertinent scientific evidence, expert opinion, and client/caregiver perspective. 
+ In addition to determining the optimal speech and language approach for the child with late language emergence, SLPs consider other service delivery variables&mdash;including format, provider, dosage, and setting&mdash;that might affect treatment outcomes. 
+ Format 
+ Format refers to the structure of the treatment session (e.g., one-on-one or group). 
+ Indirect intervention will, by its nature, involve key individuals in the child&rsquo;s everyday life. This can include one-on-one activities with the child and parent or caregiver or group activities within the family or within a school setting that may include siblings, peers, and teachers. 
+ If the child is receiving direct intervention, services are typically structured within the context of the child&rsquo;s home, community, group care settings, or school. The format will include key people in those settings (e.g., parents, teachers, care providers, siblings, and peers). 
+ Telepractice can also be used to deliver face-to-face services remotely. See ASHA&rsquo;s Practice Portal page on Telepractice . 
+ Provider 
+ Provider refers to the person providing the treatment (e.g., SLP, trained volunteer, caregiver). 
+ For children who receive indirect intervention, the SLP typically provides ideas and sample activities for parents and caregivers to engage in with the child. The SLP monitors the child on a regular basis during this time and consults with parents and caregivers as needed. 
+ Children and families receiving direct intervention might have multiple service providers from different disciplines. This transdisciplinary team includes a primary service provider, who serves as the primary point of contact for the family, and other professionals who support the primary service provider through consultations, team meetings, coaching, or training (Shelden &amp; Rush, 2013). 
+ Dosage 
+ Dosage refers to the frequency, intensity, and duration of service. 
+ Dosage depends a great deal on the needs of the child and their family and caregivers. Regardless of whether the child receives indirect or direct intervention, some families and caregivers will need more frequent contact and more concrete support (Bagnato et al., 2011). Others prefer longer intervals between contacts to allow more time to use strategies, practice new skills, and gain confidence in their abilities (Dunst et al., 2014; Keilty, 2010; Roberts et al., 2016). 
+ Setting 
+ Setting refers to the location of treatment (e.g., home, community-based). 
+ Factors such as geographical location, child and family needs and available resources, and family preferences will help determine where services and supports occur (Dunst et al., 2014; Searcy, 2018). 
+ To the extent possible, intervention services and supports are provided in natural environments, including the child&rsquo;s home and community settings. The natural environments for services and supports may change over time as family and child needs change. Some children may receive services in more than one setting. 
+ Resources 
+ ASHA Resources 
+ Assessment Tools, Techniques, and Data Sources 
+ Childhood Spoken Language Disorders : Information for Consumers 
+ Communicating With Baby: Tips and Milestones From Birth to Age 5 (English and Spanish versions) 
+ Cultural Competence Check-Ins 
+ Developmental Milestones: Birth to 5 Years 
+ Developmental Norms for Speech and Language 
+ Dynamic Assessment 
+ Early Speech and Language Development of Children 
+ Identify the Signs of Communication Disorders 
+ Information for School-Based SLPs 
+ Language In Brief 
+ Phonemic Inventories and Cultural and Linguistic Information Across Languages 
+ Semantic Relationships 
+ Other Resources 
+ This list of resources is not exhaustive and the inclusion of any specific resource does not imply endorsement from ASHA. 
+ 200 By Two: An Early Intervention Guide on Communication and Language Development [Video] 
+ Birth-to-Five: Watch Me Thrive! 
+ Evaluating Screening Tests 
+ First Words Project 
+ Center on the Developing Child&mdash;Harvard University 
+ 5 Steps for Brain-Building: Serve and Return [PDF] 
+ National Scientific Council on the Developing Child: Young Children Develop in an Environment of Relationships [PDF] 
+ Training Module: &ldquo;Talk With Me Baby&rdquo; 
+ Measurement Issues: Assessing language skills in young children 
+ NIDCD Fact Sheet: Speech and Language Developmental Milestones 
+ RCSLT: New Long COVID Guidance and Patient Handbook 
+ Reach Out and Read 
+ Reading Rockets 
+ The Child Find Mandate: What Does It Mean to You? 
+ Early Childhood Technical Assistance (ECTA) Center 
+ Foundation for Child Development 
+ References 
+ American Academy of Pediatrics. (2016, November 1.) Where We Stand: Screen Time . HealthyChildren.org. https://www.healthychildren.org/English/family-life/Media/Pages/Where-We-Stand-TV-Viewing-Time.aspx . 
+ American Psychiatric Association. (2013). Diagnostic and statistical manual of mental disorders (5th ed.). https://doi.org/10.1176/appi.books.9780890425596 . 
+ American Speech-Language-Hearing Association. (2016). Scope of practice in speech-language pathology [Scope of practice]. https://www.asha.org/policy . 
+ American Speech-Language-Hearing Association. (2023). Code of ethics [Ethics]. https://www.asha.org/policy . 
+ Bagnato, S., Suen, H., &amp; Fevola, A. (2011). &ldquo;Dosage&rdquo; effects on developmental progress during early childhood intervention: Accessible metrics for real-life research and advocacy. Infants &amp; Young Children , 24 (6), 117&ndash;132. https://doi.org/10.1097/IYC.0b013e3182104896. 
+ Bailey, D. B., Jr. (2004). Assessing family resources, priorities, and concerns. In M. McLean, M. Wolery, &amp; D. B. Bailey, Jr. (Eds.), Assessing infants and preschoolers with special needs (3rd ed., pp. 172&ndash;203). Pearson. 
+ Banerjee, R., &amp; Guiberson, M. (2012). Evaluating young children from culturally and linguistically diverse backgrounds for special education services. Young Exceptional Children , 15 (1), 33&ndash;45. https://doi.org/10.1177/1096250611435368 . 
+ Bird, E. K.-R., Cleave, P., Trudeau, N., Thordardottir, E., Sutton, A., &amp; Thorpe, A. (2005). The language abilities of bilingual children with Down syndrome. American Journal of Speech-Language Pathology , 14 (3), 187&ndash;199. https://doi.org/10.1044/1058-0360(2005/019) . 
+ Boone, H., &amp; Crais, E. R. (1999). Strategies for achieving: Family-driven assessment and intervention planning. Young Exceptional Children , 3 (1), 2&ndash;11. https://doi.org/10.1177/109625069900300101 . 
+ Collisson, B. A., Graham, S. A., Preston, J. L., Rose, M. S., McDonald, S., &amp; Tough, S. (2016). Risk and protective factors for late talking: An epidemiologic investigation. The Journal of Pediatrics , 172 , 168&ndash;174.e1. https://doi.org/10.1016/j.jpeds.2016.02.020 . 
+ Crais, E. R., Roy, V. P., &amp; Free, K. (2006). Parents&rsquo; and professionals&rsquo; perceptions of the implementation of family-centered practices in child assessments. American Journal of Speech-Language Pathology , 15 (4), 365&ndash;377. https://doi.org/10.1044/1058-0360(2006/034) . 
+ Cruz-Ferreira, M. (2011, August). Recommending monolingualism to multilinguals&mdash;Why, and why not. Leader Live. https://blog.asha.org/2011/08/02/recommending-monolingualism-to-multilinguals-why-and-why-not/ . 
+ Dale, P. S., Price, T. S., Bishop, D. V., &amp; Plomin, R. (2003). Outcomes of early language delay: Part I. Predicting persistent and transient language difficulties at 3 and 4 years. Journal of Speech, Language, and Hearing Research , 46 (3), 544&ndash;560. https://doi.org/10.1044/1092-4388(2003/044) . 
+ Dollaghan, C. (2004). Evidence-based practice in communication disorders: What do we know, and when do we know it? Journal of Communication Disorders , 37 (5), 391&ndash;400. https://doi.org/10.1016/j.jcomdis.2004.04.002 . 
+ Dunst, C. J., Bruder, M. B., &amp; Espe-Scherwindt, M. (2014). Family capacity-building in early childhood intervention: Do context and setting matter? School Community Journal , 24 (1), 37&ndash;48. 
+ Ellis Weismer, S. (2007). Typical talkers, late talkers, and children with specific language impairment: A language endowment spectrum. In R. Paul (Ed.), The influence of developmental perspectives on research and practice in communication disorders: A festschrift for Robin S. Chapman (pp. 83&ndash;102). Erlbaum. 
+ Ellis Weismer, S., Murray-Branch, J., &amp; Miller, J. F. (1994). A prospective longitudinal study of language development in late talkers. Journal of Speech and Hearing Research , 37 (4), 852&ndash;867. https://doi.org/10.1044/jshr.3704.852 . 
+ Fasolo, M., Majorano, M., &amp; D&rsquo;Odorico, L. (2008). Babbling and first words in children with slow expressive development. Clinical Linguistics &amp; Phonetics, 22 (2), 83&ndash;94. https://doi.org/10.1080/02699200701600015 . 
+ Fey, M. E. (1986). Language intervention with young children. College-Hill Press. 
+ Fisher, Evelyn. (2017). A systematic review and meta-analysis of predictors of expressive-language outcomes among late talkers. Journal of Speech, Language, and Hearing Research, 60 , 1&ndash;14. https://doi.org/10.1044/2017_JSLHR-L-16-0310 . 
+ Girolametto, L., Weitzman, E., Wiigs, M., &amp; Pearce, P. S. (1999). The relationship between maternal language measures and language development in toddlers with expressive vocabulary delays. American Journal of Speech-Language Pathology , 8 (4), 364&ndash;374. https://doi.org/10.1044/1058-0360.0804.364 . 
+ Girolametto, L., Wiigs, M., Smyth, R., Weitzman, E., &amp; Pearce, P. S. (2001). Children with a history of expressive language delay: Outcomes at 5 years of age. American Journal of Speech-Language Pathology , 10 (4), 358&ndash;369. https://doi.org/10.1044/1058-0360(2001/030) . 
+ Glascoe, F. P. (1999). Using parents&rsquo; concerns to detect and address developmental and behavioral problems. Journal for Specialists in Pediatric Nursing, 4 (1), 24&ndash;35. https://doi.org/10.1111/j.1744-6155.1999.tb00077.x . 
+ Guiberson, M., &amp; Banerjee, R. (2012). Using questionnaires to screen young dual language learners for language disorders. In Young Exceptional Children Monograph Series 14: Supporting young children who are dual language learners with or at-risk for disabilities (pp. 75&ndash;93). Council for Exceptional Children Division for Early Childhood. 
+ Guiberson, M., &amp; Ferris, K. (2018). Identifying culturally consistent early interventions for Latino caregivers. Communication Disorders Quarterly , 40 (4), 239&ndash;249. https://doi.org/10.1177/1525740118793858 . 
+ Guiberson, M., &amp; Ferris, K. (2019). Early language interventions for young dual language learners: A scoping review. American Journal of Speech-Language Pathology , 28 (3), 945&ndash;963. https://doi.org/10.1044/2019_AJSLP-IDLL-18-0251 . 
+ Guralnick, M. J. (1997). The effectiveness of early intervention. Brookes. 
+ Guralnick, M. J. (1998). Effectiveness of early intervention for vulnerable children: A developmental perspective. American Journal of Mental Retardation , 102 (4), 319&ndash;345. https://doi.org/10.1352/0895-8017(1998)102%3C0319:EOEIFV%3E2.0.CO;2 . 
+ Hambly, C., &amp; Fombonne, E. (2012). The impact of bilingual environments on language development in children with autism spectrum disorders. Journal of Autism and Developmental Disorders, 42 (7), 1342&ndash;1352. https://doi.org/10.1007/s10803-011-1365-z . 
+ Hoff, E., Core, C., Place, S., Rumiche, R., Se&ntilde;or, M., &amp; Parra, M. (2012). Dual language exposure and early bilingual development. Journal of Child Language , 39 (1), 1&ndash;27. https://doi.org/10.1017/S0305000910000759 . 
+ Hoff-Ginsberg, E. (1994). Influences of mother and child on maternal talkativeness. Discourse Processes , 18 (1), 105&ndash;117. https://doi.org/10.1080/01638539409544886 . 
+ Horowitz, S. M., Irwin, J. R., Briggs-Gowan, M. J., Bosson Heenan, J. M., Medoza, J., &amp; Carter, A. S. (2003). Language delay in a community cohort of young children. Journal of the American Academy of Child &amp; Adolescent Psychiatry , 42 (8), 932&ndash;940. https://doi.org/10.1097/01.CHI.0000046889.27264.5E . 
+ Individuals with Disabilities Education Improvement Act of 2004, Pub. L. No. 108-446, 20 U.S.C. &sect; 1501 et seq. (2004). https://www.congress.gov/bill/108th-congress/house-bill/1350 . 
+ Junker, D., &amp; Stockman, I. (2002). Expressive vocabulary of German&ndash;English bilingual toddlers. American Journal of Speech-Language Pathology , 11 (4), 381&ndash;394. https://doi.org/10.1044/1058-0360(2002/042) . 
+ Kaiser, A. P., Hester, P. P., &amp; McDuffie, A. S. (2001). Supporting communication in young children with developmental disabilities. Mental Retardation and Developmental Disabilities Research Reviews , 7 (2), 143&ndash;150. https://doi.org/10.1002/mrdd.1020 . 
+ Keilty, B. (2010). The early intervention guidebook for families and professionals: Partnering for success . Teachers College Press. 
+ Klee, T., Carson, D. K., Gavin, W. J., Hall, L., Kent, A., &amp; Reece, S. (1998). Concurrent and predictive validity of an early language screening program. Journal of Speech, Language, and Hearing Research , 41 (3), 627&ndash;641. https://doi.org/10.1044/jslhr.4103.627 . 
+ L&uuml;ke, C. (2014). Impact of speech-generating devices on the language development of a child with childhood apraxia of speech: A case study. Disability and Rehabilitation: Assistive Technology , 11 (1), 80&ndash;88. https://doi.org/10.3109/17483107.2014.913715 . 
+ Marchman, V. A., &amp; Fernald, A. (2013). Variability in real-time spoken language processing in typically developing and late-talking toddlers. In L. A. Rescorla &amp; P. S. Dale (Eds.), Late talkers: Language development, interventions, and outcomes (pp. 145&ndash;166). Brookes. 
+ Mirak, J., &amp; Rescorla, L. (1998). Phonetic skills and vocabulary size in late talkers: Concurrent and predictive relationships. Applied Psycholinguistics, 19 (1), 1&ndash;17. https://doi.org/10.1017/S0142716400010559 . 
+ National Joint Committee on Learning Disabilities. (2007). Learning disabilities and young children: Identification and intervention [Technical report]. https://www.asha.org/policy . 
+ National Research Council. (2001). Educating children with autism. National Academies Press. 
+ Oller, D. K., Eilers, R. E., Neal, A. R., &amp; Schwartz, H. K. (1999). Precursors to speech in infancy: The prediction of speech and language disorders. Journal of Communication Disorders, 32 (4), 223&ndash;245. https://doi.org/10.1016/S0021-9924(99)00013-1 . 
+ Olswang, L. B., Rodriguez, B., &amp; Timler, G. (1998). Recommending intervention for toddlers with specific language learning difficulties: We may not have all the answers, but we know a lot. American Journal of Speech-Language Pathology , 7 (1), 23&ndash;32. https://doi.org/10.1044/1058-0360.0701.23 . 
+ Paul, R. (1991). Profiles of toddlers with slow expressive language development. Topics in Language Disorders , 11 (4), 1&ndash;13. https://doi.org/10.1097/00011363-199111040-00003 . 
+ Paul, R. (1996). Clinical implications of the natural history of slow expressive language development. American Journal of Speech-Language Pathology , 5 (2), 5&ndash;21. https://doi.org/10.1044/1058-0360.0502.05 . 
+ Paul, R., Hernandez, R., Taylor, L., &amp; Johnson, K. (1996). Narrative development in late talkers: Early school age. Journal of Speech and Hearing Research , 39 (6), 1295&ndash;1303. https://doi.org/10.1044/jshr.3906.1295 . 
+ Paul, R., &amp; Jennings, P. (1992). Phonological behavior in toddlers with slow expressive language development. Journal of Speech and Hearing Research, 35 (1), 99&ndash;107. https://doi.org/10.1044/jshr.3501.99 . 
+ Pearson, B. Z. (1998). Assessing lexical development in bilingual babies and toddlers. International Journal of Bilingualism , 2 (3), 347&ndash;372. https://doi.org/10.1177/136700699800200305 . 
+ Pearson, B. Z. (2013). Distinguishing the bilingual as a late talker from the late talker who is bilingual. In L. A. Rescorla &amp; P. S. Dale (Eds.), Late talkers: Language development, interventions, and outcomes (pp. 67&ndash;87). Brookes. 
+ Rescorla, L. A. (1989). The Language Development Survey: A screening tool for delayed language in toddlers. Journal of Speech and Hearing Disorders , 54 (4), 587&ndash;599. https://doi.org/10.1044/jshd.5404.587 . 
+ Rescorla, L. A. (2000). Do late-talking toddlers turn out to have reading difficulties a decade later? Annals of Dyslexia , 50 (1), 85&ndash;102. https://doi.org/10.1007/s11881-000-0018-2 . 
+ Rescorla, L. A. (2002). Language and reading outcomes to age 9 in late-talking toddlers. Journal of Speech, Language, and Hearing Research , 45 (2), 360&ndash;371. https://doi.org/10.1044/1092-4388(2002/028) . 
+ Rescorla, L. A. (2005). Age 13 language and reading outcomes in late-talking toddlers. Journal of Speech, Language, and Hearing Research , 48 (2), 459&ndash;472. https://doi.org/10.1044/1092-4388(2005/031) . 
+ Rescorla, L. A. (2009). Age 17 language and reading outcomes in late-talking toddlers: Support for a dimensional perspective on language delay. Journal of Speech, Language, and Hearing Research , 52 (1), 16&ndash;30. https://doi.org/10.1044/1092-4388(2008/07-0171) . 
+ Rescorla, L. A., &amp; Achenbach, T. M. (2002). Use of the Language Development Survey (LDS) in a national probability sample of children 18 to 35 months old. Journal of Speech, Language, and Hearing Research, 45 (4), 733&ndash;743. https://doi.org/10.1044/1092-4388(2002/059) . 
+ Rescorla, L. A., &amp; Alley, A. (2001). Validation of the Language Development Survey (LDS): A parent report tool for identifying language delay in toddlers. Journal of Speech, Language, and Hearing Research , 44 (2), 434&ndash;445. https://doi.org/10.1044/1092-4388(2001/035) . 
+ Rescorla, L. A., &amp; Ratner, N. B. (1996). Phonetic profiles of toddlers with specific expressive language impairment (SLI-E). Journal of Speech and Hearing Research, 39 (1), 153&ndash;165. https://doi.org/10.1044/jshr.3901.153 . 
+ Rescorla, L. A., &amp; Schwartz, E. (1990). Outcome of toddlers with specific expressive language delay. Applied Psycholinguistics , 11 (4), 393&ndash;407. https://doi.org/10.1017/S0142716400009644 . 
+ Rice, M. L., Taylor, C. L., &amp; Zubrick, S. R. (2008). Language outcomes of 7-year-old children with or without a history of late language emergence at 24 months. Journal of Speech, Language, and Hearing Research, 51 (2), 394&ndash;407. https://doi.org/10.1044/1092-4388(2008/029) . 
+ Rice, M. L., Zubrick, S. R., Taylor, C. L., Gayan, J., &amp; Bontempo, D. (2014). Late language emergence in 24-month-old twins: Heritable and increased risk for late language emergence in twins. Journal of Speech, Language, and Hearing Research , 57 (3), 917&ndash;928. https://doi.org/10.1044/1092-4388(2013/12-0350) . 
+ Roberts, M. Y., Hensle, T., &amp; Brooks, M. K. (2016). More than &ldquo;try this at home&rdquo;&mdash;Including parents in early intervention. Perspectives of the ASHA Special Interest Groups , 1 (1), 130&ndash;143. https://doi.org/10.1044/persp1.SIG1.130 . 
+ Romski, M., Sevcik, R. A., Adamson, L. B., Cheslock, M., Smith, A., Barker, M., &amp; Bakeman, R. (2010). Randomized comparison of augmented and nonaugmented language interventions for toddlers with developmental delays and their parents. Journal of Speech, Language, and Hearing Research , 53 (2), 350&ndash;364. https://doi.org/10.1044/1092-4388(2009/08-0156) . 
+ Roulstone, S., Loader, S., Northstone, K., Beveridge, M., &amp; the ALSPAC team. (2002). The speech and language of children aged 25 months: Descriptive data from the Avon Longitudinal Study of Parents and Children. Early Child Development and Care , 172 (3), 259&ndash;268. https://doi.org/10.1080/03004430212126 . 
+ Searcy, K. L. (2018). Funding and documentation for early intervention (0 to 3 years). In N. Swigert (Ed.), Documentation and reimbursement for speech-language pathologists: Principles and practice (pp. 251&ndash;291). Slack Incorporated. 
+ Shelden, M. L., &amp; Rush, D. D. (2013). The early intervention teaming handbook: The primary service provider approach. Brookes. 
+ Stoel-Gammon, C. (1989). Prespeech and early speech development of two late talkers. First Language, 9 (6), 207&ndash;223. https://doi.org/10.1177/014272378900900607 . 
+ Thal, D. J., Marchman, V. A., &amp; Tomblin, J. B. (2013). Late-talking toddlers: Characterization and prediction of continued delay. In L. A. Rescorla &amp; P. S. Dale (Eds.), Late talkers: Language development, interventions, and outcomes (pp. 169&ndash;201). Brookes. 
+ Thal, D. J., &amp; Tobias, S. (1992). Communicative gestures in children with delayed onset of oral expressive vocabulary. Journal of Speech and Hearing Research, 35 (6), 1281&ndash;1289. https://doi.org/10.1044/jshr.3506.1289 . 
+ Thal, D. J., Tobias, S., &amp; Morrison, D. (1991). Language and gesture in late talkers: A 1-year follow-up. Journal of Speech and Hearing Research, 34 (3), 604&ndash;612. https://doi.org/10.1044/jshr.3403.604 . 
+ Thelin, J., &amp; Fussner, J. (2005). Factors related to the development of communication in CHARGE syndrome. American Journal of Medical Genetics , 133A (3), 282&ndash;290. https://doi.org/10.1002/ajmg.a.30550 . 
+ Valicenti-McDermott, M., Tarshis, N., Schouls, M., Galdston, M., Hottinger, K., Seijo, R., Shulman, L., &amp; Shinnar, S. (2013). Language differences between monolingual English and bilingual English-Spanish young children with autism spectrum disorders. Journal of Child Neurology, 28 (7), 945&ndash;948. https://doi.org/10.1177/0883073812453204 . 
+ Wells, G. (1985). Language development in the preschool years: Language at home and at school . Cambridge University Press. 
+ Wetherby, A., Allen, L., Cleary, J., Kublin, K., &amp; Goldstein, H. (2002). Validity and reliability of the Communication and Symbolic Behavior Scales Developmental Profile with very young children. Journal of Speech, Language, and Hearing Research , 45 (6), 1202&ndash;1218. https://doi.org/10.1044/1092-4388(2002/097) . 
+ Wilcox, M. (1992). Enhancing initial communication skills in young children with developmental disabilities through partner programming. Seminars in Speech and Language , 13 (3), 194&ndash;212. https://doi.org/10.1055/s-2008-1064197 . 
+ Wing, C., Kohnert, K., Pham, G., Cordero, K. N., Ebert, K. D., Kan, P. F., &amp; Blaiser, K. (2007). Culturally consistent treatment for late talkers. Communication Disorders Quarterly , 29 (1), 20&ndash;27. https://doi.org/10.1177/1525740108314862 . 
+ Winton, P. (1996). Understanding family concerns, priorities, and resources. In P. McWilliam, P. Winton, &amp; E. Crais (Eds.), Practical strategies for family-centered early intervention (pp. 31&ndash;53). Singular. 
+ World Health Organization. (2001). International classification of functioning, disability and health. https://www.who.int/classifications/icf/en . 
+ Wright, C. A., Kaiser, A. P., Reikowsky, D. I., &amp; Roberts, M. Y. (2013). Effects of a naturalistic sign intervention on expressive language of toddlers with Down syndrome. Journal of Speech, Language, and Hearing Research, 56 (3), 994&ndash;1008. https://doi.org/10.1044/1092-4388(2012/12-0060) . 
+ Yoder, P. J., &amp; Warren, S. F. (2001). Intentional communication elicits language-facilitating maternal responses in dyads with children who have developmental disabilities. American Journal of Mental Retardation , 106 (4), 327&ndash;335. https://doi.org/10.1352/0895-8017(2001)106%3C0327:ICELFM%3E2.0.CO;2 . 
+ Zevenbergen, A. A., &amp; Whitehurst, G. J. (2003). Dialogic reading: A shared picture book reading intervention for preschoolers. In A. van Kleeck, S. A. Stahl, &amp; E. B. Bauer (Eds.), On reading books to children: Parents and teachers (pp. 177&ndash;200). Erlbaum. 
+ Zimmerman, F. J., Christakis, D. A., &amp; Meltzoff, A. N. (2007). Associations between media viewing and language development in children under age 2 years. The Journal of Pediatrics, 151 (4), 364&ndash;368. https://doi.org/10.1016/j.jpeds.2007.04.071 . 
+ Zubrick, S. R., Taylor, C. L., Rice, M. L., &amp; Slegers, D. W. (2007). Late language emergence at 24 months: An epidemiological study of prevalence, predictors, and covariates. Journal of Speech, Language, and Hearing Research , 50 (6), 1562&ndash;1592. https://doi.org/10.1044/1092-4388(2007/106) . 
+ About This Content 
+ Acknowledgments 
+ Content for ASHA's Practice Portal is developed through a comprehensive process that includes multiple rounds of subject matter expert input and review. ASHA extends its gratitude to the following subject matter experts who were involved in the development of the Late Language Emergence page. 
+ Marilyn Agin, MD, FAAP, CCC-SLP 
+ Raquel Anderson, PhD, CCC-SLP 
+ Celeste Domsch, PhD, CCC-SLP 
+ Maria Diana Gonzales, PhD, CCC-SLP 
+ Mark Guiberson, PhD, CCC-SLP 
+ Tiffany Hogan, PhD, CCC-SLP 
+ Rhea Paul, PhD, CCC-SLP 
+ Leslie Rescorla, PhD 
+ Maria Adelaida Restrepo, PhD, CCC-SLP 
+ J. Bruce Tomblin, PhD, CCC-SLP 
+ Stephen Zubrick, PhD 
+ In addition, ASHA thanks the members of the Ad Hoc Committee on the Roles and Responsibilities of Speech-Language Pathologists in Early Intervention whose work was foundational to the development of this content. Members of the Committee were M. Jeanne Wilcox (chair), Melissa A. Cheslock, Elizabeth R. Crais, Trudi Norman-Murch, Rhea Paul, Froma P. Roth, Juliann J. Woods, and Diane R. Paul (ex officio). ASHA Vice Presidents for Professional Practices in Speech-Language Pathology Celia Hooper (2003&ndash;2005) and Brian B. Shulman (2006&ndash;2008) served as the monitoring officers. 
+ ASHA seeks input from subject matter experts representing differing perspectives and backgrounds. At times a subject matter expert may request to have their name removed from our acknowledgment. We continue to appreciate their work. 
+ In This Section 
+ Practice Portal Home 
+ Clinical Topics 
+ Professional Topics 
+ Advertising Disclaimer 
+ Advertise with us 
+ Evidence Maps 
+ ASHA Evidence Maps 
+ Peer Connections 
+ Connect with your colleagues in the ASHA Community 
+ ASHA Related Content 
+ Find related products in ASHA's Store 
+ Search for articles on ASHAWire 
+ ASHA Stream 
+ Content Disclaimer: The Practice Portal, ASHA policy documents, and guidelines contain information for use in all settings; however, members must consider all applicable local, state and federal requirements when applying the information in their specific work setting. 
+ ASHA Corporate Partners 
+ Become A Corporate Partner 
+ Policies 
+ About ASHA 
+ The American Speech-Language-Hearing Association (ASHA) is the national professional, scientific, and credentialing association for 247,000 members, certificate holders, and affiliates who are audiologists; speech-language pathologists; speech, language, and hearing scientists; audiology and speech-language pathology assistants; and students. 
+ Read more 
+ All ASHA Websites 
+ Work at ASHA 
+ Marketing Solutions 
+ Information For 
+ Audiologists 
+ Speech-Language Pathologists 
+ Academic &amp; Faculty 
+ Audiology &amp; SLP Assistants 
+ Students 
+ Public 
+ Get Involved 
+ ASHA Community 
+ Become a Mentor 
+ Become a Volunteer 
+ Connect With ASHA 
+ American Speech-Language-Hearing Association 
+ 2200 Research Blvd., Rockville, MD 20850 
+ Members: 800-498-2071 
+ Non-Member: 800-638-8255 
+ MORE WAYS TO CONNECT 
+ E-mail the Action Center 
+ Provide Feedback to the Board of Directors 
+ Media Resources 
+ Press Room 
+ Press Queries 
+ Site Help | A&#8211;Z Topic Index | Privacy Statement | Terms of Use 
+ &copy; 1997- American Speech-Language-Hearing Association 
+ American Speech-Language-Hearing Association 

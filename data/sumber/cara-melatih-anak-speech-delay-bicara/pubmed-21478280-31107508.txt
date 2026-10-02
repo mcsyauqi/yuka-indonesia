@@ -1,0 +1,104 @@
+SUMBER: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=21478280,31107508&rettype=abstract&retmode=text
+DIAMBIL: 2026-10-02T03:16:31.720Z
+HTTP: 200
+
+1. Am J Speech Lang Pathol. 2011 Aug;20(3):180-99. doi: 
+10.1044/1058-0360(2011/10-0055). Epub 2011 Apr 8.
+
+The effectiveness of parent-implemented language interventions: a meta-analysis.
+
+Roberts MY(1), Kaiser AP.
+
+Author information:
+(1)Vanderbilt University, Nashville, TN, USA. megan.y.roberts@vanderbilt.edu
+
+PURPOSE: The purpose of this meta-analysis was to systematically evaluate the 
+effects of parent-implemented language interventions on the language skills of 
+children between 18 and 60 months of age with primary and secondary language 
+impairments.
+METHOD: A systematic literature search yielded 18 studies that met the 
+predetermined inclusion and exclusion criteria. Effect sizes for each study were 
+calculated for 7 language outcome variables and analyzed using a random effects 
+model. Separate analyses were conducted for each language outcome and for each 
+comparison group. Outcomes were compared for children with and without 
+intellectual disabilities and for parent report and direct observational 
+language measures.
+RESULTS: The results indicate that parent-implemented language interventions 
+have a significant, positive impact on receptive and expressive language skills 
+of children with and without intellectual disabilities. Effect sizes (g) for 
+child measures ranged from -0.15 to 0.82 depending on the outcome measure and 
+comparison group.
+CONCLUSION: The results of this review indicate that parent-implemented language 
+interventions are an effective approach to early language intervention for young 
+children with language impairments. Critical features of parent-implemented 
+interventions are discussed in terms of implications for practice and future 
+research.
+
+DOI: 10.1044/1058-0360(2011/10-0055)
+PMID: 21478280 [Indexed for MEDLINE]
+
+
+2. JAMA Pediatr. 2019 Jul 1;173(7):671-680. doi:
+10.1001/jamapediatrics.2019.1197.
+
+Association of Parent Training With Child Language Development: A Systematic 
+Review and Meta-analysis.
+
+Roberts MY(1), Curtis PR(1), Sone BJ(1), Hampton LH(1).
+
+Author information:
+(1)Department of Communication Sciences and Disorders, Northwestern University, 
+Evanston, Illinois.
+
+Comment in
+    Arch Dis Child Educ Pract Ed. 2021 Jun;106(3):190-191. doi: 
+10.1136/archdischild-2019-318349.
+
+IMPORTANCE: Training parents to implement strategies to support child language 
+development is crucial to support long-term outcomes, given that as many as 2 of 
+5 children younger than 5 years have difficulty learning language.
+OBJECTIVE: To examine the association between parent training and language and 
+communication outcomes in young children.
+DATA SOURCES: Searches of ERIC, Academic Search Complete, PsycINFO, and 
+PsycARTICLES were conducted on August 11, 2014; August 18, 2016; January 23, 
+2018; and October 30, 2018.
+STUDY SELECTION: Studies included in this review and meta-analysis were 
+randomized or nonrandomized clinical trials that evaluated a language 
+intervention that included parent training with children with a mean age of less 
+than 6 years. Studies were excluded if the parent was not the primary 
+implementer of the intervention, the study included fewer than 10 participants, 
+or the study did not report outcomes related to language or communication.
+DATA EXTRACTION AND SYNTHESIS: Preferred Reporting Items for Systematic Reviews 
+and Meta-analyses (PRISMA) guidelines were applied to a total of 31 778 articles 
+identified for screening, with the full text of 723 articles reviewed and 76 
+total studies ultimately included.
+MAIN OUTCOMES AND MEASURES: Main outcomes included language and communication 
+skills in children with primary or secondary language impairment and children at 
+risk for language impairment.
+RESULTS: This meta-analysis included 59 randomized clinical trials and 17 
+nonrandomized clinical trials including 5848 total participants (36.4 female 
+[20.8%]; mean [SD] age, 3.5 [3.9] years). The intervention approach in 63 
+studies was a naturalistic teaching approach, and 16 studies used a primarily 
+dialogic reading approach. There was a significant moderate association between 
+parent training and child communication, engagement, and language outcomes (mean 
+[SE] Hedges g, -0.33 [0.06]; P < .001). The association between parent training 
+and parent use of language support strategies was large (mean [SE] Hedges g, 
+0.55 [0.11], P < .001). Children with developmental language disorder had the 
+largest social communication outcomes (mean [SE] Hedges g, 0.37 [0.17]); large 
+and significant associations were observed for receptive (mean [SE] Hedges g, 
+0.92 [0.30]) and expressive language (mean [SE] Hedges g, 0.83 [0.20]). Children 
+at risk for language impairments had moderate effect sizes across receptive 
+language (mean [SE] Hedges g, 0.28 [0.15]) and engagement outcomes (mean [SE] 
+Hedges g, 0.36 [0.17]).
+CONCLUSIONS AND RELEVANCE: The findings suggest that training parents to 
+implement language and communication intervention techniques is associated with 
+improved outcomes for children and increased parent use of support strategies. 
+These findings may have direct implications on intervention and prevention.
+
+DOI: 10.1001/jamapediatrics.2019.1197
+PMCID: PMC6537769
+PMID: 31107508 [Indexed for MEDLINE]
+
+Conflict of interest statement: Conflict of Interest Disclosures: Dr Hampton 
+reported receiving personal fees from KidPRO LLC outside the submitted work. No 
+other disclosures were reported.
