@@ -1,0 +1,23 @@
+# Daftar pengecualian disavow - yukaindonesia.com (2026-10-02)
+# Domain di bawah SENGAJA TIDAK dimasukkan ke berkas disavow. JANGAN ditambahkan
+# tanpa keputusan Syauqi. Berkas ini bukan untuk diunggah ke GSC.
+#
+# A. Domain sah milik/terkait Yuka (jangan pernah di-disavow)
+prose.sh                     # platform blog; yukainklusinotes.prose.sh milik Yuka sendiri (deploy key .prose_yuka_ed25519 di repo). Ahrefs DR 65, tidak bertanda SPAM.
+yukainklusinotes.prose.sh    # blog Yuka sendiri di prose.sh
+#
+# B. Backlink gratis hasil kerja Creativism sendiri (ledger free-backlink), sah
+#    Daftar lengkap ada di D:/Projects/Creativism App/data/free-backlink/ledger.json
+#    (48 entri yukaindonesia.com, 41 host unik). Host: peerlist.io, telegra.ph,
+#    pages.dev, mataroa.blog, workers.dev, vercel.app, prose.sh, r2.dev, val.run,
+#    statichost.page, github.io, gist.github.com, appwrite.network, openstreetmap.org,
+#    pythonanywhere.com, buttondown.com, kit.com, readthedocs.io, hashnode.dev,
+#    gitea.com, commons.wikimedia.org, yelp.com, mapquest.com, medium.com, fc2.com,
+#    soundcloud.com, vk.com, dreamstime.com, groups.google.com, forum.joomla.org,
+#    community.shopify.com, slashdot.org, dan lainnya.
+#    Dicek otomatis 2026-10-02: 0 host ledger yang beririsan dengan berkas disavow.
+#
+# C. Ditahan untuk keputusan Syauqi (tidak bertanda SPAM, tapi relevansinya dipertanyakan)
+seputarkita.id               # DR 37, tidak bertanda SPAM Ahrefs, trafik organik 27, 6 keyword, situs Indonesia sungguhan. Rekomendasi: BIARKAN.
+greatminton.com              # guest post topikal soal donasi pendidikan ABK, anchor "donasi pendidikan", spam score 0. Rekomendasi: BIARKAN.
+localxfood.com               # spam score 0, anchor "kuliner khas Indonesia" tidak relevan. Rekomendasi: biarkan (link tidak relevan tidak sama dengan beracun).

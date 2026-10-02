@@ -1,0 +1,200 @@
+# Disavow file - yukaindonesia.com (FINAL 2026-10-02)
+# Properti GSC tujuan: https://www.yukaindonesia.com/ (URL-prefix).
+# UNGGAHAN DISAVOW MENIMPA TOTAL: selalu unggah berkas ini UTUH.
+#
+# Riwayat: STARTER 49 domain (2026-07-05) -> 55 (2026-08-27) -> 79 (2026-09-11)
+#   -> 151 (2026-09-25, kartu https://trello.com/c/VGuBp4MM) -> berkas ini.
+#   Setiap versi lama 100 persen tercakup di sini (dicek otomatis 2026-10-02).
+#
+# Alasan disavow: impresi GSC turun 71 persen dari puncak Juni 2026 (5.721 -> 1.671
+#   per 28 hari), posisi rata-rata 5,1 -> 17,0, bersamaan dengan gelombang link farm
+#   .shop/.store/.site/.agency dan jaringan PBN (data GSC Search Analytics 2026-09-11).
+#
+# Kriteria masuk (minimal satu, rincian per domain di PDF laporan 2026-09-11/09-25/10-02):
+#   (a) bertanda SPAM oleh Ahrefs (screenshot #ahrefs-ss, bukan AHREFS_API_KEY), atau
+#   (b) jaringan PBN dengan sidik jari identik (/all/3310/16.html; SEOExpress.org;
+#       Link Baron; Outrank HQ), atau
+#   (c) halaman direktori jual-beli link. DR rendah saja TIDAK dijadikan alasan.
+#
+# Domain sah dan yang ditahan (prose.sh, yukainklusinotes.prose.sh, seputarkita.id,
+#   greatminton.com, localxfood.com, plus 41 host backlink gratis milik Creativism)
+#   SENGAJA tidak dimasukkan: lihat disavow-yukaindonesia-PENGECUALIAN-2026-10-02.txt.
+#
+# Cakupan: 158 domain. Laporan Referring domains Ahrefs (957 hidup, 21 halaman) hanya terbaca halaman 1 (robot #ahrefs-ss
+#   memotret halaman 1 saja; ahrefs-web-pp-cli 401). Sisa domain paling efisien
+#   dilengkapi dari export CSV penuh di UI Ahrefs.
+
+# --- Gelombang Juli 2026 (Ahrefs export 2026-07-05) ---
+domain:123webshop.shop
+domain:authoritybacklinks.shop
+domain:backlinker.shop
+domain:boost-instant.website
+domain:buybacklinks.agency
+domain:buyseobacklinks.shop
+domain:fiverr-seo-for-business-growth.site
+domain:itxoft-professional-seo-services.site
+domain:linkly.agency
+domain:linkrankboost.shop
+domain:linkrankpro.shop
+domain:linkrankseo.shop
+domain:linkseopro.shop
+domain:linkspro.agency
+domain:lixil-reformshop.shop
+domain:pbnseolinks.shop
+domain:premiumseolinks.shop
+domain:primeseo.xyz
+domain:rank-top.click
+domain:rankgrowth.agency
+domain:rankio.agency
+domain:ranklinkerpro.shop
+domain:ranklinkpro.shop
+domain:ranklinkx.shop
+domain:rankxlinks.shop
+domain:rankyour.website
+domain:seo-backlink.agency
+domain:seo-high-ranking.shop
+domain:seoagency.sale
+domain:seodaro.com
+domain:seoexpress.space
+domain:seoexpress.website
+domain:seogeko.shop
+domain:seogrow.agency
+domain:seogrow.pro
+domain:seohighranking.shop
+domain:seolinkpro.shop
+domain:seonix.agency
+domain:seorankflow.shop
+domain:simplywebshop.shop
+domain:thebacklink.shop
+domain:thebacklinks.shop
+domain:theguestpost.shop
+domain:theguestposts.shop
+domain:thehighseo.shop
+domain:theseorankinghigh.shop
+domain:toplinkranker.shop
+domain:trafficspike.shop
+domain:zoldexlinks.shop
+
+# --- Gelombang Agustus 2026 (jaringan PBN /all/3310/16.html, live 2026-08-27 dan 2026-09-11) ---
+domain:betulcrime.com
+domain:betwinnermirror.com
+domain:ggmap.us.com
+domain:homesforsaleoldgreenwichct.com
+domain:theforbestimes.com
+domain:uncledspizza.com
+
+# --- Gelombang September 2026 (Ahrefs Referring domains 2026-09-11, semua bertanda SPAM) ---
+domain:analyticshaven.top
+domain:atomizelink.icu
+domain:backlinksplace.site
+domain:dailymusings.top
+domain:ekenkoshop.shop
+domain:elite-seoexpress-link-building-team.store
+domain:exclusive-traffic-experts-seoexpress.store
+domain:forum-provider-link-baron.store
+domain:highseo.shop
+domain:highseoranking.shop
+domain:kawaiishop.shop
+domain:link-baron-optimal-organic-collective.store
+domain:modern-guest-post-consultants-seoexpress.store
+domain:mysky-shop.shop
+domain:rankboostly.shop
+domain:rankingseohigh.shop
+domain:seoexpress.online
+domain:seoexpress.shop
+domain:seoexpress.site
+domain:seorankinghigh.shop
+domain:therankboostseo.shop
+domain:thehighseoranking.shop
+domain:theseohighranking.shop
+domain:trusted-organic-seoexpress-house.store
+
+# --- Gelombang 25 September 2026a: Ahrefs Referring domains 2026-09-24 halaman 1 (8 baru, semua SPAM) ---
+domain:activeshop.shop
+domain:backlinkshop.site
+domain:exclusive-keyword-team-seoexpress.store
+domain:kmoshops.shop
+domain:quero.party
+domain:therankingseohigh.shop
+domain:theseomasterhigh.shop
+domain:thetoprankingseo.shop
+
+# --- Gelombang 25 September 2026b: Ahrefs Backlinks 2026-09-24 (42 baru) ---
+domain:11763816.xyz
+domain:anchor-text-and-index-rate-trusted-syndicate.store
+domain:backlink-pro-click-through-and-link-building-depot.store
+domain:backlinkcheckerbest.shop
+domain:backlinkcheckerbulk.shop
+domain:backlinkscheckers.space
+domain:backlinkshop.shop
+domain:backlinksreport.shop
+domain:bestrankchecker.site
+domain:checkdapa.website
+domain:checkdomaindapa.shop
+domain:click-through-link-equity-and-authority-link-services.store
+domain:competitionchecker.site
+domain:dacheckerforfree.online
+domain:dapacheckertool.store
+domain:darankingchecker.space
+domain:daseochecker.website
+domain:expert-domain-seoexpress-specialists.store
+domain:florta.shop
+domain:high-outrank-hq-dofollow-platform.store
+domain:linkchest.shop
+domain:linkpicks.shop
+domain:master-rank-forge-pbn-league.store
+domain:mylisthero.com
+domain:outrank-hq-platinum-high-da-exchange.store
+domain:pacheckeronline.online
+domain:padacheckerfree.space
+domain:pamto.shop
+domain:rankinghighseo.shop
+domain:rankseoalliance.shop
+domain:rankseomasters.shop
+domain:rankseoprovider.shop
+domain:realbacklinkchecker.shop
+domain:seodepot.shop
+domain:seoexpress-keyword-network.store
+domain:seogrowthengine.shop
+domain:seomart.shop
+domain:sitedachecker.space
+domain:verified-digital-firm-seoexpress.store
+domain:webrankresults.shop
+domain:websitepageschecker.site
+domain:white-hat-and-link-building-prime-marketplace.store
+
+# --- Gelombang 25 September 2026c: Ahrefs Backlinks 2026-09-10 (22 baru, jaringan SEOExpress/Link Baron/Outrank HQ) ---
+domain:alpha-local-seo-group-rank-forge.store
+domain:authority-services-for-link-juice-and-contextual-link.store
+domain:best-seoexpress-off-page-network.store
+domain:brinto.shop
+domain:certified-link-building-seoexpress.store
+domain:certified-seoexpress-organic-services.store
+domain:definitive-team-link-baron-wiki.store
+domain:dr-90-rank-forge-department.store
+domain:elite-outreach-seoexpress-pros.store
+domain:first-class-seoexpress-keyword-exchange.store
+domain:flagship-digital-pr-and-editorial-link-central.store
+domain:high-crew-link-baron-intent.store
+domain:link-baron-pro-press-release.store
+domain:linkseoauthority.shop
+domain:luxury-outrank-hq-crew.store
+domain:modern-link-baron-marketing-portal.store
+domain:modern-organic-group-seoexpress.store
+domain:outrank-hq-prime-blogger.store
+domain:seoexpress-best-seo-firm.store
+domain:seoexpress-pbn-company.store
+domain:seoexpress-pbn-experts.store
+domain:traffic-surge-ranking-signal-and-crawl-budget-partners.store
+
+# --- Gelombang 2 Oktober 2026: Ahrefs Referring domains 2026-10-02 halaman 1 dari 21 (7 baru, semua bertanda SPAM) ---
+# Slack #ahrefs-ss thread 1790907033.019879. Overview: DR 0.7, Ref. domains 957 (all time 1,1K),
+#   Backlinks 1,7K. 41 dari 48 baris halaman 1 sudah ada di berkas; 7 di bawah baru.
+#   5 resolve DNS (Cloudflare); 2 NXDOMAIN (pola SEOExpress .store yang sama), ejaan dibaca pada resolusi asli.
+domain:advanced-ranking-seoexpress-specialists.store
+domain:advanced-search-seoexpress-pros.store
+domain:agile-footer-link-system-link-baron.store
+domain:link-baron-agile-on-page-directory.store
+domain:link-baron-syndicate-equity.store
+domain:modern-studio-outrank-hq-blogger.store
+domain:outrank-hq-legendary-white-hat.store
