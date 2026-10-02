@@ -1,0 +1,52 @@
+1. J Autism Dev Disord. 2021 Nov;51(11):4013-4032. doi:
+10.1007/s10803-020-04844-2.  Epub 2021 Jan 15.
+
+Evidence-Based Practices for Children, Youth, and Young Adults with Autism: 
+Third Generation Review.
+
+Hume K(1)(2), Steinbrenner JR(3), Odom SL(3), Morin KL(3)(4), Nowell SW(3), 
+Tomaszewski B(3), Szendrey S(5), McIntyre NS(3)(6), Yücesoy-Özkan S(3)(7), 
+Savage MN(3)(8).
+
+Author information:
+(1)School of Education, The University of North Carolina at Chapel Hill, CB 3500 
+Peabody Hall, Chapel Hill, NC, 27599, USA. kara.hume@unc.edu.
+(2)Frank Porter Graham Child Development Institute, The University of North 
+Carolina at Chapel Hill, Campus Box 8040, Chapel Hill, NC, 27599-8040, USA. 
+kara.hume@unc.edu.
+(3)Frank Porter Graham Child Development Institute, The University of North 
+Carolina at Chapel Hill, Campus Box 8040, Chapel Hill, NC, 27599-8040, USA.
+(4)College of Education, Lehigh University, Iacocca Hall, 111 Research Drive, 
+Bethlehem, PA, 18015, USA.
+(5)Department of Allied Health Sciences, The University of North Carolina at 
+Chapel Hill, Bondurant Hall, Campus Box 7120, Chapel Hill, NC, 27599-7120, USA.
+(6)College of Health Professionals and Sciences, University of Central Florida, 
+12805 Pegasus Drive, Orlando, FL, 32816, USA.
+(7)Department of Special Education, Anadolu Üniversitesi, Eğitim Fakültesi, Özel 
+Eğitim Bölümü, Tepebaşı, Eskisehir, 26470, Turkey.
+(8)College of Education, University of North Texas, 1300 W. Highland St., 
+Denton, TX, 76201, USA.
+
+Erratum in
+    J Autism Dev Disord. 2023 Jan;53(1):514. doi: 10.1007/s10803-022-05438-w.
+
+This systematic review describes a set of practices that have evidence of 
+positive effects with autistic children and youth. This is the third iteration 
+of a review of the intervention literature (Odom et al. in J Autism Dev 
+Disorders 40(4):425-436, 2010a; Prevent School Fail 54(4):275-282, 2010b; Wong 
+et al. in 
+https://autismpdc.fpg.unc.edu/sites/autismpdc.fpg.unc.edu/files/imce/documents/2014-EBP-Report.pdf 
+; J Autism Dev Disorders 45(7):1951-1966, 2015), extending coverage to articles 
+published between 1990 and 2017. A search initially yielded 31,779 articles, and 
+the subsequent screening and evaluation process found 567 studies to include. 
+Combined with the previous review, 972 articles were synthesized, from which the 
+authors found 28 focused intervention practices that met the criteria for 
+evidence-based practice (EBP). Former EBPs were recategorized and some 
+manualized interventions were distinguished as meeting EBP criteria. The authors 
+discuss implications for current practices and future research.
+
+© 2021. The Author(s).
+
+DOI: 10.1007/s10803-020-04844-2
+PMCID: PMC8510990
+PMID: 33449225 [Indexed for MEDLINE]
