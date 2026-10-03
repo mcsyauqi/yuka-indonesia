@@ -15,7 +15,7 @@ const ROOT = path.resolve(__dirname, '..');
 const SITE = 'https://www.yukaindonesia.com';
 const CONTENT_DIR = path.join(__dirname, 'content', 'sor');
 const DATE_PUBLISHED = '2026-10-03T09:00:00+07:00';
-const DATE_MODIFIED = '2026-10-03T09:00:00+07:00';
+const DATE_MODIFIED = '2026-10-03T22:55:00+07:00';
 const DATE_DISPLAY = '3 Oktober 2026';
 
 const SLUGS = ['sensory-over-responsivity-pada-anak'];

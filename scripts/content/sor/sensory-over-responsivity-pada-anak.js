@@ -82,6 +82,36 @@ module.exports = {
             <p>Studi prospektif Carpenter dan rekan (2019) dari Duke University terhadap 917 anak usia 2 sampai 5 tahun menemukan bahwa <strong>43 persen anak prasekolah dengan SOR juga memiliki gangguan kecemasan</strong> yang mengganggu fungsi pada saat yang sama. Gejala SOR di usia prasekolah juga memprediksi gejala kecemasan di usia 6 tahun (data lanjutan pada 191 anak), dan kecemasan itu berkaitan dengan iritabilitas serta masalah tidur di usia sekolah. Karena itu, bila anak dengan SOR banyak menghindar, takut, atau sulit tidur, kemungkinan kecemasan perlu ikut diperiksa.</p>`
     },
     {
+      id: 'sor-atau-cemas', toc: 'SOR atau kecemasan, cara membedakan',
+      h2: 'SOR atau Kecemasan? Petunjuk Pengamatan untuk Orang Tua',
+      html: `
+            <p>Karena SOR dan kecemasan sering muncul bersamaan, orang tua kerap bingung mana yang sedang terjadi. Pengamatan berikut bukan alat diagnosis, tetapi membantu Anda membawa catatan yang lebih jelas ke tenaga profesional:</p>
+            <table class="classification-table">
+                <thead><tr><th>Lebih mengarah ke reaksi sensorik</th><th>Lebih mengarah ke kecemasan</th></tr></thead>
+                <tbody>
+                    <tr><td>Reaksi dipicu rangsangan yang sedang ada saat itu: bunyi blender, label baju, bau tertentu</td><td>Rasa takut muncul jauh sebelum kejadian, misalnya sudah gelisah sejak malam sebelum ke sekolah</td></tr>
+                    <tr><td>Anak cenderung tenang kembali setelah rangsangan dihentikan atau dijauhkan</td><td>Anak tetap khawatir walau pemicunya sudah tidak ada, dan sering bertanya "nanti bagaimana kalau..."</td></tr>
+                    <tr><td>Yang dihindari terkait indra tertentu: suara, sentuhan, cahaya, tekstur</td><td>Yang dikhawatirkan juga hal non-sensorik: berpisah dari orang tua, dimarahi, gagal, atau sakit</td></tr>
+                </tbody>
+            </table>
+            <p>Pada banyak anak keduanya saling menguatkan: pengalaman sensorik yang tidak nyaman membuat anak cemas menghadapi situasi serupa, lalu kecemasan membuat ambang toleransinya makin rendah. Temuan Carpenter dan rekan (2019) bahwa SOR di usia prasekolah memprediksi gejala kecemasan di usia 6 tahun sejalan dengan pola ini. Bila kolom kanan banyak cocok, sampaikan kepada dokter anak atau psikolog anak.</p>`
+    },
+    {
+      id: 'contoh', toc: 'Contoh: menyiapkan anak potong rambut',
+      h2: 'Contoh Penerapan: Menyiapkan Anak yang Sensitif untuk Potong Rambut',
+      html: `
+            <p>Potong rambut menggabungkan banyak pemicu sekaligus: bunyi gunting dan mesin cukur, potongan rambut yang gatal di leher, kain penutup, dan sentuhan orang asing. Berikut contoh menerapkan prinsip di atas:</p>
+            <ol>
+                <li><strong>Beberapa hari sebelumnya,</strong> tunjukkan foto atau video singkat tempat potong rambut dan ceritakan urutannya.</li>
+                <li><strong>Latihan di rumah</strong> dengan sisir dan gunting mainan, saat anak sedang tenang dan boleh berhenti kapan saja.</li>
+                <li><strong>Pilih waktu sepi</strong> agar ruangan tidak bising, dan minta tukang cukur memakai gunting bila bunyi mesin cukur terlalu mengganggu.</li>
+                <li><strong>Kurangi sensasi gatal:</strong> pakaikan kaus berkerah tinggi atau handuk lembut di leher, siapkan baju ganti.</li>
+                <li><strong>Beri kendali dan jeda:</strong> anak boleh memegang cermin, menghitung mundur, atau meminta istirahat sebentar.</li>
+                <li><strong>Akhiri dengan hal menyenangkan</strong> dan catat apa yang membantu untuk kunjungan berikutnya.</li>
+            </ol>
+            <p>Prinsip yang sama berlaku untuk pemeriksaan gigi. Panduan langkah demi langkahnya ada di artikel <a href="cara-membawa-anak-autis-ke-dokter-gigi">cara membawa anak autis ke dokter gigi</a>.</p>`
+    },
+    {
       id: 'kapan-ke-profesional', toc: 'Kapan perlu ke profesional',
       h2: 'Kapan Perlu ke Profesional dan Seperti Apa Asesmennya?',
       html: `
@@ -135,6 +165,7 @@ module.exports = {
             <ul>
                 <li><strong>AAP (2012)</strong> menyatakan terapi okupasi berbasis sensorik dapat diterima sebagai salah satu bagian dari rencana penanganan yang menyeluruh, tetapi orang tua perlu tahu bahwa penelitian tentang efektivitas terapi integrasi sensorik masih terbatas dan belum konklusif. AAP menyarankan masa uji coba dengan cara menilai hasil yang jelas.</li>
                 <li><strong>Uji acak Schaaf dan rekan (2014)</strong> pada anak autis usia 4 sampai 8 tahun menemukan bahwa kelompok yang menjalani 30 sesi intervensi integrasi sensorik terstandar (17 anak) mencapai target individual lebih baik dan membutuhkan lebih sedikit bantuan dalam merawat diri dibandingkan kelompok perawatan biasa (15 anak). Studi ini kecil, sehingga hasilnya menjanjikan tetapi belum bisa digeneralisasi.</li>
+                <li><strong>Tinjauan naratif Yuan dan rekan (2022)</strong> tentang SOR pada individu autis merangkum bahwa SOR berkaitan erat dengan kecemasan, depresi, gangguan tidur, dan terganggunya kehidupan keluarga. Tinjauan ini membahas empat pendekatan, yaitu aktivitas fisik, terapi integrasi sensorik, <em>mindfulness-based cognitive therapy</em>, dan terapi kognitif perilaku (CBT), yang berfokus membangun strategi mengelola respons emosional terhadap rangsangan.</li>
                 <li><strong>Tinjauan sistematis Acuña dan rekan (2025)</strong> terhadap 9 uji acak terkontrol (344 peserta) menyimpulkan bahwa Ayres Sensory Integration yang dijalankan sesuai standar membantu anak autis mencapai target individual terkait fungsi dan partisipasi, tetapi tidak direkomendasikan untuk mengatasi perilaku seperti menolak perubahan atau iritabilitas. Manfaatnya untuk kelompok anak lain masih perlu diteliti.</li>
             </ul>
             <p>Kesimpulan praktisnya: pilih terapis okupasi yang menetapkan <strong>tujuan fungsional yang terukur</strong> (misalnya "anak bisa mengikuti upacara sekolah dengan strategi yang disepakati"), meninjau kemajuan secara berkala, dan terbuka soal batasan bukti. Waspadai layanan yang menjanjikan "menyembuhkan" atau memakai alat mahal tanpa evaluasi. Bila kecemasan menonjol, libatkan psikolog anak agar kecemasan itu ditangani tersendiri. Gambaran tahapan terapi sensorik bisa dibaca di <a href="piramida-sensori-integrasi">piramida sensori integrasi</a>.</p>`
@@ -154,7 +185,7 @@ module.exports = {
   faq: [
     { q: 'Apakah sensory over responsivity sama dengan autisme?',
       a: 'Tidak. Reaksi berlebih terhadap rangsangan sensorik memang termasuk salah satu ciri dalam kriteria DSM-5 untuk autisme, tetapi banyak anak dengan SOR tidak autis. SOR juga bisa menyertai ADHD, kecemasan, atau muncul tanpa kondisi lain. Diagnosis autisme membutuhkan penilaian lengkap oleh tenaga ahli.' },
-    { q: 'Apakah sensory over responsivity bisa hilang?',
+    { q: 'Apakah sensory over responsivity bisa disembuhkan atau hilang?',
       a: 'Perjalanannya berbeda pada tiap anak. Dengan lingkungan yang lebih ramah sensorik, strategi menenangkan diri, dan dukungan profesional bila perlu, banyak anak menjadi lebih mampu berpartisipasi. Tujuannya bukan menghapus semua sensitivitas, melainkan membantu anak berfungsi dan merasa aman.' },
     { q: 'Apakah anak dengan SOR berisiko mengalami kecemasan?',
       a: 'Riset Carpenter dan rekan (2019) menemukan 43 persen anak prasekolah dengan SOR juga memiliki gangguan kecemasan, dan gejala SOR di usia prasekolah memprediksi gejala kecemasan di usia 6 tahun. Karena itu, kecemasan sebaiknya ikut diperhatikan dan diperiksa.' },
@@ -180,6 +211,7 @@ module.exports = {
     { label: 'CDC. Clinical Testing and Diagnosis for Autism Spectrum Disorder (kriteria DSM-5)', url: 'https://www.cdc.gov/autism/hcp/diagnosis/index.html' },
     { label: 'Passarello N dkk. (2022). Sensory processing disorders in children and adolescents: taking stock of assessment and novel therapeutic tools. Brain Sci 12(11):1478', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9688399/' },
     { label: 'Schaaf RC dkk. (2014). An intervention for sensory difficulties in children with autism: a randomized trial. J Autism Dev Disord 44(7):1493-1506', url: 'https://pubmed.ncbi.nlm.nih.gov/24214165/' },
+    { label: 'Yuan HL dkk. (2022). Interventions for sensory over-responsivity in individuals with autism spectrum disorder: a narrative review. Children (Basel) 9(10):1584', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9601143/' },
     { label: 'Acuña C dkk. (2025). Ayres Sensory Integration with children ages 0 to 12: a systematic review of randomized controlled trials. Am J Occup Ther 79(3)', url: 'https://pubmed.ncbi.nlm.nih.gov/40193295/' }
   ],
   tags: ['SensoryOverResponsivity', 'SensoriIntegrasi', 'TerapiOkupasi', 'PendidikanInklusi', 'ParentingABK']
