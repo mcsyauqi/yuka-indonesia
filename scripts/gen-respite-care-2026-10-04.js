@@ -160,6 +160,7 @@ function render(a) {
         .article-content { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem; }
         .article-featured-image { margin: -2rem auto 2rem; max-width: 900px; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.15); background: var(--white); }
         .article-featured-image img { width: 100%; height: auto; display: block; }
+        .article-featured-image img { max-height: 620px; object-fit: cover; object-position: center 35%; }
         .article-featured-image figcaption { padding: 0.75rem 1rem; font-size: 0.9rem; color: var(--gray-600); background: var(--gray-50); line-height: 1.6; }
         .article-featured-image .kredit { display: block; font-size: 0.8rem; color: var(--gray-600); margin-top: 0.25rem; }
         .article-featured-image .kredit a { color: #1565C0; text-decoration: underline; }
