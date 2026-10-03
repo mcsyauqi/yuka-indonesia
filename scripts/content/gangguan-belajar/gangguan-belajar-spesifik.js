@@ -70,7 +70,7 @@ module.exports = {
       toc: 'Beda dengan kesulitan belajar umum',
       html: `
             <p>Dua istilah ini sering dipakai bergantian, padahal cakupannya berbeda. "Kesulitan belajar" adalah gejala yang bisa punya banyak sebab. Gangguan belajar spesifik adalah salah satu sebab itu, dan baru boleh disebut setelah sebab lain disingkirkan.</p>
-            <table class="classification-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5rem 0;"><table class="classification-table" style="margin:0;min-width:560px;">
                 <thead><tr><th>Aspek</th><th>Kesulitan belajar (istilah umum)</th><th>Gangguan belajar spesifik</th></tr></thead>
                 <tbody>
                     <tr><td>Sifat istilah</td><td>Deskripsi keadaan: anak tertinggal pelajaran</td><td>Diagnosis klinis dengan kriteria tertulis (DSM-5, ICD-11)</td></tr>
@@ -79,7 +79,7 @@ module.exports = {
                     <tr><td>Kecerdasan umum</td><td>Bisa rendah, rata-rata, atau tinggi</td><td>Umumnya rata-rata atau di atasnya; disabilitas intelektual harus disingkirkan</td></tr>
                     <tr><td>Siapa yang menyatakan</td><td>Guru dan orang tua dapat mengamatinya</td><td>Dokter, psikolog, atau psikiater lewat asesmen</td></tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>Kementerian Kesehatan, dalam artikel ${ext(KESLAN, 'Keslan tentang hak anak berkebutuhan khusus')}, juga memisahkan anak lamban belajar (<em>slow learner</em>), yaitu anak dengan potensi intelektual sedikit di bawah rata-rata yang butuh waktu lebih lama untuk hampir semua tugas, dari anak dengan kesulitan belajar khusus (<em>specific learning disabilities</em>) yang hambatannya terletak pada proses tertentu seperti membaca, menulis, mengeja, atau berhitung. Pemisahan ini penting karena strategi dukungannya berbeda.</p>
             <p>Di data sekolah, istilahnya lain lagi. Referensi ${ext(DAPODIK, 'data peserta didik berkebutuhan khusus Kemendikdasmen')} memuat kode flag <strong>"K - Kesulitan Belajar"</strong>. Itu label administratif, bukan diagnosis. Anak yang dicatat dengan flag K belum tentu memiliki SLD, dan anak dengan SLD perlu dokumen asesmen agar kebutuhannya tercatat dengan benar.</p>`
     },
@@ -146,13 +146,13 @@ module.exports = {
       toc: 'Akomodasi dan hak di sekolah',
       html: `
             <p>Dalam seminar yang sama, ${ext(ANT_AK, 'dr. Farid membedakan dua bentuk dukungan')}. <strong>Akomodasi</strong> membantu anak mengakses pelajaran dan menunjukkan kemampuannya tanpa mengubah target utama. <strong>Modifikasi</strong> menyesuaikan beban atau standar tugas dengan kemampuan anak, tetapi tetap mengukur kompetensi inti yang sama.</p>
-            <table class="classification-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5rem 0;"><table class="classification-table" style="margin:0;min-width:560px;">
                 <thead><tr><th>Bentuk</th><th>Contoh yang disebutkan dr. Farid</th></tr></thead>
                 <tbody>
                     <tr><td>Akomodasi</td><td>Tambahan waktu ujian 50 sampai 100 persen, teks panjang dibacakan guru, kesempatan menjawab secara lisan, huruf yang lebih besar, area kerja minim gangguan</td></tr>
                     <tr><td>Modifikasi</td><td>Jumlah soal dikurangi (misalnya 5 dari 10) dengan kompetensi inti tetap, tugas menulis dikurangi, bacaan disederhanakan, penilaian menekankan pemahaman konsep daripada kerapian dan kecepatan menulis</td></tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>Keputusan akomodasi dan modifikasi sebaiknya dibahas bersama oleh orang tua, guru, dan tenaga profesional. Di sekolah inklusif, kesepakatan itu biasanya dituangkan dalam <a href="program-pembelajaran-individual">program pembelajaran individual (PPI)</a> yang ditinjau berkala.</p>
             <p>Dasar hukumnya di Indonesia adalah ${ext(PERMEN, 'Permendikbudristek Nomor 48 Tahun 2023')} tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas, yang berlaku dari PAUD formal sampai perguruan tinggi. Menurut abstrak resminya di JDIH BPK, peraturan ini mengatur fasilitasi akomodasi yang layak lewat dukungan anggaran atau bantuan pendanaan, sarana dan prasarana, penyiapan pendidik dan tenaga kependidikan, serta kurikulum, ditambah pembentukan Unit Layanan Disabilitas (ULD). Peraturan ini juga mencabut Permendiknas Nomor 70 Tahun 2009 tentang pendidikan inklusif. Penerimanya adalah peserta didik penyandang disabilitas, jadi dokumen asesmen yang jelas akan memudahkan orang tua saat membicarakan bentuk akomodasi dengan sekolah.</p>
             <p>Bila sekolah belum siap, orang tua dapat mempertimbangkan sekolah lain. Perbandingan jalurnya kami jelaskan di artikel <a href="apa-perbedaan-sekolah-inklusi-dan-slb">perbedaan sekolah inklusi dan SLB</a> dan prinsip umumnya di <a href="pendidikan-inklusi">pendidikan inklusi</a>.</p>`
