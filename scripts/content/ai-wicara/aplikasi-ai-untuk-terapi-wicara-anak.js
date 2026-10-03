@@ -18,7 +18,9 @@ const ASHA_AI = 'https://www.asha.org/practice/generative-artificial-intelligenc
 const ASHA_AI_CONSID = 'https://www.asha.org/practice/generative-artificial-intelligence-for-clinicians/ai-considerations-for-csd-professionals/';
 const WHO = 'https://www.who.int/news/item/24-04-2019-to-grow-up-healthy-children-need-to-sit-less-and-play-more';
 const IDAI = 'https://www.idai.or.id/artikel/seputar-kesehatan-anak/keamanan-menggunakan-internet-bagi-anak';
-const UUPDP = 'https://jdih.komdigi.go.id/produk_hukum/view/id/832/t/undangundang+nomor+27+tahun+2022';
+const BIMU_INNOVILLAGE = 'https://innovation.telkomuniversity.ac.id/innovation/31/bimu-aplikasi-terapi-wicara-berbasis-augmented-reality-sebagai-alat-bantu-pembelajaran-dan-tumbuh-kembang-anak-penyandang-speech-delay-di-slb-autisma-yppa-bukittinggi';
+const BIMU_NEWS = 'https://telkomuniversity.ac.id/bimu-aplikasi-terapi-wicara-pada-anak-penyandang-speech-delay/';
+const UUPDP ='https://jdih.komdigi.go.id/produk_hukum/view/id/832/t/undangundang+nomor+27+tahun+2022';
 
 const ext = (url, text) => `<a href="${url}" target="_blank" rel="noopener">${text}</a>`;
 
@@ -77,6 +79,9 @@ module.exports = {
             </table></div>
             <p style="font-size:0.9rem;color:var(--gray-600);">Di layar ponsel, geser tabel ke samping untuk membaca kolom catatan.</p>
             <p><strong>Bagaimana dengan bahasa Indonesia?</strong> Dari aplikasi yang kami periksa, tidak ada yang secara resmi menyatakan dapat menilai ucapan anak dalam bahasa Indonesia. Ini penting: aplikasi yang dilatih dengan suara penutur bahasa Inggris tidak otomatis bisa menilai bunyi seperti "r" bergetar atau kata berbahasa Indonesia dengan tepat. Bila anak dibesarkan dengan bahasa Indonesia atau bahasa daerah, latihan berbahasa Inggris juga belum tentu relevan dengan kebutuhan komunikasinya sehari-hari.</p>
+            <h3>Inovasi lokal: contoh dari Indonesia</h3>
+            <p>Pengembangan aplikasi terapi wicara berbahasa Indonesia sudah mulai muncul, terutama dari kampus. Salah satu contohnya BIMU (Bicara Itu Mudah), aplikasi berbasis <em>augmented reality</em> (AR) untuk anak autis dengan keterlambatan bicara di SLB Autisma YPPA Bukittinggi. BIMU memakai metode Picture Exchange Communication System (PECS) dalam format AR, dengan enam fase belajar dari mengenal kosakata sampai menyusun kalimat, kuis evaluasi, dan fitur pemantauan perkembangan untuk orang tua (${ext(BIMU_INNOVILLAGE, 'Innovillage Telkom University')}). Aplikasi ini diimplementasikan di sekolah tersebut pada 21 Desember 2023 sampai 18 Februari 2024 dan meraih Runner Up kategori Disability Quality of Life Improvement Solution di ajang Innovillage 2023 (${ext(BIMU_NEWS, 'Telkom University, 2024')}).</p>
+            <p>Dua catatan penting. Pertama, BIMU berbasis AR dan gambar, bukan aplikasi yang menilai ucapan anak dengan pengenalan suara, jadi ia lebih dekat ke media belajar kosakata dan komunikasi bergambar. Kedua, kami belum menemukan publikasi uji efektivitasnya, dan sumber di atas tidak menyebut aplikasinya tersedia untuk umum. Inovasi seperti ini patut didukung, tetapi tetap perlu diuji sebelum diklaim membantu anak bicara.</p>
             <p>Untuk anak yang belum bisa berbicara sama sekali, pilihan yang lebih sering dibahas terapis adalah komunikasi augmentatif dan alternatif. Baca <a href="aplikasi-komunikasi-aac-terbaik-untuk-anak">aplikasi komunikasi AAC untuk anak</a> untuk penjelasannya.</p>`
     },
     {
@@ -176,7 +181,11 @@ module.exports = {
     },
     {
       q: 'Apakah ada aplikasi AI terapi wicara berbahasa Indonesia?',
-      a: 'Dari aplikasi yang kami periksa pada Oktober 2026, belum ada yang secara resmi menyatakan dapat menilai ucapan anak dalam bahasa Indonesia. Aplikasi seperti Otsimo Speech Therapy dan Speech Blubs mencantumkan bahasa Inggris dan beberapa bahasa Eropa. Tanyakan kepada terapis aplikasi atau materi latihan berbahasa Indonesia yang cocok.'
+      a: 'Dari aplikasi yang kami periksa pada Oktober 2026, belum ada yang secara resmi menyatakan dapat menilai ucapan anak dalam bahasa Indonesia. Aplikasi seperti Otsimo Speech Therapy dan Speech Blubs mencantumkan bahasa Inggris dan beberapa bahasa Eropa. Inovasi lokal seperti BIMU dari ajang Innovillage 2023 sudah berbahasa Indonesia, tetapi berbasis augmented reality dan gambar, bukan penilaian ucapan otomatis. Tanyakan kepada terapis aplikasi atau materi latihan berbahasa Indonesia yang cocok.'
+    },
+    {
+      q: 'Apa bedanya aplikasi AI terapi wicara dengan aplikasi AAC?',
+      a: 'Aplikasi AI terapi wicara melatih anak mengucapkan bunyi atau kata dan menilai ucapannya secara otomatis. Aplikasi AAC (komunikasi augmentatif dan alternatif) memberi anak cara lain untuk berkomunikasi, misalnya dengan menekan simbol atau gambar yang lalu disuarakan. Keduanya bisa dipakai bersamaan, dan pilihannya sebaiknya ditentukan terapis wicara sesuai kemampuan anak.'
     },
     {
       q: 'Mulai usia berapa anak boleh memakai aplikasi terapi wicara?',
@@ -206,6 +215,8 @@ module.exports = {
     { url: MCKECHNIE, label: "Automated speech analysis tools for children's speech production: A systematic literature review, McKechnie J dkk., International Journal of Speech-Language Pathology, 2018" },
     { url: HAIR, label: 'A Longitudinal Evaluation of Tablet-Based Child Speech Therapy with Apraxia World, Hair A dkk., ACM Transactions on Accessible Computing, 2021' },
     { url: BENWAY, label: 'Artificial Intelligence-Assisted Speech Therapy for /ɹ/: A Single-Case Experimental Study, Benway NR, Preston JL, American Journal of Speech-Language Pathology, 2024' },
+    { url: BIMU_INNOVILLAGE, label: 'BIMU: Aplikasi Terapi Wicara Berbasis Augmented Reality, Innovillage Telkom University, 18 Oktober 2024' },
+    { url: BIMU_NEWS, label: 'BIMU: Aplikasi Terapi Wicara Pada Anak Penyandang Speech Delay, Telkom University, 14 Maret 2024' },
     { url: ASHA_AI, label: 'Generative Artificial Intelligence (AI) for Clinicians in Audiology and Speech-Language Pathology, ASHA' },
     { url: ASHA_AI_CONSID, label: 'Artificial Intelligence (AI): Considerations for CSD Professionals, ASHA' },
     { url: WHO, label: 'To grow up healthy, children need to sit less and play more, WHO, 2019' },
