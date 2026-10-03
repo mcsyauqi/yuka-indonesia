@@ -84,7 +84,7 @@ module.exports = {
       toc: 'Ringkasan bukti penelitian',
       html: `
             <p>Berikut ringkasan studi yang terindeks di PubMed dan paling sering dikutip dalam pembahasan terapi musik untuk ADHD. Kami membaca abstrak aslinya dan, bila tersedia, teks lengkapnya.</p>
-            <table class="classification-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5rem 0;"><table class="classification-table" style="margin:0;min-width:560px;">
                 <thead><tr><th>Studi</th><th>Desain dan peserta</th><th>Temuan utama</th></tr></thead>
                 <tbody>
                     <tr><td>${ext(GOES, 'Goes, Nardi, dan Quagliato (2025)')}, <em>Trends in Psychiatry and Psychotherapy</em></td><td>Tinjauan sistematis dan meta-analisis. Hanya tiga studi yang memenuhi syarat, total 148 peserta (79 dengan ADHD, 69 kontrol), semuanya terapi musik kelompok aktif atau reseptif.</td><td>Ada kecenderungan perbaikan gejala hiperaktif dan impulsif, tetapi tidak bermakna secara statistik (p = 0,08). Perbedaan antarstudi sangat besar (I² = 92 persen).</td></tr>
@@ -92,7 +92,7 @@ module.exports = {
                     <tr><td>${ext(RICKSON, 'Rickson (2006)')}, <em>Journal of Music Therapy</em></td><td>13 remaja laki-laki dengan ADHD, membandingkan pendekatan instruksional dan improvisasi, ditambah kelompok kontrol.</td><td>Kedua pendekatan tidak berbeda bermakna. Kedua kelompok terapi membaik dalam ketepatan mengetuk, dan guru melaporkan penurunan skor Conners. Penulis sendiri menyatakan belum ada kesimpulan pasti yang bisa ditarik.</td></tr>
                     <tr><td>${ext(LEE, 'Lee dan rekan (2024)')}, <em>Pediatrics and Neonatology</em></td><td>13 anak dengan ADHD mengikuti program musik dan gerak selama 8 minggu.</td><td>Kualitas hidup (PedsQL) meningkat, waktu reaksi pada tes perhatian K-CPT 2 membaik, dan ada perubahan pola EEG. Abstraknya tidak menyebut hasil skala gejala inti SNAP-IV.</td></tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>Dibaca bersama, keempat studi ini mengarah ke satu kesimpulan yang hati-hati: musik <em>mungkin</em> membantu beberapa aspek, terutama impulsivitas, perilaku di kelas, dan keterlibatan anak, tetapi besarnya manfaat dan siapa yang paling diuntungkan belum diketahui.</p>`
     },
     {
@@ -116,14 +116,14 @@ module.exports = {
       toc: 'Dibanding pedoman AAP 2019',
       html: `
             <p>Pedoman klinis ${ext(AAP, 'American Academy of Pediatrics (AAP) tahun 2019')} yang disusun Wolraich dan rekan membagi rekomendasi penanganan ADHD berdasarkan usia. Ringkasannya (dari ${ext(AAP_PMC, 'teks lengkap pedoman')}, pernyataan aksi kunci 5a, 5b, dan 5c):</p>
-            <table class="classification-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5rem 0;"><table class="classification-table" style="margin:0;min-width:560px;">
                 <thead><tr><th>Usia</th><th>Rekomendasi utama AAP 2019</th></tr></thead>
                 <tbody>
                     <tr><td>4 tahun sampai sebelum 6 tahun</td><td>Pelatihan orang tua dalam manajemen perilaku (PTBM) dan/atau intervensi perilaku di kelas sebagai lini pertama. Methylphenidate dapat dipertimbangkan bila intervensi perilaku tidak memberi perbaikan berarti dan gangguan fungsi masih sedang sampai berat.</td></tr>
                     <tr><td>6 tahun sampai sebelum 12 tahun</td><td>Obat ADHD yang disetujui FDA, bersama PTBM dan/atau intervensi perilaku di kelas (lebih baik keduanya). Dukungan pendidikan individual merupakan bagian wajib dari rencana penanganan.</td></tr>
                     <tr><td>12 tahun sampai sebelum 18 tahun</td><td>Obat ADHD yang disetujui FDA dengan persetujuan remaja, ditambah pelatihan atau intervensi perilaku bila tersedia, serta dukungan pendidikan individual.</td></tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>Halaman ${ext(CDC_TX, 'pengobatan ADHD dari CDC')} merangkum hal yang sama: jenis penanganan ADHD adalah terapi perilaku (termasuk pelatihan untuk orang tua) dan obat. Terapi musik tidak tercantum sebagai rekomendasi dalam pedoman AAP tersebut.</p>
             <p>Bagi keluarga, ini berarti urutan prioritasnya jelas. Pastikan dulu anak sudah melewati <a href="diagnosis-adhd-di-indonesia">pemeriksaan dan diagnosis ADHD</a> oleh tenaga yang berwenang, lalu jalani penanganan yang direkomendasikan dokter. Bila obat menjadi pertimbangan, bacaan tentang <a href="non-stimulant-medication-adhd-terbaru">obat ADHD nonstimulan</a> bisa membantu menyiapkan pertanyaan. Terapi musik bisa ditambahkan di atas fondasi itu, misalnya karena anak senang bermusik dan kegiatan ini menjadi tempat berlatih menunggu giliran, bukan sebagai pengganti.</p>`
     },
