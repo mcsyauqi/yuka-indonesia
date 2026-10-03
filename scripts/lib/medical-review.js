@@ -11,7 +11,7 @@
  */
 
 // Slug yang menandakan topik kondisi medis atau terapi.
-const MEDICAL_SLUG = /(autis|autisme|adhd|hiperaktif|down-syndrome|cerebral-palsy|disleksia|diskalkulia|disgrafia|disabilitas-intelektual|retardasi|tunagrahita|tuna-?rungu|tuna-?daksa|tuna-?wicara|tunalaras|tunaganda|speech-delay|epilepsi|sensori|terapi-|-terapi|fisioterapi|intervensi-dini|gangguan-|sindrom)/i;
+const MEDICAL_SLUG = /(autis|autisme|adhd|hiperaktif|down-syndrome|cerebral-palsy|disleksia|diskalkulia|disgrafia|disabilitas-intelektual|retardasi|tunagrahita|tuna-?rungu|tuna-?daksa|tuna-?wicara|tunalaras|tunaganda|speech-delay|epilepsi|sensori|terapi-|-terapi|fisioterapi|intervensi-dini|gangguan-|sindrom|syndrome)/i;
 
 function slugFromHtml(html) {
   const canon = (html.match(/<link[^>]+rel="canonical"[^>]+href="([^"]+)"/i) || [])[1] || '';
