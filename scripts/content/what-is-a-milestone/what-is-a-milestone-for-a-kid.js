@@ -83,7 +83,7 @@ module.exports = {
       toc: 'Empat ranah milestone',
       html: `
             <p>Milestone tidak hanya soal berjalan dan berbicara. CDC mengelompokkan checklist-nya ke empat ranah, sedangkan IDAI memakai pembagian yang sedikit berbeda namun saling melengkapi.</p>
-            <table class="classification-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5rem 0;"><table class="classification-table" style="margin:0;">
                 <thead><tr><th>Pembagian CDC</th><th>Pembagian IDAI</th><th>Contoh dari checklist CDC</th></tr></thead>
                 <tbody>
                     <tr><td>Sosial dan emosional</td><td>Personal sosial dan kemandirian</td><td>Usia 6 bulan: mengenali orang yang akrab dan suka melihat dirinya di cermin</td></tr>
@@ -91,7 +91,7 @@ module.exports = {
                     <tr><td>Kognitif (belajar, berpikir, memecahkan masalah)</td><td>Tidak dipisah sebagai ranah tersendiri</td><td>Usia 1 tahun: mencari mainan yang ia lihat disembunyikan di bawah selimut</td></tr>
                     <tr><td>Gerak dan perkembangan fisik</td><td>Motor kasar dan motor halus</td><td>Usia 1 tahun: menarik badan untuk berdiri dan mengambil benda kecil dengan ibu jari dan telunjuk</td></tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>Sumber tabel: ${ext(CDC_6M, 'CDC, Milestones by 6 Months')}, ${ext(CDC_1Y, 'CDC, Milestones by 1 Year')}, dan ${ext(IDAI_GDD, 'IDAI, Mengenal Keterlambatan Perkembangan Umum')}. Pembagian IDAI memisahkan <a href="motorik-kasar-adalah">motorik kasar</a> (otot besar untuk duduk, berdiri, berjalan) dari <a href="motorik-halus-adalah">motorik halus</a> (otot kecil tangan dan jari untuk menjimpit, menggambar, menulis), karena keduanya sering berkembang dengan kecepatan berbeda.</p>
             <p>Pembagian ranah ini penting karena seorang anak bisa sangat cepat di satu ranah tetapi lebih lambat di ranah lain. Menurut IDAI, keterlambatan bisa terjadi hanya di satu ranah, atau di dua ranah atau lebih. Keadaan kedua disebut keterlambatan perkembangan umum (<em>global developmental delay</em>).</p>`
     },
@@ -101,7 +101,7 @@ module.exports = {
       toc: 'Contoh milestone per usia',
       html: `
             <p>CDC menyusun checklist untuk usia 2, 4, 6, 9 bulan, 1 tahun, 15 bulan, 18 bulan, 2 tahun, 30 bulan, 3, 4, dan 5 tahun (${ext(CDC_MS, 'CDC')}). Tabel berikut hanya mengambil beberapa contoh agar terlihat bagaimana kemampuan anak bertambah kompleks dari waktu ke waktu. Ini bukan daftar lengkap.</p>
-            <table class="classification-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5rem 0;"><table class="classification-table" style="margin:0;">
                 <thead><tr><th>Usia</th><th>Contoh yang dilakukan sebagian besar anak</th></tr></thead>
                 <tbody>
                     <tr><td>6 bulan</td><td>Tertawa, bergantian bersuara dengan Anda, meraih mainan yang diinginkan, berguling dari tengkurap ke telentang</td></tr>
@@ -110,7 +110,7 @@ module.exports = {
                     <tr><td>3 tahun</td><td>Bercakap dengan minimal dua kali saling balas, bertanya "siapa", "apa", "di mana", menyebutkan nama depannya, memakai sebagian baju sendiri, makan dengan garpu</td></tr>
                     <tr><td>5 tahun</td><td>Mengikuti aturan dan bergiliran saat bermain, menceritakan kisah dengan minimal dua kejadian, berhitung sampai 10, melompat dengan satu kaki, mengancingkan sebagian kancing</td></tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>Sumber: ${ext(CDC_6M, 'CDC 6 bulan')}, ${ext(CDC_1Y, 'CDC 1 tahun')}, ${ext(CDC_2Y, 'CDC 2 tahun')}, ${ext(CDC_3Y, 'CDC 3 tahun')}, ${ext(CDC_5Y, 'CDC 5 tahun')}. Untuk perkembangan bahasa paling awal, seperti cooing dan babbling sebelum kata pertama, baca juga <a href="babbling-dan-cooing-tahap-perkembangan-bahasa">tahap perkembangan bahasa babbling dan cooing</a>.</p>`
     },
     {
@@ -134,7 +134,7 @@ module.exports = {
       toc: 'Milestone itu rentang, bukan tenggat',
       html: `
             <p>Studi perkembangan motorik WHO menggambarkan variasi ini dengan jelas. Peneliti mengikuti 816 anak di Ghana, India, Norwegia, Oman, dan Amerika Serikat, lalu menyusun "jendela pencapaian" enam milestone motorik kasar, dibatasi persentil ke-1 dan ke-99 (${ext(WHO_MGRS, 'WHO Multicentre Growth Reference Study Group, 2006')}).</p>
-            <table class="classification-table">
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin:1.5rem 0;"><table class="classification-table" style="margin:0;">
                 <thead><tr><th>Milestone motorik kasar</th><th>Jendela pencapaian anak sehat (bulan)</th></tr></thead>
                 <tbody>
                     <tr><td>Duduk tanpa bantuan</td><td>3,8 sampai 9,2</td></tr>
@@ -144,7 +144,7 @@ module.exports = {
                     <tr><td>Berdiri sendiri</td><td>6,9 sampai 16,9</td></tr>
                     <tr><td>Berjalan sendiri</td><td>8,2 sampai 17,6</td></tr>
                 </tbody>
-            </table>
+            </table></div>
             <p>Sumber angka: tabel <em>Windows of achievement for six gross motor milestones</em> pada ${ext(WHO_PAGE, 'halaman WHO Motor Development Milestones')}. Studi yang sama mencatat 4,3% anak sehat dalam penelitian itu tidak menunjukkan tahap merangkak dengan tangan dan lutut, sehingga melewatkan tahap merangkak saja belum tentu berarti masalah. IDAI memberi contoh serupa: anak dikatakan normal bila mulai berjalan antara usia 10 hingga 18 bulan, sehingga perbedaan antar anak seusia sering terjadi (${ext(IDAI_GDD, 'IDAI')}).</p>
             <p>Untuk bayi yang lahir prematur, AAP menyarankan memakai <strong>usia koreksi</strong> selama dua tahun pertama. Caranya, usia sejak lahir dikurangi jumlah minggu kelahiran yang terlalu awal. Contoh dari AAP: bayi yang lahir pada usia kehamilan 32 minggu lahir 8 minggu lebih awal, jadi saat berumur 4 bulan, kemampuannya dibandingkan dengan bayi cukup bulan berusia 2 bulan (${ext(AAP_CORR, 'AAP HealthyChildren.org')}).</p>
             <p>Yang perlu diperhatikan bukan satu milestone yang sedikit terlambat, melainkan polanya: apakah kemampuan baru terus bertambah, apakah keterlambatan muncul di beberapa ranah sekaligus, dan apakah ada kemampuan yang hilang.</p>`
