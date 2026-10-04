@@ -23,6 +23,7 @@ const staticPages = [
   { loc: `${SITE}/terapi-sensori-integrasi-yogyakarta`, file: 'terapi-sensori-integrasi-yogyakarta.html', changefreq: 'monthly', priority: '0.8' },
   { loc: `${SITE}/sekolah-autis-yogyakarta`, file: 'sekolah-autis-yogyakarta.html', changefreq: 'monthly', priority: '0.8' },
   { loc: `${SITE}/konsultasi-abk-sleman`, file: 'konsultasi-abk-sleman.html', changefreq: 'monthly', priority: '0.8' },
+  { loc: `${SITE}/kebijakan-editorial`, file: 'kebijakan-editorial.html', changefreq: 'monthly', priority: '0.4' },
 ];
 
 function read(file) {

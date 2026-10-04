@@ -1,6 +1,7 @@
 {
   "_catatan": "Registry peninjau medis untuk artikel YMYL kesehatan dan terapi YUKA. JANGAN diisi dengan nama karangan. Isi hanya setelah orang yang bersangkutan setuju namanya dicantumkan. Setelah terisi, jalankan: node scripts/apply-medical-reviewer.mjs",
   "_status": "PENDING_INPUT",
+  "_keputusan_2026_10_04": "Keputusan Syauqi 4 Okt 2026 (kartu Trello nXaqSC6p): peninjau bernama TIDAK wajib. Artikel kesehatan ditinjau oleh Tim Redaksi YUKA (Organization, @id https://www.yukaindonesia.com/#tim-redaksi), dengan syarat setiap klaim kesehatan bersumber kredibel dan bisa dicek. Diterapkan di down-syndrome-adalah, autisme-adalah, adhd-adalah (reviewedBy Organization + lastReviewed 2026-10-04). Registry ini tetap PENDING_INPUT dan hanya dipakai kalau kelak ada peninjau medis nyata yang setuju dicantumkan. Jangan pernah mengarang nama, gelar, atau STR.",
   "_cakupan": "12 artikel prioritas (7 kondisi kesehatan + 5 terapi). Semuanya sudah punya penanda MEDICAL_REVIEW_STATUS di badan halaman dan node JSON-LD MedicalWebPage, jadi skrip tinggal mengisi identitas.",
   "_pertanyaan_untuk_owner": [
     "Siapa dokter anak, psikiater anak, atau psikolog perkembangan yang bersedia namanya dicantumkan sebagai peninjau?",
