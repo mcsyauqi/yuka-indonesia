@@ -1644,4 +1644,22 @@
       <changefreq>monthly</changefreq>
       <priority>0.8</priority>
     </url>
+    <url>
+      <loc>https://www.yukaindonesia.com/artikel/uu-no-19-tahun-2011-tentang-apa</loc>
+      <lastmod>2026-10-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+    <url>
+      <loc>https://www.yukaindonesia.com/artikel/lembaga-sertifikasi-terapis-anak-di-indonesia</loc>
+      <lastmod>2026-10-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+    <url>
+      <loc>https://www.yukaindonesia.com/artikel/sensory-seeking-behavior-anak</loc>
+      <lastmod>2026-10-06</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
 </urlset>
