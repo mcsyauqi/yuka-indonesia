@@ -181,11 +181,7 @@ satu anak yang dapat dikenali di bawah judul diagnosis/disabilitas (Asperger, AD
 belajar, "terima diagnosis"), anak menangis/tantrum/tidur, atau data pribadi. Caption menyatakan
 foto itu dokumentasi kegiatan, kredit `Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).`
 
-**Utang (per 2026-10-07):** ~115 artikel lama (Maret sampai September) memakai varian kerangka
-lama dan gagal sebagian penanda (`node scripts/check-article-skeleton.js` tanpa `--since`).
-22 artikel batch 2026-08-12 bahkan tanpa font Poppins. Foto `cpao-anak-bermain-di-rumah-058.webp`
-(anak menangis di lantai) masih jadi hero `floor-time-terapi` dan `hiperaktif-adalah` serta gambar isi
-`sensori-integrasi` dan `terapi-aba`. Belum disentuh, menunggu keputusan Syauqi.
+**Utang (per 2026-10-07, sesudah lanjutan cycle #74):** 22 artikel batch 2026-08-12 (pola UU 19) sudah dibungkus ulang lewat `scripts/rewrap-legacy-shell-2026-10-07.js`; 21 di antaranya masih TANPA hero (ditandai `<!-- hero-kosong: ... -->`) karena stok foto Dokumentasi kelompok yang belum dipakai habis, butuh foto baru dari yayasan. Foto anak menangis `cpao-anak-bermain-di-rumah-058.webp` sudah nol di artikel dan blog.html. Sisa 140 dari 259 artikel masih gagal sebagian penanda `check-article-skeleton.js` (52 hanya hero potret tanpa potongan, 83 kurang related/share/sources/tags, 20 varian tanpa hero dan tanpa footer-grid, 16 tanpa font Poppins); belum disentuh, menunggu keputusan Syauqi.
 
 ## Article Template: URL Standards
 

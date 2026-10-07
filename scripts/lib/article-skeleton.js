@@ -55,10 +55,14 @@ function heroSrc(html) {
 }
 
 function missingSkeletonParts(html, { root } = {}) {
-  const missing = MARKERS.filter(([, re]) => !re.test(html)).map(([k]) => k);
+  // Slot hero kosong hanya sah untuk artikel LAMA (terbit sebelum 2026-10-01) yang ditandai
+  // <!-- hero-kosong: alasan --> oleh renderArticlePage(); artikel baru tetap wajib punya hero.
+  const pub = ((html.match(/"datePublished":\s*"([^"]+)"/) || [])[1] || '').slice(0, 10);
+  const heroExempt = /<!-- hero-kosong: /.test(html) && pub && pub < '2026-10-01';
+  const missing = MARKERS.filter(([k, re]) => !(heroExempt && k === 'article-featured-image') && !re.test(html)).map(([k]) => k);
   const src = heroSrc(html);
-  if (!src) missing.push('hero-img');
-  else if (root) {
+  if (!src && !heroExempt) missing.push('hero-img');
+  else if (src && root) {
     const rel = src.replace(/^https?:\/\/[^/]+\//, '').replace(/^(\.\.\/)+/, '').replace(/^\//, '');
     const file = path.join(root, decodeURIComponent(rel));
     if (!fs.existsSync(file)) missing.push(`hero-missing-file(${rel})`);

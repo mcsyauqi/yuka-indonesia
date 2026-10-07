@@ -48,14 +48,20 @@ function renderArticlePage(a) {
   for (const k of ['slug', 'titleTag', 'metaDesc', 'h1', 'crumb', 'category', 'datePublished', 'dateDisplay', 'readTime', 'bodyHtml']) {
     if (!a[k]) throw new Error(`${a.slug || '?'}: field ${k} kosong`);
   }
-  if (!a.image || !a.image.file || !a.image.w || !a.image.h || !a.image.credit) throw new Error(`${a.slug}: hero image tidak lengkap`);
-  if (a.image.h > a.image.w) throw new Error(`${a.slug}: hero potret ${a.image.w}x${a.image.h}, pakai foto lanskap`);
+  // a.image = null hanya untuk artikel LAMA yang memang tidak pernah punya hero dan belum ada foto
+  // Dokumentasi yang layak (a.noHeroReason wajib, a.ogImage dipakai untuk og/twitter/JSON-LD).
+  // Validator hanya menerimanya untuk datePublished sebelum 2026-10-01.
+  if (a.image === null) {
+    if (!a.noHeroReason || !a.ogImage) throw new Error(`${a.slug}: tanpa hero wajib noHeroReason + ogImage`);
+  } else if (!a.image || !a.image.file || !a.image.w || !a.image.h || !a.image.credit) throw new Error(`${a.slug}: hero image tidak lengkap`);
+  if (a.image && a.image.h > a.image.w) throw new Error(`${a.slug}: hero potret ${a.image.w}x${a.image.h}, pakai foto lanskap`);
   if (!a.related || a.related.length < 3) throw new Error(`${a.slug}: related-articles < 3`);
   if (!a.sources || !a.sources.length) throw new Error(`${a.slug}: sumber kosong`);
   a.dateModified = a.dateModified || a.datePublished;
   a.sourcesCheckedNote = a.sourcesCheckedNote || '';
   const CANONICAL = `${SITE}/artikel/${a.slug}`;
-  const IMAGE_URL = `${SITE}/${a.image.file}`;
+  const IMAGE_URL = a.image ? `${SITE}/${a.image.file}` : a.ogImage;
+  const IMG_ALT = a.image ? a.image.alt : (a.ogImageAlt || a.h1);
   const crumbs = [
     { '@type': 'ListItem', position: 1, name: 'Beranda', item: `${SITE}/` },
     { '@type': 'ListItem', position: 2, name: 'Artikel', item: `${SITE}/blog` },
@@ -66,11 +72,11 @@ function renderArticlePage(a) {
   const blogPosting = {
     '@context': 'https://schema.org', '@type': 'BlogPosting',
     headline: a.ogTitle || a.h1, description: a.ogDesc || a.metaDesc,
-    image: {
+    image: a.image ? {
       '@type': 'ImageObject', url: IMAGE_URL, width: a.image.w, height: a.image.h,
       caption: a.image.alt, creditText: stripTags(a.image.credit),
       author: { '@type': 'Organization', name: 'Yayasan Ukhuwah Kaffah Amanatullah (YUKA)' },
-    },
+    } : IMAGE_URL,
     author: a.author || { '@type': 'Organization', name: 'Tim YUKA', url: `${SITE}/` },
     publisher: { '@id': `${SITE}/#organization` },
     datePublished: a.datePublished, dateModified: a.dateModified,
@@ -95,6 +101,18 @@ function renderArticlePage(a) {
   const sources = a.sources.map((s) => `<li><a href="${s.url}" target="_blank" rel="noopener"><strong>${s.label}</strong></a></li>`).join('\n              ');
   const tags = (a.tags || []).map((t) => `<a href="#">#${t}</a>`).join('\n            ');
   const shareText = encodeURIComponent(a.crumb);
+  const heroHtml = a.image
+    ? `    <div class="container">
+        <figure class="article-featured-image">
+            <img src="../${a.image.file}" alt="${esc(a.image.alt)}" width="${a.image.w}" height="${a.image.h}" fetchpriority="high">
+            <figcaption>${a.image.caption}
+                <span class="kredit">${a.image.credit}</span>
+            </figcaption>
+        </figure>
+    </div>
+`
+    : `    <!-- hero-kosong: ${a.noHeroReason} -->
+`;
   let html = `<!DOCTYPE html>
 <html lang="id">
 <head>
@@ -119,7 +137,7 @@ function renderArticlePage(a) {
     <meta property="og:title" content="${esc(a.ogTitle)}">
     <meta property="og:description" content="${esc(a.ogDesc)}">
     <meta property="og:image" content="${IMAGE_URL}">
-    <meta property="og:image:alt" content="${esc(a.image.alt)}">
+    <meta property="og:image:alt" content="${esc(IMG_ALT)}">
     <meta property="article:published_time" content="${a.datePublished}">
     <meta property="article:modified_time" content="${a.dateModified}">
 
@@ -238,20 +256,12 @@ ${parentCrumb}                <span class="current">${a.crumb}</span>
             <div class="article-meta">
                 <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>${a.dateDisplay}</span>
                 <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>${a.readTime}</span>
-                <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Tim YUKA</span>
+                <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>${a.authorName || 'Tim YUKA'}</span>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <figure class="article-featured-image">
-            <img src="../${a.image.file}" alt="${esc(a.image.alt)}" width="${a.image.w}" height="${a.image.h}" fetchpriority="high">
-            <figcaption>${a.image.caption}
-                <span class="kredit">${a.image.credit}</span>
-            </figcaption>
-        </figure>
-    </div>
-
+${heroHtml}
     <article class="article-content">
         <div class="article-body">
 ${a.bodyHtml.trim()}
