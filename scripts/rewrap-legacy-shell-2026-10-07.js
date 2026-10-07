@@ -8,10 +8,9 @@
  * navigasi sederhana, tanpa share/tag/related card. Isi (jawaban singkat, seksi H2, checklist, tabel,
  * FAQ, sumber, catatan editorial, status tinjauan medis) DIPERTAHANKAN apa adanya.
  *
- * Hero: artikel ini tidak pernah punya hero (og:image = assets/images/hero-bg.webp). Stok foto
- * Dokumentasi YUKA kelompok yang belum dipakai artikel lain sudah habis (cek pHash cycle #74), jadi
- * slot hero dikosongkan dan dilaporkan, kecuali liburan-dengan-anak-berkebutuhan-khusus yang punya
- * foto wisata yang cocok. Jangan isi dengan foto yang tidak relevan atau dipakai ulang.
+ * Hero: artikel ini tidak pernah punya hero (og:image = assets/images/hero-bg.webp). Atas keputusan Syauqi
+ * (2026-10-07) hero memakai ULANG foto Dokumentasi YUKA kelompok/aktivitas yang sudah ada (pengecualian
+ * aturan satu foto satu artikel), dipotong 4:3, satu sumber foto berbeda per artikel, caption + kredit kanonik.
  *
  *   node scripts/rewrap-legacy-shell-2026-10-07.js [--live-check]
  * --live-check: pastikan target related card sudah tayang (HTTP 200 di situs live, jeda 2,5 detik).
@@ -24,7 +23,6 @@ const { missingSkeletonParts } = require('./lib/article-skeleton');
 const ROOT = path.resolve(__dirname, '..');
 const SITE = 'https://www.yukaindonesia.com';
 const BULAN = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-const NO_HERO = 'artikel lama tanpa hero; belum ada foto Dokumentasi YUKA yang layak dan belum dipakai (cycle 74)';
 
 const FALLBACK_RELATED = {
   'apa-saja-3-pilar-pendidikan': ['apa-yang-dimaksud-dengan-sekolah-luar-biasa', 'apa-perbedaan-sekolah-inklusi-dan-slb', 'peran-orang-tua-pendidikan-inklusi', 'homeschooling-vs-sekolah-inklusi'],
@@ -46,6 +44,111 @@ const FALLBACK_RELATED = {
 };
 
 const HERO = {
+  "apa-saja-3-pilar-pendidikan": {
+    file: "Dokumentasi/artikel/apa-saja-3-pilar-pendidikan-kegiatan.webp",
+    alt: "Beberapa siswa duduk di lantai ruang kelas dengan meja lipat, buku, dan mural kupu-kupu di dinding",
+    caption: "Siswa belajar bersama di ruang kelas Sekolah Inklusi Taruna Imani YUKA. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "apa-saja-terapi-anak-berkebutuhan-khusus": {
+    file: "Dokumentasi/artikel/apa-saja-terapi-anak-berkebutuhan-khusus-kegiatan.webp",
+    alt: "Anak-anak dan pendamping duduk melingkar di lantai teras dengan mangkuk dan bahan makanan dalam kegiatan kelompok",
+    caption: "Anak-anak dan pendamping YUKA dalam kegiatan kelompok di teras sekolah. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "augmentative-communication-untuk-anak-di-rumah": {
+    file: "Dokumentasi/artikel/augmentative-communication-untuk-anak-di-rumah-kegiatan.webp",
+    alt: "Dua pendamping berkerudung duduk di lantai dengan meja lipat berisi buku dan alat tulis di ruang belajar",
+    caption: "Pendamping YUKA menyiapkan bahan belajar di meja lipat ruang kelas. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "bagaimana-cara-membuat-kartu-disabilitas": {
+    file: "Dokumentasi/artikel/bagaimana-cara-membuat-kartu-disabilitas-kegiatan.webp",
+    alt: "Rombongan anak, orang tua, dan pendamping berkaus merah muda duduk berfoto di depan mural gunung di sebuah museum",
+    caption: "Anak-anak, orang tua, dan pendamping YUKA saat kunjungan bersama ke museum. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "bagaimana-cara-terbaik-untuk-mengajarkan-kemandirian-kepada-anak-berkebutuhan-kh": {
+    file: "Dokumentasi/artikel/bagaimana-cara-terbaik-untuk-mengajarkan-kemandirian-kepada-anak-berkebutuhan-kh-kegiatan.webp",
+    alt: "Anak-anak bertopi koki duduk menghadap instruktur yang menjelaskan di depan spanduk kelas memasak di pendopo",
+    caption: "Anak-anak YUKA menyimak instruktur dalam kelas memasak di pendopo. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "co-teaching-dalam-kelas-inklusi": {
+    file: "Dokumentasi/artikel/co-teaching-dalam-kelas-inklusi-kegiatan.webp",
+    alt: "Beberapa pendamping dan peserta bercelemek berdiri bersiap di dalam pendopo kayu sebelum kelas memasak",
+    caption: "Pendamping dan peserta YUKA bersiap sebelum kelas memasak dimulai di pendopo. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "disabilitas-intelektual": {
+    file: "Dokumentasi/artikel/disabilitas-intelektual-kegiatan.webp",
+    alt: "Rombongan anak bertopi koki dan bercelemek berfoto bersama pendamping di depan sebuah bangunan",
+    caption: "Peserta kelas memasak YUKA berfoto bersama pendamping seusai kegiatan. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "disabilitas": {
+    file: "Dokumentasi/artikel/disabilitas-kegiatan.webp",
+    alt: "Rombongan anak dan pendamping bertopi koki berfoto bersama di pendopo di depan spanduk kelas memasak",
+    caption: "Anak-anak dan pendamping YUKA berfoto bersama seusai kelas memasak di pendopo. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "jenis-disabilitas": {
+    file: "Dokumentasi/artikel/jenis-disabilitas-kegiatan.webp",
+    alt: "Sekelompok anak dan remaja berkaus merah muda berpose di depan pintu batu berukir sebuah candi",
+    caption: "Siswa YUKA berpose di depan pintu candi saat wisata bersama. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "kartu-disabilitas": {
+    file: "Dokumentasi/artikel/kartu-disabilitas-kegiatan.webp",
+    alt: "Rombongan pengunjung dewasa dan anak berdiri mengamati diorama besar di dalam museum",
+    caption: "Anak-anak dan pendamping YUKA mengamati diorama saat kunjungan ke museum. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "konsep-inklusi-sosial": {
+    file: "Dokumentasi/artikel/konsep-inklusi-sosial-kegiatan.webp",
+    alt: "Rombongan anak dan pendamping berkaus merah muda berpose ceria di ruangan berpilar putih dan karpet merah",
+    caption: "Anak-anak dan pendamping YUKA berfoto bersama di ruang berpilar saat kunjungan museum. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "makanan-yang-harus-dihindari-anak-adhd": {
+    file: "Dokumentasi/artikel/makanan-yang-harus-dihindari-anak-adhd-kegiatan.webp",
+    alt: "Anak-anak bertopi koki dan pendamping duduk di meja panjang dengan alas silikon biru untuk membentuk adonan",
+    caption: "Anak-anak dan pendamping YUKA membentuk adonan dalam kelas memasak. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "peer-tutoring-di-kelas-inklusi": {
+    file: "Dokumentasi/artikel/peer-tutoring-di-kelas-inklusi-kegiatan.webp",
+    alt: "Beberapa peserta bertopi koki duduk berhadapan di meja panjang sambil membentuk bulatan adonan di atas alas biru",
+    caption: "Peserta kelas memasak YUKA saling membantu membentuk adonan di meja panjang. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "penerapan-inklusi-sosial": {
+    file: "Dokumentasi/artikel/penerapan-inklusi-sosial-kegiatan.webp",
+    alt: "Rombongan anak dan pendamping berkaus merah muda berkumpul di depan mural gunung di dalam museum",
+    caption: "Anak-anak dan pendamping YUKA berkumpul saat kunjungan ke museum. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "prinsip-inklusi-sosial": {
+    file: "Dokumentasi/artikel/prinsip-inklusi-sosial-kegiatan.webp",
+    alt: "Pengunjung anak dan dewasa berkeliling meja pamer bundar di ruang pameran museum yang terang",
+    caption: "Anak-anak dan pendamping YUKA berkeliling ruang pameran museum. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "reward-system-efektif-untuk-anak-autis": {
+    file: "Dokumentasi/artikel/reward-system-efektif-untuk-anak-autis-kegiatan.webp",
+    alt: "Anak-anak bertopi koki duduk di lantai pendopo menghadap instruktur di depan spanduk kelas memasak",
+    caption: "Anak-anak YUKA mengikuti arahan instruktur dalam kelas memasak di pendopo. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "systematic-review-intervensi-dini-autisme": {
+    file: "Dokumentasi/artikel/systematic-review-intervensi-dini-autisme-kegiatan.webp",
+    alt: "Sekelompok anak dan remaja berkaus merah muda berdiri di depan panel informasi di ruang pameran museum",
+    caption: "Siswa YUKA di ruang pameran saat kunjungan belajar ke museum. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "teori-inklusi-sosial": {
+    file: "Dokumentasi/artikel/teori-inklusi-sosial-kegiatan.webp",
+    alt: "Anak-anak dan pendamping berkerudung membentuk tanda hati dengan tangan di depan pintu batu berukir sebuah candi",
+    caption: "Anak-anak dan pendamping YUKA berpose di depan pintu candi saat wisata bersama. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "terapi-bermain-child-centered-play-therapy": {
+    file: "Dokumentasi/artikel/terapi-bermain-child-centered-play-therapy-kegiatan.webp",
+    alt: "Tangan pendamping dan siswa memotong sayuran hijau di lantai dengan mangkuk dan baskom di sekitarnya",
+    caption: "Siswa dan pendamping YUKA menyiapkan sayuran bersama di lantai. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "yayasan-disabilitas": {
+    file: "Dokumentasi/artikel/yayasan-disabilitas-kegiatan.webp",
+    alt: "Beberapa remaja dan anak berkaus merah muda tertawa bersama di taman, salah satunya menjunjung bingkisan di atas kepala",
+    caption: "Siswa dan pendamping YUKA bermain bersama di taman saat kegiatan luar ruang. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
+  "yayasan-sosial": {
+    file: "Dokumentasi/artikel/yayasan-sosial-kegiatan.webp",
+    alt: "Anak-anak dan pendamping mengelilingi meja peraga interaktif di sebuah museum",
+    caption: "Anak-anak dan pendamping YUKA mencoba alat peraga interaktif di museum. Foto ini dokumentasi kegiatan dan tidak menunjukkan kondisi anak tertentu.",
+  },
   'liburan-dengan-anak-berkebutuhan-khusus': {
     file: 'Dokumentasi/artikel/liburan-dengan-anak-berkebutuhan-khusus-wisata-candi.webp',
     alt: 'Seorang siswa berkostum tari tradisional dan pendamping berkerudung merah muda menari di halaman rumput depan sebuah candi batu',
@@ -117,8 +220,9 @@ function parse(slug, live) {
   const words = stripTags(body).split(' ').length;
   const h1 = stripTags(pick(h, /<h1[^>]*>([\s\S]*?)<\/h1>/, 'h1'));
 
+  if (!HERO[slug]) throw new Error(`${slug}: hero belum ditentukan`);
   let image = null;
-  if (HERO[slug]) {
+  {
     const { imageSize } = require('./lib/article-skeleton');
     const s = imageSize(path.join(ROOT, HERO[slug].file));
     image = { ...HERO[slug], w: s.w, h: s.h, credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).' };
@@ -139,7 +243,7 @@ function parse(slug, live) {
     h1, crumb: h1,
     author: art.author, authorName,
     about: (art.about || []).map((x) => x.name).filter(Boolean),
-    image, noHeroReason: image ? null : NO_HERO,
+    image,
     bodyHtml: body, faq,
     related: rel.map(card), tags, sources,
     sourcesCheckedNote: 'Sumber diperiksa tim YUKA saat artikel disusun.',
@@ -176,6 +280,6 @@ async function liveSet(slugs) {
     const a = parse(slug, live);
     const html = renderArticlePage(a);
     fs.writeFileSync(path.join(ROOT, 'artikel', `${slug}.html`), html, 'utf8');
-    console.log(`${slug}: ${html.length} B, faq ${a.faq.length}, sumber ${a.sources.length}, related ${a.related.length}, hero ${a.image ? 'ada' : 'kosong'}`);
+    console.log(`${slug}: ${html.length} B, faq ${a.faq.length}, sumber ${a.sources.length}, related ${a.related.length}, hero ${a.image.w}x${a.image.h}`);
   }
 })().catch((e) => { console.error(e); process.exit(1); });

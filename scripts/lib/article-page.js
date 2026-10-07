@@ -48,20 +48,15 @@ function renderArticlePage(a) {
   for (const k of ['slug', 'titleTag', 'metaDesc', 'h1', 'crumb', 'category', 'datePublished', 'dateDisplay', 'readTime', 'bodyHtml']) {
     if (!a[k]) throw new Error(`${a.slug || '?'}: field ${k} kosong`);
   }
-  // a.image = null hanya untuk artikel LAMA yang memang tidak pernah punya hero dan belum ada foto
-  // Dokumentasi yang layak (a.noHeroReason wajib, a.ogImage dipakai untuk og/twitter/JSON-LD).
-  // Validator hanya menerimanya untuk datePublished sebelum 2026-10-01.
-  if (a.image === null) {
-    if (!a.noHeroReason || !a.ogImage) throw new Error(`${a.slug}: tanpa hero wajib noHeroReason + ogImage`);
-  } else if (!a.image || !a.image.file || !a.image.w || !a.image.h || !a.image.credit) throw new Error(`${a.slug}: hero image tidak lengkap`);
-  if (a.image && a.image.h > a.image.w) throw new Error(`${a.slug}: hero potret ${a.image.w}x${a.image.h}, pakai foto lanskap`);
+  if (!a.image || !a.image.file || !a.image.w || !a.image.h || !a.image.credit) throw new Error(`${a.slug}: hero image tidak lengkap`);
+  if (a.image.h > a.image.w) throw new Error(`${a.slug}: hero potret ${a.image.w}x${a.image.h}, pakai foto lanskap`);
   if (!a.related || a.related.length < 3) throw new Error(`${a.slug}: related-articles < 3`);
   if (!a.sources || !a.sources.length) throw new Error(`${a.slug}: sumber kosong`);
   a.dateModified = a.dateModified || a.datePublished;
   a.sourcesCheckedNote = a.sourcesCheckedNote || '';
   const CANONICAL = `${SITE}/artikel/${a.slug}`;
-  const IMAGE_URL = a.image ? `${SITE}/${a.image.file}` : a.ogImage;
-  const IMG_ALT = a.image ? a.image.alt : (a.ogImageAlt || a.h1);
+  const IMAGE_URL = `${SITE}/${a.image.file}`;
+  const IMG_ALT = a.image.alt;
   const crumbs = [
     { '@type': 'ListItem', position: 1, name: 'Beranda', item: `${SITE}/` },
     { '@type': 'ListItem', position: 2, name: 'Artikel', item: `${SITE}/blog` },
@@ -72,11 +67,11 @@ function renderArticlePage(a) {
   const blogPosting = {
     '@context': 'https://schema.org', '@type': 'BlogPosting',
     headline: a.ogTitle || a.h1, description: a.ogDesc || a.metaDesc,
-    image: a.image ? {
+    image: {
       '@type': 'ImageObject', url: IMAGE_URL, width: a.image.w, height: a.image.h,
       caption: a.image.alt, creditText: stripTags(a.image.credit),
       author: { '@type': 'Organization', name: 'Yayasan Ukhuwah Kaffah Amanatullah (YUKA)' },
-    } : IMAGE_URL,
+    },
     author: a.author || { '@type': 'Organization', name: 'Tim YUKA', url: `${SITE}/` },
     publisher: { '@id': `${SITE}/#organization` },
     datePublished: a.datePublished, dateModified: a.dateModified,
@@ -101,8 +96,7 @@ function renderArticlePage(a) {
   const sources = a.sources.map((s) => `<li><a href="${s.url}" target="_blank" rel="noopener"><strong>${s.label}</strong></a></li>`).join('\n              ');
   const tags = (a.tags || []).map((t) => `<a href="#">#${t}</a>`).join('\n            ');
   const shareText = encodeURIComponent(a.crumb);
-  const heroHtml = a.image
-    ? `    <div class="container">
+  const heroHtml = `    <div class="container">
         <figure class="article-featured-image">
             <img src="../${a.image.file}" alt="${esc(a.image.alt)}" width="${a.image.w}" height="${a.image.h}" fetchpriority="high">
             <figcaption>${a.image.caption}
@@ -110,8 +104,6 @@ function renderArticlePage(a) {
             </figcaption>
         </figure>
     </div>
-`
-    : `    <!-- hero-kosong: ${a.noHeroReason} -->
 `;
   let html = `<!DOCTYPE html>
 <html lang="id">
