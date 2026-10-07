@@ -1,0 +1,33 @@
+name: Article skeleton gate
+
+# Cycle #74 (2026-10-07): artikel yang di-commit LANGSUNG (tanpa publish-scheduled.yml),
+# seperti batch MinTiv 2026-10-06, tidak pernah melewati gate kerangka. Workflow ini
+# memeriksa setiap push yang menyentuh artikel/ atau blog.html. Merah = ada artikel
+# baru yang menyimpang dari kerangka kanonik; bungkus ulang lewat
+# scripts/lib/article-page.js (renderArticlePage), jangan longgarkan validatornya.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'artikel/**'
+      - 'blog.html'
+      - 'scripts/lib/article-*.js'
+      - 'scripts/check-article-*.js'
+  pull_request:
+    paths:
+      - 'artikel/**'
+  workflow_dispatch:
+
+jobs:
+  skeleton:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Footer, GA4, analytics
+        run: node scripts/check-article-shell.js
+      - name: Kerangka kanonik artikel sejak 2026-10-03
+        run: node scripts/check-article-skeleton.js --since=2026-10-03

@@ -68,6 +68,41 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 - Commercial keyword targets: `data/commercial-keyword-targets-2026-05-01.json` — 5 commercial landing pages
 - GSC data: `data/gsc_by_impressions.json`, `data/gsc_by_query.json`, `data/gsc_by_page.json`, `data/gsc_by_query_page.json`
 
+### Article Template: Kerangka Kanonik (WAJIB, cycle #74 2026-10-07)
+
+Footer saja tidak cukup. Batch MinTiv 2026-10-06 (commit `26583fb`: `uu-no-19-tahun-2011-tentang-apa`,
+`sensory-seeking-behavior-anak`, `lembaga-sertifikasi-terapis-anak-di-indonesia`) di-commit langsung
+tanpa generator di repo dan tanpa lewat `publish-scheduled.yml`. Halamannya punya footer, tapi tayang
+tanpa font Poppins, tanpa pita header navy, tanpa `article-content`, `article-share`,
+`article-sources`, `article-tags`, `related-articles`, dan hero foto potret anak menangis
+setinggi layar. Syauqi menilainya "kurang rapi dan berbeda dengan halaman lainnya".
+
+**Aturan untuk agen apa pun (Claude, MinTiv/Hermes, skrip):**
+
+1. Halaman artikel BARU wajib dirender lewat `renderArticlePage()` di `scripts/lib/article-page.js`
+   (kerangka yang sama dengan `artikel/sibling-anak-berkebutuhan-khusus.html`). Jangan mengetik
+   ulang `<head>`, header, share, sumber, atau footer. Contoh pemakaian: `scripts/rewrap-canonical-2026-10-07.js`.
+2. Sebelum commit artikel: `node scripts/check-article-skeleton.js artikel/<slug>.html` wajib OK
+   (font Poppins, pita header + breadcrumb, card-category, article-featured-image, article-content,
+   related-card, article-tags, article-sources, article-share, footer-grid, hero bukan potret tanpa potongan).
+3. Gate yang memeriksanya: `publish-scheduled.yml` (per artikel terjadwal) dan
+   `article-skeleton-gate.yml` (setiap push yang menyentuh `artikel/` atau `blog.html`, termasuk commit langsung).
+4. Kartu `blog.html` memakai markup kanonik multi-baris (card-image, card-category, card-title,
+   card-text, card-meta dengan ikon), bukan satu baris ringkas.
+
+**Hero (martabat + konsistensi):** foto Dokumentasi YUKA lanskap (4:3 atau lebih lebar), kegiatan
+kelompok atau suasana, satu foto satu artikel (cek kemiripan, bukan cuma nama berkas: banyak foto
+`gbp/` dan `museum-*` sudah disalin ke `Dokumentasi/artikel/` dengan nama lain). DILARANG foto dekat
+satu anak yang dapat dikenali di bawah judul diagnosis/disabilitas (Asperger, ADHD, autis, gangguan
+belajar, "terima diagnosis"), anak menangis/tantrum/tidur, atau data pribadi. Caption menyatakan
+foto itu dokumentasi kegiatan, kredit `Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).`
+
+**Utang (per 2026-10-07):** ~115 artikel lama (Maret sampai September) memakai varian kerangka
+lama dan gagal sebagian penanda (`node scripts/check-article-skeleton.js` tanpa `--since`).
+22 artikel batch 2026-08-12 bahkan tanpa font Poppins. Foto `cpao-anak-bermain-di-rumah-058.webp`
+(anak menangis di lantai) masih jadi hero `floor-time-terapi` dan `hiperaktif-adalah` serta gambar isi
+`sensori-integrasi` dan `terapi-aba`. Belum disentuh, menunggu keputusan Syauqi.
+
 ### Article Template Structure
 Each article in `artikel/` follows this template:
 ```

@@ -79,6 +79,15 @@ jobs:
               exit 1
             fi
 
+            # Skeleton gate (cycle #74, 2026-10-07): footer saja tidak cukup. Batch MinTiv
+            # 2026-10-06 punya footer tapi tayang tanpa font Poppins, pita header navy,
+            # article-share/sources/tags/related, dengan hero potret tanpa potongan.
+            # Render artikel baru lewat renderArticlePage() di scripts/lib/article-page.js.
+            if ! node scripts/check-article-skeleton.js "$file"; then
+              echo "Skeleton gate failed: $file tidak memakai kerangka kanonik YUKA."
+              exit 1
+            fi
+
             # Medical review gate (Trello nKumkHS6): artikel kondisi medis/terapi
             # tidak boleh terbit tanpa peninjau. Selama data/medical-reviewer.json
             # belum READY, minimal wajib ada pernyataan jujur "Status tinjauan medis";
