@@ -36,8 +36,8 @@ module.exports = {
   keywords: 'asperger syndrome adalah, sindrom asperger, asperger adalah, asd level 1, high functioning autism, f84.5, icd-11 6a02, autisme tanpa disabilitas intelektual',
   readTime: '12 menit baca',
   image: {
-    file: 'Dokumentasi/cpao-anak-belajar-memasak-kelas-kuliner-016.webp',
-    w: 936, h: 1248,
+    file: 'Dokumentasi/artikel/asperger-syndrome-adalah-menonton-bersama.webp',
+    w: 1248, h: 936,
     alt: 'Seorang anak memakai topi koki biru dan celemek hitam tersenyum sambil memegang bakpao berbentuk lebah buatannya dalam kelas memasak',
     caption: 'Seorang siswa YUKA memamerkan bakpao karakter buatannya dalam kegiatan kelas memasak. Foto ini dokumentasi kegiatan, bukan gambaran anak dengan diagnosis tertentu.',
     credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).',

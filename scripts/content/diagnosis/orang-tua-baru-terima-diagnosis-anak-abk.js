@@ -39,8 +39,8 @@ module.exports = {
   keywords: 'orang tua baru terima diagnosis anak abk, setelah anak didiagnosis abk, langkah setelah diagnosis, terapi anak bpjs, rujukan rehabilitasi medis jkn, hak anak disabilitas uu 8 2016, akomodasi yang layak, puspaga, konseling orang tua abk',
   readTime: '12 menit baca',
   image: {
-    file: 'Dokumentasi/cpao-anak-belajar-memasak-bersama-ibu-039.webp',
-    w: 936, h: 1248,
+    file: 'Dokumentasi/artikel/orang-tua-baru-terima-diagnosis-anak-abk-rombongan-candi.webp',
+    w: 936, h: 702,
     alt: 'Seorang ibu berkerudung hijau dan celemek merah muda merapikan kerudung hitam seorang anak kecil yang duduk di depan alas adonan biru dalam kegiatan kelas memasak',
     caption: 'Seorang pendamping merapikan kerudung anak sebelum kelas memasak dimulai. Foto ini dokumentasi kegiatan YUKA, bukan gambaran anak dengan diagnosis tertentu.',
     credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).',

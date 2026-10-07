@@ -39,8 +39,8 @@ module.exports = {
   keywords: 'gangguan belajar spesifik, specific learning disorder, SLD, kriteria DSM-5 gangguan belajar, ICD-11 6A03, developmental learning disorder, disleksia, disgrafia, diskalkulia, akomodasi yang layak, Permendikbudristek 48 2023',
   readTime: '12 menit baca',
   image: {
-    file: 'Dokumentasi/cpao-anak-anak-belajar-memasak-outdoor-037.webp',
-    w: 936, h: 1248,
+    file: 'Dokumentasi/artikel/gangguan-belajar-spesifik-belajar-di-museum.webp',
+    w: 936, h: 702,
     alt: 'Seorang anak perempuan bertopi dan bercelemek merah muda duduk di depan alas silikon biru berisi bulatan adonan, ditemani remaja berhijab hitam bertopi koki biru yang tersenyum di sampingnya, di pendopo terbuka',
     caption: 'Seorang anak dan pendamping remaja menyelesaikan bulatan adonan bersama dalam kegiatan belajar memasak di pendopo. Foto ini dokumentasi kegiatan YUKA, bukan sesi asesmen dan bukan gambaran anak dengan diagnosis tertentu.',
     credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).',

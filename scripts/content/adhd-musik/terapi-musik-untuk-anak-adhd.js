@@ -40,8 +40,8 @@ module.exports = {
   keywords: 'terapi musik untuk anak adhd, terapi musik adhd, musik untuk anak hiperaktif, penelitian terapi musik adhd, meta analisis terapi musik adhd, terapis musik bersertifikat, mt-bc, pedoman aap adhd 2019, aktivitas musik anak adhd di rumah',
   readTime: '12 menit baca',
   image: {
-    file: 'Dokumentasi/cpao-anak-belajar-memasak-bersama-dewasa-047.webp',
-    w: 936, h: 1248,
+    file: 'Dokumentasi/artikel/terapi-musik-untuk-anak-adhd-pentas-kostum.webp',
+    w: 921, h: 690,
     alt: 'Seorang anak bertopi koki ungu dan bercelemek duduk menatap bulatan adonan oranye di atas alas silikon biru, didampingi orang dewasa bercelemek merah muda dalam kelas memasak di pendopo',
     caption: 'Seorang siswa menunggu instruksi berikutnya di kelas memasak. Foto ini dokumentasi kegiatan YUKA, bukan sesi terapi musik dan bukan gambaran anak dengan diagnosis tertentu.',
     credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).',

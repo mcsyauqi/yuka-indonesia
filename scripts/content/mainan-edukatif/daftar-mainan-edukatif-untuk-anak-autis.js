@@ -34,8 +34,8 @@ module.exports = {
   keywords: 'daftar mainan edukatif untuk anak autis, mainan edukatif anak autis, mainan untuk anak autis, mainan melatih bicara anak autis, mainan motorik halus, permainan bergiliran anak autis, mainan kognitif anak, memilih mainan anak berkebutuhan khusus',
   readTime: '12 menit baca',
   image: {
-    file: 'Dokumentasi/cocopandan-lemon-ibu-anak-belajar-membuat-kerajinan-004.webp',
-    w: 936, h: 1248,
+    file: 'Dokumentasi/artikel/daftar-mainan-edukatif-untuk-anak-autis-kegiatan-kelompok.webp',
+    w: 936, h: 702,
     alt: 'Seorang anak berseragam putih memeras buah jeruk kuning ke gelas takar dibantu orang dewasa berhijab merah muda, sementara anak lain duduk memperhatikan di lantai teras kayu',
     caption: 'Seorang siswa memeras buah jeruk ke gelas takar bersama pendamping dalam kegiatan belajar di teras. Foto ini dokumentasi kegiatan YUKA, bukan sesi terapi dan bukan gambaran anak dengan diagnosis tertentu.',
     credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).',
