@@ -51,8 +51,8 @@ module.exports = {
   keywords: 'cara membawa anak autis ke dokter gigi, anak autis ke dokter gigi, persiapan anak autis periksa gigi, desensitisasi dokter gigi autis, dokter gigi anak berkebutuhan khusus, cerita sosial dokter gigi, ruang praktik ramah sensorik',
   readTime: '12 menit baca',
   image: {
-    file: 'Dokumentasi/museum-gunung-merapi-keluarga-perjalanan-dalam-mobil-002.webp',
-    w: 1248, h: 936,
+    file: 'Dokumentasi/artikel/cara-membawa-anak-autis-ke-dokter-gigi-duduk-menunggu.webp',
+    w: 1560, h: 1170,
     alt: 'Beberapa remaja dan anak berkaus merah muda duduk berdampingan di bangku minibus, sebagian menatap kamera, dengan jalan dan rumah terlihat dari kaca depan',
     caption: 'Siswa dan pendamping duduk bersama di dalam minibus saat berangkat ke kegiatan luar sekolah. Foto ini dokumentasi kegiatan YUKA, bukan foto kunjungan ke dokter gigi dan bukan gambaran anak dengan kondisi tertentu.',
     credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).',

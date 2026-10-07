@@ -52,8 +52,8 @@ module.exports = {
   keywords: 'what is a milestone for a kid, milestone anak, arti milestone anak, tonggak perkembangan anak, developmental milestone, milestone perkembangan anak, KPSP, skrining perkembangan anak',
   readTime: '12 menit baca',
   image: {
-    file: 'Dokumentasi/museum-gunung-merapi-kelompok-anak-foto-bersama-mall-049.webp',
-    w: 2000, h: 1500,
+    file: 'Dokumentasi/artikel/what-is-a-milestone-for-a-kid-kelas-memasak.webp',
+    w: 1248, h: 936,
     alt: 'Rombongan anak dari berbagai usia berseragam putih merah dan pendamping berkaus merah muda berfoto bersama di lobi bangunan dengan replika gunung di belakangnya',
     caption: 'Siswa berbagai usia dan pendamping berfoto bersama saat kegiatan kunjungan di luar sekolah. Foto ini dokumentasi kegiatan YUKA dan tidak menggambarkan tahap perkembangan atau kondisi anak tertentu.',
     credit: 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).',
