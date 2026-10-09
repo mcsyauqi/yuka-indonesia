@@ -24,6 +24,8 @@ const staticPages = [
   { loc: `${SITE}/sekolah-autis-yogyakarta`, file: 'sekolah-autis-yogyakarta.html', changefreq: 'monthly', priority: '0.8' },
   { loc: `${SITE}/konsultasi-abk-sleman`, file: 'konsultasi-abk-sleman.html', changefreq: 'monthly', priority: '0.8' },
   { loc: `${SITE}/kebijakan-editorial`, file: 'kebijakan-editorial.html', changefreq: 'monthly', priority: '0.4' },
+  { loc: `${SITE}/profil/bu-yupie-nurul-azkia`, file: 'profil/bu-yupie-nurul-azkia.html', changefreq: 'monthly', priority: '0.6' },
+  { loc: `${SITE}/profil/pak-diyat`, file: 'profil/pak-diyat.html', changefreq: 'monthly', priority: '0.6' },
 ];
 
 function read(file) {
