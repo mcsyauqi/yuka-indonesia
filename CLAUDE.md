@@ -183,6 +183,30 @@ foto itu dokumentasi kegiatan, kredit `Foto: Dokumentasi YUKA (Yayasan Ukhuwah K
 
 **Utang (per 2026-10-07, sesudah lanjutan cycle #74):** 22 artikel batch 2026-08-12 (pola UU 19) sudah dibungkus ulang lewat `scripts/rewrap-legacy-shell-2026-10-07.js`; hero 21 artikel itu memakai ULANG foto Dokumentasi kelompok/aktivitas yang sudah ada (keputusan Syauqi 2026-10-07, pengecualian aturan satu foto satu artikel; satu sumber foto berbeda per artikel). Mode tanpa hero sudah dihapus dari renderer dan validator. Foto anak menangis `cpao-anak-bermain-di-rumah-058.webp` sudah nol di artikel dan blog.html. Sisa 140 dari 259 artikel masih gagal sebagian penanda `check-article-skeleton.js` (52 hanya hero potret tanpa potongan, 83 kurang related/share/sources/tags, 20 varian tanpa hero dan tanpa footer-grid, 16 tanpa font Poppins); belum disentuh, menunggu keputusan Syauqi.
 
+## Article Template: Standar mutu konten (WAJIB, gate 2026-10-09)
+
+Kerangka rapi saja tidak cukup. Ukur ulang 2026-10-09 menemukan 15 artikel YUKA rapi tapi tipis
+(contoh: `uu-no-19-tahun-2011-tentang-apa` 1.135 kata, 4 FAQ, tanpa tabel; `what-is-a-milestone-for-a-kid`
+0 gambar isi). Brief untuk SEMUA penulis artikel (Claude, MinTiv/Hermes/Codex, skrip):
+
+1. **Minimal per artikel baru**: >= 2000 kata di `<article class="article-content">`, >= 4 gambar
+   DI DALAM isi (hero di luar `<article>` tidak dihitung), >= 7 FAQ yang terlihat (H2 "Pertanyaan ..."
+   + `<h3>` bertanda tanya) DAN sama banyak di FAQPage schema, >= 1 tabel bermakna (`<th>` + minimal
+   2 baris data), Daftar Isi, H2 150-300 kata per seksi, >= 10 tautan internal, tanpa em/en dash.
+2. **INVENT NOTHING**: angka, tanggal, harga, pasal, dan regulasi wajib bersumber (topik hukum: JDIH BPK,
+   peraturan.go.id, JDIH kementerian, dokumen PBB). Tanpa sumber, tulis kualitatif.
+3. **Gambar isi**: gaya kanonik YUKA = foto Dokumentasi asli (`Dokumentasi/`), caption faktual + kredit
+   `Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).` Lihat dulu tiap foto sebelum dipakai.
+   Diagram/ilustrasi konsep boleh sebagai pelengkap, bukan pengganti foto.
+4. **Gate yang memeriksanya** (jangan dilonggarkan, perluas artikelnya):
+   - `renderArticlePage()` melempar `quality gate failed: ...` SEBELUM berkas ditulis. Pesan error
+     menyebut kekurangannya; perluas isi lalu render ulang. Opsi `legacyRewrapReason` hanya untuk
+     membungkus ulang artikel LAMA tanpa mengubah isi.
+   - Cek manual sebelum commit: `node scripts/check-article-quality.js artikel/<slug>.html` wajib OK.
+   - `article-skeleton-gate.yml`: merah kalau ada artikel dengan datePublished >= 2026-10-10 di bawah standar.
+   - `publish-scheduled.yml`: artikel terjadwal di bawah standar menggagalkan run (merah, tanpa email tayang).
+5. Utang artikel lama dilaporkan (tidak memblok) lewat `node scripts/check-article-quality.js --all --warn-only`.
+
 ## Article Template: URL Standards
 
 ### Social Share Buttons

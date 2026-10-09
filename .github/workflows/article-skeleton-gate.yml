@@ -31,3 +31,11 @@ jobs:
         run: node scripts/check-article-shell.js
       - name: Kerangka kanonik artikel sejak 2026-10-03
         run: node scripts/check-article-skeleton.js --since=2026-10-03
+      # Gate mutu konten (2026-10-09): artikel BARU (datePublished >= 2026-10-10) wajib
+      # >= 2000 kata, >= 4 gambar isi, >= 7 FAQ + FAQPage schema, >= 1 tabel. Merah = perluas
+      # artikelnya (scripts/lib/article-quality.js), jangan longgarkan angkanya.
+      - name: Mutu konten artikel baru sejak 2026-10-10
+        run: node scripts/check-article-quality.js --since=2026-10-10
+      # Utang artikel lama: dilaporkan saja, tidak memblok.
+      - name: Laporan utang mutu artikel lama (tidak memblok)
+        run: node scripts/check-article-quality.js --all --warn-only | tail -n 3

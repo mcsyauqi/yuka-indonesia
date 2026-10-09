@@ -13,11 +13,13 @@
  * renderArticlePage(); render() hasil ketik ulang tidak boleh dipakai lagi.
  *
  * Validasi: renderArticlePage() melempar error kalau hasilnya gagal shell gate
- * (article-shell.js) atau skeleton gate (article-skeleton.js).
+ * (article-shell.js), skeleton gate (article-skeleton.js), atau gate mutu konten
+ * (article-quality.js: 2000 kata, 4 gambar isi, 7 FAQ + schema, 1 tabel; sejak 2026-10-09).
  */
 const path = require('path');
 const { ensureArticleShell, missingShellParts } = require('./article-shell');
 const { missingSkeletonParts } = require('./article-skeleton');
+const { checkArticleQuality } = require('./article-quality');
 
 const SITE = 'https://www.yukaindonesia.com';
 const ROOT = path.resolve(__dirname, '..', '..');
@@ -313,6 +315,15 @@ ${a.bodyHtml.trim()}
   const sk = missingSkeletonParts(html, { root: ROOT });
   if (sk.length) throw new Error(`${a.slug}: skeleton gate failed: ${sk.join(', ')}`);
   if (/[\u2014\u2013]/.test(stripTags(html.replace(/<script[\s\S]*?<\/script>/g, '')))) throw new Error(`${a.slug}: ada em/en dash di teks`);
+  // Gate MUTU KONTEN (2026-10-09): >= 2000 kata, >= 4 gambar isi, >= 7 FAQ + schema, >= 1 tabel.
+  // Artikel tipis TIDAK boleh ditulis ke artikel/: perluas isinya lalu render ulang.
+  // Pengecualian hanya untuk membungkus ulang artikel LAMA tanpa mengubah isi
+  // (a.legacyRewrapReason = '<alasan>'), dan tetap tercetak sebagai peringatan.
+  const q = checkArticleQuality(html);
+  if (q.fail.length) {
+    if (a.legacyRewrapReason) console.warn(`${a.slug}: DI BAWAH STANDAR MUTU (${q.fail.join('; ')}), lolos karena legacyRewrapReason: ${a.legacyRewrapReason}`);
+    else throw new Error(`${a.slug}: quality gate failed: ${q.fail.join('; ')}. Perluas isi (lihat AGENTS.md "Standar mutu konten").`);
+  }
   return html;
 }
 

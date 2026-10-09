@@ -94,6 +94,14 @@ jobs:
             # setelah READY, wajib reviewedBy di JSON-LD.
             node scripts/check-medical-review.js "$file"
 
+            # Quality gate (2026-10-09): artikel terjadwal wajib memenuhi standar /artikel-seo
+            # (>= 2000 kata, >= 4 gambar isi, >= 7 FAQ + schema, >= 1 tabel). Artikel tipis
+            # menggagalkan run (merah, tanpa email "tayang"), bukan diam-diam ditayangkan.
+            if ! node scripts/check-article-quality.js "$file"; then
+              echo "Quality gate failed: $file di bawah standar mutu. Perluas artikelnya, lalu jalankan ulang."
+              exit 1
+            fi
+
             # Featured image gate: kartu blog wajib foto dokumentasi, bukan logo,
             # dan berkasnya harus ada (2026-09-28: 8 artikel tayang berkartu logo).
             if echo "$image" | grep -qiE '(^|/)logo[^/]*$|(^|/)Logo/'; then
