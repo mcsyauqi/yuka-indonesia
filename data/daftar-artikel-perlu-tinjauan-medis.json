@@ -1,0 +1,895 @@
+{
+ "_catatan": "Dibuat oleh scripts/list-medical-review-status.mjs. Daftar artikel kesehatan/terapi yang perlu ditinjau peninjau berkredensial. P1 = 12 artikel prioritas di data/medical-reviewer.json. Jangan diedit manual, jalankan ulang skripnya.",
+ "dibuat": "2026-10-10T18:04:37.659Z",
+ "total": 126,
+ "ringkasan": {
+  "TIM_REDAKSI": 3,
+  "PERNYATAAN": 37,
+  "KOSONG": 86
+ },
+ "belumDitinjauPeninjauBernama": 126,
+ "artikel": [
+  {
+   "path": "artikel/adhd-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/adhd-adalah",
+   "judul": "ADHD Adalah: Pengertian, Gejala, Penyebab, dan Cara Menangani Anak ADHD",
+   "prioritas": "P1",
+   "status": "TIM_REDAKSI"
+  },
+  {
+   "path": "artikel/autisme-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/autisme-adalah",
+   "judul": "Autisme Adalah (Autis Adalah): Pengertian, Ciri, Penyebab, dan Penanganan",
+   "prioritas": "P1",
+   "status": "TIM_REDAKSI"
+  },
+  {
+   "path": "artikel/cerebral-palsy-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/cerebral-palsy-adalah",
+   "judul": "Cerebral Palsy Adalah: Pengertian, Jenis, Penyebab, dan Penanganan pada Anak",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/disabilitas-intelektual-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/disabilitas-intelektual-adalah",
+   "judul": "Disabilitas Intelektual Adalah: Pengertian, Penyebab, Klasifikasi, Ciri-Ciri, dan Penanganan",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/disleksia-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/disleksia-adalah",
+   "judul": "Disleksia Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Cara Membantu Anak Disleksia",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/down-syndrome-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/down-syndrome-adalah",
+   "judul": "Down Syndrome Adalah: Pengertian, Ciri, Penyebab, Jenis, dan Tumbuh Kembang Anak",
+   "prioritas": "P1",
+   "status": "TIM_REDAKSI"
+  },
+  {
+   "path": "artikel/intervensi-dini.html",
+   "url": "https://www.yukaindonesia.com/artikel/intervensi-dini",
+   "judul": "Intervensi Dini untuk Anak Berkebutuhan Khusus: Panduan Lengkap Golden Age 0-6 Tahun",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/sensori-integrasi.html",
+   "url": "https://www.yukaindonesia.com/artikel/sensori-integrasi",
+   "judul": "Sensori Integrasi: Pengertian, Gangguan, dan Terapi untuk Anak Berkebutuhan Khusus",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/speech-delay-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/speech-delay-adalah",
+   "judul": "Speech Delay Adalah: Pengertian, Penyebab, Tanda, dan Cara Menangani Keterlambatan Bicara Anak",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/terapi-aba.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-aba",
+   "judul": "Terapi ABA: Pengertian, Metode, Manfaat, dan Penerapan untuk Anak Autis",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/terapi-okupasi.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-okupasi",
+   "judul": "Terapi Okupasi: Pengertian, Manfaat, dan Proses Terapi untuk Anak Berkebutuhan Khusus",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/terapi-wicara.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-wicara",
+   "judul": "Terapi Wicara: Pengertian, Manfaat, Biaya, dan Proses Terapi untuk Anak",
+   "prioritas": "P1",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/adhd-singkatan-dari-apa.html",
+   "url": "https://www.yukaindonesia.com/artikel/adhd-singkatan-dari-apa",
+   "judul": "ADHD Singkatan dari Apa? Arti, Kepanjangan, dan Istilah GPPH",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/aging-with-autism-tantangan-dan-solusi.html",
+   "url": "https://www.yukaindonesia.com/artikel/aging-with-autism-tantangan-dan-solusi",
+   "judul": "Aging With Autism: Tantangan dan Solusi untuk Pendamping",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/ai-artificial-intelligence-untuk-screening-autisme.html",
+   "url": "https://www.yukaindonesia.com/artikel/ai-artificial-intelligence-untuk-screening-autisme",
+   "judul": "AI untuk Screening Autisme: Manfaat, Batasan, dan Etika",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/alat-bantu-belajar-anak-disleksia.html",
+   "url": "https://www.yukaindonesia.com/artikel/alat-bantu-belajar-anak-disleksia",
+   "judul": "Alat Bantu Belajar Anak Disleksia: Mana yang Terbukti dan Cara Memilihnya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/anakku-hiperaktif.html",
+   "url": "https://www.yukaindonesia.com/artikel/anakku-hiperaktif",
+   "judul": "Anakku Hiperaktif: Apa yang Harus Dilakukan Orang Tua?",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/apa-itu-autisme-level-1-2-3.html",
+   "url": "https://www.yukaindonesia.com/artikel/apa-itu-autisme-level-1-2-3",
+   "judul": "Apa Itu Autisme Level 1 2 3? Arti Tingkat Dukungan Menurut DSM-5",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/apa-penyebab-autis-pada-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/apa-penyebab-autis-pada-anak",
+   "judul": "Apa Penyebab Autis pada Anak? Penjelasan Berbasis Sains untuk Orang Tua",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/apa-saja-terapi-anak-berkebutuhan-khusus.html",
+   "url": "https://www.yukaindonesia.com/artikel/apa-saja-terapi-anak-berkebutuhan-khusus",
+   "judul": "Apa Saja Terapi Anak Berkebutuhan Khusus? Panduan Memilih",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/apakah-gdd-sama-dengan-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/apakah-gdd-sama-dengan-autis",
+   "judul": "Apakah GDD Sama dengan Autis? Perbedaan, Kaitan, dan Kapan Perlu Evaluasi",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/apakah-speech-delay-bisa-sembuh.html",
+   "url": "https://www.yukaindonesia.com/artikel/apakah-speech-delay-bisa-sembuh",
+   "judul": "Apakah Speech Delay Bisa Sembuh? Panduan Prognosis untuk Orang Tua",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/apakah-tuna-rungu-bisa-sembuh.html",
+   "url": "https://www.yukaindonesia.com/artikel/apakah-tuna-rungu-bisa-sembuh",
+   "judul": "Apakah Tuna Rungu Bisa Sembuh? Penjelasan Menurut Jenis Gangguannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/aplikasi-ai-untuk-terapi-wicara-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/aplikasi-ai-untuk-terapi-wicara-anak",
+   "judul": "Aplikasi AI untuk Terapi Wicara Anak: Manfaat, Batasan, dan Cara Memilih",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/aplikasi-belajar-membaca-untuk-anak-disleksia.html",
+   "url": "https://www.yukaindonesia.com/artikel/aplikasi-belajar-membaca-untuk-anak-disleksia",
+   "judul": "Aplikasi Belajar Membaca untuk Anak Disleksia: Apa yang Terbukti dan Cara Memilihnya",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/asperger-syndrome-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/asperger-syndrome-adalah",
+   "judul": "Asperger Syndrome Adalah: Arti, Status Diagnosis Sekarang, dan Dukungan untuk Anak",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/bahasa-isyarat-tuna-rungu.html",
+   "url": "https://www.yukaindonesia.com/artikel/bahasa-isyarat-tuna-rungu",
+   "judul": "Bahasa Isyarat Tuna Rungu: BISINDO, SIBI, dan Cara Keluarga Mempelajarinya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/bahasa-tuna-rungu.html",
+   "url": "https://www.yukaindonesia.com/artikel/bahasa-tuna-rungu",
+   "judul": "Bahasa Tuna Rungu: Cara Anak Tuli Berkomunikasi dan Peran Keluarga",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/berapa-biaya-terapi-anak-berkebutuhan-khusus.html",
+   "url": "https://www.yukaindonesia.com/artikel/berapa-biaya-terapi-anak-berkebutuhan-khusus",
+   "judul": "Berapa Biaya Terapi Anak Berkebutuhan Khusus? Tarif Resmi RS Pemerintah, Cara Menghitung, dan Jalur BPJS",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/berapa-biaya-terapi-bicara-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/berapa-biaya-terapi-bicara-anak",
+   "judul": "Berapa Biaya Terapi Bicara Anak? Tarif Resmi RS Pemerintah, Komponen Biaya, dan Jalur BPJS",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/cara-berkomunikasi-dengan-anak-tuna-rungu.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-berkomunikasi-dengan-anak-tuna-rungu",
+   "judul": "Cara Berkomunikasi dengan Anak Tunarungu: Panduan Praktis",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/cara-melatih-anak-speech-delay-bicara.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-melatih-anak-speech-delay-bicara",
+   "judul": "Cara Melatih Anak Speech Delay Bicara: 10 Teknik Stimulasi di Rumah yang Didukung Bukti",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/cara-melatih-social-skills-anak-autis-di-rumah.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-melatih-social-skills-anak-autis-di-rumah",
+   "judul": "Cara Melatih Social Skills Anak Autis di Rumah: Panduan Praktis untuk Orang Tua",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/cara-membawa-anak-autis-ke-dokter-gigi.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-membawa-anak-autis-ke-dokter-gigi",
+   "judul": "Cara Membawa Anak Autis ke Dokter Gigi: Persiapan Bertahap agar Kunjungan Lebih Tenang",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/cara-membuat-jadwal-visual-untuk-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-membuat-jadwal-visual-untuk-anak-autis",
+   "judul": "Cara Membuat Jadwal Visual untuk Anak Autis",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/cara-mengajar-anak-disleksia-membaca.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-mengajar-anak-disleksia-membaca",
+   "judul": "Cara Mengajar Anak Disleksia Membaca",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/cara-mengatasi-picky-eater-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-mengatasi-picky-eater-anak-autis",
+   "judul": "Cara Mengatasi Picky Eater Anak Autis",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/cara-mengatasi-tantrum-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/cara-mengatasi-tantrum-anak-autis",
+   "judul": "Cara Mengatasi Tantrum Anak Autis: Panduan Tenang untuk Orang Tua",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/cerebral-palsy-athetoid-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/cerebral-palsy-athetoid-adalah",
+   "judul": "Cerebral Palsy Athetoid Adalah: Ciri, Penyebab, dan Penanganannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/ciri-adhd-tipe-inattentive-pada-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/ciri-adhd-tipe-inattentive-pada-anak",
+   "judul": "Ciri ADHD Tipe Inattentive pada Anak: 9 Tanda yang Perlu Diketahui",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/ciri-ciri-anak-adhd-berdasarkan-usia.html",
+   "url": "https://www.yukaindonesia.com/artikel/ciri-ciri-anak-adhd-berdasarkan-usia",
+   "judul": "Ciri-Ciri Anak ADHD Berdasarkan Usia: Dari Balita sampai Remaja",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/daftar-mainan-edukatif-untuk-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/daftar-mainan-edukatif-untuk-anak-autis",
+   "judul": "Daftar Mainan Edukatif untuk Anak Autis: Dipilih Menurut Tujuan, Bukan Tren",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/diagnosis-adhd-di-indonesia.html",
+   "url": "https://www.yukaindonesia.com/artikel/diagnosis-adhd-di-indonesia",
+   "judul": "Diagnosis ADHD di Indonesia: Alur Pemeriksaan dan Siapa yang Memeriksa",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/diagnosis-banding-adhd.html",
+   "url": "https://www.yukaindonesia.com/artikel/diagnosis-banding-adhd",
+   "judul": "Diagnosis Banding ADHD pada Anak: Membedakan Gejala dan Langkah Pemeriksaan",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/digital-therapeutics-untuk-adhd-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/digital-therapeutics-untuk-adhd-anak",
+   "judul": "Digital Therapeutics untuk ADHD Anak: Cara Kerja, Bukti Ilmiah, dan Batasannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/disabilitas-intelektual.html",
+   "url": "https://www.yukaindonesia.com/artikel/disabilitas-intelektual",
+   "judul": "Disabilitas Intelektual: Pengertian, Dukungan, dan Hak",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/disabilitas-sensorik.html",
+   "url": "https://www.yukaindonesia.com/artikel/disabilitas-sensorik",
+   "judul": "Disabilitas Sensorik: Jenis, Ciri, dan Dukungan untuk Anak",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/disabilitas-tuna-rungu.html",
+   "url": "https://www.yukaindonesia.com/artikel/disabilitas-tuna-rungu",
+   "judul": "Disabilitas Tuna Rungu: Hak, Istilah yang Tepat, dan Cara Mendampingi",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/diskalkulia-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/diskalkulia-adalah",
+   "judul": "Diskalkulia Adalah Kesulitan Belajar Matematika: Ciri dan Cara Membantu",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/floor-time-terapi.html",
+   "url": "https://www.yukaindonesia.com/artikel/floor-time-terapi",
+   "judul": "Floor Time Terapi: Metode DIR Floortime untuk Anak Autis dan ABK",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/gangguan-belajar-spesifik.html",
+   "url": "https://www.yukaindonesia.com/artikel/gangguan-belajar-spesifik",
+   "judul": "Gangguan Belajar Spesifik: Saat Kesulitan Membaca, Menulis, atau Berhitung Menjadi Diagnosis",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/gangguan-emosional-pada-anak-sekolah.html",
+   "url": "https://www.yukaindonesia.com/artikel/gangguan-emosional-pada-anak-sekolah",
+   "judul": "Gangguan Emosional pada Anak Sekolah: Jenis, Tanda, dan Cara Membantu",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/gangguan-makan-anak-abk.html",
+   "url": "https://www.yukaindonesia.com/artikel/gangguan-makan-anak-abk",
+   "judul": "Gangguan Makan Anak ABK: Tanda, Penyebab, dan Cara Penanganannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/gangguan-pendengaran-konduktif-vs-sensorineural.html",
+   "url": "https://www.yukaindonesia.com/artikel/gangguan-pendengaran-konduktif-vs-sensorineural",
+   "judul": "Gangguan Pendengaran Konduktif vs Sensorineural: Perbedaan dan Penanganan",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/gangguan-perkembangan-pervasif.html",
+   "url": "https://www.yukaindonesia.com/artikel/gangguan-perkembangan-pervasif",
+   "judul": "Gangguan Perkembangan Pervasif: Istilah Lama dan Maknanya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/gangguan-tidur-anak-adhd-solusi.html",
+   "url": "https://www.yukaindonesia.com/artikel/gangguan-tidur-anak-adhd-solusi",
+   "judul": "Gangguan Tidur Anak ADHD: Solusi untuk Membantu Anak Tidur Lebih Baik",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/gut-microbiome-dan-autisme-penelitian.html",
+   "url": "https://www.yukaindonesia.com/artikel/gut-microbiome-dan-autisme-penelitian",
+   "judul": "Gut Microbiome dan Autisme: Apa Kata Penelitian Sejauh Ini?",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/hanen-approach-terapi-bahasa-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/hanen-approach-terapi-bahasa-anak",
+   "judul": "Hanen Approach Terapi Bahasa Anak: Panduan Lengkap untuk Orang Tua",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/hari-autis-sedunia.html",
+   "url": "https://www.yukaindonesia.com/artikel/hari-autis-sedunia",
+   "judul": "Hari Autis Sedunia: Dari Kesadaran ke Penerimaan",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/hiperaktif-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/hiperaktif-adalah",
+   "judul": "Hiperaktif Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Cara Menangani Anak Hiperaktif",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/hiperaktif-artinya.html",
+   "url": "https://www.yukaindonesia.com/artikel/hiperaktif-artinya",
+   "judul": "Hiperaktif Artinya Apa? Bedanya dengan ADHD pada Anak",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/hipotiroid-pada-anak-down-syndrome.html",
+   "url": "https://www.yukaindonesia.com/artikel/hipotiroid-pada-anak-down-syndrome",
+   "judul": "Hipotiroid pada Anak Down Syndrome: Skrining Tiroid dan Persiapan Kontrol",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/homeschooling-untuk-anak-autis-kurikulum.html",
+   "url": "https://www.yukaindonesia.com/artikel/homeschooling-untuk-anak-autis-kurikulum",
+   "judul": "Homeschooling untuk Anak Autis: Kurikulum, Rutinitas, dan Cara Memulainya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/jadwal-visual-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/jadwal-visual-anak-autis",
+   "judul": "Jadwal Visual Anak Autis: Manfaat, Cara Membuat, dan Contoh Rutinitas",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/joint-attention-anak-autis-kenapa-penting.html",
+   "url": "https://www.yukaindonesia.com/artikel/joint-attention-anak-autis-kenapa-penting",
+   "judul": "Joint Attention Anak Autis: Kenapa Penting dan Bagaimana Melatihnya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/kode-icd-10-cerebral-palsy.html",
+   "url": "https://www.yukaindonesia.com/artikel/kode-icd-10-cerebral-palsy",
+   "judul": "Kode ICD-10 Cerebral Palsy: Arti dan Penerapannya Sehari-hari",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/kurikulum-fungsional-untuk-anak-tunagrahita.html",
+   "url": "https://www.yukaindonesia.com/artikel/kurikulum-fungsional-untuk-anak-tunagrahita",
+   "judul": "Kurikulum Fungsional untuk Anak Tunagrahita: Prinsip dan Contoh Program",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/latihan-fisioterapi-anak-di-rumah.html",
+   "url": "https://www.yukaindonesia.com/artikel/latihan-fisioterapi-anak-di-rumah",
+   "judul": "Latihan Fisioterapi Anak di Rumah: Prinsip, Contoh Latihan, dan Batas Amannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/lembaga-sertifikasi-terapis-anak-di-indonesia.html",
+   "url": "https://www.yukaindonesia.com/artikel/lembaga-sertifikasi-terapis-anak-di-indonesia",
+   "judul": "Lembaga Sertifikasi Terapis Anak di Indonesia: Cara Memeriksa Kualifikasi",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/macam-macam-terapi-pada-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/macam-macam-terapi-pada-anak",
+   "judul": "Macam Macam Terapi pada Anak: 12 Jenis dan Cara Memilihnya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/machine-learning-deteksi-dini-gangguan-perkembangan.html",
+   "url": "https://www.yukaindonesia.com/artikel/machine-learning-deteksi-dini-gangguan-perkembangan",
+   "judul": "Machine Learning untuk Deteksi Dini Gangguan Perkembangan Anak",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/makanan-yang-harus-dihindari-anak-adhd.html",
+   "url": "https://www.yukaindonesia.com/artikel/makanan-yang-harus-dihindari-anak-adhd",
+   "judul": "Makanan yang Harus Dihindari Anak ADHD? Cek Faktanya",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/masalah-penglihatan-pada-anak-down-syndrome.html",
+   "url": "https://www.yukaindonesia.com/artikel/masalah-penglihatan-pada-anak-down-syndrome",
+   "judul": "Masalah Penglihatan pada Anak Down Syndrome: Jenis, Tanda, dan Jadwal Periksa Mata",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/metode-prompt-dalam-terapi-wicara.html",
+   "url": "https://www.yukaindonesia.com/artikel/metode-prompt-dalam-terapi-wicara",
+   "judul": "Metode Prompt dalam Terapi Wicara: PROMPT, Hierarki Bantuan, dan Bukti Ilmiahnya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/non-stimulant-medication-adhd-terbaru.html",
+   "url": "https://www.yukaindonesia.com/artikel/non-stimulant-medication-adhd-terbaru",
+   "judul": "Non Stimulant Medication ADHD Terbaru: Daftar Obat, Tanggal Persetujuan, dan Faktanya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/pekerjaan-yang-cocok-untuk-orang-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/pekerjaan-yang-cocok-untuk-orang-autis",
+   "judul": "Pekerjaan yang Cocok untuk Orang Autis: Cara Memilih",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/penuaan-pada-penyandang-down-syndrome.html",
+   "url": "https://www.yukaindonesia.com/artikel/penuaan-pada-penyandang-down-syndrome",
+   "judul": "Penuaan pada Penyandang Down Syndrome",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/penyebab-adhd-pada-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/penyebab-adhd-pada-anak",
+   "judul": "Penyebab ADHD pada Anak: Genetik, Perkembangan Otak, dan Faktor Risiko",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/perbedaan-adhd-dan-autis-pada-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/perbedaan-adhd-dan-autis-pada-anak",
+   "judul": "Perbedaan ADHD dan Autis pada Anak: Ciri, Evaluasi, dan Dukungan",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/perbedaan-autis-dan-adhd.html",
+   "url": "https://www.yukaindonesia.com/artikel/perbedaan-autis-dan-adhd",
+   "judul": "Perbedaan Autis dan ADHD: Gejala, Diagnosis, dan Penanganan yang Tepat",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/perbedaan-terapi-okupasi-dan-terapi-wicara.html",
+   "url": "https://www.yukaindonesia.com/artikel/perbedaan-terapi-okupasi-dan-terapi-wicara",
+   "judul": "Perbedaan Terapi Okupasi dan Terapi Wicara untuk Anak ABK",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/piramida-sensori-integrasi.html",
+   "url": "https://www.yukaindonesia.com/artikel/piramida-sensori-integrasi",
+   "judul": "Piramida Sensori Integrasi dan Penerapannya Sehari-hari",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/pivotal-response-training-prt-autisme.html",
+   "url": "https://www.yukaindonesia.com/artikel/pivotal-response-training-prt-autisme",
+   "judul": "Pivotal Response Training (PRT) untuk Anak Autis: Cara Kerja, Bukti Riset, dan Peran Orang Tua",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/retardasi-mental-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/retardasi-mental-adalah",
+   "judul": "Retardasi Mental Adalah: Pengertian, Penyebab, Klasifikasi, dan Penanganan",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/reward-system-efektif-untuk-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/reward-system-efektif-untuk-anak-autis",
+   "judul": "Reward System Efektif untuk Anak Autis: Aman dan Bermakna",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/rutinitas-pagi-anak-autis-cara-membuat.html",
+   "url": "https://www.yukaindonesia.com/artikel/rutinitas-pagi-anak-autis-cara-membuat",
+   "judul": "Rutinitas Pagi Anak Autis Cara Membuat: Panduan Praktis",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/screen-time-untuk-anak-autis-batasan.html",
+   "url": "https://www.yukaindonesia.com/artikel/screen-time-untuk-anak-autis-batasan",
+   "judul": "Screen Time untuk Anak Autis: Batasan yang Fleksibel dan Aman",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/sensory-over-responsivity-pada-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/sensory-over-responsivity-pada-anak",
+   "judul": "Sensory Over Responsivity pada Anak: Tanda, Kaitan dengan Cemas, dan Cara Membantu",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/sensory-toys-terbaik-untuk-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/sensory-toys-terbaik-untuk-anak-autis",
+   "judul": "Sensory Toys Terbaik untuk Anak Autis: Cara Memilih yang Aman dan Bermakna",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/skoliosis-pada-anak-cerebral-palsy.html",
+   "url": "https://www.yukaindonesia.com/artikel/skoliosis-pada-anak-cerebral-palsy",
+   "judul": "Skoliosis pada Anak Cerebral Palsy: Risiko, Tanda Awal, dan Penanganannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/social-skills-training-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/social-skills-training-anak-autis",
+   "judul": "Social Skills Training Anak Autis: Bukti Ilmiah, Bentuk Latihan, dan Peran Orang Tua",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/stem-cell-therapy-untuk-autisme-perkembangan.html",
+   "url": "https://www.yukaindonesia.com/artikel/stem-cell-therapy-untuk-autisme-perkembangan",
+   "judul": "Stem Cell Therapy untuk Autisme: Status dan Risiko",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/strategi-mengajar-anak-adhd-di-sekolah.html",
+   "url": "https://www.yukaindonesia.com/artikel/strategi-mengajar-anak-adhd-di-sekolah",
+   "judul": "Strategi Mengajar Anak ADHD di Sekolah: Panduan Praktis untuk Guru",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/strategi-mengajar-anak-autis-di-kelas.html",
+   "url": "https://www.yukaindonesia.com/artikel/strategi-mengajar-anak-autis-di-kelas",
+   "judul": "Strategi Mengajar Anak Autis di Kelas: 10 Cara Berbasis Bukti untuk Guru",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/suplemen-untuk-anak-adhd.html",
+   "url": "https://www.yukaindonesia.com/artikel/suplemen-untuk-anak-adhd",
+   "judul": "Suplemen untuk Anak ADHD: Apa Kata Bukti Ilmiah dan Kapan Perlu?",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/systematic-review-intervensi-dini-autisme.html",
+   "url": "https://www.yukaindonesia.com/artikel/systematic-review-intervensi-dini-autisme",
+   "judul": "Systematic Review Intervensi Dini Autisme: Cara Membaca Bukti",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/tempat-terapi-anak-jogja.html",
+   "url": "https://www.yukaindonesia.com/artikel/tempat-terapi-anak-jogja",
+   "judul": "Tempat Terapi Anak Jogja: Jalur Layanan, Daftar Rumah Sakit, dan Cara Memilih",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-adhd-pada-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-adhd-pada-anak",
+   "judul": "Terapi dan Penanganan ADHD pada Anak: Pilihan Sesuai Usia",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-anak-abk-apa-saja.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-anak-abk-apa-saja",
+   "judul": "Terapi Anak ABK Apa Saja? Jenis, Tujuan, dan Cara Memilih",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-anak-untuk-apa.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-anak-untuk-apa",
+   "judul": "Terapi Anak untuk Apa? Memahami Tujuan, Jenis, dan Kapan Dibutuhkan",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/terapi-bermain-child-centered-play-therapy.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-bermain-child-centered-play-therapy",
+   "judul": "Terapi Bermain Child-Centered Play Therapy: Panduan Orang Tua",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/terapi-bermain.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-bermain",
+   "judul": "Terapi Bermain: Pengertian, Jenis, Manfaat, dan Penerapan untuk Anak Berkebutuhan Khusus",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-fisik-untuk-abk.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-fisik-untuk-abk",
+   "judul": "Terapi Fisik untuk ABK: Manfaat, Contoh Latihan, dan Kapan Dibutuhkan",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-fisik-untuk-anak-terlambat-jalan.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-fisik-untuk-anak-terlambat-jalan",
+   "judul": "Terapi Fisik untuk Anak Terlambat Jalan: Panduan Aman",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-integrasi-sensorik-di-rumah.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-integrasi-sensorik-di-rumah",
+   "judul": "Terapi Integrasi Sensorik di Rumah: Yang Bisa dan Tidak Bisa Dilakukan Orang Tua",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/terapi-memasak-anak-berkebutuhan-khusus.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-memasak-anak-berkebutuhan-khusus",
+   "judul": "Terapi Memasak untuk Anak Berkebutuhan Khusus: Manfaat Luar Biasa dan Cara Menerapkannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-musik-anak-berkebutuhan-khusus.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-musik-anak-berkebutuhan-khusus",
+   "judul": "Terapi Musik Anak Berkebutuhan Khusus: Manfaat, Cara, dan Batas Aman",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-musik-untuk-anak-abk.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-musik-untuk-anak-abk",
+   "judul": "Terapi Musik untuk Anak ABK: Manfaat, Contoh, dan Batasannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-musik-untuk-anak-adhd.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-musik-untuk-anak-adhd",
+   "judul": "Terapi Musik untuk Anak ADHD: Apa Kata Riset, Batasannya, dan Posisinya dalam Penanganan",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/terapi-okupasi-untuk-anak-cerebral-palsy.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-okupasi-untuk-anak-cerebral-palsy",
+   "judul": "Terapi Okupasi untuk Anak Cerebral Palsy: Tujuan, Metode, dan Peran Orang Tua",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-perilaku-kognitif-anak.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-perilaku-kognitif-anak",
+   "judul": "Terapi Perilaku Kognitif Anak: Cara Kerja, Manfaat, dan Peran Orang Tua",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-pijat-anak-cerebral-palsy.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-pijat-anak-cerebral-palsy",
+   "judul": "Terapi Pijat Anak Cerebral Palsy: Manfaat, Batasan, dan Keamanan",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-seni-untuk-anak-berkebutuhan-khusus.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-seni-untuk-anak-berkebutuhan-khusus",
+   "judul": "Terapi Seni untuk Anak Berkebutuhan Khusus: Pengertian, Bukti Penelitian, dan Cara Memulai",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapi-wicara-oral-motor-exercises.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapi-wicara-oral-motor-exercises",
+   "judul": "Terapi Wicara Oral Motor Exercises: Fungsi, Contoh, dan Batasannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/terapis-speech-delay.html",
+   "url": "https://www.yukaindonesia.com/artikel/terapis-speech-delay",
+   "judul": "Terapis Speech Delay: Panduan Lengkap Memilih Terapis Wicara untuk Anak",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tips-mendampingi-anak-autis.html",
+   "url": "https://www.yukaindonesia.com/artikel/tips-mendampingi-anak-autis",
+   "judul": "5 Tips Mendampingi Anak Autis dengan Penuh Kasih Sayang",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tuna-daksa-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/tuna-daksa-adalah",
+   "judul": "Tuna Daksa Adalah: Pengertian, Jenis, Penyebab, dan Hak Penyandang Tuna Daksa",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tuna-rungu-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/tuna-rungu-adalah",
+   "judul": "Tuna Rungu Adalah: Pengertian, Penyebab, Ciri-Ciri, dan Cara Berkomunikasi",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tuna-rungu-wicara-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/tuna-rungu-wicara-adalah",
+   "judul": "Tuna Rungu Wicara Adalah: Pengertian, Penyebab, dan Penanganannya",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tuna-rungu-wicara.html",
+   "url": "https://www.yukaindonesia.com/artikel/tuna-rungu-wicara",
+   "judul": "Tuna Rungu Wicara: Pengertian, Penyebab, dan Dukungan untuk Anak",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tuna-wicara-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/tuna-wicara-adalah",
+   "judul": "Tuna Wicara Adalah: Pengertian, Penyebab, Ciri-Ciri, dan Cara Berkomunikasi",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tunaganda-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/tunaganda-adalah",
+   "judul": "Tunaganda Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Pendidikan Anak Tunaganda",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tunagrahita-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/tunagrahita-adalah",
+   "judul": "Tunagrahita Adalah: Pengertian, Klasifikasi, Ciri-Ciri, dan Pendidikan yang Tepat",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/tunagrahita-ringan-sedang-berat-perbedaan.html",
+   "url": "https://www.yukaindonesia.com/artikel/tunagrahita-ringan-sedang-berat-perbedaan",
+   "judul": "Tunagrahita Ringan, Sedang, Berat: Perbedaan Kriteria, IQ, dan Dukungan Belajar",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  },
+  {
+   "path": "artikel/tunalaras-adalah.html",
+   "url": "https://www.yukaindonesia.com/artikel/tunalaras-adalah",
+   "judul": "Tunalaras Adalah: Pengertian, Ciri-Ciri, Penyebab, dan Penanganan Anak Tunalaras",
+   "prioritas": "P2",
+   "status": "KOSONG"
+  },
+  {
+   "path": "artikel/weighted-vest-anak-autis-manfaat-dan-pilihan.html",
+   "url": "https://www.yukaindonesia.com/artikel/weighted-vest-anak-autis-manfaat-dan-pilihan",
+   "judul": "Weighted Vest Anak Autis: Manfaat, Risiko, dan Cara Memilih",
+   "prioritas": "P2",
+   "status": "PERNYATAAN"
+  }
+ ]
+}

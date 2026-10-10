@@ -10,6 +10,10 @@
  *   1. Membaca data/medical-reviewer.json dan MENOLAK jalan kalau masih kosong.
  *   2. Mengganti blok "Status tinjauan medis" di badan tiap artikel dengan
  *      nama, gelar, jabatan, nomor STR/SIP (kalau diisi), dan tanggal tinjauan.
+ *   2b. Memasang baris "Ditinjau oleh" tepat di bawah judul artikel (setelah
+ *      baris tanggal/penulis div.article-meta), di antara penanda
+ *      REVIEWER_BYLINE:START/END supaya idempoten. Selama registry belum READY
+ *      skrip berhenti di langkah 1, jadi baris ini tidak pernah muncul di live.
  *   3. Menambahkan properti reviewedBy (Person) dan lastReviewed ke node
  *      MedicalWebPage dan Article/BlogPosting di JSON-LD tiap artikel.
  *   4. Membuat halaman profil peninjau di profil/<slug>.html.
@@ -38,6 +42,8 @@ const BASE = 'https://www.yukaindonesia.com';
 
 const START = '<!-- MEDICAL_REVIEW_STATUS:START -->';
 const END = '<!-- MEDICAL_REVIEW_STATUS:END -->';
+const BYLINE_START = '<!-- REVIEWER_BYLINE:START -->';
+const BYLINE_END = '<!-- REVIEWER_BYLINE:END -->';
 
 function die(msg) {
   console.error('\nGAGAL: ' + msg + '\n');
@@ -79,9 +85,11 @@ if (cfg._status === 'PENDING_INPUT' || kosong.length) {
   process.exit(2);
 }
 
-const now = new Date();
-const stamp = now.toISOString().slice(0, 19) + '+07:00';
-const dateModified = now.toISOString().slice(0, 10) + 'T' + String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0') + ':00+07:00';
+// Stempel waktu WIB yang benar terlepas dari zona waktu mesin (dulu tanggal UTC
+// digabung jam lokal, sehingga bisa meleset satu hari).
+const wib = new Date(Date.now() + 7 * 3600e3).toISOString();
+const stamp = wib.slice(0, 19) + '+07:00';
+const dateModified = wib.slice(0, 16) + ':00+07:00';
 
 const koreksiTxt = t.catatanKoreksi && t.catatanKoreksi.trim()
   ? ' Catatan koreksi dari tinjauan: ' + esc(t.catatanKoreksi.trim())
@@ -108,6 +116,11 @@ function resolve(rv) {
     + ' Alur tinjauan dan koreksi dijelaskan di <a href="/kebijakan-editorial">Kebijakan Editorial YUKA</a>. '
     + 'Untuk keputusan diagnosis atau pengobatan, tetap rujuk pada dokter yang menangani anak Anda.</li>\n          ' + END;
 
+  // Baris singkat di bawah judul (header artikel berlatar navy, jadi teks terang).
+  const bylineBaru = BYLINE_START + '<p class="reviewer-byline" style="margin:0.75rem 0 0;font-size:0.95rem;color:rgba(255,255,255,0.92);">'
+    + '<strong>Ditinjau oleh</strong> <a href="/profil/' + esc(slug) + '" style="color:#FFD700;font-weight:600;">' + esc(namaLengkap) + '</a>, '
+    + esc(rv.jobTitle) + kredensialTxt + ', ' + esc(t.tanggal) + '</p>' + BYLINE_END;
+
   const personNode = {
     '@type': 'Person',
     '@id': profilUrl + '#person',
@@ -121,7 +134,7 @@ function resolve(rv) {
   if (rv.fotoWebp && rv.fotoWebp.trim()) personNode.image = BASE + rv.fotoWebp.trim();
 
   return {
-    slug, profilUrl, namaLengkap, kredensial, liBaru, personNode,
+    slug, profilUrl, namaLengkap, kredensial, liBaru, bylineBaru, personNode,
     jobTitle: rv.jobTitle,
     foto: rv.fotoWebp && rv.fotoWebp.trim() ? rv.fotoWebp.trim() : '',
   };
@@ -154,6 +167,16 @@ for (const rel of files) {
   const blokRe = new RegExp(START.replace(/[-[\]{}()*+?.,\\^$|#]/g, '\\$&') + '[\\s\\S]*?' + END.replace(/[-[\]{}()*+?.,\\^$|#]/g, '\\$&'));
   if (!blokRe.test(html)) die('penanda MEDICAL_REVIEW_STATUS tidak ditemukan di ' + rel);
   html = html.replace(blokRe, info.liBaru);
+
+  // 3a2. baris "Ditinjau oleh" tepat di bawah judul
+  const bylineRe = new RegExp(BYLINE_START + '[\\s\\S]*?' + BYLINE_END);
+  if (bylineRe.test(html)) {
+    html = html.replace(bylineRe, () => info.bylineBaru);
+  } else {
+    const metaRe = /<div class="article-meta">[\s\S]*?<\/div>/;
+    if (!metaRe.test(html)) die('div.article-meta (baris di bawah judul) tidak ditemukan di ' + rel);
+    html = html.replace(metaRe, (m) => m + '\n            ' + info.bylineBaru);
+  }
 
   // 3b. tambahkan reviewedBy + lastReviewed ke node MedicalWebPage / Article / BlogPosting
   const ldRe = /<script type="application\/ld\+json">(\{[\s\S]*?\})<\/script>/g;
