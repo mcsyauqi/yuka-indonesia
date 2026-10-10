@@ -2,7 +2,7 @@
   "_catatan": "Registry peninjau medis untuk artikel YMYL kesehatan dan terapi YUKA. JANGAN diisi dengan nama karangan. Isi hanya setelah orang yang bersangkutan setuju namanya dicantumkan. Setelah terisi, jalankan: node scripts/apply-medical-reviewer.mjs",
   "_status": "PENDING_INPUT",
   "_keputusan_2026_10_04": "Keputusan Syauqi 4 Okt 2026 (kartu Trello nXaqSC6p): peninjau bernama TIDAK wajib. Artikel kesehatan ditinjau oleh Tim Redaksi YUKA (Organization, @id https://www.yukaindonesia.com/#tim-redaksi), dengan syarat setiap klaim kesehatan bersumber kredibel dan bisa dicek. Diterapkan di down-syndrome-adalah, autisme-adalah, adhd-adalah (reviewedBy Organization + lastReviewed 2026-10-04). Registry ini tetap PENDING_INPUT dan hanya dipakai kalau kelak ada peninjau medis nyata yang setuju dicantumkan. Jangan pernah mengarang nama, gelar, atau STR.",
-  "_cakupan": "12 artikel prioritas (7 kondisi kesehatan + 5 terapi). Semuanya sudah punya penanda MEDICAL_REVIEW_STATUS di badan halaman dan node JSON-LD MedicalWebPage, jadi skrip tinggal mengisi identitas.",
+  "_cakupan": "35 artikel kesehatan dan terapi. Gelombang 1 (11 September 2026): 12 artikel prioritas (7 kondisi kesehatan + 5 terapi). Gelombang 2 (11 Oktober 2026, kartu Trello I9gw2TEU): 23 artikel kondisi, terapi, dan asesmen. Semuanya punya penanda MEDICAL_REVIEW_STATUS di badan halaman dan node JSON-LD MedicalWebPage, jadi skrip tinggal mengisi identitas.",
   "_pertanyaan_untuk_owner": [
     "Siapa dokter anak, psikiater anak, atau psikolog perkembangan yang bersedia namanya dicantumkan sebagai peninjau?",
     "Apakah boleh memakai tenaga medis atau terapis yang sudah bermitra dengan Yayasan / Sekolah Inklusi Taruna Imani?",
@@ -38,7 +38,30 @@
       "artikel/terapi-wicara.html",
       "artikel/terapi-aba.html",
       "artikel/sensori-integrasi.html",
-      "artikel/intervensi-dini.html"
+      "artikel/intervensi-dini.html",
+      "artikel/tunagrahita-adalah.html",
+      "artikel/retardasi-mental-adalah.html",
+      "artikel/tunalaras-adalah.html",
+      "artikel/tuna-rungu-adalah.html",
+      "artikel/tuna-daksa-adalah.html",
+      "artikel/tuna-wicara-adalah.html",
+      "artikel/tunaganda-adalah.html",
+      "artikel/hiperaktif-adalah.html",
+      "artikel/slow-learner.html",
+      "artikel/kesulitan-belajar.html",
+      "artikel/diskalkulia-adalah.html",
+      "artikel/gangguan-perkembangan-pervasif.html",
+      "artikel/diagnosis-banding-adhd.html",
+      "artikel/perbedaan-autis-dan-adhd.html",
+      "artikel/apakah-speech-delay-bisa-sembuh.html",
+      "artikel/apakah-tuna-rungu-bisa-sembuh.html",
+      "artikel/terapi-bermain.html",
+      "artikel/floor-time-terapi.html",
+      "artikel/terapis-speech-delay.html",
+      "artikel/macam-macam-terapi-pada-anak.html",
+      "artikel/piramida-sensori-integrasi.html",
+      "artikel/asesmen-abk.html",
+      "artikel/stem-cell-therapy-untuk-autisme-perkembangan.html"
     ]
   }
 }
