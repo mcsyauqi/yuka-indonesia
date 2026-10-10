@@ -34,6 +34,11 @@ jobs:
       # Gate mutu konten (2026-10-09): artikel BARU (datePublished >= 2026-10-10) wajib
       # >= 2000 kata, >= 4 gambar isi, >= 7 FAQ + FAQPage schema, >= 1 tabel. Merah = perluas
       # artikelnya (scripts/lib/article-quality.js), jangan longgarkan angkanya.
+      # Gate anti-duplikat (2026-10-11, Trello gswe5XFa): 3 Okt 2026, 11 artikel baru tayang
+      # dengan judul baru tetapi badan salinan artikel lain. Seluruh folder diperiksa, merah
+      # kalau ada pasangan Jaccard >= 0,70 atau containment >= 0,85 (shingle 8 kata).
+      - name: Anti-duplikat badan artikel
+        run: node scripts/check-article-duplicates.js --all
       - name: Mutu konten artikel baru sejak 2026-10-10
         run: node scripts/check-article-quality.js --since=2026-10-10
       # Utang artikel lama: dilaporkan saja, tidak memblok.

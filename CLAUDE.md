@@ -207,6 +207,8 @@ Kerangka rapi saja tidak cukup. Ukur ulang 2026-10-09 menemukan 15 artikel YUKA 
    - `publish-scheduled.yml`: artikel terjadwal di bawah standar menggagalkan run (merah, tanpa email tayang).
 5. Utang artikel lama dilaporkan (tidak memblok) lewat `node scripts/check-article-quality.js --all --warn-only`.
 
+**Gate anti-duplikat (2026-10-11, Trello gswe5XFa).** Sebelum commit artikel baru atau tulis ulang: `node scripts/check-article-duplicates.js artikel/<slug>.html` wajib OK. Gate ini merah kalau badan artikel menyalin artikel lain (shingle 8 kata, Jaccard >= 0,70 atau containment >= 0,85), dan ikut jalan di `article-skeleton-gate.yml` (`--all`) serta `publish-scheduled.yml`. Asal-usulnya: 3 Okt 2026 dini hari, 11 artikel tayang dengan judul baru tetapi badan salinan artikel lain, dan kartu Trello-nya ditutup COMPLETED. Jangan menyalin artikel lalu mengganti judul; jangan longgarkan ambangnya.
+
 ## Article Template: URL Standards
 
 ### Social Share Buttons

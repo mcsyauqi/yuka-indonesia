@@ -102,6 +102,13 @@ jobs:
               exit 1
             fi
 
+            # Anti-duplicate gate (2026-10-11, Trello gswe5XFa): badan artikel tidak boleh
+            # salinan artikel lain (3 Okt 2026: 11 artikel bertajuk baru berisi salinan).
+            if ! node scripts/check-article-duplicates.js "$file"; then
+              echo "Duplicate gate failed: badan $file menyalin artikel lain. Tulis ulang sesuai topiknya."
+              exit 1
+            fi
+
             # Featured image gate: kartu blog wajib foto dokumentasi, bukan logo,
             # dan berkasnya harus ada (2026-09-28: 8 artikel tayang berkartu logo).
             if echo "$image" | grep -qiE '(^|/)logo[^/]*$|(^|/)Logo/'; then
