@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "date": "2026-10-11",
+    "slug": "tanda-keterlambatan-motorik-halus",
+    "file": "artikel/tanda-keterlambatan-motorik-halus.html",
+    "title": "Tanda Keterlambatan Motorik Halus pada Anak: Panduan per Usia dan Kapan ke Dokter",
+    "description": "Kenali tanda keterlambatan motorik halus anak per usia menurut CDC dan IDAI, kapan ke dokter, penyebab umum, asesmen KPSP, peran terapi okupasi, dan dukungan di rumah.",
+    "image": "Dokumentasi/tanda-keterlambatan-motorik-halus-kunjungan-edukasi.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca"
+  },
+  {
+    "date": "2026-10-12",
+    "slug": "tanda-keterlambatan-motorik-kasar",
+    "file": "artikel/tanda-keterlambatan-motorik-kasar.html",
+    "title": "Tanda Keterlambatan Motorik Kasar pada Anak: Per Usia, Kapan Periksa, dan Cara Mendukung",
+    "description": "Kenali tanda keterlambatan motorik kasar per usia menurut CDC, AAP, dan IDAI, tanda yang perlu segera diperiksa, alur skrining, fisioterapi, dan dukungan rumah serta sekolah.",
+    "image": "Dokumentasi/museum-gunung-merapi-keluarga-besar-foto-bersama-istana-028.webp",
+    "category": "Motorik",
+    "readTime": "12 menit baca"
+  },
+  {
+    "date": "2026-10-13",
+    "slug": "syarat-izin-homeschooling",
+    "file": "artikel/syarat-izin-homeschooling.html",
+    "title": "Syarat Izin Homeschooling: Dasar Hukum, Berkas, dan Prosedur Pendaftaran",
+    "description": "Syarat izin homeschooling menurut Permendikbud 129/2014: berkas daftar sekolahrumah tunggal dan majemuk, izin komunitas, kurikulum wajib, dan ujian kesetaraan.",
+    "image": "Dokumentasi/museum-gunung-merapi-keluarga-dalam-bus-perjalanan-006.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca"
+  },
+  {
+    "date": "2026-10-14",
+    "slug": "alat-bantu-dengar-untuk-anak-sekolah",
+    "file": "artikel/alat-bantu-dengar-untuk-anak-sekolah.html",
+    "title": "Alat Bantu Dengar untuk Anak Sekolah: Jenis, Fitting, Perawatan, dan Penggunaan di Kelas",
+    "description": "Panduan alat bantu dengar untuk anak sekolah: jenis alat, proses fitting oleh audiolog, perawatan harian, penggunaan di kelas, peran guru, dan akses pembiayaan.",
+    "image": "Dokumentasi/alat-bantu-dengar-untuk-anak-sekolah-hero.webp",
+    "category": "Pendidikan",
+    "readTime": "12 menit baca"
+  },
+  {
+    "date": "2026-10-15",
+    "slug": "hak-pendidikan-anak-disabilitas-intelektual",
+    "file": "artikel/hak-pendidikan-anak-disabilitas-intelektual.html",
+    "title": "Hak Pendidikan Anak Disabilitas Intelektual: Dasar Hukum, Akomodasi, dan Langkah Orang Tua",
+    "description": "Hak pendidikan anak disabilitas intelektual dijamin UUD 1945, UU 8/2016, dan PP 13/2020. Pelajari pilihan sekolah, akomodasi yang layak, dokumen, dan cara mengadu.",
+    "image": "Dokumentasi/museum-gunung-merapi-keluarga-perjalanan-dalam-mobil-002.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-10-17",
+    "slug": "identifikasi-dini-disabilitas-intelektual",
+    "file": "artikel/identifikasi-dini-disabilitas-intelektual.html",
+    "title": "Identifikasi Dini Disabilitas Intelektual: Tanda, Tahapan Skrining, dan Langkah Orang Tua",
+    "description": "Panduan identifikasi dini disabilitas intelektual: tanda per usia, beda pemantauan, skrining KPSP, dan evaluasi, siapa yang mendiagnosis, serta langkah orang tua.",
+    "image": "Dokumentasi/museum-gunung-merapi-anak-anak-menonton-auditorium-merah-012.webp",
+    "category": "Disabilitas",
+    "readTime": "13 menit baca"
+  },
+  {
+    "date": "2026-10-18",
+    "slug": "slb-tuna-rungu",
+    "file": "artikel/slb-tuna-rungu.html",
+    "title": "SLB Tuna Rungu (SLB-B): Jenjang, Program Kekhususan, dan Cara Memilihnya",
+    "description": "Panduan SLB tuna rungu (SLB-B): jenjang TKLB sampai SMALB, program kekhususan, beda dengan sekolah inklusi, cara cek data resmi, dan dokumen pendaftaran.",
+    "image": "Dokumentasi/museum-gunung-merapi-gambar-056.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca"
+  }
+]

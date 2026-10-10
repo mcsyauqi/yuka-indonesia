@@ -286,3 +286,12 @@ jobs:
           to: ahmadthariqsyauqi@gmail.com
           from: YUKA Auto-Publisher <noreply@yukaindonesia.com>
           html_body: ${{ steps.publish.outputs.email_html }}
+
+      # Alarm antrean (cycle #76, 2026-10-11). 10 Okt 2026 tidak ada artikel tayang tapi run
+      # tetap hijau: publish-schedule.json sudah [] sejak 9 Okt dan workflow cuma mencetak
+      # "No articles scheduled". Step ini jalan PALING AKHIR (publish hari ini sudah selesai),
+      # lalu membuat run MERAH kalau 3 hari ke depan ada tanggal kosong atau artikel antrean
+      # yang gagal gate mutu. Run merah = GitHub mengirim email kegagalan ke pemilik repo.
+      - name: Guard - antrean 3 hari ke depan + mutu antrean
+        if: always()
+        run: node scripts/check-schedule-gaps.js --window 3 --quality
