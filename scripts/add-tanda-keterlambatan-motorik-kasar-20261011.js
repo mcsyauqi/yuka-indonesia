@@ -32,9 +32,10 @@ const ul = (items) => `<ul>${items.map((x) => `<li>${x}</li>`).join('')}</ul>`;
 const ol = (items) => `<ol>${items.map((x) => `<li>${x}</li>`).join('')}</ol>`;
 
 const hero = image(
-  'Dokumentasi/museum-gunung-merapi-keluarga-besar-foto-bersama-istana-028.webp',
-  'Rombongan siswa, guru, dan pendamping YUKA berfoto bersama di aula berpilar saat kunjungan edukasi',
-  'Anak-anak dengan beragam usia dan kemampuan gerak mengikuti kunjungan edukasi bersama guru dan pendamping. Foto ini dokumentasi kegiatan YUKA, bukan sesi pemeriksaan atau terapi.'
+  // Potongan lanskap 1200x900 dari Dokumentasi/museum-gunung-merapi-wanita-berhijab-di-museum-059.webp (ffmpeg crop 1200:900:0:430).
+  'Dokumentasi/tanda-keterlambatan-motorik-kasar-hero.webp',
+  'Pendamping YUKA berdiri di depan anak tangga lebar pintu masuk Museum Gunung Merapi saat kunjungan edukasi',
+  'Anak tangga yang lebar dan bertingkat seperti di pintu masuk museum ini menuntut keseimbangan dan kekuatan kaki, bagian dari kemampuan motorik kasar. Foto ini dokumentasi kunjungan edukasi YUKA ke Museum Gunung Merapi, bukan sesi pemeriksaan atau terapi.'
 );
 const bodyImages = {
   steps: 'Dokumentasi/candi-plaosan-anak-anak-wisata-candi-borobudur-037.webp',
