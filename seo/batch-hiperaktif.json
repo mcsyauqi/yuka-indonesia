@@ -1,0 +1,61 @@
+{
+  "batch": "klaster-hiperaktif",
+  "card": "https://trello.com/c/7tkqCw3d",
+  "created": "2026-10-11",
+  "pillar": "https://www.yukaindonesia.com/artikel/hiperaktif-adalah",
+  "pillar_focus": "perilaku hiperaktif sehari-hari; pilar ADHD (adhd-adalah) tetap fokus diagnosis klinis",
+  "target_keywords": {
+    "hiperaktif": "hiperaktif-adalah",
+    "apa itu hiperaktif": "hiperaktif-adalah",
+    "hiperaktif artinya": "hiperaktif-artinya",
+    "anakku hiperaktif": "anakku-hiperaktif",
+    "perbedaan anak aktif dan hiperaktif": "anak-aktif-atau-hiperaktif",
+    "cara mengatasi anak hiperaktif": "cara-mengatasi-anak-hiperaktif"
+  },
+  "baseline_gsc": {
+    "property": "https://www.yukaindonesia.com/ (URL-prefix; sc-domain:yukaindonesia.com balas 403 untuk akun API)",
+    "window": "2026-09-12..2026-10-09 (28 hari, dataState all)",
+    "hiperaktif_queries_with_impressions": 0,
+    "hiperaktif_pages_with_impressions": 0,
+    "adhd_adalah": "33 impresi, 19 query, semuanya query ADHD (tidak ada query hiperaktif yang bentrok)"
+  },
+  "items": [
+    {
+      "slug": "hiperaktif-adalah",
+      "url": "https://www.yukaindonesia.com/artikel/hiperaktif-adalah",
+      "status": "done",
+      "type": "pilar (sudah tayang sebelum kartu ini)",
+      "change_2026_10_11": "tautan kontekstual ke 2 artikel turunan + kotak seri hiperaktif (scripts/link-klaster-hiperaktif.js)"
+    },
+    {
+      "slug": "hiperaktif-artinya",
+      "url": "https://www.yukaindonesia.com/artikel/hiperaktif-artinya",
+      "status": "done",
+      "type": "turunan: hiperaktif artinya dan tanda awal (sudah tayang)",
+      "change_2026_10_11": "blok Tentang artikel ini + MedicalWebPage (scripts/medical-provenance-hiperaktif.mjs) + kotak seri"
+    },
+    {
+      "slug": "anakku-hiperaktif",
+      "url": "https://www.yukaindonesia.com/artikel/anakku-hiperaktif",
+      "status": "done",
+      "type": "turunan: panduan orang tua (sudah tayang)",
+      "change_2026_10_11": "blok Tentang artikel ini + MedicalWebPage + kotak seri"
+    },
+    {
+      "slug": "anak-aktif-atau-hiperaktif",
+      "url": "https://www.yukaindonesia.com/artikel/anak-aktif-atau-hiperaktif",
+      "status": "done",
+      "type": "artikel baru: hiperaktif versus aktif normal",
+      "generator": "scripts/gen-klaster-hiperaktif-2026-10-11.js"
+    },
+    {
+      "slug": "cara-mengatasi-anak-hiperaktif",
+      "url": "https://www.yukaindonesia.com/artikel/cara-mengatasi-anak-hiperaktif",
+      "status": "done",
+      "type": "artikel baru: penanganan di rumah dan sekolah",
+      "generator": "scripts/gen-klaster-hiperaktif-2026-10-11.js"
+    }
+  ],
+  "medical_review": "Status jujur: belum ditinjau dokter berlisensi (pola kartu I9gw2TEU). Tidak ada nama peninjau yang dicantumkan.",
+  "remeasure": "GSC query,page 28 hari ulang sekitar 2026-11-10 untuk memastikan query hiperaktif hanya dipetakan ke 1 URL per niat"
+}

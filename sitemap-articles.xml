@@ -67,8 +67,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.yukaindonesia.com/artikel/anak-aktif-atau-hiperaktif</loc>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.yukaindonesia.com/artikel/anakku-hiperaktif</loc>
-    <lastmod>2026-08-12</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -333,6 +339,12 @@
   <url>
     <loc>https://www.yukaindonesia.com/artikel/cara-mengajukan-bantuan-pemerintah-untuk-anak-disabilitas</loc>
     <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.yukaindonesia.com/artikel/cara-mengatasi-anak-hiperaktif</loc>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -614,7 +626,7 @@
   </url>
   <url>
     <loc>https://www.yukaindonesia.com/artikel/hiperaktif-artinya</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
