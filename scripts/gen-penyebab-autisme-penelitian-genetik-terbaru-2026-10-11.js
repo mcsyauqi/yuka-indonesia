@@ -74,8 +74,8 @@ const FAQ = [
 
 const a = {
   slug: 'penyebab-autisme-penelitian-genetik-terbaru',
-  titleTag: 'Penyebab Autisme: Penelitian Genetik Terbaru (2019-2025) | YUKA',
-  metaDesc: 'Penyebab autisme menurut penelitian genetik 2019 sampai 2025: heritabilitas sekitar 80 persen, gen risiko, mutasi de novo, dan fakta vaksin. Baca selengkapnya.',
+  titleTag: 'Penyebab Autisme: Penelitian Genetik Terbaru | YUKA',
+  metaDesc: 'Penyebab autisme menurut riset genetik 2019 sampai 2025: heritabilitas sekitar 80 persen, gen risiko, mutasi de novo, fakta vaksin. Baca selengkapnya.',
   keywords: 'penyebab autisme penelitian genetik terbaru, penyebab autisme genetik, heritabilitas autisme, gen autisme, mutasi de novo autisme, apakah autisme keturunan, vaksin tidak menyebabkan autisme',
   ogTitle: 'Penyebab Autisme: Apa Kata Penelitian Genetik Terbaru',
   ogDesc: 'Ringkasan bukti tentang penyebab autisme: studi kembar dan populasi besar, gen risiko, mutasi de novo, faktor kehamilan, dan mitos yang sudah dibantah.',
