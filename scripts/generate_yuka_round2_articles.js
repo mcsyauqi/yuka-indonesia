@@ -190,6 +190,12 @@ const articles = [
 for (const article of articles.filter((a) => a.slug === 'cara-mengatur-waktu-tidur-anak-autis')) {
   const html = renderArticlePage(article);
   const out = path.join(OUT, `${article.slug}.html`);
+  // 2026-10-11 (Trello GpHA7YxN): artikel ini sudah diperkuat manual (sumber AAN/AASM/NAS/PMC,
+  // blok status tinjauan medis, foto tanpa wajah). Jangan timpa versi itu dengan template generator ini.
+  if (fs.existsSync(out) && fs.readFileSync(out, 'utf8').includes('MEDICAL_REVIEW_STATUS') && !process.argv.includes('--force')) {
+    console.log(`SKIP ${out}: versi yang sudah diperkuat dipertahankan (pakai --force untuk menimpa)`);
+    continue;
+  }
   fs.writeFileSync(out, html);
   console.log(`WROTE ${out} ${html.length} bytes`);
 }
