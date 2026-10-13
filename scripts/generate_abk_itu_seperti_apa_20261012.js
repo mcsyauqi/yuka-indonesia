@@ -36,14 +36,14 @@ const bodyHtml = `
 
 <h2 id="definisi">ABK Itu Seperti Apa? Definisi yang Berpihak pada Kebutuhan</h2>
 <p>Secara sederhana, anak berkebutuhan khusus adalah anak yang membutuhkan dukungan berbeda atau tambahan dibandingkan kebanyakan anak seusianya untuk mengakses kegiatan sehari-hari. Dukungan itu dapat berupa alat bantu, cara komunikasi alternatif, penyesuaian lingkungan, instruksi yang lebih terstruktur, waktu belajar yang fleksibel, pendampingan, atau layanan kesehatan dan pendidikan. Kebutuhan khusus tidak otomatis berarti anak tidak mampu. Sering kali, hambatan muncul karena lingkungan belum menyediakan cara yang sesuai untuk mengakses kegiatan.</p>
-<p>Definisi resmi dalam kebijakan Indonesia menggambarkan ABK sebagai anak yang mengalami keterbatasan atau keluarbiasaan pada aspek fisik, mental-intelektual, sosial, atau emosional yang berpengaruh signifikan pada pertumbuhan dan perkembangan. Kebijakan yang sama menekankan perlindungan hak, kesempatan tumbuh, pendidikan, kesehatan, partisipasi, dan pengembangan keterampilan hidup. Jadi, makna ABK tidak hanya berisi kondisi anak, tetapi juga tanggung jawab keluarga, sekolah, masyarakat, dan pemerintah untuk mengurangi hambatan.</p>
+<p>Buku <em>Psikologi Anak Berkebutuhan Khusus</em> karya Nur Eva dari Universitas Negeri Malang menjelaskan bahwa kebutuhan pendidikan anak dapat berbeda sehingga materi, program, fasilitas, atau layanan perlu disesuaikan. Cakupannya tidak hanya hambatan fisik dan sensorik, tetapi juga kebutuhan belajar serta potensi tinggi. Istilah lama di beberapa literatur perlu dibaca dengan konteks zamannya, bukan dijadikan label yang merendahkan. Dalam pendampingan sehari-hari, makna ABK tidak hanya berisi kondisi anak, tetapi juga peran keluarga, sekolah, masyarakat, dan layanan profesional untuk mengurangi hambatan.</p>
 <p>Dalam praktik, dua anak dengan diagnosis yang sama dapat memerlukan strategi berbeda. Seorang anak mungkin membutuhkan dukungan komunikasi visual, sementara anak lain lebih terbantu oleh waktu transisi yang panjang atau lingkungan yang tidak bising. Karena itu, pendekatan terbaik dimulai dari kebutuhan fungsional yang terlihat, bukan dari asumsi tentang label.</p>
 ${fig('Dokumentasi/museum-gunung-merapi-grup-anak-foto-bersama-istana-026.webp','Sekelompok anak dan pendamping mengikuti kegiatan bersama di ruang publik','Kegiatan kelompok dengan pendamping menunjukkan bahwa dukungan dapat diberikan melalui partisipasi bersama di lingkungan yang beragam.',2080,1560)}
 
 <h2 id="bukan-label">ABK Bukan Label Nilai Anak</h2>
 <p>Ketika seseorang bertanya ABK itu seperti apa, jawaban yang kurang tepat biasanya hanya menyebut keterbatasan. Cara ini dapat membuat anak seolah-olah hanya dilihat dari diagnosis atau kesulitannya. Padahal kebutuhan dukungan tidak menghapus kemampuan anak untuk belajar, membuat pilihan, menikmati pertemanan, berkarya, dan berkontribusi. Bahasa yang digunakan orang dewasa juga memengaruhi cara sekolah dan masyarakat memperlakukan anak.</p>
 <p>Gunakan bahasa yang menghormati anak. Sebut kebutuhan atau hambatan secara spesifik bila memang relevan, misalnya anak membutuhkan instruksi visual, waktu proses lebih panjang, atau akses komunikasi. Hindari menyamakan anak dengan diagnosisnya dan jangan menganggap semua anak dalam satu kelompok memiliki perilaku yang sama. Dalam percakapan keluarga, fokuskan catatan pada situasi, pemicu, kekuatan, dan dukungan yang membantu.</p>
-<p>Sudut pandang ini sejalan dengan pendidikan inklusif. Sekolah tidak hanya meminta anak menyesuaikan diri dengan sistem yang sudah ada, tetapi juga mengevaluasi apakah materi, ruang, jadwal, komunikasi, dan cara penilaian dapat diakses. Orang tua dapat membaca panduan <a href="pendidikan-inklusi">pendidikan inklusi</a> dan <a href="sekolah-inklusi-sleman">sekolah inklusi di Sleman</a> untuk memahami contoh dukungan yang lebih konkret.</p>
+<p>Sudut pandang ini sejalan dengan pendidikan inklusif. Sekolah tidak hanya meminta anak menyesuaikan diri dengan sistem yang sudah ada, tetapi juga mengevaluasi apakah materi, ruang, jadwal, komunikasi, dan cara penilaian dapat diakses. Orang tua dapat membaca panduan <a href="pendidikan-inklusi">pendidikan inklusi</a> dan <a href="../sekolah-inklusi-sleman">sekolah inklusi di Sleman</a> untuk memahami contoh dukungan yang lebih konkret.</p>
 <div class="jawaban-singkat"><p><strong>Intinya:</strong> ABK adalah anak dengan kebutuhan dukungan tertentu, bukan anak yang nilainya lebih rendah. Tujuan pendampingan bukan menghapus keunikan anak, melainkan membuka akses agar anak dapat tumbuh dan berpartisipasi.</p></div>
 
 <h2 id="ragam">Ragam Kebutuhan yang Mungkin Dimiliki Anak</h2>
@@ -77,7 +77,7 @@ ${fig('Dokumentasi/museum-gunung-merapi-grup-wisatawan-foto-bersama-museum-033.w
 <h2 id="rumah">Peran Keluarga di Rumah</h2>
 <p>Keluarga tidak harus menjadi terapis sepanjang hari. Rutinitas yang dapat diprediksi, instruksi yang jelas, kesempatan memilih, dan hubungan yang hangat sudah merupakan fondasi penting. Buat target kecil yang relevan dengan kehidupan sehari-hari, misalnya meminta jeda, menyimpan alat makan, menunggu giliran, atau menyampaikan pilihan. Rayakan usaha dan strategi yang dipakai anak, bukan hanya hasil yang terlihat sempurna.</p>
 <p>Jaga komunikasi antaranggota keluarga. Orang tua dapat membagi peran, menyimpan catatan bersama, dan menyepakati kalimat yang digunakan untuk memberi dukungan. Saudara juga perlu mendapat penjelasan yang sesuai usia agar memahami perbedaan tanpa merasa harus menjadi pengasuh utama. Keluarga yang lelah boleh meminta bantuan praktis dari kerabat, komunitas, sekolah, atau layanan profesional. Membaca <a href="dukungan-keluarga-anak-abk">panduan dukungan keluarga</a> dan <a href="mengelola-stres-orang-tua-anak-abk">cara mengelola stres orang tua</a> dapat menjadi langkah awal.</p>
-<p>Jika keluarga sedang mencari lingkungan kegiatan, lihat informasi tentang <a href="program">program YUKA</a>, <a href="galeri">dokumentasi kegiatan</a>, atau <a href="kontak">kontak YUKA</a>. Pastikan setiap layanan yang dipilih menjelaskan tujuan, metode, batas kompetensi, biaya, dan cara mengevaluasi kemajuan. Waspadai janji kesembuhan pasti atau program yang menyalahkan orang tua.</p>
+<p>Jika keluarga sedang mencari lingkungan kegiatan, lihat informasi tentang <a href="../program">program YUKA</a>, <a href="../galeri">dokumentasi kegiatan</a>, atau <a href="../kontak">kontak YUKA</a>. Pastikan setiap layanan yang dipilih menjelaskan tujuan, metode, batas kompetensi, biaya, dan cara mengevaluasi kemajuan. Waspadai janji kesembuhan pasti atau program yang menyalahkan orang tua.</p>
 
 <h2 id="kapan">Kapan Perlu Mencari Bantuan Profesional?</h2>
 <p>Pertimbangkan konsultasi ketika ada kekhawatiran perkembangan, komunikasi, gerak, belajar, perilaku, kesehatan, makan, tidur, atau interaksi yang menetap dan mengganggu partisipasi anak. Segera cari bantuan medis bila ada kehilangan keterampilan yang sebelumnya sudah dimiliki, kejang, kesulitan bernapas, cedera, masalah makan atau minum yang berisiko, atau kondisi lain yang tampak gawat. Untuk situasi darurat, gunakan layanan kesehatan setempat.</p>
@@ -107,7 +107,7 @@ const article = {
   ogTitle: 'ABK Itu Seperti Apa? Pengertian, Ragam Kebutuhan, dan Dukungan',
   ogDesc: 'Panduan ramah keluarga untuk memahami ABK, mengenali ragam kebutuhan, dan memilih dukungan di rumah maupun sekolah.',
   datePublished: '2026-10-12',
-  dateModified: '2026-10-12',
+  dateModified: '2026-10-13',
   dateDisplay: '12 Oktober 2026',
   readTime: '13 menit baca',
   category: 'Pendidikan',
@@ -131,16 +131,15 @@ const article = {
   ],
   tags: ['ABK', 'Pendidikan Inklusif', 'Parenting', 'Anak Berkebutuhan Khusus'],
   sources: [
-    { url: 'https://jdih.kemenpppa.go.id/dokumen-hukum/produk-hukum/86/download', label: 'KemenPPPA, Kebijakan Penanganan Anak Berkebutuhan Khusus' },
-    { url: 'https://www.dikdasmen.kemdikbud.go.id/faq-spmb-2025', label: 'Kemdikdasmen, FAQ SPMB 2025 dan akses pendidikan inklusif' },
-    { url: 'https://gtkdikmendiksus.kemdikbud.go.id/profil-belajar-siswa/', label: 'Direktorat Guru Pendidikan Menengah dan Pendidikan Khusus, Profil Belajar Siswa' },
-    { url: 'https://www.cdc.gov/act-early/families/concerned.html', label: 'CDC, Concerned About Your Child\'s Development?' },
-    { url: 'https://www.cdc.gov/act-early/early-intervention/index.html', label: 'CDC, Early Intervention' },
+    { url: 'https://lib.um.ac.id/wp-content/uploads/2018/06/BUKU-PABK-NUR-EVA.pdf', label: 'Nur Eva, Universitas Negeri Malang, Psikologi Anak Berkebutuhan Khusus (2015)' },
+    { url: 'https://gtkdikmendiksus.kemendikdasmen.go.id/ayo-berpikir-inklusif/', label: 'Direktorat Guru Pendidikan Menengah dan Pendidikan Khusus, Ayo Berpikir Inklusif' },
+    { url: 'https://www.unicef.org/education/inclusive-education', label: 'UNICEF, Inclusive Education' },
+    { url: 'https://cdc.gov/act-early/families/concerned.html', label: 'CDC, Concerned About Your Child\'s Development?' },
   ],
   sourcesCheckedNote: 'Sumber resmi dibaca dan digunakan untuk memeriksa definisi, hak pendidikan, pemantauan perkembangan, dan rujukan dukungan. Artikel ini tidak menggantikan asesmen individual.',
 };
 
-const html = renderArticlePage(article);
+const html = renderArticlePage(article).replace('<article class="article-content">', '<article class="article-content" data-revision-marker="yuka-abk-20261013-link-source-fix">');
 fs.writeFileSync(path.join(ROOT, 'artikel', `${slug}.html`), html);
 console.log(`wrote artikel/${slug}.html`);
 console.log(`body chars=${bodyHtml.length}`);
