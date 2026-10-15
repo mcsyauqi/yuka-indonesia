@@ -32,10 +32,9 @@ const hero = image(
 );
 
 const bodyImages = {
-  group: 'Dokumentasi/candi-plaosan-anak-anak-wisata-candi-borobudur-109.webp',
-  costume: 'Dokumentasi/candi-plaosan-grup-wisatawan-kostum-tradisional-candi-012.webp',
-  companion: 'Dokumentasi/candi-plaosan-keluarga-wisata-candi-borobudur-077.webp',
-  dance: 'Dokumentasi/candi-plaosan-penari-tradisional-candi-borobudur-064.webp',
+  group: 'Dokumentasi/museum-gunung-merapi-anak-anak-dalam-bus-traveling-001.webp',
+  costume: 'Dokumentasi/cpao-anak-anak-belajar-memasak-tradisional-060.webp',
+  companion: 'Dokumentasi/cpao-anak-membuat-kue-halloween-bersama-023.webp',
   practice: 'Dokumentasi/candi-plaosan-wisatawan-foto-candi-borobudur-047.webp',
 };
 
@@ -74,7 +73,7 @@ const faq = [
   },
 ];
 
-const faqHtml = `<div class="faq-list"><h2 id="faq">Pertanyaan yang Sering Diajukan</h2>${faq.map((f) => `<details><summary>${f.q}</summary><p>${f.a}</p></details>`).join('')}</div>`;
+const faqHtml = `<div class="faq-list"><h2 id="faq">Pertanyaan yang Sering Diajukan</h2>${faq.map((f) => `${h3(f.q)}${p(f.a)}`).join('')}</div>`;
 
 const bodyHtml = [
   '<div class="jawaban-singkat"><p><strong>Jawaban singkat:</strong> anak disabilitas intelektual punya hak yang sama untuk bersekolah. UUD 1945 Pasal 31 menjamin hak setiap warga negara atas pendidikan, UU Nomor 8 Tahun 2016 Pasal 10 menjamin pendidikan bermutu secara inklusif maupun khusus beserta akomodasi yang layak, dan PP Nomor 13 Tahun 2020 Pasal 12 merinci bentuk akomodasinya, misalnya fleksibilitas materi, evaluasi, masa studi, dan ijazah yang menjelaskan capaian anak. Orang tua dapat memilih sekolah inklusi atau sekolah khusus, meminta asesmen fungsional, dan mengadu secara tertulis bila hak ini diabaikan.</p></div>',
@@ -84,7 +83,7 @@ const bodyHtml = [
   p(`Pasal 4 ayat (1) UU Nomor 8 Tahun 2016 tentang Penyandang Disabilitas membagi ragam disabilitas menjadi empat: fisik, intelektual, mental, dan sensorik. Penjelasan pasal tersebut mengartikan penyandang disabilitas intelektual sebagai terganggunya fungsi pikir karena tingkat kecerdasan di bawah rata-rata, antara lain lambat belajar, disabilitas grahita, dan down syndrom. Jadi, istilah yang di sekolah sering disebut ${a('tunagrahita-adalah', 'tunagrahita')} berada dalam ragam ini.`),
   p('Ayat (2) pasal yang sama menyebut ragam disabilitas dapat dialami secara tunggal, ganda, atau multi dalam jangka waktu lama, dan ditetapkan oleh tenaga medis. PP Nomor 13 Tahun 2020 tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas memperjelas bahwa tenaga medis itu adalah dokter dan/atau dokter spesialis. Dokter tersebut dapat disediakan oleh sekolah penyelenggara pendidikan inklusif, Unit Layanan Disabilitas, atau orang tua.'),
   p(`Selain keterangan dokter, Pasal 9 ayat (7) PP 13/2020 menyebut ragam disabilitas juga dapat dibuktikan dengan ${a('kartu-disabilitas', 'kartu penyandang disabilitas')} dari kementerian di bidang sosial. Bagi orang tua, artinya ada lebih dari satu jalan untuk menunjukkan kebutuhan anak. Untuk memahami kondisinya dari sisi perkembangan, baca juga ${a('disabilitas-intelektual', 'panduan disabilitas intelektual')} dan ${a('tunagrahita-ringan-sedang-berat-perbedaan', 'perbedaan tunagrahita ringan, sedang, dan berat')}. Label hukum bukan untuk membatasi anak, melainkan pintu agar dukungan yang menjadi haknya dapat diminta secara resmi.`),
-  fig(bodyImages.group, 'Sekelompok anak dan pendamping berpose bersama di tangga sebuah candi saat kegiatan wisata edukasi', 'Anak dan pendamping berfoto bersama dalam kegiatan wisata edukasi YUKA di kawasan candi. Setiap anak membawa kebutuhan belajar yang berbeda, dan hukum mengakui keragaman itu.'),
+  fig(bodyImages.group, 'Dua anak duduk di dalam kendaraan, dengan anak di depan memakai earphone', 'Dokumentasi perjalanan kegiatan YUKA. Setiap anak membawa minat dan kebutuhan yang berbeda. Foto ini bukan pelaksanaan asesmen atau bukti ragam disabilitas anak.'),
 
   h2('dasar-hukum', 'Dasar Hukum Hak Pendidikan Anak Disabilitas Intelektual'),
   p('Hak pendidikan anak disabilitas intelektual tidak bersandar pada satu aturan saja. Ia berlapis, mulai dari konstitusi sampai peraturan menteri. Pasal 31 ayat (1) UUD 1945 menyatakan setiap warga negara berhak mendapat pendidikan, dan ayat (2) menyatakan setiap warga negara wajib mengikuti pendidikan dasar dan pemerintah wajib membiayainya. Kata "setiap" tidak mengecualikan anak dengan kecerdasan di bawah rata-rata.'),
@@ -105,10 +104,10 @@ const bodyHtml = [
 
   h2('pilihan', 'Pilihan Layanan: Sekolah Inklusi, SLB, dan Jalur Kesetaraan'),
   p(`Hukum tidak mengharuskan anak disabilitas intelektual belajar di satu jenis sekolah. Pasal 10 huruf a UU 8/2016 memakai frasa "secara inklusif dan khusus", sehingga keluarga dapat menimbang ${a('pendidikan-inklusi', 'sekolah inklusi')} maupun ${a('pendidikan-khusus', 'pendidikan khusus')}. Di masyarakat, sekolah luar biasa yang melayani anak dengan hambatan intelektual biasa dikenal sebagai SLB C. Penjelasan lebih lengkap ada di ${a('sekolah-slb-untuk-anak-apa', 'artikel SLB untuk anak apa saja')}.`),
-  p(`Permendikbudristek Nomor 48 Tahun 2023 juga menggantikan aturan lama tentang pendidikan inklusi. Database peraturan BPK mencatat peraturan ini mencabut Permendiknas Nomor 70 Tahun 2009 tentang Pendidikan Inklusi bagi Peserta Didik yang Memiliki Kelainan dan Memiliki Potensi Kecerdasan dan/atau Bakat Istimewa. Jadi, rujukan teknis yang dipakai sekolah sekarang semestinya Permendikbudristek 48/2023. Untuk perbandingan rinci kedua model, baca ${a('apa-perbedaan-sekolah-inklusi-dan-slb', 'perbedaan sekolah inklusi dan SLB')}.`),
+  p(`Permendikbudristek Nomor 48 Tahun 2023 memperbarui aturan akomodasi pendidikan. Ketentuan penutupnya mencabut ketentuan mengenai peserta didik yang memiliki kelainan dalam Permendiknas Nomor 70 Tahun 2009, serta aturan pendidikan khusus dan layanan khusus di perguruan tinggi dalam Permenristekdikti Nomor 46 Tahun 2017. Karena itu, rujukan teknis akomodasi yang layak perlu mengikuti Permendikbudristek 48/2023. Untuk perbandingan rinci kedua model, baca ${a('apa-perbedaan-sekolah-inklusi-dan-slb', 'perbedaan sekolah inklusi dan SLB')}.`),
   '<table class="article-table"><caption>Perbandingan pilihan layanan bagi anak disabilitas intelektual</caption><thead><tr><th>Pilihan</th><th>Dasar aturan</th><th>Cocok dipertimbangkan bila</th><th>Hal yang perlu ditanyakan</th></tr></thead><tbody><tr><td>Sekolah reguler yang inklusif</td><td>UU 8/2016 Pasal 10 huruf a dan Pasal 40 ayat (2)</td><td>Anak siap belajar bersama teman sebaya dengan dukungan</td><td>Ketersediaan guru pendidikan khusus, rasio guru, bentuk penilaian</td></tr><tr><td>Sekolah khusus (SLB)</td><td>UU 20/2003 Pasal 32 ayat (1)</td><td>Anak membutuhkan program yang sangat individual dan kelas kecil</td><td>Program keterampilan hidup, transisi, jarak dari rumah</td></tr><tr><td>Program kesetaraan</td><td>UU 8/2016 Pasal 40 ayat (5)</td><td>Anak belum atau tidak lagi menempuh pendidikan formal</td><td>Penyelenggara, jadwal, bentuk ijazah</td></tr></tbody></table>',
   p('Apa pun pilihannya, keputusan sebaiknya berangkat dari kebutuhan anak, bukan hanya dari ketersediaan kursi. Kunjungi sekolah, amati kelas, dan tanyakan bagaimana mereka menyusun program individual. Pilihan juga boleh berubah seiring perkembangan anak.'),
-  fig(bodyImages.costume, 'Rombongan anak dan pendamping berkostum warna-warni duduk berjajar di depan sebuah candi', 'Rombongan anak dan pendamping YUKA dalam kegiatan seni dan wisata edukasi. Kegiatan bersama seperti ini menunjukkan bahwa partisipasi dapat dirancang untuk banyak kemampuan sekaligus.'),
+  fig(bodyImages.costume, 'Anak-anak memakai celemek dan penutup kepala duduk bersama pendamping di meja kegiatan', 'Dokumentasi kegiatan YUKA bersama anak dan pendamping. Kesempatan mengikuti kegiatan bersama merupakan bagian dari partisipasi anak, bukan bukti penyelenggaraan layanan hukum tertentu.'),
 
   h2('akomodasi', 'Bentuk Akomodasi yang Layak untuk Disabilitas Intelektual'),
   p('PP Nomor 13 Tahun 2020 Pasal 1 mengartikan akomodasi yang layak sebagai modifikasi dan penyesuaian yang tepat dan diperlukan untuk menjamin penikmatan atau pelaksanaan hak asasi dan kebebasan fundamental bagi penyandang disabilitas berdasarkan kesetaraan. Bagian yang paling berguna bagi orang tua adalah Pasal 12, karena pasal itu khusus mengatur peserta didik penyandang disabilitas intelektual.'),
@@ -131,7 +130,7 @@ const bodyHtml = [
   p(`Ayat (6) pasal tersebut mengatur bahwa pemenuhan kebutuhan akomodasi dilakukan melalui konsultasi yang melibatkan peserta didik, orang tua atau wali, dan Unit Layanan Disabilitas. Dengan kata lain, orang tua bukan penonton. Anda berhak duduk bersama sekolah dan ikut menentukan dukungan yang dipakai. Gambaran prosesnya dapat dibaca di ${a('asesmen-abk', 'asesmen ABK')}.`),
   p(`Untuk kurikulum, Pasal 11 ayat (4) aturan yang sama membedakan dua kelompok. Bagi peserta didik tanpa hambatan intelektual, modifikasi cukup pada standar proses. Bagi peserta didik dengan hambatan intelektual, modifikasi dilakukan terhadap standar kompetensi lulusan, standar isi, standar proses, dan standar penilaian. Hasilnya biasanya dituangkan dalam ${a('program-pembelajaran-individual', 'program pembelajaran individual')}, dengan isi yang dapat menekankan ${a('kurikulum-fungsional-untuk-anak-tunagrahita', 'kurikulum fungsional')} sesuai usia dan minat anak.`),
   p('Mintalah hasil asesmen dan rencana pembelajaran dalam bentuk tertulis. Dokumen itu menjadi pegangan bersama, memudahkan evaluasi berkala, dan berguna bila anak pindah sekolah.'),
-  fig(bodyImages.companion, 'Seorang pendamping perempuan berdiri di antara dua remaja di lorong batu sebuah candi', 'Pendamping bersama dua remaja dalam kegiatan wisata edukasi YUKA. Dalam asesmen dan konsultasi akomodasi, suara anak dan pendampingnya sama-sama perlu didengar.'),
+  fig(bodyImages.companion, 'Seorang anak memakai celemek dan penutup kepala merah muda sambil menunjukkan kue kecil di atas piring', 'Seorang anak menunjukkan hasil kegiatannya dalam dokumentasi YUKA. Pilihan kegiatan dan cara anak menyampaikan hasil belajar dapat menjadi bahan diskusi dukungan individual. Foto ini bukan pelaksanaan asesmen formal.'),
 
   h2('uld', 'Peran Unit Layanan Disabilitas (ULD)'),
   p('Pasal 42 ayat (1) UU 8/2016 mewajibkan pemerintah daerah memfasilitasi pembentukan Unit Layanan Disabilitas untuk mendukung pendidikan inklusif tingkat dasar dan menengah. Fungsinya, menurut ayat (2), antara lain meningkatkan kompetensi guru di sekolah reguler, menyediakan pendampingan bagi peserta didik, mengembangkan program kompensatorik, menyediakan media pembelajaran dan alat bantu, deteksi dan intervensi dini, serta layanan konsultasi.'),
@@ -151,7 +150,7 @@ const bodyHtml = [
     '<strong>Surat permohonan akomodasi tertulis</strong> yang menyebut bentuk dukungan yang diminta dan merujuk Pasal 12 PP 13/2020.',
   ]),
   p('Simpan salinan setiap berkas dan catat tanggal penyerahan. Arsip yang rapi memudahkan Anda bila nanti perlu meminta peninjauan atau menyampaikan pengaduan.'),
-  fig(bodyImages.dance, 'Tujuh anak berkostum tari tradisional berpose di depan pintu candi', 'Anak-anak YUKA berkostum tari dalam kegiatan seni di kawasan candi. Catatan tentang apa yang disukai dan membuat anak nyaman sama berharganya dengan surat keterangan resmi.'),
+
 
   h2('ditolak', 'Langkah Orang Tua Bila Hak Pendidikan Anak Ditolak'),
   p('Penolakan sering terjadi karena sekolah merasa belum siap, bukan semata karena niat buruk. Karena itu, mulailah dengan dialog. Bila dialog tidak berhasil, aturan menyediakan jalur yang jelas. Berikut urutan yang dapat Anda tempuh:'),
@@ -199,17 +198,18 @@ const article = {
   ],
   tags: ['DisabilitasIntelektual', 'HakPendidikan', 'AkomodasiYangLayak', 'PendidikanInklusif'],
   sources: [
-    { url: 'https://peraturan.bpk.go.id/Details/101646/uud-no---uud-1945-dan-amandemen', label: 'JDIH BPK, UUD 1945 dan Amandemen (Pasal 31)' },
-    { url: 'https://peraturan.bpk.go.id/Details/43920/uu-no-20-tahun-2003', label: 'JDIH BPK, UU Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional (Pasal 5 dan 32)' },
-    { url: 'https://peraturan.bpk.go.id/Details/37251/uu-no-8-tahun-2016', label: 'JDIH BPK, UU Nomor 8 Tahun 2016 tentang Penyandang Disabilitas (Pasal 4, 5, 10, 40 sampai 43)' },
-    { url: 'https://peraturan.bpk.go.id/Details/39255/uu-no-19-tahun-2011', label: 'JDIH BPK, UU Nomor 19 Tahun 2011 tentang Pengesahan CRPD' },
+    { url: 'https://jdih.bp2mi.go.id/uploads/20191011/20191011093525_6_UUD45_Tahun_1945_Tentang_Perubahan_Keempat_UUD45.pdf', label: 'JDIH BP2MI, Perubahan Keempat UUD 1945 (Pasal 31)' },
+    { url: 'https://peraturan.go.id/id/uu-no-20-tahun-2003', label: 'Direktorat Jenderal Peraturan Perundang-undangan, UU Nomor 20 Tahun 2003 tentang Sistem Pendidikan Nasional (Pasal 5 dan 32)' },
+    { url: 'https://peraturan.go.id/id/uu-no-8-tahun-2016', label: 'Direktorat Jenderal Peraturan Perundang-undangan, UU Nomor 8 Tahun 2016 tentang Penyandang Disabilitas (Pasal 4, 5, 10, 40 sampai 43)' },
+    { url: 'https://peraturan.go.id/id/uu-no-19-tahun-2011', label: 'Direktorat Jenderal Peraturan Perundang-undangan, UU Nomor 19 Tahun 2011 tentang Pengesahan CRPD' },
     { url: 'https://social.desa.un.org/issues/disability/crpd/article-24-education', label: 'UN DESA, CRPD Article 24: Education' },
-    { url: 'https://peraturan.bpk.go.id/Details/132596/pp-no-13-tahun-2020', label: 'JDIH BPK, PP Nomor 13 Tahun 2020 tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas' },
-    { url: 'https://peraturan.bpk.go.id/Details/285711/permendikbudriset-no-48-tahun-2023', label: 'JDIH BPK, Permendikbudristek Nomor 48 Tahun 2023 tentang Akomodasi yang Layak' },
+    { url: 'https://peraturan.go.id/id/pp-no-13-tahun-2020', label: 'Direktorat Jenderal Peraturan Perundang-undangan, PP Nomor 13 Tahun 2020 tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas' },
+    { url: 'https://lldikti13.kemdiktisaintek.go.id/2023/08/24/permendikbudristek-no-48-tahun-2023/', label: 'LLDIKTI Wilayah XIII, Permendikbudristek Nomor 48 Tahun 2023 dan tautan salinan resmi' },
+    { url: 'https://drive.google.com/uc?export=download&id=1dTEwSA2W9mSGCZdvQxKfhlIjdw33szuR', label: 'Naskah Permendikbudristek Nomor 48 Tahun 2023 dari tautan publik LLDIKTI Wilayah XIII (PDF)' },
   ],
-  sourcesCheckedNote: 'Naskah peraturan dibaca langsung dari salinan resmi di JDIH BPK dan teks CRPD dari situs PBB pada 11 Oktober 2026. Artikel ini adalah informasi umum, bukan nasihat hukum untuk kasus tertentu.',
+  sourcesCheckedNote: 'Akses sumber diperiksa kembali pada 15 Oktober 2026 melalui basis peraturan resmi, arsip JDIH BP2MI, publikasi LLDIKTI Wilayah XIII beserta salinan PDF yang ditautkannya, dan situs PBB. Artikel ini adalah informasi umum, bukan nasihat hukum untuk kasus tertentu.',
 };
 
-const html = renderArticlePage(article);
+const html = renderArticlePage(article).replace('<article class="article-content">', '<article class="article-content" data-revision-marker="yuka-autopilot-20261015-0500-quality-r1">');
 fs.writeFileSync(path.join(ROOT, 'artikel', `${slug}.html`), html, 'utf8');
 console.log(JSON.stringify({ slug, bytes: html.length, bodyWords: stripTags(bodyHtml).split(/\s+/).filter(Boolean).length, faq: faq.length, sources: article.sources.length, images: [hero.file, ...Object.values(bodyImages)] }, null, 2));

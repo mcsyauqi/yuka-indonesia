@@ -35,11 +35,11 @@ const hero = image(
   'Anak dan pendamping YUKA dalam kunjungan edukasi bersama. Foto ini dokumentasi kegiatan, bukan sesi pemeriksaan atau pemasangan alat bantu dengar.'
 );
 const bodyImages = {
-  group: 'Dokumentasi/candi-plaosan-anak-anak-wisata-candi-borobudur-078.webp',
-  seated: 'Dokumentasi/candi-plaosan-wisatawan-foto-bersama-candi-borobudur-065.webp',
+  group: 'Dokumentasi/cpao-instruktur-memasak-kelas-kuliner-063.webp',
+
   bus: 'Dokumentasi/museum-gunung-merapi-keluarga-muslim-dalam-bus-003.webp',
   companion: 'Dokumentasi/candi-plaosan-wisatawan-berpose-candi-prambanan-010.webp',
-  student: 'Dokumentasi/candi-plaosan-wisatawan-candi-borobudur-berpose-104.webp',
+  student: 'Dokumentasi/cpao-wanita-istirahat-warung-pedesaan-059.webp',
 };
 
 const faq = [
@@ -68,8 +68,8 @@ const bodyHtml = [
   h2('mengapa', 'Mengapa Alat Bantu Dengar Penting untuk Anak Sekolah?'),
   p('Sekolah adalah tempat anak menghabiskan banyak waktu untuk mendengar: penjelasan guru, pertanyaan teman, instruksi saat olahraga, sampai pengumuman di halaman. Anak dengan gangguan pendengaran yang tidak mendapat dukungan bisa tertinggal bukan karena kurang mampu, tetapi karena informasinya tidak sampai dengan jelas. Itulah sebabnya alat bantu dengar sering menjadi bagian penting dari rencana belajar anak dengan <a href="tuna-rungu-adalah">tuna rungu</a> atau gangguan dengar ringan sampai berat.'),
   p('Organisasi Kesehatan Dunia (WHO) memperkirakan sekitar 95,1 juta anak dan remaja usia 5 sampai 19 tahun hidup dengan gangguan pendengaran di seluruh dunia. WHO juga menjelaskan bahwa rehabilitasi pendengaran membantu seseorang berpartisipasi dalam pendidikan, pekerjaan, dan kehidupan keluarga. Salah satu bentuknya adalah penyediaan dan pelatihan memakai teknologi pendengaran, seperti alat bantu dengar, implan koklea, dan implan hantaran tulang.'),
-  p('Meski begitu, alat bukan satu-satunya jawaban. CDC menegaskan tidak ada satu penanganan yang tepat untuk setiap anak dan keluarga. Sebagian anak memakai alat bantu dengar bersama terapi wicara, sebagian juga belajar <a href="bahasa-isyarat-tuna-rungu">bahasa isyarat</a>, dan sebagian memadukan beberapa cara komunikasi. Yang terpenting, anak mendapat akses bahasa yang konsisten di rumah maupun di sekolah, lalu kemajuannya dipantau bersama.'),
-  fig(bodyImages.group, 'Sekelompok anak dan remaja berkaus seragam kegiatan berpose bersama di tangga candi', 'Kegiatan kelompok di luar kelas juga menuntut anak menangkap instruksi lisan. Foto ini dokumentasi kunjungan edukasi YUKA, bukan sesi pemeriksaan pendengaran.'),
+  p('Meski begitu, alat bukan satu-satunya jawaban. ASHA menempatkan alat bantu dengar sebagai salah satu bagian rencana habilitasi atau rehabilitasi yang disusun bersama anak, keluarga, dan tim profesional. Rencana dukungan dapat mencakup latihan mendengar, terapi bicara dan bahasa, serta komunikasi lisan, tertulis, atau <a href="bahasa-isyarat-tuna-rungu">bahasa isyarat</a> sesuai kebutuhan anak. Yang terpenting, anak mendapat akses bahasa yang konsisten di rumah maupun di sekolah, lalu kemajuannya dipantau bersama.'),
+  fig(bodyImages.group, 'Dua peserta memakai celemek dan penutup kepala biru duduk di meja kegiatan', 'Instruksi yang jelas dan dukungan visual membantu akses komunikasi saat kegiatan bersama. Foto ini dokumentasi kegiatan YUKA, bukan pemeriksaan pendengaran atau pemasangan alat.'),
 
   h2('jenis', 'Jenis Alat Bantu Dengar dan Perangkat Pendengaran untuk Anak'),
   p('Istilah alat bantu dengar sering dipakai untuk semua perangkat pendengaran, padahal cara kerjanya berbeda. Uraian berikut bersifat umum dan tidak merujuk merek tertentu. Pilihan untuk seorang anak hanya bisa ditentukan setelah pemeriksaan, karena dipengaruhi jenis dan derajat gangguan dengar, bentuk telinga, kondisi medis, serta kebutuhan komunikasi anak.'),
@@ -78,7 +78,7 @@ const bodyHtml = [
   h3('Penerima di liang telinga dan di dalam telinga (RIC dan ITE)'),
   p('Pada model penerima di liang telinga, badan alat tetap di belakang telinga, tetapi pengeras suaranya berada di liang telinga dan tersambung kabel tipis. Model di dalam telinga (in-the-ear, ITE) dibuat mengikuti bentuk telinga dan duduk di liang atau mangkuk telinga. ASHA mencatat sebagian model ini lebih sesuai untuk anak yang lebih besar dan remaja.'),
   h2('perangkat-lain', 'Perangkat Hantaran Tulang dan Implan Koklea'),
-  p('Perangkat hantaran tulang (bone conduction) meneruskan suara lewat getaran tulang tengkorak, dan dapat dipasang dengan ikat kepala atau ditanam. CDC menyebutnya dapat dipertimbangkan untuk gangguan dengar konduktif, campuran, atau satu sisi, terutama bila anak tidak bisa memakai model biasa. Implan koklea berbeda lagi: perangkat ini dipasang lewat operasi dan dipertimbangkan bila gangguan dengar berat dan alat bantu dengar tidak cukup membantu.'),
+  p('Perangkat hantaran tulang (bone conduction) meneruskan suara lewat getaran tulang tengkorak. NIDCD, bagian dari NIH, menjelaskan bahwa alat bantu dengar yang ditambatkan pada tulang (BAHA) meneruskan getaran menuju telinga dalam dengan melewati telinga tengah, dan umumnya digunakan untuk masalah telinga tengah atau tuli pada satu telinga. Kesesuaian perangkat untuk anak tetap harus dinilai oleh dokter THT dan audiolog. Implan koklea berbeda lagi: perangkat ini dipasang lewat operasi dan dipertimbangkan bila gangguan dengar berat dan alat bantu dengar tidak cukup membantu.'),
   '<table class="article-table"><caption>Gambaran umum jenis perangkat pendengaran pada anak (tanpa merek)</caption><thead><tr><th>Jenis</th><th>Cara kerja singkat</th><th>Catatan untuk anak sekolah</th></tr></thead><tbody><tr><td>Di belakang telinga (BTE)</td><td>Memperkeras suara, disalurkan lewat selang ke cetakan telinga</td><td>Paling umum pada anak, cetakan diganti seiring pertumbuhan, umumnya mendukung mikrofon jarak jauh</td></tr><tr><td>Penerima di liang telinga (RIC)</td><td>Badan di belakang telinga, pengeras suara di liang telinga</td><td>Bentuk lebih ringkas, sesuai atau tidaknya ditentukan audiolog</td></tr><tr><td>Di dalam telinga (ITE)</td><td>Seluruh alat dibuat mengikuti bentuk telinga</td><td>Lebih sering untuk anak besar dan remaja karena telinga anak kecil masih tumbuh</td></tr><tr><td>Hantaran tulang</td><td>Meneruskan suara lewat getaran tulang tengkorak</td><td>Pilihan untuk gangguan konduktif, campuran, atau satu sisi tertentu</td></tr><tr><td>Implan koklea</td><td>Bagian dalam ditanam lewat operasi, merangsang saraf pendengaran</td><td>Untuk gangguan berat yang tidak cukup terbantu alat biasa, perlu pemrograman berkala dan latihan mendengar</td></tr></tbody></table>',
 
   h2('fitting', 'Proses Pemeriksaan dan Fitting oleh Audiolog atau Dokter THT'),
@@ -116,7 +116,7 @@ const bodyHtml = [
   p('Sistem FM atau mikrofon jarak jauh terdiri dari mikrofon kecil yang dipakai guru dan penerima yang tersambung ke alat dengar anak. Suara guru langsung sampai ke telinga anak tanpa banyak tertutup bising. Pedoman Kemenkes menyebut pemilihan alat untuk anak perlu memperhatikan aksesibilitas teknologi mikrofon jarak jauh, dan sistem ini dapat meningkatkan perbandingan sinyal terhadap bising di kelas. Tanyakan ke audiolog apakah anak membutuhkannya.'),
   '<table class="article-table"><caption>Hambatan mendengar di kelas dan penyesuaian sederhana</caption><thead><tr><th>Hambatan</th><th>Dampak pada anak</th><th>Penyesuaian yang bisa dicoba</th></tr></thead><tbody><tr><td>Kebisingan dari luar dan kipas</td><td>Suara guru tertutup bising</td><td>Duduk jauh dari jendela ramai, matikan alat berisik saat tidak dipakai</td></tr><tr><td>Gema di ruangan berdinding keras</td><td>Ucapan terdengar bercampur dan kabur</td><td>Gorden, karpet, papan gabus di dinding, alas lembut di kaki kursi</td></tr><tr><td>Guru berbicara sambil membelakangi</td><td>Anak kehilangan petunjuk gerak bibir</td><td>Menghadap kelas saat menjelaskan, tulis instruksi penting di papan</td></tr><tr><td>Diskusi kelompok yang ramai</td><td>Anak sulit mengikuti giliran bicara</td><td>Atur giliran bicara, ulangi jawaban teman, kelompok kecil di sudut tenang</td></tr></tbody></table>',
   p('Penyesuaian ruangan di tabel ini bersumber dari saran ASHA tentang akustik kelas. Kelas yang lebih tenang juga membantu siswa lain dan menjaga suara guru. Untuk ide penataan yang lebih luas, baca juga tulisan kami tentang <a href="classroom-management-kelas-inklusi">pengelolaan kelas inklusi</a>.'),
-  fig(bodyImages.seated, 'Deretan anak dan pendamping berkostum warna-warni duduk di batur candi, di depan rumput hijau', 'Saat berkumpul dalam kelompok besar, posisi duduk ikut menentukan seberapa jelas anak menangkap arahan. Foto ini dokumentasi kegiatan budaya YUKA, bukan kegiatan kelas.'),
+
 
   h2('guru', 'Peran Guru dan Shadow Teacher'),
   p('ASHA menyebut perawatan anak pengguna alat bantu dengar melibatkan tim, termasuk audiolog, dokter THT, terapis wicara, guru kelas, dan guru bagi anak tuli. Di Indonesia, peran ini sering dibagi antara guru kelas, guru pendamping khusus, dan <a href="shadow-teacher-adalah">shadow teacher</a>. Guru tidak perlu menjadi ahli audiologi, tetapi perlu tahu cara kerja dasar alat dan apa yang harus dilakukan bila alat bermasalah.'),
@@ -146,7 +146,7 @@ const bodyHtml = [
   p('Biaya sering menjadi pertanyaan pertama keluarga. Perpres Nomor 82 Tahun 2018 tentang Jaminan Kesehatan menyebut manfaat Jaminan Kesehatan mencakup alat kesehatan sesuai kebutuhan medis, termasuk alat bantu kesehatan. Untuk alat bantu dengar secara khusus, Pedoman Nasional Pelayanan Kedokteran Tata Laksana Tuli Sensorineural Kongenital yang ditetapkan Kemenkes tahun 2022 mencatat alat bantu dengar diberikan kepada peserta BPJS Kesehatan sesuai indikasi medis, dengan plafon harga dan batasan waktu pengambilan.'),
   p('Dokumen yang sama menulis bahwa saat itu tarif yang diberikan maksimal satu juta rupiah dan paling cepat lima tahun sekali per telinga, dan menilai jumlah itu belum mencukupi kebutuhan orang tua anak dengan gangguan pendengaran. Aturan tarif dapat diperbarui, sehingga keluarga perlu menanyakan ketentuan terbaru langsung ke fasilitas kesehatan rujukan atau kantor BPJS Kesehatan, termasuk syarat rujukan dan dokumen yang dibutuhkan.'),
   p('Selain jaminan kesehatan, beberapa keluarga mencari dukungan dari program pemerintah daerah, lembaga sosial, atau donatur. Ringkasan program yang tersedia dapat dibaca di <a href="program-pemerintah-untuk-abk">program pemerintah untuk ABK</a>. Apa pun sumbernya, pastikan alat tetap dipilih dan disetel oleh tenaga profesional, serta tanyakan biaya lanjutan seperti baterai, cetakan baru, servis, dan kontrol berkala sebelum memutuskan.'),
-  fig(bodyImages.student, 'Seorang remaja berkaus merah muda dan rok rumbai biru berdiri di halaman rumput depan candi', 'Dukungan pembiayaan membantu anak tetap mengikuti kegiatan belajar dan budaya bersama teman-temannya. Foto ini dokumentasi kegiatan YUKA.'),
+  fig(bodyImages.student, 'Seorang perempuan berkerudung merah dan penutup kepala biru duduk di meja kayu dalam bangunan terbuka', 'Dokumentasi kegiatan YUKA. Pembahasan pembiayaan di atas adalah informasi umum, bukan klaim bahwa foto ini menunjukkan pengadaan atau penyerahan alat bantu dengar.'),
 
   h2('kontrol', 'Kapan Anak Perlu Kembali ke Audiolog?'),
   p('Pendengaran anak dapat berubah, telinga terus tumbuh, dan kebutuhan belajar bertambah seiring naik kelas. Pedoman Kemenkes menyebut gangguan pendengaran progresif umum terjadi pada bayi dan anak, sehingga alat perlu bisa disetel ulang. Selain jadwal kontrol rutin yang ditentukan audiolog, ada beberapa tanda yang membuat anak perlu diperiksa lebih cepat.'),
@@ -192,17 +192,17 @@ const article = {
   sources: [
     { url: 'https://www.who.int/news-room/fact-sheets/detail/deafness-and-hearing-loss', label: 'WHO, Deafness and hearing loss (fact sheet)' },
     { url: 'https://www.who.int/publications/i/item/9789240020481', label: 'WHO, World report on hearing' },
-    { url: 'https://www.cdc.gov/hearing-loss-children/treatment/index.html', label: 'CDC, Treatment and Intervention for Hearing Loss in Children' },
+    { url: 'https://www.nidcd.nih.gov/health/hearing-aids', label: 'NIDCD, Hearing Aids' },
     { url: 'https://www.asha.org/practice-portal/professional-issues/hearing-aids-for-children/', label: 'ASHA Practice Portal, Hearing Aids for Children' },
     { url: 'https://www.asha.org/public/hearing/classroom-acoustics/', label: 'ASHA, Classroom Acoustics' },
     { url: 'https://www.asha.org/public/hearing/cochlear-implant/', label: 'ASHA, Cochlear Implants' },
     { url: 'https://kemkes.go.id/app_asset/file_content_download/17000957756555671f5a24a4.07748915.pdf', label: 'Kemenkes, KMK HK.01.07/MENKES/1989/2022 tentang PNPK Tata Laksana Tuli Sensorineural Kongenital' },
-    { url: 'https://peraturan.bpk.go.id/Details/94711/perpres-no-82-tahun-2018', label: 'JDIH BPK, Perpres Nomor 82 Tahun 2018 tentang Jaminan Kesehatan' },
+    { url: 'https://peraturan.go.id/id/perpres-no-82-tahun-2018', label: 'Direktorat Jenderal Peraturan Perundang-undangan, Perpres Nomor 82 Tahun 2018 tentang Jaminan Kesehatan' },
   ],
   sourcesCheckedNote: 'Sumber resmi diperiksa pada 11 Oktober 2026. Artikel ini tidak memberikan diagnosis, rekomendasi merek, atau penyetelan alat untuk anak tertentu.',
   editorialHtml,
 };
 
-const html = renderArticlePage(article);
+const html = renderArticlePage(article).replace('<article class="article-content">', '<article class="article-content" data-revision-marker="yuka-autopilot-20261015-0500-quality-r1">');
 fs.writeFileSync(path.join(ROOT, 'artikel', `${slug}.html`), html, 'utf8');
 console.log(JSON.stringify({ slug, bytes: html.length, bodyWords: stripTags(bodyHtml).split(/\s+/).filter(Boolean).length, faq: faq.length, sources: article.sources.length, images: [hero.file, ...Object.values(bodyImages)] }, null, 2));
