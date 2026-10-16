@@ -64,7 +64,6 @@ const SRC = {
   ipc: 'https://www.paralympic.org/classification',
   kemensos: 'https://kemensos.go.id/en/social-minister-calls-athletes-with-intellectual-disabilities-able-to-create-a-world-inclusive-society',
   jateng: 'https://jatengprov.go.id/beritadaerah/bupati-blora-dukung-pendidikan-anak-difabel/',
-  cdc: 'https://www.cdc.gov/physical-activity-basics/guidelines/children.html',
   who: 'https://www.who.int/news-room/fact-sheets/detail/physical-activity',
 };
 
@@ -82,7 +81,7 @@ const faq = [
 const faqBody = `${h2('faq', 'Pertanyaan yang Sering Diajukan')}\n${faq.map((f) => `${h3(f.q)}\n${p(f.a)}`).join('\n')}`;
 
 const bodyHtml = [
-  `<div class="jawaban-singkat"><p><strong>Jawaban singkat:</strong> Special Olympics Indonesia (SOIna) adalah organisasi nirlaba yang terakreditasi oleh Special Olympics International untuk menyelenggarakan pelatihan dan kompetisi olahraga sepanjang tahun bagi penyandang disabilitas intelektual. Gerakan globalnya berawal dari Camp Shriver yang didirikan Eunice Kennedy Shriver pada awal 1960-an. Anak bisa bergabung melalui klub SOIna di sekolah, SLB, atau komunitas, mulai dari program bermain Young Athletes untuk usia 2 sampai 7 tahun.</p></div>`,
+  `<div class="jawaban-singkat" data-revision-marker="yuka-20261016b-special-olympics-citation-r1"><p><strong>Jawaban singkat:</strong> Special Olympics Indonesia (SOIna) adalah organisasi nirlaba yang terakreditasi oleh Special Olympics International untuk menyelenggarakan pelatihan dan kompetisi olahraga sepanjang tahun bagi penyandang disabilitas intelektual. Gerakan globalnya berawal dari Camp Shriver yang didirikan Eunice Kennedy Shriver pada awal 1960-an. Anak bisa bergabung melalui klub SOIna di sekolah, SLB, atau komunitas, mulai dari program bermain Young Athletes untuk usia 2 sampai 7 tahun.</p></div>`,
   '<div class="toc"><h3>Daftar Isi</h3><ol><li><a href="#apa-itu">Apa itu Special Olympics?</a></li><li><a href="#sejarah">Sejarah singkat gerakan Special Olympics</a></li><li><a href="#soina">Mengenal Special Olympics Indonesia (SOIna)</a></li><li><a href="#cabang">Cabang olahraga dan cara bertanding</a></li><li><a href="#program">Program Unified Sports, Young Athletes, dan Healthy Athletes</a></li><li><a href="#paralimpiade">Perbedaan Special Olympics dan Paralimpiade</a></li><li><a href="#cara-ikut">Cara anak ikut SOIna</a></li><li><a href="#manfaat">Manfaat olahraga bagi anak dengan disabilitas intelektual</a></li><li><a href="#peran">Peran keluarga dan sekolah</a></li><li><a href="#faq">Pertanyaan yang sering diajukan</a></li></ol></div>',
 
   h2('apa-itu', 'Apa Itu Special Olympics?'),
@@ -144,7 +143,7 @@ const bodyHtml = [
   p(`Bila anak belum siap bertanding, tidak apa-apa. Banyak klub juga menyelenggarakan kegiatan non-olahraga seperti seni dan budaya. ${ext(SRC.soinaKlub, 'SOIna')} menyebut klub dimaksudkan menjadi ruang yang aman dan menyenangkan agar atlet tetap aktif, bahkan setelah usia sekolah.`),
 
   h2('manfaat', 'Manfaat Olahraga bagi Anak dengan Disabilitas Intelektual'),
-  p(`Aktivitas fisik penting bagi semua anak, termasuk anak dengan disabilitas. ${ext(SRC.who, 'WHO')} menjelaskan bahwa pedoman aktivitas fisiknya juga berlaku bagi orang yang hidup dengan disabilitas, dan menegaskan bahwa aktivitas fisik sekecil apa pun lebih baik daripada tidak sama sekali. ${ext(SRC.cdc, 'CDC')} merekomendasikan anak usia 6 sampai 17 tahun bergerak dengan intensitas sedang hingga berat minimal 60 menit setiap hari.`),
+  p(`Aktivitas fisik penting bagi semua anak, termasuk anak dengan disabilitas. ${ext(SRC.who, 'WHO')} menjelaskan bahwa pedoman aktivitas fisiknya juga berlaku bagi orang yang hidup dengan disabilitas, dan menegaskan bahwa aktivitas fisik sekecil apa pun lebih baik daripada tidak sama sekali.`),
   p('Bagi anak dengan disabilitas intelektual, olahraga yang terstruktur menawarkan lebih dari kebugaran. Latihan yang berulang dan bertahap memberi kesempatan untuk belajar mengikuti instruksi, menunggu giliran, dan menyelesaikan tugas. Hal ini sejalan dengan temuan Young Athletes yang dilaporkan Special Olympics, yaitu peningkatan keterampilan motorik serta keterampilan sosial dan belajar menurut orang tua dan guru.'),
   ul([
     '<strong>Kebugaran dan kesehatan:</strong> gerak teratur membantu kekuatan otot, keseimbangan, dan daya tahan.',
@@ -215,7 +214,7 @@ const article = {
     { url: SRC.kemensos, label: 'Kementerian Sosial RI, berita HUT ke-32 SOIna (Agustus 2021)' },
     { url: SRC.jateng, label: 'Pemerintah Provinsi Jawa Tengah, Bupati Blora Dukung Pendidikan Anak Difabel' },
     { url: SRC.who, label: 'WHO, Physical activity (fact sheet)' },
-    { url: SRC.cdc, label: 'CDC, Physical Activity Guidelines for Children' },
+
   ],
   sourcesCheckedNote: 'Sumber resmi diperiksa pada 11 Oktober 2026. Data organisasi (jumlah klub, cabang olahraga, pengurus) dapat berubah; rujuk situs resmi SOIna untuk informasi terbaru. Foto dalam artikel ini adalah dokumentasi kegiatan YUKA, bukan kegiatan Special Olympics.',
 };
