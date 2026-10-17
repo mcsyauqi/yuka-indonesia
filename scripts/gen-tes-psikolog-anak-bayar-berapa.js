@@ -3,7 +3,7 @@
 
 // One-time generator for artikel/tes-psikolog-anak-bayar-berapa.html (catchup 2026-09-28, kartu 3GnIK32K).
 // Skeleton from scripts/gen-tempat-terapi-anak-jogja.js. Every price is copied from an official dated
-// government hospital document (RSUD Kota Yogyakarta Perwali 53/2021, RSJ Grhasia DIY tarif retribusi, RSJ Menur).
+// RSUD price references withdrawn 17 October 2026; current medical fees unverified.
 // No private clinic prices, no YUKA paid service promotion.
 
 const fs = require('fs');
@@ -25,13 +25,13 @@ if (!STYLE || !SVG_WA || !SVG_FB || !SVG_X) throw new Error('could not extract s
 const TITLE_TAG = 'Tes Psikolog Anak Bayar Berapa? Tarif Resmi RS Pemerintah';
 const META_DESC = 'Tes psikolog anak bayar berapa? Lihat tarif resmi tes psikologi di RS pemerintah Yogyakarta dan Jawa Timur beserta sumbernya. Cek rinciannya di sini.';
 const OG_TITLE = 'Tes Psikolog Anak Bayar Berapa? Tarif Resmi dari RS Pemerintah dan Faktor yang Menentukan Biaya';
-const OG_DESC = 'Tarif tes psikologi anak dari dokumen resmi RSUD Kota Yogyakarta, RS Jiwa Grhasia DIY, dan RS Jiwa Menur, plus faktor yang membuat total biaya berbeda.';
+const OG_DESC = 'Tarif tes psikologi dari dokumen RS Jiwa Grhasia DIY dan RS Jiwa Menur, faktor biaya, serta catatan tarif medis RSUD Kota Yogyakarta yang belum terverifikasi.';
 const H1 = 'Tes Psikolog Anak Bayar Berapa? Tarif Resmi dari RS Pemerintah dan Faktor yang Menentukan Biaya';
 const IMAGE_URL = `${SITE}/Logo/Logo.webp`;
 const IMAGE_HERO_ALT = 'Logo YUKA - Yayasan Ukhuwah Kaffah Amanatullah';
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
 const DATE_PUBLISHED = '2026-09-28T09:00:00+07:00';
-const DATE_MODIFIED = '2026-09-28T09:00:00+07:00';
+const DATE_MODIFIED = '2026-10-17T14:19:59+00:00';
 const DATE_DISPLAY = '28 September 2026';
 
 console.log('Meta title length:', TITLE_TAG.length);
@@ -40,17 +40,17 @@ if (TITLE_TAG.length > 60) throw new Error('meta title too long');
 if (META_DESC.length < 120 || META_DESC.length > 155) throw new Error('meta description out of 120-155 range: ' + META_DESC.length);
 
 const L = {
-  rsud: 'https://rumahsakitjogja.jogjakota.go.id/assets/download/regulasi/05_TARIF_RUMAH_SAKIT_PADA_RUMAH_SAKIT_UMUM_DAERAH.pdf',
+  rsud: 'https://peraturan.bpk.go.id/Details/323497',
   grhasia: 'https://grhasia.jogjaprov.go.id/file/preview/556?hash=8139d12434d310cf9d8607ab794b8420&updated_at=07-01-25+14:55:47',
   menur: 'https://rsmenur.jatimprov.go.id/tarif-pelayanan/'
 };
 const ext = (href, text) => `<a href="${href.replace(/&/g, '&amp;')}" target="_blank" rel="noopener">${text}</a>`;
 
 const faq = [
-  { q: 'Tes psikolog anak bayar berapa di rumah sakit pemerintah?', a: 'Tergantung rumah sakit dan jenis tesnya. Contoh dari dokumen tarif resmi: di RSUD Kota Yogyakarta (Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021) tes WISC tercantum Rp82.500 dan tes Denver Rp27.500, di luar biaya pendaftaran dan konsultasi. Di RS Jiwa Menur Surabaya, tes IQ tercantum Rp150.000.' },
+  { q: 'Tes psikolog anak bayar berapa di rumah sakit pemerintah?', a: 'Tergantung rumah sakit dan jenis tesnya. Tarif tes psikologi RSUD Kota Yogyakarta belum terverifikasi; konfirmasi langsung ke rumah sakit. Di RS Jiwa Menur Surabaya, tes IQ tercantum Rp150.000.' },
   { q: 'Kenapa total biaya tes psikologi anak bisa lebih mahal dari tarif satu tes?', a: 'Pemeriksaan anak biasanya terdiri dari beberapa komponen: pendaftaran, konsultasi atau wawancara awal, satu atau beberapa alat tes, dan pembuatan laporan hasil. Tiap komponen punya tarif sendiri, jadi totalnya adalah penjumlahan dari yang benar-benar dijalani anak.' },
   { q: 'Apakah tes psikologi anak ditanggung BPJS Kesehatan?', a: 'Penjaminan mengikuti indikasi medis, alur rujukan berjenjang, dan kebijakan rumah sakit yang berlaku. Tes untuk keperluan administrasi seperti pendaftaran sekolah umumnya diperlakukan berbeda dari pemeriksaan atas indikasi medis. Tanyakan langsung ke fasilitas kesehatan tingkat pertama dan bagian pendaftaran rumah sakit tujuan.' },
-  { q: 'Tes apa yang biasanya dipakai untuk mengukur kecerdasan anak?', a: 'Dokumen tarif RSUD Kota Yogyakarta mencantumkan beberapa alat tes kecerdasan, antara lain WISC, Binet, CFIT, dan SPM-CPM. Psikolog yang memilih alat tes sesuai usia anak dan tujuan pemeriksaan.' },
+  { q: 'Tes apa yang biasanya dipakai untuk mengukur kecerdasan anak?', a: 'Contoh alat tes kecerdasan antara lain WISC, Binet, CFIT, dan SPM-CPM. Daftar ini bukan konfirmasi layanan atau tarif RSUD Kota Yogyakarta saat ini. Psikolog yang memilih alat tes sesuai usia anak dan tujuan pemeriksaan.' },
   { q: 'Apa yang perlu ditanyakan sebelum mendaftar tes psikologi anak?', a: 'Tanyakan komponen apa saja yang termasuk dalam biaya, berapa kali anak perlu datang, apakah ada sesi penjelasan hasil untuk orang tua, kapan laporan tertulis selesai, dan apakah laporan itu dikenai biaya terpisah.' }
 ];
 
@@ -202,7 +202,8 @@ const html = `<!DOCTYPE html>
 
     <article class="article-content">
         <div class="article-body">
-            <div class="jawaban-singkat"><p><strong>Singkatnya:</strong> tes psikolog anak bayar berapa tergantung tempat, jenis tes, dan berapa komponen pemeriksaan yang dijalani. Di rumah sakit pemerintah, tarif per alat tes tercantum di dokumen resmi. Contohnya, di RSUD Kota Yogyakarta tes WISC tercantum Rp82.500 dan konsultasi psikotes Rp82.000; di RS Jiwa Grhasia DIY psikotes sederhana sampai kompleks tercantum Rp70.000 sampai Rp250.000; di RS Jiwa Menur Surabaya tes IQ tercantum Rp150.000. Total yang dibayar biasanya lebih besar dari satu baris tarif, karena ada pendaftaran, konsultasi, dan laporan hasil.</p></div>
+            <div class="info-box"><h4 id="catatan-koreksi">Catatan koreksi: 17 Oktober 2026</h4><p style="margin-bottom:0;">Angka tarif RSUD Kota Yogyakarta yang sebelumnya dikutip telah dihapus karena acuan tarif lamanya berstatus tidak berlaku di JDIH BPK. Tarif medis terkini belum terverifikasi, sehingga tidak diganti dengan perkiraan. <a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini. Angka dan sumber penyedia lain tetap dipertahankan dari penelusuran 28 September 2026, bukan dinyatakan telah diverifikasi ulang pada tanggal koreksi ini. Minta rincian biaya terbaru langsung ke rumah sakit.</p></div>
+            <div class="jawaban-singkat"><p><strong>Singkatnya:</strong> tes psikolog anak bayar berapa tergantung tempat, jenis tes, dan berapa komponen pemeriksaan yang dijalani. Di rumah sakit pemerintah, tarif per alat tes tercantum di dokumen resmi. Contohnya, di RS Jiwa Grhasia DIY psikotes sederhana sampai kompleks tercantum Rp70.000 sampai Rp250.000; di RS Jiwa Menur Surabaya tes IQ tercantum Rp150.000. Total yang dibayar biasanya lebih besar dari satu baris tarif, karena ada pendaftaran, konsultasi, dan laporan hasil.</p></div>
 
             <div class="info-box">
                 <h4>Catatan sebelum membaca</h4>
@@ -228,28 +229,28 @@ const html = `<!DOCTYPE html>
             <p>Tujuan ini penting karena menentukan tes yang dipakai dan akhirnya biayanya. Pemeriksaan klinis biasanya diawali wawancara dengan orang tua, lalu satu atau beberapa alat tes, lalu penjelasan hasil. Gambaran lengkap proses asesmen ada di artikel <a href="/artikel/asesmen-abk">asesmen anak berkebutuhan khusus</a>. Kalau yang ingin Anda ketahui adalah arti skor kecerdasan, baca <a href="/artikel/berapa-iq-anak-yang-normal">berapa IQ anak yang normal</a>.</p>
 
             <h2 id="rsud-jogja">Tarif Tes Psikologi di RSUD Kota Yogyakarta</h2>
-            <p>RSUD Kota Yogyakarta (Rumah Sakit Jogja) mempublikasikan Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021 tentang Tarif Rumah Sakit, ditetapkan 21 Juli 2021, di situs resminya. Bagian "Pelayanan Psikologi" pada lampirannya memuat tarif per alat tes. Berikut baris yang paling relevan untuk anak:</p>
+            <p>RSUD Kota Yogyakarta (Rumah Sakit Jogja) tetap menjadi konteks layanan dalam artikel ini. Nama layanan berikut berasal dari dokumen lama, bukan konfirmasi ketersediaan atau tarif saat ini. Tanyakan layanan yang tersedia, biaya tindakan, asesmen, pendaftaran, dan konsultasi langsung kepada rumah sakit.</p>
             <div class="table-wrap">
             <table class="classification-table">
                 <thead>
-                    <tr><th>Layanan (sesuai dokumen)</th><th>Tarif</th><th>Keterangan umum</th></tr>
+                    <tr><th>Layanan (sesuai dokumen)</th><th>Tarif saat ini</th><th>Keterangan umum</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Konsultasi Psikotes</td><td>Rp82.000</td><td>Konsultasi terkait pemeriksaan psikologi</td></tr>
-                    <tr><td>Tes WISC</td><td>Rp82.500</td><td>Tes kecerdasan untuk anak usia sekolah</td></tr>
-                    <tr><td>Tes Binnet (Binet)</td><td>Rp82.500</td><td>Tes kecerdasan</td></tr>
-                    <tr><td>Tes CFIT</td><td>Rp44.500</td><td>Tes kecerdasan nonverbal</td></tr>
-                    <tr><td>Tes SPM-CPM</td><td>Rp44.500</td><td>Tes penalaran nonverbal (matriks progresif)</td></tr>
-                    <tr><td>Tes Denver</td><td>Rp27.500</td><td>Skrining perkembangan anak usia dini</td></tr>
-                    <tr><td>Tes CHAT - CARS</td><td>Rp27.500</td><td>Instrumen terkait gejala autisme</td></tr>
-                    <tr><td>Tes Conners - Kuesioner GPPH</td><td>Rp27.500</td><td>Kuesioner gejala gangguan pemusatan perhatian dan hiperaktivitas</td></tr>
-                    <tr><td>Tes VSMS / Tes VABS</td><td>Rp27.500 / Rp44.500</td><td>Skala kematangan sosial dan perilaku adaptif</td></tr>
-                    <tr><td>Konsultasi Psikologi (60 menit atau kurang / lebih dari 60 menit)</td><td>Rp50.000 / Rp105.000</td><td>Tarif konsultasi rawat jalan</td></tr>
-                    <tr><td>Surat keterangan hasil pemeriksaan psikologi (untuk asuransi)</td><td>Rp30.000</td><td>Tercantum di bagian surat keterangan asuransi</td></tr>
+                    <tr><td>Konsultasi Psikotes</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Konsultasi terkait pemeriksaan psikologi</td></tr>
+                    <tr><td>Tes WISC</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Tes kecerdasan untuk anak usia sekolah</td></tr>
+                    <tr><td>Tes Binnet (Binet)</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Tes kecerdasan</td></tr>
+                    <tr><td>Tes CFIT</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Tes kecerdasan nonverbal</td></tr>
+                    <tr><td>Tes SPM-CPM</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Tes penalaran nonverbal (matriks progresif)</td></tr>
+                    <tr><td>Tes Denver</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Skrining perkembangan anak usia dini</td></tr>
+                    <tr><td>Tes CHAT - CARS</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Instrumen terkait gejala autisme</td></tr>
+                    <tr><td>Tes Conners - Kuesioner GPPH</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Kuesioner gejala gangguan pemusatan perhatian dan hiperaktivitas</td></tr>
+                    <tr><td>Tes VSMS / Tes VABS</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Skala kematangan sosial dan perilaku adaptif</td></tr>
+                    <tr><td>Konsultasi Psikologi (60 menit atau kurang / lebih dari 60 menit)</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Tarif konsultasi rawat jalan</td></tr>
+                    <tr><td>Surat keterangan hasil pemeriksaan psikologi (untuk asuransi)</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td><td>Tercantum di bagian surat keterangan asuransi</td></tr>
                 </tbody>
             </table>
             </div>
-            <p>Sumber: ${ext(L.rsud, 'Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021, dokumen di rumahsakitjogja.jogjakota.go.id')}, diakses 28 September 2026. Kolom keterangan adalah penjelasan umum dari kami, bukan bagian dokumen. Peraturan ini terbit tahun 2021, jadi tanyakan ke rumah sakit apakah tarifnya sudah diperbarui.</p>
+            <p>Rujukan status regulasi: <a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini. Daftar ini tidak digunakan sebagai estimasi biaya medis.</p>
 
             <h2 id="grhasia">Tarif di RS Jiwa Grhasia DIY</h2>
             <p>RS Jiwa Grhasia milik Pemerintah Daerah DIY mempublikasikan daftar tarif retribusinya dengan dasar Perda DIY Nomor 11 Tahun 2023 dan Pergub DIY Nomor 3 Tahun 2024 (berkas diunggah 7 Januari 2025). Bagian Klinik Psikologi tidak memakai nama alat tes, tetapi tingkat kerumitan:</p>
@@ -291,12 +292,12 @@ const html = `<!DOCTYPE html>
             <p>Sumber: ${ext(L.menur, 'Tarif Pelayanan, rsmenur.jatimprov.go.id')}, diakses 28 September 2026. Halaman ini tidak menyebut apakah tarif berlaku khusus untuk anak atau dewasa.</p>
 
             <h2 id="faktor">Faktor yang Menentukan Total Biaya</h2>
-            <p>Tiga dokumen di atas menunjukkan satu pola: yang tercantum adalah tarif per komponen, bukan harga paket "tes psikolog anak". Total yang Anda bayar dipengaruhi oleh:</p>
+            <p>Dokumen tarif penyedia lain di atas menunjukkan satu pola: yang tercantum adalah tarif per komponen, bukan harga paket "tes psikolog anak". Total yang Anda bayar dipengaruhi oleh:</p>
             <ul>
                 <li><strong>Tujuan pemeriksaan.</strong> Tes kecerdasan untuk syarat sekolah biasanya lebih ringkas daripada asesmen untuk mencari tahu penyebab keterlambatan perkembangan.</li>
                 <li><strong>Jumlah alat tes.</strong> Asesmen klinis sering memakai lebih dari satu alat, misalnya tes kecerdasan ditambah kuesioner perilaku. Setiap alat punya tarif sendiri.</li>
                 <li><strong>Konsultasi dan pendaftaran.</strong> Wawancara awal dengan orang tua dan sesi penjelasan hasil bisa ditagih sebagai konsultasi terpisah, belum termasuk biaya pendaftaran atau kunjungan poliklinik.</li>
-                <li><strong>Laporan tertulis.</strong> Surat keterangan atau laporan hasil kadang dikenai biaya tersendiri, seperti terlihat di dokumen RSUD Kota Yogyakarta.</li>
+                <li><strong>Laporan tertulis.</strong> Tanyakan apakah surat keterangan atau laporan hasil dikenai biaya tersendiri.</li>
                 <li><strong>Jenis layanan dan kelas.</strong> RS Jiwa Menur, misalnya, membedakan konseling reguler dan eksekutif.</li>
                 <li><strong>Jenis lembaga.</strong> Klinik, biro psikologi, dan praktik psikolog swasta menetapkan tarif sendiri. Mintalah rincian tertulis sebelum pemeriksaan dimulai.</li>
             </ul>
@@ -345,7 +346,7 @@ const html = `<!DOCTYPE html>
         <div class="article-sources" style="margin:2rem 0;padding:1.5rem;background:#F8F9FF;border-radius:10px;border-left:4px solid #2B3A67;">
           <h3 style="margin-top:0;font-size:1.15rem;color:#2B3A67;">Sumber dan Referensi</h3>
           <ul style="margin:0.5rem 0 0;padding-left:1.5rem;font-size:0.95rem;line-height:1.8;">
-              <li>${ext(L.rsud, 'Walikota Yogyakarta. <strong>Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021 tentang Tarif Rumah Sakit pada RSUD Kota Yogyakarta</strong> (ditetapkan 21 Juli 2021). rumahsakitjogja.jogjakota.go.id, diakses 28 September 2026')}</li>
+              <li><a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> (diakses 17 Oktober 2026): mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini.</li>
               <li>${ext(L.grhasia, 'RS Jiwa Grhasia DIY. <strong>Tarif Retribusi RS Jiwa Grhasia DIY berdasarkan Perda 11 Tahun 2023 dan Pergub 3 Tahun 2024</strong> (diunggah 7 Januari 2025). grhasia.jogjaprov.go.id, diakses 28 September 2026')}</li>
               <li>${ext(L.menur, 'RS Jiwa Menur Provinsi Jawa Timur. <strong>Tarif Pelayanan</strong> (diperbarui 31 Agustus 2026). rsmenur.jatimprov.go.id, diakses 28 September 2026')}</li>
           </ul>

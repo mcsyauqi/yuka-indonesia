@@ -3,7 +3,7 @@
 
 // One-time generator for artikel/berapa-biaya-terapi-bicara-anak.html (catchup 2026-09-28, kartu s0SFFdNv).
 // Skeleton from scripts/gen-tes-psikolog-anak-bayar-berapa.js. Every price is copied from an official
-// government hospital tariff source (RSJ Grhasia DIY tarif page, RSUD Kota Yogyakarta Perwali 53/2021).
+// RSUD price references withdrawn 17 October 2026; current medical fees unverified.
 // No private clinic prices, no YUKA service prices (keputusan Syauqi tertunda).
 
 const fs = require('fs');
@@ -26,14 +26,14 @@ if (!/article-featured-image/.test(STYLE)) throw new Error('sibling style has no
 const TITLE_TAG = 'Berapa Biaya Terapi Bicara Anak? Tarif Resmi RS di Jogja';
 const META_DESC = 'Berapa biaya terapi bicara anak? Lihat tarif resmi terapi wicara di RS pemerintah Yogyakarta, komponen biaya, dan jalur BPJS. Cek rinciannya di sini.';
 const OG_TITLE = 'Berapa Biaya Terapi Bicara Anak? Tarif Resmi RS Pemerintah, Komponen Biaya, dan Jalur BPJS';
-const OG_DESC = 'Tarif terapi wicara per tindakan dari dokumen resmi RS Jiwa Grhasia DIY dan RSUD Kota Yogyakarta, cara menghitung total biaya bulanan, dan jalur BPJS Kesehatan.';
+const OG_DESC = 'Tarif terapi wicara dari dokumen RS Jiwa Grhasia DIY, perhitungan biaya dan BPJS, serta catatan tarif medis RSUD Kota Yogyakarta yang belum terverifikasi.';
 const H1 = 'Berapa Biaya Terapi Bicara Anak? Tarif Resmi RS Pemerintah, Komponen Biaya, dan Jalur BPJS';
 const IMAGE_REL = 'Dokumentasi/museum-gunung-merapi-ibu-anak-perjalanan-bus-bersama-039.webp';
 const IMAGE_URL = `${SITE}/${IMAGE_REL}`;
 const IMAGE_ALT = 'Seorang ibu berhijab merah muda duduk di bangku bus bersama anak perempuan kecil bertopi merah dalam perjalanan kegiatan YUKA';
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
 const DATE_PUBLISHED = '2026-09-28T09:00:00+07:00';
-const DATE_MODIFIED = '2026-09-28T09:00:00+07:00';
+const DATE_MODIFIED = '2026-10-17T14:19:59+00:00';
 const DATE_DISPLAY = '28 September 2026';
 
 console.log('Meta title length:', TITLE_TAG.length);
@@ -43,14 +43,14 @@ if (META_DESC.length < 120 || META_DESC.length > 155) throw new Error('meta desc
 
 const L = {
   grhasia: 'https://grhasia.jogjaprov.go.id/embed_tarif/index?page=42',
-  rsud: 'https://rumahsakitjogja.jogjakota.go.id/assets/download/regulasi/05_TARIF_RUMAH_SAKIT_PADA_RUMAH_SAKIT_UMUM_DAERAH.pdf',
+  rsud: 'https://peraturan.bpk.go.id/Details/323497',
   rsij: 'https://rsij.co.id/artikel/terapi-wicara-anak-kapan-orang-tua-harus-mulai-biaya-dan-prosedur-di-rsij',
   kontan: 'https://nasional.kontan.co.id/news/pemotongan-manfaat-bpjs-berisiko-putus-terapi-anak-berkebutuhan-khusus'
 };
 const ext = (href, text) => `<a href="${href.replace(/&/g, '&amp;')}" target="_blank" rel="noopener">${text}</a>`;
 
 const faq = [
-  { q: 'Berapa biaya terapi bicara anak per sesi di rumah sakit pemerintah?', a: 'Contoh dari tarif resmi di Yogyakarta: di RS Jiwa Grhasia DIY, satu tindakan latihan terapi wicara (bahasa reseptif, bahasa ekspresif, oral motor, artikulasi, atau irama kelancaran) tercantum Rp60.000 dan asesmen terapi wicara Rp30.000. Di RSUD Kota Yogyakarta, terapi gangguan wicara tercantum Rp44.000 dan tes wicara Rp55.000. Biaya pendaftaran dan konsultasi dokter dihitung terpisah.' },
+  { q: 'Berapa biaya terapi bicara anak per sesi di rumah sakit pemerintah?', a: 'Contoh dari tarif resmi di Yogyakarta: di RS Jiwa Grhasia DIY, satu tindakan latihan terapi wicara (bahasa reseptif, bahasa ekspresif, oral motor, artikulasi, atau irama kelancaran) tercantum Rp60.000 dan asesmen terapi wicara Rp30.000. Tarif medis RSUD Kota Yogyakarta belum terverifikasi; konfirmasi langsung ke rumah sakit. Biaya pendaftaran dan konsultasi dokter dihitung terpisah.' },
   { q: 'Kenapa total biaya terapi bicara per bulan jauh lebih besar dari tarif satu sesi?', a: 'Karena terapi bicara jarang cukup satu kali. Total bulanan adalah tarif per tindakan dikali jumlah tindakan per kunjungan, dikali jumlah kunjungan per bulan, ditambah biaya pendaftaran, asesmen awal, dan kontrol ke dokter. Frekuensinya ditentukan oleh dokter dan terapis sesuai kondisi anak.' },
   { q: 'Apakah terapi bicara anak ditanggung BPJS Kesehatan?', a: 'Bisa, bila ada indikasi medis dan mengikuti alur rujukan. RS Islam Jakarta Cempaka Putih, misalnya, menyebut terapi wicara dapat ditanggung BPJS Kesehatan dengan syarat peserta aktif dan membawa surat rujukan dari dokter atau puskesmas. Pada 2024 media melaporkan pembatasan untuk anak di atas tujuh tahun dengan diagnosis gangguan bicara tertentu, jadi tanyakan ketentuan terbaru ke rumah sakit tujuan.' },
   { q: 'Apakah tarif rumah sakit yang tercantum sudah termasuk konsultasi dokter?', a: 'Tidak. Di dokumen tarif, tindakan terapi wicara, asesmen, pendaftaran, dan konsultasi dokter tercantum sebagai baris yang berbeda. Di RS Jiwa Grhasia DIY misalnya, jasa rumah sakit untuk registrasi rawat jalan tercantum Rp15.000 di luar tindakan terapinya.' },
@@ -220,7 +220,8 @@ const html = `<!DOCTYPE html>
 
     <article class="article-content">
         <div class="article-body">
-            <div class="jawaban-singkat"><p><strong>Singkatnya:</strong> berapa biaya terapi bicara anak tergantung tempat, jenis tindakan, dan berapa kali anak perlu datang. Di rumah sakit pemerintah Yogyakarta, tarif per tindakan tercantum di dokumen resmi: di RS Jiwa Grhasia DIY latihan terapi wicara tercantum Rp60.000 per tindakan dan asesmen Rp30.000; di RSUD Kota Yogyakarta terapi gangguan wicara tercantum Rp44.000 dan tes wicara Rp55.000. Karena terapi berjalan berminggu-minggu, total yang dibayar adalah tarif per tindakan dikali jumlah kunjungan, ditambah pendaftaran dan konsultasi dokter. Peserta BPJS Kesehatan bisa memakai jalur rujukan bila ada indikasi medis.</p></div>
+            <div class="info-box"><h4 id="catatan-koreksi">Catatan koreksi: 17 Oktober 2026</h4><p style="margin-bottom:0;">Angka tarif RSUD Kota Yogyakarta yang sebelumnya dikutip telah dihapus karena acuan tarif lamanya berstatus tidak berlaku di JDIH BPK. Tarif medis terkini belum terverifikasi, sehingga tidak diganti dengan perkiraan. <a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini. Angka dan sumber penyedia lain tetap dipertahankan dari penelusuran 28 September 2026, bukan dinyatakan telah diverifikasi ulang pada tanggal koreksi ini. Minta rincian biaya terbaru langsung ke rumah sakit.</p></div>
+            <div class="jawaban-singkat"><p><strong>Singkatnya:</strong> berapa biaya terapi bicara anak tergantung tempat, jenis tindakan, dan berapa kali anak perlu datang. Di rumah sakit pemerintah Yogyakarta, tarif per tindakan tercantum di dokumen resmi: di RS Jiwa Grhasia DIY latihan terapi wicara tercantum Rp60.000 per tindakan dan asesmen Rp30.000. Karena terapi berjalan berminggu-minggu, total yang dibayar adalah tarif per tindakan dikali jumlah kunjungan, ditambah pendaftaran dan konsultasi dokter. Peserta BPJS Kesehatan bisa memakai jalur rujukan bila ada indikasi medis.</p></div>
 
             <div class="info-box">
                 <h4>Catatan sebelum membaca</h4>
@@ -267,25 +268,25 @@ const html = `<!DOCTYPE html>
             <p>Sumber: ${ext(L.grhasia, 'Tarif Pelayanan RS Jiwa Grhasia DIY, kategori Terapi Wicara, grhasia.jogjaprov.go.id')}, diakses 28 September 2026. Kolom keterangan adalah penjelasan umum dari kami, bukan bagian dokumen. Tarif tercantum per tindakan, jadi satu kunjungan yang berisi dua jenis latihan dihitung dua baris.</p>
 
             <h2 id="rsud-jogja">Tarif Terapi Wicara di RSUD Kota Yogyakarta</h2>
-            <p>RSUD Kota Yogyakarta (Rumah Sakit Jogja) mempublikasikan Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021 tentang Tarif Rumah Sakit di situs resminya. Bagian Rehabilitasi Medik pada lampirannya memuat tindakan terapi wicara berikut:</p>
+            <p>RSUD Kota Yogyakarta (Rumah Sakit Jogja) tetap menjadi konteks layanan dalam artikel ini. Nama layanan berikut berasal dari dokumen lama, bukan konfirmasi ketersediaan atau tarif saat ini. Tanyakan layanan yang tersedia, biaya tindakan, asesmen, pendaftaran, dan konsultasi langsung kepada rumah sakit.</p>
             <div class="table-wrap">
             <table class="classification-table">
                 <thead>
-                    <tr><th>Tindakan (sesuai dokumen)</th><th>Tarif</th></tr>
+                    <tr><th>Tindakan (sesuai dokumen)</th><th>Tarif saat ini</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Tes Wicara</td><td>Rp55.000</td></tr>
-                    <tr><td>Terapi Gangguan Wicara</td><td>Rp44.000</td></tr>
-                    <tr><td>Terapi Gangguan Bahasa/Memori</td><td>Rp44.000</td></tr>
-                    <tr><td>Terapi Gangguan Irama Kelancaran</td><td>Rp44.000</td></tr>
-                    <tr><td>Terapi Gangguan Suara</td><td>Rp44.000</td></tr>
-                    <tr><td>Oral Motor Exercise</td><td>Rp38.500</td></tr>
-                    <tr><td>Massage Oral</td><td>Rp38.500</td></tr>
-                    <tr><td>Kunjungan Fisioterapis ke rumah (homecare), termasuk terapi wicara</td><td>Rp60.000</td></tr>
+                    <tr><td>Tes Wicara</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Terapi Gangguan Wicara</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Terapi Gangguan Bahasa/Memori</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Terapi Gangguan Irama Kelancaran</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Terapi Gangguan Suara</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Oral Motor Exercise</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Massage Oral</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Kunjungan Fisioterapis ke rumah (homecare), termasuk terapi wicara</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
                 </tbody>
             </table>
             </div>
-            <p>Sumber: ${ext(L.rsud, 'Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021, dokumen di rumahsakitjogja.jogjakota.go.id')}, lampiran bagian Rehabilitasi Medik dan Pelayanan Homecare, diakses 28 September 2026. Layanan homecare di dokumen yang sama juga mencantumkan biaya pendaftaran homecare Rp80.000. Peraturan ini terbit tahun 2021, jadi tanyakan ke rumah sakit apakah tarifnya sudah diperbarui.</p>
+            <p>Rujukan status regulasi: <a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini. Daftar ini tidak digunakan sebagai estimasi biaya medis.</p>
 
             <h2 id="hitung">Cara Menghitung Perkiraan Biaya Bulanan</h2>
             <p>Pertanyaan "berapa biaya terapi bicara anak" jarang terjawab dengan satu angka, karena terapi adalah program, bukan sekali datang. Rumus sederhananya:</p>
@@ -352,7 +353,7 @@ const html = `<!DOCTYPE html>
           <h3 style="margin-top:0;font-size:1.15rem;color:#2B3A67;">Sumber dan Referensi</h3>
           <ul style="margin:0.5rem 0 0;padding-left:1.5rem;font-size:0.95rem;line-height:1.8;">
               <li>${ext(L.grhasia, 'RS Jiwa Grhasia DIY. <strong>Tarif Pelayanan, kategori Terapi Wicara</strong>. grhasia.jogjaprov.go.id, diakses 28 September 2026')}</li>
-              <li>${ext(L.rsud, 'Walikota Yogyakarta. <strong>Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021 tentang Tarif Rumah Sakit pada RSUD Kota Yogyakarta</strong>. rumahsakitjogja.jogjakota.go.id, diakses 28 September 2026')}</li>
+              <li><a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> (diakses 17 Oktober 2026): mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini.</li>
               <li>${ext(L.rsij, 'RS Islam Jakarta Cempaka Putih. <strong>Terapi Wicara Anak: Kapan Orang Tua Harus Mulai, Biaya, dan Prosedur di RSIJ</strong> (30 Juni 2026). rsij.co.id, diakses 28 September 2026')}</li>
               <li>${ext(L.kontan, 'Kontan. <strong>Pemotongan Manfaat BPJS Berisiko Putus Terapi Anak Berkebutuhan Khusus</strong> (13 Juni 2024). nasional.kontan.co.id, diakses 28 September 2026')}</li>
           </ul>

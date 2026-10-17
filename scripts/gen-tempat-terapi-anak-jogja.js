@@ -5,7 +5,7 @@
 // (catchup 2026-09-28, kartu RUWPXzgo). Skeleton copied from scripts/gen-gangguan-makan-anak-abk.js.
 // Every hospital row was checked on 2026-09-28 against the hospital's own page (name, address, listed therapy):
 // - RS PKU Muhammadiyah Yogyakarta: https://rspkujogja.com/poliklinik/terapi-tumbuh-kembang-anak/
-// - RSUD Kota Yogyakarta: https://rumahsakitjogja.jogjakota.go.id/pelayanan/rehab_medik
+// RSUD price references withdrawn 17 October 2026; current medical fees unverified.
 // - RSA UGM: https://rsa.ugm.ac.id/rehabilitasi-medik-2/
 // No prices, no ratings, no recommendation. No photo: no licensed current photo of these hospitals on Commons.
 
@@ -34,7 +34,7 @@ const IMAGE_URL = `${SITE}/Logo/Logo.webp`;
 const IMAGE_HERO_ALT = 'Logo YUKA - Yayasan Ukhuwah Kaffah Amanatullah';
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
 const DATE_PUBLISHED = '2026-09-28T02:30:00+07:00';
-const DATE_MODIFIED = '2026-09-28T02:30:00+07:00';
+const DATE_MODIFIED = '2026-10-17T14:19:59+00:00';
 const DATE_DISPLAY = '28 September 2026';
 
 console.log('Meta title length:', TITLE_TAG.length);
@@ -44,7 +44,7 @@ if (META_DESC.length < 120 || META_DESC.length > 155) throw new Error('meta desc
 
 const L = {
   pku: 'https://rspkujogja.com/poliklinik/terapi-tumbuh-kembang-anak/',
-  rsud: 'https://rumahsakitjogja.jogjakota.go.id/pelayanan/rehab_medik',
+  rsud: 'https://peraturan.bpk.go.id/Details/323497',
   rsa: 'https://rsa.ugm.ac.id/rehabilitasi-medik-2/'
 };
 const ext = (href, text) => `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
@@ -205,6 +205,7 @@ const html = `<!DOCTYPE html>
 
     <article class="article-content">
         <div class="article-body">
+            <div class="info-box"><h4 id="catatan-koreksi">Catatan koreksi: 17 Oktober 2026</h4><p style="margin-bottom:0;">Pemeriksaan bagian RSUD Kota Yogyakarta pada artikel ini tidak menemukan angka tarif yang perlu dihapus. Artikel ini memang tidak mencantumkan biaya. Tautan lama layanan RSUD tidak lagi dicantumkan; rincian layanan dan alamat di tabel berasal dari penelusuran 28 September 2026 dan perlu dikonfirmasi langsung. <a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini. Jadwal, layanan, dan biaya perlu dikonfirmasi ke rumah sakit.</p></div>
             <div class="jawaban-singkat"><p><strong>Singkatnya:</strong> tempat terapi anak di Jogja umumnya ada di tiga jalur: unit rehabilitasi medik atau klinik tumbuh kembang di rumah sakit, klinik dan rumah terapi swasta, serta sekolah atau yayasan yang punya program terapi. Jalur yang paling aman untuk memulai adalah pemeriksaan dokter anak, karena dokter yang menentukan terapi apa yang dibutuhkan. Artikel ini memuat beberapa rumah sakit di Yogyakarta yang layanan terapinya tercantum di situs resminya, plus cara memilih tempat terapi mana pun secara mandiri.</p></div>
 
             <div class="info-box">
@@ -262,7 +263,7 @@ const html = `<!DOCTYPE html>
                 </thead>
                 <tbody>
                     <tr><td>RS PKU Muhammadiyah Yogyakarta</td><td>Jl. KH. Ahmad Dahlan No. 20, Yogyakarta</td><td>Poliklinik Terapi Tumbuh Kembang Anak: terapi okupasi, fisioterapi anak, terapi wicara, dan stimulasi sensori integrasi, untuk anak dengan keterlambatan perkembangan, gangguan motorik, spektrum autisme, dan ADHD</td><td>${ext(L.pku, 'rspkujogja.com')}</td></tr>
-                    <tr><td>RSUD Kota Yogyakarta (Rumah Sakit Jogja)</td><td>Jl. Wirosaban No. 1, Yogyakarta</td><td>Rehabilitasi medik: fisioterapi, okupasi terapi (termasuk untuk keterlambatan tumbuh kembang), dan terapi wicara</td><td>${ext(L.rsud, 'rumahsakitjogja.jogjakota.go.id')}</td></tr>
+                    <tr><td>RSUD Kota Yogyakarta (Rumah Sakit Jogja)</td><td>Jl. Wirosaban No. 1, Yogyakarta</td><td>Rehabilitasi medik: fisioterapi, okupasi terapi (termasuk untuk keterlambatan tumbuh kembang), dan terapi wicara</td><td>Data layanan: penelusuran 28 September 2026; konfirmasi langsung ke rumah sakit</td></tr>
                     <tr><td>Rumah Sakit Akademik UGM</td><td>Jl. Kabupaten (Lingkar Utara), Kronggahan, Trihanggo, Gamping, Sleman 55291</td><td>Rehabilitasi medik: fisioterapi, terapi okupasi, terapi wicara, dan ortotik prostetik, dikoordinasi dokter spesialis rehabilitasi medik. Halamannya juga menyebut layanan Psikologi Anak dan Cerebral Palsy Center</td><td>${ext(L.rsa, 'rsa.ugm.ac.id')}</td></tr>
                 </tbody>
             </table>
@@ -357,7 +358,7 @@ const html = `<!DOCTYPE html>
           <h3 style="margin-top:0;font-size:1.15rem;color:#2B3A67;">Sumber dan Referensi</h3>
           <ul style="margin:0.5rem 0 0;padding-left:1.5rem;font-size:0.95rem;line-height:1.8;">
               <li>${ext(L.pku, 'RS PKU Muhammadiyah Yogyakarta. <strong>Terapi Tumbuh Kembang Anak</strong>. rspkujogja.com, diakses 28 September 2026')}</li>
-              <li>${ext(L.rsud, 'RSUD Kota Yogyakarta. <strong>Pelayanan Rehabilitasi Medik</strong>. rumahsakitjogja.jogjakota.go.id, diakses 28 September 2026')}</li>
+              <li><a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> (diakses 17 Oktober 2026): mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini.</li>
               <li>${ext(L.rsa, 'Rumah Sakit Akademik UGM. <strong>Rehabilitasi Medik</strong>. rsa.ugm.ac.id, diakses 28 September 2026')}</li>
           </ul>
             <p style="margin-top:1rem;padding:1rem;background:#FFF3CD;border-left:4px solid #FFAD00;border-radius:6px;font-size:0.95rem;line-height:1.6;">

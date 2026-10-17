@@ -3,7 +3,7 @@
 
 // One-time generator for artikel/berapa-biaya-terapi-anak-berkebutuhan-khusus.html (catchup 2026-09-28, kartu pZiizG2w).
 // Skeleton from scripts/gen-berapa-biaya-terapi-bicara-anak.js. Every price is copied from an official
-// government hospital tariff source (RSJ Grhasia DIY tarif pages, RSUD Kota Yogyakarta Perwali 53/2021).
+// RSUD price references withdrawn 17 October 2026; current medical fees unverified.
 // No private clinic prices, no YUKA service prices. Speech therapy detail lives in the sibling article
 // berapa-biaya-terapi-bicara-anak (linked, not duplicated).
 
@@ -27,7 +27,7 @@ if (!/article-featured-image/.test(STYLE)) throw new Error('sibling style has no
 const TITLE_TAG = 'Berapa Biaya Terapi Anak Berkebutuhan Khusus? Tarif Resmi';
 const META_DESC = 'Berapa biaya terapi anak berkebutuhan khusus? Lihat tarif resmi terapi okupasi, sensori integrasi, wicara, dan psikologi di RS pemerintah Jogja.';
 const OG_TITLE = 'Berapa Biaya Terapi Anak Berkebutuhan Khusus? Tarif Resmi RS Pemerintah dan Jalur BPJS';
-const OG_DESC = 'Tarif okupasi terapi, sensori integrasi, terapi wicara, fisioterapi, dan layanan psikologi dari dokumen resmi RS Jiwa Grhasia DIY dan RSUD Kota Yogyakarta, plus cara menghitung total biaya.';
+const OG_DESC = 'Tarif terapi dan psikologi dari dokumen RS Jiwa Grhasia DIY, cara menghitung biaya, serta catatan bahwa tarif medis RSUD Kota Yogyakarta belum terverifikasi.';
 const H1 = 'Berapa Biaya Terapi Anak Berkebutuhan Khusus? Tarif Resmi RS Pemerintah, Cara Menghitung, dan Jalur BPJS';
 const IMAGE_REL = 'Dokumentasi/21-jan-2026-keluarga-belajar-bersama-dirumah-003.webp';
 const IMAGE_URL = `${SITE}/${IMAGE_REL}`;
@@ -36,7 +36,7 @@ const IMAGE_W = 1209;
 const IMAGE_H = 907;
 const CANONICAL = `${SITE}/artikel/${SLUG}`;
 const DATE_PUBLISHED = '2026-09-28T15:00:00+07:00';
-const DATE_MODIFIED = '2026-09-28T15:00:00+07:00';
+const DATE_MODIFIED = '2026-10-17T14:19:59+00:00';
 const DATE_DISPLAY = '28 September 2026';
 
 console.log('Meta title length:', TITLE_TAG.length);
@@ -48,17 +48,17 @@ const L = {
   grhasiaOT: 'https://grhasia.jogjaprov.go.id/embed_tarif/index?page=43',
   grhasiaWicara: 'https://grhasia.jogjaprov.go.id/embed_tarif/index?page=42',
   grhasiaPsi: 'https://grhasia.jogjaprov.go.id/embed_tarif/index?page=51',
-  rsud: 'https://rumahsakitjogja.jogjakota.go.id/assets/download/regulasi/05_TARIF_RUMAH_SAKIT_PADA_RUMAH_SAKIT_UMUM_DAERAH.pdf',
+  rsud: 'https://peraturan.bpk.go.id/Details/323497',
   rsij: 'https://rsij.co.id/artikel/terapi-wicara-anak-kapan-orang-tua-harus-mulai-biaya-dan-prosedur-di-rsij',
   kontan: 'https://nasional.kontan.co.id/news/pemotongan-manfaat-bpjs-berisiko-putus-terapi-anak-berkebutuhan-khusus'
 };
 const ext = (href, text) => `<a href="${href.replace(/&/g, '&amp;')}" target="_blank" rel="noopener">${text}</a>`;
 
 const faq = [
-  { q: 'Berapa biaya terapi anak berkebutuhan khusus per sesi di rumah sakit pemerintah?', a: 'Tergantung jenis terapinya. Contoh dari tarif resmi di Yogyakarta: di RS Jiwa Grhasia DIY, terapi sensori integrasi tercantum Rp40.000 per tindakan, terapi Activity Daily Living Rp35.000, dan latihan terapi wicara Rp60.000. Di RSUD Kota Yogyakarta, sensori integrasi tercantum Rp66.000, layanan okupasi terapi pediatri Rp27.500, dan terapi gangguan wicara Rp44.000. Pendaftaran dan konsultasi dokter dihitung terpisah.' },
+  { q: 'Berapa biaya terapi anak berkebutuhan khusus per sesi di rumah sakit pemerintah?', a: 'Tergantung jenis terapinya. Contoh dari tarif resmi di Yogyakarta: di RS Jiwa Grhasia DIY, terapi sensori integrasi tercantum Rp40.000 per tindakan, terapi Activity Daily Living Rp35.000, dan latihan terapi wicara Rp60.000. Tarif medis RSUD Kota Yogyakarta belum terverifikasi; konfirmasi langsung ke rumah sakit. Pendaftaran dan konsultasi dokter dihitung terpisah.' },
   { q: 'Kenapa total biaya terapi ABK per bulan jauh lebih besar dari tarif satu tindakan?', a: 'Karena anak berkebutuhan khusus sering menjalani lebih dari satu jenis terapi, masing-masing beberapa kali seminggu, selama berbulan-bulan. Total bulanan adalah jumlah semua tindakan per kunjungan dikali jumlah kunjungan, ditambah pendaftaran, asesmen awal, dan kontrol dokter.' },
   { q: 'Apakah terapi anak berkebutuhan khusus ditanggung BPJS Kesehatan?', a: 'Terapi rehabilitasi medik seperti okupasi terapi, terapi wicara, dan fisioterapi dapat dijamin bila ada indikasi medis dan mengikuti alur rujukan berjenjang. Pada 2024 media melaporkan pembatasan untuk sebagian diagnosis pada anak di atas tujuh tahun, jadi tanyakan ketentuan terbaru ke bagian BPJS rumah sakit tujuan.' },
-  { q: 'Berapa biaya asesmen atau tes psikologi untuk anak berkebutuhan khusus?', a: 'Di RSUD Kota Yogyakarta, contohnya, Tes CHAT-CARS (skrining autisme) tercantum Rp27.500, Tes Denver Rp27.500, Tes Conners untuk GPPH Rp27.500, dan Tes WISC Rp82.500. Di RS Jiwa Grhasia DIY, konseling dasar psikologi tercantum Rp50.000. Rincian biaya pemeriksaan psikologi dibahas di artikel tes psikolog anak bayar berapa.' },
+  { q: 'Berapa biaya asesmen atau tes psikologi untuk anak berkebutuhan khusus?', a: 'Tarif tes psikologi RSUD Kota Yogyakarta belum terverifikasi; konfirmasi langsung ke rumah sakit. Di RS Jiwa Grhasia DIY, konseling dasar psikologi tercantum Rp50.000. Rincian biaya pemeriksaan psikologi dibahas di artikel tes psikolog anak bayar berapa.' },
   { q: 'Bagaimana cara menekan biaya terapi anak berkebutuhan khusus?', a: 'Mulai dari asesmen agar terapi yang dijalani memang yang dibutuhkan, manfaatkan jalur BPJS bila memenuhi syarat, minta rincian tindakan per kunjungan secara tertulis, dan lanjutkan latihan dari terapis di rumah supaya kemajuan tidak hanya bergantung pada jumlah sesi.' }
 ];
 
@@ -225,7 +225,8 @@ const html = `<!DOCTYPE html>
 
     <article class="article-content">
         <div class="article-body">
-            <div class="jawaban-singkat"><p><strong>Singkatnya:</strong> berapa biaya terapi anak berkebutuhan khusus tergantung jenis terapi, jumlah tindakan per kunjungan, dan berapa lama program berjalan. Di rumah sakit pemerintah Yogyakarta, tarif per tindakan tercantum di dokumen resmi, umumnya puluhan ribu rupiah: di RS Jiwa Grhasia DIY misalnya terapi sensori integrasi Rp40.000 dan latihan terapi wicara Rp60.000, sedangkan di RSUD Kota Yogyakarta sensori integrasi Rp66.000 dan okupasi terapi pediatri Rp27.500. Karena ABK sering menjalani beberapa terapi sekaligus selama berbulan-bulan, total yang dibayar bisa berlipat, ditambah pendaftaran dan konsultasi dokter. Peserta BPJS Kesehatan bisa memakai jalur rujukan bila ada indikasi medis.</p></div>
+            <div class="info-box"><h4 id="catatan-koreksi">Catatan koreksi: 17 Oktober 2026</h4><p style="margin-bottom:0;">Angka tarif RSUD Kota Yogyakarta yang sebelumnya dikutip telah dihapus karena acuan tarif lamanya berstatus tidak berlaku di JDIH BPK. Tarif medis terkini belum terverifikasi, sehingga tidak diganti dengan perkiraan. <a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini. Angka dan sumber penyedia lain tetap dipertahankan dari penelusuran 28 September 2026, bukan dinyatakan telah diverifikasi ulang pada tanggal koreksi ini. Minta rincian biaya terbaru langsung ke rumah sakit.</p></div>
+            <div class="jawaban-singkat"><p><strong>Singkatnya:</strong> berapa biaya terapi anak berkebutuhan khusus tergantung jenis terapi, jumlah tindakan per kunjungan, dan berapa lama program berjalan. Di rumah sakit pemerintah Yogyakarta, tarif per tindakan tercantum di dokumen resmi, umumnya puluhan ribu rupiah: di RS Jiwa Grhasia DIY misalnya terapi sensori integrasi Rp40.000 dan latihan terapi wicara Rp60.000. Karena ABK sering menjalani beberapa terapi sekaligus selama berbulan-bulan, total yang dibayar bisa berlipat, ditambah pendaftaran dan konsultasi dokter. Peserta BPJS Kesehatan bisa memakai jalur rujukan bila ada indikasi medis.</p></div>
 
             <div class="info-box">
                 <h4>Catatan sebelum membaca</h4>
@@ -281,27 +282,27 @@ const html = `<!DOCTYPE html>
             <p>Di ruangan Terapi Wicara, asesmen tercantum Rp30.000 dan tiap jenis latihan (bahasa reseptif, bahasa ekspresif, oral motor, artikulasi, irama kelancaran) Rp60.000 per tindakan (${ext(L.grhasiaWicara, 'sumber: tarif ruangan Terapi Wicara')}). Tabel lengkapnya ada di artikel <a href="/artikel/berapa-biaya-terapi-bicara-anak">berapa biaya terapi bicara anak</a>, jadi tidak kami ulang di sini.</p>
 
             <h2 id="rsud-jogja">Tarif Terapi di RSUD Kota Yogyakarta</h2>
-            <p>RSUD Kota Yogyakarta (Rumah Sakit Jogja) mempublikasikan Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021 tentang Tarif Rumah Sakit di situs resminya. Bagian Rehabilitasi Medik pada lampirannya memuat tindakan yang relevan untuk anak berkebutuhan khusus berikut:</p>
+            <p>RSUD Kota Yogyakarta (Rumah Sakit Jogja) tetap menjadi konteks layanan dalam artikel ini. Nama layanan berikut berasal dari dokumen lama, bukan konfirmasi ketersediaan atau tarif saat ini. Tanyakan layanan yang tersedia, biaya tindakan, asesmen, pendaftaran, dan konsultasi langsung kepada rumah sakit.</p>
             <div class="table-wrap">
             <table class="classification-table">
                 <thead>
-                    <tr><th>Tindakan (sesuai dokumen)</th><th>Tarif</th></tr>
+                    <tr><th>Tindakan (sesuai dokumen)</th><th>Tarif saat ini</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Assessment Okupasi Terapi</td><td>Rp66.000</td></tr>
-                    <tr><td>Layanan Okupasi Terapi pada Pediatri</td><td>Rp27.500</td></tr>
-                    <tr><td>Sensori Integrasi</td><td>Rp66.000</td></tr>
-                    <tr><td>Neurosensori motor</td><td>Rp55.000</td></tr>
-                    <tr><td>Exercise</td><td>Rp55.000</td></tr>
-                    <tr><td>Tes Wicara</td><td>Rp55.000</td></tr>
-                    <tr><td>Terapi Gangguan Wicara</td><td>Rp44.000</td></tr>
-                    <tr><td>Oral Motor Exercise</td><td>Rp38.500</td></tr>
-                    <tr><td>Poliklinik Spesialis (pemeriksaan dan konsultasi rawat jalan)</td><td>Rp50.000</td></tr>
+                    <tr><td>Assessment Okupasi Terapi</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Layanan Okupasi Terapi pada Pediatri</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Sensori Integrasi</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Neurosensori motor</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Exercise</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Tes Wicara</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Terapi Gangguan Wicara</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Oral Motor Exercise</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Poliklinik Spesialis (pemeriksaan dan konsultasi rawat jalan)</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
                 </tbody>
             </table>
             </div>
-            <p>Sumber: ${ext(L.rsud, 'Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021, dokumen di rumahsakitjogja.jogjakota.go.id')}, lampiran bagian Tarif Pelayanan Pemeriksaan dan Konsultasi serta Rehabilitasi Medik, diakses 28 September 2026. Peraturan ini terbit tahun 2021, jadi tanyakan ke rumah sakit apakah tarifnya sudah diperbarui.</p>
-            <p>Perhatikan bahwa tarif satu jenis terapi bisa berbeda cukup jauh antar rumah sakit. Sensori integrasi, misalnya, tercantum Rp40.000 di RS Jiwa Grhasia DIY dan Rp66.000 di RSUD Kota Yogyakarta. Karena itu, bandingkan dokumen tarif rumah sakit yang terjangkau dari rumah sebelum memilih.</p>
+            <p>Rujukan status regulasi: <a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini. Daftar ini tidak digunakan sebagai estimasi biaya medis.</p>
+            <p>Tarif satu jenis terapi dapat berbeda antar rumah sakit. Mintalah rincian biaya terbaru dari masing-masing penyedia sebelum membandingkan.</p>
 
             <h2 id="psikologi">Biaya Asesmen dan Tes Psikologi</h2>
             <p>Sebelum atau selama terapi, anak sering menjalani tes psikologi, dan orang tua bisa mendapat konseling. Beberapa tarif dari dokumen resmi:</p>
@@ -311,18 +312,18 @@ const html = `<!DOCTYPE html>
                     <tr><th>Layanan</th><th>Tempat</th><th>Tarif</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Tes CHAT - CARS</td><td>RSUD Kota Yogyakarta</td><td>Rp27.500</td></tr>
-                    <tr><td>Tes Denver</td><td>RSUD Kota Yogyakarta</td><td>Rp27.500</td></tr>
-                    <tr><td>Tes Conners - Kuesioner GPPH</td><td>RSUD Kota Yogyakarta</td><td>Rp27.500</td></tr>
-                    <tr><td>Tes WISC</td><td>RSUD Kota Yogyakarta</td><td>Rp82.500</td></tr>
-                    <tr><td>Konsultasi Psikologi sampai 60 menit</td><td>RSUD Kota Yogyakarta</td><td>Rp50.000</td></tr>
+                    <tr><td>Tes CHAT - CARS</td><td>RSUD Kota Yogyakarta</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Tes Denver</td><td>RSUD Kota Yogyakarta</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Tes Conners - Kuesioner GPPH</td><td>RSUD Kota Yogyakarta</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Tes WISC</td><td>RSUD Kota Yogyakarta</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
+                    <tr><td>Konsultasi Psikologi sampai 60 menit</td><td>RSUD Kota Yogyakarta</td><td>Belum terverifikasi; konfirmasi ke rumah sakit</td></tr>
                     <tr><td>Konseling Dasar Psikologi</td><td>RS Jiwa Grhasia DIY</td><td>Rp50.000</td></tr>
                     <tr><td>Konseling Sedang Psikologi</td><td>RS Jiwa Grhasia DIY</td><td>Rp60.000</td></tr>
                     <tr><td>Konseling Kompleks Psikologi</td><td>RS Jiwa Grhasia DIY</td><td>Rp70.000</td></tr>
                 </tbody>
             </table>
             </div>
-            <p>Sumber: ${ext(L.rsud, 'Perwali Yogyakarta 53/2021')} bagian Pelayanan Psikologi dan Konsultasi, serta ${ext(L.grhasiaPsi, 'tarif ruangan Psikologi RS Jiwa Grhasia DIY')}, diakses 28 September 2026. Penjelasan lebih rinci tentang pemeriksaan psikologi anak ada di <a href="/artikel/tes-psikolog-anak-bayar-berapa">tes psikolog anak bayar berapa</a>.</p>
+            <p>Sumber: ${ext(L.grhasiaPsi, 'tarif ruangan Psikologi RS Jiwa Grhasia DIY')}, diakses 28 September 2026. Penjelasan lebih rinci tentang pemeriksaan psikologi anak ada di <a href="/artikel/tes-psikolog-anak-bayar-berapa">tes psikolog anak bayar berapa</a>.</p>
 
             <h2 id="hitung">Cara Menghitung Perkiraan Biaya Bulanan</h2>
             <p>Karena terapi ABK berupa program, rumus sederhananya:</p>
@@ -380,7 +381,7 @@ const html = `<!DOCTYPE html>
               <li>${ext(L.grhasiaOT, 'RS Jiwa Grhasia DIY. <strong>Tarif Pelayanan, ruangan OT (Okupasi Terapi)</strong>. grhasia.jogjaprov.go.id, diakses 28 September 2026')}</li>
               <li>${ext(L.grhasiaWicara, 'RS Jiwa Grhasia DIY. <strong>Tarif Pelayanan, ruangan Terapi Wicara</strong>. grhasia.jogjaprov.go.id, diakses 28 September 2026')}</li>
               <li>${ext(L.grhasiaPsi, 'RS Jiwa Grhasia DIY. <strong>Tarif Pelayanan, ruangan Psikologi</strong>. grhasia.jogjaprov.go.id, diakses 28 September 2026')}</li>
-              <li>${ext(L.rsud, 'Walikota Yogyakarta. <strong>Peraturan Walikota Yogyakarta Nomor 53 Tahun 2021 tentang Tarif Rumah Sakit pada RSUD Kota Yogyakarta</strong>. rumahsakitjogja.jogjakota.go.id, diakses 28 September 2026')}</li>
+              <li><a href="https://peraturan.bpk.go.id/Details/323497" target="_blank" rel="noopener">Perwali Kota Yogyakarta Nomor 30 Tahun 2025 di JDIH BPK</a> (diakses 17 Oktober 2026): mengatur tarif layanan non medis, berlaku sejak 2 Juni 2025; bukan dasar untuk menyatakan tarif terapi atau tes psikologi medis saat ini.</li>
               <li>${ext(L.rsij, 'RS Islam Jakarta Cempaka Putih. <strong>Terapi Wicara Anak: Kapan Orang Tua Harus Mulai, Biaya, dan Prosedur di RSIJ</strong>. rsij.co.id, diakses 28 September 2026')}</li>
               <li>${ext(L.kontan, 'Kontan. <strong>Pemotongan Manfaat BPJS Berisiko Putus Terapi Anak Berkebutuhan Khusus</strong> (13 Juni 2024). nasional.kontan.co.id, diakses 28 September 2026')}</li>
           </ul>
