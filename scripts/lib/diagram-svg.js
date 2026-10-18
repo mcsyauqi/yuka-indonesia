@@ -43,7 +43,7 @@ function flow(title, subtitle, steps) {
     const x = 48 + c * (bw + 36), y = 176 + r * (bh + 40);
     inner += `<rect x="${x}" y="${y}" width="${bw}" height="${bh}" rx="18" fill="#FFFFFF" stroke="#2B3A67" stroke-width="2"/>`;
     inner += `<circle cx="${x + 38}" cy="${y + 40}" r="24" fill="#FFD700"/><text x="${x + 38}" y="${y + 49}" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="24" font-weight="700" fill="#2B3A67">${i + 1}</text>`;
-    inner += tspans(wrap(s.h, Math.floor(bw / 15)), x + 74, y + 36, 28, 'font-family="Poppins, Arial, sans-serif" font-size="23" font-weight="700" fill="#2B3A67"');
+    inner += tspans(wrap(s.h, Math.floor((bw - 90) / 13)), x + 74, y + 36, 28, 'font-family="Poppins, Arial, sans-serif" font-size="23" font-weight="700" fill="#2B3A67"');
     inner += tspans(wrap(s.d, Math.floor(bw / 11.5)), x + 24, y + 108, 27, 'font-family="Poppins, Arial, sans-serif" font-size="19" fill="#333B57"');
     if (c < cols - 1 && i < steps.length - 1) inner += `<path d="M${x + bw + 6} ${y + bh / 2} l24 0 m-10 -10 l10 10 l-10 10" stroke="#00BCD4" stroke-width="4" fill="none"/>`;
   });
