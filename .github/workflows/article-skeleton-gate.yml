@@ -14,6 +14,8 @@ on:
       - 'blog.html'
       - 'scripts/lib/article-*.js'
       - 'scripts/check-article-*.js'
+      - 'publish-schedule.json'
+      - 'scripts/daily-cap.js'
   pull_request:
     paths:
       - 'artikel/**'
@@ -29,6 +31,10 @@ jobs:
           node-version: '20'
       - name: Footer, GA4, analytics
         run: node scripts/check-article-shell.js
+      # Batas keras Syauqi 2026-10-19: maksimal 3 artikel per datePublished (tayang + antrean).
+      # 11, 12, 16 dan 17 Okt 2026 berisi 14/7/6/4 karena batch agen di-commit langsung.
+      - name: Maksimal 3 artikel per tanggal terbit
+        run: node scripts/daily-cap.js check
       - name: Kerangka kanonik artikel sejak 2026-10-03
         run: node scripts/check-article-skeleton.js --since=2026-10-03
       # Gate mutu konten (2026-10-09): artikel BARU (datePublished >= 2026-10-10) wajib

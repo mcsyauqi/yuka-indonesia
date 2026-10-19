@@ -15,6 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Batas keras Syauqi 2026-10-19: maksimal 3 artikel per datePublished. Entri jatuh tempo
+      # yang membuat tanggalnya > 3 (artikel manual/agen sudah memakai slotnya) dipindah ke
+      # tanggal kosong berikutnya SEBELUM publish, file artikelnya ikut diperbarui.
+      - name: Daily cap (max 3 per publish date)
+        run: node scripts/daily-cap.js defer --today "$(date -u +%Y-%m-%d)"
+
       - name: Check and publish scheduled articles
         id: publish
         run: |
@@ -265,7 +271,8 @@ jobs:
           } >> $GITHUB_OUTPUT
 
       - name: Commit and push changes
-        if: steps.publish.outputs.published == 'true'
+        # Juga jalan saat tidak ada yang terbit, supaya hasil defer daily-cap ikut tersimpan.
+        if: steps.publish.outcome == 'success'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -295,3 +302,7 @@ jobs:
       - name: Guard - antrean 3 hari ke depan + mutu antrean
         if: always()
         run: node scripts/check-schedule-gaps.js --window 3 --quality
+
+      - name: Fail visibly if any publish date exceeds 3 articles
+        if: always()
+        run: node scripts/daily-cap.js check

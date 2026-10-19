@@ -40,6 +40,8 @@ YUKA Indonesia adalah static HTML SEO/fundraising site untuk Yayasan Ukhuwah Kaf
 - Report theme assets: `report-assets/brand.json`, `report-assets/header.html`, `report-assets/footer.html`
 
 ### Publish Automation
+
+**Batas keras 3 artikel per tanggal terbit (Syauqi 2026-10-19).** Hitungan = file `artikel/*.html` per `datePublished` + entri `publish-schedule.json`. Hari normal 1; 2-3 hanya untuk menambal hari kosong. Berlaku untuk antrean, artikel yang di-commit langsung (agen/MinTiv), dan pemindahan dari `publish-schedule-backlog.json`. Sebelum mengantrekan/menerbitkan: `node scripts/daily-cap.js next-free` (tanggal kosong berikutnya); dry-run `node scripts/daily-cap.js check --add YYYY-MM-DD`. Pengaman: `publish-scheduled.yml` menjalankan `daily-cap.js defer` sebelum publish (kelebihan dipindah ke tanggal kosong berikutnya, datePublished file ikut) dan `check` di akhir (merah kalau > 3); `article-skeleton-gate.yml` menjalankan `check` tiap push artikel/antrean. Pelanggaran yang memicu aturan ini: 11 Okt 14, 12 Okt 7, 16 Okt 6, 17 Okt 4 (batch agen di-commit langsung di samping artikel terjadwal). Artikel yang sudah tayang jangan diubah tanggalnya.
 - Scheduled publish workflow: `.github/workflows/publish-scheduled.yml`
 - Runs daily at 02:00 UTC / 09:00 WIB
 - Reads `publish-schedule.json`
