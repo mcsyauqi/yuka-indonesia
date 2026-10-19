@@ -50,7 +50,7 @@ module.exports = {
   },
   figures: [
     {
-      file: 'Dokumentasi/artikel/sibling-anak-berkebutuhan-khusus-diagram.svg', w: 1200, h: 640,
+      file: 'Dokumentasi/artikel/sibling-anak-berkebutuhan-khusus-diagram.webp', w: 1200, h: 640,
       alt: 'Diagram empat kebutuhan saudara kandung ABK: informasi yang jujur, waktu khusus, ruang untuk perasaan, dan teman senasib',
       caption: 'Empat kebutuhan yang paling sering muncul dalam riset dan program dukungan sibling. Diagram ini ringkasan edukasi, bukan alat ukur.',
       credit: 'Diagram: Tim YUKA.'
