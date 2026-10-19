@@ -108,6 +108,13 @@ jobs:
               exit 1
             fi
 
+            # Inline image crop gate (cycle 80, 2026-10-19): gambar isi artikel wajib utuh,
+            # object-fit cover hanya untuk hero dan kartu.
+            if ! node scripts/check-inline-image-crop.js "$file"; then
+              echo "Crop gate failed: $file memotong gambar isi artikel. Pakai kerangka dari scripts/lib/article-page.js."
+              exit 1
+            fi
+
             # Anti-duplicate gate (2026-10-11, Trello gswe5XFa): badan artikel tidak boleh
             # salinan artikel lain (3 Okt 2026: 11 artikel bertajuk baru berisi salinan).
             if ! node scripts/check-article-duplicates.js "$file"; then

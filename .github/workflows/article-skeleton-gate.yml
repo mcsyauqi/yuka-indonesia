@@ -16,6 +16,8 @@ on:
       - 'scripts/check-article-*.js'
       - 'publish-schedule.json'
       - 'scripts/daily-cap.js'
+      - 'scripts/check-inline-image-crop.js'
+      - 'assets/css/**'
   pull_request:
     paths:
       - 'artikel/**'
@@ -37,6 +39,11 @@ jobs:
         run: node scripts/daily-cap.js check
       - name: Kerangka kanonik artikel sejak 2026-10-03
         run: node scripts/check-article-skeleton.js --since=2026-10-03
+      # Gate crop gambar isi (cycle 80, 2026-10-19): foto potret di isi artikel sempat
+      # dipaksa ke kotak lanskap 752x560 (object-fit: cover). Gambar isi wajib utuh;
+      # crop hanya untuk hero dan kartu. Merah = perbaiki EXTRA_CSS di scripts/lib/article-page.js.
+      - name: Gambar isi artikel tidak dipotong
+        run: node scripts/check-inline-image-crop.js
       # Gate mutu konten (2026-10-09): artikel BARU (datePublished >= 2026-10-10) wajib
       # >= 2000 kata, >= 4 gambar isi, >= 7 FAQ + FAQPage schema, >= 1 tabel. Merah = perluas
       # artikelnya (scripts/lib/article-quality.js), jangan longgarkan angkanya.
