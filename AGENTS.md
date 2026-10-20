@@ -113,6 +113,16 @@ Kerangka rapi saja tidak cukup. Ukur ulang 2026-10-09 menemukan 15 artikel YUKA 
    2 baris data), Daftar Isi, H2 150-300 kata per seksi, >= 10 tautan internal, tanpa em/en dash.
 2. **INVENT NOTHING**: angka, tanggal, harga, pasal, dan regulasi wajib bersumber (topik hukum: JDIH BPK,
    peraturan.go.id, JDIH kementerian, dokumen PBB). Tanpa sumber, tulis kualitatif.
+2b. **Topik BIAYA wajib memuat angka bersumber (2026-10-21).** Judul/slug memuat biaya, harga, tarif,
+   gaji, ongkos, atau "bayar berapa" berarti pembaca mencari ANGKA. Wajib: kisaran Rp nyata di
+   jawaban singkat dan tabel di bagian atas (per bulan/per jam, per kota, lembaga vs mandiri bila
+   ada datanya), tiap angka ditautkan ke sumber yang benar-benar memuat angka itu, plus tanggal
+   akses. Sumber yang sah: tarif resmi RS/lembaga, situs penyedia jasa, media keuangan, lowongan
+   kerja yang mencantumkan gaji (sebut jujur bahwa itu gaji, bukan harga paket). Jangan mengarang
+   harga layanan YUKA; YUKA tidak memublikasikan tarif. Kalau tidak ada satu pun sumber angka,
+   jangan tulis artikel biaya. Gate `article-quality.js` menolak artikel biaya dengan < 3 angka Rp,
+   Rp pertama di luar 25% awal isi, tanpa tabel ber-Rp, atau tanpa tautan sumber eksternal.
+   Asal-usul: `biaya-shadow-teacher-per-bulan` tayang 2026-10-20 dengan nol angka Rp.
 3. **Gambar isi**: gaya kanonik YUKA = foto Dokumentasi asli (`Dokumentasi/`), caption faktual + kredit
    `Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).` Lihat dulu tiap foto sebelum dipakai.
    Diagram/ilustrasi konsep boleh sebagai pelengkap, bukan pengganti foto.

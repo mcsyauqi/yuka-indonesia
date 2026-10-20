@@ -240,3 +240,22 @@ Jalankan kedua script setelah batch generate artikel untuk memastikan 0 .html li
 
 ### JSON-LD @id Field
 Note: JSON-LD schema `@id` di beberapa artikel masih menggunakan `.html` URL — ini separate issue dari social share dan tidak langsung menyebabkan GSC redirect errors. Akan di-fix di batch tersendiri.
+
+## Artikel Bertopik Biaya: Wajib Angka Bersumber (2026-10-21)
+
+Artikel yang judul atau slug-nya memuat biaya, harga, tarif, gaji, ongkos, atau "bayar berapa"
+WAJIB menjawab dengan angka Rupiah nyata, bukan hanya "tidak ada tarif resmi" dan rumus.
+Kasus asal: `artikel/biaya-shadow-teacher-per-bulan` tayang 2026-10-20 dengan 2.397 kata,
+7 FAQ, dan tabel, tetapi nol angka Rp, sehingga gagal memenuhi intent pencari.
+
+- Kisaran Rp di jawaban singkat dan dalam tabel di bagian atas artikel (per bulan/per jam,
+  per kota, lembaga vs mandiri bila datanya ada), lalu konteks dan faktor yang menggeser harga.
+- Setiap angka ditautkan ke sumber yang benar-benar memuat angka itu, dengan tanggal akses.
+  Lowongan kerja yang mencantumkan gaji boleh dipakai sebagai acuan, dengan catatan jujur
+  bahwa itu gaji pendamping, bukan harga paket untuk orang tua.
+- INVENT NOTHING. Tanpa sumber, angka tidak ditulis. Jangan mengarang harga layanan YUKA
+  (situs YUKA tidak memublikasikan tarif; arahkan ke halaman kontak).
+- Ditegakkan oleh `scripts/lib/article-quality.js` (gate renderer, `check-article-quality.js`,
+  `article-skeleton-gate.yml`, `publish-scheduled.yml`): artikel biaya gagal bila angka Rp < 3,
+  Rp pertama di luar 25% awal isi, tidak ada tabel ber-Rp, atau tidak ada tautan sumber eksternal.
+  Brief penulis lengkap di `AGENTS.md` butir 2b.
