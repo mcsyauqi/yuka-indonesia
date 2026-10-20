@@ -10,6 +10,8 @@ const path = require('path');
 const { execSync } = require('child_process');
 const root = path.resolve(__dirname, '..');
 const TAG = '<script src="/assets/js/yuka-conversions.js" defer></script>';
+// Tombol kembali ke atas + progress bar baca (cycle #81), satu berkas bersama.
+const UX_TAG = '<script src="/assets/js/ux-btt.js" defer data-color="#2B3A67" data-fg="#FFFFFF" data-radius="50%" data-label="Kembali ke atas"></script>';
 const SKIP = /^(tmp|data|reports|Dokumentasi|report-assets|screenshots|seo|deploy|tools|scripts|Flyer Zakat|Team|Logo|graphify-out|node_modules)\//;
 
 let files = process.argv.slice(2);
@@ -27,6 +29,10 @@ for (const f of files) {
     const i = h.lastIndexOf('</body>');
     if (i === -1) { console.warn('no </body>:', f); continue; }
     h = h.slice(0, i) + TAG + '\n' + h.slice(i);
+  }
+  if (!h.includes('ux-btt.js')) {
+    const j = h.lastIndexOf('</body>');
+    if (j !== -1) h = h.slice(0, j) + UX_TAG + '\n' + h.slice(j);
   }
   if (h !== before) { fs.writeFileSync(p, h); changed++; }
 }
