@@ -40,7 +40,7 @@ const fig = (file, alt, caption, kredit) => {
   const { w, h } = imageSize(path.join(ROOT, file));
   return `<figure><img src="/${file}" alt="${alt}" width="${w}" height="${h}" loading="lazy"><figcaption>${caption}<span class="kredit">${kredit}</span></figcaption></figure>`;
 };
-const diag = (file, alt, caption) => `<figure><img src="/${file}" alt="${alt}" width="1200" height="760" loading="lazy"><figcaption>${caption}<span class="kredit">Diagram: Tim YUKA.</span></figcaption></figure>`;
+const diag = (file, alt, caption) => `<figure><img src="/${file.replace(/\.svg$/, '.webp')}" alt="${alt}" width="1200" height="760" loading="lazy"><figcaption>${caption}<span class="kredit">Diagram: Tim YUKA.</span></figcaption></figure>`;
 
 const faq = [
   { q: 'Berapa biaya shadow teacher per bulan?', a: 'Tidak ada tarif resmi nasional. Biaya per bulan bergantung pada jam pendampingan per hari, jumlah hari efektif sekolah, tarif per jam atau per bulan, serta komponen tambahan seperti transport, supervisi, dan laporan. Cara paling aman adalah meminta penawaran tertulis yang merinci setiap komponen, lalu menghitung totalnya dengan rumus di artikel ini.' },
@@ -66,6 +66,7 @@ const sections = [
 ];
 
 const bodyHtml = `
+<span data-revision-marker="yuka-20261020-citations-d4a771c-r1" hidden></span>
 <div class="jawaban-singkat"><p><strong>Biaya shadow teacher per bulan</strong> tidak memiliki tarif resmi nasional. Besarnya ditentukan oleh jam pendampingan per hari, jumlah hari efektif sekolah, tarif yang disepakati, dan komponen tambahan seperti transport, supervisi, serta laporan. Sebelum merekrut sendiri, tanyakan dulu dukungan pendamping yang tersedia di sekolah, karena pendampingan termasuk bentuk akomodasi yang layak.</p></div>
 <p>Saat anak mulai bersekolah di kelas inklusi, banyak keluarga mendapat saran untuk menyediakan shadow teacher atau pendamping khusus. Pertanyaan berikutnya hampir selalu soal biaya. Jawabannya tidak bisa berupa satu angka, karena kebutuhan anak, model kerja, dan isi layanan sangat beragam. Artikel ini membantu keluarga menghitung biaya dengan cara yang jujur, membandingkan penawaran, dan menekan biaya jangka panjang tanpa mengorbankan anak.</p>
 <div class="toc"><h3>Daftar Isi</h3><ol>${sections.map(([id, t]) => `<li><a href="#${id}">${t}</a></li>`).join('')}</ol></div>
@@ -77,8 +78,8 @@ const bodyHtml = `
 <p>Karena itu, cara paling aman adalah meminta penawaran tertulis yang merinci setiap komponen. Penawaran yang hanya menyebut angka bulanan tanpa rincian menyulitkan perbandingan. Gunakan rumus di bagian berikutnya untuk mengubah setiap penawaran menjadi total biaya bulanan yang setara, lalu bandingkan isi layanannya.</p>
 
 <h2 id="siapa">Siapa seharusnya menanggung pendampingan</h2>
-<p>Sebelum menghitung biaya, keluarga perlu tahu bahwa pendampingan termasuk dalam kerangka akomodasi yang layak. <a href="https://peraturan.bpk.go.id/Details/285711/permendikbudriset-no-48-tahun-2023" target="_blank" rel="noopener">Permendikbudristek Nomor 48 Tahun 2023</a> Pasal 12 menyebut akomodasi yang layak diberikan berdasarkan hasil asesmen fungsional yang dilaksanakan satuan pendidikan dan difasilitasi Unit Layanan Disabilitas (ULD).</p>
-<p>Pasal 20 ayat (1) peraturan yang sama menyebut ULD memberikan layanan berupa penyediaan tenaga pendamping untuk kelancaran proses pembelajaran pada satuan pendidikan. Lampiran peraturan ini juga mencantumkan ketersediaan pendamping pada waktu proses pembelajaran jika diperlukan sebagai salah satu bentuk akomodasi. Dasar yang lebih tinggi adalah <a href="https://peraturan.bpk.go.id/Details/132596/pp-no-13-tahun-2020" target="_blank" rel="noopener">PP Nomor 13 Tahun 2020 tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas</a>.</p>
+<p>Sebelum menghitung biaya, keluarga perlu tahu bahwa pendampingan termasuk dalam kerangka akomodasi yang layak. <a href="https://www.upnvj.ac.id/id/files/download/fbcb4a4b8fb0ee43cf078db562703802/peraturan-menteri-pendidikan-kebudayaan-riset-dan-teknologi-nomor-48-tahun-2023-tentang-akomodasi-yang-layak-untuk-peserta-didik-penyandang-disabilitas-pada-satuan-pendidikan-anak-usia-dini-formal-pendidikan-dasar-pendidikan-menengah-dan-pendidikan-tinggi.html" target="_blank" rel="noopener">Permendikbudristek Nomor 48 Tahun 2023</a> Pasal 12 menyebut akomodasi yang layak diberikan berdasarkan hasil asesmen fungsional yang dilaksanakan satuan pendidikan dan difasilitasi Unit Layanan Disabilitas (ULD).</p>
+<p>Pasal 20 ayat (1) peraturan yang sama menyebut ULD memberikan layanan berupa penyediaan tenaga pendamping untuk kelancaran proses pembelajaran pada satuan pendidikan. Lampiran peraturan ini juga mencantumkan ketersediaan pendamping pada waktu proses pembelajaran jika diperlukan sebagai salah satu bentuk akomodasi. Dasar yang lebih tinggi adalah <a href="https://peraturan.go.id/id/pp-no-13-tahun-2020" target="_blank" rel="noopener">PP Nomor 13 Tahun 2020 tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas</a>.</p>
 <p>Dalam praktik, ketersediaan pendamping dari sekolah atau ULD masih berbeda antardaerah. Sebagian sekolah memiliki <a href="/artikel/gpk-adalah">guru pembimbing khusus</a> yang melayani beberapa anak, sebagian lain belum. Jadi langkah pertama adalah bertanya: dukungan apa yang sudah tersedia, berapa jam, dan untuk kebutuhan apa. Jawaban ini menentukan berapa jam pendampingan tambahan yang benar-benar perlu dibiayai keluarga.</p>
 <p>Bila sekolah meminta keluarga menyediakan pendamping sendiri, minta penjelasan tertulis tentang alasan dan peran yang diharapkan. Kejelasan ini membantu keluarga menyusun kontrak dan mencegah pendamping dibebani tugas yang seharusnya menjadi tanggung jawab guru kelas.</p>
 ${fig(`${IMG}/commons-kelas-darurat-sd-gelang-07-jember.webp`, 'Seorang guru berdiri membacakan materi di depan siswa SD yang belajar di meja kayu di bawah tenda darurat', 'Satu guru di kelas melayani banyak siswa sekaligus. Siswa SD Negeri Gelang 07 Jember ini belajar di tenda darurat setelah gedung sekolah rusak akibat bencana. Situasi kelas seperti ini membuat kebutuhan dukungan individual perlu direncanakan bersama sekolah.', 'Foto: <a href="https://commons.wikimedia.org/wiki/File:Semangat_belajar.jpg" target="_blank" rel="nofollow noopener">Kang maman99</a> / Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="nofollow noopener">CC BY-SA 4.0</a>')}
@@ -159,12 +160,12 @@ const data = {
   ],
   tags: ['ShadowTeacher', 'BiayaPendidikan', 'PendidikanInklusi'],
   sources: [
-    { url: 'https://peraturan.bpk.go.id/Details/285711/permendikbudriset-no-48-tahun-2023', label: 'Permendikbudristek No. 48 Tahun 2023 tentang Akomodasi yang Layak (Pasal 12, Pasal 20, dan lampiran)' },
-    { url: 'https://peraturan.bpk.go.id/Details/132596/pp-no-13-tahun-2020', label: 'PP No. 13 Tahun 2020 tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas' },
+    { url: 'https://www.upnvj.ac.id/id/files/download/fbcb4a4b8fb0ee43cf078db562703802/peraturan-menteri-pendidikan-kebudayaan-riset-dan-teknologi-nomor-48-tahun-2023-tentang-akomodasi-yang-layak-untuk-peserta-didik-penyandang-disabilitas-pada-satuan-pendidikan-anak-usia-dini-formal-pendidikan-dasar-pendidikan-menengah-dan-pendidikan-tinggi.html', label: 'Permendikbudristek No. 48 Tahun 2023 tentang Akomodasi yang Layak (Pasal 12, Pasal 20, dan lampiran)' },
+    { url: 'https://peraturan.go.id/id/pp-no-13-tahun-2020', label: 'PP No. 13 Tahun 2020 tentang Akomodasi yang Layak untuk Peserta Didik Penyandang Disabilitas' },
     { url: 'https://puslapdik.kemendikdasmen.go.id/faq-program-indonesia-pintar/', label: 'Puslapdik Kemendikdasmen: FAQ Program Indonesia Pintar' },
     { url: 'https://repositori.kemendikdasmen.go.id/24970/1/Panduan_Inklusif.pdf', label: 'Kemendikdasmen: Panduan Pelaksanaan Pendidikan Inklusif' },
   ],
-  sourcesCheckedNote: 'Regulasi dibaca dari JDIH BPK pada 19 Oktober 2026. Artikel sengaja tidak mencantumkan angka tarif karena tidak ada tarif resmi yang dapat diverifikasi.',
+  sourcesCheckedNote: 'Sumber diperiksa pada 20 Oktober 2026. Permendikbudristek 48/2023 dirujuk melalui salinan dokumen di UPN Veteran Jakarta dan PP 13/2020 melalui peraturan.go.id. Artikel sengaja tidak mencantumkan angka tarif karena tidak ada tarif resmi yang dapat diverifikasi.',
 };
 
 if (require.main === module) {
