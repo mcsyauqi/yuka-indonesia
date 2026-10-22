@@ -1,9 +1,15 @@
 name: Publish Scheduled Articles
 
 on:
-  schedule:
-    # Run daily at 02:00 UTC (09:00 WIB)
-    - cron: '40 1 * * *' # 01:40 UTC = 08:40 WIB (staggered antar situs)
+  # Jadwal harian dipindah ke cron VPS pada 2026-10-22 untuk menghentikan
+  # tagihan GitHub Actions. Langkah-langkah di bawah TIDAK berubah dan berkas
+  # ini tetap jadi satu-satunya definisi: runner di VPS membaca berkas ini
+  # apa adanya lewat /home/ubuntu/gha-runner/jalankan.sh.
+  # Jadwal lama: 40 1 * * *
+  # Mengembalikan ke GitHub: hidupkan lagi blok schedule di bawah ini,
+  # lalu matikan barisnya di crontab user ubuntu.
+  # # Run daily at 02:00 UTC (09:00 WIB)
+  # - cron: '40 1 * * *' # 01:40 UTC = 08:40 WIB (staggered antar situs)
   workflow_dispatch: # Allow manual trigger
 
 permissions:
