@@ -199,7 +199,7 @@ const bodyParts = [
   ),
 
   h2('bukti-ilmiah', 'Seberapa Kuat Bukti Ilmiahnya?'),
-  p(`Orang tua berhak tahu bukan hanya apa yang dilakukan, tetapi juga seberapa kuat dasarnya. Tinjauan payung terbaru oleh ${ext(SRC.paleg, 'Paleg dan rekan (jurnal Disabilities, 2025)')} merangkum delapan tinjauan sistematis dan dua tinjauan ringkas tentang intervensi terapi fisik dan okupasi untuk anak di bawah 6 tahun dengan hipotonia sentral perkembangan, kelompok yang mencakup antara lain sindrom Down, sindrom Prader-Willi, dan palsi serebral dengan hipotonia sebagai tipe gerak utama.`),
+  p(`Orang tua berhak tahu bukan hanya apa yang dilakukan, tetapi juga seberapa kuat dasarnya. Tinjauan payung terbaru oleh ${ext(SRC.paleg, 'Paleg dan rekan (jurnal Disabilities, 2025)')} merangkum delapan tinjauan sistematis dan dua tinjauan payung (overview of reviews) tentang intervensi terapi fisik dan okupasi untuk anak di bawah 6 tahun dengan hipotonia sentral perkembangan, kelompok yang mencakup antara lain sindrom Down, sindrom Prader-Willi, dan palsi serebral dengan hipotonia sebagai tipe gerak utama.`),
   table(
     'Ringkasan temuan tinjauan Paleg dkk. (2025) tentang intervensi untuk anak usia di bawah 6 tahun dengan hipotonia sentral perkembangan',
     ['Pendekatan', 'Yang ditemukan tinjauan', 'Kekuatan bukti'],
