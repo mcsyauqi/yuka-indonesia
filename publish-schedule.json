@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "date": "2026-10-30",
+    "slug": "positive-behavior-support-pbs-anak",
+    "file": "artikel/positive-behavior-support-pbs-anak.html",
+    "title": "Positive Behavior Support Pbs Anak",
+    "description": "Artikel lengkap tentang positive behavior support pbs anak. Panduan komprehensif untuk orang tua, guru, dan pendamping anak berkebutuhan khusus.",
+    "image": "Dokumentasi/21 Jan 2026/IMG_8414.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-11-02",
+    "slug": "peraturan-pemerintah-tentang-disabilitas",
+    "file": "artikel/peraturan-pemerintah-tentang-disabilitas.html",
+    "title": "Peraturan Pemerintah Tentang Disabilitas",
+    "description": "Artikel lengkap tentang peraturan pemerintah tentang disabilitas. Peta aturan untuk keluarga, sekolah, dan pendamping.",
+    "image": "Dokumentasi/21 Jan 2026/20260121_115830.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  },
+  {
+    "date": "2026-11-03",
+    "slug": "program-rehabilitasi-sosial-anak-disabilitas-kemensos",
+    "file": "artikel/program-rehabilitasi-sosial-anak-disabilitas-kemensos.html",
+    "title": "Program Rehabilitasi Sosial Anak Disabilitas Kemensos",
+    "description": "Panduan memahami ATENSI, sasaran, bentuk layanan, dan cara mencari akses rehabilitasi sosial anak disabilitas.",
+    "image": "Dokumentasi/museum-gunung-merapi-anak-sekolah-foto-bersama-mall-050.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca"
+  }
+]
