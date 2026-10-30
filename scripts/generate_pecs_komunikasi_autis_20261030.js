@@ -8,7 +8,7 @@ const svg = require('./lib/diagram-svg');
 const ROOT = path.resolve(__dirname, '..');
 const slug = 'pecs-komunikasi-autis';
 const IMG = 'assets/images/artikel';
-const heroFile = 'Dokumentasi/21 Jan 2026/20260121_115445.jpg';
+const heroFile = 'Dokumentasi/21 Jan 2026/IMG_8421.JPG';
 const credit = 'Foto: Dokumentasi YUKA (Yayasan Ukhuwah Kaffah Amanatullah).';
 
 const diagrams = {
@@ -167,7 +167,7 @@ if (require.main === module) {
   for (const [file, content] of Object.entries(diagrams)) fs.writeFileSync(path.join(ROOT, file), content);
   const size = imageSize(path.join(ROOT, heroFile));
   if (size.w !== 1200 || size.h !== 900) throw new Error(`Hero wajib 1200x900, didapat ${size.w}x${size.h}`);
-  fs.writeFileSync(path.join(ROOT, 'artikel', `${slug}.html`), renderArticlePage(data));
+  fs.writeFileSync(path.join(ROOT, 'artikel', `${slug}.html`), renderArticlePage(data).replace('<article class="article-content">', '<article class="article-content" data-revision-marker="yuka-autopilot-20261030-41996a6-pecs-v2">'));
   console.log(`Generated artikel/${slug}.html`);
 }
 module.exports = { data, faq, bodyHtml };
