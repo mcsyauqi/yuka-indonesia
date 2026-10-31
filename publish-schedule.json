@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "slug": "anak-abk-dan-bullying-cara-mencegah",
+    "file": "artikel/anak-abk-dan-bullying-cara-mencegah.html",
+    "title": "Anak ABK dan Bullying: Cara Mencegah di Sekolah dan di Rumah",
+    "description": "Definisi perundungan menurut CDC, bentuk yang sering terlewat, tanda yang perlu dicek, serta langkah pencegahan di sekolah dan di rumah.",
+    "image": "Dokumentasi/cpao-anak-anak-kelas-memasak-bersama-071.webp",
+    "category": "Pendidikan",
+    "readTime": "15 menit baca",
+    "date": "2026-11-01"
+  },
+  {
+    "slug": "cara-melatih-toilet-training-anak-abk",
+    "file": "artikel/cara-melatih-toilet-training-anak-abk.html",
+    "title": "Cara Melatih Toilet Training Anak ABK: Tanda Kesiapan dan Tahapannya",
+    "description": "Tanda kesiapan menurut American Academy of Pediatrics, tahapan latihan di rumah, hambatan umum, dan kapan perlu konsultasi ke dokter.",
+    "image": "Dokumentasi/16-feb-2026-siswa-abk-menyiapkan-makanan-dibawa-pulang-01.webp",
+    "category": "Pendidikan",
+    "readTime": "15 menit baca",
+    "date": "2026-11-02"
+  },
+  {
+    "slug": "mengapa-pendidikan-inklusi-penting",
+    "file": "artikel/mengapa-pendidikan-inklusi-penting.html",
+    "title": "Mengapa Pendidikan Inklusi Penting? Alasan, Bukti, dan Syaratnya",
+    "description": "Dasar hak menurut CRPD pasal 24, data UNESCO dan WHO, manfaat untuk semua siswa, syarat pelaksanaan, hambatan, dan cara menilainya.",
+    "image": "Dokumentasi/museum-gunung-merapi-anak-sekolah-kunjungan-museum-foto-bersama-047.webp",
+    "category": "Pendidikan",
+    "readTime": "15 menit baca",
+    "date": "2026-11-03"
+  }
+]
