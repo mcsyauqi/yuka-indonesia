@@ -68,9 +68,16 @@ function articleLastmod(file) {
   return d > TODAY ? TODAY : d;
 }
 
+// A page whose canonical points elsewhere (merged near-duplicate) must stay out of
+// the sitemap, otherwise the sitemap and the canonical tag send opposite signals.
+function isSelfCanonical(file) {
+  const tag = read(path.join('artikel', file)).match(/<link[^>]*rel=["']canonical["'][^>]*>/i)?.[0];
+  return !tag || tag.includes(`/artikel/${cleanSlug(file)}"`);
+}
+
 function articlePages(meta) {
   return fs.readdirSync('artikel')
-    .filter((file) => file.endsWith('.html'))
+    .filter((file) => file.endsWith('.html') && isSelfCanonical(file))
     .sort()
     .map((file) => {
       const loc = `${SITE}/artikel/${cleanSlug(file)}`;
