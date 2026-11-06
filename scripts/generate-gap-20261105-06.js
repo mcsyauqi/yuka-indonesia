@@ -4,8 +4,8 @@
  *
  * Keyword dari sheet Keyword Data proyek (1hxfhWoOOAYeGp2M14LSM2Oe0aRngaZ3gFpr866cUdUc),
  * tab "Riset Keyword Batch 5":
- *   - baris 161 "cara membuat rapor anak berkebutuhan khusus"   -> 5 Nov
- *   - baris 145 "modifikasi materi pelajaran matematika untuk abk" -> 6 Nov
+ *   - baris 160 "cara membuat rapor anak berkebutuhan khusus"   -> 5 Nov
+ *   - baris 144 "modifikasi materi pelajaran matematika untuk abk" -> 6 Nov
  * Keduanya belum punya artikel (dicek terhadap artikel/*.html).
  *
  * Stok foto Dokumentasi habis sejak cycle #87, jadi foto memakai berkas Wikimedia Commons
