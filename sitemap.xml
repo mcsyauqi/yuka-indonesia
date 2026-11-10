@@ -1903,6 +1903,12 @@
       <priority>0.7</priority>
     </url>
     <url>
+      <loc>https://www.yukaindonesia.com/artikel/transisi-anak-abk-dari-sd-ke-smp</loc>
+      <lastmod>2026-11-09</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>0.8</priority>
+    </url>
+    <url>
       <loc>https://www.yukaindonesia.com/artikel/transisi-anak-abk-dari-tk-ke-sd</loc>
       <lastmod>2026-08-17</lastmod>
       <changefreq>monthly</changefreq>
@@ -2048,7 +2054,7 @@
     </url>
     <url>
       <loc>https://www.yukaindonesia.com/blog</loc>
-      <lastmod>2026-11-08</lastmod>
+      <lastmod>2026-11-09</lastmod>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
