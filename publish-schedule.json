@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "slug": "token-economy-untuk-anak-abk",
+    "file": "artikel/token-economy-untuk-anak-abk.html",
+    "title": "Token Economy untuk Anak ABK: Pengertian, Langkah, dan Contoh di Kelas Inklusi",
+    "description": "Token economy system untuk anak ABK: pengertian, komponen, apa kata penelitian, langkah menyusun di kelas inklusi, contoh papan token, dan cara mengurangi token.",
+    "image": "assets/images/artikel/token-economy-hero.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca",
+    "date": "2026-11-17"
+  },
+  {
+    "slug": "pendidikan-inklusi-penuh-vs-parsial",
+    "file": "artikel/pendidikan-inklusi-penuh-vs-parsial.html",
+    "title": "Pendidikan Inklusi Penuh vs Parsial: Pengertian, Perbedaan, dan Cara Memilih",
+    "description": "Pendidikan inklusi penuh vs parsial: pengertian, perbedaan, bentuk layanan, dasar hak di Indonesia, dan cara menentukan model yang tepat untuk anak berkebutuhan khusus.",
+    "image": "assets/images/artikel/inklusi-penuh-parsial-hero.webp",
+    "category": "Pendidikan",
+    "readTime": "13 menit baca",
+    "date": "2026-11-18"
+  },
+  {
+    "slug": "social-story-untuk-anak-autis",
+    "file": "artikel/social-story-untuk-anak-autis.html",
+    "title": "Social Story untuk Anak Autis: Pengertian, Cara Membuat, dan Contohnya",
+    "description": "Social story untuk anak autis: pengertian, jenis kalimat, langkah menulis, contoh cerita upacara bendera, cara membacakan, dan apa kata penelitian.",
+    "image": "assets/images/artikel/social-story-hero.webp",
+    "category": "Terapi",
+    "readTime": "13 menit baca",
+    "date": "2026-11-19"
+  }
+]
