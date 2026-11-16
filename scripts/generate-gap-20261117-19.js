@@ -4,7 +4,7 @@
  *
  * Keyword dari sheet Keyword Data proyek (1hxfhWoOOAYeGp2M14LSM2Oe0aRngaZ3gFpr866cUdUc),
  * tab "Riset Keyword Batch 5":
- *   - baris 158 "token economy system untuk anak abk"     -> 17 Nov
+ *   - baris 158 "token economy system untuk anak abk"     -> 15 Nov (dipindah dari 17 Nov: tambal hari kosong 15 Nov, arahan induk cycle 98)
  *   - baris 117 "pendidikan inklusi penuh vs parsial"     -> 18 Nov
  *   - baris 83  "social stories terapi autisme"          -> 19 Nov
  *   - baris 210 "peran ayah dalam pengasuhan anak abk"   -> 20 Nov (window guard 3 hari)
@@ -651,8 +651,8 @@ const articles = [
     h1: 'Token Economy untuk Anak ABK: Pengertian, Langkah, dan Contoh di Kelas Inklusi',
     crumb: 'Token Economy untuk Anak ABK',
     category: 'Pendidikan',
-    datePublished: '2026-11-17T08:00:00+07:00', dateModified: '2026-11-17T08:00:00+07:00',
-    dateDisplay: '17 November 2026', readTime: '13 menit baca',
+    datePublished: '2026-11-15T08:00:00+07:00', dateModified: '2026-11-15T08:00:00+07:00',
+    dateDisplay: '15 November 2026', readTime: '13 menit baca',
     authorName: 'Tim YUKA',
     image: {
       file: `${IMG}/token-economy-hero.webp`, w: 1200, h: 740,
