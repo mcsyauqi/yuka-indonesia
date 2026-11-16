@@ -7,7 +7,7 @@
  *   - baris 158 "token economy system untuk anak abk"     -> 17 Nov
  *   - baris 117 "pendidikan inklusi penuh vs parsial"     -> 18 Nov
  *   - baris 83  "social stories terapi autisme"          -> 19 Nov
- *   - baris 211 "peran ayah dalam pengasuhan anak abk"   -> 20 Nov (window guard 3 hari)
+ *   - baris 210 "peran ayah dalam pengasuhan anak abk"   -> 20 Nov (window guard 3 hari)
  * Ketiganya belum punya artikel sendiri (dicek terhadap artikel/*.html).
  *
  * Stok foto Dokumentasi habis, jadi foto memakai berkas Wikimedia Commons berlisensi
@@ -463,7 +463,7 @@ const sBody = [
 
 // ---------------------------------------------------------------------------
 // Artikel 4: peran ayah dalam pengasuhan anak ABK (20 Nov 2026)
-// Keyword: tab "Riset Keyword Batch 5" baris 211 "peran ayah dalam pengasuhan anak abk".
+// Keyword: tab "Riset Keyword Batch 5" baris 210 "peran ayah dalam pengasuhan anak abk".
 // ---------------------------------------------------------------------------
 const A_HERO = 'https://commons.wikimedia.org/wiki/File:Potret_Keluarga_Cemara_Bermain_Gelembung_Sabun_di_Taman_Ahmad_Yani.jpg';
 const A_PANTAI = 'https://commons.wikimedia.org/wiki/File:Bermain_bersama_keluarga_ditepi_pantai.jpg';
