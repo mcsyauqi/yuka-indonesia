@@ -7,6 +7,7 @@
  *   - baris 158 "token economy system untuk anak abk"     -> 17 Nov
  *   - baris 117 "pendidikan inklusi penuh vs parsial"     -> 18 Nov
  *   - baris 83  "social stories terapi autisme"          -> 19 Nov
+ *   - baris 211 "peran ayah dalam pengasuhan anak abk"   -> 20 Nov (window guard 3 hari)
  * Ketiganya belum punya artikel sendiri (dicek terhadap artikel/*.html).
  *
  * Stok foto Dokumentasi habis, jadi foto memakai berkas Wikimedia Commons berlisensi
@@ -460,6 +461,185 @@ const sBody = [
   faqHtml(sFaq),
 ];
 
+// ---------------------------------------------------------------------------
+// Artikel 4: peran ayah dalam pengasuhan anak ABK (20 Nov 2026)
+// Keyword: tab "Riset Keyword Batch 5" baris 211 "peran ayah dalam pengasuhan anak abk".
+// ---------------------------------------------------------------------------
+const A_HERO = 'https://commons.wikimedia.org/wiki/File:Potret_Keluarga_Cemara_Bermain_Gelembung_Sabun_di_Taman_Ahmad_Yani.jpg';
+const A_PANTAI = 'https://commons.wikimedia.org/wiki/File:Bermain_bersama_keluarga_ditepi_pantai.jpg';
+const A_TAMAN = 'https://commons.wikimedia.org/wiki/File:Area_Bermain_Anak-anak_di_Kebon_Rojo_Jombang-1.jpg';
+const BY4 = ['CC BY 4.0', 'https://creativecommons.org/licenses/by/4.0/'];
+const BY3B = ['CC BY 3.0', 'https://creativecommons.org/licenses/by/3.0/'];
+const URL_NC = 'https://nurturing-care.org/';
+const URL_WHO_NC = 'https://www.who.int/publications/i/item/9789241514064';
+
+const aSections = [
+  ['mengapa', 'Mengapa peran ayah penting'],
+  ['bentuk', 'Bentuk keterlibatan ayah sehari-hari'],
+  ['pembagian', 'Berbagi peran dengan ibu'],
+  ['sekolah', 'Ayah dalam urusan sekolah dan terapi'],
+  ['hambatan', 'Hambatan yang sering dialami ayah'],
+  ['mulai', 'Langkah kecil untuk memulai'],
+  ['kegiatan', 'Contoh kegiatan ayah dan anak'],
+  ['emosi', 'Menjaga kesehatan emosi ayah'],
+  ['keliru', 'Kesalahan yang sering terjadi'],
+  ['faq', 'Pertanyaan yang sering diajukan'],
+];
+
+const aFaq = [
+  { q: 'Apa saja peran ayah dalam pengasuhan anak ABK?', a: 'Peran ayah mencakup pengasuhan harian, bermain dan menemani belajar, ikut mengambil keputusan tentang sekolah dan terapi, mendukung pasangan secara emosional, dan menjadi teladan bagi anak. Peran ini bukan pelengkap. Ayah adalah pengasuh yang setara, sehingga keterlibatannya ikut menentukan suasana keluarga dan kemajuan anak.' },
+  { q: 'Bagaimana jika ayah bekerja jauh atau pulang larut?', a: 'Keterlibatan tidak selalu diukur dari lamanya waktu. Ayah yang bekerja jauh bisa tetap terlibat lewat panggilan video rutin, mengikuti kabar dari sekolah atau terapis, membaca catatan perkembangan anak, dan memegang satu kegiatan tetap saat pulang, misalnya mengantar sekolah atau bermain di akhir pekan.' },
+  { q: 'Apakah ayah perlu ikut sesi terapi anak?', a: 'Sangat dianjurkan, setidaknya sesekali. Dengan melihat langsung, ayah memahami strategi yang dipakai terapis dan bisa melanjutkannya di rumah. Bila jadwal kerja tidak memungkinkan, minta terapis membagikan catatan singkat atau rekaman contoh latihan yang bisa dipraktikkan bersama anak.' },
+  { q: 'Bagaimana ayah bisa membantu ibu yang kelelahan?', a: 'Ambil alih tugas tertentu secara penuh, bukan hanya membantu sesekali. Contohnya memegang rutinitas mandi dan tidur, mengurus jadwal terapi, atau menemani anak di akhir pekan agar ibu bisa beristirahat. Dengarkan juga cerita pasangan tanpa langsung memberi solusi, karena dukungan emosional sama pentingnya.' },
+  { q: 'Apakah wajar jika ayah sulit menerima kondisi anak?', a: 'Wajar. Banyak ayah merasakan sedih, bingung, atau menyangkal saat pertama mengetahui kondisi anak, hanya saja sering tidak diungkapkan. Perasaan itu perlu diakui, bukan dipendam. Berbicara dengan pasangan, sesama ayah dari anak ABK, atau konselor bisa membantu ayah melewati masa penerimaan.' },
+  { q: 'Kegiatan apa yang cocok dilakukan ayah bersama anak ABK?', a: 'Pilih kegiatan yang disukai anak dan sesuai kemampuannya, misalnya bermain di taman, berjalan pagi, bermain bola sederhana, merakit balok, atau membantu pekerjaan rumah yang ringan. Yang penting bukan jenis kegiatannya, melainkan kehadiran yang rutin, sabar, dan menyenangkan bagi anak.' },
+  { q: 'Bagaimana jika ayah dan ibu berbeda pendapat soal pengasuhan?', a: 'Bicarakan saat anak tidak ada dan suasana tenang. Mulailah dari tujuan yang sama, yaitu kebaikan anak, lalu cari kesepakatan tentang aturan dan cara merespons perilaku tertentu. Bila perlu, ajak guru, terapis, atau konselor keluarga sebagai penengah agar keputusan didasarkan pada kebutuhan anak.' },
+  { q: 'Di mana ayah bisa mencari dukungan?', a: 'Dukungan bisa datang dari pasangan, keluarga besar, sesama orang tua di sekolah atau tempat terapi, komunitas orang tua anak berkebutuhan khusus, dan konselor atau psikolog. Banyak ayah merasa lebih ringan setelah bertemu ayah lain yang mengalami hal serupa, karena mereka saling memahami tanpa perlu banyak penjelasan.' },
+];
+
+addDiagram(`${IMG}/peran-ayah-bentuk.webp`, svg.cards('Empat bentuk keterlibatan ayah', 'Keterlibatan tidak harus besar, yang penting rutin', [
+  { h: 'Harian', color: '#2B3A67', items: ['Memegang satu rutinitas tetap', 'Mandi, makan, atau menidurkan', 'Mengantar ke sekolah'] },
+  { h: 'Bermain', color: '#00BCD4', items: ['Bermain sesuai minat anak', 'Kegiatan fisik di luar rumah', 'Membaca atau merakit balok'] },
+  { h: 'Keputusan', color: '#E53935', items: ['Ikut asesmen dan rapat sekolah', 'Memahami program terapi', 'Ikut merencanakan keuangan'] },
+  { h: 'Dukungan', color: '#2B3A67', items: ['Menjadi tempat cerita pasangan', 'Berbagi tugas secara adil', 'Menjaga kesehatan emosi sendiri'] },
+]));
+addDiagram(`${IMG}/peran-ayah-mulai.webp`, svg.flow('Langkah kecil ayah untuk memulai', 'Mulai dari satu kebiasaan, lalu tambah perlahan', [
+  { h: 'Kenali anak', d: 'Pelajari kekuatan, minat, dan pemicu kesulitan anak.' },
+  { h: 'Pilih satu tugas', d: 'Ambil alih satu rutinitas harian secara penuh.' },
+  { h: 'Jadwalkan bermain', d: 'Waktu khusus berdua, singkat tetapi rutin.' },
+  { h: 'Hadir di sekolah', d: 'Ikut minimal satu pertemuan guru atau terapis.' },
+  { h: 'Bicara dengan pasangan', d: 'Evaluasi pembagian tugas setiap pekan.' },
+  { h: 'Cari teman sesama ayah', d: 'Bergabung dengan komunitas orang tua ABK.' },
+]));
+
+const aBody = [
+  p('<strong>Peran ayah dalam pengasuhan anak ABK</strong> sama pentingnya dengan peran ibu. Ayah bukan sekadar pencari nafkah atau pembantu sesekali, melainkan pengasuh yang ikut hadir dalam rutinitas harian, bermain, mengambil keputusan tentang sekolah dan terapi, serta mendukung pasangan. Keterlibatan ayah yang rutin membantu anak merasa aman dan meringankan beban keluarga.'),
+  p('Di banyak keluarga, pengasuhan anak berkebutuhan khusus masih banyak dipikul ibu. Ibu yang mengantar terapi, berbicara dengan guru, dan mengurus kebutuhan harian, sementara ayah bekerja dan baru terlibat saat ada masalah besar. Artikel ini membahas mengapa peran ayah penting, bentuk keterlibatan yang realistis, cara berbagi peran, hambatan yang sering dialami ayah, dan langkah kecil untuk memulai. Pembahasan dukungan keluarga secara umum ada di artikel ' + a('dukungan-keluarga-anak-abk', 'dukungan keluarga anak ABK') + '.'),
+  toc(aSections),
+
+  '<h2 id="mengapa">Mengapa peran ayah penting</h2>',
+  p('Kerangka ' + ext(URL_WHO_NC, 'Nurturing Care for Early Childhood Development') + ' yang diterbitkan WHO bersama mitranya menjelaskan bahwa anak membutuhkan pengasuhan yang menyeluruh: kesehatan yang baik, gizi yang cukup, pengasuhan yang responsif, kesempatan belajar sejak dini, serta rasa aman dan keselamatan. Kerangka ini ditujukan kepada para pengasuh anak, dan ayah termasuk di dalamnya. Penjelasan ringkasnya juga tersedia di situs ' + ext(URL_NC, 'Nurturing Care Framework') + '.'),
+  p('Bagi anak berkebutuhan khusus, pengasuhan yang responsif berarti orang dewasa di sekitarnya memahami sinyal dan kebutuhannya, lalu menanggapinya dengan tepat. Semakin banyak pengasuh yang memahami anak, semakin konsisten respons yang ia terima. Ayah yang mengenal cara anak berkomunikasi, apa yang menenangkannya, dan apa yang memicu kesulitannya akan membuat rumah terasa lebih bisa diprediksi bagi anak.'),
+  p('Keterlibatan ayah juga berdampak pada keluarga secara keseluruhan. Beban yang dibagi lebih adil memberi ruang bagi ibu untuk beristirahat, menjaga hubungan suami istri, dan memberi perhatian pada saudara kandung. Topik saudara kandung dibahas di ' + a('sibling-anak-berkebutuhan-khusus', 'sibling anak berkebutuhan khusus') + '.'),
+  fig(`${IMG}/peran-ayah-pantai.webp`, 1200, 800, 'Seorang ayah berbaju merah memboncengkan anak di atas motor ATV kuning di pantai berpasir, diikuti ATV merah lain di belakangnya, dengan laut dan langit berawan', 'Kegiatan bersama keluarga di tepi pantai. Waktu bermain di luar rumah bersama ayah memberi anak pengalaman baru dalam suasana yang menyenangkan.', CC(A_PANTAI, 'Dody.bukittinggi', ...BYSA4)),
+
+  '<h2 id="bentuk">Bentuk keterlibatan ayah sehari-hari</h2>',
+  diag(`${IMG}/peran-ayah-bentuk.webp`, 'Diagram empat kartu bentuk keterlibatan ayah: harian, bermain, keputusan, dan dukungan, masing-masing dengan contoh kegiatan', 'Empat bentuk keterlibatan ayah. Tidak harus semuanya sekaligus, yang penting rutin.'),
+  p('Keterlibatan ayah tidak harus berupa perubahan besar. Banyak ayah merasa harus menjadi ahli terapi lebih dulu sebelum terlibat, padahal yang paling dibutuhkan anak adalah kehadiran yang rutin dan bisa diandalkan. Empat bentuk keterlibatan berikut bisa dipilih sesuai waktu dan kemampuan.'),
+  ul([
+    '<strong>Rutinitas harian.</strong> Memegang satu kegiatan tetap, misalnya memandikan, menyiapkan sarapan, atau menidurkan anak. Rutinitas yang dipegang ayah membuat anak terbiasa diasuh oleh lebih dari satu orang.',
+    '<strong>Bermain.</strong> Bermain sesuai minat anak, baik di dalam maupun di luar rumah. Panduan memilih permainan ada di ' + a('tahapan-perkembangan-bermain-anak-abk', 'tahapan perkembangan bermain anak ABK') + '.',
+    '<strong>Keputusan penting.</strong> Ikut asesmen, pertemuan sekolah, dan pembahasan program terapi, sehingga keputusan diambil bersama.',
+    '<strong>Dukungan bagi pasangan.</strong> Menjadi tempat bercerita, berbagi tugas secara adil, dan memberi kesempatan pasangan beristirahat.',
+  ]),
+
+  '<h2 id="pembagian">Berbagi peran dengan ibu</h2>',
+  p('Pembagian peran yang jelas mencegah salah satu orang tua kelelahan. Kuncinya adalah membagi tanggung jawab penuh atas tugas tertentu, bukan sekadar membantu ketika diminta. Tabel berikut berisi contoh pembagian yang bisa disesuaikan dengan jadwal kerja dan kekuatan masing-masing.'),
+  table('Contoh pembagian peran ayah dan ibu dalam seminggu', ['Tugas', 'Contoh pembagian', 'Catatan'], [
+    ['Rutinitas pagi', 'Ayah menyiapkan sarapan dan mengantar sekolah', 'Cocok bila ayah berangkat kerja searah sekolah'],
+    ['Jadwal terapi', 'Bergantian, ayah memegang sesi Sabtu', 'Ayah bisa langsung belajar dari terapis'],
+    ['Komunikasi dengan sekolah', 'Ibu membaca buku penghubung, ayah ikut rapat semester', 'Keduanya tahu perkembangan anak'],
+    ['Waktu bermain', 'Ayah memegang waktu bermain sore atau akhir pekan', 'Rutin lebih penting daripada lama'],
+    ['Waktu istirahat ibu', 'Ayah mengasuh penuh beberapa jam di akhir pekan', 'Mencegah kelelahan pengasuh utama'],
+  ]),
+  p('Pembagian ini sebaiknya dievaluasi berkala, misalnya setiap akhir pekan, karena kebutuhan anak dan jadwal kerja bisa berubah. Kelelahan pengasuh dibahas lebih lanjut di ' + a('mengelola-stres-orang-tua-anak-abk', 'mengelola stres orang tua anak ABK') + ' dan ' + a('respite-care-untuk-keluarga-anak-abk', 'respite care untuk keluarga anak ABK') + '.'),
+
+  '<h2 id="sekolah">Ayah dalam urusan sekolah dan terapi</h2>',
+  p('Kehadiran ayah di sekolah dan tempat terapi memberi dua manfaat. Pertama, ayah mendengar langsung penjelasan guru atau terapis sehingga tidak bergantung pada cerita orang lain. Kedua, anak melihat bahwa kedua orang tuanya peduli pada sekolah dan latihannya.'),
+  ol([
+    '<strong>Ikut asesmen awal.</strong> Informasi dari kedua orang tua membuat gambaran tentang anak lebih lengkap. Lihat ' + a('asesmen-abk', 'asesmen ABK') + '.',
+    '<strong>Hadir dalam penyusunan program.</strong> Ayah ikut membahas tujuan dalam ' + a('program-pembelajaran-individual', 'Program Pembelajaran Individual') + '.',
+    '<strong>Pelajari satu strategi dari terapis.</strong> Minta contoh latihan yang bisa dilakukan di rumah dan praktikkan rutin.',
+    '<strong>Baca catatan perkembangan.</strong> Buku penghubung atau laporan bulanan membantu ayah mengikuti kemajuan anak.',
+  ]),
+  p('Peran orang tua dalam pendidikan anak di sekolah inklusi dijelaskan lebih lengkap di ' + a('peran-orang-tua-pendidikan-inklusi', 'peran orang tua dalam pendidikan inklusi') + '. Bila anak sedang menjalani terapi perilaku, ayah juga perlu memahami prinsipnya agar responsnya di rumah sejalan, seperti dibahas di ' + a('apa-saja-terapi-perilaku-untuk-autisme', 'apa saja terapi perilaku untuk autisme') + '.'),
+
+  '<h2 id="hambatan">Hambatan yang sering dialami ayah</h2>',
+  p('Banyak ayah sebenarnya ingin terlibat, tetapi menghadapi hambatan yang jarang dibicarakan. Mengenali hambatan ini membantu keluarga mencari jalan keluar bersama, bukan saling menyalahkan.'),
+  ul([
+    '<strong>Jadwal kerja.</strong> Jam kerja panjang atau bekerja di luar kota membuat waktu bersama anak terbatas.',
+    '<strong>Merasa tidak tahu caranya.</strong> Ayah yang jarang terlibat sejak awal sering ragu dan takut salah.',
+    '<strong>Proses menerima yang berbeda.</strong> Ayah dan ibu bisa melewati masa penerimaan dengan kecepatan yang berbeda. Lihat ' + a('grief-dan-acceptance-orang-tua-anak-abk', 'grief dan acceptance orang tua anak ABK') + '.',
+    '<strong>Anggapan peran tradisional.</strong> Pandangan bahwa mengasuh adalah urusan ibu membuat ayah enggan terlibat.',
+    '<strong>Perasaan dipendam.</strong> Ayah sering merasa harus kuat sehingga tidak membicarakan kesedihan atau kecemasannya.',
+  ]),
+  p('Hambatan-hambatan ini bukan alasan untuk mundur, melainkan hal yang perlu diakui lalu diatasi pelan-pelan. Pasangan bisa membantu dengan memberi ruang bagi ayah untuk belajar, termasuk membiarkan ayah melakukan sesuatu dengan caranya sendiri selama aman bagi anak.'),
+  fig(`${IMG}/peran-ayah-taman-bermain.webp`, 1200, 900, 'Area bermain anak di taman kota beralas rumput sintetis hijau dengan ayunan kuning, pepohonan rindang, dan beberapa keluarga duduk serta bermain bersama anak', 'Area bermain anak di Kebon Rojo, Jombang. Taman bermain umum bisa menjadi tempat sederhana bagi ayah untuk meluangkan waktu rutin bersama anak.', CC(A_TAMAN, 'Indonesiagood', ...BY3B)),
+
+  '<h2 id="mulai">Langkah kecil untuk memulai</h2>',
+  diag(`${IMG}/peran-ayah-mulai.webp`, 'Diagram enam langkah kecil ayah: kenali anak, pilih satu tugas, jadwalkan bermain, hadir di sekolah, bicara dengan pasangan, dan cari teman sesama ayah', 'Mulai dari satu kebiasaan, lalu tambah perlahan sesuai kemampuan.'),
+  p('Bagi ayah yang ingin lebih terlibat tetapi belum tahu harus mulai dari mana, langkah berikut bisa dicoba satu per satu.'),
+  ol([
+    '<strong>Kenali anak lebih dalam.</strong> Tanyakan kepada pasangan, guru, atau terapis tentang kekuatan, minat, dan hal yang membuat anak kesulitan.',
+    '<strong>Pilih satu tugas tetap.</strong> Ambil alih satu rutinitas harian secara penuh, misalnya menidurkan anak setiap malam.',
+    '<strong>Jadwalkan waktu bermain berdua.</strong> Lima belas sampai tiga puluh menit yang rutin lebih bermakna daripada sesekali seharian.',
+    '<strong>Hadir minimal di satu pertemuan.</strong> Datangi rapat sekolah atau sesi terapi, lalu catat satu hal yang bisa dipraktikkan di rumah.',
+    '<strong>Evaluasi bersama pasangan.</strong> Setiap pekan, bicarakan apa yang berjalan baik dan apa yang perlu diubah.',
+    '<strong>Cari teman sesama ayah.</strong> Komunitas orang tua anak ABK membantu ayah merasa tidak sendirian.',
+  ]),
+
+  '<h2 id="kegiatan">Contoh kegiatan ayah dan anak</h2>',
+  p('Kegiatan bersama tidak harus mahal atau rumit. Yang penting kegiatan itu disukai anak, sesuai kemampuannya, dan bisa diulang secara rutin. Tabel berikut berisi contoh yang bisa disesuaikan dengan usia dan kebutuhan anak.'),
+  table('Contoh kegiatan rutin ayah bersama anak berkebutuhan khusus', ['Kegiatan', 'Manfaat bagi anak', 'Tips'], [
+    ['Berjalan pagi di sekitar rumah', 'Gerak tubuh, mengenal lingkungan, waktu tenang berdua', 'Pakai rute yang sama agar anak merasa aman'],
+    ['Bermain bola atau lempar tangkap', 'Koordinasi tangan dan mata, giliran bermain', 'Mulai dari jarak dekat dan bola yang ringan'],
+    ['Membaca buku bergambar sebelum tidur', 'Bahasa, kedekatan, dan rutinitas tidur', 'Biarkan anak memilih buku dan menunjuk gambar'],
+    ['Membantu pekerjaan rumah ringan', 'Kemandirian dan rasa mampu', 'Pecah tugas menjadi langkah kecil yang jelas'],
+    ['Bermain di taman bermain umum', 'Keterampilan sosial dan motorik', 'Pilih jam yang tidak terlalu ramai'],
+  ]),
+  p('Saat memilih kegiatan, perhatikan juga kebutuhan sensorik anak. Anak yang mudah kewalahan oleh suara keras atau keramaian mungkin lebih nyaman bermain di rumah atau di tempat yang tenang. Ayah tidak perlu memaksakan kegiatan yang sedang populer. Kegiatan yang sederhana tetapi dilakukan dengan sabar dan rutin biasanya meninggalkan kenangan yang paling kuat bagi anak.'),
+
+  '<h2 id="emosi">Menjaga kesehatan emosi ayah</h2>',
+  p('Mengasuh anak berkebutuhan khusus bisa melelahkan secara fisik dan emosional, termasuk bagi ayah. Tekanan pekerjaan, kekhawatiran tentang biaya terapi, dan rasa cemas tentang masa depan anak sering menumpuk tanpa disadari. Ayah yang kelelahan cenderung lebih mudah marah atau justru menarik diri.'),
+  p('Beberapa hal sederhana membantu menjaga kesehatan emosi: tidur dan olahraga yang cukup, waktu untuk diri sendiri, berbicara terbuka dengan pasangan, dan mencari bantuan profesional bila perasaan sedih atau cemas berlangsung lama. Dalam nilai-nilai keluarga muslim, kesabaran dan ikhtiar berjalan bersama, dan meminta pertolongan ketika berat juga bagian dari ikhtiar. Panduan merawat diri bagi orang tua ada di ' + a('self-care-untuk-orang-tua-anak-disabilitas', 'self care untuk orang tua anak disabilitas') + '.'),
+
+  '<h2 id="keliru">Kesalahan yang sering terjadi</h2>',
+  ul([
+    '<strong>Menunggu sampai merasa siap.</strong> Rasa percaya diri justru tumbuh dari mencoba, bukan dari menunggu.',
+    '<strong>Hanya terlibat saat ada masalah.</strong> Anak dan pasangan butuh kehadiran rutin, bukan hanya saat krisis.',
+    '<strong>Membantu, bukan bertanggung jawab.</strong> Membantu ketika diminta tetap membuat beban berpikir ada di satu orang.',
+    '<strong>Membandingkan anak dengan anak lain.</strong> Bandingkan anak dengan dirinya sendiri sebelumnya, bukan dengan teman sebaya.',
+    '<strong>Memendam perasaan.</strong> Perasaan yang tidak dibicarakan sering muncul sebagai kemarahan atau menjauh dari keluarga.',
+  ]),
+  p('Kesimpulannya, peran ayah dalam pengasuhan anak ABK adalah peran pengasuh yang setara. Ayah yang hadir secara rutin, memahami kebutuhan anak, ikut mengambil keputusan, dan mendukung pasangan memberi rasa aman bagi anak dan meringankan beban seluruh keluarga. Untuk berdiskusi tentang pendampingan anak di YUKA, hubungi kami lewat halaman <a href="/kontak">kontak YUKA</a>.'),
+
+  '<h2 id="faq">Pertanyaan yang sering diajukan</h2>',
+  faqHtml(aFaq),
+];
+
+const ayahArticle = {
+  slug: 'peran-ayah-dalam-pengasuhan-anak-abk',
+  titleTag: 'Peran Ayah dalam Pengasuhan Anak ABK | YUKA',
+  metaDesc: 'Peran ayah dalam pengasuhan anak ABK: mengapa penting, bentuk keterlibatan sehari-hari, berbagi peran dengan ibu, hambatan yang dialami ayah, dan langkah kecil untuk memulai.',
+  keywords: 'peran ayah dalam pengasuhan anak abk, ayah anak berkebutuhan khusus, pengasuhan anak abk, keterlibatan ayah',
+  ogTitle: 'Peran Ayah dalam Pengasuhan Anak ABK',
+  ogDesc: 'Panduan bagi ayah untuk lebih terlibat dalam pengasuhan anak berkebutuhan khusus, dari rutinitas harian sampai urusan sekolah dan terapi.',
+  h1: 'Peran Ayah dalam Pengasuhan Anak ABK: Bentuk Keterlibatan dan Cara Memulainya',
+  crumb: 'Peran Ayah dalam Pengasuhan Anak ABK',
+  category: 'Pendidikan',
+  datePublished: '2026-11-20T08:00:00+07:00', dateModified: '2026-11-20T08:00:00+07:00',
+  dateDisplay: '20 November 2026', readTime: '13 menit baca',
+  authorName: 'Tim YUKA',
+  image: {
+    file: `${IMG}/peran-ayah-hero.webp`, w: 1200, h: 900,
+    alt: 'Seorang ayah bertopi meniup gelembung sabun di taman bermain, beberapa anak dan orang dewasa berdiri dan duduk di sekitarnya dengan latar pepohonan dan ayunan',
+    caption: 'Keluarga bermain gelembung sabun di Taman Ahmad Yani. Keterlibatan ayah dalam kegiatan sederhana seperti ini memberi anak waktu bersama yang menyenangkan.',
+    credit: CC(A_HERO, 'Syahmari', ...BY4),
+  },
+  bodyHtml: aBody.join('\n'), faq: aFaq,
+  related: [
+    { href: '/artikel/dukungan-keluarga-anak-abk', title: 'Dukungan Keluarga Anak ABK', desc: 'Peran seluruh keluarga dalam mendampingi anak.' },
+    { href: '/artikel/mengelola-stres-orang-tua-anak-abk', title: 'Mengelola Stres Orang Tua Anak ABK', desc: 'Mengenali dan mengurangi beban pengasuhan.' },
+    { href: '/artikel/peran-orang-tua-pendidikan-inklusi', title: 'Peran Orang Tua dalam Pendidikan Inklusi', desc: 'Bekerja sama dengan sekolah untuk kemajuan anak.' },
+  ],
+  tags: ['Ayah', 'Pengasuhan', 'Keluarga'],
+  sources: [
+    { url: URL_WHO_NC, label: 'WHO, UNICEF, dan Bank Dunia: Nurturing care for early childhood development (2018)' },
+    { url: URL_NC, label: 'Nurturing Care Framework for Early Childhood Development' },
+  ],
+  sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Contoh pembagian peran dan langkah di artikel ini adalah praktik umum dan perlu disesuaikan dengan kondisi tiap keluarga.',
+};
+
 const articles = [
   {
     slug: 'token-economy-untuk-anak-abk',
@@ -559,6 +739,8 @@ const articles = [
     sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Contoh cerita di artikel ini adalah ilustrasi umum, bukan program terapi. Social story untuk anak tertentu perlu disusun berdasarkan pengamatan dan didiskusikan dengan guru atau terapis yang menangani anak.',
   },
 ];
+
+articles.push(ayahArticle);
 
 function prepare() {
   fs.mkdirSync(path.join(ROOT, IMG), { recursive: true });
