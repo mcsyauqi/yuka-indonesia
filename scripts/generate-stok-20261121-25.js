@@ -336,6 +336,152 @@ articles.push({
 });
 
 
+// ---------------------------------------------------------------------------
+// Artikel 3: Early Start Denver Model (ESDM) (23 Nov 2026)
+// Keyword: "early start denver model esdm" (tab Riset Keyword Batch 5, baris 80)
+// ---------------------------------------------------------------------------
+const URL_ESDM_WP = 'https://en.wikipedia.org/wiki/Early_Start_Denver_Model';
+const URL_DAWSON = 'https://pubmed.ncbi.nlm.nih.gov/19948568/';
+const E_HERO = 'https://www.pexels.com/photo/children-playing-with-wooden-objects-outdoors-38374089/';
+const E_EGRANG = 'https://www.pexels.com/photo/children-playing-traditional-game-outdoors-39985546/';
+const E_WAYANG = 'https://www.pexels.com/photo/children-playing-with-puppets-in-javanese-garden-40646710/';
+
+const eSections = [
+  ['pengertian', 'Apa itu Early Start Denver Model'],
+  ['sejarah', 'Asal-usul dan pengembangnya'],
+  ['prinsip', 'Prinsip dan cara kerja ESDM'],
+  ['sesi', 'Seperti apa sesi ESDM berlangsung'],
+  ['bukti', 'Apa kata penelitian'],
+  ['banding', 'ESDM dibandingkan pendekatan lain'],
+  ['orang-tua', 'Peran orang tua dalam ESDM'],
+  ['memilih', 'Hal yang perlu ditanyakan sebelum memilih'],
+  ['faq', 'Pertanyaan yang sering diajukan'],
+];
+
+const eFaq = [
+  { q: 'Apa itu Early Start Denver Model (ESDM)?', a: 'ESDM adalah program intervensi dini untuk anak autis usia sangat muda yang memadukan pendekatan perkembangan berbasis bermain dengan teknik perilaku. Anak belajar melalui kegiatan bersama dan rutinitas sehari-hari yang dibangun dari minat dan pilihan anak sendiri, bukan lewat latihan duduk di meja.' },
+  { q: 'Untuk usia berapa ESDM ditujukan?', a: 'ESDM umumnya ditujukan untuk anak usia 12 sampai 48 bulan. Rentang 24 sampai 60 bulan berlaku untuk Denver Model asli yang berbentuk program kelompok prasekolah, bukan untuk ESDM.' },
+  { q: 'Siapa yang mengembangkan ESDM?', a: 'ESDM dikembangkan oleh psikolog Amerika Serikat Sally J. Rogers dan Geraldine Dawson. Manual pertamanya terbit pada 2010. ESDM merupakan pengembangan dari Denver Model, program berbasis bermain untuk anak autis usia prasekolah yang mulai dikembangkan Rogers dan rekan pada 1980-an.' },
+  { q: 'Apakah ESDM sama dengan terapi ABA?', a: 'Tidak persis sama. Pengembangnya menyebut ESDM berakar pada ABA dan memakai teknik perilaku seperti prompting, shaping, fading, dan chaining, tetapi pengajarannya dikemas dalam permainan dan rutinitas yang dipimpin minat anak. Apakah ESDM dapat digolongkan sebagai praktik ABA masih diperdebatkan di kalangan ahli.' },
+  { q: 'Berapa jam per minggu ESDM dijalankan?', a: 'Tidak ada satu angka baku. Dalam studi Dawson dan rekan tahun 2010, anak menerima rata-rata 15,2 jam per minggu dari terapis, dan orang tua melaporkan memakai strategi ESDM rata-rata 16,3 jam per minggu. Studi lain memakai 12, 15, atau 25 jam per minggu. Intensitas untuk anak tertentu sebaiknya ditentukan bersama profesional.' },
+  { q: 'Apakah ESDM terbukti efektif?', a: 'Hasil penelitiannya beragam. Uji acak Dawson dan rekan tahun 2010 menunjukkan kemajuan bermakna pada kemampuan kognitif dan perilaku adaptif, tetapi beberapa uji yang lebih baru hanya mereplikasi sebagian hasil itu atau tidak menemukan perbedaan bermakna. Tinjauan sistematis umumnya menemukan efek sedang pada kognisi dan bahasa.' },
+  { q: 'Bisakah orang tua menerapkan ESDM di rumah?', a: 'Bisa, dengan bimbingan. Ada versi yang dijalankan orang tua (P-ESDM), dengan terapis melatih orang tua secara berkala. Strategi ESDM memang dirancang untuk disisipkan dalam kegiatan sehari-hari seperti makan, mandi, dan bermain. Namun orang tua tetap memerlukan pelatihan dan evaluasi dari profesional yang memahami model ini.' },
+  { q: 'Bagaimana cara mencari terapis ESDM?', a: 'Tanyakan apakah terapis memiliki pelatihan atau sertifikasi ESDM, bagaimana mereka menyusun tujuan dan mengukur kemajuan, serta bagaimana orang tua dilibatkan. Bila terapis ESDM bersertifikat belum tersedia di kota Anda, prinsip intervensi dini berbasis bermain tetap bisa dijalankan oleh terapis tumbuh kembang yang berpengalaman.' },
+];
+
+addDiagram(`${IMG}/esdm-rutinitas.webp`, svg.flow('Satu putaran rutinitas bermain bersama', 'Pola kegiatan bersama (joint activity routine) dalam ESDM', [
+  { h: 'Ikuti minat anak', d: 'Orang dewasa memperhatikan mainan atau kegiatan yang dipilih anak.' },
+  { h: 'Bangun permainan', d: 'Orang dewasa ikut bermain dan menjadi bagian dari kegiatan itu.' },
+  { h: 'Sisipkan tujuan', d: 'Ada kesempatan meniru, menunjuk, bersuara, atau bergantian.' },
+  { h: 'Variasikan', d: 'Permainan dikembangkan agar anak belajar hal baru.' },
+  { h: 'Tutup dan pindah', d: 'Permainan diakhiri, lalu anak memilih kegiatan berikutnya.' },
+]));
+addDiagram(`${IMG}/esdm-ranah.webp`, svg.cards('Ranah sasaran utama ESDM', 'Lima ranah, sosial dan bermain digabung dalam satu kartu', [
+  { h: 'Meniru', items: ['Meniru gerakan', 'Meniru bunyi dan kata', 'Meniru cara bermain'] },
+  { h: 'Komunikasi nonverbal', items: ['Atensi bersama', 'Menunjuk dan menatap', 'Isyarat tubuh'] },
+  { h: 'Komunikasi verbal', items: ['Bunyi dan kata pertama', 'Meminta dan menolak', 'Memberi nama benda'] },
+  { h: 'Sosial dan bermain', items: ['Berbagi emosi', 'Bergantian', 'Bermain fungsional'] },
+]));
+
+const eBody = [
+  p('<strong>Early Start Denver Model (ESDM)</strong> adalah program intervensi dini untuk anak autis usia sangat muda, umumnya 12 sampai 48 bulan, yang memadukan pendekatan perkembangan berbasis bermain dengan teknik perilaku. Dalam ESDM, anak belajar meniru, berkomunikasi, dan berinteraksi melalui permainan serta rutinitas sehari-hari yang dibangun dari minat anak sendiri. Orang tua dilibatkan agar strategi yang sama bisa dipakai di rumah sepanjang hari.'),
+  p('Nama ESDM makin sering terdengar di kalangan orang tua anak autis di Indonesia, terutama mereka yang anaknya terdiagnosis sejak usia dua tahun. Namun informasi yang beredar kadang terlalu menjanjikan. Artikel ini membahas pengertian ESDM, asal-usulnya, prinsip dan contoh sesinya, apa kata penelitian secara jujur, perbandingannya dengan pendekatan lain, peran orang tua, dan hal yang perlu ditanyakan sebelum memilih layanan. Untuk gambaran umum dukungan sejak usia dini, baca juga ' + a('intervensi-dini', 'intervensi dini') + '.'),
+  toc(eSections),
+
+  '<h2 id="pengertian">Apa itu Early Start Denver Model</h2>',
+  p('Menurut rangkuman ' + ext(URL_ESDM_WP, 'ensiklopedia Wikipedia tentang ESDM') + ', ESDM adalah model intervensi untuk anak autis usia dini yang mengajarkan keterampilan melalui rutinitas kegiatan bersama, yaitu permainan dan kegiatan sehari-hari yang dibangun dari pilihan dan inisiatif anak. Tujuan pengajarannya dicapai dengan prosedur perilaku seperti memberi bantuan (prompting), membentuk bertahap (shaping), mengurangi bantuan (fading), dan merangkai langkah (chaining).'),
+  p('ESDM umumnya ditujukan untuk anak berusia 12 sampai 48 bulan. Rentang usia ini dipilih karena masa awal kehidupan adalah saat otak berkembang sangat pesat dan anak belajar banyak hal dari interaksi dengan orang di sekitarnya. Banyak anak autis kurang memperhatikan wajah dan suara orang lain, sehingga kesempatan belajar sosialnya berkurang. ESDM berusaha mengembalikan kesempatan itu dengan membuat interaksi sosial terasa menyenangkan bagi anak.'),
+  p('Hal yang membedakan ESDM dari banyak program lain adalah tempat dan bentuk belajarnya. Anak tidak harus duduk di meja mengerjakan kartu. Belajar bisa terjadi di lantai sambil bermain balok, di meja makan sambil memilih camilan, atau di kamar mandi sambil bermain air. Pendekatan seperti ini sejalan dengan prinsip ' + a('terapi-bermain', 'terapi bermain') + ', tetapi dengan tujuan yang tertulis, data kemajuan, dan aturan pengambilan keputusan yang jelas.'),
+  fig(`${IMG}/esdm-egrang.webp`, 1200, 800, 'Beberapa anak laki-laki bermain egrang bambu dan permainan tradisional lain di lapangan rumput berlatar pohon pisang', 'Anak-anak bermain egrang dan permainan tradisional di Bandung. Permainan yang melibatkan bergantian, meniru gerakan, dan memperhatikan teman melatih keterampilan yang juga dibangun ESDM sejak usia dini, dalam bentuk yang lebih sederhana.', PX(E_EGRANG, 'Tri Martono AS')),
+
+  '<h2 id="sejarah">Asal-usul dan pengembangnya</h2>',
+  p('ESDM dikembangkan oleh dua psikolog Amerika Serikat, Sally J. Rogers dan Geraldine Dawson, dengan manual yang terbit pada 2010. Model ini adalah pengembangan dari Denver Model, program berbasis bermain untuk anak autis usia prasekolah yang mulai dikembangkan Rogers dan rekannya pada 1980-an. Denver Model berlandaskan teori perkembangan Piaget dan pada awalnya dikenal sebagai play school model.'),
+  p('Dalam versi ESDM, pendekatan perkembangan tersebut digabungkan dengan teknik dari ' + a('pivotal-response-training-prt-autisme', 'pivotal response treatment (PRT)') + ', yang juga menekankan motivasi dan pilihan anak. Wikipedia mencatat bahwa edisi kedua manual ESDM terbit pada Desember 2025 dengan judul baru <em>Early Start Denver Model for Young Autistic Children</em>. Perubahan judul ini mengikuti pergeseran bahasa di dunia autisme yang lebih menghormati cara penyandang autis menyebut diri mereka.'),
+  p('Pengembang ESDM menyebut model ini berakar pada analisis perilaku terapan atau ABA. Namun apakah ESDM dapat digolongkan sebagai praktik ABA masih diperdebatkan. Sebagian ahli menempatkannya di antara program ABA, sementara yang lain melihatnya sebagai pendekatan perilaku perkembangan naturalistik yang berbeda dari ABA klasik. Bagi orang tua, yang lebih penting adalah memahami cara kerjanya dan memastikan terapis menjalankannya sesuai manual. Penjelasan tentang ABA sendiri ada di artikel ' + a('terapi-aba', 'terapi ABA') + '.'),
+
+  '<h2 id="prinsip">Prinsip dan cara kerja ESDM</h2>',
+  p('Inti ESDM adalah rutinitas kegiatan bersama atau joint activity routine. Orang dewasa memperhatikan apa yang menarik bagi anak, lalu masuk ke dalam permainan itu sebagai teman bermain yang menyenangkan. Dari permainan tersebut, orang dewasa menciptakan banyak kesempatan bagi anak untuk meniru, menatap, menunjuk, bersuara, dan bergantian. Karena kegiatannya disukai anak, motivasi untuk berinteraksi muncul secara alami.'),
+  diag(`${IMG}/esdm-rutinitas.webp`, 'Diagram lima langkah rutinitas bermain bersama dalam ESDM: ikuti minat anak, bangun permainan, sisipkan tujuan, variasikan, tutup dan pindah', 'Satu putaran rutinitas bermain bersama. Dalam satu sesi, putaran seperti ini bisa terjadi berkali-kali dengan kegiatan yang berbeda.'),
+  p('Wikipedia mencatat lima ranah yang mendapat penekanan khusus dalam ESDM, yaitu kemampuan meniru, komunikasi nonverbal termasuk ' + a('joint-attention-anak-autis-kenapa-penting', 'atensi bersama (joint attention)') + ', komunikasi verbal, perkembangan sosial termasuk berbagi emosi, dan bermain. Kelima ranah ini dipilih karena menjadi fondasi bagi banyak keterampilan lain. Anak yang mulai bisa meniru dan memperhatikan apa yang diperhatikan orang lain akan lebih mudah belajar bahasa dan bermain bersama teman.'),
+  p('ESDM juga sangat terstruktur dalam hal pencatatan. Kemampuan anak dinilai dengan Daftar Periksa Kurikulum ESDM, dan penilaian ulang dilakukan setiap 12 minggu. Kemajuan diukur dengan kriteria penguasaan, dan pohon keputusan dipakai untuk menentukan perubahan bila kemajuan anak lambat. Kesetiaan terapis terhadap model diperiksa dengan daftar periksa 13 butir. Struktur ini membedakan ESDM dari sekadar bermain bebas.'),
+  diag(`${IMG}/esdm-ranah.webp`, 'Diagram empat kartu ranah sasaran ESDM: meniru, komunikasi nonverbal, komunikasi verbal, serta sosial dan bermain', 'Ranah yang ditekankan ESDM. Ranah sosial dan bermain digabung dalam satu kartu agar mudah dibaca.'),
+
+  '<h2 id="sesi">Seperti apa sesi ESDM berlangsung</h2>',
+  p('Bayangkan seorang anak berusia dua tahun yang suka melempar bola ke dalam keranjang. Terapis duduk di lantai, ikut memegang bola, lalu menahan bola sejenak sambil menatap anak dan berkata bola. Ketika anak menatap atau mengeluarkan suara, bola langsung diberikan dan permainan berlanjut. Setelah beberapa kali, terapis mengganti cara bermain, misalnya menggelindingkan bola atau memasukkan bola sambil bertepuk, untuk mengajak anak meniru.'),
+  p('Contoh di atas adalah ilustrasi umum, bukan prosedur baku. Dalam praktik, setiap tujuan ditulis berdasarkan hasil asesmen anak. Satu sesi bisa berisi beberapa rutinitas berbeda: bermain balok, bernyanyi dengan gerakan, membaca buku bergambar, dan makan camilan. Di setiap rutinitas, terapis menyisipkan beberapa tujuan sekaligus dan mencatat respons anak. Bila anak bosan, kegiatan diganti dengan pilihan anak berikutnya.'),
+  table('Contoh menyisipkan tujuan ESDM dalam rutinitas sehari-hari', ['Rutinitas', 'Tujuan yang bisa disisipkan', 'Contoh kesempatan'], [
+    ['Bermain balok', 'Meniru dan bergantian', 'Orang dewasa menyusun dua balok, anak diajak meniru, lalu bergantian menumpuk'],
+    ['Makan camilan', 'Meminta dengan isyarat atau kata', 'Camilan ditunjukkan, anak menunjuk atau mengucapkan namanya sebelum diberikan'],
+    ['Bernyanyi dengan gerakan', 'Meniru gerakan dan menatap wajah', 'Lagu berhenti di tengah, orang dewasa menunggu anak melanjutkan gerakan'],
+    ['Mandi', 'Memberi nama benda dan bagian tubuh', 'Menyebut sabun, air, tangan, kaki sambil bermain air'],
+    ['Membaca buku bergambar', 'Atensi bersama dan menunjuk', 'Orang dewasa menunjuk gambar, lalu menunggu anak ikut menunjuk'],
+  ]),
+  p('Intensitas ESDM berbeda di setiap studi. Dalam uji acak Dawson dan rekan tahun 2010, layanan yang ditawarkan sampai 20 jam per minggu, tetapi anak menerima rata-rata 15,2 jam. Orang tua dilatih dua kali sebulan dan melaporkan memakai strategi ESDM rata-rata 16,3 jam per minggu. Studi lain memakai 12, 15, atau 25 jam per minggu. Angka ini menunjukkan bahwa sebagian besar pembelajaran justru terjadi di luar ruang terapi, dalam keseharian anak bersama keluarganya.'),
+
+  p('Bagi orang tua, catatan data ini sebenarnya kabar baik. Kemajuan anak tidak dinilai dari kesan semata, melainkan dari catatan yang bisa dilihat bersama. Mintalah terapis menunjukkan grafik atau ringkasan kemajuan secara berkala, misalnya setiap kali penilaian ulang 12 minggu dilakukan. Tanyakan tujuan mana yang sudah dikuasai, mana yang masih berjalan, dan apa yang diubah bila sebuah tujuan lama tidak tercapai. Percakapan seperti ini membantu orang tua memahami arah program dan ikut menentukan prioritas, misalnya mendahulukan kemampuan meminta tolong sebelum menyebut nama warna.'),
+
+  '<h2 id="bukti">Apa kata penelitian</h2>',
+  p('Penelitian ESDM yang paling sering dikutip adalah ' + ext(URL_DAWSON, 'uji acak terkontrol Dawson dan rekan yang terbit di jurnal Pediatrics pada 2010') + '. Studi ini melibatkan 48 anak yang terdiagnosis autis pada usia 18 sampai 30 bulan dan diikuti selama dua tahun. Kelompok ESDM menunjukkan kemajuan lebih besar dibanding kelompok yang menerima layanan biasa di komunitas, dalam IQ, perilaku adaptif, dan diagnosis. Skor kognitif gabungan kelompok ESDM naik rata-rata 17,6 poin, dibanding 7,0 poin pada kelompok pembanding.'),
+  p('Namun penelitian berikutnya memberi gambaran yang lebih beragam. Studi multisite Rogers dan rekan tahun 2019 dengan 118 anak usia 14 sampai 24 bulan menemukan keunggulan bermakna dalam bahasa pada data gabungan, tetapi tidak pada kemampuan perkembangan umum, keparahan autisme, dan perilaku adaptif. Para penulis menyebutnya replikasi sebagian. Studi Geoffray dan rekan tahun 2025 dengan 180 anak di Prancis dan Belgia tidak menemukan perbaikan bermakna pada hasil utamanya setelah 24 bulan, dan penulisnya menyatakan ESDM tidak dapat direkomendasikan secara universal.'),
+  p('Tinjauan sistematis juga perlu diperhatikan. Tinjauan Fuller dan rekan tahun 2020 terhadap 12 studi dengan 640 anak menemukan efek sedang, terutama pada kognisi dan bahasa, tetapi tidak pada gejala autisme dan perilaku adaptif. Tinjauan Wang dan rekan tahun 2022 terhadap 11 uji acak menemukan efek bermakna pada kognisi, gejala autisme, dan bahasa. Kritik yang sering muncul adalah bahwa banyak studi melibatkan pengembang aslinya, sehingga diperlukan lebih banyak penelitian independen. Bagi orang tua, kesimpulannya: ESDM menjanjikan, tetapi bukan jaminan, dan respons tiap anak berbeda. Rangkuman penelitian intervensi dini lain ada di artikel ' + a('systematic-review-intervensi-dini-autisme', 'systematic review intervensi dini autisme') + '.'),
+
+  p('Pertanyaan tentang biaya juga sudah diteliti. Wikipedia merangkum analisis Cidav dan rekan tahun 2017 terhadap 39 anak dari studi 2010. Selama masa intervensi, biaya tahunan kelompok ESDM diperkirakan sekitar 14.000 dolar AS lebih tinggi, meskipun perbedaan itu tidak bermakna secara statistik. Setelah intervensi selesai, anak di kelompok ESDM memakai layanan lain sekitar 19.000 dolar AS lebih sedikit per anak per tahun, sehingga biaya awal diperkirakan tertutup dalam beberapa tahun. Waktu yang dicurahkan pengasuh tidak ikut dihitung. Angka ini berasal dari sistem layanan di Amerika Serikat dan tidak bisa langsung diterapkan di Indonesia, tetapi menunjukkan bahwa investasi di usia dini perlu dilihat dalam jangka panjang.'),
+
+  '<h2 id="banding">ESDM dibandingkan pendekatan lain</h2>',
+  p('Orang tua sering bingung memilih antara ESDM, ABA klasik, dan terapi lain. ABA klasik, seperti ' + a('metode-lovaas-untuk-anak-autis', 'metode Lovaas') + ', banyak memakai discrete trial teaching, yaitu latihan terstruktur dengan instruksi, respons, dan penguat yang jelas, sering di meja. ESDM memakai prinsip perilaku yang sama tetapi menyisipkannya dalam permainan dan rutinitas yang dipimpin anak. Studi Rogers dan rekan tahun 2021 yang membandingkan ESDM dengan intervensi perilaku berbasis discrete trial tidak menemukan perbedaan efek keseluruhan antara gaya maupun intensitas yang diuji.'),
+  p('ESDM juga punya kemiripan dengan ' + a('floor-time-terapi', 'DIR Floortime') + ', yang sama-sama mengikuti minat anak dan menekankan hubungan emosional. Perbedaannya, ESDM memiliki kurikulum tertulis, pencatatan data yang ketat, dan prosedur perilaku yang eksplisit. Pendekatan lain seperti ' + a('hanen-approach-terapi-bahasa-anak', 'Hanen') + ' berfokus melatih orang tua untuk mendukung bahasa anak dalam keseharian. Pada praktiknya banyak anak menerima kombinasi beberapa layanan, misalnya ESDM bersama ' + a('terapi-wicara', 'terapi wicara') + ' dan terapi okupasi.'),
+  p('Tidak ada satu pendekatan yang cocok untuk semua anak. Pertimbangkan usia anak, profil kemampuannya, ketersediaan terapis terlatih di kota Anda, biaya, dan waktu yang bisa diberikan keluarga. Pendekatan yang dijalankan dengan konsisten dan melibatkan keluarga sering lebih bermanfaat daripada pendekatan yang secara teori lebih baik tetapi sulit dijalankan. Gambaran berbagai pilihan terapi perilaku ada di artikel ' + a('apa-saja-terapi-perilaku-untuk-autisme', 'terapi perilaku untuk autisme') + '.'),
+
+  '<h2 id="orang-tua">Peran orang tua dalam ESDM</h2>',
+  p('Orang tua adalah bagian penting dari ESDM. Ada versi yang dijalankan orang tua, disebut P-ESDM, di mana terapis melatih orang tua untuk memakai strategi ESDM dalam kegiatan sehari-hari. Studi Rogers dan rekan tahun 2012 menguji P-ESDM selama 12 minggu dengan satu jam pertemuan terapis per minggu pada 98 balita berisiko autis. Hasilnya tidak berbeda dari kelompok layanan komunitas, meskipun kedua kelompok sama-sama mengalami kemajuan. Artinya pelatihan orang tua bermanfaat sebagai bagian dari dukungan, tetapi bentuk dan intensitasnya perlu disesuaikan.'),
+  fig(`${IMG}/esdm-wayang.webp`, 1200, 800, 'Dua anak laki-laki berbaju hitam duduk di rumput sambil memainkan boneka wayang golek', 'Dua anak bermain boneka wayang di Jawa Barat. Bermain pura-pura dengan boneka memberi banyak kesempatan untuk meniru suara, bergantian bicara, dan berbagi perhatian pada benda yang sama.', PX(E_WAYANG, 'Andreas Suwardy')),
+  p('Dalam keseharian, orang tua bisa mulai dari prinsip dasar ESDM. Posisikan diri sejajar dengan wajah anak saat bermain, ikuti minatnya, buat permainan yang membuat anak ingin Anda tetap terlibat, dan beri jeda agar anak punya kesempatan merespons. Hindari bertanya terus-menerus atau mengambil alih permainan. Strategi ini aman dicoba sambil menunggu layanan, tetapi tetap sebaiknya didampingi profesional agar tujuan dan kemajuannya terukur. Ide kegiatan di rumah ada di artikel ' + a('cara-melatih-social-skills-anak-autis-di-rumah', 'melatih social skills anak autis di rumah') + ' dan ' + a('daftar-mainan-edukatif-untuk-anak-autis', 'mainan edukatif untuk anak autis') + '.'),
+  p('Rutinitas harian adalah ladang latihan yang paling kaya. Saat memakaikan baju, orang tua bisa berhenti sejenak sebelum memasukkan lengan dan menunggu anak mengulurkan tangan. Saat menyiapkan susu, botol bisa ditunjukkan dan anak diberi kesempatan menunjuk atau bersuara sebelum menerimanya. Saat menyanyikan lagu yang disukai, orang tua bisa berhenti di kata terakhir dan menunggu anak melengkapinya, sekecil apa pun suaranya. Kesempatan seperti ini bisa muncul puluhan kali dalam sehari tanpa perlu waktu khusus. Yang penting, suasananya tetap menyenangkan dan anak tidak merasa dites.'),
+  p('Orang tua juga perlu menjaga tenaga sendiri. Menyisipkan latihan sepanjang hari bisa terasa melelahkan bila dilakukan dengan tekanan untuk selalu sempurna. Pilih dua atau tiga rutinitas yang paling sering terjadi dan paling disukai anak, lalu fokus di sana lebih dulu. Libatkan pasangan, kakek nenek, atau pengasuh lain agar strategi yang sama dipakai oleh semua orang di rumah. Bila merasa kewalahan, sampaikan kepada terapis supaya target disesuaikan. Tips menjaga kondisi diri ada di artikel ' + a('self-care-untuk-orang-tua-anak-disabilitas', 'self care untuk orang tua anak disabilitas') + '.'),
+
+  '<h2 id="memilih">Hal yang perlu ditanyakan sebelum memilih</h2>',
+  p('Sebelum memilih layanan yang menyebut dirinya ESDM, ajukan beberapa pertanyaan. Apakah terapis pernah mengikuti pelatihan atau sertifikasi ESDM, dan siapa penyelenggaranya. Bagaimana asesmen awal dilakukan dan seberapa sering kemajuan anak dievaluasi. Berapa jam layanan langsung per minggu, dan bagaimana orang tua dilatih untuk melanjutkannya di rumah. Jawaban yang jelas dan terukur adalah tanda layanan yang serius.'),
+  p('Waspadai juga janji yang berlebihan. Tidak ada intervensi yang bisa menjamin anak sembuh dari autisme atau hilang diagnosisnya. Penelitian menunjukkan sebagian anak mengalami kemajuan besar, tetapi sebagian lain kemajuannya lebih kecil. Tujuan yang realistis adalah membantu anak berkomunikasi, belajar, dan berinteraksi sebaik mungkin sesuai potensinya. Biaya juga perlu dipertimbangkan sejak awal agar program bisa dijalankan cukup lama. Gambaran umum biaya terapi ada di artikel ' + a('biaya-terapi-anak-autis-per-bulan', 'biaya terapi anak autis per bulan') + '.'),
+  p('Bila keluarga Anda tinggal di Yogyakarta dan sekitarnya, mulailah dari layanan tumbuh kembang yang bisa melakukan asesmen menyeluruh, lalu tanyakan pilihan intervensi dini yang tersedia. Daftar tempat terapi bisa dilihat di artikel ' + a('tempat-terapi-anak-jogja', 'tempat terapi anak di Jogja') + '. Apa pun pendekatannya, mulai sedini mungkin, libatkan keluarga, dan evaluasi kemajuan secara rutin adalah tiga prinsip yang selalu berlaku.'),
+
+  '<h2 id="faq">Pertanyaan yang sering diajukan</h2>',
+  faqBlock(eFaq),
+];
+
+articles.push({
+  slug: 'early-start-denver-model-esdm',
+  titleTag: 'Early Start Denver Model (ESDM) untuk Anak Autis | YUKA',
+  metaDesc: 'Early Start Denver Model (ESDM): intervensi dini berbasis bermain untuk anak autis usia 12 sampai 48 bulan. Prinsip, contoh sesi, hasil penelitian, dan peran orang tua.',
+  keywords: 'early start denver model esdm, ESDM autisme, intervensi dini autis, terapi bermain autis, P-ESDM',
+  ogTitle: 'Early Start Denver Model (ESDM)',
+  ogDesc: 'Panduan ESDM untuk orang tua: cara kerja, contoh sesi, bukti penelitian, dan hal yang perlu ditanyakan sebelum memilih layanan.',
+  h1: 'Early Start Denver Model (ESDM): Intervensi Dini Berbasis Bermain untuk Anak Autis',
+  crumb: 'Early Start Denver Model',
+  category: 'Terapi',
+  datePublished: '2026-11-23T08:00:00+07:00', dateModified: '2026-11-23T08:00:00+07:00',
+  dateDisplay: '23 November 2026', readTime: '14 menit baca',
+  authorName: 'Tim YUKA',
+  image: {
+    file: `${IMG}/esdm-hero.webp`, w: 1200, h: 800,
+    alt: 'Empat anak laki-laki berdiri mengelilingi lesung kayu panjang di halaman semen sambil bermain bersama',
+    caption: 'Anak-anak bermain dengan benda kayu di Yogyakarta. ESDM memakai permainan dan kegiatan bersama sebagai sarana utama belajar.',
+    credit: PX(E_HERO, 'Andri Wijayanto'),
+  },
+  bodyHtml: eBody.join('\n'), faq: eFaq,
+  related: [
+    { href: '/artikel/terapi-aba', title: 'Terapi ABA', desc: 'Prinsip analisis perilaku terapan untuk anak autis.' },
+    { href: '/artikel/pivotal-response-training-prt-autisme', title: 'Pivotal Response Training', desc: 'Pendekatan naturalistik yang menjadi salah satu dasar ESDM.' },
+    { href: '/artikel/intervensi-dini', title: 'Intervensi Dini', desc: 'Mengapa dukungan sejak usia dini penting.' },
+  ],
+  tags: ['ESDM', 'IntervensiDini', 'Autisme'],
+  sources: [
+    { url: URL_ESDM_WP, label: 'Wikipedia: Early Start Denver Model (sejarah, prinsip, intensitas, ringkasan studi dan tinjauan)' },
+    { url: URL_DAWSON, label: 'Dawson G, dkk. (2010). Randomized, controlled trial of an intervention for toddlers with autism: the Early Start Denver Model. Pediatrics' },
+  ],
+  sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Angka penelitian dikutip dari ringkasan studi yang dirujuk. Contoh sesi dan rutinitas di artikel ini adalah ilustrasi umum, bukan program terapi. Program intervensi untuk anak tertentu disusun berdasarkan asesmen oleh profesional.',
+});
+
+
 // [ARTIKEL_BERIKUTNYA]
 
 function prepare() {
