@@ -607,7 +607,7 @@ articles.push({
   authorName: 'Tim YUKA',
   image: {
     file: `${IMG}/twice-exceptional-hero.webp`, w: 1200, h: 675,
-    alt: 'Ruang kelas di Malang, siswa duduk di bangku berjajar mengerjakan ujian tertulis, seorang guru berkerudung duduk di meja depan',
+    alt: 'Ruang kelas yang terang di Malang, siswa berseragam putih duduk di bangku berjajar mengerjakan ujian tertulis',
     caption: 'Siswa mengerjakan ujian di sebuah sekolah di Malang. Anak twice exceptional bisa berprestasi tinggi di satu bidang, sekaligus membutuhkan dukungan untuk kesulitan yang tidak selalu terlihat dari nilai ujian.',
     credit: PX(T2_HERO, 'Haidar Azmi'),
   },
@@ -623,6 +623,156 @@ articles.push({
     { url: URL_2E_TEA, label: 'Texas Education Agency, G/T Family Toolkit: Twice-Exceptional (2E)' },
   ],
   sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Artikel ini informasi umum untuk orang tua dan pendidik. Identifikasi anak twice exceptional dan diagnosis kondisi penyerta dilakukan oleh psikolog atau profesional yang berwenang.',
+});
+
+
+// ---------------------------------------------------------------------------
+// Artikel 5: sindrom fragile X (25 Nov 2026)
+// Keyword: "sindrom fragile x" (tab Riset Keyword Batch 4, baris 225)
+// ---------------------------------------------------------------------------
+const URL_CDC_FX = 'https://www.cdc.gov/fragile-x-syndrome/about/index.html';
+const URL_MP_FX = 'https://medlineplus.gov/genetics/condition/fragile-x-syndrome/';
+const F_HERO = 'https://www.pexels.com/photo/indonesian-school-children-walking-after-class-32218913/';
+const F_MAIN = 'https://www.pexels.com/photo/children-playing-traditional-game-outdoors-in-indonesia-35347861/';
+const F_RAMAI = 'https://www.pexels.com/photo/children-holding-indonesia-flags-13389844/';
+
+const fSections = [
+  ['pengertian', 'Apa itu sindrom fragile X'],
+  ['penyebab', 'Penyebab: perubahan gen FMR1'],
+  ['ciri', 'Ciri perkembangan, perilaku, dan fisik'],
+  ['autisme', 'Hubungan dengan autisme dan ADHD'],
+  ['diagnosis', 'Diagnosis dan konseling genetik'],
+  ['penanganan', 'Penanganan dan intervensi'],
+  ['sekolah', 'Strategi belajar di sekolah'],
+  ['keluarga', 'Dukungan untuk keluarga'],
+  ['faq', 'Pertanyaan yang sering diajukan'],
+];
+
+const fFaq = [
+  { q: 'Apa itu sindrom fragile X?', a: 'Sindrom fragile X adalah kelainan genetik yang menurut CDC termasuk salah satu penyebab paling umum disabilitas intelektual yang diturunkan. Kondisi ini disebabkan perubahan pada gen FMR1 sehingga tubuh tidak membuat protein FMRP yang dibutuhkan untuk perkembangan otak.' },
+  { q: 'Seberapa sering sindrom fragile X terjadi?', a: 'Angka pastinya belum diketahui. CDC menyebut sebuah tinjauan penelitian memperkirakan sekitar 1 dari 7.000 laki-laki dan 1 dari 11.000 perempuan telah terdiagnosis sindrom fragile X. MedlinePlus mencantumkan perkiraan sekitar 1 dari 4.000 laki-laki dan 1 dari 8.000 perempuan. Perbedaan angka ini wajar karena metode dan populasi penelitiannya berbeda.' },
+  { q: 'Mengapa anak laki-laki biasanya mengalami gejala lebih berat?', a: 'Gen FMR1 terletak di kromosom X. Anak laki-laki hanya memiliki satu kromosom X, sedangkan anak perempuan memiliki dua. Menurut MedlinePlus, laki-laki dengan satu salinan yang berubah biasanya terdampak lebih berat daripada perempuan, dan CDC juga mencatat perempuan sering memiliki gejala yang lebih ringan.' },
+  { q: 'Apakah sindrom fragile X diturunkan?', a: 'Ya, sindrom fragile X adalah kondisi yang diturunkan dengan pola terkait kromosom X. Karena hasil tes genetik bisa berdampak pada anggota keluarga lain, CDC menganjurkan konseling genetik sebelum pemeriksaan. Konselor dapat menjelaskan siapa saja di keluarga yang mungkin perlu diperiksa.' },
+  { q: 'Apa hubungan fragile X dengan autisme?', a: 'Autisme lebih sering ditemukan pada orang dengan sindrom fragile X. MedlinePlus menyebut sekitar sepertiga penyandang sindrom fragile X memiliki ciri spektrum autisme yang memengaruhi komunikasi dan interaksi sosial. Karena itu sebagian dokter menyarankan tes fragile X bagi anak dengan autisme atau disabilitas intelektual yang penyebabnya belum diketahui.' },
+  { q: 'Bagaimana sindrom fragile X didiagnosis?', a: 'Menurut CDC, sindrom fragile X dapat didiagnosis dengan memeriksa DNA dari sampel darah. Tes ini dapat dipesan oleh dokter atau konselor genetik dan juga dapat mendeteksi perubahan gen FMR1 yang terkait gangguan lain dalam keluarga fragile X.' },
+  { q: 'Apakah sindrom fragile X bisa disembuhkan?', a: 'CDC menyatakan belum ada obat yang menyembuhkan sindrom fragile X. Terapi dapat membantu anak membangun keterampilan seperti bicara, berjalan, dan berinteraksi sosial, dan obat dapat membantu mengelola masalah tertentu seperti perilaku. Intervensi dini sangat dianjurkan dan bisa dimulai bahkan sebelum diagnosis formal ditegakkan.' },
+  { q: 'Apakah anak dengan sindrom fragile X bisa bersekolah di sekolah inklusi?', a: 'Bisa, bergantung pada kebutuhan masing-masing anak. Banyak anak dengan sindrom fragile X belajar lebih baik dengan bantuan visual, rutinitas yang dapat diprediksi, dan lingkungan yang tidak terlalu ramai. Pilihan sekolah sebaiknya diputuskan bersama psikolog, terapis, dan pihak sekolah berdasarkan asesmen anak.' },
+];
+
+addDiagram(`${IMG}/fragile-x-cgg.webp`, svg.grid('Jumlah pengulangan CGG pada gen FMR1', 'Kategori menurut MedlinePlus (National Library of Medicine AS)', ['Kategori', 'Jumlah pengulangan CGG', 'Artinya'], [
+  ['Normal', 'Sekitar 5 sampai 40', 'Gen bekerja seperti biasa'],
+  ['Premutasi', '55 sampai 200', 'Pembawa, risiko kondisi terkait fragile X'],
+  ['Sindrom fragile X', 'Lebih dari 200', 'Protein FMRP tidak dibuat'],
+], [300, 380, 428]));
+addDiagram(`${IMG}/fragile-x-dukungan.webp`, svg.cards('Dukungan yang sering dibutuhkan', 'Disusun berdasarkan kebutuhan tiap anak setelah asesmen', [
+  { h: 'Bicara dan bahasa', items: ['Terapi wicara sejak dini', 'Bantuan visual untuk komunikasi', 'Latihan percakapan bertahap'] },
+  { h: 'Belajar dan perilaku', items: ['Jadwal visual dan rutinitas', 'Tugas dipecah kecil', 'Strategi untuk cemas dan fokus'] },
+  { h: 'Gerak dan sensorik', items: ['Terapi okupasi', 'Fisioterapi bila perlu', 'Lingkungan tidak terlalu ramai'] },
+  { h: 'Kesehatan dan keluarga', items: ['Pemantauan kejang', 'Konseling genetik', 'Dukungan untuk orang tua'] },
+]));
+
+const fBody = [
+  p('<strong>Sindrom fragile X</strong> adalah kelainan genetik yang menurut CDC termasuk salah satu penyebab paling umum disabilitas intelektual yang diturunkan. Kondisi ini disebabkan perubahan pada gen FMR1 di kromosom X, sehingga tubuh tidak membuat protein yang dibutuhkan untuk perkembangan otak. Anak dengan sindrom fragile X dapat mengalami keterlambatan bicara dan perkembangan, kesulitan belajar, kecemasan, serta ciri yang mirip autisme atau ADHD. Gejalanya umumnya lebih berat pada anak laki-laki.'),
+  p('Banyak keluarga baru mendengar nama fragile X setelah bertahun-tahun mencari penjelasan mengapa anaknya terlambat bicara atau sulit belajar. Artikel ini membahas pengertian sindrom fragile X, penyebab genetiknya, ciri perkembangan, perilaku, dan fisik, hubungannya dengan autisme, cara diagnosis, pilihan penanganan, strategi di sekolah, dan dukungan untuk keluarga. Bila anak Anda sedang dalam proses pemeriksaan keterlambatan perkembangan, baca juga ' + a('langkah-langkah-deteksi-dini-tumbuh-kembang-anak', 'langkah deteksi dini tumbuh kembang anak') + '.'),
+  toc(fSections),
+
+  '<h2 id="pengertian">Apa itu sindrom fragile X</h2>',
+  p('Menurut ' + ext(URL_CDC_FX, 'CDC (Pusat Pengendalian dan Pencegahan Penyakit Amerika Serikat)') + ', sindrom fragile X adalah kelainan genetik dan salah satu penyebab paling umum disabilitas intelektual yang diturunkan. Nama fragile atau rapuh berasal dari tampilan kromosom X yang terlihat seperti patah atau rapuh di bawah mikroskop pada pemeriksaan zaman dulu. Saat ini diagnosis dilakukan dengan pemeriksaan DNA yang jauh lebih akurat.'),
+  p('CDC menyebut jumlah pasti penyandang sindrom fragile X belum diketahui. Sebuah tinjauan penelitian memperkirakan sekitar 1 dari 7.000 laki-laki dan 1 dari 11.000 perempuan telah terdiagnosis. Sementara itu ' + ext(URL_MP_FX, 'MedlinePlus dari Perpustakaan Kedokteran Nasional Amerika Serikat') + ' mencantumkan perkiraan sekitar 1 dari 4.000 laki-laki dan 1 dari 8.000 perempuan. Perbedaan ini wajar, karena satu angka menghitung yang sudah terdiagnosis dan yang lain memperkirakan kejadian di populasi.'),
+  p('Hal yang penting dipahami orang tua adalah bahwa sindrom fragile X sangat bervariasi. Sebagian anak, terutama perempuan, memiliki kecerdasan dalam rentang normal dengan kesulitan belajar ringan. Sebagian lain, terutama laki-laki, memiliki disabilitas intelektual yang menurut CDC bisa berkisar dari ringan sampai berat. Pemahaman tentang ' + a('disabilitas-intelektual-adalah', 'disabilitas intelektual') + ' membantu keluarga menyusun harapan yang realistis tanpa meremehkan potensi anak.'),
+  fig(`${IMG}/fragile-x-bermain.webp`, 1200, 960, 'Empat anak berkain batik bermain permainan tradisional di halaman berumput, dua anak saling berpegangan tangan membentuk gerbang', 'Anak-anak memainkan permainan tradisional di halaman. Anak dengan sindrom fragile X sering lebih nyaman ikut bermain bila aturan permainannya jelas dan kelompoknya kecil.', PX(F_MAIN, 'Sandi Yudha')),
+
+  '<h2 id="penyebab">Penyebab: perubahan gen FMR1</h2>',
+  p('CDC menjelaskan bahwa sindrom fragile X disebabkan perubahan pada gen FMR1. Gen ini biasanya membuat protein FMRP, protein yang dibutuhkan untuk perkembangan otak. Orang dengan sindrom fragile X tidak membuat protein ini. Sementara itu, orang dengan gangguan lain yang terkait fragile X juga memiliki perubahan gen FMR1, tetapi biasanya masih membuat sebagian protein FMRP.'),
+  p('Perubahan pada gen FMR1 berupa pengulangan berlebihan satu potongan kecil DNA yang disebut CGG. MedlinePlus menjelaskan bahwa pada kebanyakan orang, potongan CGG ini berulang sekitar 5 sampai 40 kali. Orang dengan 55 sampai 200 pengulangan disebut memiliki premutasi. Bila pengulangannya lebih dari 200, gen FMR1 tidak bekerja dan terjadilah sindrom fragile X. Diagram berikut merangkum kategori tersebut.'),
+  diag(`${IMG}/fragile-x-cgg.webp`, 'Tabel visual kategori pengulangan CGG pada gen FMR1: normal sekitar 5 sampai 40, premutasi 55 sampai 200, dan sindrom fragile X lebih dari 200', 'Kategori jumlah pengulangan CGG pada gen FMR1 menurut MedlinePlus. Pembawa premutasi biasanya tidak mengalami sindrom fragile X, tetapi memiliki risiko kondisi lain yang terkait.'),
+  p('MedlinePlus menyebut sindrom fragile X diturunkan dengan pola dominan terkait kromosom X. Pembawa premutasi juga memiliki risiko lebih tinggi mengalami kondisi lain, yaitu insufisiensi ovarium primer terkait fragile X (FXPOI) pada perempuan dan sindrom tremor atau ataksia terkait fragile X (FXTAS) yang biasanya muncul di usia dewasa. Karena menyangkut beberapa generasi, satu diagnosis fragile X pada anak sering membuka pertanyaan bagi anggota keluarga lain. Inilah alasan konseling genetik sangat dianjurkan.'),
+
+  p('Untuk memahami mengapa anak laki-laki biasanya lebih terdampak, ingat kembali pelajaran biologi tentang kromosom. Anak laki-laki memiliki satu kromosom X dan satu kromosom Y, sedangkan anak perempuan memiliki dua kromosom X. Bila satu-satunya gen FMR1 pada anak laki-laki tidak bekerja, tidak ada salinan lain yang bisa menggantikannya. Pada anak perempuan, kromosom X yang kedua biasanya masih membawa gen FMR1 yang bekerja, sehingga sebagian protein tetap dibuat. Inilah alasan sederhana mengapa MedlinePlus menyebut laki-laki dengan satu salinan yang berubah biasanya terdampak lebih berat daripada perempuan, dan mengapa gejala pada perempuan sangat bervariasi.'),
+
+  '<h2 id="ciri">Ciri perkembangan, perilaku, dan fisik</h2>',
+  p('CDC mencatat bahwa anak dengan sindrom fragile X dapat mengalami keterlambatan duduk, berjalan, atau bicara dibandingkan anak seusianya, serta kesulitan mempelajari keterampilan baru. MedlinePlus menambahkan bahwa keterlambatan bicara dan bahasa biasanya sudah terlihat pada usia 2 tahun. Sebagian besar anak laki-laki memiliki disabilitas intelektual ringan sampai sedang, sedangkan sekitar sepertiga anak perempuan yang terdampak mengalami disabilitas intelektual.'),
+  p('Ciri perilaku dan sosial juga sering terlihat. CDC menyebut menghindari kontak mata, kecemasan, sulit fokus, mengepakkan tangan, bicara atau bertindak impulsif, dan tingkat aktivitas yang tinggi. MedlinePlus juga mencatat kecemasan dan hiperaktivitas, termasuk gelisah atau bertindak impulsif, serta kesulitan mempertahankan perhatian. Selain itu, MedlinePlus menyebut kejang dialami sekitar 15 persen laki-laki dan 5 persen perempuan dengan sindrom ini.'),
+  table('Ringkasan ciri sindrom fragile X menurut CDC dan MedlinePlus', ['Bidang', 'Ciri yang sering ditemui', 'Catatan'], [
+    ['Perkembangan', 'Terlambat duduk, berjalan, atau bicara; keterlambatan bahasa terlihat sekitar usia 2 tahun', 'Intervensi dini bisa dimulai sebelum diagnosis formal'],
+    ['Kemampuan intelektual', 'Laki-laki umumnya disabilitas intelektual ringan sampai sedang; sekitar sepertiga perempuan terdampak', 'Sebagian perempuan memiliki kecerdasan normal'],
+    ['Perilaku', 'Cemas, sulit fokus, impulsif, aktivitas tinggi, mengepakkan tangan, menghindari kontak mata', 'Ciri ini sering tumpang tindih dengan ADHD dan autisme'],
+    ['Fisik', 'Wajah panjang dan sempit, telinga besar, dahi dan rahang menonjol, jari sangat lentur, kaki datar', 'Lebih terlihat seiring usia, tidak selalu ada'],
+    ['Kesehatan', 'Kejang pada sekitar 15 persen laki-laki dan 5 persen perempuan', 'Perlu pemantauan dokter'],
+  ]),
+  p('Ciri fisik yang dicatat MedlinePlus, seperti wajah panjang dan sempit, telinga besar, dahi dan rahang menonjol, jari yang sangat lentur, dan kaki datar, terlihat pada kebanyakan laki-laki dan sekitar separuh perempuan yang terdampak, dan biasanya makin jelas seiring bertambahnya usia. Pada anak kecil ciri ini sering belum terlihat, sehingga tidak bisa dijadikan patokan untuk menebak diagnosis. Diagnosis tetap memerlukan pemeriksaan DNA.'),
+
+  '<h2 id="autisme">Hubungan dengan autisme dan ADHD</h2>',
+  p('CDC menyebut autisme lebih sering ditemukan pada orang dengan sindrom fragile X. MedlinePlus memperkirakan sekitar sepertiga penyandang sindrom fragile X memiliki ciri spektrum autisme yang memengaruhi komunikasi dan interaksi sosial. Karena itu, sebagian anak dengan sindrom fragile X lebih dulu terdiagnosis autis, dan penyebab genetiknya baru diketahui kemudian. Untuk memahami ciri autisme, baca ' + a('autisme-adalah', 'pengertian autisme') + ' dan ' + a('penyebab-autisme-penelitian-genetik-terbaru', 'penelitian genetik penyebab autisme') + '.'),
+  p('Ciri seperti sulit fokus, impulsif, dan aktivitas tinggi juga membuat sebagian anak dengan fragile X tampak seperti anak ADHD. Kecemasan sosial yang kuat juga sering terlihat, misalnya anak sangat ingin berinteraksi tetapi menghindari tatapan mata karena merasa kewalahan. Memahami bahwa perilaku ini berakar pada kecemasan, bukan pada tidak peduli, membantu orang dewasa merespons dengan lebih tepat. Bacaan pendamping: ' + a('adhd-adalah', 'pengertian ADHD') + ' dan ' + a('gangguan-kecemasan-anak', 'gangguan kecemasan anak') + '.'),
+  p('Mengetahui penyebab genetik di balik autisme atau keterlambatan perkembangan bukan sekadar soal label. Diagnosis fragile X membantu dokter memantau risiko kesehatan seperti kejang, membantu keluarga memahami peluang kondisi yang sama pada anak berikutnya atau anggota keluarga lain, dan membuka akses ke informasi serta komunitas yang lebih spesifik. Karena itu, bila anak memiliki autisme atau disabilitas intelektual yang penyebabnya belum jelas, tanyakan kepada dokter apakah pemeriksaan fragile X perlu dilakukan.'),
+
+  p('Bagi guru dan terapis, membedakan kecemasan dari penolakan sangat penting. Anak yang memalingkan wajah saat disapa belum tentu tidak mau berteman. Sering kali ia sebenarnya tertarik, tetapi kontak mata langsung terasa terlalu berat. Menyapa dari samping, berbicara dengan suara tenang, dan memberi waktu sebelum menuntut jawaban bisa membuat anak lebih mudah terlibat. Sikap sederhana seperti ini sering lebih efektif daripada meminta anak berulang kali untuk melihat mata lawan bicaranya.'),
+
+  '<h2 id="diagnosis">Diagnosis dan konseling genetik</h2>',
+  p('CDC menjelaskan bahwa sindrom fragile X dapat didiagnosis dengan memeriksa DNA dari sampel darah. Tes ini dapat dipesan oleh dokter atau konselor genetik, dan juga dapat mendeteksi perubahan gen FMR1 yang terkait gangguan lain dalam keluarga fragile X. Karena hasilnya bisa berdampak pada anggota keluarga lain, CDC menganjurkan konseling genetik sebelum pemeriksaan dilakukan.'),
+  p('Di Indonesia, pemeriksaan biasanya dimulai dari dokter spesialis anak yang memantau tumbuh kembang, lalu dirujuk ke layanan genetik atau laboratorium yang menyediakan pemeriksaan DNA. Ketersediaan dan biaya pemeriksaan berbeda di setiap fasilitas, sehingga sebaiknya ditanyakan langsung. Bagi keluarga di Yogyakarta, artikel ' + a('klinik-tumbuh-kembang-anak-yogyakarta', 'klinik tumbuh kembang anak Yogyakarta') + ' bisa menjadi titik awal untuk mencari layanan.'),
+  p('Menunggu hasil pemeriksaan genetik tidak berarti dukungan harus ditunda. CDC menekankan bahwa layanan intervensi dini dapat diberikan kepada anak sejak lahir sampai usia 36 bulan, dan anak bisa memenuhi syarat layanan bahkan tanpa diagnosis formal. Prinsip yang sama berlaku di Indonesia: bila anak terlambat bicara atau berjalan, mulailah terapi sambil menunggu kepastian diagnosis. Baca ' + a('intervensi-dini', 'intervensi dini') + ' untuk penjelasan lebih lanjut.'),
+
+  p('Sebelum bertemu dokter atau konselor genetik, siapkan beberapa hal agar pertemuan lebih efektif. Tuliskan riwayat perkembangan anak, kapan ia mulai duduk, berjalan, dan berbicara, serta perilaku yang paling mengkhawatirkan. Susun juga silsilah keluarga sederhana yang mencatat anggota keluarga dengan keterlambatan perkembangan, disabilitas intelektual, autisme, gangguan menstruasi atau menopause dini, maupun gangguan gerak atau tremor di usia dewasa. Informasi keluarga seperti ini membantu konselor menilai pola pewarisan dan menentukan siapa saja yang mungkin perlu ditawari pemeriksaan. Tulis pula pertanyaan Anda sebelumnya, karena banyak orang tua lupa bertanya ketika sudah berada di ruang praktik.'),
+
+  '<h2 id="penanganan">Penanganan dan intervensi</h2>',
+  p('CDC menyatakan bahwa belum ada obat yang menyembuhkan sindrom fragile X. Namun terapi dapat membantu anak membangun keterampilan penting seperti bicara, berjalan, dan berinteraksi sosial, dan obat dapat membantu mengelola masalah tertentu seperti perilaku. Penanganan yang baik biasanya melibatkan tim: dokter anak, psikolog, ' + a('terapi-wicara', 'terapis wicara') + ', ' + a('terapi-okupasi', 'terapis okupasi') + ', dan bila perlu fisioterapis.'),
+  diag(`${IMG}/fragile-x-dukungan.webp`, 'Diagram empat kelompok dukungan untuk anak dengan sindrom fragile X: bicara dan bahasa, belajar dan perilaku, gerak dan sensorik, serta kesehatan dan keluarga', 'Kelompok dukungan yang sering dibutuhkan anak dengan sindrom fragile X. Susunan pastinya ditentukan dari asesmen tiap anak.'),
+  p('Terapi wicara membantu anak yang terlambat bicara, termasuk dengan bantuan visual dan sistem komunikasi alternatif bila perlu. Terapi okupasi membantu keterampilan motorik halus, kemandirian sehari-hari, dan cara anak mengelola rangsang sensorik. Karena banyak anak dengan fragile X mudah kewalahan oleh suara, keramaian, atau sentuhan, pemahaman tentang ' + a('gangguan-pemrosesan-sensorik', 'gangguan pemrosesan sensorik') + ' sering membantu orang tua dan guru menata lingkungan yang lebih nyaman.'),
+  p('Untuk perilaku, pendekatan seperti ' + a('positive-behavior-support-pbs-anak', 'positive behavior support') + ' membantu mencari tahu apa yang memicu perilaku dan mengajarkan cara lain yang lebih sesuai. Bila dokter mempertimbangkan obat, misalnya untuk kecemasan, sulit fokus, atau kejang, keputusannya harus berdasarkan pemeriksaan langsung dan dipantau secara berkala. Orang tua sebaiknya mencatat perubahan perilaku dan efek samping agar dokter memiliki data yang cukup.'),
+
+  p('Di rumah, rutinitas yang konsisten membantu anak merasa aman. Susun jadwal harian bergambar, beri tahu anak sebelum ada perubahan rencana, dan siapkan tempat tenang yang bisa ia datangi ketika merasa kewalahan. Ketika anak cemas di tempat ramai, misalnya pasar atau acara keluarga, kunjungan singkat yang direncanakan dengan baik sering lebih berhasil daripada kunjungan panjang yang berakhir dengan anak kewalahan. Pujilah usaha anak setiap kali ia berhasil mencoba sesuatu yang baru, sekecil apa pun langkahnya. Ide menyusun rutinitas ada di artikel ' + a('rutinitas-pagi-anak-autis-cara-membuat', 'rutinitas pagi anak') + '.'),
+
+  '<h2 id="sekolah">Strategi belajar di sekolah</h2>',
+  p('Anak dengan sindrom fragile X sering belajar lebih baik melalui penglihatan dan contoh nyata daripada melalui penjelasan lisan yang panjang. Guru bisa memakai gambar, video pendek, benda konkret, dan ' + a('jadwal-visual-anak-autis', 'jadwal visual') + ' untuk membantu anak memahami urutan kegiatan. Rutinitas yang dapat diprediksi dan pemberitahuan sebelum perubahan juga membantu mengurangi kecemasan.'),
+  p('Karena kecemasan sosial sering kuat, hindari memaksa anak menatap mata atau tampil di depan kelas tanpa persiapan. Beri anak peran yang membuatnya nyaman, misalnya membantu membagikan buku, sebelum perlahan diajak berpartisipasi lebih banyak. Tugas sebaiknya dipecah menjadi bagian kecil dengan jeda, dan anak bisa diberi tempat tenang ketika mulai kewalahan. ' + a('program-pembelajaran-individual', 'Program pembelajaran individual') + ' membantu merumuskan tujuan dan akomodasi ini secara tertulis.'),
+  fig(`${IMG}/fragile-x-keramaian.webp`, 1200, 800, 'Puluhan siswa sekolah dasar berseragam batik merah dan celana putih berdiri berjajar di depan sekolah sambil mengibarkan bendera merah putih kecil', 'Perayaan di sebuah sekolah dasar di Krui, Lampung. Keramaian seperti ini menyenangkan bagi banyak anak, tetapi bisa membuat anak dengan sindrom fragile X kewalahan, sehingga perlu persiapan dan tempat menepi.', PX(F_RAMAI, 'Irgi Nur Fadil')),
+  p('Pilihan antara sekolah inklusi dan sekolah luar biasa bergantung pada kebutuhan anak, kesiapan sekolah, dan ketersediaan pendamping. Sebagian anak dengan fragile X berkembang baik di sekolah inklusi dengan ' + a('gpk-adalah', 'guru pendamping khusus') + ', sebagian lain lebih terbantu di SLB dengan kelas yang lebih kecil. Perbandingan keduanya ada di artikel ' + a('apa-perbedaan-sekolah-inklusi-dan-slb', 'perbedaan sekolah inklusi dan SLB') + '. Untuk anak yang lebih besar, ' + a('kurikulum-fungsional-untuk-anak-tunagrahita', 'kurikulum fungsional') + ' bisa membantu menyiapkan kemandirian sehari-hari.'),
+
+  p('Masa peralihan perlu disiapkan dengan cermat. Pindah kelas, berganti guru, atau naik jenjang sekolah bisa memicu kecemasan yang besar pada anak dengan sindrom fragile X. Kenalkan lingkungan baru secara bertahap, misalnya dengan mengunjungi sekolah saat masih sepi, memotret ruang kelas dan wajah guru baru, lalu membuat buku cerita sederhana tentang hari pertama. Latihan keterampilan sosial dalam kelompok kecil juga membantu anak membangun pertemanan dengan cara yang tidak terlalu menekan. Persiapan transisi dibahas lebih lanjut di artikel ' + a('transisi-anak-abk-dari-sd-ke-smp', 'transisi anak ABK dari SD ke SMP') + '.'),
+
+  '<h2 id="keluarga">Dukungan untuk keluarga</h2>',
+  p('Diagnosis sindrom fragile X sering membawa perasaan campur aduk. Ada kelegaan karena akhirnya ada penjelasan, tetapi juga kekhawatiran tentang masa depan anak dan pertanyaan tentang anggota keluarga lain. Konseling genetik membantu keluarga memahami hasil pemeriksaan dan memutuskan langkah berikutnya, termasuk apakah saudara kandung atau kerabat perlu diperiksa.'),
+  p('Jaga juga kondisi orang tua. Mendampingi anak dengan kebutuhan khusus sambil memahami informasi genetik yang rumit bisa sangat melelahkan. Bagi tugas dengan pasangan, minta bantuan keluarga besar, dan bergabunglah dengan komunitas orang tua. Artikel ' + a('menerima-diagnosis-anak-abk', 'menerima diagnosis anak ABK') + ' dan ' + a('mengelola-stres-orang-tua-anak-abk', 'mengelola stres orang tua anak ABK') + ' bisa membantu di masa awal ini.'),
+  p('Perhatikan juga saudara kandung. Mereka mungkin ikut menjalani pemeriksaan genetik, mendengar istilah yang membingungkan, atau merasa perhatian orang tua tersita untuk adiknya. Jelaskan kondisi saudaranya dengan bahasa yang sesuai usia, beri ruang untuk bertanya, dan sediakan waktu khusus bersama mereka. Bila saudara kandung sudah remaja atau dewasa, hasil pemeriksaan genetik dapat berkaitan dengan rencana mereka sendiri di masa depan, sehingga pembicaraan ini sebaiknya didampingi konselor genetik. Tips mendampingi saudara kandung ada di artikel ' + a('sibling-anak-berkebutuhan-khusus', 'sibling anak berkebutuhan khusus') + '.'),
+  p('Terakhir, lihatlah anak sebagai pribadi yang utuh, bukan hanya diagnosisnya. Banyak anak dengan sindrom fragile X dikenal ramah, punya rasa humor, dan sangat ingin terlibat dengan orang di sekitarnya, meskipun kecemasan kadang membuat mereka menghindar. Dengan dukungan yang tepat sejak dini, anak dapat terus belajar dan berkembang sesuai potensinya. Hak pendidikan dan layanan bagi anak dibahas di artikel ' + a('hak-pendidikan-anak-disabilitas-intelektual', 'hak pendidikan anak disabilitas intelektual') + '.'),
+
+  '<h2 id="faq">Pertanyaan yang sering diajukan</h2>',
+  faqBlock(fFaq),
+];
+
+articles.push({
+  slug: 'sindrom-fragile-x',
+  titleTag: 'Sindrom Fragile X: Penyebab, Ciri, dan Penanganan | YUKA',
+  metaDesc: 'Sindrom fragile X: kelainan genetik gen FMR1 dan penyebab umum disabilitas intelektual yang diturunkan. Ciri, hubungan dengan autisme, diagnosis, terapi, dan strategi sekolah.',
+  keywords: 'sindrom fragile x, fragile x syndrome, gen FMR1, fragile x autisme, disabilitas intelektual genetik',
+  ogTitle: 'Sindrom Fragile X pada Anak',
+  ogDesc: 'Panduan sindrom fragile X untuk orang tua dan guru: penyebab genetik, ciri, hubungan dengan autisme, diagnosis, dan dukungan di sekolah.',
+  h1: 'Sindrom Fragile X: Penyebab, Ciri, Diagnosis, dan Dukungan untuk Anak',
+  crumb: 'Sindrom Fragile X',
+  category: 'Kesehatan',
+  datePublished: '2026-11-25T08:00:00+07:00', dateModified: '2026-11-25T08:00:00+07:00',
+  dateDisplay: '25 November 2026', readTime: '14 menit baca',
+  authorName: 'Tim YUKA',
+  image: {
+    file: `${IMG}/fragile-x-hero.webp`, w: 1200, h: 799,
+    alt: 'Sekelompok siswa sekolah dasar berseragam merah putih, sebagian berkerudung, berjalan bersama di jalan setapak berumput di tepi danau',
+    caption: 'Siswa sekolah dasar berjalan pulang bersama di Bandung, Jawa Barat. Anak dengan sindrom fragile X dapat belajar dan bergaul bersama teman sebaya dengan dukungan yang sesuai.',
+    credit: PX(F_HERO, 'ujangubed hidayat'),
+  },
+  bodyHtml: fBody.join('\n'), faq: fFaq,
+  related: [
+    { href: '/artikel/disabilitas-intelektual-adalah', title: 'Disabilitas Intelektual Adalah', desc: 'Pengertian, tingkat, dan dukungan bagi anak.' },
+    { href: '/artikel/penyebab-autisme-penelitian-genetik-terbaru', title: 'Penelitian Genetik Autisme', desc: 'Apa yang diketahui tentang faktor genetik autisme.' },
+    { href: '/artikel/intervensi-dini', title: 'Intervensi Dini', desc: 'Mengapa dukungan sejak usia dini penting.' },
+  ],
+  tags: ['FragileX', 'Genetik', 'DisabilitasIntelektual'],
+  sources: [
+    { url: URL_CDC_FX, label: 'CDC: About Fragile X Syndrome (penyebab, prevalensi, gejala, diagnosis, penanganan)' },
+    { url: URL_MP_FX, label: 'MedlinePlus Genetics: Fragile X syndrome (ciri, pengulangan CGG, pola pewarisan, kondisi terkait premutasi)' },
+  ],
+  sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Artikel ini informasi umum, bukan pengganti pemeriksaan dokter atau konseling genetik. Diagnosis dan rencana penanganan ditetapkan oleh dokter dan tim yang memeriksa anak.',
 });
 
 

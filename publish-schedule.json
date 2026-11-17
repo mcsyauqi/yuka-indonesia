@@ -68,5 +68,15 @@
     "category": "Pendidikan",
     "readTime": "14 menit baca",
     "date": "2026-11-24"
+  },
+  {
+    "slug": "sindrom-fragile-x",
+    "file": "artikel/sindrom-fragile-x.html",
+    "title": "Sindrom Fragile X: Penyebab, Ciri, Diagnosis, dan Dukungan untuk Anak",
+    "description": "Sindrom fragile X: kelainan genetik gen FMR1 dan penyebab umum disabilitas intelektual yang diturunkan. Ciri, hubungan dengan autisme, diagnosis, terapi, dan strategi sekolah.",
+    "image": "assets/images/artikel/fragile-x-hero.webp",
+    "category": "Kesehatan",
+    "readTime": "14 menit baca",
+    "date": "2026-11-25"
   }
 ]
