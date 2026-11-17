@@ -607,8 +607,8 @@ articles.push({
   authorName: 'Tim YUKA',
   image: {
     file: `${IMG}/twice-exceptional-hero.webp`, w: 1200, h: 675,
-    alt: 'Ruang kelas yang terang di Malang, siswa berseragam putih duduk di bangku berjajar mengerjakan ujian tertulis',
-    caption: 'Siswa mengerjakan ujian di sebuah sekolah di Malang. Anak twice exceptional bisa berprestasi tinggi di satu bidang, sekaligus membutuhkan dukungan untuk kesulitan yang tidak selalu terlihat dari nilai ujian.',
+    alt: 'Ruang kelas yang terang, siswa berkemeja putih dan bawahan merah duduk di meja masing-masing mengerjakan lembar soal, seorang guru berkerudung merah muda duduk di meja depan',
+    caption: 'Siswa mengerjakan soal ujian di sebuah sekolah di Indonesia. Anak twice exceptional bisa berprestasi tinggi di satu bidang, sekaligus membutuhkan dukungan untuk kesulitan yang tidak selalu terlihat dari nilai ujian.',
     credit: PX(T2_HERO, 'Haidar Azmi'),
   },
   bodyHtml: wBody.join('\n'), faq: wFaq,
