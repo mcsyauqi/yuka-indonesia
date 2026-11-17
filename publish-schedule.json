@@ -88,5 +88,15 @@
     "category": "Kesehatan",
     "readTime": "14 menit baca",
     "date": "2026-11-26"
+  },
+  {
+    "slug": "sindrom-prader-willi",
+    "file": "artikel/sindrom-prader-willi.html",
+    "title": "Sindrom Prader-Willi: Ciri, Penyebab, dan Penanganan pada Anak",
+    "description": "Sindrom Prader-Willi: kondisi genetik kromosom 15 dengan otot lemah sejak bayi dan rasa lapar terus-menerus. Ciri per usia, diagnosis, penanganan, dan dukungan di sekolah.",
+    "image": "assets/images/artikel/prader-willi-hero.webp",
+    "category": "Kesehatan",
+    "readTime": "14 menit baca",
+    "date": "2026-11-27"
   }
 ]
