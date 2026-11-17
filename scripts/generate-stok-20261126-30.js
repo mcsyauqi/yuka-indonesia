@@ -689,6 +689,154 @@ articles.push({
   sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Artikel ini informasi umum untuk orang tua dan pendidik, bukan pengganti pemeriksaan dokter. Rencana penanganan ditetapkan oleh dokter dan tim rehabilitasi yang memeriksa anak.',
 });
 
+// ---------------------------------------------------------------------------
+// Artikel 5: usia koreksi bayi prematur (30 Nov 2026)
+// Keyword: "milestone perkembangan anak prematur koreksi usia" (tab Riset Keyword Batch 5, baris 248)
+// ---------------------------------------------------------------------------
+const URL_AAP_CA = 'https://www.healthychildren.org/English/ages-stages/baby/preemie/Pages/Corrected-Age-For-Preemies.aspx';
+const URL_WHO_PTB = 'https://www.who.int/news-room/fact-sheets/detail/preterm-birth';
+const URL_CDC_PTB = 'https://www.cdc.gov/maternal-infant-health/preterm-birth/index.html';
+const U_HERO = 'https://commons.wikimedia.org/wiki/File:Monitoring_baby%27s_weight_(17580931861).jpg';
+const U_NICU = 'https://commons.wikimedia.org/wiki/File:Night_at_NICU.jpg';
+const U_POSY = 'https://commons.wikimedia.org/wiki/File:KADER_LOKAL.jpg';
+
+const uSections = [
+  ['pengertian', 'Apa itu usia koreksi'],
+  ['prematur', 'Mengenal kelahiran prematur'],
+  ['hitung', 'Cara menghitung usia koreksi'],
+  ['milestone', 'Membaca milestone dengan usia koreksi'],
+  ['batas', 'Sampai kapan usia koreksi dipakai'],
+  ['pantau', 'Hal yang perlu dipantau pada bayi prematur'],
+  ['dukungan', 'Dukungan di rumah dan kapan perlu konsultasi'],
+  ['faq', 'Pertanyaan yang sering diajukan'],
+];
+
+const uFaq = [
+  { q: 'Apa itu usia koreksi pada bayi prematur?', a: 'Usia koreksi adalah usia bayi yang disesuaikan dengan seberapa awal ia lahir. American Academy of Pediatrics (AAP) melalui HealthyChildren.org menjelaskan caranya: usia bayi dalam minggu sejak lahir dikurangi jumlah minggu ia lahir lebih awal. Usia koreksi dipakai untuk menilai perkembangan bayi secara lebih adil.' },
+  { q: 'Bagaimana cara menghitung usia koreksi?', a: 'Pertama, hitung berapa minggu bayi lahir lebih awal dengan mengurangkan usia kehamilan saat lahir dari 40 minggu. Kedua, kurangkan angka itu dari usia bayi sejak lahir dalam minggu. Contoh dari AAP: bayi lahir pada usia kehamilan 32 minggu berarti lahir 8 minggu lebih awal. Saat usianya 16 minggu atau 4 bulan sejak lahir, usia koreksinya 2 bulan.' },
+  { q: 'Sampai usia berapa usia koreksi dipakai?', a: 'AAP menyebut bahwa selama 2 tahun pertama, memakai usia koreksi memberi gambaran yang lebih baik tentang kapan bayi seharusnya mencapai tahapan perkembangan umum. Setelah itu, dokter anak akan memberi arahan sesuai kondisi anak.' },
+  { q: 'Bayi disebut prematur bila lahir pada usia kehamilan berapa?', a: 'Menurut WHO, bayi prematur adalah bayi yang lahir hidup sebelum usia kehamilan 37 minggu genap. WHO membaginya menjadi sangat sangat prematur (kurang dari 28 minggu), sangat prematur (28 sampai kurang dari 32 minggu), dan prematur sedang sampai akhir (32 sampai 37 minggu).' },
+  { q: 'Apakah bayi prematur pasti mengalami keterlambatan perkembangan?', a: 'Tidak. Banyak bayi prematur berkembang sesuai usia koreksinya. Namun CDC menyebut bayi yang lahir terlalu awal, terutama sebelum 32 minggu, memiliki risiko lebih tinggi mengalami masalah seperti gangguan pernapasan, kesulitan makan, cerebral palsy, keterlambatan perkembangan, serta masalah penglihatan dan pendengaran. Karena itu pemantauan rutin penting.' },
+  { q: 'Mengapa orang lain menganggap bayi prematur saya terlambat?', a: 'Karena mereka membandingkan dengan usia sejak lahir. AAP mencatat orang tua sering frustrasi oleh keluarga dan teman yang khawatir, misalnya menganggap bayi terlambat untuk usia 4 bulan, padahal ia sudah sesuai untuk usia koreksi 2 bulan. Menjelaskan konsep usia koreksi dapat membantu keluarga besar memahami.' },
+  { q: 'Seberapa banyak bayi lahir prematur?', a: 'WHO memperkirakan 13,4 juta bayi lahir prematur pada tahun 2020, atau lebih dari 1 dari 10 bayi. Angka kelahiran prematur di berbagai negara berkisar antara 4 sampai 16 persen dari seluruh kelahiran pada tahun 2020.' },
+  { q: 'Kapan orang tua bayi prematur perlu berkonsultasi ke dokter?', a: 'Konsultasikan bila bayi belum menunjukkan kemampuan yang sesuai untuk usia koreksinya, bila kemampuan yang sudah ada menghilang, atau bila Anda merasa khawatir tentang perkembangan, pendengaran, penglihatan, makan, atau napasnya. Kontrol rutin sesuai jadwal dari dokter yang merawat bayi juga perlu dijalani.' },
+];
+
+addDiagram(`${IMG}/usia-koreksi-rumus.webp`, svg.flow('Cara menghitung usia koreksi', 'Langkah dari AAP (HealthyChildren.org) dengan contoh bayi lahir 32 minggu', [
+  { h: 'Langkah 1', d: 'Catat usia kehamilan saat lahir. Contoh: 32 minggu' },
+  { h: 'Langkah 2', d: 'Kurangkan dari 40 minggu. 40 dikurangi 32 sama dengan 8 minggu lebih awal' },
+  { h: 'Langkah 3', d: 'Hitung usia sejak lahir dalam minggu. Contoh: 16 minggu (4 bulan)' },
+  { h: 'Langkah 4', d: 'Kurangkan: 16 dikurangi 8 sama dengan 8 minggu' },
+  { h: 'Hasil', d: 'Usia koreksi sekitar 2 bulan; nilai perkembangan seperti bayi 2 bulan' },
+]));
+addDiagram(`${IMG}/usia-koreksi-kategori.webp`, svg.grid('Kategori kelahiran prematur menurut WHO', 'Berdasarkan usia kehamilan saat bayi lahir', ['Kategori', 'Usia kehamilan saat lahir', 'Selisih dari 40 minggu'], [
+  ['Sangat sangat prematur', 'Kurang dari 28 minggu', 'Lebih dari 12 minggu'],
+  ['Sangat prematur', '28 sampai kurang dari 32 minggu', 'Lebih dari 8 sampai 12 minggu'],
+  ['Prematur sedang sampai akhir', '32 sampai 37 minggu', 'Sekitar 3 sampai 8 minggu'],
+], [380, 380, 348]));
+
+const uBody = [
+  p('<strong>Usia koreksi</strong> adalah usia bayi prematur yang disesuaikan dengan seberapa awal ia lahir, dan dipakai untuk menilai milestone atau tahapan perkembangannya. Menurut American Academy of Pediatrics (AAP), caranya adalah mengurangi usia bayi sejak lahir dengan jumlah minggu ia lahir lebih awal. Contohnya, bayi yang lahir 8 minggu lebih awal dan kini berusia 4 bulan memiliki usia koreksi 2 bulan, sehingga perkembangannya dibandingkan dengan bayi cukup bulan berusia 2 bulan. AAP menyebut usia koreksi memberi gambaran yang lebih tepat selama 2 tahun pertama.'),
+  p('Banyak orang tua bayi prematur cemas karena bayinya tampak tertinggal dibanding bayi lain yang lahir di bulan yang sama. Artikel ini membahas pengertian usia koreksi, mengenal kelahiran prematur, cara menghitung usia koreksi langkah demi langkah, cara membaca milestone dengan usia koreksi, sampai kapan usia koreksi dipakai, hal yang perlu dipantau, serta kapan perlu berkonsultasi. Sebagai pembanding tahapan gerak di tahun pertama, lihat juga ' + a('milestone-motorik-kasar-anak-0-12-bulan', 'milestone motorik kasar anak 0 sampai 12 bulan') + '.'),
+  toc(uSections),
+
+  '<h2 id="pengertian">Apa itu usia koreksi</h2>',
+  p('Situs keluarga ' + ext(URL_AAP_CA, 'HealthyChildren.org milik American Academy of Pediatrics (AAP)') + ' menjelaskan bahwa bila bayi lahir lebih awal, ada dua tanggal penting yang perlu dicatat: tanggal bayi lahir dan tanggal perkiraan lahirnya. Saat menilai perkembangan bayi, yaitu saat melihat apa yang wajar untuk usianya, kedua tanggal ini perlu diperhatikan. Dengan melihat selisihnya, orang tua dapat menyesuaikan usia kalender bayi untuk memperhitungkan kelahiran prematur. Hasil penyesuaian inilah yang disebut usia koreksi.'),
+  p('Alasannya sederhana. Bayi yang lahir prematur kehilangan beberapa minggu pertumbuhan di dalam kandungan. Saat bayi cukup bulan berusia 4 bulan, ia sudah tumbuh sekitar 40 minggu di kandungan ditambah 4 bulan di luar. Bayi yang lahir 8 minggu lebih awal dan kini berusia 4 bulan sejak lahir baru menjalani total waktu tumbuh yang setara dengan bayi cukup bulan berusia 2 bulan. Membandingkan keduanya dengan usia kalender yang sama tentu tidak adil.'),
+  p('Dalam keseharian, usia sejak lahir tetap dipakai untuk banyak hal, seperti merayakan ulang tahun. Usia koreksi khusus dipakai untuk satu tujuan: memperkirakan kapan bayi seharusnya mencapai tahapan perkembangan seperti mengangkat kepala, tersenyum, berguling, duduk, merangkak, dan berjalan. Untuk keputusan medis lain, ikuti arahan dokter anak yang merawat bayi, karena dokter akan memilih ukuran usia yang sesuai untuk tiap keperluan.'),
+
+  '<h2 id="prematur">Mengenal kelahiran prematur</h2>',
+  p('Menurut ' + ext(URL_WHO_PTB, 'WHO (Organisasi Kesehatan Dunia)') + ', bayi prematur adalah bayi yang lahir hidup sebelum usia kehamilan 37 minggu genap. WHO memperkirakan 13,4 juta bayi lahir prematur pada tahun 2020, lebih dari 1 dari 10 bayi. Angka kelahiran prematur di berbagai negara berkisar antara 4 sampai 16 persen dari bayi yang lahir pada tahun 2020. WHO juga mencatat bahwa sebagian besar kelahiran prematur terjadi di Asia Selatan dan Afrika sub-Sahara, tetapi kelahiran prematur adalah masalah di seluruh dunia.'),
+  p('WHO membagi kelahiran prematur menjadi tiga kategori berdasarkan usia kehamilan saat lahir. Semakin awal bayi lahir, semakin besar selisihnya dengan 40 minggu dan semakin besar pula koreksi usia yang perlu dilakukan. Diagram berikut merangkum ketiga kategori tersebut.'),
+  diag(`${IMG}/usia-koreksi-kategori.webp`, 'Tabel visual kategori kelahiran prematur menurut WHO: sangat sangat prematur kurang dari 28 minggu, sangat prematur 28 sampai kurang dari 32 minggu, dan prematur sedang sampai akhir 32 sampai 37 minggu', 'Kategori kelahiran prematur menurut WHO. Kolom selisih dihitung dari 40 minggu, angka yang dipakai AAP untuk menghitung usia koreksi.'),
+  p('Mengapa beberapa minggu terakhir kehamilan begitu penting? ' + ext(URL_CDC_PTB, 'CDC (Pusat Pengendalian dan Pencegahan Penyakit Amerika Serikat)') + ' menjelaskan bahwa pertumbuhan penting terjadi sepanjang kehamilan, termasuk di bulan dan minggu terakhir. Otak, paru-paru, dan hati membutuhkan minggu-minggu terakhir kehamilan untuk berkembang sempurna. Inilah sebabnya bayi prematur bisa membutuhkan waktu lebih lama untuk mencapai tahapan perkembangan tertentu.'),
+  p('WHO menyebut kelahiran prematur terjadi karena berbagai alasan. Sebagian besar terjadi secara spontan, tetapi sebagian lain karena alasan medis seperti infeksi atau komplikasi kehamilan yang membuat persalinan perlu dilakukan lebih awal. Penyebab lain antara lain kehamilan kembar dan kondisi kronis seperti diabetes dan tekanan darah tinggi, tetapi sering kali penyebabnya tidak ditemukan. Orang tua tidak perlu menyalahkan diri sendiri atas kelahiran prematur bayinya.'),
+  fig(`${IMG}/usia-koreksi-nicu.webp`, 'Ruang perawatan intensif bayi baru lahir pada malam hari, deretan inkubator dan peralatan medis dengan lampu redup', 'Ruang perawatan intensif neonatal (NICU) di sebuah rumah sakit di Dhaka, Bangladesh. Banyak bayi prematur menjalani minggu-minggu pertamanya di ruang seperti ini sebelum pulang dan mulai dipantau perkembangannya dengan usia koreksi.', CM(U_NICU, 'Realistroot', 'CC0')),
+
+  '<h2 id="hitung">Cara menghitung usia koreksi</h2>',
+  p('AAP menyebut menghitung usia koreksi tidaklah sulit. Mulailah dari usia bayi sebenarnya dalam minggu, yaitu jumlah minggu sejak tanggal lahir, lalu kurangkan jumlah minggu bayi lahir lebih awal. Hasilnya adalah usia koreksi bayi. Untuk menentukan berapa minggu bayi lahir lebih awal, kurangkan usia kehamilan saat lahir dari 40. AAP juga mencatat bahwa kehamilan kini dianggap cukup bulan pada 39 minggu, tetapi rumus usia koreksi tetap memakai angka 40.'),
+  diag(`${IMG}/usia-koreksi-rumus.webp`, 'Diagram alur empat langkah menghitung usia koreksi dengan contoh bayi lahir pada usia kehamilan 32 minggu yang kini berusia 16 minggu, hasilnya usia koreksi sekitar 2 bulan', 'Langkah menghitung usia koreksi menurut AAP. Contoh ini sama dengan contoh yang dipakai AAP di HealthyChildren.org.'),
+  p('Contoh dari AAP: bayi yang lahir pada usia kehamilan 32 minggu berarti lahir 8 minggu atau 2 bulan lebih awal. Bila sekarang ia berusia 4 bulan, yaitu 16 minggu sejak lahir, usia koreksinya adalah 2 bulan. Dalam kasus ini, meskipun bayi berusia 4 bulan, orang tua sebaiknya mengharapkan keterampilan perkembangan yang setara dengan bayi cukup bulan berusia 2 bulan.'),
+  p('Tabel berikut memberi beberapa contoh hitungan lain dengan rumus yang sama. Angka bulan dibulatkan dengan anggapan satu bulan sekitar 4 minggu, sehingga hasilnya adalah perkiraan.'),
+  table('Contoh perhitungan usia koreksi dengan rumus AAP', ['Usia kehamilan saat lahir', 'Lahir lebih awal', 'Usia sejak lahir', 'Usia koreksi'], [
+    ['36 minggu', '4 minggu (sekitar 1 bulan)', '24 minggu (sekitar 6 bulan)', '20 minggu (sekitar 5 bulan)'],
+    ['32 minggu', '8 minggu (sekitar 2 bulan)', '16 minggu (sekitar 4 bulan)', '8 minggu (sekitar 2 bulan)'],
+    ['30 minggu', '10 minggu (sekitar 2,5 bulan)', '40 minggu (sekitar 10 bulan)', '30 minggu (sekitar 7,5 bulan)'],
+    ['28 minggu', '12 minggu (sekitar 3 bulan)', '48 minggu (sekitar 12 bulan)', '36 minggu (sekitar 9 bulan)'],
+  ]),
+  p('Agar tidak bingung, tuliskan usia kehamilan saat bayi lahir di buku catatan kesehatan anak dan di catatan pribadi Anda. Saat kontrol ke dokter atau saat penimbangan rutin, sebutkan bahwa bayi lahir prematur dan pada usia kehamilan berapa. Informasi ini membantu petugas kesehatan membaca hasil pengukuran dan perkembangan bayi dengan tepat.'),
+
+  '<h2 id="milestone">Membaca milestone dengan usia koreksi</h2>',
+  p('Setelah usia koreksi diketahui, tahapan perkembangan bayi dibandingkan dengan tahapan bayi cukup bulan pada usia yang sama dengan usia koreksinya. AAP menjelaskan dengan contoh bayi berusia 4 bulan dengan usia koreksi 2 bulan: tidak realistis mengharapkan bayi ini sudah siap berguling dari tengkurap ke telentang, keterampilan yang sering muncul pada bayi cukup bulan sekitar usia 4 bulan. Bayi tersebut mungkin baru mulai mengangkat kepala dan tersenyum, yang wajar untuk bayi cukup bulan berusia 2 bulan dan karena itu juga wajar untuk bayi prematur dengan usia koreksi 2 bulan.'),
+  p('Prinsip ini berlaku untuk semua bidang perkembangan: gerak kasar seperti duduk dan berjalan, gerak halus seperti meraih dan menjumput, bahasa seperti mengoceh dan mengucapkan kata pertama, serta kemampuan sosial seperti tersenyum dan merespons nama. Tahapan perkembangan bahasa di bulan-bulan awal dibahas di artikel ' + a('babbling-dan-cooing-tahap-perkembangan-bahasa', 'babbling dan cooing') + ', sementara tahapan gerak halus ada di ' + a('milestone-motorik-halus-anak-1-3-tahun', 'milestone motorik halus anak 1 sampai 3 tahun') + '. Saat membaca artikel-artikel itu, cocokkan dengan usia koreksi bayi Anda, bukan usia sejak lahir.'),
+  p('Usia koreksi juga membantu menghadapi komentar orang lain. AAP mencatat orang tua sering merasa frustrasi oleh keluarga dan teman yang bermaksud baik tetapi menyampaikan kekhawatiran tentang perkembangan bayi. Orang bisa menganggap bayi terlambat untuk usia 4 bulan, padahal sebenarnya ia sudah sesuai target untuk usia koreksi 2 bulan. Menjelaskan konsep usia koreksi dengan contoh sederhana sering cukup untuk menenangkan kerabat yang cemas.'),
+  p('Contoh praktis bisa membantu. Bayangkan seorang bayi yang lahir pada usia kehamilan 28 minggu, artinya 12 minggu lebih awal. Saat ulang tahun pertamanya, usia koreksinya sekitar 9 bulan. Bila pada usia itu ia sudah bisa duduk sendiri tetapi belum merangkak atau berdiri berpegangan, orang tua tidak perlu langsung panik hanya karena sepupunya yang lahir di bulan yang sama sudah mulai melangkah. Yang dibandingkan adalah kemampuan bayi dengan anak cukup bulan berusia sekitar 9 bulan, lalu hasilnya didiskusikan dengan dokter saat kontrol. Untuk tahapan gerak di tahun kedua, artikel ' + a('tanda-keterlambatan-motorik-kasar-anak-2-tahun', 'tanda keterlambatan motorik kasar anak 2 tahun') + ' dapat menjadi pembanding, tetap dengan memperhitungkan usia koreksi.'),
+  p('Ingat juga bahwa tahapan perkembangan selalu memiliki rentang. Bayi cukup bulan pun tidak semuanya berguling, duduk, atau berjalan pada minggu yang sama. Yang lebih penting adalah bayi terus membuat kemajuan dari waktu ke waktu dan kemampuannya tidak menghilang. Bila kemajuan itu terasa berhenti, saatnya berkonsultasi.'),
+
+  '<h2 id="batas">Sampai kapan usia koreksi dipakai</h2>',
+  p('AAP menyebut bahwa selama 2 tahun pertama, memakai usia koreksi bayi akan memberi gambaran yang lebih baik tentang kapan ia seharusnya mencapai tahapan perkembangan umum. Seiring bertambahnya usia, selisih beberapa minggu kelahiran prematur menjadi semakin kecil dibandingkan seluruh usia anak. Selisih 2 bulan sangat berarti bagi bayi berusia 4 bulan, tetapi jauh lebih kecil artinya bagi anak berusia 4 tahun.'),
+  p('Setelah 2 tahun, dokter anak akan memberi arahan sesuai kondisi masing-masing anak. Bila anak masih tampak tertinggal setelah memperhitungkan usia koreksi, jangan berasumsi bahwa ia akan mengejar dengan sendirinya. Pemeriksaan lebih lanjut dan ' + a('intervensi-dini', 'intervensi dini') + ' justru paling bermanfaat bila dimulai sedini mungkin.'),
+
+  '<h2 id="pantau">Hal yang perlu dipantau pada bayi prematur</h2>',
+  p('CDC menyebut bayi yang lahir terlalu awal, terutama sebelum 32 minggu, memiliki angka kematian dan disabilitas yang lebih tinggi. Bayi yang bertahan hidup dapat mengalami masalah pernapasan, kesulitan makan, ' + a('cerebral-palsy-adalah', 'cerebral palsy') + ', keterlambatan perkembangan, serta masalah penglihatan dan pendengaran. WHO juga mencatat banyak bayi prematur yang bertahan hidup menghadapi disabilitas seumur hidup, termasuk kesulitan belajar serta masalah penglihatan dan pendengaran. Informasi ini bukan untuk menakut-nakuti, melainkan agar orang tua tahu apa yang perlu dipantau.'),
+  p('Dalam praktik, pemantauan bayi prematur biasanya meliputi pertumbuhan berat badan, panjang badan, dan lingkar kepala, kemampuan menyusu atau makan, pernapasan, pemeriksaan mata dan pendengaran sesuai jadwal dari dokter, serta tahapan perkembangan berdasarkan usia koreksi. Jadwal pemeriksaan untuk tiap bayi bisa berbeda, tergantung seberapa awal ia lahir dan kondisi selama perawatan. Simpan semua surat kontrol dan hasil pemeriksaan dalam satu map agar mudah dibawa ke setiap kunjungan.'),
+  p('Pemeriksaan pendengaran dan penglihatan perlu mendapat perhatian khusus karena keduanya disebut CDC dan WHO sebagai masalah yang dapat dialami bayi prematur. Pendengaran yang baik adalah dasar perkembangan bicara dan bahasa, sehingga gangguan pendengaran yang tidak terdeteksi dapat terlihat seperti keterlambatan bicara. Jenis-jenis gangguan pendengaran dibahas di artikel ' + a('gangguan-pendengaran-konduktif-vs-sensorineural', 'gangguan pendengaran konduktif dan sensorineural') + '. Pastikan bayi menjalani pemeriksaan mata dan telinga sesuai jadwal yang diberikan dokter saat bayi pulang dari rumah sakit.'),
+  p('Bila setelah memperhitungkan usia koreksi bayi tetap tertinggal di beberapa bidang sekaligus, dokter dapat menilai kemungkinan keterlambatan perkembangan global. Perbedaan keterlambatan perkembangan global dengan autisme dijelaskan di artikel ' + a('apakah-gdd-sama-dengan-autis', 'apakah GDD sama dengan autis') + '. Bila yang tertinggal terutama kemampuan gerak, misalnya tubuh tampak lemas dan sulit mengangkat kepala, terapi fisik bisa menjadi bagian dari dukungan, seperti yang dibahas di ' + a('terapi-fisik-untuk-anak-hipotonia', 'terapi fisik untuk anak hipotonia') + '. Semua keputusan ini sebaiknya diambil bersama dokter anak yang mengenal riwayat bayi sejak lahir.'),
+  p('Pemantauan pertumbuhan di posyandu atau puskesmas tetap penting bagi bayi prematur. Saat bayi ditimbang dan diukur, beri tahu kader atau petugas bahwa bayi lahir prematur, berapa minggu usia kehamilannya saat lahir, dan berapa berat lahirnya. Bila ada hasil yang membuat Anda ragu, tanyakan kepada dokter yang merawat bayi. Panduan umum langkah deteksi dini ada di artikel ' + a('langkah-langkah-deteksi-dini-tumbuh-kembang-anak', 'langkah deteksi dini tumbuh kembang anak') + '.'),
+  fig(`${IMG}/usia-koreksi-posyandu.webp`, 'Kader posyandu berbaju putih hijau menimbang balita dengan timbangan gantung dan kantong kain di bawah atap kayu, seorang ibu berbaju merah membantu, anak-anak lain di sekitarnya', 'Kegiatan penimbangan di posyandu Kampung Benawa 1, Papua Barat Daya. Sampaikan kepada kader bila bayi lahir prematur, agar hasil timbang dan tahapan perkembangannya dibaca dengan tepat.', CM(U_POSY, 'Lefaan', 'CC BY-SA 4.0')),
+
+  '<h2 id="dukungan">Dukungan di rumah dan kapan perlu konsultasi</h2>',
+  p('WHO menekankan bahwa ibu dan keluarga memegang peran penting dalam perawatan bayi prematur. Rekomendasi WHO tahun 2022 untuk perawatan bayi prematur menyebut intervensi sederhana seperti perawatan metode kanguru segera setelah lahir dan inisiasi menyusu dini dapat menurunkan angka kematian bayi prematur dan berat lahir rendah secara bermakna. WHO juga menyebut ibu dan bayi sebaiknya tetap bersama sejak lahir dan tidak dipisahkan, kecuali bila bayi sakit kritis.'),
+  p('Di rumah, stimulasi sehari-hari bisa dilakukan dengan cara sederhana sesuai usia koreksi bayi: mengajak bicara dan bernyanyi, memberi waktu tengkurap saat bayi terjaga dan diawasi, menunjukkan wajah dan benda berwarna kontras, serta merespons ocehannya. Jangan memaksakan latihan yang belum sesuai usia koreksinya. Bayi yang dipaksa duduk atau berdiri sebelum siap tidak akan berkembang lebih cepat.'),
+  p('Libatkan juga anggota keluarga lain dalam stimulasi. Kakek, nenek, atau kakak dapat ikut mengajak bayi bicara, bernyanyi, dan bermain cilukba. Jelaskan kepada mereka konsep usia koreksi agar mereka tidak membandingkan bayi dengan anak lain yang lahir di bulan yang sama. Keluarga yang memahami kondisi bayi akan lebih sabar, dan suasana rumah yang tenang membantu orang tua menjalani masa-masa awal dengan lebih ringan. Catat juga kemampuan baru bayi setiap bulan, misalnya dengan foto atau video singkat, agar perkembangan kecil tidak terlewat dan mudah ditunjukkan kepada dokter.'),
+  p('Segera konsultasikan ke dokter bila Anda melihat hal-hal berikut:'),
+  ul([
+    'Bayi belum menunjukkan kemampuan yang sesuai untuk usia koreksinya, misalnya belum bisa mengangkat kepala atau belum tersenyum saat usia koreksinya sudah melewati tahapan itu.',
+    'Kemampuan yang sudah dimiliki menghilang.',
+    'Bayi tampak sangat kaku atau sangat lemas, atau hanya memakai satu sisi tubuhnya.',
+    'Bayi tidak bereaksi terhadap suara keras atau tidak mengikuti wajah dan benda dengan matanya.',
+    'Bayi kesulitan menyusu, berat badannya tidak naik, atau napasnya tampak berat.',
+  ]),
+  p('Merawat bayi prematur juga menguras tenaga dan emosi orang tua. Minggu-minggu di ruang perawatan, kekhawatiran tentang masa depan, dan perbandingan dengan bayi lain bisa sangat melelahkan. Mintalah bantuan pasangan dan keluarga, beristirahatlah bila memungkinkan, dan bicarakan kecemasan Anda dengan tenaga kesehatan. Artikel ' + a('mengelola-stres-orang-tua-anak-abk', 'mengelola stres orang tua') + ' berisi langkah praktis yang juga relevan bagi orang tua bayi prematur.'),
+
+  '<h2 id="faq">Pertanyaan yang sering diajukan</h2>',
+  faqBlock(uFaq),
+];
+
+articles.push({
+  slug: 'usia-koreksi-bayi-prematur',
+  titleTag: 'Usia Koreksi Bayi Prematur: Cara Hitung dan Milestone | YUKA',
+  metaDesc: 'Usia koreksi bayi prematur: pengertian, cara menghitung dengan rumus AAP beserta contoh, membaca milestone perkembangan, sampai kapan dipakai, dan kapan perlu konsultasi ke dokter.',
+  keywords: 'milestone perkembangan anak prematur koreksi usia, usia koreksi bayi prematur, corrected age, cara menghitung usia koreksi, perkembangan bayi prematur',
+  ogTitle: 'Usia Koreksi Bayi Prematur',
+  ogDesc: 'Panduan usia koreksi untuk orang tua bayi prematur: cara menghitung, contoh, membaca milestone, dan kapan perlu konsultasi.',
+  h1: 'Usia Koreksi Bayi Prematur: Cara Menghitung dan Membaca Milestone Perkembangan',
+  crumb: 'Usia Koreksi Bayi Prematur',
+  category: 'Kesehatan',
+  datePublished: '2026-11-30T08:00:00+07:00', dateModified: '2026-11-30T08:00:00+07:00',
+  dateDisplay: '30 November 2026', readTime: '13 menit baca',
+  authorName: 'Tim YUKA',
+  image: {
+    file: `${IMG}/usia-koreksi-hero.webp`, w: 1200, h: 800,
+    alt: 'Seorang kader posyandu berkerudung menimbang bayi dengan timbangan gantung dan kain sarung, ibu-ibu lain menunggu di sekitarnya',
+    caption: 'Kader menimbang bayi di posyandu. Bagi bayi prematur, hasil timbang dan tahapan perkembangan sebaiknya dibaca bersama usia koreksinya.',
+    credit: CM(U_HERO, 'USAID Indonesia', 'PD'),
+  },
+  bodyHtml: uBody.join('\n'), faq: uFaq,
+  related: [
+    { href: '/artikel/milestone-motorik-kasar-anak-0-12-bulan', title: 'Milestone Motorik Kasar 0 sampai 12 Bulan', desc: 'Tahapan gerak bayi di tahun pertama.' },
+    { href: '/artikel/langkah-langkah-deteksi-dini-tumbuh-kembang-anak', title: 'Deteksi Dini Tumbuh Kembang', desc: 'Langkah memantau perkembangan anak.' },
+    { href: '/artikel/intervensi-dini', title: 'Intervensi Dini', desc: 'Mengapa dukungan sejak usia dini penting.' },
+  ],
+  tags: ['BayiPrematur', 'UsiaKoreksi', 'TumbuhKembang'],
+  sources: [
+    { url: URL_AAP_CA, label: 'American Academy of Pediatrics, HealthyChildren.org: Corrected Age For Preemies (rumus dan contoh usia koreksi)' },
+    { url: URL_WHO_PTB, label: 'WHO: Preterm birth (fact sheet; definisi, kategori, angka global, rekomendasi perawatan)' },
+    { url: URL_CDC_PTB, label: 'CDC: Preterm Birth (masalah kesehatan terkait kelahiran prematur)' },
+  ],
+  sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Artikel ini informasi umum untuk orang tua, bukan pengganti pemeriksaan dokter. Penilaian perkembangan bayi prematur dilakukan oleh dokter anak dan tenaga kesehatan yang merawatnya.',
+});
+
 // [ARTIKEL_BERIKUTNYA]
 
 function prepare() {
