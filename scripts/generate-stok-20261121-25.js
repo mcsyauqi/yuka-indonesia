@@ -189,6 +189,153 @@ articles.push({
   sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Artikel ini informasi umum untuk orang tua dan pendidik, bukan alat diagnosis. Diagnosis dan rencana penanganan perlu ditetapkan oleh dokter, psikolog, atau terapis wicara yang memeriksa anak.',
 });
 
+// ---------------------------------------------------------------------------
+// Artikel 2: sindrom Rett (22 Nov 2026)
+// Keyword: "sindrom rett" (tab Riset Keyword Batch 4, baris 226)
+// ---------------------------------------------------------------------------
+const URL_NHS_RETT = 'https://www.nhs.uk/conditions/rett-syndrome/';
+const URL_FDA_RETT = 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-rett-syndrome';
+const R_HERO = 'https://www.pexels.com/photo/indonesian-schoolgirls-in-uniform-celebrating-29599422/';
+const R_KEGIATAN = 'https://www.pexels.com/photo/class-photo-from-the-closing-ceremony-in-an-indonesian-high-school-10489236/';
+const R_KELAS = 'https://www.pexels.com/photo/students-learning-in-a-classroom-in-indonesia-35548840/';
+
+const rSections = [
+  ['pengertian', 'Apa itu sindrom Rett'],
+  ['penyebab', 'Penyebab: perubahan gen MECP2'],
+  ['tahap', 'Empat tahap perkembangan sindrom Rett'],
+  ['gejala', 'Gejala yang paling sering muncul'],
+  ['diagnosis', 'Bagaimana sindrom Rett didiagnosis'],
+  ['penanganan', 'Penanganan dan terapi pendukung'],
+  ['komunikasi', 'Komunikasi dan belajar di sekolah'],
+  ['keluarga', 'Mendampingi anak dan menjaga keluarga'],
+  ['faq', 'Pertanyaan yang sering diajukan'],
+];
+
+const rFaq = [
+  { q: 'Apa itu sindrom Rett?', a: 'Sindrom Rett adalah kelainan genetik langka yang memengaruhi perkembangan otak dan menimbulkan disabilitas fisik serta intelektual yang berat. Anak biasanya tampak berkembang wajar di bulan-bulan pertama, lalu perkembangannya melambat dan sebagian keterampilan yang sudah dikuasai, seperti penggunaan tangan dan bicara, hilang.' },
+  { q: 'Mengapa sindrom Rett hampir selalu dialami anak perempuan?', a: 'Sebagian besar kasus disebabkan perubahan pada gen MECP2 yang terletak di kromosom X. NHS menyebut sindrom Rett diperkirakan dialami sekitar 1 dari 10.000 bayi perempuan yang lahir setiap tahun dan jarang ditemukan pada anak laki-laki. FDA juga menyebut kondisi ini terutama dialami perempuan dan jauh lebih jarang pada laki-laki.' },
+  { q: 'Apakah sindrom Rett diturunkan dari orang tua?', a: 'Pada umumnya tidak. Menurut NHS, lebih dari 99 persen kasus terjadi secara spontan, bukan diwariskan, dan biasanya tidak ada riwayat keluarga. Orang tua yang ingin memahami risikonya untuk kehamilan berikutnya sebaiknya berkonsultasi dengan dokter atau layanan konseling genetik.' },
+  { q: 'Pada usia berapa gejala sindrom Rett mulai terlihat?', a: 'NHS menjelaskan bahwa gejala biasanya mulai muncul antara usia 6 dan 18 bulan. Tahap kemunduran keterampilan umumnya terjadi antara usia 1 dan 4 tahun dan bisa berlangsung dari 2 bulan sampai lebih dari 2 tahun.' },
+  { q: 'Apakah sindrom Rett sama dengan autisme?', a: 'Tidak sama, tetapi pada tahap kemunduran beberapa ciri sindrom Rett bisa mirip autisme, misalnya menarik diri dari interaksi sosial dan kontak mata berkurang. Sindrom Rett memiliki ciri khas lain seperti hilangnya penggunaan tangan yang bertujuan, gerakan tangan berulang seperti meremas atau bertepuk, pertumbuhan kepala melambat, dan gangguan pernapasan.' },
+  { q: 'Apakah sindrom Rett bisa disembuhkan?', a: 'Sampai sekarang belum ada obat yang menyembuhkan sindrom Rett. Penanganan berfokus pada pengelolaan gejala, misalnya terapi wicara dan komunikasi, fisioterapi, terapi okupasi, obat antikejang, dan pengaturan gizi. Pada 2023 FDA Amerika Serikat menyetujui trofinetide sebagai pengobatan pertama untuk sindrom Rett pada usia 2 tahun ke atas, tetapi obat ini mengelola gejala dan tidak menyembuhkan.' },
+  { q: 'Apakah anak dengan sindrom Rett bisa bersekolah?', a: 'Bisa. Anak dengan sindrom Rett tetap berhak atas pendidikan, baik di sekolah luar biasa maupun sekolah inklusi dengan dukungan yang sesuai. Kuncinya adalah sistem komunikasi alternatif, misalnya papan gambar atau teknologi tatapan mata, posisi duduk yang baik, dan program yang disusun bersama terapis serta guru pendamping.' },
+  { q: 'Berapa harapan hidup anak dengan sindrom Rett?', a: 'NHS tidak memberikan angka harapan hidup yang pasti. Banyak penyandang sindrom Rett hidup sampai dewasa, dan mereka yang gejalanya lebih ringan bisa mencapai usia lanjut. Sebagian meninggal di usia relatif muda karena komplikasi seperti gangguan irama jantung, pneumonia, dan epilepsi, sehingga pemeriksaan kesehatan rutin sangat penting.' },
+];
+
+addDiagram(`${IMG}/sindrom-rett-tahap.webp`, svg.flow('Empat tahap sindrom Rett', 'Rentang usia menurut NHS, tiap anak bisa berbeda', [
+  { h: '1. Stagnasi', d: 'Mulai 6 sampai 18 bulan. Perkembangan melambat, tonus otot rendah.' },
+  { h: '2. Kemunduran', d: 'Usia 1 sampai 4 tahun. Kehilangan penggunaan tangan dan bicara.' },
+  { h: '3. Plateau', d: 'Mulai usia 2 sampai 10 tahun. Perhatian dan kontak membaik.' },
+  { h: '4. Penurunan gerak', d: 'Bertahun-tahun. Skoliosis, kaku otot, kemampuan berjalan menurun.' },
+]));
+addDiagram(`${IMG}/sindrom-rett-tim.webp`, svg.cards('Tim pendukung anak dengan sindrom Rett', 'Siapa membantu apa, dari NHS', [
+  { h: 'Komunikasi', items: ['Terapi wicara', 'Papan gambar dan PECS', 'Teknologi tatapan mata'] },
+  { h: 'Gerak dan postur', items: ['Fisioterapi', 'Posisi duduk yang baik', 'Ortosis kaki dan bidai tangan'] },
+  { h: 'Kesehatan', items: ['Obat antikejang', 'Pemantauan jantung dan napas', 'Pengaturan gizi'] },
+  { h: 'Keseharian', items: ['Terapi okupasi', 'Terapi musik dan air', 'Dukungan untuk pengasuh'] },
+]));
+
+const rBody = [
+  p('<strong>Sindrom Rett</strong> adalah kelainan genetik langka yang memengaruhi perkembangan otak dan hampir selalu dialami anak perempuan. Anak biasanya tampak tumbuh wajar pada bulan-bulan pertama, lalu perkembangannya melambat dan keterampilan yang sudah dikuasai, terutama penggunaan tangan dan kemampuan bicara, perlahan hilang. Kondisi ini belum bisa disembuhkan, tetapi gejalanya bisa dikelola sehingga anak tetap dapat berkomunikasi, belajar, dan menjalani hidup sebaik mungkin.'),
+  p('Karena sangat jarang, banyak orang tua baru mendengar nama sindrom Rett ketika dokter menyampaikannya. Artikel ini membahas pengertian sindrom Rett, penyebabnya, empat tahap perkembangannya, gejala yang paling sering muncul, cara diagnosis, pilihan penanganan, serta cara mendampingi anak di rumah dan di sekolah. Bila keluarga Anda baru menerima diagnosis, artikel ' + a('menerima-diagnosis-anak-abk', 'menerima diagnosis anak ABK') + ' bisa menjadi bacaan pendamping.'),
+  toc(rSections),
+
+  '<h2 id="pengertian">Apa itu sindrom Rett</h2>',
+  p('Menurut ' + ext(URL_NHS_RETT, 'NHS (layanan kesehatan nasional Inggris)') + ', sindrom Rett adalah kelainan genetik langka yang memengaruhi perkembangan otak dan menyebabkan disabilitas fisik dan intelektual yang berat. NHS memperkirakan kondisi ini dialami sekitar 1 dari 10.000 bayi perempuan yang lahir setiap tahun, dan jarang ditemukan pada anak laki-laki. Angka yang sama juga dicantumkan ' + ext(URL_FDA_RETT, 'FDA Amerika Serikat') + ' yang menyebut sindrom Rett terutama dialami perempuan dan jauh lebih jarang pada laki-laki.'),
+  p('Ciri yang membuat sindrom Rett berbeda dari banyak kondisi perkembangan lain adalah polanya. Anak tidak terlihat bermasalah sejak lahir. NHS menjelaskan bahwa perkembangan anak tampak wajar setidaknya selama 6 bulan pertama, meskipun mungkin sudah ada tanda halus. Setelah itu muncul fase melambat, disusul fase kemunduran ketika anak kehilangan keterampilan yang sudah dimilikinya. Bagi orang tua, kehilangan keterampilan seperti ini sangat membingungkan dan menyedihkan, sehingga dukungan sejak awal sangat penting.'),
+  p('Sindrom Rett termasuk dalam kelompok kondisi yang menyebabkan disabilitas ganda, karena memengaruhi gerak, komunikasi, dan fungsi kognitif sekaligus. Di Indonesia, anak dengan kondisi seperti ini sering dilayani dalam program untuk ' + a('tunaganda-adalah', 'tunaganda') + ' di sekolah luar biasa, atau di sekolah inklusi dengan pendampingan yang memadai. Pemahaman tentang kondisinya membantu orang tua dan guru menyusun dukungan yang realistis.'),
+
+  '<h2 id="penyebab">Penyebab: perubahan gen MECP2</h2>',
+  p('NHS menjelaskan bahwa sebagian besar kasus sindrom Rett disebabkan oleh perubahan atau mutasi pada gen MECP2, yang terletak di kromosom X. Gen ini memberi instruksi untuk membuat protein MeCP2, protein yang dibutuhkan otak untuk berkembang. Ketika gen ini berubah, sel saraf tidak dapat bekerja sebagaimana mestinya. Letak gen di kromosom X inilah yang menjelaskan mengapa kondisi ini hampir selalu terlihat pada anak perempuan.'),
+  p('Hal yang sering membuat orang tua merasa bersalah adalah pertanyaan apakah kondisi ini diturunkan. NHS menegaskan bahwa biasanya tidak ada riwayat keluarga, dan lebih dari 99 persen kasus terjadi secara spontan, bukan diwariskan dari orang tua. Artinya sindrom Rett bukan akibat pola asuh, makanan selama hamil, atau kesalahan orang tua. Untuk pertanyaan tentang risiko pada kehamilan berikutnya, konsultasikan dengan dokter atau layanan konseling genetik.'),
+  p('Karena penyebabnya genetik, sindrom Rett tidak menular dan tidak bisa dicegah dengan cara tertentu setelah anak lahir. Fokus keluarga sebaiknya diarahkan pada deteksi dini dan dukungan. Memahami ' + a('langkah-langkah-deteksi-dini-tumbuh-kembang-anak', 'langkah deteksi dini tumbuh kembang anak') + ' membantu orang tua menyadari perubahan perkembangan lebih cepat dan segera mencari pemeriksaan.'),
+
+  '<h2 id="tahap">Empat tahap perkembangan sindrom Rett</h2>',
+  p('NHS membagi perjalanan sindrom Rett menjadi empat tahap. Rentang usia di setiap tahap hanya gambaran umum, karena perjalanan tiap anak bisa berbeda. Sebagian anak tidak melewati semua tahap dengan jelas, dan banyak yang menetap lama di tahap tertentu. Tabel berikut merangkum keempat tahap tersebut beserta perubahan yang biasanya terlihat.'),
+  table('Empat tahap sindrom Rett menurut NHS', ['Tahap', 'Kapan biasanya terjadi', 'Perubahan yang terlihat'], [
+    ['1. Tanda awal (stagnasi)', 'Mulai usia 6 sampai 18 bulan, berlangsung beberapa bulan sampai setahun atau lebih', 'Tonus otot rendah, sulit makan, gerakan tangan berulang, bicara terlambat, kurang tertarik pada mainan'],
+    ['2. Kemunduran', 'Usia 1 sampai 4 tahun, berlangsung 2 bulan sampai lebih dari 2 tahun', 'Kehilangan penggunaan tangan dan bicara, gerakan meremas atau bertepuk, menarik diri, gangguan tidur dan napas'],
+    ['3. Plateau', 'Bisa mulai usia 2 sampai 10 tahun, sering bertahan bertahun-tahun', 'Rewel berkurang, perhatian dan komunikasi membaik, tetapi kejang dan masalah berat badan bisa berlanjut'],
+    ['4. Penurunan kemampuan gerak', 'Bisa berlangsung bertahun-tahun sampai puluhan tahun', 'Skoliosis, otot lemah dan kaku terutama di kaki, kemampuan berjalan menurun; komunikasi umumnya tidak memburuk'],
+  ]),
+  diag(`${IMG}/sindrom-rett-tahap.webp`, 'Diagram empat tahap sindrom Rett: stagnasi, kemunduran, plateau, dan penurunan kemampuan gerak beserta rentang usianya', 'Ringkasan empat tahap sindrom Rett. Tahap plateau bisa berlangsung sangat lama, dan banyak penyandang menetap di tahap ini sepanjang hidupnya.'),
+  p('Ada kabar yang menguatkan di balik tahap-tahap ini. NHS mencatat bahwa pada tahap plateau, sebagian gejala tahap kemunduran seperti rewel dan menangis bisa mereda, sementara minat pada orang lain, kewaspadaan, perhatian, dan komunikasi anak bisa membaik. Pada tahap keempat pun, kemampuan komunikasi dan fungsi otak umumnya tidak memburuk, dan tatapan mata biasanya justru membaik. Tatapan mata inilah yang kelak menjadi jalur komunikasi penting bagi banyak anak.'),
+
+  '<h2 id="gejala">Gejala yang paling sering muncul</h2>',
+  p('Gejala paling khas sindrom Rett adalah hilangnya penggunaan tangan yang bertujuan, digantikan oleh gerakan tangan berulang seperti meremas, seperti mencuci tangan, bertepuk, atau mengetuk. NHS juga mencatat tanda lain di tahap kemunduran, yaitu tekanan emosional dan teriakan tanpa sebab yang jelas, menarik diri dari interaksi sosial, kontak mata berkurang, cara berjalan tidak stabil, gangguan tidur, dan pertumbuhan kepala yang melambat.'),
+  p('Gejala fisik lain juga perlu dipantau. NHS menyebut kesulitan menelan, sembelit, serta masalah pada denyut atau irama jantung. Kemudian bisa muncul episode napas cepat atau lambat, menahan napas, dan menelan udara yang membuat perut kembung. Kejang juga sering terjadi, dan berat badan kadang sulit naik atau dipertahankan. Karena itu anak dengan sindrom Rett perlu dipantau oleh dokter secara rutin, tidak hanya oleh terapis.'),
+  p('Pada tahap kemunduran, beberapa ciri sindrom Rett bisa menyerupai autisme, misalnya menarik diri dan kontak mata berkurang. Inilah sebabnya sebagian anak sempat diduga autis sebelum diagnosis yang tepat ditegakkan. Perbedaannya, sindrom Rett disertai ciri fisik yang khas seperti hilangnya fungsi tangan, gangguan napas, dan pertumbuhan kepala melambat. Bila Anda ingin memahami ciri autisme sebagai pembanding, baca ' + a('autisme-adalah', 'pengertian autisme') + '. Masalah tulang belakang yang sering menyertai disabilitas fisik dijelaskan di artikel ' + a('skoliosis-pada-anak-cerebral-palsy', 'skoliosis pada anak cerebral palsy') + '.'),
+
+  p('Bagi orang tua, mencatat gejala sehari-hari sangat membantu dokter. Buat buku catatan sederhana atau catatan di ponsel yang berisi tanggal, jam, dan gambaran singkat setiap episode yang tidak biasa, misalnya napas tertahan, napas sangat cepat, kejang, atau tangisan yang sulit diredakan. Catat juga pola tidur, buang air besar, berat badan, dan jumlah makanan yang masuk. Bila memungkinkan, rekam video pendek ketika episode terjadi, karena gerakan yang sulit dijelaskan dengan kata-kata sering langsung dikenali dokter dari rekaman. Catatan seperti ini membantu membedakan mana yang merupakan bagian dari sindrom Rett dan mana yang perlu penanganan segera.'),
+
+  '<h2 id="diagnosis">Bagaimana sindrom Rett didiagnosis</h2>',
+  p('Menurut NHS, diagnosis sindrom Rett ditegakkan berdasarkan gejala setelah kondisi lain yang lebih umum disingkirkan. Karena kondisinya langka, diagnosis sering terlambat. Gejala biasanya muncul antara usia 6 dan 18 bulan, ketika orang tua mulai melihat anak tidak lagi berkembang seperti sebelumnya atau kehilangan keterampilan yang sudah dikuasai.'),
+  p('Tes darah genetik dapat memeriksa adanya perubahan pada gen MECP2. NHS menjelaskan bahwa ditemukannya perubahan gen ini memastikan diagnosis, tetapi tidak ditemukannya perubahan belum tentu menyingkirkan sindrom Rett. Karena itu dokter tetap memadukan hasil tes dengan pengamatan gejala dan riwayat perkembangan anak. Di Indonesia, pemeriksaan biasanya dimulai dari dokter spesialis anak, lalu dirujuk ke dokter spesialis anak konsultan saraf atau layanan genetik di rumah sakit rujukan.'),
+  p('Orang tua bisa membantu proses diagnosis dengan mencatat riwayat perkembangan anak secara rinci. Kapan anak mulai duduk, merangkak, mengoceh, atau memegang mainan, dan kapan keterampilan itu mulai berkurang. Video anak di usia yang berbeda juga sangat berguna. Bila Anda khawatir tentang perkembangan anak, jangan menunggu. Artikel ' + a('intervensi-dini', 'intervensi dini') + ' menjelaskan mengapa dukungan sejak awal penting, apa pun diagnosis akhirnya.'),
+
+  '<h2 id="penanganan">Penanganan dan terapi pendukung</h2>',
+  p('NHS menegaskan bahwa belum ada pengobatan yang menyembuhkan sindrom Rett. Penanganan bertujuan mengelola gejala dan membantu anak berfungsi sebaik mungkin, sehingga biasanya melibatkan banyak profesional sekaligus. Obat dapat diberikan untuk masalah napas dan gerak, serta obat antiepilepsi untuk mengendalikan kejang. Semua keputusan tentang obat ada di tangan dokter yang menangani anak.'),
+  p('Pada Maret 2023, ' + ext(URL_FDA_RETT, 'FDA Amerika Serikat') + ' menyetujui Daybue (trofinetide) sebagai pengobatan pertama untuk sindrom Rett pada orang dewasa dan anak usia 2 tahun ke atas. FDA mencatat efek samping yang paling sering adalah diare dan muntah. Obat ini membantu mengelola gejala dan tidak menyembuhkan. Ketersediaannya di Indonesia perlu ditanyakan langsung kepada dokter, karena persetujuan di satu negara tidak otomatis berlaku di negara lain.'),
+  diag(`${IMG}/sindrom-rett-tim.webp`, 'Diagram empat kelompok dukungan untuk anak dengan sindrom Rett: komunikasi, gerak dan postur, kesehatan, serta keseharian', 'Penanganan sindrom Rett melibatkan banyak bidang. Diagram ini merangkum jenis dukungan yang disebut NHS.'),
+  p('Terapi pendukung memegang peran besar. NHS menyebut ' + a('terapi-fisik-untuk-abk', 'fisioterapi') + ' untuk menjaga kemampuan gerak, perhatian pada posisi duduk agar risiko skoliosis berkurang, dan sering berganti posisi. Bila skoliosis sudah terjadi, penyangga punggung dapat dipakai, dan kadang dibutuhkan operasi tulang belakang. ' + a('terapi-okupasi', 'Terapi okupasi') + ' membantu kegiatan sehari-hari seperti berpakaian dan makan. Ortosis kaki dapat membantu anak berjalan, dan bidai tangan kadang dipakai dalam waktu terbatas untuk mencegah anak melukai diri atau mendorong penggunaan tangan yang lain.'),
+  p('Gizi juga perlu perhatian khusus. NHS menyebut diet ketogenik tinggi kalori dan rendah karbohidrat dapat dipertimbangkan untuk membantu berat badan dan pengendalian kejang, dengan selang makan atau alat bantu lain bila diperlukan. Diet seperti ini harus diawasi dokter dan ahli gizi, bukan dicoba sendiri di rumah. NHS juga mencatat bahwa berkuda terapeutik, berenang, hidroterapi, dan ' + a('terapi-musik-anak-berkebutuhan-khusus', 'terapi musik') + ' dilaporkan bermanfaat bagi sebagian penyandang.'),
+  p('Karena banyak profesional terlibat, koordinasi menjadi tantangan tersendiri bagi keluarga. Simpan semua hasil pemeriksaan, resep, dan laporan terapi dalam satu map, lalu bawa setiap kali kontrol. Mintalah setiap terapis menuliskan tujuan dan latihan rumah secara singkat agar orang tua dan guru bisa menjalankannya dengan cara yang sama. Bila memungkinkan, tunjuk satu dokter sebagai koordinator utama yang memantau gambaran besar kesehatan anak, terutama soal kejang, pernapasan, jantung, dan berat badan. Untuk gambaran jenis terapi yang tersedia, baca artikel ' + a('apa-saja-terapi-anak-berkebutuhan-khusus', 'terapi anak berkebutuhan khusus') + '.'),
+  fig(`${IMG}/sindrom-rett-kegiatan.webp`, 1200, 800, 'Puluhan siswi berkerudung putih dan beberapa siswa duduk berkerumun di halaman sekolah bersama seorang guru, memegang bendera merah putih kecil dan balon', 'Kegiatan bersama siswa dan guru di sebuah sekolah menengah di Bima, Nusa Tenggara Barat. Kegiatan yang menyenangkan seperti musik dan perayaan sekolah bisa menjadi ruang bagi anak dengan sindrom Rett untuk tetap terlibat bersama teman.', PX(R_KEGIATAN, 'Wasio Kadir')),
+
+  p('Posisi tubuh dan gerak juga bisa dirawat di rumah setiap hari. Ikuti latihan yang diberikan fisioterapis, ganti posisi anak secara berkala bila ia lama duduk atau berbaring, dan perhatikan kursi atau stroller yang dipakai agar punggungnya tetap tersangga dengan baik. Bila anak masih bisa berjalan, beri kesempatan berjalan di tempat yang aman setiap hari, karena kemampuan ini lebih mudah dipertahankan daripada dipulihkan. Ide latihan sederhana tersedia di artikel ' + a('latihan-fisioterapi-anak-di-rumah', 'latihan fisioterapi anak di rumah') + ', tetapi tetap sesuaikan dengan arahan terapis yang mengenal kondisi anak.'),
+
+  '<h2 id="komunikasi">Komunikasi dan belajar di sekolah</h2>',
+  p('Kehilangan kemampuan bicara tidak berarti anak kehilangan keinginan untuk berkomunikasi. NHS menyebut berbagai dukungan komunikasi untuk sindrom Rett, yaitu terapi wicara, papan gambar, teknologi tatapan mata (eye gaze), dan sistem seperti Makaton, Signalong, atau PECS. Karena tatapan mata cenderung membaik di tahap lanjut, banyak anak dapat memilih gambar atau kata dengan melihatnya. Penjelasan tentang sistem bergambar ada di artikel ' + a('pecs-komunikasi-autis', 'PECS') + ' dan pilihan alat bantu ada di ' + a('aplikasi-komunikasi-aac-terbaik-untuk-anak', 'aplikasi komunikasi AAC') + '.'),
+  p('Di sekolah, anak dengan sindrom Rett membutuhkan program yang disusun khusus untuknya. ' + a('program-pembelajaran-individual', 'Program pembelajaran individual (PPI)') + ' dapat memuat tujuan komunikasi, posisi duduk selama pelajaran, jadwal istirahat, dan cara anak menunjukkan pilihan. Guru perlu memberi waktu tunggu yang cukup, karena anak sering butuh waktu lebih lama untuk merespons dengan tatapan atau gerakan. Penting juga menganggap anak memahami lebih banyak daripada yang bisa ia tunjukkan, sehingga anak tetap diajak bicara dan dilibatkan.'),
+  p('Latihan komunikasi bisa dimulai di rumah dengan cara yang sederhana. Tunjukkan dua pilihan yang jelas berbeda, misalnya dua gambar makanan atau dua mainan, lalu letakkan agak berjauhan di depan anak. Sebut nama keduanya, tunggu dengan sabar, dan perhatikan ke mana pandangan anak berhenti. Bila anak menatap satu pilihan, berikan pilihan itu dan sebutkan namanya. Kegiatan kecil seperti ini memberi pesan penting bahwa pendapat anak didengar. Terapis wicara dapat membantu menyusun papan pilihan yang lebih lengkap sesuai kemampuan dan minat anak.'),
+  fig(`${IMG}/sindrom-rett-kelas.webp`, 1200, 800, 'Ruang kelas berdinding putih dengan deretan meja kayu, siswa laki-laki berpeci dan siswi berkerudung duduk menulis di bangku masing-masing', 'Ruang kelas di sebuah sekolah di Pandeglang, Banten. Penataan kelas, seperti jalur yang lapang untuk kursi roda dan posisi duduk yang bisa diatur, ikut menentukan apakah anak dengan disabilitas fisik bisa belajar dengan nyaman.', PX(R_KELAS, 'el jusuf')),
+  p('Pilihan tempat belajar perlu didiskusikan bersama terapis dan pihak sekolah. Sebagian keluarga memilih sekolah luar biasa yang sudah terbiasa melayani anak dengan disabilitas ganda, sebagian lain memilih sekolah inklusi dengan ' + a('gpk-adalah', 'guru pendamping khusus') + '. Perbandingan keduanya dijelaskan di artikel ' + a('apa-perbedaan-sekolah-inklusi-dan-slb', 'perbedaan sekolah inklusi dan SLB') + '. Yang terpenting adalah lingkungan belajar yang aksesibel, tim yang mau belajar tentang kondisi anak, dan komunikasi rutin antara guru dan orang tua.'),
+
+  '<h2 id="keluarga">Mendampingi anak dan menjaga keluarga</h2>',
+  p('NHS menyampaikan bahwa sebagian penyandang sindrom Rett mempertahankan sebagian kemampuan tangan, berjalan, atau berkomunikasi, tetapi kebanyakan membutuhkan perawatan sepanjang hari seumur hidup. Banyak yang hidup sampai dewasa, dan mereka yang gejalanya lebih ringan dapat mencapai usia lanjut. Sebagian meninggal di usia relatif muda karena komplikasi seperti gangguan irama jantung, pneumonia, dan epilepsi. Pemeriksaan kesehatan rutin karena itu sangat penting.'),
+  p('Merawat anak dengan sindrom Rett menuntut tenaga fisik dan mental yang besar. NHS menekankan bahwa kebanyakan pengasuh membutuhkan dukungan sosial dan psikologis, termasuk waktu jeda dari tugas merawat. Orang tua tidak perlu merasa bersalah ketika membutuhkan istirahat. Konsep ' + a('respite-care-untuk-keluarga-anak-abk', 'respite care') + ' dan ' + a('self-care-untuk-orang-tua-anak-disabilitas', 'self care untuk orang tua') + ' bisa menjadi titik awal untuk menata ulang pembagian tugas di keluarga.'),
+  p('Libatkan juga saudara kandung dan keluarga besar dengan cara yang sesuai usia mereka. Saudara kandung sering ikut merasakan perubahan suasana rumah dan perlu tetap mendapat perhatian. Bergabung dengan komunitas orang tua anak berkebutuhan khusus juga membantu, karena pengalaman orang tua lain sering memberi ide praktis yang tidak tertulis di buku. Untuk hak dan bantuan yang bisa diakses keluarga, baca ' + a('apa-saja-hak-anak-berkebutuhan-khusus', 'hak anak berkebutuhan khusus') + ' dan ' + a('cara-mengajukan-bantuan-pemerintah-untuk-anak-disabilitas', 'cara mengajukan bantuan pemerintah untuk anak disabilitas') + '.'),
+
+  p('Rencanakan juga masa depan secara bertahap. Anak dengan sindrom Rett akan tumbuh menjadi remaja dan orang dewasa yang tetap membutuhkan dukungan. Pikirkan sejak awal siapa saja yang dapat membantu merawat bila orang tua sakit atau berhalangan, bagaimana pembiayaan terapi dan alat bantu jangka panjang, serta layanan apa yang tersedia di daerah Anda. Langkah kecil seperti mengajari anggota keluarga lain cara memberi makan, memindahkan posisi, dan membaca isyarat anak akan sangat berarti di kemudian hari. Kartu identitas disabilitas juga dapat membantu mengakses layanan, sebagaimana dijelaskan di artikel ' + a('kartu-disabilitas', 'kartu disabilitas') + '.'),
+
+  '<h2 id="faq">Pertanyaan yang sering diajukan</h2>',
+  faqBlock(rFaq),
+];
+
+articles.push({
+  slug: 'sindrom-rett',
+  titleTag: 'Sindrom Rett: Penyebab, Tahap, dan Penanganan | YUKA',
+  metaDesc: 'Sindrom Rett: kelainan genetik langka pada anak perempuan. Penyebab gen MECP2, empat tahap, gejala, diagnosis, terapi pendukung, dan cara mendampingi anak.',
+  keywords: 'sindrom rett, rett syndrome, gen MECP2, sindrom rett pada anak perempuan, tahap sindrom rett',
+  ogTitle: 'Sindrom Rett pada Anak',
+  ogDesc: 'Panduan sindrom Rett untuk orang tua dan guru: penyebab, empat tahap, gejala, diagnosis, terapi, dan dukungan di sekolah.',
+  h1: 'Sindrom Rett: Penyebab, Empat Tahap, Gejala, dan Penanganannya',
+  crumb: 'Sindrom Rett',
+  category: 'Kesehatan',
+  datePublished: '2026-11-22T08:00:00+07:00', dateModified: '2026-11-22T08:00:00+07:00',
+  dateDisplay: '22 November 2026', readTime: '13 menit baca',
+  authorName: 'Tim YUKA',
+  image: {
+    file: `${IMG}/sindrom-rett-hero.webp`, w: 1200, h: 800,
+    alt: 'Enam siswi berkerudung putih dan berseragam rok merah duduk berjajar di depan bangunan sekolah berdinding oranye dan hijau sambil tertawa',
+    caption: 'Siswi sebuah sekolah di Jawa Barat duduk bersama di depan kelas. Sindrom Rett hampir selalu dialami anak perempuan, dan setiap anak tetap berhak belajar dan bergaul bersama teman sebayanya.',
+    credit: PX(R_HERO, 'Mulya Has'),
+  },
+  bodyHtml: rBody.join('\n'), faq: rFaq,
+  related: [
+    { href: '/artikel/tunaganda-adalah', title: 'Tunaganda Adalah', desc: 'Pengertian disabilitas ganda dan layanan pendidikannya.' },
+    { href: '/artikel/aplikasi-komunikasi-aac-terbaik-untuk-anak', title: 'Aplikasi Komunikasi AAC', desc: 'Alat bantu komunikasi untuk anak yang belum atau tidak bisa berbicara.' },
+    { href: '/artikel/terapi-fisik-untuk-abk', title: 'Terapi Fisik untuk ABK', desc: 'Peran fisioterapi dalam menjaga kemampuan gerak anak.' },
+  ],
+  tags: ['SindromRett', 'Genetik', 'DisabilitasGanda'],
+  sources: [
+    { url: URL_NHS_RETT, label: 'NHS: Rett syndrome (penyebab, tahap, diagnosis, penanganan, prognosis)' },
+    { url: URL_FDA_RETT, label: 'FDA: FDA approves first treatment for Rett syndrome (Daybue/trofinetide)' },
+  ],
+  sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Artikel ini informasi umum, bukan pengganti pemeriksaan dokter. Diagnosis, pilihan obat, dan program terapi untuk anak tertentu ditetapkan oleh dokter dan tim terapis yang menanganinya.',
+});
+
+
 // [ARTIKEL_BERIKUTNYA]
 
 function prepare() {
