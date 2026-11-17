@@ -58,5 +58,15 @@
     "category": "Terapi",
     "readTime": "14 menit baca",
     "date": "2026-11-23"
+  },
+  {
+    "slug": "twice-exceptional-anak",
+    "file": "artikel/twice-exceptional-anak.html",
+    "title": "Twice Exceptional pada Anak: Ketika Bakat dan Kebutuhan Khusus Hadir Bersamaan",
+    "description": "Twice exceptional (2e) adalah anak berbakat yang juga punya kondisi seperti disleksia, ADHD, atau autisme. Tanda, pola saling menutupi, identifikasi, dan strategi dukungan.",
+    "image": "assets/images/artikel/twice-exceptional-hero.webp",
+    "category": "Pendidikan",
+    "readTime": "14 menit baca",
+    "date": "2026-11-24"
   }
 ]

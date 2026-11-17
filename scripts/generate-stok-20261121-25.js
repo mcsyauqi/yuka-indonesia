@@ -482,6 +482,150 @@ articles.push({
 });
 
 
+// ---------------------------------------------------------------------------
+// Artikel 4: twice exceptional (2e) (24 Nov 2026)
+// Keyword: "twice exceptional anak" (tab Riset Keyword Batch 4, baris 265)
+// ---------------------------------------------------------------------------
+const URL_2E_WP = 'https://en.wikipedia.org/wiki/Twice_exceptional';
+const URL_2E_TEA = 'https://gtfamilytoolkit.tea.texas.gov/resources/twice-exceptional-2e';
+const T2_HERO = 'https://www.pexels.com/photo/indonesian-students-in-classroom-exam-setting-31940733/';
+const T2_UJIAN = 'https://www.pexels.com/photo/indonesian-high-school-students-in-classroom-35865718/';
+const T2_LAPANGAN = 'https://www.pexels.com/photo/basketball-court-2968077/';
+
+const wSections = [
+  ['pengertian', 'Apa itu twice exceptional'],
+  ['kombinasi', 'Kombinasi yang sering ditemui'],
+  ['menutupi', 'Ketika kelebihan dan kesulitan saling menutupi'],
+  ['tanda', 'Tanda yang bisa diamati orang tua dan guru'],
+  ['identifikasi', 'Mengapa anak 2e sering terlewat'],
+  ['sekolah', 'Strategi belajar di sekolah'],
+  ['rumah', 'Dukungan di rumah dan sisi emosional'],
+  ['indonesia', 'Konteks layanan di Indonesia'],
+  ['faq', 'Pertanyaan yang sering diajukan'],
+];
+
+const wFaq = [
+  { q: 'Apa arti twice exceptional pada anak?', a: 'Twice exceptional atau 2e adalah istilah untuk anak yang memiliki kecerdasan atau bakat istimewa di satu bidang atau lebih, sekaligus memiliki satu atau lebih kondisi seperti disleksia, ADHD, atau autisme. Disebut dua kali istimewa karena anak membutuhkan dukungan untuk kelebihannya dan juga untuk kesulitannya.' },
+  { q: 'Siapa yang pertama memakai istilah twice exceptional?', a: 'Menurut rangkuman Wikipedia, istilah ini pertama muncul dalam artikel James J. Gallagher tahun 1988 tentang agenda nasional pendidikan anak berbakat di Amerika Serikat. Gerakan pendidikannya sendiri sudah dimulai pada awal 1970-an dengan sebutan pendidikan anak berbakat dengan hambatan.' },
+  { q: 'Apakah anak autis bisa termasuk twice exceptional?', a: 'Bisa. Autisme termasuk kondisi yang sering disebut dalam pembahasan twice exceptional, bersama ADHD dan kesulitan belajar spesifik seperti disleksia. Seorang anak autis yang sangat menonjol di matematika, musik, atau bidang lain dapat dianggap 2e bila kedua sisinya dinilai oleh profesional.' },
+  { q: 'Mengapa anak 2e sering tidak terdeteksi?', a: 'Kelebihan anak bisa menutupi kesulitannya sehingga nilainya tampak rata-rata, atau sebaliknya kesulitannya begitu terlihat sehingga bakatnya tidak diperhatikan. Penilaian yang hanya memakai satu skor IQ juga bisa menyesatkan. Tanda kesulitan sering baru muncul ketika tuntutan sekolah meningkat.' },
+  { q: 'Bagaimana cara memastikan anak twice exceptional?', a: 'Diperlukan asesmen menyeluruh oleh psikolog, yang melihat profil kemampuan secara rinci, bukan hanya skor total. Asesmen ini biasanya dipadukan dengan pengamatan guru, contoh hasil kerja anak, dan riwayat perkembangan. Diagnosis kondisi penyerta seperti ADHD atau autisme ditegakkan oleh profesional yang berwenang.' },
+  { q: 'Apakah anak 2e sebaiknya masuk kelas akselerasi atau kelas inklusi?', a: 'Tidak ada jawaban tunggal. Yang dibutuhkan anak 2e adalah tantangan di bidang kekuatannya dan dukungan di bidang kesulitannya secara bersamaan. Sebagian anak cocok di sekolah inklusi dengan pengayaan, sebagian lain membutuhkan kombinasi program pengayaan dan akomodasi. Diskusikan bersama sekolah dan psikolog yang memahami profil anak.' },
+  { q: 'Apa yang paling dibutuhkan anak twice exceptional?', a: 'Pendekatan yang berangkat dari kekuatan. Mengajar lewat kemampuan anak, bukan hanya memperbaiki kekurangannya, membantu anak tetap termotivasi dan percaya diri. Anak juga membutuhkan strategi kompensasi, akomodasi seperti tambahan waktu, dan kemampuan menyuarakan kebutuhannya sendiri.' },
+  { q: 'Apakah istilah twice exceptional masih tepat dipakai?', a: 'Istilah ini masih banyak dipakai dalam dunia pendidikan, tetapi sebagian komunitas neurodivergen mengkritiknya dan menyarankan bahasa yang lebih netral. Yang lebih penting dari labelnya adalah memahami profil anak secara utuh, termasuk kelebihan dan kebutuhannya.' },
+];
+
+addDiagram(`${IMG}/twice-exceptional-profil.webp`, svg.grid('Tiga pola anak 2e di kelas', 'Bagaimana kelebihan dan kesulitan bisa terlihat oleh guru', ['Pola', 'Yang terlihat', 'Risikonya'], [
+  ['Bakat menonjol, kesulitan tertutup', 'Dianggap pintar tapi kurang berusaha', 'Kesulitan tidak pernah ditangani'],
+  ['Kesulitan menonjol, bakat tertutup', 'Dianggap hanya punya hambatan belajar', 'Bakat tidak pernah dikembangkan'],
+  ['Saling menutupi', 'Nilai tampak rata-rata, tidak menonjol', 'Kedua sisi sama-sama terlewat'],
+], [330, 400, 378]));
+addDiagram(`${IMG}/twice-exceptional-dukungan.webp`, svg.cards('Dua sisi dukungan untuk anak 2e', 'Tantangan dan dukungan diberikan bersamaan, bukan bergantian', [
+  { h: 'Mengembangkan kekuatan', items: ['Pengayaan di bidang minat', 'Proyek dan pertanyaan terbuka', 'Mentor atau klub sesuai bakat'], color: '#2B3A67' },
+  { h: 'Mendukung kesulitan', items: ['Akomodasi seperti tambahan waktu', 'Strategi kompensasi dan alat bantu', 'Terapi sesuai kondisi penyerta'], color: '#00838F' },
+  { h: 'Menguatkan diri', items: ['Mengenal profil diri', 'Belajar menyuarakan kebutuhan', 'Dukungan emosional'], color: '#B8860B' },
+]));
+
+const wBody = [
+  p('<strong>Twice exceptional</strong>, sering disingkat <strong>2e</strong>, adalah istilah untuk anak yang memiliki kecerdasan atau bakat istimewa sekaligus kondisi yang membuatnya kesulitan belajar atau beradaptasi, misalnya disleksia, ADHD, atau autisme. Anak seperti ini disebut dua kali istimewa karena ia membutuhkan dukungan untuk dua sisi sekaligus: tantangan untuk mengembangkan kelebihannya dan bantuan untuk mengatasi kesulitannya.'),
+  p('Banyak orang tua mengenali gambaran ini tanpa tahu namanya. Anaknya bisa bercerita panjang tentang tata surya dengan kosakata orang dewasa, tetapi kesulitan menulis satu paragraf. Atau anaknya cepat sekali memecahkan soal logika, tetapi sering lupa membawa buku dan tidak bisa duduk tenang. Artikel ini membahas pengertian twice exceptional, kombinasi yang sering ditemui, mengapa anak 2e sering terlewat, tanda yang bisa diamati, strategi di sekolah dan di rumah, serta konteksnya di Indonesia. Untuk memahami istilah keragaman perkembangan secara umum, baca juga ' + a('neurodivergent-vs-neurotypical-perbedaan', 'neurodivergent dan neurotypical') + '.'),
+  toc(wSections),
+
+  '<h2 id="pengertian">Apa itu twice exceptional</h2>',
+  p('Menurut rangkuman ' + ext(URL_2E_WP, 'Wikipedia tentang twice exceptional') + ', istilah 2e merujuk pada orang yang berbakat sekaligus neurodivergen. Istilah ini pertama muncul dalam artikel James J. Gallagher tahun 1988 tentang agenda nasional pendidikan anak berbakat di Amerika Serikat, sementara gerakan pendidikannya sudah dimulai sejak awal 1970-an. Istilah lain yang kadang dipakai untuk menggambarkan pola yang sama adalah profil kemampuan yang tidak rata atau spiky profile.'),
+  p('Panduan keluarga dari ' + ext(URL_2E_TEA, 'Badan Pendidikan Negara Bagian Texas (TEA)') + ' merumuskan bahwa pelajar 2e adalah anak berbakat yang juga memiliki satu atau lebih disabilitas, dan memiliki potensi untuk berprestasi tinggi. Panduan itu juga menekankan bahwa kontras yang tajam antara kekuatan dan kesulitan anak bisa menimbulkan pandangan negatif dari orang dewasa, teman, bahkan dari diri anak sendiri. Pelajar 2e sangat beragam dan sering tidak cocok dengan satu jenis program saja.'),
+  p('Perlu diingat bahwa berbakat di sini tidak selalu berarti juara kelas atau IQ sangat tinggi di semua bidang. Bakat bisa terlihat di bidang tertentu, misalnya matematika, bahasa, sains, seni, musik, atau kepemimpinan. Pandangan tentang ' + a('kecerdasan-majemuk', 'kecerdasan majemuk') + ' membantu orang tua dan guru melihat bahwa kemampuan anak tidak hanya terbaca dari nilai rapor. Begitu pula kesulitannya, yang bisa ringan sampai berat dan tidak selalu tampak dari luar.'),
+  fig(`${IMG}/twice-exceptional-ujian.webp`, 1200, 809, 'Siswa SMA berseragam putih menulis di meja kelas, siswi berkerudung di belakangnya ikut mengerjakan tugas', 'Siswa SMA di Indonesia sedang belajar di kelas. Anak 2e bisa sangat menonjol dalam diskusi atau kompetisi, sekaligus kesulitan dengan tugas yang tampak mudah bagi temannya.', PX(T2_UJIAN, 'Airlangga Jati')),
+
+  '<h2 id="kombinasi">Kombinasi yang sering ditemui</h2>',
+  p('Twice exceptional bukan diagnosis tersendiri, melainkan gambaran gabungan dua sisi. Wikipedia menyoroti autisme dan ADHD sebagai kondisi yang sering dibahas bersama keberbakatan. Panduan TEA juga memberi contoh lain, yaitu kesulitan belajar spesifik seperti disleksia, disgrafia, dan kesulitan matematika, gangguan emosi, gangguan bicara atau bahasa, serta cedera otak traumatis. Tabel berikut merangkum beberapa kombinasi yang sering ditemui beserta gambaran umumnya di kelas.'),
+  table('Contoh kombinasi twice exceptional dan gambarannya di kelas', ['Kondisi penyerta', 'Gambaran kesulitan menurut panduan TEA', 'Contoh kekuatan yang bisa menyertai'], [
+    ['Kesulitan belajar spesifik (' + a('disleksia-adalah', 'disleksia') + ', ' + a('disgrafia-adalah', 'disgrafia') + ')', 'Kemampuan tidak rata, kesulitan membaca, menulis, atau berhitung walau pengajaran sudah baik', 'Penalaran lisan kuat, kosakata luas, pemecahan masalah visual'],
+    ['ADHD', 'Sulit mempertahankan fokus, memulai atau menyelesaikan tugas, impulsif, gelisah, cepat lelah secara mental', 'Ide kreatif, energi tinggi untuk topik yang diminati'],
+    ['Autisme', 'Tantangan interaksi sosial, sulit membaca bahasa tubuh, minat intens dan sempit, respons sensorik berbeda', 'Pengetahuan mendalam di bidang minat, perhatian pada detail'],
+    ['Gangguan emosi', 'Emosi kuat, sulit berteman, menghindari sekolah, keluhan fisik saat tertekan', 'Kepekaan tinggi, empati, ekspresi artistik'],
+  ]),
+  p('Kolom kekuatan pada tabel di atas adalah contoh umum, bukan ciri yang pasti dimiliki setiap anak. Setiap anak 2e memiliki profil yang unik. Ada anak autis yang sangat menonjol di musik, ada anak ADHD yang unggul di sains, dan ada anak disleksia yang sangat kuat dalam bercerita lisan. Untuk memahami masing-masing kondisi, baca ' + a('adhd-adalah', 'pengertian ADHD') + ', ' + a('autisme-ringan-seperti-apa', 'autisme ringan') + ', dan ' + a('gangguan-belajar-spesifik', 'gangguan belajar spesifik') + '.'),
+
+  p('Wikipedia juga menyebut sindrom savant sebagai bentuk ekstrem dari twice exceptional, yaitu kondisi ketika seseorang dengan disabilitas perkembangan menunjukkan kemampuan luar biasa di bidang yang sangat spesifik, seperti menghitung kalender, mengingat detail, atau memainkan musik. Kasus seperti ini sangat jarang dan sering diangkat dalam film, sehingga membentuk anggapan keliru bahwa semua anak autis pasti punya bakat luar biasa. Kenyataannya, kebanyakan anak 2e tidak seperti tokoh film. Kelebihan mereka bisa lebih sederhana, misalnya penalaran yang tajam, rasa ingin tahu yang besar, atau kreativitas, dan tetap layak dikembangkan.'),
+
+  '<h2 id="menutupi">Ketika kelebihan dan kesulitan saling menutupi</h2>',
+  p('Salah satu ciri yang paling sering dibicarakan tentang anak 2e adalah efek saling menutupi atau masking. Wikipedia menjelaskan bahwa kelebihan anak bisa mengompensasi kekurangannya, sementara kekurangannya bisa membuat kelebihannya kurang terlihat. Wikipedia juga mencatat bahwa teori ini belum dikonfirmasi oleh penelitian empiris, sehingga sebaiknya dipahami sebagai pola yang sering diamati di lapangan, bukan hukum yang pasti.'),
+  diag(`${IMG}/twice-exceptional-profil.webp`, 'Tabel visual tiga pola anak twice exceptional di kelas: bakat menonjol dengan kesulitan tertutup, kesulitan menonjol dengan bakat tertutup, dan saling menutupi', 'Tiga pola yang sering diamati guru. Setiap pola punya risiko berbeda, sehingga anak 2e perlu dilihat dari dua sisi sekaligus.'),
+  p('Dalam praktik, ada tiga pola yang sering terlihat. Pertama, anak yang bakatnya menonjol sehingga kesulitannya tertutup. Ia dianggap pintar tetapi malas atau kurang berusaha. Kedua, anak yang kesulitannya sangat terlihat sehingga bakatnya tidak diperhatikan, misalnya anak yang hanya dikenal sebagai anak yang sulit membaca. Ketiga, anak yang kelebihan dan kesulitannya saling menetralkan sehingga nilainya tampak rata-rata. Pola ketiga ini paling mudah terlewat, karena anak tidak tampak membutuhkan program apa pun.'),
+  p('Akibatnya bisa serius bagi anak. Wikipedia mencatat pandangan bahwa kegagalan berulang pada tugas yang tampak mudah bagi teman-temannya bisa memicu frustrasi, kecemasan, bahkan suasana hati yang menurun dan rasa percaya diri yang rendah. Sebagian siswa menarik diri di kelas, sebagian lain justru menjadi badut kelas untuk menutupi kesulitannya. Memahami pola ini membantu orang dewasa berhenti melabeli anak sebagai malas atau nakal.'),
+
+  '<h2 id="tanda">Tanda yang bisa diamati orang tua dan guru</h2>',
+  p('Tidak ada daftar ciri yang bisa memastikan seorang anak 2e tanpa asesmen. Namun beberapa pola layak dicatat dan didiskusikan. Kesenjangan yang mencolok antara kemampuan lisan dan tulisan, misalnya anak bisa menjelaskan konsep rumit tetapi kesulitan menuliskannya. Minat yang sangat dalam pada topik tertentu disertai kesulitan mengerjakan tugas rutin. Kemampuan memecahkan masalah yang kompleks, tetapi sering kehilangan barang, lupa instruksi, atau sulit mengatur waktu.'),
+  p('Tanda emosional juga perlu diperhatikan. Panduan TEA dan Wikipedia sama-sama mencatat bahwa anak 2e bisa kesulitan dalam hubungan dengan teman, bereaksi kuat terhadap kritik, dan bertindak impulsif. Anak mungkin sangat keras pada dirinya sendiri karena merasa seharusnya bisa, tetapi kenyataannya tidak bisa. Kalimat seperti aku bodoh dari anak yang jelas cerdas adalah sinyal yang tidak boleh diabaikan.'),
+  p('Panduan TEA menyarankan orang tua untuk mencocokkan ciri-ciri dengan perilaku anak dan mencatat yang sesuai, lalu menyampaikan kekhawatiran kepada guru kelas. Ajak anak berbicara lebih dulu untuk memahami apa yang ia rasakan, karena sudut pandangnya bisa berbeda dari yang terjadi di sekolah. Saat bertemu guru, mulailah dengan hal positif dan bawa contoh hasil kerja yang menunjukkan kekuatan dan kesulitan anak. Lalu sepakati cara memantau kemajuan dan jadwalkan pertemuan lanjutan.'),
+
+  p('Guru juga dapat membantu dengan mengamati pola, bukan hanya nilai akhir. Perhatikan apakah siswa menjawab sangat baik saat diskusi lisan tetapi hasil ulangan tertulisnya rendah, apakah ia cepat bosan dengan latihan berulang tetapi bersemangat pada soal yang menantang, atau apakah kesulitannya hanya muncul di jenis tugas tertentu. Catatan pengamatan seperti ini sangat berguna bagi psikolog ketika asesmen dilakukan, karena memberi gambaran perilaku anak di kelas yang tidak terlihat di ruang tes.'),
+
+  '<h2 id="identifikasi">Mengapa anak 2e sering terlewat</h2>',
+  p('Wikipedia menjelaskan bahwa identifikasi formal anak 2e memerlukan penilaian terhadap dua keistimewaan yang terpisah. Kesulitannya, ciri keberbakatan kadang menyerupai gangguan belajar sehingga anak berbakat bisa salah didiagnosis, sementara penggunaan satu skor IQ saja dapat membuat anak 2e dengan kesulitan belajar salah teridentifikasi. Skor total yang rata-rata bisa menyembunyikan skor sangat tinggi di satu bagian dan skor rendah di bagian lain.'),
+  p('Tanda kesulitan sering baru muncul ketika tuntutan sekolah meningkat, misalnya saat anak naik ke kelas yang membutuhkan banyak menulis, membaca mandiri, atau mengatur tugas sendiri. Di kelas awal, kecerdasan anak masih cukup untuk menutupi kesulitannya. Begitu tuntutan bertambah, strategi itu tidak lagi cukup dan nilainya mulai turun. Orang tua dan guru sering bingung karena anak yang sebelumnya baik tiba-tiba tampak kesulitan.'),
+  p('Karena itu asesmen anak 2e sebaiknya dilakukan oleh psikolog yang terbiasa membaca profil kemampuan secara rinci, bukan sekadar melaporkan skor total. Asesmen dipadukan dengan pengamatan guru, contoh hasil kerja, dan riwayat perkembangan. Informasi tentang proses ini ada di artikel ' + a('asesmen-akademik-anak-berkebutuhan-khusus', 'asesmen akademik anak berkebutuhan khusus') + ', ' + a('berapa-iq-anak-yang-normal', 'rentang IQ anak') + ', dan ' + a('tes-psikolog-anak-bayar-berapa', 'tes psikolog anak') + '.'),
+
+  '<h2 id="sekolah">Strategi belajar di sekolah</h2>',
+  p('Wikipedia menjelaskan bahwa pendidikan untuk anak 2e memadukan pendidikan khusus dan pendidikan anak berbakat dalam pendekatan yang berbasis kekuatan dan terdiferensiasi. Salah satu temuan yang dirangkum di sana menunjukkan bahwa mengajar lewat kemampuan siswa, bukan lewat disabilitasnya, meningkatkan skor konsep diri. Artinya anak 2e tidak cukup hanya diberi remedial. Ia juga perlu tantangan yang sesuai dengan kemampuannya.'),
+  diag(`${IMG}/twice-exceptional-dukungan.webp`, 'Diagram tiga kartu dukungan untuk anak twice exceptional: mengembangkan kekuatan, mendukung kesulitan, dan menguatkan diri', 'Tiga sisi dukungan untuk anak 2e. Pengayaan dan akomodasi diberikan bersamaan, sambil membantu anak mengenal dan menyuarakan kebutuhannya.'),
+  p('Dukungan yang disebut dalam rangkuman tersebut meliputi dorongan, strategi kompensasi, akomodasi waktu, dan keterampilan menyuarakan kebutuhan diri. Contoh penerapannya di kelas: anak dengan disgrafia boleh menjawab secara lisan atau mengetik, anak ADHD mendapat tugas yang dipecah menjadi bagian kecil dengan jeda bergerak, dan anak autis mendapat jadwal visual serta peringatan sebelum perubahan kegiatan. Pada saat yang sama, anak diberi soal pengayaan, proyek, atau pertanyaan terbuka di bidang kekuatannya.'),
+  p('Pendekatan seperti ' + a('diferensiasi-pembelajaran-untuk-anak-abk', 'diferensiasi pembelajaran') + ' dan ' + a('universal-design-for-learning-udl-abk', 'Universal Design for Learning') + ' sangat membantu, karena memberi banyak cara bagi siswa untuk menerima materi dan menunjukkan pemahamannya. ' + a('program-pembelajaran-individual', 'Program pembelajaran individual') + ' juga bisa memuat tujuan pengayaan, bukan hanya tujuan perbaikan. Wikipedia mencatat bahwa karena sedikit sekolah yang punya program khusus, sebagian keluarga memilih ' + a('homeschooling-anak-berkebutuhan-khusus', 'homeschooling') + ' atau sekolah daring sebagai alternatif.'),
+  p('Sebagai ilustrasi, bayangkan seorang siswa kelas empat yang sangat menyukai dinosaurus dan bisa menjelaskan zaman purba dengan rinci, tetapi tulisannya sulit dibaca dan ia sering tidak menyelesaikan tugas mengarang. Guru bisa memberinya proyek tentang dinosaurus yang hasilnya boleh berupa presentasi lisan, poster bergambar, atau rekaman suara. Kemampuan menulisnya tetap dilatih, tetapi dalam porsi kecil dengan alat bantu seperti kerangka kalimat atau mengetik di komputer. Dengan cara ini anak tetap merasakan keberhasilan di bidang kekuatannya, sementara kesulitannya ditangani tanpa membuatnya merasa gagal setiap hari. Contoh ini ilustrasi umum, dan rencana untuk anak tertentu disusun bersama guru dan psikolog.'),
+  fig(`${IMG}/twice-exceptional-lapangan.webp`, 1200, 1601, 'Foto udara lapangan basket sekolah berwarna hijau dan merah dengan tiang bendera merah putih di depannya, beberapa siswa bermain di lapangan', 'Lapangan olahraga sebuah sekolah di Tegal, Jawa Tengah, dilihat dari atas. Bakat anak 2e tidak selalu akademik. Olahraga, seni, dan klub ekstrakurikuler bisa menjadi tempat kekuatannya berkembang.', PX(T2_LAPANGAN, 'Alfin Auzikri')),
+
+  '<h2 id="rumah">Dukungan di rumah dan sisi emosional</h2>',
+  p('Di rumah, orang tua bisa membantu anak mengenal profil dirinya. Jelaskan dengan bahasa sederhana bahwa otaknya sangat kuat di beberapa hal dan butuh cara lain di hal yang lain, dan bahwa itu bukan tanda ia bodoh atau malas. Pemahaman ini menjadi dasar keterampilan menyuarakan kebutuhan sendiri, misalnya meminta guru memberi waktu tambahan atau izin mengetik jawaban.'),
+  p('Beri ruang yang cukup untuk minat anak. Klub, kursus, buku, atau mentor di bidang yang ia sukai bisa menjadi sumber rasa percaya diri yang sangat besar, terutama ketika ia sedang kesulitan di sekolah. Di sisi lain, bantu anak dengan strategi praktis untuk kesulitannya, misalnya daftar periksa, pengingat visual, atau alat bantu teknologi. Alat bantu belajar untuk anak disleksia dibahas di artikel ' + a('alat-bantu-belajar-anak-disleksia', 'alat bantu belajar anak disleksia') + '.'),
+  p('Perhatikan juga kesehatan emosional anak. Kritik keras, perbandingan dengan saudara atau teman, dan tuntutan untuk selalu juara bisa memperberat tekanan yang sudah ia rasakan. Puji usaha dan strategi, bukan hanya hasil. Bila anak tampak cemas, murung, atau menghindari sekolah, jangan ragu mencari bantuan psikolog. Informasi tentang kecemasan dan sisi emosional anak ada di artikel ' + a('gangguan-kecemasan-anak', 'gangguan kecemasan anak') + ' dan ' + a('empati-pada-anak-berkebutuhan-khusus', 'empati pada anak berkebutuhan khusus') + '.'),
+
+  p('Jalin komunikasi yang rutin dengan sekolah. Anak 2e sering menunjukkan wajah yang berbeda di rumah dan di sekolah, sehingga orang tua dan guru perlu saling berbagi pengamatan. Buku penghubung, pesan singkat mingguan, atau pertemuan singkat setiap akhir bulan bisa dipakai untuk mencatat apa yang berjalan baik dan apa yang perlu diubah. Saat ada masalah, fokuskan pembicaraan pada strategi yang bisa dicoba, bukan mencari siapa yang salah. Keterlibatan orang tua dalam pendidikan inklusi dibahas lebih lanjut di artikel ' + a('peran-orang-tua-pendidikan-inklusi', 'peran orang tua dalam pendidikan inklusi') + '.'),
+
+  '<h2 id="indonesia">Konteks layanan di Indonesia</h2>',
+  p('Di Indonesia, kebijakan pendidikan inklusif sejak awal mencakup dua kelompok ini. Peraturan Menteri Pendidikan Nasional Nomor 70 Tahun 2009 berjudul Pendidikan Inklusif bagi Peserta Didik yang Memiliki Kelainan dan Memiliki Potensi Kecerdasan dan/atau Bakat Istimewa. Judul itu menunjukkan bahwa sekolah inklusi tidak hanya melayani anak dengan hambatan, tetapi juga anak dengan potensi kecerdasan atau bakat istimewa. Anak 2e berada di persimpangan keduanya. Penjelasan kebijakan inklusi lebih lengkap ada di artikel ' + a('kebijakan-pendidikan-inklusi-di-indonesia', 'kebijakan pendidikan inklusi di Indonesia') + '.'),
+  p('Dalam praktik, layanan untuk anak berbakat dan layanan untuk anak berkebutuhan khusus sering berjalan terpisah, sehingga anak 2e mudah jatuh di celah keduanya. Orang tua bisa menjembatani dengan membawa hasil asesmen ke sekolah, meminta pertemuan bersama guru kelas dan ' + a('gpk-adalah', 'guru pendamping khusus') + ', dan mengusulkan program yang memuat pengayaan sekaligus akomodasi. Sekolah inklusi yang baik akan melihat anak secara utuh, bukan hanya dari satu sisi.'),
+  p('Ada beberapa langkah praktis yang bisa ditempuh orang tua di Indonesia. Pertama, lakukan asesmen psikologis yang menghasilkan laporan profil kemampuan secara rinci, bukan hanya angka IQ. Kedua, bawa laporan itu ke sekolah dan minta bagian yang relevan diterjemahkan menjadi rekomendasi yang bisa dijalankan guru, misalnya jenis akomodasi dan bidang pengayaan. Ketiga, cari kegiatan di luar sekolah yang sesuai minat anak, seperti klub sains, sanggar seni, atau komunitas pemrograman, agar bakatnya tetap terasah meskipun sekolah belum punya program khusus. Keempat, evaluasi kembali setiap semester, karena kebutuhan anak berubah seiring naiknya tuntutan belajar.'),
+  p('Yang paling penting, ingatlah bahwa label hanyalah alat untuk membuka akses dukungan. Wikipedia mencatat bahwa istilah twice exceptional pun dikritik sebagian komunitas neurodivergen. Apa pun sebutannya, tujuan kita sama: anak memahami dirinya, kelebihannya berkembang, kesulitannya didukung, dan ia tumbuh dengan rasa percaya diri. Bila Anda ingin berdiskusi tentang pendidikan inklusi untuk anak Anda, pelajari juga ' + a('pendidikan-inklusi', 'prinsip pendidikan inklusi') + '.'),
+
+  '<h2 id="faq">Pertanyaan yang sering diajukan</h2>',
+  faqBlock(wFaq),
+];
+
+articles.push({
+  slug: 'twice-exceptional-anak',
+  titleTag: 'Twice Exceptional Anak: Berbakat dan Berkebutuhan Khusus | YUKA',
+  metaDesc: 'Twice exceptional (2e) adalah anak berbakat yang juga punya kondisi seperti disleksia, ADHD, atau autisme. Tanda, pola saling menutupi, identifikasi, dan strategi dukungan.',
+  keywords: 'twice exceptional anak, anak 2e, anak berbakat berkebutuhan khusus, gifted ADHD, gifted autisme, cerdas istimewa',
+  ogTitle: 'Twice Exceptional pada Anak',
+  ogDesc: 'Panduan anak twice exceptional (2e) untuk orang tua dan guru: kombinasi yang sering ditemui, tanda, identifikasi, dan strategi di sekolah serta di rumah.',
+  h1: 'Twice Exceptional pada Anak: Ketika Bakat dan Kebutuhan Khusus Hadir Bersamaan',
+  crumb: 'Twice Exceptional pada Anak',
+  category: 'Pendidikan',
+  datePublished: '2026-11-24T08:00:00+07:00', dateModified: '2026-11-24T08:00:00+07:00',
+  dateDisplay: '24 November 2026', readTime: '14 menit baca',
+  authorName: 'Tim YUKA',
+  image: {
+    file: `${IMG}/twice-exceptional-hero.webp`, w: 1200, h: 675,
+    alt: 'Ruang kelas di Malang, siswa duduk di bangku berjajar mengerjakan ujian tertulis, seorang guru berkerudung duduk di meja depan',
+    caption: 'Siswa mengerjakan ujian di sebuah sekolah di Malang. Anak twice exceptional bisa berprestasi tinggi di satu bidang, sekaligus membutuhkan dukungan untuk kesulitan yang tidak selalu terlihat dari nilai ujian.',
+    credit: PX(T2_HERO, 'Haidar Azmi'),
+  },
+  bodyHtml: wBody.join('\n'), faq: wFaq,
+  related: [
+    { href: '/artikel/kecerdasan-majemuk', title: 'Kecerdasan Majemuk', desc: 'Melihat kemampuan anak dari banyak sisi.' },
+    { href: '/artikel/gangguan-belajar-spesifik', title: 'Gangguan Belajar Spesifik', desc: 'Disleksia, disgrafia, dan diskalkulia pada anak.' },
+    { href: '/artikel/diferensiasi-pembelajaran-untuk-anak-abk', title: 'Diferensiasi Pembelajaran', desc: 'Menyesuaikan pengajaran dengan kebutuhan siswa yang beragam.' },
+  ],
+  tags: ['TwiceExceptional', 'AnakBerbakat', 'PendidikanInklusi'],
+  sources: [
+    { url: URL_2E_WP, label: 'Wikipedia: Twice exceptional (definisi, sejarah istilah, identifikasi, pendekatan pendidikan)' },
+    { url: URL_2E_TEA, label: 'Texas Education Agency, G/T Family Toolkit: Twice-Exceptional (2E)' },
+  ],
+  sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Artikel ini informasi umum untuk orang tua dan pendidik. Identifikasi anak twice exceptional dan diagnosis kondisi penyerta dilakukan oleh psikolog atau profesional yang berwenang.',
+});
+
+
 // [ARTIKEL_BERIKUTNYA]
 
 function prepare() {
