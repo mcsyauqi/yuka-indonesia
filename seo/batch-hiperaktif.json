@@ -57,5 +57,21 @@
     }
   ],
   "medical_review": "Status jujur: belum ditinjau dokter berlisensi (pola kartu I9gw2TEU). Tidak ada nama peninjau yang dicantumkan.",
-  "remeasure": "GSC query,page 28 hari ulang sekitar 2026-11-10 untuk memastikan query hiperaktif hanya dipetakan ke 1 URL per niat"
+  "remeasure": "GSC query,page 28 hari ulang sekitar 2026-11-10 untuk memastikan query hiperaktif hanya dipetakan ke 1 URL per niat",
+  "remeasure_2026_11_17": {
+    "property": "https://www.yukaindonesia.com/",
+    "window": "2026-10-19..2026-11-15 (28 hari, dataState all)",
+    "analytics_total_rows": 102,
+    "hiperaktif_query_rows": 0,
+    "conclusion": "Tidak ada query yang memuat hiperaktif pada window ini; tidak ada konflik URL yang terukur, tetapi hasil ini bukan bukti indexed.",
+    "url_inspection": {
+      "hiperaktif-adalah": "Discovered - currently not indexed",
+      "hiperaktif-artinya": "URL is unknown to Google",
+      "anakku-hiperaktif": "URL is unknown to Google",
+      "anak-aktif-atau-hiperaktif": "Discovered - currently not indexed",
+      "cara-mengatasi-anak-hiperaktif": "Discovered - currently not indexed",
+      "adhd-adalah": "Crawled - currently not indexed"
+    },
+    "observed_at": "2026-11-17T01:45:30Z"
+  }
 }
