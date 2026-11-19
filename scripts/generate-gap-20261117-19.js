@@ -51,8 +51,9 @@ const URL_MATSON = 'https://pubmed.ncbi.nlm.nih.gov/18486442/';
 const URL_INCL_WP = 'https://en.wikipedia.org/wiki/Inclusion_(education)';
 const URL_PP13 = 'https://peraturan.bpk.go.id/Details/132596/pp-no-13-tahun-2020';
 const URL_UNESCO = 'https://www.unesco.org/en/inclusion-education';
-const URL_SS_WP = 'https://en.wikipedia.org/wiki/Social_Stories';
-const URL_GRAY = 'https://carolgraysocialstories.com/social-stories/what-is-it/';
+const URL_NAS_SS = 'https://www.autism.org.uk/advice-and-guidance/education/difficulties-break-times/parents';
+const URL_GRAY = 'https://carolgraysocialstories.com/social-stories/social-stories-10-4-updates/';
+const URL_GRAY_CRITERIA = 'https://carolgraysocialstories.com/wp-content/uploads/2023/11/2023-Social-Stories-10.4-Criteria-1.pdf';
 
 // ---------------------------------------------------------------------------
 // Artikel 1: token economy untuk anak ABK (17 Nov 2026)
@@ -340,12 +341,12 @@ const sSections = [
 ];
 
 const sFaq = [
-  { q: 'Apa itu social story untuk anak autis?', a: 'Social story adalah cerita pendek yang menjelaskan sebuah situasi sosial secara jelas dan tenang: apa yang terjadi, siapa yang terlibat, apa yang mungkin dipikirkan orang lain, dan apa yang bisa dilakukan anak. Konsep ini dikembangkan oleh Carol Gray pada 1991 untuk membantu individu autistik memahami situasi sosial.' },
+  { q: 'Apa itu social story untuk anak autis?', a: 'Social story adalah cerita pendek yang menjelaskan sebuah situasi sosial secara jelas dan tenang: apa yang terjadi, siapa yang terlibat, apa yang mungkin dipikirkan orang lain, dan apa yang bisa dilakukan anak. Konsep Social Stories dikembangkan oleh Carol Gray dengan penekanan pada informasi yang akurat, relevan, dan menghormati pengalaman pembacanya.' },
   { q: 'Apa bedanya social story dengan cerita anak biasa?', a: 'Cerita anak biasa bertujuan menghibur dan sering memakai tokoh rekaan. Social story ditulis khusus untuk satu anak dan satu situasi nyata, dengan gaya dan format tertentu. Isinya fakta yang bisa diamati, bukan petualangan, dan nadanya meyakinkan, bukan menggurui.' },
   { q: 'Berapa panjang social story yang ideal?', a: 'Sesuaikan dengan kemampuan anak. Untuk anak kecil atau yang baru belajar membaca, beberapa kalimat dengan satu kalimat per halaman disertai gambar sering sudah cukup. Untuk anak yang lebih besar, cerita bisa lebih panjang dan rinci. Yang penting, cerita tetap fokus pada satu situasi.' },
-  { q: 'Apakah social story harus memakai gambar?', a: 'Tidak wajib, tetapi sering membantu. Rangkuman tentang Social Stories menyebut satu kalimat per halaman yang dipasangkan dengan gambar dapat membantu anak fokus pada satu konsep, karena banyak individu autistik lebih mudah memahami informasi visual. Gambar bisa berupa foto tempat nyata atau gambar sederhana.' },
+  { q: 'Apakah social story harus memakai gambar?', a: 'Tidak wajib. Kriteria Carol Gray menekankan penyesuaian format dengan kemampuan, perhatian, minat, dan cara belajar pembaca. Foto tempat nyata atau gambar sederhana bisa dipilih bila membantu anak memahami konteks. Periksa apakah gambar benar-benar menjelaskan isi cerita, bukan sekadar menambah hiasan atau membuat halaman terlalu ramai.' },
   { q: 'Kapan sebaiknya social story dibacakan?', a: 'Bacakan saat anak tenang, sebelum situasi yang dijelaskan terjadi, misalnya beberapa hari sebelum karyawisata atau sebelum hari pertama sekolah. Jangan membacakannya saat anak sedang meltdown atau marah, karena pada saat itu anak sulit menerima informasi baru.' },
-  { q: 'Apakah social story bisa dipakai untuk anak non-autis?', a: 'Prinsipnya bisa dipakai untuk anak lain yang butuh penjelasan situasi sosial secara terstruktur. Namun, rangkuman penelitian menyebut efektivitas Social Stories pada kelompok selain individu autistik belum cukup diteliti. Pakai dengan pengamatan, dan evaluasi apakah anak benar-benar terbantu.' },
+  { q: 'Apakah social story bisa dipakai untuk anak non-autis?', a: 'Prinsip berbagi informasi yang jelas dan menghormati pembaca dapat dipertimbangkan untuk anak lain yang membutuhkan penjelasan situasi sosial. Namun, kesesuaian untuk seorang anak tidak dapat disimpulkan hanya dari label diagnosis. Tentukan kebutuhan yang ingin dibantu, sesuaikan bahasanya, dan evaluasi pemahaman serta kenyamanan anak bersama pendampingnya.' },
   { q: 'Siapa yang sebaiknya menulis social story?', a: 'Orang yang paling mengenal anak dan situasinya, misalnya orang tua, guru kelas, guru pendamping, atau terapis. Penulisan akan lebih tepat bila diawali pengamatan tentang apa yang membuat situasi itu sulit bagi anak. Melibatkan anak, sesuai kemampuannya, juga membantu cerita terasa miliknya sendiri.' },
   { q: 'Apakah social story bisa menggantikan terapi?', a: 'Tidak. Social story adalah salah satu alat bantu untuk memahami situasi sosial, bukan pengganti terapi atau pendampingan profesional. Social story paling bermanfaat bila dipakai bersama strategi lain yang sudah disepakati dengan guru, terapis, atau tenaga profesional yang menangani anak.' },
 ];
@@ -367,12 +368,12 @@ addDiagram(`${IMG}/social-story-langkah.webp`, svg.flow('Langkah menulis social 
 ]));
 
 const sBody = [
-  p('<strong>Social story untuk anak autis</strong> adalah cerita pendek yang menjelaskan satu situasi sosial secara jelas: apa yang terjadi, siapa yang terlibat, apa yang mungkin dipikirkan orang lain, dan apa yang bisa dilakukan anak. Konsep Social Stories dikembangkan oleh Carol Gray pada 1991 untuk membantu individu autistik memahami seluk-beluk komunikasi antarpribadi.'),
+  p('<strong>Social story untuk anak autis</strong> adalah cerita pendek yang menjelaskan satu situasi sosial secara jelas: apa yang terjadi, siapa yang terlibat, apa yang mungkin dipikirkan orang lain, dan apa yang bisa dilakukan anak. Konsep Social Stories dikembangkan oleh Carol Gray untuk membagikan informasi yang akurat dan relevan dengan tetap menghormati pengalaman serta kebutuhan pembacanya.'),
   p('Banyak kesulitan anak autis dalam situasi sosial muncul karena situasi itu membingungkan dan sulit diprediksi, bukan karena anak tidak mau bekerja sama. Social story membantu dengan membuat situasi itu lebih bisa dipahami. Artikel ini membahas pengertian social story, jenis kalimatnya, langkah menulis, contoh, cara membacakan, dan apa kata penelitian. Untuk dasar pemahaman autisme, baca ' + a('autisme-adalah', 'autisme adalah') + '.'),
   toc(sSections),
 
   '<h2 id="pengertian">Apa itu social story</h2>',
-  p('Menurut ' + ext(URL_SS_WP, 'rangkuman ensiklopedis tentang Social Stories') + ', Social Stories dirancang sebagai alat untuk membantu individu autistik memahami nuansa komunikasi antarpribadi agar dapat berinteraksi secara efektif dan sesuai. Tujuannya adalah membagikan informasi yang sering disampaikan secara tidak langsung dalam pergaulan sehari-hari, sehingga anak lebih memahami apa yang terjadi di sekitarnya.'),
+  p('Menurut ' + ext(URL_NAS_SS, 'National Autistic Society dalam panduan untuk orang tua dan pengasuh') + ', social stories adalah uraian singkat tentang situasi, peristiwa, atau kegiatan tertentu yang menjelaskan apa yang dapat diharapkan dan mengapa. Dalam konteks sekolah, cerita dapat membantu menjelaskan situasi sosial yang membingungkan. Tujuannya adalah berbagi informasi, bukan menuntut anak mengikuti aturan tanpa memahami konteksnya.'),
   p('Social story bukan sekadar cerita moral. Cerita ini memakai gaya dan format tertentu: kalimatnya jujur dan bisa diamati, sudut pandangnya biasanya dari anak, nadanya tenang dan meyakinkan, dan fokusnya pada satu situasi. Carol Gray juga menjelaskan konsep ini di situs resminya, ' + ext(URL_GRAY, 'Carol Gray Social Stories') + '.'),
   p('Dalam praktik di Indonesia, istilah ini sering diterjemahkan menjadi cerita sosial. Guru pendamping dan terapis banyak memakainya untuk menyiapkan anak menghadapi kegiatan baru, misalnya hari pertama sekolah, upacara bendera, atau kunjungan ke dokter. Social story juga sering dipakai bersama strategi lain dalam ' + a('social-skills-training-anak-autis', 'social skills training') + '.'),
   fig(`${IMG}/social-story-perpustakaan.webp`, 1200, 800, 'Beberapa siswi SD berkerudung merah duduk berdampingan membaca buku bergambar di perpustakaan sekolah dengan rak buku warna-warni di belakang', 'Siswa membaca bersama di perpustakaan sekolah. Membaca cerita bersama adalah kegiatan yang akrab bagi anak, sehingga social story mudah diterima sebagai bagian dari rutinitas.', CC(S_MUPAT, 'Caktuyul', ...BYSA4)),
@@ -389,8 +390,8 @@ const sBody = [
   p('Social story juga bisa dipakai untuk memuji. Cerita tentang hal yang sudah berhasil dilakukan anak membantu ia mengingat dan mengulanginya. Banyak praktisi menyarankan agar tidak semua social story berisi masalah, supaya anak tidak mengaitkan cerita dengan teguran.'),
 
   '<h2 id="kalimat">Jenis kalimat dalam social story</h2>',
-  diag(`${IMG}/social-story-kalimat.webp`, 'Tabel jenis kalimat social story: deskriptif, perspektif, direktif, afirmatif, dan kooperatif, masing-masing dengan fungsi dan contoh kalimat', 'Lima jenis kalimat yang paling sering dipakai. Kalimat deskriptif sebaiknya paling banyak.'),
-  p('Rangkuman tentang Social Stories mencatat tujuh jenis kalimat yang dapat dipakai, merujuk pada buku Carol Gray. Lima di antaranya paling sering dipakai dalam cerita sederhana:'),
+  diag(`${IMG}/social-story-kalimat.webp`, 'Tabel jenis kalimat social story: deskriptif, perspektif, direktif, afirmatif, dan kooperatif, masing-masing dengan fungsi dan contoh kalimat', 'Contoh fungsi kalimat untuk memahami isi cerita. Pengelompokan kriteria terkini dijelaskan dalam panduan Social Stories 10.4.'),
+  p('Istilah berikut dapat membantu orang tua mengenali fungsi kalimat dalam contoh cerita. Daftar ini adalah penjelasan praktis, bukan pengganti kriteria resmi Social Stories atau daftar persyaratan yang harus dimasukkan semuanya ke dalam cerita:'),
   ul([
     '<strong>Deskriptif.</strong> Kalimat yang jujur, bisa diamati, bebas opini, dan menjelaskan faktor paling penting dalam situasi. Sering menjawab pertanyaan mengapa.',
     '<strong>Perspektif.</strong> Menggambarkan keadaan batin orang lain, misalnya pikiran, perasaan, atau keyakinan, agar anak memahami cara orang lain memandang kejadian.',
@@ -398,7 +399,7 @@ const sBody = [
     '<strong>Afirmatif.</strong> Menegaskan makna, nilai bersama, atau aturan agar anak merasa yakin.',
     '<strong>Kooperatif.</strong> Menjelaskan bantuan yang akan diberikan orang lain, sehingga respons orang dewasa menjadi konsisten.',
   ]),
-  p('Dua jenis lainnya adalah kalimat kontrol, yaitu strategi pribadi yang ditulis anak sendiri setelah membaca cerita, dan kalimat parsial, yaitu kalimat dengan bagian kosong yang mengajak anak menebak langkah berikutnya. Prinsip penting yang sering ditekankan adalah memperbanyak kalimat deskriptif dan perspektif dibanding kalimat arahan, agar cerita terasa sebagai penjelasan, bukan perintah.'),
+  p('Dalam ' + ext(URL_GRAY_CRITERIA, 'dokumen resmi Social Stories 10.4 Criteria') + ', kalimat dikelompokkan sebagai deskriptif dan kalimat pendampingan atau coaching. Panduan itu mengutamakan deskripsi daripada arahan, serta menghormati perasaan, pengalaman, dan hak pembaca. Karena itu, jangan menjadikan daftar istilah di atas sebagai alasan untuk memperbanyak perintah. Periksa cerita secara utuh, termasuk tujuan, nada, dan kesesuaiannya dengan situasi nyata anak.'),
 
   '<h2 id="langkah">Langkah menulis social story</h2>',
   diag(`${IMG}/social-story-langkah.webp`, 'Diagram enam langkah menulis social story: amati situasi, tentukan tujuan, tulis dari sudut anak, utamakan deskripsi, tambah gambar, serta baca dan evaluasi', 'Enam langkah menulis social story dari pengamatan sampai evaluasi.'),
@@ -411,6 +412,7 @@ const sBody = [
     '<strong>Baca, amati, dan perbaiki.</strong> Perhatikan respons anak dan revisi cerita bila ada bagian yang tidak dipahami.',
   ]),
   p('Pilih kata dengan hati-hati. Hindari kata selalu dan tidak pernah, karena anak autis bisa memahaminya secara harfiah. Lebih aman menulis biasanya atau sering kali. Hindari juga nada mengancam. Kalimat seperti kalau aku berteriak, aku akan dihukum tidak termasuk gaya social story.'),
+  p('Sebelum menulis, tanyakan apa yang belum jelas bagi anak, bukan langsung menganggap ia tidak patuh. Misalnya, saat antre di kantin, apakah anak tahu tempat barisan dimulai, siapa yang bisa dimintai bantuan, dan ke mana ia boleh pergi ketika suasana terlalu ramai? Catat jawaban anak melalui percakapan, menunjuk gambar, atau alat komunikasinya. Panduan Carol Gray menekankan pengumpulan informasi dan keterbukaan terhadap solusi selain cerita. Jika masalahnya suara yang menyakitkan atau jalur antrean yang membingungkan, perubahan lingkungan tetap perlu dibahas bersama sekolah.'),
 
   '<h2 id="contoh">Contoh social story sederhana</h2>',
   p('Berikut contoh social story untuk situasi upacara bendera hari Senin. Contoh ini hanya ilustrasi umum. Cerita untuk anak tertentu perlu disesuaikan dengan sekolah, jadwal, dan hal yang membuatnya cemas.'),
@@ -440,10 +442,12 @@ const sBody = [
   '<h2 id="sekolah-rumah">Memakai social story di sekolah dan rumah</h2>',
   p('Social story bekerja paling baik bila orang dewasa di sekitar anak memakai cerita yang sama. Di sekolah, guru kelas dan guru pendamping bisa menyimpan salinan cerita di meja anak dan membacakannya beberapa menit sebelum kegiatan yang dijelaskan. Di rumah, orang tua bisa membacakan cerita yang sama pada malam sebelumnya. Dengan begitu, anak mendengar penjelasan yang konsisten dari dua tempat penting dalam hidupnya.'),
   p('Buku penghubung membantu menjaga kesinambungan ini. Guru menuliskan cerita apa yang sedang dipakai dan bagaimana respons anak, lalu orang tua menambahkan pengamatan dari rumah. Bila situasinya berubah, misalnya jadwal upacara dipindah atau guru pendamping berganti, ceritanya diperbarui bersama sebelum anak menghadapinya. Kalau anak memakai alat komunikasi khusus, sesuaikan cerita dengan alat itu, seperti dibahas di ' + a('aplikasi-komunikasi-aac-terbaik-untuk-anak', 'aplikasi komunikasi AAC') + '. Kerja sama sekolah dan rumah seperti ini juga menjadi bagian dari ' + a('peran-orang-tua-pendidikan-inklusi', 'peran orang tua dalam pendidikan inklusi') + '.'),
+  p('Untuk contoh kantin tadi, sepakati dahulu orang dewasa yang benar-benar tersedia dan tempat tenang yang boleh digunakan. National Autistic Society mengingatkan pentingnya pengawasan, komunikasi dengan sekolah, serta akses ke tempat aman dan tenang saat anak kewalahan. Tuliskan bantuan yang sudah disepakati, bukan janji bahwa kantin akan selalu sepi atau semua teman pasti memahami anak. Bila petugas berganti, jelaskan perubahan itu dan perbarui cerita. Anak tidak seharusnya menanggung akibat dari informasi orang dewasa yang sudah tidak sesuai.'),
 
   '<h2 id="bukti">Apa kata penelitian</h2>',
-  p('Social Stories cukup banyak diteliti sejak tulisan awal Carol Gray dan Joy Garand pada 1993 di jurnal Focus on Autistic Behavior. Namun, hasil penelitian tidak seragam. Social story umumnya dipandang sebagai alat pendukung yang mudah dibuat dan aman, tetapi efeknya berbeda antaranak dan bergantung pada cara cerita ditulis dan dipakai.'),
-  p('Rangkuman ensiklopedis juga mencatat bahwa efektivitas Social Stories pada kelompok selain individu autistik belum cukup diteliti. Karena itu, perlakukan social story sebagai bagian dari rencana dukungan yang lebih luas, lalu amati apakah anak benar-benar terbantu. Catat situasi sebelum dan sesudah cerita dipakai, misalnya seberapa sering anak cemas menjelang kegiatan tersebut.'),
+  p('Situs resmi Carol Gray menjelaskan bahwa pembaruan kriteria Social Stories dibentuk oleh penelitian dan pengalaman orang tua, profesional, serta individu autistik. Namun, kriteria penulisan bukan jaminan hasil untuk setiap anak. National Autistic Society juga mengingatkan bahwa strategi yang membantu seorang anak belum tentu sesuai untuk anak lain dan perlu ditinjau secara berkala.'),
+  p('Sumber resmi yang ditautkan di sini memberi panduan pengertian, penulisan, dan dukungan di sekolah, bukan angka keberhasilan terapi. Karena itu, perlakukan social story sebagai bagian dari rencana dukungan yang lebih luas, lalu amati apakah anak benar-benar terbantu. Catat situasi sebelum dan sesudah cerita dipakai, termasuk bagian yang masih membingungkan atau membuat anak tidak nyaman.'),
+  p('Evaluasi tidak hanya menanyakan apakah anak mengikuti instruksi. Sesudah membaca, beri kesempatan anak menjelaskan kembali dengan kata, gambar, atau demonstrasi yang ia pilih. Perhatikan apakah ia mengenali tempat, memahami cara meminta bantuan, dan merasa boleh menyampaikan keberatan. Jika jawabannya belum jelas, sederhanakan bagian terkait atau periksa kembali faktanya. Simpan catatan tentang apa yang berubah agar orang tua dan guru dapat membandingkan pengamatan tanpa menyalahkan anak ketika cerita belum membantu.'),
   p('Bila kesulitan sosial anak sangat mengganggu belajar atau keseharian, diskusikan dengan tenaga profesional. Pilihan intervensi lain dibahas di ' + a('apa-saja-terapi-perilaku-untuk-autisme', 'apa saja terapi perilaku untuk autisme') + ' dan ' + a('cara-melatih-social-skills-anak-autis-di-rumah', 'cara melatih social skills anak autis di rumah') + '.'),
 
   '<h2 id="keliru">Kesalahan yang sering terjadi</h2>',
@@ -725,7 +729,7 @@ const articles = [
       caption: 'Suasana perpustakaan sebagai ruang belajar bersama. Social story adalah cerita pendek yang ditulis khusus untuk membantu anak memahami satu situasi sosial.',
       credit: CC(S_HERO, 'Chaichaio', ...BYSA4),
     },
-    bodyHtml: sBody.join('\n'), faq: sFaq,
+    bodyHtml: sBody.join('\n').replace('<p>', '<p data-revision-marker="yuka-social-story-20261119-v1">'), faq: sFaq,
     related: [
       { href: '/artikel/social-skills-training-anak-autis', title: 'Social Skills Training Anak Autis', desc: 'Latihan keterampilan sosial dan bukti ilmiahnya.' },
       { href: '/artikel/jadwal-visual-anak-autis', title: 'Jadwal Visual Anak Autis', desc: 'Membantu anak memahami urutan kegiatan harian.' },
@@ -733,10 +737,11 @@ const articles = [
     ],
     tags: ['Autisme', 'SocialStory', 'KeterampilanSosial'],
     sources: [
-      { url: URL_SS_WP, label: 'Wikipedia: Social Stories (asal-usul, jenis kalimat, catatan efektivitas)' },
-      { url: URL_GRAY, label: 'Carol Gray Social Stories: What is it?' },
+      { url: URL_NAS_SS, label: 'National Autistic Society: panduan orang tua, social stories, dan dukungan waktu istirahat di sekolah' },
+      { url: URL_GRAY, label: 'Carol Gray: Social Stories 10.4 dan pembaruan kriteria' },
+      { url: URL_GRAY_CRITERIA, label: 'Carol Gray dan rekan: Social Stories 10.4 Criteria (dokumen resmi)' },
     ],
-    sourcesCheckedNote: 'Sumber diperiksa 17 November 2026. Contoh cerita di artikel ini adalah ilustrasi umum, bukan program terapi. Social story untuk anak tertentu perlu disusun berdasarkan pengamatan dan didiskusikan dengan guru atau terapis yang menangani anak.',
+    sourcesCheckedNote: 'Sumber diperiksa 19 November 2026. Contoh cerita di artikel ini adalah ilustrasi umum, bukan program terapi. Social story untuk anak tertentu perlu disusun berdasarkan pengamatan dan didiskusikan dengan guru atau terapis yang menangani anak.',
   },
 ];
 
@@ -758,7 +763,12 @@ async function raster() {
 function render(only) {
   for (const art of articles) {
     if (only && art.slug !== only) continue;
-    fs.writeFileSync(path.join(articleDir, `${art.slug}.html`), renderArticlePage(art));
+    let html = renderArticlePage(art);
+    // Preserve this published article's existing back-to-top control on regeneration.
+    if (art.slug === 'social-story-untuk-anak-autis') {
+      html = html.replace('</body>', '<script src="/assets/js/ux-btt.js" defer data-color="#2B3A67" data-fg="#FFFFFF" data-radius="50%" data-label="Kembali ke atas"></script>\n</body>');
+    }
+    fs.writeFileSync(path.join(articleDir, `${art.slug}.html`), html);
     console.log(`Rendered artikel/${art.slug}.html`);
   }
 }
