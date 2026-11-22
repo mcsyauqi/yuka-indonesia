@@ -1,15 +1,5 @@
 [
   {
-    "slug": "sindrom-rett",
-    "file": "artikel/sindrom-rett.html",
-    "title": "Sindrom Rett: Penyebab, Empat Tahap, Gejala, dan Penanganannya",
-    "description": "Sindrom Rett: kelainan genetik langka pada anak perempuan. Penyebab gen MECP2, empat tahap, gejala, diagnosis, terapi pendukung, dan cara mendampingi anak.",
-    "image": "assets/images/artikel/sindrom-rett-hero.webp",
-    "category": "Kesehatan",
-    "readTime": "13 menit baca",
-    "date": "2026-11-22"
-  },
-  {
     "slug": "early-start-denver-model-esdm",
     "file": "artikel/early-start-denver-model-esdm.html",
     "title": "Early Start Denver Model (ESDM): Intervensi Dini Berbasis Bermain untuk Anak Autis",
