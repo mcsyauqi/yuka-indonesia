@@ -1,15 +1,5 @@
 [
   {
-    "slug": "sindrom-prader-willi",
-    "file": "artikel/sindrom-prader-willi.html",
-    "title": "Sindrom Prader-Willi: Ciri, Penyebab, dan Penanganan pada Anak",
-    "description": "Sindrom Prader-Willi: kondisi genetik kromosom 15 dengan otot lemah sejak bayi dan rasa lapar terus-menerus. Ciri per usia, diagnosis, penanganan, dan dukungan di sekolah.",
-    "image": "assets/images/artikel/prader-willi-hero.webp",
-    "category": "Kesehatan",
-    "readTime": "14 menit baca",
-    "date": "2026-11-27"
-  },
-  {
     "slug": "apraksia-bicara-pada-anak",
     "file": "artikel/apraksia-bicara-pada-anak.html",
     "title": "Apraksia Bicara pada Anak (Childhood Apraxia of Speech): Ciri, Diagnosis, dan Terapi",
